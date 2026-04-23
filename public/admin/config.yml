@@ -1,0 +1,47 @@
+# Panel editorial de El Fabulario (Decap CMS).
+# Este archivo define cómo los colaboradores ven y editan las fábulas.
+# Debe mantenerse sincronizado con src/content.config.ts
+
+backend:
+  name: github
+  repo: TU_USUARIO_GITHUB/elfabulario   # ← reemplaza después de crear el repo
+  branch: main
+  # Flujo editorial: las ediciones pasan por pull request antes de publicarse.
+  # Útil cuando haya colaboradores que no sean el admin.
+  open_authoring: false
+
+# URL del proxy OAuth (ver README, paso 4). Reemplazar al desplegar.
+# base_url: https://auth.elfabulario.com
+
+# Dónde Decap sube las imágenes
+media_folder: "src/assets/uploads"
+public_folder: "/src/assets/uploads"
+
+# Idioma de la interfaz del CMS
+locale: "es"
+
+# Mensajes de commit en español
+publish_mode: editorial_workflow
+
+collections:
+  - name: "fabulas"
+    label: "Fábulas"
+    label_singular: "Fábula"
+    folder: "src/content/fabulas"
+    create: true
+    slug: "{{slug}}"
+    extension: "md"
+    format: "frontmatter"
+    summary: "{{titulo}} — {{autor}} ({{fecha | date('YYYY-MM-DD')}})"
+    fields:
+      - { name: "titulo", label: "Título", widget: "string" }
+      - { name: "resumen", label: "Resumen", widget: "text", hint: "1–2 frases que describan la fábula. Se usa en listados y RSS." }
+      - { name: "autor", label: "Autor (como aparecerá publicado)", widget: "string", hint: "Nombre real o seudónimo, lo que prefiera el autor." }
+      - { name: "es_seudonimo", label: "¿Es un seudónimo?", widget: "boolean", default: false }
+      - { name: "nombre_real", label: "Nombre real (privado, opcional)", widget: "string", required: false, hint: "Solo para registros internos. No se publica." }
+      - { name: "fecha", label: "Fecha de publicación", widget: "datetime", format: "YYYY-MM-DD", date_format: "YYYY-MM-DD", time_format: false }
+      - { name: "fecha_actualizada", label: "Fecha de última actualización", widget: "datetime", required: false, format: "YYYY-MM-DD", date_format: "YYYY-MM-DD", time_format: false }
+      - { name: "ilustracion", label: "Ilustración", widget: "image", required: false, hint: "Proporción recomendada 3:2, mínimo 1200×800." }
+      - { name: "etiquetas", label: "Etiquetas", widget: "list", required: false, default: [] }
+      - { name: "borrador", label: "Borrador (no se publica todavía)", widget: "boolean", default: false }
+      - { name: "body", label: "Cuerpo de la fábula", widget: "markdown" }

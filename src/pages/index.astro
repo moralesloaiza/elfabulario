@@ -1,0 +1,145 @@
+---
+import { Image } from 'astro:assets';
+import { getCollection } from 'astro:content';
+import BaseHead from '../components/BaseHead.astro';
+import Footer from '../components/Footer.astro';
+import FormattedDate from '../components/FormattedDate.astro';
+import Header from '../components/Header.astro';
+import { SITE_DESCRIPTION, SITE_TITLE } from '../consts';
+
+const ultimas = (await getCollection('fabulas', ({ data }) => !data.borrador))
+	.sort((a, b) => b.data.fecha.valueOf() - a.data.fecha.valueOf())
+	.slice(0, 6);
+---
+
+<!doctype html>
+<html lang="es">
+	<head>
+		<BaseHead title={SITE_TITLE} description={SITE_DESCRIPTION} />
+		<style>
+			main {
+				width: 960px;
+				max-width: calc(100% - 2em);
+				margin: auto;
+				padding: 3em 1em;
+			}
+			.hero {
+				text-align: center;
+				margin-bottom: 3em;
+			}
+			.hero h1 {
+				margin: 0 0 0.5em;
+				font-size: 3rem;
+				line-height: 1.1;
+			}
+			.hero p {
+				margin: 0 auto;
+				max-width: 40em;
+				color: rgb(var(--gray));
+				font-size: 1.15rem;
+			}
+			.seccion-titulo {
+				margin: 3em 0 1em;
+				font-size: 1.5rem;
+				border-bottom: 1px solid rgb(var(--gray-light));
+				padding-bottom: 0.5em;
+			}
+			ul.fabulas {
+				display: grid;
+				grid-template-columns: repeat(2, 1fr);
+				gap: 2rem;
+				list-style: none;
+				padding: 0;
+				margin: 0;
+			}
+			ul.fabulas li a {
+				display: block;
+				text-decoration: none;
+				color: inherit;
+			}
+			ul.fabulas img {
+				width: 100%;
+				border-radius: 12px;
+				margin-bottom: 0.5em;
+			}
+			.titulo-fabula {
+				margin: 0;
+				font-size: 1.25rem;
+			}
+			.autor-fabula {
+				margin: 0.25em 0 0;
+				font-style: italic;
+				color: rgb(var(--gray));
+				font-size: 0.9em;
+			}
+			.fecha-fabula {
+				margin: 0.25em 0 0;
+				color: rgb(var(--gray));
+				font-size: 0.85em;
+			}
+			.cta-colaborar {
+				margin-top: 4em;
+				padding: 2em;
+				background: rgb(var(--gray-light));
+				border-radius: 12px;
+				text-align: center;
+			}
+			.cta-colaborar h2 {
+				margin-top: 0;
+			}
+			@media (max-width: 720px) {
+				ul.fabulas {
+					grid-template-columns: 1fr;
+				}
+				.hero h1 {
+					font-size: 2rem;
+				}
+			}
+		</style>
+	</head>
+	<body>
+		<Header />
+		<main>
+			<section class="hero">
+				<h1>El Fabulario</h1>
+				<p>{SITE_DESCRIPTION}</p>
+			</section>
+
+			{ultimas.length > 0 && (
+				<section>
+					<h2 class="seccion-titulo">Últimas fábulas</h2>
+					<ul class="fabulas">
+						{ultimas.map((fabula) => (
+							<li>
+								<a href={`/fabulas/${fabula.id}/`}>
+									{fabula.data.ilustracion && (
+										<Image
+											width={600}
+											height={300}
+											src={fabula.data.ilustracion}
+											alt=""
+										/>
+									)}
+									<h3 class="titulo-fabula">{fabula.data.titulo}</h3>
+									<p class="autor-fabula">por {fabula.data.autor}</p>
+									<p class="fecha-fabula">
+										<FormattedDate date={fabula.data.fecha} />
+									</p>
+								</a>
+							</li>
+						))}
+					</ul>
+				</section>
+			)}
+
+			<section class="cta-colaborar">
+				<h2>¿Quieres colaborar?</h2>
+				<p>
+					El Fabulario recibe fábulas en español de autores invitados. Si te interesa
+					aportar, escribe a <a href="mailto:hola@elfabulario.com">hola@elfabulario.com</a>.
+				</p>
+			</section>
+		</main>
+		<Footer />
+	</body>
+</html>

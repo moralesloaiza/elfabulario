@@ -1,0 +1,20 @@
+---
+import { type CollectionEntry, getCollection, render } from 'astro:content';
+import Fabula from '../../layouts/Fabula.astro';
+
+export async function getStaticPaths() {
+	const fabulas = await getCollection('fabulas', ({ data }) => !data.borrador);
+	return fabulas.map((fabula) => ({
+		params: { slug: fabula.id },
+		props: fabula,
+	}));
+}
+type Props = CollectionEntry<'fabulas'>;
+
+const fabula = Astro.props;
+const { Content } = await render(fabula);
+---
+
+<Fabula {...fabula.data}>
+	<Content />
+</Fabula>

@@ -1,0 +1,46 @@
+---
+import BaseHead from '../components/BaseHead.astro';
+import Footer from '../components/Footer.astro';
+import Header from '../components/Header.astro';
+import { SITE_TITLE } from '../consts';
+---
+
+<!doctype html>
+<html lang="es">
+	<head>
+		<BaseHead title={`Sobre · ${SITE_TITLE}`} description="Sobre El Fabulario." />
+		<style>
+			main {
+				width: 720px;
+				max-width: calc(100% - 2em);
+				margin: auto;
+				padding: 3em 1em;
+			}
+			h1 {
+				margin-top: 0;
+			}
+		</style>
+	</head>
+	<body>
+		<Header />
+		<main>
+			<h1>Sobre El Fabulario</h1>
+			<p>
+				El Fabulario es una colección abierta de fábulas en español. Reúne historias breves
+				con moraleja — antiguas y nuevas — escritas por autores invitados.
+			</p>
+			<p>
+				Cada fábula se publica con la firma que elige su autor: nombre real o seudónimo.
+				Las ilustraciones siguen una línea estética Art-Déco coherente con el resto del
+				proyecto.
+			</p>
+			<h2>Colaboraciones</h2>
+			<p>
+				Si te interesa aportar una fábula, escribe a
+				<a href="mailto:hola@elfabulario.com">hola@elfabulario.com</a>. Los colaboradores
+				reciben acceso al panel de edición para publicar directamente.
+			</p>
+		</main>
+		<Footer />
+	</body>
+</html>
