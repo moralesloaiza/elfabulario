@@ -5,6 +5,7 @@ import BaseHead from '../components/BaseHead.astro';
 import Footer from '../components/Footer.astro';
 import FormattedDate from '../components/FormattedDate.astro';
 import Header from '../components/Header.astro';
+import Sol from '../components/ornaments/Sol.astro';
 
 type Props = CollectionEntry<'fabulas'>['data'];
 
@@ -27,21 +28,7 @@ const { titulo, resumen, autor, fecha, fecha_actualizada, ilustracion, etiquetas
 				)}
 
 				<header class="title">
-					{/* Sunburst ornamental */}
-					<svg
-						class="ornament"
-						viewBox="0 0 80 40"
-						xmlns="http://www.w3.org/2000/svg"
-						aria-hidden="true"
-					>
-						<path d="M 20 38 A 20 20 0 0 1 60 38" fill="none" stroke="currentColor" stroke-width="1.2" />
-						<circle cx="40" cy="38" r="2.5" fill="currentColor" />
-						<line x1="40" y1="38" x2="40" y2="14" stroke="currentColor" stroke-width="0.8" />
-						<line x1="40" y1="38" x2="28" y2="17" stroke="currentColor" stroke-width="0.8" />
-						<line x1="40" y1="38" x2="52" y2="17" stroke="currentColor" stroke-width="0.8" />
-						<line x1="40" y1="38" x2="20" y2="24" stroke="currentColor" stroke-width="0.8" />
-						<line x1="40" y1="38" x2="60" y2="24" stroke="currentColor" stroke-width="0.8" />
-					</svg>
+					<Sol width="80px" />
 
 					<h1>{titulo}</h1>
 
@@ -95,13 +82,6 @@ const { titulo, resumen, autor, fecha, fecha_actualizada, ilustracion, etiquetas
 	.title {
 		text-align: center;
 		margin-bottom: var(--space-xl);
-	}
-	.ornament {
-		display: block;
-		width: 80px;
-		height: 40px;
-		margin: 0 auto var(--space-md);
-		color: var(--color-oro);
 	}
 	.title h1 {
 		margin: 0 0 var(--space-md);

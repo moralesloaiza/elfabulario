@@ -5,6 +5,7 @@ import BaseHead from '../../components/BaseHead.astro';
 import Footer from '../../components/Footer.astro';
 import FormattedDate from '../../components/FormattedDate.astro';
 import Header from '../../components/Header.astro';
+import Sol from '../../components/ornaments/Sol.astro';
 import { SITE_DESCRIPTION, SITE_TITLE } from '../../consts';
 
 const fabulas = (await getCollection('fabulas', ({ data }) => !data.borrador)).sort(
@@ -21,20 +22,7 @@ const fabulas = (await getCollection('fabulas', ({ data }) => !data.borrador)).s
 		<Header />
 		<main class="page indice">
 			<header class="title">
-				<svg
-					class="ornament"
-					viewBox="0 0 100 50"
-					xmlns="http://www.w3.org/2000/svg"
-					aria-hidden="true"
-				>
-					<path d="M 25 48 A 25 25 0 0 1 75 48" fill="none" stroke="currentColor" stroke-width="1.2" />
-					<circle cx="50" cy="48" r="3" fill="currentColor" />
-					<line x1="50" y1="48" x2="50" y2="18" stroke="currentColor" stroke-width="0.8" />
-					<line x1="50" y1="48" x2="36" y2="22" stroke="currentColor" stroke-width="0.8" />
-					<line x1="50" y1="48" x2="64" y2="22" stroke="currentColor" stroke-width="0.8" />
-					<line x1="50" y1="48" x2="25" y2="32" stroke="currentColor" stroke-width="0.8" />
-					<line x1="50" y1="48" x2="75" y2="32" stroke="currentColor" stroke-width="0.8" />
-				</svg>
+				<Sol />
 				<h1>Fábulas</h1>
 				<p class="subtitulo">El catálogo completo, de la más reciente a la más antigua.</p>
 			</header>
@@ -85,13 +73,6 @@ const fabulas = (await getCollection('fabulas', ({ data }) => !data.borrador)).s
 	.title {
 		text-align: center;
 		margin-bottom: var(--space-md);
-	}
-	.ornament {
-		display: block;
-		width: 100px;
-		height: 50px;
-		margin: 0 auto var(--space-md);
-		color: var(--color-oro);
 	}
 	.title h1 {
 		margin: 0 0 var(--space-sm);

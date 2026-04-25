@@ -1,0 +1,38 @@
+---
+/* ============================================================
+   El Fabulario · Ornamento: Sol Art-Déco
+   Motivo de cabecera reutilizable. Hereda color via currentColor.
+   Override del tamaño con la prop `width` (CSS length).
+   ============================================================ */
+
+interface Props {
+	width?: string;
+}
+
+const { width = '100px' } = Astro.props;
+---
+
+<svg
+	class="sol"
+	viewBox="0 0 100 50"
+	xmlns="http://www.w3.org/2000/svg"
+	aria-hidden="true"
+	style={`width: ${width};`}
+>
+	<path d="M 25 48 A 25 25 0 0 1 75 48" fill="none" stroke="currentColor" stroke-width="1.2" />
+	<circle cx="50" cy="48" r="3" fill="currentColor" />
+	<line x1="50" y1="48" x2="50" y2="18" stroke="currentColor" stroke-width="0.8" />
+	<line x1="50" y1="48" x2="36" y2="22" stroke="currentColor" stroke-width="0.8" />
+	<line x1="50" y1="48" x2="64" y2="22" stroke="currentColor" stroke-width="0.8" />
+	<line x1="50" y1="48" x2="25" y2="32" stroke="currentColor" stroke-width="0.8" />
+	<line x1="50" y1="48" x2="75" y2="32" stroke="currentColor" stroke-width="0.8" />
+</svg>
+
+<style>
+	.sol {
+		display: block;
+		height: auto;
+		margin: 0 auto var(--space-md);
+		color: var(--color-oro);
+	}
+</style>

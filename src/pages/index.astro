@@ -5,6 +5,7 @@ import BaseHead from '../components/BaseHead.astro';
 import Footer from '../components/Footer.astro';
 import FormattedDate from '../components/FormattedDate.astro';
 import Header from '../components/Header.astro';
+import Sol from '../components/ornaments/Sol.astro';
 import { SITE_DESCRIPTION, SITE_TITLE } from '../consts';
 
 const ultimas = (await getCollection('fabulas', ({ data }) => !data.borrador))
@@ -21,20 +22,7 @@ const ultimas = (await getCollection('fabulas', ({ data }) => !data.borrador))
 		<Header />
 		<main class="page home">
 			<section class="hero">
-				<svg
-					class="ornament-sun"
-					viewBox="0 0 100 50"
-					xmlns="http://www.w3.org/2000/svg"
-					aria-hidden="true"
-				>
-					<path d="M 25 48 A 25 25 0 0 1 75 48" fill="none" stroke="currentColor" stroke-width="1.2" />
-					<circle cx="50" cy="48" r="3" fill="currentColor" />
-					<line x1="50" y1="48" x2="50" y2="18" stroke="currentColor" stroke-width="0.8" />
-					<line x1="50" y1="48" x2="36" y2="22" stroke="currentColor" stroke-width="0.8" />
-					<line x1="50" y1="48" x2="64" y2="22" stroke="currentColor" stroke-width="0.8" />
-					<line x1="50" y1="48" x2="25" y2="32" stroke="currentColor" stroke-width="0.8" />
-					<line x1="50" y1="48" x2="75" y2="32" stroke="currentColor" stroke-width="0.8" />
-				</svg>
+				<Sol />
 				<h1>{SITE_TITLE}</h1>
 				<p class="subtitulo">{SITE_DESCRIPTION}</p>
 				<hr class="ornate hero-rule" />
@@ -93,13 +81,6 @@ const ultimas = (await getCollection('fabulas', ({ data }) => !data.borrador))
 	.hero {
 		text-align: center;
 		margin-bottom: var(--space-4xl);
-	}
-	.ornament-sun {
-		display: block;
-		width: 100px;
-		height: 50px;
-		margin: 0 auto var(--space-md);
-		color: var(--color-oro);
 	}
 	.hero h1 {
 		margin: 0 0 var(--space-md);
