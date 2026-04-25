@@ -1,11 +1,17 @@
 ---
 titulo: "La zorra y las uvas"
 resumen: "Una zorra hambrienta pretende alcanzar un racimo de uvas fuera de su alcance, y resuelve su frustración con una conclusión cómoda."
-autor: "Esopo"
-es_seudonimo: false
 fecha: 2026-04-22
 etiquetas: ["orgullo", "racionalización", "clásica"]
 borrador: false
+
+autor: "Esopo"
+autor_nacionalidad: "griego"
+autor_siglo: "VI a.C."
+
+curador: "Don Alejandro"
+es_seudonimo: true
+nombre_real: "Alejandro Morales Loaiza"
 ---
 
 Caminaba una zorra por la linde de un viñedo cuando vio, colgando de una parra alta, un racimo de uvas maduras. Se detuvo, miró hacia arriba y sintió sed y hambre al mismo tiempo.

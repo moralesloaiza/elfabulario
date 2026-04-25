@@ -1,16 +1,16 @@
 # Panel editorial de El Fabulario (Decap CMS).
 # Este archivo define cómo los colaboradores ven y editan las fábulas.
-# Debe mantenerse sincronizado con src/content.config.ts
+# Debe mantenerse sincronizado A MANO con src/content.config.ts
 
 backend:
   name: github
-  repo: TU_USUARIO_GITHUB/elfabulario   # ← reemplaza después de crear el repo
+  repo: moralesloaiza/elfabulario
   branch: main
   # Flujo editorial: las ediciones pasan por pull request antes de publicarse.
   # Útil cuando haya colaboradores que no sean el admin.
   open_authoring: false
 
-# URL del proxy OAuth (ver README, paso 4). Reemplazar al desplegar.
+# URL del proxy OAuth (ver README, Step 4). Reemplazar al desplegar.
 # base_url: https://auth.elfabulario.com
 
 # Dónde Decap sube las imágenes
@@ -20,7 +20,7 @@ public_folder: "/src/assets/uploads"
 # Idioma de la interfaz del CMS
 locale: "es"
 
-# Mensajes de commit en español
+# Las ediciones pasan por pull request antes de publicarse
 publish_mode: editorial_workflow
 
 collections:
@@ -34,14 +34,27 @@ collections:
     format: "frontmatter"
     summary: "{{titulo}} — {{autor}} ({{fecha | date('YYYY-MM-DD')}})"
     fields:
+      # --- Identidad de la fábula ---
       - { name: "titulo", label: "Título", widget: "string" }
-      - { name: "resumen", label: "Resumen", widget: "text", hint: "1–2 frases que describan la fábula. Se usa en listados y RSS." }
-      - { name: "autor", label: "Autor (como aparecerá publicado)", widget: "string", hint: "Nombre real o seudónimo, lo que prefiera el autor." }
-      - { name: "es_seudonimo", label: "¿Es un seudónimo?", widget: "boolean", default: false }
-      - { name: "nombre_real", label: "Nombre real (privado, opcional)", widget: "string", required: false, hint: "Solo para registros internos. No se publica." }
+      - { name: "resumen", label: "Resumen", widget: "text", required: false, hint: "1–2 frases que describan la fábula. Se usa en listados y RSS. Opcional." }
       - { name: "fecha", label: "Fecha de publicación", widget: "datetime", format: "YYYY-MM-DD", date_format: "YYYY-MM-DD", time_format: false }
       - { name: "fecha_actualizada", label: "Fecha de última actualización", widget: "datetime", required: false, format: "YYYY-MM-DD", date_format: "YYYY-MM-DD", time_format: false }
       - { name: "ilustracion", label: "Ilustración", widget: "image", required: false, hint: "Proporción recomendada 3:2, mínimo 1200×800." }
       - { name: "etiquetas", label: "Etiquetas", widget: "list", required: false, default: [] }
       - { name: "borrador", label: "Borrador (no se publica todavía)", widget: "boolean", default: false }
+
+      # --- Autor (escritor original) ---
+      - { name: "autor", label: "Autor", widget: "string", hint: "Nombre real del escritor original de la fábula. Invariable. Ej.: Félix María Samaniego." }
+      - { name: "autor_nacionalidad", label: "Nacionalidad del autor", widget: "string", required: false, hint: "Ej.: español, francesa, griego." }
+      - { name: "autor_nacimiento", label: "Año de nacimiento del autor", widget: "number", required: false, value_type: "int", hint: "Ej.: 1745. Dejar vacío si no se conoce con precisión." }
+      - { name: "autor_muerte", label: "Año de muerte del autor", widget: "number", required: false, value_type: "int", hint: "Ej.: 1801. Dejar vacío si no se conoce con precisión o si vive." }
+      - { name: "autor_siglo", label: "Siglo del autor", widget: "string", required: false, hint: "Solo si las fechas no son claras. Ej.: XVIII, VI a.C." }
+
+      # --- Curador (quien publica) ---
+      - { name: "curador", label: "Curador (firma pública)", widget: "string", hint: "Nombre real o seudónimo de quien publica la entrada en el blog." }
+      - { name: "es_seudonimo", label: "¿La firma del curador es un seudónimo?", widget: "boolean", default: false }
+      - { name: "nombre_real", label: "Nombre real del curador (privado)", widget: "string", required: false, hint: "Solo para registros internos. No se publica." }
+
+      # --- Cuerpo y nota ---
       - { name: "body", label: "Cuerpo de la fábula", widget: "markdown" }
+      - { name: "nota_curador", label: "Nota del curador (opcional)", widget: "markdown", required: false, hint: "Comentarios adicionales del curador. Aparece como sección aparte tras la fábula." }
