@@ -16,115 +16,54 @@ const ultimas = (await getCollection('fabulas', ({ data }) => !data.borrador))
 <html lang="es">
 	<head>
 		<BaseHead title={SITE_TITLE} description={SITE_DESCRIPTION} />
-		<style>
-			main {
-				width: 960px;
-				max-width: calc(100% - 2em);
-				margin: auto;
-				padding: 3em 1em;
-			}
-			.hero {
-				text-align: center;
-				margin-bottom: 3em;
-			}
-			.hero h1 {
-				margin: 0 0 0.5em;
-				font-size: 3rem;
-				line-height: 1.1;
-			}
-			.hero p {
-				margin: 0 auto;
-				max-width: 40em;
-				color: rgb(var(--gray));
-				font-size: 1.15rem;
-			}
-			.seccion-titulo {
-				margin: 3em 0 1em;
-				font-size: 1.5rem;
-				border-bottom: 1px solid rgb(var(--gray-light));
-				padding-bottom: 0.5em;
-			}
-			ul.fabulas {
-				display: grid;
-				grid-template-columns: repeat(2, 1fr);
-				gap: 2rem;
-				list-style: none;
-				padding: 0;
-				margin: 0;
-			}
-			ul.fabulas li a {
-				display: block;
-				text-decoration: none;
-				color: inherit;
-			}
-			ul.fabulas img {
-				width: 100%;
-				border-radius: 12px;
-				margin-bottom: 0.5em;
-			}
-			.titulo-fabula {
-				margin: 0;
-				font-size: 1.25rem;
-			}
-			.autor-fabula {
-				margin: 0.25em 0 0;
-				font-style: italic;
-				color: rgb(var(--gray));
-				font-size: 0.9em;
-			}
-			.fecha-fabula {
-				margin: 0.25em 0 0;
-				color: rgb(var(--gray));
-				font-size: 0.85em;
-			}
-			.cta-colaborar {
-				margin-top: 4em;
-				padding: 2em;
-				background: rgb(var(--gray-light));
-				border-radius: 12px;
-				text-align: center;
-			}
-			.cta-colaborar h2 {
-				margin-top: 0;
-			}
-			@media (max-width: 720px) {
-				ul.fabulas {
-					grid-template-columns: 1fr;
-				}
-				.hero h1 {
-					font-size: 2rem;
-				}
-			}
-		</style>
 	</head>
 	<body>
 		<Header />
-		<main>
+		<main class="page home">
 			<section class="hero">
-				<h1>El Fabulario</h1>
-				<p>{SITE_DESCRIPTION}</p>
+				<svg
+					class="ornament-sun"
+					viewBox="0 0 100 50"
+					xmlns="http://www.w3.org/2000/svg"
+					aria-hidden="true"
+				>
+					<path d="M 25 48 A 25 25 0 0 1 75 48" fill="none" stroke="currentColor" stroke-width="1.2" />
+					<circle cx="50" cy="48" r="3" fill="currentColor" />
+					<line x1="50" y1="48" x2="50" y2="18" stroke="currentColor" stroke-width="0.8" />
+					<line x1="50" y1="48" x2="36" y2="22" stroke="currentColor" stroke-width="0.8" />
+					<line x1="50" y1="48" x2="64" y2="22" stroke="currentColor" stroke-width="0.8" />
+					<line x1="50" y1="48" x2="25" y2="32" stroke="currentColor" stroke-width="0.8" />
+					<line x1="50" y1="48" x2="75" y2="32" stroke="currentColor" stroke-width="0.8" />
+				</svg>
+				<h1>{SITE_TITLE}</h1>
+				<p class="subtitulo">{SITE_DESCRIPTION}</p>
+				<hr class="ornate hero-rule" />
 			</section>
 
 			{ultimas.length > 0 && (
-				<section>
-					<h2 class="seccion-titulo">Últimas fábulas</h2>
+				<section class="seccion-fabulas" aria-labelledby="ultimas-titulo">
+					<h2 id="ultimas-titulo" class="seccion-titulo">Últimas fábulas</h2>
 					<ul class="fabulas">
 						{ultimas.map((fabula) => (
-							<li>
-								<a href={`/fabulas/${fabula.id}/`}>
+							<li class="fabula-item">
+								<a href={`/fabulas/${fabula.id}/`} class="fabula-link">
 									{fabula.data.ilustracion && (
-										<Image
-											width={600}
-											height={300}
-											src={fabula.data.ilustracion}
-											alt=""
-										/>
+										<figure class="fabula-img">
+											<Image
+												width={600}
+												height={300}
+												src={fabula.data.ilustracion}
+												alt=""
+											/>
+										</figure>
 									)}
-									<h3 class="titulo-fabula">{fabula.data.titulo}</h3>
-									<p class="autor-fabula">por {fabula.data.autor}</p>
-									<p class="fecha-fabula">
-										<FormattedDate date={fabula.data.fecha} />
-									</p>
+									<div class="fabula-meta">
+										<h3 class="titulo-fabula">{fabula.data.titulo}</h3>
+										<p class="autor-fabula">por {fabula.data.autor}</p>
+										<p class="fecha-fabula">
+											<FormattedDate date={fabula.data.fecha} />
+										</p>
+									</div>
 								</a>
 							</li>
 						))}
@@ -132,14 +71,143 @@ const ultimas = (await getCollection('fabulas', ({ data }) => !data.borrador))
 				</section>
 			)}
 
-			<section class="cta-colaborar">
+			<section class="cta-colaborar frame frame-lg">
 				<h2>¿Quieres colaborar?</h2>
 				<p>
-					El Fabulario recibe fábulas en español de autores invitados. Si te interesa
-					aportar, escribe a <a href="mailto:hola@elfabulario.com">hola@elfabulario.com</a>.
+					El Fabulario recibe fábulas en español de autores invitados.
+					Si te interesa aportar, escribe a
+					<a href="mailto:moralesloaiza@gmail.com">moralesloaiza@gmail.com</a>.
 				</p>
 			</section>
 		</main>
 		<Footer />
 	</body>
 </html>
+
+<style>
+	.home {
+		padding-block: var(--space-2xl);
+	}
+
+	/* ---------- HERO ---------- */
+	.hero {
+		text-align: center;
+		margin-bottom: var(--space-4xl);
+	}
+	.ornament-sun {
+		display: block;
+		width: 100px;
+		height: 50px;
+		margin: 0 auto var(--space-md);
+		color: var(--color-oro);
+	}
+	.hero h1 {
+		margin: 0 0 var(--space-md);
+		font-size: var(--fs-4xl);
+		text-wrap: balance;
+	}
+	.subtitulo {
+		font-family: var(--font-body);
+		font-style: italic;
+		font-size: var(--fs-lg);
+		line-height: var(--lh-snug);
+		color: var(--color-text-soft);
+		max-width: var(--measure-narrow);
+		margin: 0 auto var(--space-xl);
+	}
+	.hero-rule {
+		max-width: 240px;
+	}
+
+	/* ---------- ÍNDICE ---------- */
+	.seccion-fabulas {
+		margin-bottom: var(--space-4xl);
+	}
+	.seccion-titulo {
+		text-align: center;
+		font-size: var(--fs-xl);
+		margin: 0 0 var(--space-xl);
+	}
+	ul.fabulas {
+		list-style: none;
+		padding: 0;
+		margin: 0;
+		display: grid;
+		grid-template-columns: repeat(2, minmax(0, 1fr));
+		gap: var(--space-2xl);
+		max-width: none;
+	}
+	.fabula-link {
+		display: block;
+		text-decoration: none;
+		color: inherit;
+	}
+	.fabula-img {
+		margin: 0 0 var(--space-md);
+		overflow: hidden;
+	}
+	.fabula-img :global(img) {
+		display: block;
+		width: 100%;
+		height: auto;
+		border: var(--rule-hairline) solid var(--color-oro);
+		transition: transform var(--dur-slow) var(--ease-standard);
+	}
+	.fabula-link:hover .fabula-img :global(img),
+	.fabula-link:focus-visible .fabula-img :global(img) {
+		transform: scale(1.02);
+	}
+	.titulo-fabula {
+		font-family: var(--font-display);
+		font-size: var(--fs-lg);
+		font-weight: var(--fw-bold);
+		letter-spacing: var(--ls-wide);
+		line-height: var(--lh-snug);
+		margin: 0 0 var(--space-2xs);
+		color: var(--color-text);
+		text-transform: none;
+	}
+	.fabula-link:hover .titulo-fabula,
+	.fabula-link:focus-visible .titulo-fabula {
+		color: var(--color-oro-texto);
+	}
+	.autor-fabula {
+		font-family: var(--font-body);
+		font-style: italic;
+		font-size: var(--fs-sm);
+		color: var(--color-text-soft);
+		margin: 0;
+	}
+	.fecha-fabula {
+		font-family: var(--font-display);
+		font-size: var(--fs-3xs);
+		letter-spacing: var(--ls-widest);
+		text-transform: uppercase;
+		color: var(--color-esmeralda);
+		margin: var(--space-2xs) 0 0;
+	}
+
+	/* ---------- CTA ---------- */
+	.cta-colaborar {
+		text-align: center;
+		max-width: var(--measure);
+		margin-inline: auto;
+	}
+	.cta-colaborar h2 {
+		margin: 0 0 var(--space-md);
+		font-size: var(--fs-xl);
+	}
+	.cta-colaborar p {
+		font-size: var(--fs-md);
+		max-width: var(--measure-narrow);
+		margin: 0 auto;
+	}
+
+	/* ---------- RESPONSIVE ---------- */
+	@media (max-width: 720px) {
+		ul.fabulas {
+			grid-template-columns: 1fr;
+			gap: var(--space-xl);
+		}
+	}
+</style>

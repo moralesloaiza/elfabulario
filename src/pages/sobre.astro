@@ -9,38 +9,86 @@ import { SITE_TITLE } from '../consts';
 <html lang="es">
 	<head>
 		<BaseHead title={`Sobre · ${SITE_TITLE}`} description="Sobre El Fabulario." />
-		<style>
-			main {
-				width: 720px;
-				max-width: calc(100% - 2em);
-				margin: auto;
-				padding: 3em 1em;
-			}
-			h1 {
-				margin-top: 0;
-			}
-		</style>
 	</head>
 	<body>
 		<Header />
-		<main>
-			<h1>Sobre El Fabulario</h1>
-			<p>
-				El Fabulario es una colección abierta de fábulas en español. Reúne historias breves
-				con moraleja — antiguas y nuevas — escritas por autores invitados.
-			</p>
-			<p>
-				Cada fábula se publica con la firma que elige su autor: nombre real o seudónimo.
-				Las ilustraciones siguen una línea estética Art-Déco coherente con el resto del
-				proyecto.
-			</p>
-			<h2>Colaboraciones</h2>
-			<p>
-				Si te interesa aportar una fábula, escribe a
-				<a href="mailto:hola@elfabulario.com">hola@elfabulario.com</a>. Los colaboradores
-				reciben acceso al panel de edición para publicar directamente.
-			</p>
+		<main class="page sobre">
+			<header class="title">
+				<svg
+					class="ornament"
+					viewBox="0 0 80 40"
+					xmlns="http://www.w3.org/2000/svg"
+					aria-hidden="true"
+				>
+					<path d="M 20 38 A 20 20 0 0 1 60 38" fill="none" stroke="currentColor" stroke-width="1.2" />
+					<circle cx="40" cy="38" r="2.5" fill="currentColor" />
+					<line x1="40" y1="38" x2="40" y2="14" stroke="currentColor" stroke-width="0.8" />
+					<line x1="40" y1="38" x2="28" y2="17" stroke="currentColor" stroke-width="0.8" />
+					<line x1="40" y1="38" x2="52" y2="17" stroke="currentColor" stroke-width="0.8" />
+					<line x1="40" y1="38" x2="20" y2="24" stroke="currentColor" stroke-width="0.8" />
+					<line x1="40" y1="38" x2="60" y2="24" stroke="currentColor" stroke-width="0.8" />
+				</svg>
+				<h1>Sobre El Fabulario</h1>
+			</header>
+
+			<hr class="ornate" />
+
+			<section class="prose">
+				<p>
+					El Fabulario es una colección abierta de fábulas en español. Reúne historias breves
+					con moraleja —antiguas y nuevas— escritas por autores invitados.
+				</p>
+				<p>
+					Cada fábula se publica con la firma que elige su autor: nombre real o seudónimo.
+					Las ilustraciones siguen una línea estética Art-Déco coherente con el resto del
+					proyecto.
+				</p>
+
+				<h2>Colaboraciones</h2>
+				<p>
+					Si te interesa aportar una fábula, escribe a
+					<a href="mailto:moralesloaiza@gmail.com">moralesloaiza@gmail.com</a>. Los
+					colaboradores reciben acceso al panel de edición para publicar directamente.
+				</p>
+			</section>
 		</main>
 		<Footer />
 	</body>
 </html>
+
+<style>
+	.sobre {
+		padding-block: var(--space-2xl);
+	}
+	.title {
+		text-align: center;
+		margin-bottom: var(--space-md);
+	}
+	.ornament {
+		display: block;
+		width: 80px;
+		height: 40px;
+		margin: 0 auto var(--space-md);
+		color: var(--color-oro);
+	}
+	.title h1 {
+		margin: 0;
+		font-size: var(--fs-3xl);
+		text-wrap: balance;
+	}
+	.prose {
+		max-width: var(--measure);
+		margin-inline: auto;
+	}
+	.prose p {
+		font-size: var(--fs-md);
+		line-height: var(--lh-relaxed);
+		margin-bottom: var(--space-md);
+	}
+	.prose h2 {
+		font-size: var(--fs-xl);
+		margin-top: var(--space-2xl);
+		margin-bottom: var(--space-md);
+		text-align: center;
+	}
+</style>

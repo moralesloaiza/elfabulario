@@ -16,112 +16,185 @@ const fabulas = (await getCollection('fabulas', ({ data }) => !data.borrador)).s
 <html lang="es">
 	<head>
 		<BaseHead title={`Fábulas · ${SITE_TITLE}`} description={SITE_DESCRIPTION} />
-		<style>
-			main {
-				width: 960px;
-			}
-			ul {
-				display: flex;
-				flex-wrap: wrap;
-				gap: 2rem;
-				list-style-type: none;
-				margin: 0;
-				padding: 0;
-			}
-			ul li {
-				width: calc(50% - 1rem);
-			}
-			ul li * {
-				text-decoration: none;
-				transition: 0.2s ease;
-			}
-			ul li:first-child {
-				width: 100%;
-				margin-bottom: 1rem;
-				text-align: center;
-			}
-			ul li:first-child img {
-				width: 100%;
-			}
-			ul li:first-child .title {
-				font-size: 2.369rem;
-			}
-			ul li img {
-				margin-bottom: 0.5rem;
-				border-radius: 12px;
-			}
-			ul li a {
-				display: block;
-			}
-			.title {
-				margin: 0;
-				color: rgb(var(--black));
-				line-height: 1;
-			}
-			.autor {
-				margin: 0.25em 0 0;
-				font-style: italic;
-				color: rgb(var(--gray));
-				font-size: 0.9em;
-			}
-			.date {
-				margin: 0;
-				color: rgb(var(--gray));
-				font-size: 0.85em;
-			}
-			ul li a:hover h4,
-			ul li a:hover .date {
-				color: rgb(var(--accent));
-			}
-			ul a:hover img {
-				box-shadow: var(--box-shadow);
-			}
-			@media (max-width: 720px) {
-				ul {
-					gap: 0.5em;
-				}
-				ul li {
-					width: 100%;
-					text-align: center;
-				}
-				ul li:first-child {
-					margin-bottom: 0;
-				}
-				ul li:first-child .title {
-					font-size: 1.563em;
-				}
-			}
-		</style>
 	</head>
 	<body>
 		<Header />
-		<main>
-			<section>
-				<ul>
-					{
-						fabulas.map((fabula) => (
-							<li>
-								<a href={`/fabulas/${fabula.id}/`}>
-									{fabula.data.ilustracion && (
+		<main class="page indice">
+			<header class="title">
+				<svg
+					class="ornament"
+					viewBox="0 0 100 50"
+					xmlns="http://www.w3.org/2000/svg"
+					aria-hidden="true"
+				>
+					<path d="M 25 48 A 25 25 0 0 1 75 48" fill="none" stroke="currentColor" stroke-width="1.2" />
+					<circle cx="50" cy="48" r="3" fill="currentColor" />
+					<line x1="50" y1="48" x2="50" y2="18" stroke="currentColor" stroke-width="0.8" />
+					<line x1="50" y1="48" x2="36" y2="22" stroke="currentColor" stroke-width="0.8" />
+					<line x1="50" y1="48" x2="64" y2="22" stroke="currentColor" stroke-width="0.8" />
+					<line x1="50" y1="48" x2="25" y2="32" stroke="currentColor" stroke-width="0.8" />
+					<line x1="50" y1="48" x2="75" y2="32" stroke="currentColor" stroke-width="0.8" />
+				</svg>
+				<h1>Fábulas</h1>
+				<p class="subtitulo">El catálogo completo, de la más reciente a la más antigua.</p>
+			</header>
+
+			<hr class="ornate" />
+
+			{fabulas.length === 0 && (
+				<p class="vacio">Aún no hay fábulas publicadas.</p>
+			)}
+
+			{fabulas.length > 0 && (
+				<ul class="lista">
+					{fabulas.map((fabula, idx) => (
+						<li class:list={['item', { destacada: idx === 0 }]}>
+							<a href={`/fabulas/${fabula.id}/`} class="item-link">
+								{fabula.data.ilustracion && (
+									<figure class="item-img">
 										<Image
-											width={720}
-											height={360}
+											width={idx === 0 ? 1200 : 600}
+											height={idx === 0 ? 600 : 300}
 											src={fabula.data.ilustracion}
 											alt=""
 										/>
-									)}
-									<h4 class="title">{fabula.data.titulo}</h4>
-									<p class="autor">por {fabula.data.autor}</p>
-									<p class="date">
+									</figure>
+								)}
+								<div class="item-meta">
+									<h2 class="item-titulo">{fabula.data.titulo}</h2>
+									<p class="item-autor">por {fabula.data.autor}</p>
+									<p class="item-fecha">
 										<FormattedDate date={fabula.data.fecha} />
 									</p>
-								</a>
-							</li>
-						))
-					}
+								</div>
+							</a>
+						</li>
+					))}
 				</ul>
-			</section>
+			)}
 		</main>
 		<Footer />
 	</body>
 </html>
+
+<style>
+	.indice {
+		padding-block: var(--space-2xl);
+	}
+
+	.title {
+		text-align: center;
+		margin-bottom: var(--space-md);
+	}
+	.ornament {
+		display: block;
+		width: 100px;
+		height: 50px;
+		margin: 0 auto var(--space-md);
+		color: var(--color-oro);
+	}
+	.title h1 {
+		margin: 0 0 var(--space-sm);
+		font-size: var(--fs-3xl);
+	}
+	.subtitulo {
+		font-family: var(--font-body);
+		font-style: italic;
+		font-size: var(--fs-md);
+		color: var(--color-text-soft);
+		max-width: var(--measure-narrow);
+		margin: 0 auto;
+	}
+
+	.vacio {
+		text-align: center;
+		font-style: italic;
+		color: var(--color-text-soft);
+		margin-top: var(--space-2xl);
+	}
+
+	.lista {
+		list-style: none;
+		padding: 0;
+		margin: var(--space-2xl) 0 0;
+		display: grid;
+		grid-template-columns: repeat(2, minmax(0, 1fr));
+		gap: var(--space-2xl);
+		max-width: none;
+	}
+	.item.destacada {
+		grid-column: 1 / -1;
+		text-align: center;
+	}
+
+	.item-link {
+		display: block;
+		text-decoration: none;
+		color: inherit;
+	}
+	.item-img {
+		margin: 0 0 var(--space-md);
+		overflow: hidden;
+	}
+	.item.destacada .item-img {
+		max-width: var(--measure-wide);
+		margin-inline: auto;
+		margin-bottom: var(--space-lg);
+	}
+	.item-img :global(img) {
+		display: block;
+		width: 100%;
+		height: auto;
+		border: var(--rule-hairline) solid var(--color-oro);
+		transition: transform var(--dur-slow) var(--ease-standard);
+	}
+	.item-link:hover .item-img :global(img),
+	.item-link:focus-visible .item-img :global(img) {
+		transform: scale(1.02);
+	}
+
+	.item-titulo {
+		font-family: var(--font-display);
+		font-size: var(--fs-lg);
+		font-weight: var(--fw-bold);
+		letter-spacing: var(--ls-wide);
+		line-height: var(--lh-snug);
+		margin: 0 0 var(--space-2xs);
+		color: var(--color-text);
+		text-transform: none;
+	}
+	.item.destacada .item-titulo {
+		font-size: var(--fs-2xl);
+		text-transform: uppercase;
+		letter-spacing: var(--ls-wider);
+	}
+	.item-link:hover .item-titulo,
+	.item-link:focus-visible .item-titulo {
+		color: var(--color-oro-texto);
+	}
+	.item-autor {
+		font-family: var(--font-body);
+		font-style: italic;
+		font-size: var(--fs-sm);
+		color: var(--color-text-soft);
+		margin: 0;
+	}
+	.item-fecha {
+		font-family: var(--font-display);
+		font-size: var(--fs-3xs);
+		letter-spacing: var(--ls-widest);
+		text-transform: uppercase;
+		color: var(--color-esmeralda);
+		margin: var(--space-2xs) 0 0;
+	}
+
+	@media (max-width: 720px) {
+		.lista {
+			grid-template-columns: 1fr;
+			gap: var(--space-xl);
+		}
+		.item.destacada .item-titulo {
+			font-size: var(--fs-xl);
+		}
+	}
+</style>

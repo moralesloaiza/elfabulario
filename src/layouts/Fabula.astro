@@ -14,98 +14,158 @@ const { titulo, resumen, autor, fecha, fecha_actualizada, ilustracion, etiquetas
 <html lang="es">
 	<head>
 		<BaseHead title={titulo} description={resumen} />
-		<style>
-			main {
-				width: calc(100% - 2em);
-				max-width: 100%;
-				margin: 0;
-			}
-			.hero-image {
-				width: 100%;
-			}
-			.hero-image img {
-				display: block;
-				margin: 0 auto;
-				border-radius: 12px;
-				box-shadow: var(--box-shadow);
-			}
-			.prose {
-				width: 720px;
-				max-width: calc(100% - 2em);
-				margin: auto;
-				padding: 1em;
-				color: rgb(var(--gray-dark));
-			}
-			.title {
-				margin-bottom: 1em;
-				padding: 1em 0;
-				text-align: center;
-				line-height: 1.1;
-			}
-			.title h1 {
-				margin: 0 0 0.25em 0;
-			}
-			.autor {
-				margin: 0 0 0.5em 0;
-				font-style: italic;
-				color: rgb(var(--gray));
-			}
-			.date {
-				margin-bottom: 0.5em;
-				color: rgb(var(--gray));
-				font-size: 0.9em;
-			}
-			.last-updated-on {
-				font-style: italic;
-			}
-			.etiquetas {
-				margin-top: 2em;
-				padding-top: 1em;
-				border-top: 1px solid rgb(var(--gray-light));
-				font-size: 0.9em;
-				color: rgb(var(--gray));
-			}
-			.etiqueta {
-				display: inline-block;
-				margin-right: 0.5em;
-			}
-		</style>
 	</head>
 
 	<body>
 		<Header />
-		<main>
-			<article>
-				<div class="hero-image">
-					{ilustracion && <Image width={1020} height={510} src={ilustracion} alt="" />}
-				</div>
+		<main class="page">
+			<article class="fabula">
+				{ilustracion && (
+					<figure class="hero-image">
+						<Image width={1200} height={600} src={ilustracion} alt="" />
+					</figure>
+				)}
+
+				<header class="title">
+					{/* Sunburst ornamental */}
+					<svg
+						class="ornament"
+						viewBox="0 0 80 40"
+						xmlns="http://www.w3.org/2000/svg"
+						aria-hidden="true"
+					>
+						<path d="M 20 38 A 20 20 0 0 1 60 38" fill="none" stroke="currentColor" stroke-width="1.2" />
+						<circle cx="40" cy="38" r="2.5" fill="currentColor" />
+						<line x1="40" y1="38" x2="40" y2="14" stroke="currentColor" stroke-width="0.8" />
+						<line x1="40" y1="38" x2="28" y2="17" stroke="currentColor" stroke-width="0.8" />
+						<line x1="40" y1="38" x2="52" y2="17" stroke="currentColor" stroke-width="0.8" />
+						<line x1="40" y1="38" x2="20" y2="24" stroke="currentColor" stroke-width="0.8" />
+						<line x1="40" y1="38" x2="60" y2="24" stroke="currentColor" stroke-width="0.8" />
+					</svg>
+
+					<h1>{titulo}</h1>
+
+					{resumen && <p class="resumen">{resumen}</p>}
+
+					<p class="autor">por <span>{autor}</span></p>
+					<p class="fecha">
+						<FormattedDate date={fecha} />
+						{fecha_actualizada && (
+							<span class="actualizada">
+								· actualizada el <FormattedDate date={fecha_actualizada} />
+							</span>
+						)}
+					</p>
+				</header>
+
+				<hr class="ornate" />
+
 				<div class="prose">
-					<div class="title">
-						<h1>{titulo}</h1>
-						<p class="autor">por {autor}</p>
-						<div class="date">
-							<FormattedDate date={fecha} />
-							{
-								fecha_actualizada && (
-									<div class="last-updated-on">
-										Actualizada el <FormattedDate date={fecha_actualizada} />
-									</div>
-								)
-							}
-						</div>
-						<hr />
-					</div>
 					<slot />
-					{etiquetas.length > 0 && (
-						<div class="etiquetas">
-							{etiquetas.map((e) => (
-								<span class="etiqueta">#{e}</span>
-							))}
-						</div>
-					)}
 				</div>
+
+				{etiquetas && etiquetas.length > 0 && (
+					<footer class="etiquetas" aria-label="Etiquetas">
+						{etiquetas.map((e) => (
+							<span class="etiqueta">#{e}</span>
+						))}
+					</footer>
+				)}
 			</article>
 		</main>
 		<Footer />
 	</body>
 </html>
+
+<style>
+	.fabula {
+		max-width: var(--measure);
+		margin-inline: auto;
+		padding-block: var(--space-2xl);
+	}
+	.hero-image {
+		margin: 0 0 var(--space-2xl);
+	}
+	.hero-image :global(img) {
+		display: block;
+		width: 100%;
+		height: auto;
+		border: var(--rule-hairline) solid var(--color-oro);
+	}
+	.title {
+		text-align: center;
+		margin-bottom: var(--space-xl);
+	}
+	.ornament {
+		display: block;
+		width: 80px;
+		height: 40px;
+		margin: 0 auto var(--space-md);
+		color: var(--color-oro);
+	}
+	.title h1 {
+		margin: 0 0 var(--space-md);
+		font-size: var(--fs-3xl);
+		text-wrap: balance;
+	}
+	.resumen {
+		font-family: var(--font-body);
+		font-style: italic;
+		font-size: var(--fs-lg);
+		line-height: var(--lh-snug);
+		color: var(--color-text-soft);
+		max-width: var(--measure-narrow);
+		margin: 0 auto var(--space-md);
+	}
+	.autor {
+		font-family: var(--font-display);
+		font-size: var(--fs-xs);
+		letter-spacing: var(--ls-widest);
+		text-transform: uppercase;
+		color: var(--color-oro-texto);
+		margin: 0;
+	}
+	.autor span {
+		font-weight: var(--fw-bold);
+	}
+	.fecha {
+		font-family: var(--font-body);
+		font-style: italic;
+		font-size: var(--fs-sm);
+		color: var(--color-text-soft);
+		margin: var(--space-2xs) 0 0;
+	}
+	.actualizada {
+		font-style: italic;
+	}
+	.prose :global(p) {
+		font-size: var(--fs-md);
+		line-height: var(--lh-relaxed);
+		margin-bottom: var(--space-md);
+		hyphens: auto;
+	}
+	.prose :global(p:first-of-type)::first-letter {
+		font-family: var(--font-display);
+		font-size: 3.5em;
+		float: left;
+		line-height: 0.85;
+		padding-right: 0.08em;
+		padding-top: 0.05em;
+		color: var(--color-oro-texto);
+	}
+	.etiquetas {
+		margin-top: var(--space-2xl);
+		padding-top: var(--space-md);
+		border-top: var(--rule-hairline) solid var(--color-oro);
+		display: flex;
+		flex-wrap: wrap;
+		gap: var(--space-xs);
+	}
+	.etiqueta {
+		font-family: var(--font-display);
+		font-size: var(--fs-3xs);
+		letter-spacing: var(--ls-wide);
+		text-transform: uppercase;
+		color: var(--color-esmeralda);
+	}
+</style>
