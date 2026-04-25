@@ -1,0 +1,135 @@
+/* ============================================================
+   El Fabulario · Design Tokens (Art-Déco)
+   Fase 2 · v1
+   ============================================================ */
+
+:root {
+  /* ---------- COLOR · paleta base ---------- */
+  --color-oro:        #C9A14A;   /* ornamentos, líneas, titulares ≥24px sobre negro */
+  --color-oro-texto:  #7A5F1F;   /* oro legible sobre marfil · 4.8:1 AA */
+  --color-esmeralda:  #0A5F3E;   /* acentos, autoría, enlaces secundarios */
+  --color-coral:      #D45B3C;   /* CTAs, énfasis ≥24px o sobre negro */
+  --color-zafiro:     #1C3A7A;   /* enlaces primarios, citas, énfasis */
+  --color-marfil:     #F0E5CE;   /* fondo primario */
+  --color-negro:      #1A1714;   /* texto primario, fondo invertido */
+
+  /* ---------- COLOR · alias semánticos ---------- */
+  /* Usa estos en los componentes, no los tokens de paleta. */
+  --color-bg:          var(--color-marfil);
+  --color-bg-invert:   var(--color-negro);
+  --color-text:        var(--color-negro);
+  --color-text-soft:   #4A413A;           /* 7.8:1 sobre marfil · AAA · secundario */
+  --color-text-invert: var(--color-marfil);
+  --color-link:        var(--color-zafiro);
+  --color-link-hover:  var(--color-esmeralda);
+  --color-rule:        var(--color-oro);  /* líneas y bordes ornamentales */
+  --color-accent:      var(--color-coral);
+
+  /* ---------- REGLAS DE USO WCAG ----------
+     AA = 4.5:1 (cuerpo) · AA large = 3:1 (≥18.66px bold o ≥24px regular) · AAA = 7:1
+
+     Sobre marfil:
+       Cuerpo, UI          → negro              14.4:1  AAA
+       Secundario          → zafiro / esmeralda 8.5 / 6.2  AAA/AA
+       Texto auxiliar      → text-soft          7.8:1   AAA
+       Dorado pequeño      → oro-texto          4.8:1   AA
+       Dorado decorativo   → oro (solo ≥24px o trazo)   1.9:1   FALLA texto pequeño
+       Coral               → solo ≥24px o CTA   3.2:1   AA large
+     Sobre negro:
+       Cuerpo              → marfil             14.4:1  AAA
+       Énfasis             → oro                 7.6:1  AA
+       Acento grande       → coral               4.6:1  AA
+       NO USAR             → esmeralda, zafiro (contraste insuficiente)
+     ─────────────────────────────────────── */
+
+  /* ---------- TIPOGRAFÍA ---------- */
+  --font-display: "Cinzel", "Trajan Pro", "Cormorant Garamond", Georgia, serif;
+  --font-body:    "Cormorant Garamond", "EB Garamond", Georgia, "Times New Roman", serif;
+  --font-mono:    ui-monospace, "SF Mono", "Cascadia Mono", Consolas, monospace;
+
+  /* Escala tipográfica · base 16px · ratio ~1.333 (perfect fourth)
+     Los pasos ≥lg son fluidos con clamp() entre viewport ~400 y ~1400px. */
+  --fs-3xs:  0.75rem;   /* 12px — solo metadatos mínimos */
+  --fs-2xs:  0.813rem;  /* 13px */
+  --fs-xs:   0.875rem;  /* 14px — captions */
+  --fs-sm:   0.938rem;  /* 15px */
+  --fs-base: 1rem;      /* 16px */
+  --fs-md:   1.125rem;  /* 18px — cuerpo preferido en fábulas */
+  --fs-lg:   clamp(1.25rem,  1.15rem + 0.5vw, 1.5rem);      /* 20–24 */
+  --fs-xl:   clamp(1.5rem,   1.30rem + 1.0vw, 2rem);        /* 24–32 */
+  --fs-2xl:  clamp(1.875rem, 1.50rem + 1.5vw, 2.625rem);    /* 30–42 */
+  --fs-3xl:  clamp(2.25rem,  1.75rem + 2.5vw, 3.5rem);      /* 36–56 */
+  --fs-4xl:  clamp(2.75rem,  2.00rem + 4.0vw, 4.75rem);     /* 44–76 · hero */
+
+  --fw-regular:  400;
+  --fw-semibold: 600;
+  --fw-bold:     700;
+
+  --lh-tight:    1.1;    /* titulares grandes */
+  --lh-snug:     1.3;    /* titulares medios */
+  --lh-normal:   1.55;   /* cuerpo general */
+  --lh-relaxed:  1.75;   /* lectura larga (fábulas) */
+
+  /* Tracking — Art-Déco pide generosidad en mayúsculas */
+  --ls-normal:   0;
+  --ls-wide:     0.05em;
+  --ls-wider:    0.1em;
+  --ls-widest:   0.2em;
+
+  /* ---------- ESPACIADO · base 4 ---------- */
+  --space-3xs:  0.125rem;  /*  2px */
+  --space-2xs:  0.25rem;   /*  4px */
+  --space-xs:   0.5rem;    /*  8px */
+  --space-sm:   0.75rem;   /* 12px */
+  --space-md:   1rem;      /* 16px */
+  --space-lg:   1.5rem;    /* 24px */
+  --space-xl:   2rem;      /* 32px */
+  --space-2xl:  3rem;      /* 48px */
+  --space-3xl:  4rem;      /* 64px */
+  --space-4xl:  6rem;      /* 96px */
+  --space-5xl:  8rem;      /* 128px */
+
+  /* Padding mínimo para contenedores con marco ornamental.
+     Evita el solapamiento marco/contenido señalado en el moodboard. */
+  --space-container:    var(--space-xl);    /* 32px · mínimo dentro de marco */
+  --space-container-lg: var(--space-2xl);   /* 48px · heroes, cubiertas */
+
+  /* ---------- LAYOUT ---------- */
+  --measure-narrow:  36rem;   /* 576px — ideal para una fábula corta */
+  --measure:         42rem;   /* 672px — cuerpo estándar */
+  --measure-wide:    56rem;   /* 896px — artículos largos */
+  --page-max:        72rem;   /* 1152px — ancho máximo del sitio */
+  --gutter:          clamp(1rem, 3vw, 2rem);
+
+  /* ---------- RADIOS ---------- */
+  /* Art-Déco es geométrico. Por defecto 0; los pocos radios son discretos. */
+  --radius-none: 0;
+  --radius-xs:   2px;
+  --radius-sm:   4px;
+
+  /* ---------- GROSORES ORNAMENTALES ---------- */
+  --rule-hairline: 0.5px;
+  --rule-thin:     1px;
+  --rule-medium:   1.5px;
+  --rule-thick:    2.5px;
+
+  /* ---------- TRANSICIONES ---------- */
+  --ease-standard: cubic-bezier(0.2, 0, 0, 1);
+  --dur-fast: 120ms;
+  --dur-base: 200ms;
+  --dur-slow: 400ms;
+
+  /* ---------- Z-INDEX ---------- */
+  --z-base:   1;
+  --z-raised: 10;
+  --z-nav:    100;
+  --z-modal:  1000;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  :root {
+    --dur-fast: 1ms;
+    --dur-base: 1ms;
+    --dur-slow: 1ms;
+  }
+}

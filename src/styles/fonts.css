@@ -1,0 +1,206 @@
+/* ============================================================
+   El Fabulario · Tipografía global
+   Requiere: @fontsource/cinzel (400, 700)
+             @fontsource/cormorant-garamond (400, 400-italic, 600)
+   Importar los CSS de fontsource desde Layout.astro ANTES
+   de este archivo para que las reglas @font-face estén disponibles.
+   ============================================================ */
+
+html {
+  font-family: var(--font-body);
+  font-size: 100%;                 /* respeta la preferencia del usuario */
+  line-height: var(--lh-normal);
+  color: var(--color-text);
+  background: var(--color-bg);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
+  font-feature-settings: "kern", "liga", "onum";  /* numerales minúsculos en cuerpo */
+}
+
+body {
+  margin: 0;
+  font-size: var(--fs-md);         /* 18px de cuerpo · cómodo para fábulas */
+  line-height: var(--lh-relaxed);
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-display);
+  font-weight: var(--fw-bold);
+  line-height: var(--lh-tight);
+  letter-spacing: var(--ls-wide);
+  margin: 0 0 var(--space-md);
+  color: var(--color-text);
+  text-wrap: balance;              /* evita huérfanas en titulares */
+}
+
+h1 {
+  font-size: var(--fs-3xl);
+  letter-spacing: var(--ls-wider);
+  text-transform: uppercase;       /* Cinzel es mayúsculas-first */
+}
+
+h2 {
+  font-size: var(--fs-2xl);
+  letter-spacing: var(--ls-wide);
+  text-transform: uppercase;
+}
+
+h3 {
+  font-size: var(--fs-xl);
+  letter-spacing: var(--ls-wide);
+}
+
+h4 {
+  font-size: var(--fs-lg);
+  line-height: var(--lh-snug);
+}
+
+h5 {
+  font-size: var(--fs-md);
+  font-weight: var(--fw-semibold);
+  line-height: var(--lh-snug);
+}
+
+h6 {
+  font-size: var(--fs-base);
+  font-weight: var(--fw-semibold);
+  text-transform: uppercase;
+  letter-spacing: var(--ls-widest);
+}
+
+p {
+  margin: 0 0 var(--space-md);
+  max-width: var(--measure);
+  text-wrap: pretty;               /* mejor rag en párrafos cortos */
+  hyphens: auto;
+}
+
+/* Énfasis clásico en cuerpo serif: cursiva de verdad, no fake-italic */
+em, i, cite {
+  font-style: italic;
+}
+
+strong, b {
+  font-weight: var(--fw-semibold);
+}
+
+small {
+  font-size: var(--fs-xs);
+  color: var(--color-text-soft);
+}
+
+/* ---------- Enlaces ---------- */
+a {
+  color: var(--color-link);
+  text-decoration-thickness: 0.5px;
+  text-underline-offset: 0.18em;
+  transition: color var(--dur-base) var(--ease-standard);
+}
+
+a:hover,
+a:focus-visible {
+  color: var(--color-link-hover);
+}
+
+a:focus-visible {
+  outline: 2px solid var(--color-link);
+  outline-offset: 3px;
+  border-radius: var(--radius-xs);
+}
+
+/* ---------- Citas ---------- */
+blockquote {
+  margin: var(--space-xl) 0;
+  padding-left: var(--space-lg);
+  border-left: var(--rule-medium) solid var(--color-oro);
+  font-style: italic;
+  font-size: var(--fs-lg);
+  line-height: var(--lh-snug);
+  color: var(--color-text-soft);
+  max-width: var(--measure-narrow);
+}
+
+blockquote cite {
+  display: block;
+  margin-top: var(--space-sm);
+  font-size: var(--fs-sm);
+  font-style: normal;
+  letter-spacing: var(--ls-wide);
+  color: var(--color-esmeralda);
+}
+
+/* ---------- Listas ---------- */
+ul, ol {
+  margin: 0 0 var(--space-md);
+  padding-left: var(--space-lg);
+  max-width: var(--measure);
+}
+
+li + li {
+  margin-top: var(--space-2xs);
+}
+
+/* ---------- Código (raro en un sitio literario, pero por si acaso) ---------- */
+code, kbd, samp, pre {
+  font-family: var(--font-mono);
+  font-size: 0.9em;
+}
+
+pre {
+  padding: var(--space-md);
+  background: var(--color-negro);
+  color: var(--color-marfil);
+  overflow-x: auto;
+  line-height: var(--lh-normal);
+}
+
+/* ---------- Reglas horizontales ornamentales ---------- */
+hr {
+  border: 0;
+  border-top: var(--rule-hairline) solid var(--color-oro);
+  margin: var(--space-2xl) auto;
+  max-width: var(--measure);
+}
+
+/* Variante con doble línea paralela — para separar secciones mayores */
+hr.ornate {
+  position: relative;
+  border: 0;
+  height: 7px;
+  max-width: var(--measure);
+  background:
+    linear-gradient(var(--color-oro), var(--color-oro)) top / 100% 1.5px no-repeat,
+    linear-gradient(var(--color-oro), var(--color-oro)) bottom / 100% 0.5px no-repeat;
+}
+
+/* ---------- Selección ---------- */
+::selection {
+  background: var(--color-oro);
+  color: var(--color-negro);
+}
+
+/* ---------- Utilidades tipográficas ---------- */
+.font-display { font-family: var(--font-display); }
+.font-body    { font-family: var(--font-body); }
+
+.caps-sm {
+  font-family: var(--font-display);
+  text-transform: uppercase;
+  letter-spacing: var(--ls-widest);
+  font-size: var(--fs-xs);
+  font-weight: var(--fw-bold);
+}
+
+.italic { font-style: italic; }
+.balance { text-wrap: balance; }
+.pretty  { text-wrap: pretty; }
+
+/* Accesibilidad: solo visible para lectores de pantalla */
+.sr-only {
+  position: absolute;
+  width: 1px; height: 1px;
+  padding: 0; margin: -1px;
+  overflow: hidden; clip: rect(0,0,0,0);
+  white-space: nowrap; border: 0;
+}
