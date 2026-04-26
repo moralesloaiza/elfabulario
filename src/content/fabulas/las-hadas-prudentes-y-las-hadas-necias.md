@@ -1,0 +1,23 @@
+---
+titulo: "Las hadas prudentes y las hadas necias"
+fecha: 2011-11-10
+etiquetas: ["hada", "hadas", "prudente", "necio", "necia", "prudentes", "budismo", "árbol", "árboles", "bosque", "selva", "solo", "unión", "unidos"]
+borrador: false
+autor: "Anónimo"
+curador: "Don Alejandro"
+es_seudonimo: true
+nombre_real: "Alejandro Morales Loaiza"
+nota_curador: "Atribución pendiente de verificar. Procedente del archivo de elfabulario.tumblr.com."
+---
+
+Cuando las hadas de los árboles vinieron a la tierra, vagaron por montes y valles en busca de morada; unas eran prudentes y otras necias.
+
+Huyeron las primeras de los árboles aislados y solitarios, en medio de los campos labrados, y prefirieron ir a vivir en una espesa selva. Pero las hadas necias se dijeron « ¿Por qué vivir todas juntas y solas en el bosque? Vayamos a los árboles que crecen cerca de los poblados; allí los hombres nos obsequiarán con presentes ».
+
+Mas he aquí que una noche se desencadenó tan furiosa tormenta, que el vendaval arrancó de cuajo los árboles, dejando a las hadas insensatas sin morada. Entre tanto, los apiñados árboles de la selva resistieron la furia de la tempestad y ni uno solo sufrió daño.
+
+—Los hombres deben estar unidos de igual modo que los árboles del bosque— dijeron las hadas sensatas a las necias. Solo el árbol solitario en los desiertos campos o desnudos montes es injuriado por la tempestad.
+
+*La unión es la fuerza.*
+
+*Fábula atribuida a **Buda**.*

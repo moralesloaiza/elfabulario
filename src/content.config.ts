@@ -39,4 +39,22 @@ const fabulas = defineCollection({
 		}),
 });
 
-export const collections = { fabulas };
+// Colección de entradas: bitácora del blog (anuncios, hitos, biografías de
+// colaboradores). No tienen autor histórico ni etiquetas; el curador firma.
+const entradas = defineCollection({
+	loader: glob({ base: './src/content/entradas', pattern: '**/*.{md,mdx}' }),
+	schema: ({ image }) =>
+		z.object({
+			titulo: z.string(),
+			fecha: z.coerce.date(),
+			resumen: z.string().optional(),
+			ilustracion: z.optional(image()),
+			borrador: z.boolean().default(false),
+
+			curador: z.string(),
+			es_seudonimo: z.boolean().default(false),
+			nombre_real: z.string().optional(),
+		}),
+});
+
+export const collections = { fabulas, entradas };

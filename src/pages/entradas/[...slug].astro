@@ -1,0 +1,114 @@
+---
+import { Image } from 'astro:assets';
+import { type CollectionEntry, getCollection, render } from 'astro:content';
+import BaseHead from '../../components/BaseHead.astro';
+import Footer from '../../components/Footer.astro';
+import FormattedDate from '../../components/FormattedDate.astro';
+import Header from '../../components/Header.astro';
+import Sol from '../../components/ornaments/Sol.astro';
+
+export async function getStaticPaths() {
+	const entradas = await getCollection('entradas', ({ data }) => !data.borrador);
+	return entradas.map((entrada) => ({
+		params: { slug: entrada.id },
+		props: entrada,
+	}));
+}
+
+type Props = CollectionEntry<'entradas'>;
+const entrada = Astro.props;
+const { titulo, fecha, ilustracion, curador, resumen } = entrada.data;
+const { Content } = await render(entrada);
+---
+
+<html lang="es">
+	<head>
+		<BaseHead title={titulo} description={resumen ?? titulo} />
+	</head>
+	<body>
+		<Header />
+		<main class="page">
+			<article class="entrada">
+				{ilustracion && (
+					<figure class="hero-image">
+						<Image width={1200} height={800} src={ilustracion} alt="" />
+					</figure>
+				)}
+
+				<header class="title">
+					<Sol width="80px" />
+					<h1>{titulo}</h1>
+					<p class="fecha">
+						<FormattedDate date={fecha} />
+					</p>
+				</header>
+
+				<hr class="ornate" />
+
+				<div class="prose">
+					<Content />
+				</div>
+
+				{curador && (
+					<p class="curaduria">
+						Por <strong>{curador}</strong>.
+					</p>
+				)}
+			</article>
+		</main>
+		<Footer />
+	</body>
+</html>
+
+<style>
+	.entrada {
+		max-width: var(--measure);
+		margin-inline: auto;
+		padding-block: var(--space-2xl);
+	}
+	.hero-image {
+		margin: 0 0 var(--space-2xl);
+	}
+	.hero-image :global(img) {
+		display: block;
+		width: 100%;
+		height: auto;
+		border: var(--rule-hairline) solid var(--color-oro);
+	}
+	.title {
+		text-align: center;
+		margin-bottom: var(--space-xl);
+	}
+	.title h1 {
+		margin: 0 0 var(--space-md);
+		font-size: var(--fs-3xl);
+		text-wrap: balance;
+	}
+	.fecha {
+		font-family: var(--font-body);
+		font-style: italic;
+		font-size: var(--fs-sm);
+		color: var(--color-text-soft);
+		margin: 0;
+	}
+	.prose :global(p) {
+		font-size: var(--fs-md);
+		line-height: var(--lh-relaxed);
+		margin-bottom: var(--space-md);
+		hyphens: auto;
+	}
+	.curaduria {
+		text-align: center;
+		font-family: var(--font-body);
+		font-style: italic;
+		font-size: var(--fs-sm);
+		color: var(--color-text-soft);
+		margin-top: var(--space-2xl);
+		padding-top: var(--space-md);
+		border-top: var(--rule-hairline) solid var(--color-oro);
+	}
+	.curaduria strong {
+		font-style: normal;
+		color: var(--color-text);
+	}
+</style>

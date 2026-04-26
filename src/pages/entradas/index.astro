@@ -6,9 +6,9 @@ import Footer from '../../components/Footer.astro';
 import FormattedDate from '../../components/FormattedDate.astro';
 import Header from '../../components/Header.astro';
 import Sol from '../../components/ornaments/Sol.astro';
-import { SITE_DESCRIPTION, SITE_TITLE } from '../../consts';
+import { SITE_TITLE } from '../../consts';
 
-const fabulas = (await getCollection('fabulas', ({ data }) => !data.borrador)).sort(
+const entradas = (await getCollection('entradas', ({ data }) => !data.borrador)).sort(
 	(a, b) => b.data.fecha.valueOf() - a.data.fecha.valueOf(),
 );
 ---
@@ -16,43 +16,45 @@ const fabulas = (await getCollection('fabulas', ({ data }) => !data.borrador)).s
 <!doctype html>
 <html lang="es">
 	<head>
-		<BaseHead title={`Fábulas · ${SITE_TITLE}`} description={SITE_DESCRIPTION} />
+		<BaseHead
+			title={`Bitácora · ${SITE_TITLE}`}
+			description="Anuncios, hitos y notas del Fabulario."
+		/>
 	</head>
 	<body>
 		<Header />
-		<main class="page indice">
+		<main class="page bitacora">
 			<header class="title">
 				<Sol />
-				<h1>Fábulas</h1>
-				<p class="subtitulo">El catálogo completo, de la más reciente a la más antigua.</p>
+				<h1>Bitácora</h1>
+				<p class="subtitulo">Anuncios, hitos y notas del Fabulario.</p>
 			</header>
 
 			<hr class="ornate" />
 
-			{fabulas.length === 0 && (
-				<p class="vacio">Aún no hay fábulas publicadas.</p>
+			{entradas.length === 0 && (
+				<p class="vacio">Aún no hay entradas en la bitácora.</p>
 			)}
 
-			{fabulas.length > 0 && (
+			{entradas.length > 0 && (
 				<ul class="lista">
-					{fabulas.map((fabula, idx) => (
-						<li class:list={['item', { destacada: idx === 0 }]}>
-							<a href={`/fabulas/${fabula.id}/`} class="item-link">
-								{fabula.data.ilustracion && (
+					{entradas.map((entrada) => (
+						<li class="item">
+							<a href={`/entradas/${entrada.id}/`} class="item-link">
+								{entrada.data.ilustracion && (
 									<figure class="item-img">
 										<Image
-											width={idx === 0 ? 1200 : 600}
-											height={idx === 0 ? 800 : 400}
-											src={fabula.data.ilustracion}
+											width={600}
+											height={400}
+											src={entrada.data.ilustracion}
 											alt=""
 										/>
 									</figure>
 								)}
 								<div class="item-meta">
-									<h2 class="item-titulo">{fabula.data.titulo}</h2>
-									<p class="item-autor">por {fabula.data.autor}</p>
+									<h2 class="item-titulo">{entrada.data.titulo}</h2>
 									<p class="item-fecha">
-										<FormattedDate date={fabula.data.fecha} />
+										<FormattedDate date={entrada.data.fecha} />
 									</p>
 								</div>
 							</a>
@@ -66,10 +68,9 @@ const fabulas = (await getCollection('fabulas', ({ data }) => !data.borrador)).s
 </html>
 
 <style>
-	.indice {
+	.bitacora {
 		padding-block: var(--space-2xl);
 	}
-
 	.title {
 		text-align: center;
 		margin-bottom: var(--space-md);
@@ -86,14 +87,12 @@ const fabulas = (await getCollection('fabulas', ({ data }) => !data.borrador)).s
 		max-width: var(--measure-narrow);
 		margin: 0 auto;
 	}
-
 	.vacio {
 		text-align: center;
 		font-style: italic;
 		color: var(--color-text-soft);
 		margin-top: var(--space-2xl);
 	}
-
 	.lista {
 		list-style: none;
 		padding: 0;
@@ -103,11 +102,6 @@ const fabulas = (await getCollection('fabulas', ({ data }) => !data.borrador)).s
 		gap: var(--space-2xl);
 		max-width: none;
 	}
-	.item.destacada {
-		grid-column: 1 / -1;
-		text-align: center;
-	}
-
 	.item-link {
 		display: block;
 		text-decoration: none;
@@ -116,11 +110,6 @@ const fabulas = (await getCollection('fabulas', ({ data }) => !data.borrador)).s
 	.item-img {
 		margin: 0 0 var(--space-md);
 		overflow: hidden;
-	}
-	.item.destacada .item-img {
-		max-width: var(--measure-wide);
-		margin-inline: auto;
-		margin-bottom: var(--space-lg);
 	}
 	.item-img :global(img) {
 		display: block;
@@ -133,7 +122,6 @@ const fabulas = (await getCollection('fabulas', ({ data }) => !data.borrador)).s
 	.item-link:focus-visible .item-img :global(img) {
 		transform: scale(1.02);
 	}
-
 	.item-titulo {
 		font-family: var(--font-display);
 		font-size: var(--fs-lg);
@@ -144,21 +132,9 @@ const fabulas = (await getCollection('fabulas', ({ data }) => !data.borrador)).s
 		color: var(--color-text);
 		text-transform: none;
 	}
-	.item.destacada .item-titulo {
-		font-size: var(--fs-2xl);
-		text-transform: uppercase;
-		letter-spacing: var(--ls-wider);
-	}
 	.item-link:hover .item-titulo,
 	.item-link:focus-visible .item-titulo {
 		color: var(--color-oro-texto);
-	}
-	.item-autor {
-		font-family: var(--font-body);
-		font-style: italic;
-		font-size: var(--fs-sm);
-		color: var(--color-text-soft);
-		margin: 0;
 	}
 	.item-fecha {
 		font-family: var(--font-display);
@@ -168,14 +144,10 @@ const fabulas = (await getCollection('fabulas', ({ data }) => !data.borrador)).s
 		color: var(--color-esmeralda);
 		margin: var(--space-2xs) 0 0;
 	}
-
 	@media (max-width: 720px) {
 		.lista {
 			grid-template-columns: 1fr;
 			gap: var(--space-xl);
-		}
-		.item.destacada .item-titulo {
-			font-size: var(--fs-xl);
 		}
 	}
 </style>

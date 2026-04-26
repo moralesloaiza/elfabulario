@@ -9,12 +9,35 @@ import Sol from '../components/ornaments/Sol.astro';
 
 type Props = CollectionEntry<'fabulas'>['data'];
 
-const { titulo, resumen, autor, fecha, fecha_actualizada, ilustracion, etiquetas } = Astro.props;
+const {
+	titulo,
+	resumen,
+	autor,
+	autor_nacionalidad,
+	autor_nacimiento,
+	autor_muerte,
+	autor_siglo,
+	curador,
+	fecha,
+	fecha_actualizada,
+	ilustracion,
+	etiquetas,
+} = Astro.props;
+
+// Construye una línea secundaria con nacionalidad y época del autor.
+// Ej.: "español · 1745–1801"  o  "griego · siglo VI a.C."
+const epoca =
+	autor_nacimiento && autor_muerte
+		? `${autor_nacimiento}–${autor_muerte}`
+		: autor_siglo
+			? `siglo ${autor_siglo}`
+			: null;
+const datosAutor = [autor_nacionalidad, epoca].filter(Boolean).join(' · ');
 ---
 
 <html lang="es">
 	<head>
-		<BaseHead title={titulo} description={resumen} />
+		<BaseHead title={titulo} description={resumen ?? titulo} />
 	</head>
 
 	<body>
@@ -23,7 +46,7 @@ const { titulo, resumen, autor, fecha, fecha_actualizada, ilustracion, etiquetas
 			<article class="fabula">
 				{ilustracion && (
 					<figure class="hero-image">
-						<Image width={1200} height={600} src={ilustracion} alt="" />
+						<Image width={1200} height={800} src={ilustracion} alt="" />
 					</figure>
 				)}
 
@@ -35,6 +58,8 @@ const { titulo, resumen, autor, fecha, fecha_actualizada, ilustracion, etiquetas
 					{resumen && <p class="resumen">{resumen}</p>}
 
 					<p class="autor">por <span>{autor}</span></p>
+					{datosAutor && <p class="autor-meta">{datosAutor}</p>}
+
 					<p class="fecha">
 						<FormattedDate date={fecha} />
 						{fecha_actualizada && (
@@ -50,6 +75,12 @@ const { titulo, resumen, autor, fecha, fecha_actualizada, ilustracion, etiquetas
 				<div class="prose">
 					<slot />
 				</div>
+
+				{curador && (
+					<p class="curaduria">
+						Esta fábula la trae al Fabulario <strong>{curador}</strong>.
+					</p>
+				)}
 
 				{etiquetas && etiquetas.length > 0 && (
 					<footer class="etiquetas" aria-label="Etiquetas">
@@ -97,6 +128,7 @@ const { titulo, resumen, autor, fecha, fecha_actualizada, ilustracion, etiquetas
 		max-width: var(--measure-narrow);
 		margin: 0 auto var(--space-md);
 	}
+	/* "por NOMBRE DEL AUTOR" — más pequeño que el título, en versalitas */
 	.autor {
 		font-family: var(--font-display);
 		font-size: var(--fs-xs);
@@ -107,6 +139,14 @@ const { titulo, resumen, autor, fecha, fecha_actualizada, ilustracion, etiquetas
 	}
 	.autor span {
 		font-weight: var(--fw-bold);
+	}
+	/* nacionalidad · años, en cursiva discreta debajo del autor */
+	.autor-meta {
+		font-family: var(--font-body);
+		font-style: italic;
+		font-size: var(--fs-sm);
+		color: var(--color-text-soft);
+		margin: var(--space-3xs) 0 0;
 	}
 	.fecha {
 		font-family: var(--font-body);
@@ -133,13 +173,27 @@ const { titulo, resumen, autor, fecha, fecha_actualizada, ilustracion, etiquetas
 		padding-top: 0.05em;
 		color: var(--color-oro-texto);
 	}
-	.etiquetas {
+	/* Pie discreto con la firma del curador */
+	.curaduria {
+		text-align: center;
+		font-family: var(--font-body);
+		font-style: italic;
+		font-size: var(--fs-sm);
+		color: var(--color-text-soft);
 		margin-top: var(--space-2xl);
 		padding-top: var(--space-md);
 		border-top: var(--rule-hairline) solid var(--color-oro);
+	}
+	.curaduria strong {
+		font-style: normal;
+		color: var(--color-text);
+	}
+	.etiquetas {
+		margin-top: var(--space-xl);
 		display: flex;
 		flex-wrap: wrap;
 		gap: var(--space-xs);
+		justify-content: center;
 	}
 	.etiqueta {
 		font-family: var(--font-display);

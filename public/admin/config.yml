@@ -58,3 +58,24 @@ collections:
       # --- Cuerpo y nota ---
       - { name: "body", label: "Cuerpo de la fábula", widget: "markdown" }
       - { name: "nota_curador", label: "Nota del curador (opcional)", widget: "markdown", required: false, hint: "Comentarios adicionales del curador. Aparece como sección aparte tras la fábula." }
+
+  - name: "entradas"
+    label: "Entradas"
+    label_singular: "Entrada"
+    folder: "src/content/entradas"
+    create: true
+    slug: "{{slug}}"
+    extension: "md"
+    format: "frontmatter"
+    summary: "{{titulo}} ({{fecha | date('YYYY-MM-DD')}})"
+    description: "Bitácora del blog: anuncios, hitos, biografías de colaboradores."
+    fields:
+      - { name: "titulo", label: "Título", widget: "string" }
+      - { name: "fecha", label: "Fecha de publicación", widget: "datetime", format: "YYYY-MM-DD", date_format: "YYYY-MM-DD", time_format: false }
+      - { name: "resumen", label: "Resumen", widget: "text", required: false }
+      - { name: "ilustracion", label: "Ilustración", widget: "image", required: false }
+      - { name: "borrador", label: "Borrador", widget: "boolean", default: false }
+      - { name: "curador", label: "Curador (firma pública)", widget: "string" }
+      - { name: "es_seudonimo", label: "¿La firma es un seudónimo?", widget: "boolean", default: false }
+      - { name: "nombre_real", label: "Nombre real (privado)", widget: "string", required: false }
+      - { name: "body", label: "Cuerpo", widget: "markdown" }
