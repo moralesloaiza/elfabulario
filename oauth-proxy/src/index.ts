@@ -81,13 +81,15 @@ function renderResult(
 <body>
 <script>
 (function () {
-  function send(target) {
-    if (window.opener) window.opener.postMessage(${JSON.stringify(message)}, target);
+  function receiveMessage(e) {
+    if (e.origin !== ${JSON.stringify(siteUrl)}) return;
+    if (e.data !== "authorizing:github") return;
+    window.opener.postMessage(${JSON.stringify(message)}, e.origin);
+    window.removeEventListener("message", receiveMessage, false);
   }
-  window.addEventListener("message", function (e) {
-    if (e.data === "authorizing:github") send(e.origin);
-  }, false);
-  send(${JSON.stringify(siteUrl)});
+  window.addEventListener("message", receiveMessage, false);
+  // Anuncio inicial al opener (Decap) — wildcard porque aún no hemos verificado el origin.
+  window.opener.postMessage("authorizing:github", "*");
 })();
 </script>
 <p>Autenticación completa. Esta ventana se cerrará automáticamente.</p>
