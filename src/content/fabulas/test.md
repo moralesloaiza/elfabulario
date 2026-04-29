@@ -2,6 +2,7 @@
 titulo: Test
 resumen: ""
 fecha: 2026-04-29
+ilustracion: /src/assets/uploads/2023_wallpapers_ohsolovelyblog_nocals5.jpg
 etiquetas:
   - samaniego
   - español
