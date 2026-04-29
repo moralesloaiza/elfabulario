@@ -6,12 +6,8 @@ backend:
   name: github
   repo: moralesloaiza/elfabulario
   branch: main
-  # Flujo editorial: las ediciones pasan por pull request antes de publicarse.
-  # Útil cuando haya colaboradores que no sean el admin.
-  open_authoring: false
-
-# URL del proxy OAuth (ver README, Step 4). Reemplazar al desplegar.
-# base_url: https://auth.elfabulario.com
+  base_url: https://auth.elfabulario.com
+  auth_endpoint: /auth
 
 # Dónde Decap sube las imágenes
 media_folder: "src/assets/uploads"
