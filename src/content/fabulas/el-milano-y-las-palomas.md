@@ -1,5 +1,5 @@
 ---
-titulo: "El Milano y las Palomas"
+titulo: "El milano y las palomas"
 fecha: 2025-11-12
 ilustracion: "../../assets/imagenes/fabulas/el-milano-y-las-palomas.png"
 etiquetas: ["milano", "palomas", "poder", "tirania", "desdicha", "reino"]

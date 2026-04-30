@@ -1,5 +1,5 @@
 ---
-titulo: "El ciervo en la fuente*"
+titulo: "El ciervo en la fuente"
 fecha: 2025-06-17
 ilustracion: "../../assets/imagenes/fabulas/el-ciervo-en-la-fuente.png"
 etiquetas: []

@@ -36,9 +36,9 @@ y la corneja astuta,<br>
 por autora de aquella maravilla,<br>
 juntamente comieron la tortilla.
 
-***¿Qué podrá resistirse a un poderoso,<br>
-guiado de un consejo malicioso***?<br>
-***De estos tales se aparta el que es prudente;<br>
+*¿Qué podrá resistirse a un poderoso,<br>
+guiado de un consejo malicioso?<br>
+De estos tales se aparta el que es prudente;<br>
 y así, por escaparse de esta gente,<br>
 las descendientes de la tal tortuga<br>
-a cuevas ignoradas hacen fu***ga.
+a cuevas ignoradas hacen fuga.*

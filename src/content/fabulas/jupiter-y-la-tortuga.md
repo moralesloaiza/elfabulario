@@ -1,5 +1,5 @@
 ---
-titulo: "Júpiter y la Tortuga"
+titulo: "Júpiter y la tortuga"
 fecha: 2025-11-11
 ilustracion: "../../assets/imagenes/fabulas/jupiter-y-la-tortuga.png"
 etiquetas: ["jupiter", "tortuga", "retiro", "pereza", "deber", "ironia"]

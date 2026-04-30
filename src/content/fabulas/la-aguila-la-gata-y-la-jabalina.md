@@ -1,5 +1,5 @@
 ---
-titulo: "La águila, la gata y la jabalina*"
+titulo: "La águila, la gata y la jabalina"
 fecha: 2025-07-15
 ilustracion: "../../assets/imagenes/fabulas/la-aguila-la-gata-y-la-jabalina.png"
 etiquetas: ["siglo xviii", "gata astuta", "águila y jabalina", "amistad falsa", "chisme y engaño"]

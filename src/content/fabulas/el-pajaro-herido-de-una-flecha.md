@@ -1,5 +1,5 @@
 ---
-titulo: "El Pájaro herido de una flecha"
+titulo: "El pájaro herido de una flecha"
 fecha: 2025-11-09
 ilustracion: "../../assets/imagenes/fabulas/el-pajaro-herido-de-una-flecha.png"
 etiquetas: ["pajaro", "flecha", "naturaleza", "guerra", "inocencia", "crueldad"]
