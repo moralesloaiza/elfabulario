@@ -43,7 +43,7 @@
      ─────────────────────────────────────── */
 
   /* ---------- TIPOGRAFÍA ---------- */
-  --font-display: "Cinzel", "Trajan Pro", "Cormorant Garamond", Georgia, serif;
+     --font-display: "Cinzel", "Trajan Pro", "Copperplate", "Copperplate Gothic", "Optima", serif;
   --font-body:    "Cormorant Garamond", "EB Garamond", Georgia, "Times New Roman", serif;
   --font-mono:    ui-monospace, "SF Mono", "Cascadia Mono", Consolas, monospace;
 
