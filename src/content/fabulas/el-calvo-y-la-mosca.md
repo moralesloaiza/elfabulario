@@ -13,30 +13,30 @@ es_seudonimo: true
 nombre_real: "Alejandro Morales Loaiza"
 ---
 
-Picaba impertinente<br>
-en la espaciosa calva de un anciano<br>
-una mosca insolente.<br>
-Quiso matarla, levantó la mano,<br>
-tiró un cachete, pero fuese salva,<br>
+Picaba impertinente
+en la espaciosa calva de un anciano
+una mosca insolente.
+Quiso matarla, levantó la mano,
+tiró un cachete, pero fuese salva,
 hiriendo el golpe la redonda calva.
 
-Con risa desmedida<br>
-la mosca prorrumpió: —Calvo maldito,<br>
-si quitarme la vida<br>
-intentaste por un leve delito,<br>
-¿a qué pena condenas a tu brazo,<br>
+Con risa desmedida
+la mosca prorrumpió: —Calvo maldito,
+si quitarme la vida
+intentaste por un leve delito,
+¿a qué pena condenas a tu brazo,
 bárbaro ejecutor de tal porrazo?
 
-—Al que obra con malicia,<br>
-le respondió el varón prudentemente,<br>
-rigurosa justicia<br>
-debe dar el castigo conveniente,<br>
-y es bien ejercitarse la clemencia<br>
+—Al que obra con malicia,
+le respondió el varón prudentemente,
+rigurosa justicia
+debe dar el castigo conveniente,
+y es bien ejercitarse la clemencia
 en el que peca por inadvertencia.
 
-Sabe, mosca villana,<br>
-que coteja el agravio recibido<br>
-la condición humana,<br>
-según la mano de donde ha venido.<br>
-*Que el grado de la ofensa tanto asciende,<br>
+Sabe, mosca villana,
+que coteja el agravio recibido
+la condición humana,
+según la mano de donde ha venido.
+*Que el grado de la ofensa tanto asciende,
 cuanto sea más vil aquel que ofend*e.

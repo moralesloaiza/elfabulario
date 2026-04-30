@@ -13,34 +13,34 @@ es_seudonimo: true
 nombre_real: "Alejandro Morales Loaiza"
 ---
 
-Una zorra se empeña<br>
-en dar una comida a la cigüeña.<br>
-La convidó con tales expresiones,<br>
-que anunciaban sin duda provisiones<br>
-de lo más excelente y exquisito.<br>
-Acepta alegre, va con apetito;<br>
-pero encontró en la mesa solamente<br>
-jigote claro sobre chata fuente.<br>
-En vano a la comida picoteaba,<br>
-pues era, para el guiso que miraba,<br>
-inútil tenedor su largo pico.<br>
-La zorra con la lengua y el hocico<br>
-limpió tan bien su fuente, que pudiera<br>
-servir de fregatriz si a Holanda fuera.<br>
-Mas de allí a poco tiempo, convidada<br>
-de la cigüeña, halla preparada<br>
-una redoma de jigote llena:<br>
-Allí fue su aflicción, allí su pena.<br>
-El hocico goloso al punto asoma<br>
-al cuello de la hidrópica redoma,<br>
-mas en vano, pues era tan estrecho,<br>
-cual si por la cigüeña fuese hecho.<br>
-Envidiosa de ver que a conveniencia<br>
-chupaba la del pico a su presencia,<br>
-vuelve, tienta, discurre,<br>
+Una zorra se empeña
+en dar una comida a la cigüeña.
+La convidó con tales expresiones,
+que anunciaban sin duda provisiones
+de lo más excelente y exquisito.
+Acepta alegre, va con apetito;
+pero encontró en la mesa solamente
+jigote claro sobre chata fuente.
+En vano a la comida picoteaba,
+pues era, para el guiso que miraba,
+inútil tenedor su largo pico.
+La zorra con la lengua y el hocico
+limpió tan bien su fuente, que pudiera
+servir de fregatriz si a Holanda fuera.
+Mas de allí a poco tiempo, convidada
+de la cigüeña, halla preparada
+una redoma de jigote llena:
+Allí fue su aflicción, allí su pena.
+El hocico goloso al punto asoma
+al cuello de la hidrópica redoma,
+mas en vano, pues era tan estrecho,
+cual si por la cigüeña fuese hecho.
+Envidiosa de ver que a conveniencia
+chupaba la del pico a su presencia,
+vuelve, tienta, discurre,
 huele, se desatina, en fin se aburre.
 
-*Marchó rabo entre piernas, tan corrida,<br>
-que ni aun tuvo siquiera la salida<br>
-de decir: «Están verdes», como antaño.<br>
+*Marchó rabo entre piernas, tan corrida,
+que ni aun tuvo siquiera la salida
+de decir: «Están verdes», como antaño.
 También hay para pícaros enga*ño.

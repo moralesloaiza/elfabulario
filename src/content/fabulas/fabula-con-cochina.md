@@ -12,12 +12,12 @@ es_seudonimo: true
 nombre_real: "Alejandro Morales Loaiza"
 ---
 
-Para salvarse un día una cochina<br>
-del clásico leñazo,<br>
-deició disfrazarse de gallina<br>
-y se sentó a poner en un cedazo.<br>
-<br>
-   En eso el propietario, un viejo chocho,<br>
-quiso hacer un sancocho de gallina,<br>
-y con apio, con yuca y con topocho<br>
+Para salvarse un día una cochina
+del clásico leñazo,
+deició disfrazarse de gallina
+y se sentó a poner en un cedazo.
+
+   En eso el propietario, un viejo chocho,
+quiso hacer un sancocho de gallina,
+y con apio, con yuca y con topocho
 se comió a la cochina.

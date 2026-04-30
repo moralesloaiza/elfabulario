@@ -13,30 +13,30 @@ es_seudonimo: true
 nombre_real: "Alejandro Morales Loaiza"
 ---
 
-A dos amigos se aparece un oso:<br>
-El uno, muy medroso,<br>
-en las ramas de un árbol se asegura;<br>
-el otro, abandonado a la ventura,<br>
-se finge muerto repentinamente.<br>
-El Oso se le acerca lentamente:<br>
-Mas como este animal, según se cuenta,<br>
-de cadáveres nunca se alimenta,<br>
-sin ofenderlo lo registra y toca,<br>
-huélele las narices y la boca;<br>
-no le siente el aliento,<br>
-ni el menor movimiento;<br>
-y así, se fue diciendo sin recelo:<br>
--Éste tan muerto está como mi abuelo.<br>
-Entonces el cobarde,<br>
-de su grande amistad haciendo alarde,<br>
-del árbol se desprende muy ligero.<br>
-Corre, llega y abraza al compañero;<br>
-pondera la fortuna<br>
-de haberlo hallado sin lesión alguna,<br>
-y al fin le dice: -Sepas que he notado<br>
-que el Oso te decía algún recado.<br>
-¿Qué pudo ser?<br>
--Direte lo que ha sido,<br>
-estas dos palabritas al oído:<br>
-*Aparta tu amistad de la persona<br>
+A dos amigos se aparece un oso:
+El uno, muy medroso,
+en las ramas de un árbol se asegura;
+el otro, abandonado a la ventura,
+se finge muerto repentinamente.
+El Oso se le acerca lentamente:
+Mas como este animal, según se cuenta,
+de cadáveres nunca se alimenta,
+sin ofenderlo lo registra y toca,
+huélele las narices y la boca;
+no le siente el aliento,
+ni el menor movimiento;
+y así, se fue diciendo sin recelo:
+-Éste tan muerto está como mi abuelo.
+Entonces el cobarde,
+de su grande amistad haciendo alarde,
+del árbol se desprende muy ligero.
+Corre, llega y abraza al compañero;
+pondera la fortuna
+de haberlo hallado sin lesión alguna,
+y al fin le dice: -Sepas que he notado
+que el Oso te decía algún recado.
+¿Qué pudo ser?
+-Direte lo que ha sido,
+estas dos palabritas al oído:
+*Aparta tu amistad de la persona
 que si te ve en el riesgo, te abandon*a.

@@ -12,32 +12,32 @@ es_seudonimo: true
 nombre_real: "Alejandro Morales Loaiza"
 ---
 
-Perseguía un caballo vengativo<br>
-A un ciervo que le hizo leve ofensa:<br>
-Mas hallaba segura la defensa<br>
-En su veloz carrera el fugitivo.<br>
-El vengador, perdida la esperanza<br>
-De alcanzarle y lograr su intento,<br>
-Al hombre le pidió su valimento<br>
-Para tomar del ofensor venganza.<br>
-   Consiente el hombre, y el caballo airado<br>
-Sale con su jinete a la campaña:<br>
-Corre con dirección, sigue con maña,<br>
-Y queda al fin del ofensor vengado.<br>
-   Muéstrase al bienhechor agradecido,<br>
-Quiere marchare libre de su peso:<br>
-Mas desde entonces mismo quedó preso<br>
-Y eternamente sometido.<br>
-<br>
-*   El caballo que, suelto y rozagante,<br>
-En el frondoso bosque y prado ameno<br>
-Su libertad gozaba tan de lleno,<br>
-Padece sujeción desde este instante.<br>
-   Oprimido del yugo ara la tierra,<br>
-Pasa tal vez la vida más amarga:<br>
-Sufre la silla, freno, espuela, carga,<br>
-Y aguanta los horrores de la guerra.<br>
-   En fin, perdió la libertad amable<br>
-Por vengar una ofensa solamente.<br>
-Tales los frutos son que ciertamente<br>
+Perseguía un caballo vengativo
+A un ciervo que le hizo leve ofensa:
+Mas hallaba segura la defensa
+En su veloz carrera el fugitivo.
+El vengador, perdida la esperanza
+De alcanzarle y lograr su intento,
+Al hombre le pidió su valimento
+Para tomar del ofensor venganza.
+   Consiente el hombre, y el caballo airado
+Sale con su jinete a la campaña:
+Corre con dirección, sigue con maña,
+Y queda al fin del ofensor vengado.
+   Muéstrase al bienhechor agradecido,
+Quiere marchare libre de su peso:
+Mas desde entonces mismo quedó preso
+Y eternamente sometido.
+
+*   El caballo que, suelto y rozagante,
+En el frondoso bosque y prado ameno
+Su libertad gozaba tan de lleno,
+Padece sujeción desde este instante.
+   Oprimido del yugo ara la tierra,
+Pasa tal vez la vida más amarga:
+Sufre la silla, freno, espuela, carga,
+Y aguanta los horrores de la guerra.
+   En fin, perdió la libertad amable
+Por vengar una ofensa solamente.
+Tales los frutos son que ciertamente
 Produce la venganza detestable.*

@@ -13,14 +13,14 @@ es_seudonimo: true
 nombre_real: "Alejandro Morales Loaiza"
 ---
 
-Un pozo pintado vio<br>
-una paloma sedienta:<br>
-Tiróse a él tan violenta,<br>
-que contra la tabla dio.<br>
-Del golpe, al suelo cayó,<br>
+Un pozo pintado vio
+una paloma sedienta:
+Tiróse a él tan violenta,
+que contra la tabla dio.
+Del golpe, al suelo cayó,
 y allí muere de contado.
 
-*De su apetito guiado,<br>
-por no consultar al juicio,<br>
-así vuela al precipicio<br>
+*De su apetito guiado,
+por no consultar al juicio,
+así vuela al precipicio
 el hombre dese*nfrenado.

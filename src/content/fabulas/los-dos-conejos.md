@@ -12,42 +12,42 @@ es_seudonimo: true
 nombre_real: "Alejandro Morales Loaiza"
 ---
 
-Por entre unas matas,<br>
-seguido de perros,<br>
-no diré corría,<br>
-volaba un conejo.<br>
-<br>
-De su madriguera<br>
-salió un compañero<br>
-y le dijo: «Tente<br>
-amigo, ¿qué es esto?».<br>
-<br>
-«¿Qué ha de ser?», responde;<br>
-«sin aliento llego…;<br>
-dos pícaros galgos<br>
-me vienen siguiendo».<br>
-<br>
-«Sí», replica el otro,<br>
-«por allí los veo,<br>
-pero no son galgos».<br>
-«¿Pues qué son?» «Podencos».<br>
-<br>
-«¿Qué? ¿podencos dices?<br>
-Sí, como mi abuelo.<br>
-Galgos y muy galgos;<br>
-bien vistos los tengo».<br>
-<br>
-«Son podencos, vaya,<br>
-que no entiendes de eso».<br>
-«Son galgos, te digo».<br>
-«Digo que podencos».<br>
-<br>
-En esta disputa<br>
-llegando los perros,<br>
-pillan descuidados<br>
-a mis dos conejos.<br>
-<br>
-Los que por cuestiones<br>
-de poco momento<br>
-dejan lo que importa,<br>
+Por entre unas matas,
+seguido de perros,
+no diré corría,
+volaba un conejo.
+
+De su madriguera
+salió un compañero
+y le dijo: «Tente
+amigo, ¿qué es esto?».
+
+«¿Qué ha de ser?», responde;
+«sin aliento llego…;
+dos pícaros galgos
+me vienen siguiendo».
+
+«Sí», replica el otro,
+«por allí los veo,
+pero no son galgos».
+«¿Pues qué son?» «Podencos».
+
+«¿Qué? ¿podencos dices?
+Sí, como mi abuelo.
+Galgos y muy galgos;
+bien vistos los tengo».
+
+«Son podencos, vaya,
+que no entiendes de eso».
+«Son galgos, te digo».
+«Digo que podencos».
+
+En esta disputa
+llegando los perros,
+pillan descuidados
+a mis dos conejos.
+
+Los que por cuestiones
+de poco momento
+dejan lo que importa,
 llévense este ejemplo.

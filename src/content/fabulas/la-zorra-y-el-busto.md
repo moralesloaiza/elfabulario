@@ -13,10 +13,10 @@ es_seudonimo: true
 nombre_real: "Alejandro Morales Loaiza"
 ---
 
-Dijo la zorra al busto,<br>
-después de olerlo:<br>
--Tu cabeza es hermosa,<br>
-pero sin seso.<br>
-*Como éste hay muchos<br>
-que, aunque parecen hombres,<br>
+Dijo la zorra al busto,
+después de olerlo:
+-Tu cabeza es hermosa,
+pero sin seso.
+*Como éste hay muchos
+que, aunque parecen hombres,
 sólo son bus*tos.

@@ -1,0 +1,142 @@
+---
+import { Image } from 'astro:assets';
+import { getCollection } from 'astro:content';
+import BaseHead from '../../components/BaseHead.astro';
+import Footer from '../../components/Footer.astro';
+import Header from '../../components/Header.astro';
+import Sol from '../../components/ornaments/Sol.astro';
+import { SITE_TITLE } from '../../consts';
+
+const autores = await getCollection('autores');
+const fabulas = await getCollection('fabulas', ({ data }) => !data.borrador);
+
+// Cuenta cuántas fábulas hay por autor (match exacto por nombre).
+const conteoPorNombre = new Map<string, number>();
+for (const f of fabulas) {
+	const k = f.data.autor;
+	conteoPorNombre.set(k, (conteoPorNombre.get(k) ?? 0) + 1);
+}
+
+// Enriquecemos los autores con su conteo y los ordenamos:
+// primero por número de fábulas (descendente), luego por nombre.
+const autoresConConteo = autores
+	.map((a) => ({
+		...a,
+		conteo: conteoPorNombre.get(a.data.nombre) ?? 0,
+	}))
+	.sort((a, b) => {
+		if (b.conteo !== a.conteo) return b.conteo - a.conteo;
+		return a.data.nombre.localeCompare(b.data.nombre, 'es');
+	});
+---
+
+<!doctype html>
+<html lang="es">
+	<head>
+		<BaseHead title={`Autores · ${SITE_TITLE}`} description="Autores del Fabulario." />
+	</head>
+	<body>
+		<Header />
+		<main class="page indice">
+			<header class="title">
+				<Sol />
+				<h1>Autores</h1>
+				<p class="subtitulo">Las plumas que han dado vida a las fábulas de este sitio.</p>
+			</header>
+
+			<hr class="ornate" />
+
+			<ul class="lista">
+				{autoresConConteo.map((a) => (
+					<li class="item">
+						<a href={`/autores/${a.id}/`} class="item-link">
+							{a.data.imagen && (
+								<figure class="item-img">
+									<Image src={a.data.imagen} alt={`Retrato de ${a.data.nombre}`} width={200} height={200} />
+								</figure>
+							)}
+							<div class="item-meta">
+								<h2 class="item-nombre">{a.data.nombre}</h2>
+								<p class="item-conteo">
+									{a.conteo === 0 && '—'}
+									{a.conteo === 1 && '1 fábula'}
+									{a.conteo > 1 && `${a.conteo} fábulas`}
+								</p>
+							</div>
+						</a>
+					</li>
+				))}
+			</ul>
+		</main>
+		<Footer />
+	</body>
+</html>
+
+<style>
+	.indice {
+		padding-block: var(--space-2xl);
+	}
+	.title {
+		text-align: center;
+		margin-bottom: var(--space-md);
+	}
+	.title h1 {
+		margin: 0 0 var(--space-sm);
+		font-size: var(--fs-3xl);
+	}
+	.subtitulo {
+		font-family: var(--font-body);
+		font-style: italic;
+		font-size: var(--fs-md);
+		color: var(--color-text-soft);
+		max-width: var(--measure-narrow);
+		margin: 0 auto;
+	}
+	.lista {
+		list-style: none;
+		padding: 0;
+		margin: var(--space-2xl) 0 0;
+		display: grid;
+		grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+		gap: var(--space-xl);
+	}
+	.item-link {
+		display: block;
+		text-decoration: none;
+		color: inherit;
+		text-align: center;
+		padding: var(--space-md);
+	}
+	.item-img {
+		margin: 0 auto var(--space-sm);
+		max-width: 140px;
+	}
+	.item-img :global(img) {
+		display: block;
+		width: 100%;
+		height: auto;
+		border: var(--rule-hairline) solid var(--color-oro);
+		border-radius: 50%;
+	}
+	.item-nombre {
+		font-family: var(--font-display);
+		font-size: var(--fs-md);
+		font-weight: var(--fw-bold);
+		letter-spacing: var(--ls-wide);
+		line-height: var(--lh-snug);
+		margin: 0 0 var(--space-2xs);
+		color: var(--color-text);
+		text-transform: none;
+	}
+	.item-link:hover .item-nombre,
+	.item-link:focus-visible .item-nombre {
+		color: var(--color-oro-texto);
+	}
+	.item-conteo {
+		font-family: var(--font-display);
+		font-size: var(--fs-3xs);
+		letter-spacing: var(--ls-widest);
+		color: var(--color-esmeralda);
+		margin: 0;
+	}
+</style>

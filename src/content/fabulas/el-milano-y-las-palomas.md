@@ -13,28 +13,28 @@ es_seudonimo: true
 nombre_real: "Alejandro Morales Loaiza"
 ---
 
-A las tristes Palomas un Milano,<br>
-sin poderlas pillar, seguía en vano;<br>
-mas él a todas horas<br>
-servía de lacayo a estas señoras.<br>
-Un día, en fin, hambriento e ingenioso,<br>
-así las dice: —¿Amáis vuestro reposo,<br>
-vuestra seguridad y conveniencia?<br>
-Pues, creedme en mi conciencia:<br>
-En lugar de ser yo vuestro enemigo,<br>
-desde ahora me obligo,<br>
-si la banda por rey me aclama luego,<br>
-a tenerla en sosiego,<br>
-sin que de garra o pico tema agravio;<br>
-pues tocante a la paz seré un Octavio.<br>
-Las sencillas Palomas consintieron;<br>
-aclámanlo por rey: —Viva, dijeron,<br>
-nuestro rey el Milano.<br>
-Sin esperar a más, este tirano<br>
-sobre un vasallo mísero se planta:<br>
-Déjalo con el viva en la garganta;<br>
-y, continuando así sus tiranías,<br>
+A las tristes Palomas un Milano,
+sin poderlas pillar, seguía en vano;
+mas él a todas horas
+servía de lacayo a estas señoras.
+Un día, en fin, hambriento e ingenioso,
+así las dice: —¿Amáis vuestro reposo,
+vuestra seguridad y conveniencia?
+Pues, creedme en mi conciencia:
+En lugar de ser yo vuestro enemigo,
+desde ahora me obligo,
+si la banda por rey me aclama luego,
+a tenerla en sosiego,
+sin que de garra o pico tema agravio;
+pues tocante a la paz seré un Octavio.
+Las sencillas Palomas consintieron;
+aclámanlo por rey: —Viva, dijeron,
+nuestro rey el Milano.
+Sin esperar a más, este tirano
+sobre un vasallo mísero se planta:
+Déjalo con el viva en la garganta;
+y, continuando así sus tiranías,
 acabó con el reino en cuatro días.
 
-***Quien al poder se acoja de un malvado,<br>
+***Quien al poder se acoja de un malvado,
 será, en vez de feliz, un desdichado***.

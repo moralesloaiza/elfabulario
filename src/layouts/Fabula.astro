@@ -1,11 +1,12 @@
 ---
 import { Image } from 'astro:assets';
-import type { CollectionEntry } from 'astro:content';
+import { getCollection, type CollectionEntry } from 'astro:content';
 import BaseHead from '../components/BaseHead.astro';
 import Footer from '../components/Footer.astro';
 import FormattedDate from '../components/FormattedDate.astro';
 import Header from '../components/Header.astro';
 import Sol from '../components/ornaments/Sol.astro';
+import { slugify } from '../utils/slug';
 
 type Props = CollectionEntry<'fabulas'>['data'];
 
@@ -23,6 +24,12 @@ const {
 	ilustracion,
 	etiquetas,
 } = Astro.props;
+
+// Resolvemos el slug del archivo de autor (si existe) buscando por nombre
+// exacto. Si no hay match, el nombre se renderiza como texto plano sin enlace.
+const autoresColeccion = await getCollection('autores');
+const autorEntry = autoresColeccion.find((a) => a.data.nombre === autor);
+const autorHref = autorEntry ? `/autores/${autorEntry.id}/` : null;
 
 // Construye una línea secundaria con nacionalidad y época del autor.
 // Ej.: "español · 1745–1801"  o  "griego · siglo VI a.C."
@@ -57,7 +64,14 @@ const datosAutor = [autor_nacionalidad, epoca].filter(Boolean).join(' · ');
 
 					{resumen && <p class="resumen">{resumen}</p>}
 
-					<p class="autor">por <span>{autor}</span></p>
+					<p class="autor">
+						por
+						{autorHref ? (
+							<a href={autorHref}><span>{autor}</span></a>
+						) : (
+							<span>{autor}</span>
+						)}
+					</p>
 					{datosAutor && <p class="autor-meta">{datosAutor}</p>}
 
 					<p class="fecha">
@@ -85,7 +99,7 @@ const datosAutor = [autor_nacionalidad, epoca].filter(Boolean).join(' · ');
 				{etiquetas && etiquetas.length > 0 && (
 					<footer class="etiquetas" aria-label="Etiquetas">
 						{etiquetas.map((e) => (
-							<span class="etiqueta">#{e}</span>
+							<a class="etiqueta" href={`/etiquetas/${slugify(e)}/`}>#{e}</a>
 						))}
 					</footer>
 				)}
@@ -133,12 +147,21 @@ const datosAutor = [autor_nacionalidad, epoca].filter(Boolean).join(' · ');
 		font-family: var(--font-display);
 		font-size: var(--fs-xs);
 		letter-spacing: var(--ls-widest);
-		/* uppercase eliminado: Cinzel ya es all-caps */
 		color: var(--color-oro-texto);
 		margin: 0;
 	}
 	.autor span {
 		font-weight: var(--fw-bold);
+	}
+	.autor a {
+		color: inherit;
+		text-decoration: none;
+		border-bottom: var(--rule-hairline) solid transparent;
+		transition: border-color var(--dur-fast) var(--ease-standard);
+	}
+	.autor a:hover,
+	.autor a:focus-visible {
+		border-bottom-color: var(--color-oro-texto);
 	}
 	/* nacionalidad · años, en cursiva discreta debajo del autor */
 	.autor-meta {
@@ -192,14 +215,20 @@ const datosAutor = [autor_nacionalidad, epoca].filter(Boolean).join(' · ');
 		margin-top: var(--space-xl);
 		display: flex;
 		flex-wrap: wrap;
-		gap: var(--space-xs);
+		gap: var(--space-sm);
 		justify-content: center;
 	}
 	.etiqueta {
 		font-family: var(--font-display);
 		font-size: var(--fs-3xs);
 		letter-spacing: var(--ls-wide);
-		/* uppercase eliminado: Cinzel ya es all-caps */
 		color: var(--color-esmeralda);
+		text-decoration: none;
+		border-bottom: var(--rule-hairline) solid transparent;
+		transition: border-color var(--dur-fast) var(--ease-standard);
+	}
+	.etiqueta:hover,
+	.etiqueta:focus-visible {
+		border-bottom-color: var(--color-esmeralda);
 	}
 </style>

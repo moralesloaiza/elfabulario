@@ -13,13 +13,13 @@ es_seudonimo: true
 nombre_real: "Alejandro Morales Loaiza"
 ---
 
-A un panal de rica miel<br>
-dos mil moscas acudieron,<br>
-que por golosas murieron,<br>
-presas de patas en él.<br>
-Otra, dentro de un pastel,<br>
-enterró su golosina.<br>
-Así, si bien se examina,<br>
-los humanos corazones<br>
-perecen en las prisiones<br>
+A un panal de rica miel
+dos mil moscas acudieron,
+que por golosas murieron,
+presas de patas en él.
+Otra, dentro de un pastel,
+enterró su golosina.
+Así, si bien se examina,
+los humanos corazones
+perecen en las prisiones
 del vicio que los domina.

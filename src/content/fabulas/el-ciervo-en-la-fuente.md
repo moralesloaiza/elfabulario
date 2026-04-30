@@ -13,39 +13,39 @@ es_seudonimo: true
 nombre_real: "Alejandro Morales Loaiza"
 ---
 
-Un ciervo se miraba<br>
-en una hermosa cristalina fuente;<br>
-placentero admiraba<br>
-los enramados cuernos de su frente.<br>
-Pero al ver sus delgadas, largas piernas,<br>
+Un ciervo se miraba
+en una hermosa cristalina fuente;
+placentero admiraba
+los enramados cuernos de su frente.
+Pero al ver sus delgadas, largas piernas,
 al alto cielo daba quejas tiernas:
 
--¡Oh dioses!, ¿a qué intento,<br>
-a esta fábrica hermosa de cabeza<br>
-construís su cimiento<br>
-sin guardar proporción en la belleza?<br>
-¡Oh, qué pesar! ¡Oh, qué dolor profundo!<br>
-¡No haber gloria cumplida en este mundo!<br>
-<br>
-Hablando de esta suerte<br>
-el ciervo, vio venir a un lebrel fiero.<br>
-Por evitar su muerte,<br>
-parte al espeso bosque muy ligero;<br>
-pero el cuerno retarda su salida,<br>
+-¡Oh dioses!, ¿a qué intento,
+a esta fábrica hermosa de cabeza
+construís su cimiento
+sin guardar proporción en la belleza?
+¡Oh, qué pesar! ¡Oh, qué dolor profundo!
+¡No haber gloria cumplida en este mundo!
+
+Hablando de esta suerte
+el ciervo, vio venir a un lebrel fiero.
+Por evitar su muerte,
+parte al espeso bosque muy ligero;
+pero el cuerno retarda su salida,
 con una y otra rama entretejida.
 
-Mas libre del apuro<br>
-a duras penas, dijo con espanto:<br>
--Si me veo seguro,<br>
-pese a mis cuernos, fue por correr tanto.<br>
-Lleve el diablo lo hermoso de mis cuernos,<br>
+Mas libre del apuro
+a duras penas, dijo con espanto:
+-Si me veo seguro,
+pese a mis cuernos, fue por correr tanto.
+Lleve el diablo lo hermoso de mis cuernos,
 haga mis feos pies el cielo eternos.
 
-Así, frecuentemente,<br>
-el hombre se deslumbra con lo hermoso;<br>
-elige lo aparente,<br>
-abrazando tal vez lo más dañoso.<br>
-*Pero escarmiente ahora en tal cabeza:<br>
+Así, frecuentemente,
+el hombre se deslumbra con lo hermoso;
+elige lo aparente,
+abrazando tal vez lo más dañoso.
+*Pero escarmiente ahora en tal cabeza:
 El útil bien es la mejor belleza*.
 
 **Félix María Samaniego.**

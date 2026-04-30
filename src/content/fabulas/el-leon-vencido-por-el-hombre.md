@@ -13,13 +13,13 @@ es_seudonimo: true
 nombre_real: "Alejandro Morales Loaiza"
 ---
 
-Cierto artífice pintó<br>
-una lucha, en que, valiente,<br>
-un hombre tan solamente<br>
-a un horrible león venció.<br>
-Otro león, que el cuadro vio,<br>
-sin preguntar por su autor,<br>
-en tono despreciador<br>
-dijo: —Bien se deja ver<br>
-que es pintar como querer,<br>
+Cierto artífice pintó
+una lucha, en que, valiente,
+un hombre tan solamente
+a un horrible león venció.
+Otro león, que el cuadro vio,
+sin preguntar por su autor,
+en tono despreciador
+dijo: —Bien se deja ver
+que es pintar como querer,
 y no fue león el pintor.

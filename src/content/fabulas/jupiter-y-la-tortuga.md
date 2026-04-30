@@ -13,24 +13,24 @@ es_seudonimo: true
 nombre_real: "Alejandro Morales Loaiza"
 ---
 
-A las bodas de Júpiter estaban<br>
-todos los animales convidados.<br>
-Unos y otros llegaban<br>
-a la fiesta nupcial apresurados.<br>
-No faltaba a tan grande concurrencia<br>
-ni aun la reptil y más lejana oruga,<br>
-cuando llega muy tarde y con paciencia,<br>
-a paso perezoso, la Tortuga.<br>
-Su tardanza reprende el dios airado,<br>
-y ella le respondió sencillamente:<br>
-—Si es mi casita mi retiro amado,<br>
-¿cómo podré dejarla prontamente?<br>
-Por tal disculpa Júpiter tonante,<br>
-olvidando el indulto de las fiestas,<br>
-la ley del caracol le echó al instante,<br>
+A las bodas de Júpiter estaban
+todos los animales convidados.
+Unos y otros llegaban
+a la fiesta nupcial apresurados.
+No faltaba a tan grande concurrencia
+ni aun la reptil y más lejana oruga,
+cuando llega muy tarde y con paciencia,
+a paso perezoso, la Tortuga.
+Su tardanza reprende el dios airado,
+y ella le respondió sencillamente:
+—Si es mi casita mi retiro amado,
+¿cómo podré dejarla prontamente?
+Por tal disculpa Júpiter tonante,
+olvidando el indulto de las fiestas,
+la ley del caracol le echó al instante,
 que es andar con la casa siempre a cuestas.
 
-***Gentes machuchas hay que hacen alarde<br>
-de que aman su retiro con exceso;<br>
-pero a su obligación acuden tarde:<br>
+***Gentes machuchas hay que hacen alarde
+de que aman su retiro con exceso;
+pero a su obligación acuden tarde:
 Viven, como el ratón, dentro del que***so.

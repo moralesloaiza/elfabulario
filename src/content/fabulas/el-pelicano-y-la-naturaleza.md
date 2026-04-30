@@ -12,12 +12,12 @@ es_seudonimo: true
 nombre_real: "Alejandro Morales Loaiza"
 ---
 
-Al Pelícano admiraba<br>
-Uno que le vía amante<br>
-Dar su sangre a sus hijuelos;<br>
-Y exclamó « ¡Gran Dios! ¡qué ave! »<br>
-<br>
-   Naturaleza lo oyó,<br>
-Y preguntóle:* « ¿Qué padres*<br>
-*Conoces tú, que a sus hijos*<br>
+Al Pelícano admiraba
+Uno que le vía amante
+Dar su sangre a sus hijuelos;
+Y exclamó « ¡Gran Dios! ¡qué ave! »
+
+   Naturaleza lo oyó,
+Y preguntóle:* « ¿Qué padres*
+*Conoces tú, que a sus hijos*
 *Les nieguen nunca su sangre? »*

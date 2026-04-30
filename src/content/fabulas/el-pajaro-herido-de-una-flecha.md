@@ -13,28 +13,28 @@ es_seudonimo: true
 nombre_real: "Alejandro Morales Loaiza"
 ---
 
-Un pájaro inocente,<br>
-herido de una flecha<br>
-guarnecida de acero<br>
-y de plumas ligeras,<br>
-decía en su lenguaje<br>
-con amargas querellas:<br>
-—¡Oh crueles humanos!,<br>
-más crueles que fieras;<br>
-con nuestras propias alas,<br>
-que la naturaleza<br>
-nos dio, sin otras armas<br>
-para propia defensa,<br>
-forjáis el instrumento<br>
-de la desdicha nuestra,<br>
-haciendo que inocentes<br>
-prestemos la materia.<br>
-Pero no, no es extraño<br>
-que así bárbaros sean<br>
-aquellos que en su ruina<br>
+Un pájaro inocente,
+herido de una flecha
+guarnecida de acero
+y de plumas ligeras,
+decía en su lenguaje
+con amargas querellas:
+—¡Oh crueles humanos!,
+más crueles que fieras;
+con nuestras propias alas,
+que la naturaleza
+nos dio, sin otras armas
+para propia defensa,
+forjáis el instrumento
+de la desdicha nuestra,
+haciendo que inocentes
+prestemos la materia.
+Pero no, no es extraño
+que así bárbaros sean
+aquellos que en su ruina
 trabajan, y no cesan.
 
-***Los unos y otros fraguan<br>
-armas para la guerra,<br>
-y es dar contra sus vidas<br>
+***Los unos y otros fraguan
+armas para la guerra,
+y es dar contra sus vidas
 plumas para las flech***as.

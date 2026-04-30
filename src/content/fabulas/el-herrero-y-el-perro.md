@@ -13,39 +13,39 @@ es_seudonimo: true
 nombre_real: "Alejandro Morales Loaiza"
 ---
 
-Un herrero tenía<br>
-un perro que no hacía<br>
-sino comer, dormir y estarse echado;<br>
-de la casa jamás tuvo cuidado.<br>
-Levantábase sólo a mesa puesta;<br>
-entonces con gran fiesta<br>
-al dueño se acercaba,<br>
-con perrunas caricias lo halagaba,<br>
-mostrando de cariño mil excesos<br>
-por pillar las piltrafas y los huesos.<br>
--He llegado a notar, le dijo el amo,<br>
-que, aunque nunca te llamo<br>
-a la mesa, te llegas prontamente;<br>
-en la fragua jamás te vi presente,<br>
-y yo me maravillo<br>
-de que, no dispertándote el martillo,<br>
-te desveles al ruido de mis dientes.<br>
-Anda, anda, poltrón; no es bien que cuentes<br>
-que el amo, hecho un gañán y sin reposo,<br>
-te mantiene a lo conde muy ocioso.<br>
-El perro le responde:<br>
--¿Qué más tiene que yo cualquiera conde?<br>
-Para no trabajar debo al destino<br>
-haber nacido perro y no pollino.<br>
--Pues, señor conde, fuera de mi casa;<br>
-verás en las demás lo que te pasa.<br>
-En efecto, salió a probar fortuna<br>
-y las casas anduvo de una en una.<br>
-Allí le hacen servir de centinela<br>
-y que pase la noche toda en vela,<br>
-acá de lazarillo y de danzante,<br>
-allá, dentro de un torno, a cada instante<br>
-asa la carne que comer no espera.<br>
-*Al cabo conoció de esta manera<br>
-que el destino, y no es cuento,<br>
+Un herrero tenía
+un perro que no hacía
+sino comer, dormir y estarse echado;
+de la casa jamás tuvo cuidado.
+Levantábase sólo a mesa puesta;
+entonces con gran fiesta
+al dueño se acercaba,
+con perrunas caricias lo halagaba,
+mostrando de cariño mil excesos
+por pillar las piltrafas y los huesos.
+-He llegado a notar, le dijo el amo,
+que, aunque nunca te llamo
+a la mesa, te llegas prontamente;
+en la fragua jamás te vi presente,
+y yo me maravillo
+de que, no dispertándote el martillo,
+te desveles al ruido de mis dientes.
+Anda, anda, poltrón; no es bien que cuentes
+que el amo, hecho un gañán y sin reposo,
+te mantiene a lo conde muy ocioso.
+El perro le responde:
+-¿Qué más tiene que yo cualquiera conde?
+Para no trabajar debo al destino
+haber nacido perro y no pollino.
+-Pues, señor conde, fuera de mi casa;
+verás en las demás lo que te pasa.
+En efecto, salió a probar fortuna
+y las casas anduvo de una en una.
+Allí le hacen servir de centinela
+y que pase la noche toda en vela,
+acá de lazarillo y de danzante,
+allá, dentro de un torno, a cada instante
+asa la carne que comer no espera.
+*Al cabo conoció de esta manera
+que el destino, y no es cuento,
 a todos nos cargó como al jument*o.

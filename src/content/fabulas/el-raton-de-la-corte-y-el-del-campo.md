@@ -13,36 +13,36 @@ es_seudonimo: true
 nombre_real: "Alejandro Morales Loaiza"
 ---
 
-Un ratón cortesano<br>
-convidó con un modo muy urbano<br>
-a un ratón campesino.<br>
-Diole gordo tocino,<br>
-queso fresco de Holanda,<br>
-y una despensa llena de vianda<br>
-era su alojamiento,<br>
-pues no pudiera haber un aposento<br>
-tan magníficamente preparado,<br>
-aunque fuese en Ratópolis buscado<br>
-con el mayor esmero,<br>
-para alojar a Roepán Primero.<br>
-Sus sentidos allí se recreaban;<br>
-las paredes y techos adornaban,<br>
-entre mil ratonescas golosinas,<br>
-salchichones, perniles y cecinas.<br>
-Saltaban de placer, ¡oh qué embeleso!,<br>
-de pernil en pernil, de queso en queso.<br>
-En esta situación tan lisonjera<br>
-llega la despensera.<br>
-Oyen el ruido, corren, se agazapan,<br>
-pierden el tino, mas al fin se escapan<br>
-atropelladamente<br>
-por cierto pasadizo abierto a diente.<br>
-—¡Esto tenemos!, dijo el campesino,<br>
-reniego yo del queso, del tocino,<br>
-y de quien busca gustos<br>
+Un ratón cortesano
+convidó con un modo muy urbano
+a un ratón campesino.
+Diole gordo tocino,
+queso fresco de Holanda,
+y una despensa llena de vianda
+era su alojamiento,
+pues no pudiera haber un aposento
+tan magníficamente preparado,
+aunque fuese en Ratópolis buscado
+con el mayor esmero,
+para alojar a Roepán Primero.
+Sus sentidos allí se recreaban;
+las paredes y techos adornaban,
+entre mil ratonescas golosinas,
+salchichones, perniles y cecinas.
+Saltaban de placer, ¡oh qué embeleso!,
+de pernil en pernil, de queso en queso.
+En esta situación tan lisonjera
+llega la despensera.
+Oyen el ruido, corren, se agazapan,
+pierden el tino, mas al fin se escapan
+atropelladamente
+por cierto pasadizo abierto a diente.
+—¡Esto tenemos!, dijo el campesino,
+reniego yo del queso, del tocino,
+y de quien busca gustos
 entre los sobresaltos y los sustos.
 
-*Volviose a su campaña en el instante<br>
-y estimó mucho más de allí adelante,<br>
-sin zozobra, temor ni pesadumbres,<br>
+*Volviose a su campaña en el instante
+y estimó mucho más de allí adelante,
+sin zozobra, temor ni pesadumbres,
 su casita de tierra y sus legumbr*es.

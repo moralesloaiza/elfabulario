@@ -13,39 +13,39 @@ es_seudonimo: true
 nombre_real: "Alejandro Morales Loaiza"
 ---
 
-Sin duda alguna que se hubiera ahogado<br>
-un lobo con un hueso atragantado,<br>
+Sin duda alguna que se hubiera ahogado
+un lobo con un hueso atragantado,
 si a la sazón no pasa una Cigüeña.
 
-El paciente la ve, hácela seña;<br>
-llega y, ejecutiva, <br>
-con su pico, jeringa primitiva,<br>
-cual diestro cirujano,<br>
+El paciente la ve, hácela seña;
+llega y, ejecutiva, 
+con su pico, jeringa primitiva,
+cual diestro cirujano,
 hizo la operación y quedó sano.
 
-Su salario pedía,<br>
-pero el ingrato lobo respondía:<br>
--¿Tu salario? Pues ¿qué más recompensa<br>
-que el no haberte causado leve ofensa,<br>
-y dejarte vivir para que cuentes<br>
+Su salario pedía,
+pero el ingrato lobo respondía:
+-¿Tu salario? Pues ¿qué más recompensa
+que el no haberte causado leve ofensa,
+y dejarte vivir para que cuentes
 que pusiste tu vida entre mis dientes?
 
-Marchó por evitar una desdicha,<br>
-sin decir tus ni mus, la susodicha.<br>
-«Haz bien, dice el proverbio castellano,<br>
-y no sepas a quién». Pero es muy llano,<br>
-que no tiene razón ni por asomo:<br>
+Marchó por evitar una desdicha,
+sin decir tus ni mus, la susodicha.
+«Haz bien, dice el proverbio castellano,
+y no sepas a quién». Pero es muy llano,
+que no tiene razón ni por asomo:
 ***Es menester saber a quién y cómo.***
 
-El ejemplo siguiente<br>
+El ejemplo siguiente
 nos hará esta verdad más evidente.
 
 ## El Hombre y la Culebra
 
-A una culebra que, de frío yerta,<br>
-en el suelo yacía medio muerta<br>
-un labrador cogió; mas fue tan bueno,<br>
+A una culebra que, de frío yerta,
+en el suelo yacía medio muerta
+un labrador cogió; mas fue tan bueno,
 que incautamente la abrigó en su seno.
 
-***Apenas revivió, cuando la ingrata<br>
+***Apenas revivió, cuando la ingrata
 a su gran bienhechor traidora mata***.

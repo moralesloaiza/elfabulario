@@ -12,31 +12,31 @@ es_seudonimo: true
 nombre_real: "Alejandro Morales Loaiza"
 ---
 
-Al verse el rabo un día<br>
-cierto rabipelado<br>
-sintió un incontenible desagrado<br>
-observando cuán feo lo tenía.<br>
-<br>
-   Y en rápida visita<br>
-fue a pedirle prestado el de la ardita,<br>
-la cual ante su ruego<br>
-accedió con un fino: —Desde luego…<br>
-<br>
-   —¡Me queda como un clavo!,<br>
-dijo el rabipelado muy contento,<br>
-y dándose las gracias fue al momento<br>
-a mostrárselo a su esposa el nuevo rabo.<br>
-<br>
-   Mas la rabipelada<br>
-que no estaba del préstamo enterada<br>
-al verlo con el rabo de la ardita,<br>
-se asustó de tal modo, pobrecita,<br>
-que tomando al marido<br>
-por algún animal desconocido,<br>
-lo acometió de un brinco, y con fiereza<br>
-lo mató de un mordisco en la cabeza.<br>
-<br>
-*   El cuento que aquí copio*<br>
-*nos demuestra, lector, que bien mirado,*<br>
-*más vale feo y propio*<br>
+Al verse el rabo un día
+cierto rabipelado
+sintió un incontenible desagrado
+observando cuán feo lo tenía.
+
+   Y en rápida visita
+fue a pedirle prestado el de la ardita,
+la cual ante su ruego
+accedió con un fino: —Desde luego…
+
+   —¡Me queda como un clavo!,
+dijo el rabipelado muy contento,
+y dándose las gracias fue al momento
+a mostrárselo a su esposa el nuevo rabo.
+
+   Mas la rabipelada
+que no estaba del préstamo enterada
+al verlo con el rabo de la ardita,
+se asustó de tal modo, pobrecita,
+que tomando al marido
+por algún animal desconocido,
+lo acometió de un brinco, y con fiereza
+lo mató de un mordisco en la cabeza.
+
+*   El cuento que aquí copio*
+*nos demuestra, lector, que bien mirado,*
+*más vale feo y propio*
 *que bonito y prestado.*

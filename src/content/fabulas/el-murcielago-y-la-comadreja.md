@@ -12,42 +12,42 @@ es_seudonimo: true
 nombre_real: "Alejandro Morales Loaiza"
 ---
 
-Cayó sin saber cómo<br>
-Un murciélago a tierra;<br>
-Al instante le atrapa<br>
-La lista comadreja.<br>
-Clamaba el desdichado<br>
-Viendo su muerte cerca;<br>
-Ella le dice: « Muere:<br>
-Que por naturaleza<br>
-Soy mortal enemiga<br>
-De todo cuanto vuela ».<br>
-El avechucho grita,<br>
-Y mil veces protesta<br>
-Que él es ratón cual todos<br>
-Los de su descendencia,<br>
-Con esto ¡qué fortuna!<br>
-El preso se liberta.<br>
-Pasado cierto tiempo,<br>
-No sé de qué manera,<br>
-Segunda vez le pilla;<br>
-Él nuevamente ruega;<br>
-Mas ella le responde,<br>
-Que Júpiter le ordena<br>
-Tenga paz con las aves,<br>
-Con los ratones guerra.<br>
-« ¿Soy yo ratón acaso<br>
-Yo creo que estás ciega;<br>
-¿Quieres ver cómo vuelo? »<br>
-En efecto, le deja;<br>
-Y merced a su ingenio<br>
-Libre el pájaro vuela.<br>
-<br>
-*Aquí aprendió de Esopo*<br>
-*La gente marinera,*<br>
-*Murciélagos que fingen*<br>
-*Pasaporte bandera.*<br>
-*No importa que haya pocos*<br>
-*Ingleses comadrejas,*<br>
-*Tal vez puede de un riesgo*<br>
+Cayó sin saber cómo
+Un murciélago a tierra;
+Al instante le atrapa
+La lista comadreja.
+Clamaba el desdichado
+Viendo su muerte cerca;
+Ella le dice: « Muere:
+Que por naturaleza
+Soy mortal enemiga
+De todo cuanto vuela ».
+El avechucho grita,
+Y mil veces protesta
+Que él es ratón cual todos
+Los de su descendencia,
+Con esto ¡qué fortuna!
+El preso se liberta.
+Pasado cierto tiempo,
+No sé de qué manera,
+Segunda vez le pilla;
+Él nuevamente ruega;
+Mas ella le responde,
+Que Júpiter le ordena
+Tenga paz con las aves,
+Con los ratones guerra.
+« ¿Soy yo ratón acaso
+Yo creo que estás ciega;
+¿Quieres ver cómo vuelo? »
+En efecto, le deja;
+Y merced a su ingenio
+Libre el pájaro vuela.
+
+*Aquí aprendió de Esopo*
+*La gente marinera,*
+*Murciélagos que fingen*
+*Pasaporte bandera.*
+*No importa que haya pocos*
+*Ingleses comadrejas,*
+*Tal vez puede de un riesgo*
 *Sacarnos una treta.*

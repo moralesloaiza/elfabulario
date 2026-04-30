@@ -13,22 +13,22 @@ es_seudonimo: true
 nombre_real: "Alejandro Morales Loaiza"
 ---
 
-Apacentando un joven su ganado,<br>
-gritó desde la cima de un collado:<br>
-—¡Favor!, que viene el lobo, labradores.<br>
-Éstos, abandonando sus labores,<br>
-acuden prontamente,<br>
+Apacentando un joven su ganado,
+gritó desde la cima de un collado:
+—¡Favor!, que viene el lobo, labradores.
+Éstos, abandonando sus labores,
+acuden prontamente,
 y hallan que es una chanza solamente.
 
-Vuelve a clamar, y temen la desgracia;<br>
-segunda vez los burla, ¡linda gracia!<br>
-Pero ¿qué sucedió la vez tercera?<br>
+Vuelve a clamar, y temen la desgracia;
+segunda vez los burla, ¡linda gracia!
+Pero ¿qué sucedió la vez tercera?
 Que vino en realidad la hambrienta fiera.
 
-Entonces el Zagal se desgañita,<br>
-y por más que patea, llora y grita,<br>
-no se mueve la gente escarmentada,<br>
+Entonces el Zagal se desgañita,
+y por más que patea, llora y grita,
+no se mueve la gente escarmentada,
 y el lobo le devora la manada.
 
-***¡Cuántas veces resulta de un engaño<br>
+***¡Cuántas veces resulta de un engaño
 contra el engañador el mayor daño***!

@@ -13,37 +13,37 @@ es_seudonimo: true
 nombre_real: "Alejandro Morales Loaiza"
 ---
 
-No a pares, a docenas encontraba<br>
-las monas en Tetuán, cuando cazaba,<br>
-un leopardo. Apenas lo veían,<br>
-a los árboles todas se subían,<br>
-quedando del contrario tan seguras,<br>
-que pudiera decir: «No están maduras».<br>
-El cazador, astuto, se hace el muerto<br>
-tan vivamente, que parece cierto.<br>
-Hasta las viejas monas,<br>
-alegres en el caso y juguetonas,<br>
-empiezan a saltar. La más osada<br>
-baja, arrímase al muerto de callada,<br>
-mira, huele y aun tienta,<br>
-y grita muy contenta:<br>
--Llegad, que muerto está de todo punto,<br>
-tanto, que empieza a oler el tal difunto.<br>
-Bajan todas con bulla y algazara:<br>
-Ya le tocan la cara,<br>
-ya le saltan encima,<br>
-aquélla se le arrima,<br>
-y, haciendo mimos, a su lado queda,<br>
-otra se finge muerta y lo remeda.<br>
-Mas luego que las siente fatigadas<br>
-de correr, de saltar y hacer monadas,<br>
-levántase ligero<br>
-y, más que nunca fiero,<br>
-pilla, mata, devora, de manera<br>
-que parecía la sangrienta fiera,<br>
-cubriendo con los muertos la campaña,<br>
-al Cid matando moros en España.<br>
-*Es el peor enemigo el que aparenta<br>
-no poder causar daño; porque intenta,<br>
-inspirando confianza,<br>
+No a pares, a docenas encontraba
+las monas en Tetuán, cuando cazaba,
+un leopardo. Apenas lo veían,
+a los árboles todas se subían,
+quedando del contrario tan seguras,
+que pudiera decir: «No están maduras».
+El cazador, astuto, se hace el muerto
+tan vivamente, que parece cierto.
+Hasta las viejas monas,
+alegres en el caso y juguetonas,
+empiezan a saltar. La más osada
+baja, arrímase al muerto de callada,
+mira, huele y aun tienta,
+y grita muy contenta:
+-Llegad, que muerto está de todo punto,
+tanto, que empieza a oler el tal difunto.
+Bajan todas con bulla y algazara:
+Ya le tocan la cara,
+ya le saltan encima,
+aquélla se le arrima,
+y, haciendo mimos, a su lado queda,
+otra se finge muerta y lo remeda.
+Mas luego que las siente fatigadas
+de correr, de saltar y hacer monadas,
+levántase ligero
+y, más que nunca fiero,
+pilla, mata, devora, de manera
+que parecía la sangrienta fiera,
+cubriendo con los muertos la campaña,
+al Cid matando moros en España.
+*Es el peor enemigo el que aparenta
+no poder causar daño; porque intenta,
+inspirando confianza,
 asegurar su golpe de vengan*za.

@@ -10,6 +10,7 @@ const emptyToUndefined = (val: unknown) =>
 
 const optionalDate = z.preprocess(emptyToUndefined, z.coerce.date().optional());
 const optionalInt = z.preprocess(emptyToUndefined, z.coerce.number().int().optional());
+const optionalString = z.preprocess(emptyToUndefined, z.string().optional());
 
 const fabulas = defineCollection({
 	// Carga los archivos Markdown y MDX del directorio `src/content/fabulas/`.
@@ -63,4 +64,46 @@ const entradas = defineCollection({
 		}),
 });
 
-export const collections = { fabulas, entradas };
+// Colección de autores: una entrada por autor (clásico o colaborador).
+// El "match" entre una fábula y un autor se hace por coincidencia exacta
+// entre `autor` (campo de la fábula) y `nombre` (campo del autor).
+// El cuerpo Markdown del archivo es la bio/reseña del autor.
+const autores = defineCollection({
+	loader: glob({ base: './src/content/autores', pattern: '**/*.{md,mdx}' }),
+	schema: ({ image }) =>
+		z.object({
+			// Nombre visible del autor. DEBE coincidir, exacto, con el campo
+			// `autor` que las fábulas usan para referirse a esta persona.
+			nombre: z.string(),
+
+			// 'clasico'    : autor histórico cuyo trabajo se cura en el blog
+			//                (Samaniego, Esopo, Iriarte, Anónimo, etc.).
+			// 'colaborador': persona viva con cuenta en el blog que publica
+			//                aquí. Tiene "página bio" en lugar de página de
+			//                autor clásica (sin fechas/nacionalidad obligatorias).
+			tipo: z.enum(['clasico', 'colaborador']),
+
+			imagen: z.optional(image()),
+
+			// --- Datos biográficos (clásicos) ---
+			nacionalidad: optionalString,
+			nacimiento: optionalInt,
+			muerte: optionalInt,
+			// Para autores cuya fecha exacta se desconoce.
+			// Ej.: "VI a.C." o "XII".
+			siglo: optionalString,
+
+			// --- Solo colaboradores ---
+			// Nombre real del colaborador, opcional y privado.
+			// Si el colaborador firma con seudónimo, su archivo de autor usa
+			// el seudónimo en `nombre` y guarda aquí el nombre legal.
+			// Este campo NO se renderiza en ninguna página pública.
+			nombre_real: optionalString,
+			// Enlaces externos del colaborador (web, Instagram, etc.).
+			enlaces: z
+				.array(z.object({ etiqueta: z.string(), url: z.string().url() }))
+				.optional(),
+		}),
+});
+
+export const collections = { fabulas, entradas, autores };

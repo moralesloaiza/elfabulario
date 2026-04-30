@@ -12,101 +12,101 @@ es_seudonimo: true
 nombre_real: "Alejandro Morales Loaiza"
 ---
 
-La avispa aquel día<br>
-desde la mañana,<br>
-como de costumbre<br>
-bravísima andaba.<br>
-El día era hermoso<br>
-la brisa liviana;<br>
-cubierta la tierra<br>
-de flores estaba<br>
-y mil pajaritos<br>
-los aires cruzaban.<br>
-<br>
-   Pero a nuestra avispa<br>
-—nuestra avispa brava—<br>
-nada le atraía,<br>
-no veía nada<br>
-por ir como iba<br>
-comida de rabia.<br>
-“Adiós”, le dijeron<br>
-unas rosas blancas,<br>
-y ella ni siquiera<br>
-se volvió a mirarlas<br>
-por ir abstraída,<br>
-torva, ensimismada,<br>
-con la furia sorda<br>
-que la devoraba.<br>
-<br>
-   “Buen día”, le dijo<br>
-la abeja, su hermana,<br>
-y ella que de furia<br>
-casi reventaba,<br>
-por toda respuesta<br>
-le echó una roncada<br>
-que a la pobre abeja<br>
-dejó anonadada.<br>
-<br>
-   Ciega como iba<br>
-la avispa de rabia,<br>
-repentinamente<br>
-como en una trampa<br>
-se encontró metida<br>
-dentro de una casa.<br>
-Echando mil pestes<br>
-al verse encerrada,<br>
-en vez de ponerse<br>
-serena y con calma<br>
-a buscar por donde<br>
-salir de la estancia,<br>
-¿sabéis lo que hizo?<br>
-¡Se puso más brava!<br>
-Se puso en los vidrios<br>
-a dar cabezadas,<br>
-sin ver en su furia<br>
-que a corta distancia<br>
-ventanas y puertas<br>
-abiertas estaban;<br>
-y como en la ira<br>
-que la dominaba<br>
-casi no veía<br>
-por donde volaba,<br>
-en una embestida<br>
-que dio de la rabia,<br>
-cayó nuestra avispa<br>
-en un vaso de agua.<br>
-<br>
-   ¡Un vaso pequeño<br>
-menor que una cuarta<br>
-donde hasta un mosquito<br>
-nadando se salva!…<br>
-<br>
-   Pero nuestra avispa,<br>
-nuestra avispa brava,<br>
-más brava se puso<br>
-al verse mojada,<br>
-en vez de ocuparse<br>
-la muy insensata<br>
-de ganar la orilla<br>
-batiendo las alas<br>
-se puso a echar pestes<br>
-y a tirar picadas<br>
-y a lanzar conjuros<br>
-y a emitir mentadas,<br>
-y así poco a poco<br>
-fue quedando exhausta<br>
-hasta que furiosa,<br>
-pero emparamada,<br>
-terminó la avispa<br>
-por morir ahogada.<br>
-<br>
-*   Tal como la avispa*<br>
-*que cuenta esta fábula,*<br>
-*el mundo está lleno*<br>
-*de personas bravas,*<br>
-*que infunden respeto*<br>
-*por su mala cara,*<br>
-*que se hacen famosas*<br>
-*debido a sus rabias*<br>
-*y al final se ahogan*<br>
+La avispa aquel día
+desde la mañana,
+como de costumbre
+bravísima andaba.
+El día era hermoso
+la brisa liviana;
+cubierta la tierra
+de flores estaba
+y mil pajaritos
+los aires cruzaban.
+
+   Pero a nuestra avispa
+—nuestra avispa brava—
+nada le atraía,
+no veía nada
+por ir como iba
+comida de rabia.
+“Adiós”, le dijeron
+unas rosas blancas,
+y ella ni siquiera
+se volvió a mirarlas
+por ir abstraída,
+torva, ensimismada,
+con la furia sorda
+que la devoraba.
+
+   “Buen día”, le dijo
+la abeja, su hermana,
+y ella que de furia
+casi reventaba,
+por toda respuesta
+le echó una roncada
+que a la pobre abeja
+dejó anonadada.
+
+   Ciega como iba
+la avispa de rabia,
+repentinamente
+como en una trampa
+se encontró metida
+dentro de una casa.
+Echando mil pestes
+al verse encerrada,
+en vez de ponerse
+serena y con calma
+a buscar por donde
+salir de la estancia,
+¿sabéis lo que hizo?
+¡Se puso más brava!
+Se puso en los vidrios
+a dar cabezadas,
+sin ver en su furia
+que a corta distancia
+ventanas y puertas
+abiertas estaban;
+y como en la ira
+que la dominaba
+casi no veía
+por donde volaba,
+en una embestida
+que dio de la rabia,
+cayó nuestra avispa
+en un vaso de agua.
+
+   ¡Un vaso pequeño
+menor que una cuarta
+donde hasta un mosquito
+nadando se salva!…
+
+   Pero nuestra avispa,
+nuestra avispa brava,
+más brava se puso
+al verse mojada,
+en vez de ocuparse
+la muy insensata
+de ganar la orilla
+batiendo las alas
+se puso a echar pestes
+y a tirar picadas
+y a lanzar conjuros
+y a emitir mentadas,
+y así poco a poco
+fue quedando exhausta
+hasta que furiosa,
+pero emparamada,
+terminó la avispa
+por morir ahogada.
+
+*   Tal como la avispa*
+*que cuenta esta fábula,*
+*el mundo está lleno*
+*de personas bravas,*
+*que infunden respeto*
+*por su mala cara,*
+*que se hacen famosas*
+*debido a sus rabias*
+*y al final se ahogan*
 *en un vaso de agua.*

@@ -12,14 +12,14 @@ es_seudonimo: true
 nombre_real: "Alejandro Morales Loaiza"
 ---
 
-Subió una mona a un nogal<br>
-Y cogiendo una nuez verde,<br>
-En la cáscara la muerde,<br>
-Con que la supo muy mal.<br>
-Arrojóla el animal<br>
-Y se quedó sin comer.<br>
-<br>
-*Así suele suceder*<br>
-*A quien su presa abandona,*<br>
-*Porque halla como la mona*<br>
+Subió una mona a un nogal
+Y cogiendo una nuez verde,
+En la cáscara la muerde,
+Con que la supo muy mal.
+Arrojóla el animal
+Y se quedó sin comer.
+
+*Así suele suceder*
+*A quien su presa abandona,*
+*Porque halla como la mona*
 *Al principio que vencer.*

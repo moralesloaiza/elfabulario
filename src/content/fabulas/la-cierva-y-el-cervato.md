@@ -11,29 +11,29 @@ nombre_real: "Alejandro Morales Loaiza"
 nota_curador: "Atribución pendiente de verificar. Procedente del archivo de elfabulario.tumblr.com."
 ---
 
-A una cierva decía<br>
-su tierno cervatillo: -¡Madre mía,<br>
-es posible que un perro solamente<br>
-al bosque te haga huir cobardemente,<br>
-siendo él mucho menor, menos pujante!<br>
-¿Por qué no has de ser tú más arrogante?<br>
--Todo es cierto, hijo mío;<br>
-y cuando así lo pienso, desafío<br>
-a mis solas a veinte perros juntos.<br>
-Figúrome luchando, y que difuntos<br>
-dejo a los unos; que otros, falleciendo,<br>
-pisándose las tripas, van huyendo<br>
-en vano de la muerte,<br>
-y a todos venzo de gallarda suerte.<br>
-Mas si, embebida en este pensamiento,<br>
-a un perro ladrar siento,<br>
-escapo más ligera que un venablo,<br>
-y mi victoria se la lleva el diablo.<br>
-*A quien no sea de ánimo esforzado<br>
-no armarlo de soldado;<br>
-pues por más que, al mirarse la armadura,<br>
-piense en tiempo de paz que su bravura<br>
-herirá, matará cuanto acometa,<br>
-en oyendo en campaña la trompeta,<br>
-hará lo que la corza de la historia,<br>
+A una cierva decía
+su tierno cervatillo: -¡Madre mía,
+es posible que un perro solamente
+al bosque te haga huir cobardemente,
+siendo él mucho menor, menos pujante!
+¿Por qué no has de ser tú más arrogante?
+-Todo es cierto, hijo mío;
+y cuando así lo pienso, desafío
+a mis solas a veinte perros juntos.
+Figúrome luchando, y que difuntos
+dejo a los unos; que otros, falleciendo,
+pisándose las tripas, van huyendo
+en vano de la muerte,
+y a todos venzo de gallarda suerte.
+Mas si, embebida en este pensamiento,
+a un perro ladrar siento,
+escapo más ligera que un venablo,
+y mi victoria se la lleva el diablo.
+*A quien no sea de ánimo esforzado
+no armarlo de soldado;
+pues por más que, al mirarse la armadura,
+piense en tiempo de paz que su bravura
+herirá, matará cuanto acometa,
+en oyendo en campaña la trompeta,
+hará lo que la corza de la historia,
 mas que el diablo se lleve la vi*ctoria.

@@ -23,5 +23,5 @@ Sentía el pobre abogado un hambre tal, que al pasar delante de las peras revuel
 
 *El que no desperdicia lo útil, no carecerá de lo necesario.*
 
-**Esopo.***<br>
+**Esopo.***
 *

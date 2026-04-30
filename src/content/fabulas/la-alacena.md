@@ -12,67 +12,67 @@ es_seudonimo: true
 nombre_real: "Alejandro Morales Loaiza"
 ---
 
-Caminando un Relator<br>
-Del Consejo de Ultramar,<br>
-Hizo noche en un lugar<br>
-En casa de un labrador.<br>
-<br>
-   En servicio del viajero<br>
-Iba un paje maragato,<br>
-Mozo de excelente olfato,<br>
-Y excelente majadero.<br>
-<br>
-   Cenaron en paz de Dios,<br>
-Trataron de madrugar,<br>
-Y hubiéronse de acostar<br>
-En una alcoba los dos.<br>
-<br>
-   Veíanse en los costados<br>
-De la estancia, frente a frente,<br>
-Iguales perfectamente,<br>
-Cuatro postigos cerrados.<br>
-<br>
-   El un par era un balcón;<br>
-El otro correspondía<br>
-A una alacena, en que había<br>
-Seis quesos de Villalón.<br>
-<br>
-   Cogió el sueño tarde y mal<br>
-El Relator, y durmiendo<br>
-Creyó sentir el estruendo<br>
-De un turbión descomunal.<br>
-<br>
-   Despertó, y al camarada<br>
-Le dijo: « Ved si el ordiente<br>
-Clarea, y si da el ambiente<br>
-Olor de tierra mojada. »<br>
-<br>
-   Saltó el paje de su lecho,<br>
-Y a tientas de mano y pie,<br>
-Por ir al balcón, se fué<br>
-A la alacena derecho.<br>
-<br>
-   Abrió, zampó la cabeza;<br>
-Y aunque miró y remiró,<br>
-Tan negro el boquete halló<br>
-Como el resto de la pieza.<br>
-<br>
-   Pero un olor en seguida<br>
-Percibió en aquel recinto,<br>
-Que le pareció distinto<br>
-Del de tierra humedecida.<br>
-<br>
-   Y levantando ex profeso<br>
-La voz el muy avestruz,<br>
-Dijo: « Ni lluvia, ni luz:<br>
-Está oscuro y huele a queso. »<br>
-<br>
-   Así, ciega y tontamente,<br>
-Críticas gacen famosas<br>
-Los que no miran las cosas<br>
-Desde el punto conveniente.<br>
-<br>
-   Tacha de oscuro y condena<br>
-Tal concepto Santillana;<br>
-Y es que huye de la ventana,<br>
+Caminando un Relator
+Del Consejo de Ultramar,
+Hizo noche en un lugar
+En casa de un labrador.
+
+   En servicio del viajero
+Iba un paje maragato,
+Mozo de excelente olfato,
+Y excelente majadero.
+
+   Cenaron en paz de Dios,
+Trataron de madrugar,
+Y hubiéronse de acostar
+En una alcoba los dos.
+
+   Veíanse en los costados
+De la estancia, frente a frente,
+Iguales perfectamente,
+Cuatro postigos cerrados.
+
+   El un par era un balcón;
+El otro correspondía
+A una alacena, en que había
+Seis quesos de Villalón.
+
+   Cogió el sueño tarde y mal
+El Relator, y durmiendo
+Creyó sentir el estruendo
+De un turbión descomunal.
+
+   Despertó, y al camarada
+Le dijo: « Ved si el ordiente
+Clarea, y si da el ambiente
+Olor de tierra mojada. »
+
+   Saltó el paje de su lecho,
+Y a tientas de mano y pie,
+Por ir al balcón, se fué
+A la alacena derecho.
+
+   Abrió, zampó la cabeza;
+Y aunque miró y remiró,
+Tan negro el boquete halló
+Como el resto de la pieza.
+
+   Pero un olor en seguida
+Percibió en aquel recinto,
+Que le pareció distinto
+Del de tierra humedecida.
+
+   Y levantando ex profeso
+La voz el muy avestruz,
+Dijo: « Ni lluvia, ni luz:
+Está oscuro y huele a queso. »
+
+   Así, ciega y tontamente,
+Críticas gacen famosas
+Los que no miran las cosas
+Desde el punto conveniente.
+
+   Tacha de oscuro y condena
+Tal concepto Santillana;
+Y es que huye de la ventana,
 Y se asoma a la alacena.

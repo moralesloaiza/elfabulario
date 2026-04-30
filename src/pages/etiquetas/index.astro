@@ -1,0 +1,133 @@
+---
+import { getCollection } from 'astro:content';
+import BaseHead from '../../components/BaseHead.astro';
+import Footer from '../../components/Footer.astro';
+import Header from '../../components/Header.astro';
+import Sol from '../../components/ornaments/Sol.astro';
+import { SITE_TITLE } from '../../consts';
+import { slugify } from '../../utils/slug';
+
+const fabulas = await getCollection('fabulas', ({ data }) => !data.borrador);
+
+// Agrupamos por slug. Para cada slug, conservamos la primera forma humana
+// que vimos (la que usará el enlace) y contamos cuántas fábulas la usan.
+const grupos = new Map<string, { etiquetaHumana: string; conteo: number }>();
+for (const f of fabulas) {
+	const vistas = new Set<string>();
+	for (const eOriginal of f.data.etiquetas) {
+		const sl = slugify(eOriginal);
+		if (!sl || vistas.has(sl)) continue;
+		vistas.add(sl);
+		const previo = grupos.get(sl);
+		if (previo) {
+			previo.conteo += 1;
+		} else {
+			grupos.set(sl, { etiquetaHumana: eOriginal, conteo: 1 });
+		}
+	}
+}
+
+// Orden alfabético por la forma humana, ignorando acentos.
+const etiquetas = Array.from(grupos.entries())
+	.map(([slug, { etiquetaHumana, conteo }]) => ({ slug, etiquetaHumana, conteo }))
+	.sort((a, b) => a.etiquetaHumana.localeCompare(b.etiquetaHumana, 'es', { sensitivity: 'base' }));
+---
+
+<!doctype html>
+<html lang="es">
+	<head>
+		<BaseHead title={`Etiquetas · ${SITE_TITLE}`} description="Todas las etiquetas del Fabulario." />
+	</head>
+	<body>
+		<Header />
+		<main class="page indice">
+			<header class="title">
+				<Sol />
+				<h1>Etiquetas</h1>
+				<p class="subtitulo">Los hilos temáticos que atraviesan las fábulas.</p>
+			</header>
+
+			<hr class="ornate" />
+
+			{etiquetas.length === 0 && (
+				<p class="vacio">Aún no hay etiquetas en uso.</p>
+			)}
+
+			{etiquetas.length > 0 && (
+				<ul class="nube">
+					{etiquetas.map((e) => (
+						<li>
+							<a href={`/etiquetas/${e.slug}/`} class="etiqueta">
+								<span class="texto">#{e.etiquetaHumana}</span>
+								<span class="conteo">{e.conteo}</span>
+							</a>
+						</li>
+					))}
+				</ul>
+			)}
+		</main>
+		<Footer />
+	</body>
+</html>
+
+<style>
+	.indice {
+		padding-block: var(--space-2xl);
+	}
+	.title {
+		text-align: center;
+		margin-bottom: var(--space-md);
+	}
+	.title h1 {
+		margin: 0 0 var(--space-sm);
+		font-size: var(--fs-3xl);
+	}
+	.subtitulo {
+		font-family: var(--font-body);
+		font-style: italic;
+		font-size: var(--fs-md);
+		color: var(--color-text-soft);
+		max-width: var(--measure-narrow);
+		margin: 0 auto;
+	}
+	.vacio {
+		text-align: center;
+		font-style: italic;
+		color: var(--color-text-soft);
+		margin-top: var(--space-2xl);
+	}
+	.nube {
+		list-style: none;
+		padding: 0;
+		margin: var(--space-2xl) 0 0;
+		display: flex;
+		flex-wrap: wrap;
+		gap: var(--space-md);
+		justify-content: center;
+	}
+	.etiqueta {
+		display: inline-flex;
+		align-items: baseline;
+		gap: var(--space-2xs);
+		font-family: var(--font-display);
+		text-decoration: none;
+		padding: var(--space-2xs) var(--space-sm);
+		border: var(--rule-hairline) solid var(--color-esmeralda);
+		color: var(--color-esmeralda);
+		transition: background-color var(--dur-fast) var(--ease-standard), color var(--dur-fast) var(--ease-standard);
+	}
+	.etiqueta:hover,
+	.etiqueta:focus-visible {
+		background-color: var(--color-esmeralda);
+		color: var(--color-marfil, #fff);
+	}
+	.etiqueta .texto {
+		font-size: var(--fs-sm);
+		letter-spacing: var(--ls-wide);
+	}
+	.etiqueta .conteo {
+		font-size: var(--fs-3xs);
+		letter-spacing: var(--ls-widest);
+		opacity: 0.75;
+	}
+</style>

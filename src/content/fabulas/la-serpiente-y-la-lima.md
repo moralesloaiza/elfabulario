@@ -13,15 +13,15 @@ es_seudonimo: true
 nombre_real: "Alejandro Morales Loaiza"
 ---
 
-En casa de un cerrajero<br>
-entró la serpiente un día,<br>
-y la insensata mordía<br>
-en una lima de acero.<br>
-Díjole la lima: —El mal,<br>
-necia, será para ti.<br>
-¿Cómo has de hacer mella en mí,<br>
-que hago polvos el metal?<br>
-*Quien pretende sin razón<br>
-al más fuerte derribar,<br>
-no consigue sino dar<br>
+En casa de un cerrajero
+entró la serpiente un día,
+y la insensata mordía
+en una lima de acero.
+Díjole la lima: —El mal,
+necia, será para ti.
+¿Cómo has de hacer mella en mí,
+que hago polvos el metal?
+*Quien pretende sin razón
+al más fuerte derribar,
+no consigue sino dar
 coces contra el aguij*ón.

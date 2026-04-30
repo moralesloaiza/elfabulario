@@ -13,49 +13,49 @@ es_seudonimo: true
 nombre_real: "Alejandro Morales Loaiza"
 ---
 
-Cantando la Cigarra<br>
-pasó el verano entero,<br>
-sin hacer provisiones<br>
-allá para el invierno.<br>
-Los fríos la obligaron<br>
-a guardar el silencio<br>
-y a acogerse al abrigo<br>
-de su estrecho aposento.<br>
-Viose desproveída<br>
-del preciso sustento:<br>
-sin mosca, sin gusano,<br>
-sin trigo, sin centeno.<br>
-Habitaba la Hormiga<br>
-allí, tabique en medio,<br>
-y con mil expresiones<br>
-de atención y respeto<br>
-la dijo: —Doña Hormiga,<br>
-pues que en vuestros graneros<br>
-sobran las provisiones<br>
-para vuestro alimento,<br>
-prestad alguna cosa<br>
-con que viva este invierno<br>
-esta triste Cigarra,<br>
-que, alegre en otro tiempo,<br>
-nunca conoció el daño,<br>
-nunca supo temerlo.<br>
-No dudéis en prestarme;<br>
-que fielmente prometo<br>
-pagaros con ganancias,<br>
-por el nombre que tengo.<br>
-La codiciosa Hormiga<br>
-respondió con denuedo,<br>
-ocultando a la espalda<br>
-las llaves del granero:<br>
-—¡Yo prestar lo que gano<br>
-con un trabajo inmenso!<br>
-Dime, pues, holgazana,<br>
-¿que has hecho en el buen tiempo?<br>
-—Yo, dijo la Cigarra,<br>
-a todo pasajero<br>
-cantaba alegremente,<br>
-sin cesar ni un momento.<br>
-—¡Hola!, ¿conque cantabas<br>
-cuando yo andaba al remo?<br>
-Pues ahora, que yo como,<br>
+Cantando la Cigarra
+pasó el verano entero,
+sin hacer provisiones
+allá para el invierno.
+Los fríos la obligaron
+a guardar el silencio
+y a acogerse al abrigo
+de su estrecho aposento.
+Viose desproveída
+del preciso sustento:
+sin mosca, sin gusano,
+sin trigo, sin centeno.
+Habitaba la Hormiga
+allí, tabique en medio,
+y con mil expresiones
+de atención y respeto
+la dijo: —Doña Hormiga,
+pues que en vuestros graneros
+sobran las provisiones
+para vuestro alimento,
+prestad alguna cosa
+con que viva este invierno
+esta triste Cigarra,
+que, alegre en otro tiempo,
+nunca conoció el daño,
+nunca supo temerlo.
+No dudéis en prestarme;
+que fielmente prometo
+pagaros con ganancias,
+por el nombre que tengo.
+La codiciosa Hormiga
+respondió con denuedo,
+ocultando a la espalda
+las llaves del granero:
+—¡Yo prestar lo que gano
+con un trabajo inmenso!
+Dime, pues, holgazana,
+¿que has hecho en el buen tiempo?
+—Yo, dijo la Cigarra,
+a todo pasajero
+cantaba alegremente,
+sin cesar ni un momento.
+—¡Hola!, ¿conque cantabas
+cuando yo andaba al remo?
+Pues ahora, que yo como,
 baila, pese a tu cuerpo.

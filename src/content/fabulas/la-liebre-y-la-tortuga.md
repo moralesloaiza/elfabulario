@@ -11,16 +11,16 @@ es_seudonimo: true
 nombre_real: "Alejandro Morales Loaiza"
 ---
 
-Suena el silbato<br>
-y la liebre deja una estela de polvo<br>
-<br>
-corre<br>
-da la vuelta a la granja<br>
-y se aproxima a la línea de meta<br>
-<br>
-divisa a la tortuga sobre la misma<br>
-y da por perdida la carrera<br>
-<br>
+Suena el silbato
+y la liebre deja una estela de polvo
+
+corre
+da la vuelta a la granja
+y se aproxima a la línea de meta
+
+divisa a la tortuga sobre la misma
+y da por perdida la carrera
+
 su rival permanece inmóvil
 
 **Sergio Laignelet** (de Cuentos sin hadas, 2010).

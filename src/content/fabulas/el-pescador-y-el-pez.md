@@ -13,22 +13,22 @@ es_seudonimo: true
 nombre_real: "Alejandro Morales Loaiza"
 ---
 
-Recoge un pescador su red tendida,<br>
-y saca un pececillo. —Por tu vida,<br>
-exclamó el inocente prisionero,<br>
-dame la libertad. Sólo la quiero,<br>
-mira que no te engaño,<br>
-porque ahora soy ruin; dentro de un año<br>
-sin duda lograrás el gran consuelo<br>
-de pescarme más grande que mi abuelo.<br>
-¡Qué!, ¿te burlas?, ¿te ríes de mi llanto?<br>
-Sólo por otro tanto<br>
-a un hermanito mío<br>
-un señor pescador lo tiró al río.<br>
-—¿Por otro tanto al río? ¡Qué manía!,<br>
-replicó el pescador. ¿Pues no sabía<br>
-que el refrán castellano<br>
+Recoge un pescador su red tendida,
+y saca un pececillo. —Por tu vida,
+exclamó el inocente prisionero,
+dame la libertad. Sólo la quiero,
+mira que no te engaño,
+porque ahora soy ruin; dentro de un año
+sin duda lograrás el gran consuelo
+de pescarme más grande que mi abuelo.
+¡Qué!, ¿te burlas?, ¿te ríes de mi llanto?
+Sólo por otro tanto
+a un hermanito mío
+un señor pescador lo tiró al río.
+—¿Por otro tanto al río? ¡Qué manía!,
+replicó el pescador. ¿Pues no sabía
+que el refrán castellano
 dice: “Más vale pájaro en la mano…”?
 
-***A sartén te condeno, que mi panza<br>
+***A sartén te condeno, que mi panza
 no se llena jamás con la esperanza***.

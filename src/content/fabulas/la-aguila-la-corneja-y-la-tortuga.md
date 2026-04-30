@@ -13,32 +13,32 @@ es_seudonimo: true
 nombre_real: "Alejandro Morales Loaiza"
 ---
 
-A una tortuga una águila arrebata.<br>
-La ladrona se apura y desbarata<br>
-por hacerla pedazos,<br>
+A una tortuga una águila arrebata.
+La ladrona se apura y desbarata
+por hacerla pedazos,
 ya que no con la garra, a picotazos.
 
-Viéndola una corneja en tal faena,<br>
-le dice: —En vano tomas tanta pena,<br>
-¿no ves que es la tortuga, cuya casa<br>
-diente, cuerno ni pico la traspasa,<br>
-y, si siente que llaman a su puerta,<br>
+Viéndola una corneja en tal faena,
+le dice: —En vano tomas tanta pena,
+¿no ves que es la tortuga, cuya casa
+diente, cuerno ni pico la traspasa,
+y, si siente que llaman a su puerta,
 se finge la dormida, sorda o muerta?
 
-—Pues ¿qué he de hacer?<br>
-—Remontarás tu vuelo,<br>
-y en mirándote allá cerca del cielo<br>
-la dejarás caer sobre un peñasco,<br>
+—Pues ¿qué he de hacer?
+—Remontarás tu vuelo,
+y en mirándote allá cerca del cielo
+la dejarás caer sobre un peñasco,
 y se hará una tortilla el duro casco.
 
-La águila, porque diestra lo ejecuta,<br>
-y la corneja astuta,<br>
-por autora de aquella maravilla,<br>
+La águila, porque diestra lo ejecuta,
+y la corneja astuta,
+por autora de aquella maravilla,
 juntamente comieron la tortilla.
 
-*¿Qué podrá resistirse a un poderoso,<br>
-guiado de un consejo malicioso?<br>
-De estos tales se aparta el que es prudente;<br>
-y así, por escaparse de esta gente,<br>
-las descendientes de la tal tortuga<br>
+*¿Qué podrá resistirse a un poderoso,
+guiado de un consejo malicioso?
+De estos tales se aparta el que es prudente;
+y así, por escaparse de esta gente,
+las descendientes de la tal tortuga
 a cuevas ignoradas hacen fuga.*

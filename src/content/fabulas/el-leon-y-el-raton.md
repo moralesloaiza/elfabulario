@@ -12,26 +12,26 @@ es_seudonimo: true
 nombre_real: "Alejandro Morales Loaiza"
 ---
 
-Estaba un ratoncillo aprisionado<br>
-En las garras de un león; el desdichado<br>
-En tal ratonera no fué preso<br>
-Por ladrón de tocino ni de queso,<br>
-Sino porque con otros molestaba<br>
-Al león que en su retiro descansaba.<br>
-Pide perdón llorando su insolencia,<br>
-Al oir implorar la real clemencia,<br>
-Responde el rey con majestuoso tono:<br>
-(No dijera más Tito) « Te perdono ».<br>
-Poco después, cazando el león tropieza<br>
-En una red oculta en la maleza:<br>
-Quiere salir, mas queda prisionero:<br>
-Atronando la selva ruge fiero.<br>
-El libre ratoncillo que lo siente,<br>
-Corriendo llega, roe diligente<br>
-Los nudos de la red, de tal manera.<br>
-Que al fin rompió los grillos de la fiera.<br>
-<br>
-*Conviene al poderoso*<br>
-*Para los infelices ser piadoso:*<br>
-*Tal vez se puede ver necesitado*<br>
+Estaba un ratoncillo aprisionado
+En las garras de un león; el desdichado
+En tal ratonera no fué preso
+Por ladrón de tocino ni de queso,
+Sino porque con otros molestaba
+Al león que en su retiro descansaba.
+Pide perdón llorando su insolencia,
+Al oir implorar la real clemencia,
+Responde el rey con majestuoso tono:
+(No dijera más Tito) « Te perdono ».
+Poco después, cazando el león tropieza
+En una red oculta en la maleza:
+Quiere salir, mas queda prisionero:
+Atronando la selva ruge fiero.
+El libre ratoncillo que lo siente,
+Corriendo llega, roe diligente
+Los nudos de la red, de tal manera.
+Que al fin rompió los grillos de la fiera.
+
+*Conviene al poderoso*
+*Para los infelices ser piadoso:*
+*Tal vez se puede ver necesitado*
 *Del auxilio de aquel más desdichado.*

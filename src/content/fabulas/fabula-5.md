@@ -12,17 +12,17 @@ es_seudonimo: true
 nombre_real: "Alejandro Morales Loaiza"
 ---
 
-Para evitar que el hombre lo matara<br>
-como a todos los otros de su piara<br>
-que siguieron tan trágico destino,<br>
-una vez de comer dejó un cochino.<br>
-<br>
-   Y así logró su fin, aunque os asombre,<br>
-pues se empezó a poner como un alambre<br>
-hasta que en vez del hombre<br>
-quien lo mató fue el hambre.<br>
-<br>
-   Vaya por el camino<br>
-o por la calle real,<br>
-el caso es que el cochino<br>
+Para evitar que el hombre lo matara
+como a todos los otros de su piara
+que siguieron tan trágico destino,
+una vez de comer dejó un cochino.
+
+   Y así logró su fin, aunque os asombre,
+pues se empezó a poner como un alambre
+hasta que en vez del hombre
+quien lo mató fue el hambre.
+
+   Vaya por el camino
+o por la calle real,
+el caso es que el cochino
 siempre muere al final.

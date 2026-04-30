@@ -12,26 +12,26 @@ es_seudonimo: true
 nombre_real: "Alejandro Morales Loaiza"
 ---
 
-Pues señor, éste era<br>
-un perro que sufría de sordera,<br>
-y culpando del caso a lo muy viejas<br>
-que eran ya sus orejas,<br>
-se las cortó, y atadas con cabuyas<br>
-se las cambió al cochino por las suyas.<br>
-<br>
-   Con sus nuevas orejas<br>
-motivo no tenía ya de quejas,<br>
-pues aunque un poco rudas en verdad<br>
-y un tanto en desacuerdo con su tipo,<br>
-funcionaban lo mismo que un equipo<br>
-de alta fidelidad.<br>
-<br>
-   Sin embargo, aunque loco<br>
-de dicha por el cambio, fue muy poco<br>
-lo que de sus orejas disfrutó,<br>
-pues al verle una vieja esas orejas<br>
-coloradas y gruesas como tejas,<br>
-creyéndolo un cochino lo mató.<br>
-<br>
-*   Así cumplió aquel perro su trágico destino:*<br>
+Pues señor, éste era
+un perro que sufría de sordera,
+y culpando del caso a lo muy viejas
+que eran ya sus orejas,
+se las cortó, y atadas con cabuyas
+se las cambió al cochino por las suyas.
+
+   Con sus nuevas orejas
+motivo no tenía ya de quejas,
+pues aunque un poco rudas en verdad
+y un tanto en desacuerdo con su tipo,
+funcionaban lo mismo que un equipo
+de alta fidelidad.
+
+   Sin embargo, aunque loco
+de dicha por el cambio, fue muy poco
+lo que de sus orejas disfrutó,
+pues al verle una vieja esas orejas
+coloradas y gruesas como tejas,
+creyéndolo un cochino lo mató.
+
+*   Así cumplió aquel perro su trágico destino:*
 *¡lo mataron a cuenta de oreja de cochino!*

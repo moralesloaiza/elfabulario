@@ -12,44 +12,44 @@ es_seudonimo: true
 nombre_real: "Alejandro Morales Loaiza"
 ---
 
-Un labrador cansado<br>
-En el ardiente estío<br>
-Debajo de una encina<br>
-Reposaba pacífico y tranquilo.<br>
-Desde su dulce estancia<br>
-Miraba agradecido<br>
-El bien con que la tierra<br>
-Premiaba sus penosos ejercicios.<br>
-Entre mil producciones<br>
-Hijas de su cultivo,<br>
-Veía calabazas,<br>
-Melones por los suelos esparcidos,<br>
-« ¿Por qué la Providencia.<br>
-Decía entre sí mismo,<br>
-Puso a la ruin bellota<br>
-En elevado, preeminente sitio?<br>
-¿Cuánto mejor sería<br>
-Que trocando el destino.<br>
-Pendiesen de las ramas<br>
-Calabazas, melones y pepinos? »<br>
-Bien oportunamente.<br>
-Al tiempo que esto dijo,<br>
-Cayendo una bellota,<br>
-Le pegó en las narices de improvisto:<br>
-« Pardiez, prorrumpió entoces<br>
-El labrador sencillo;<br>
-Si lo que fué bellota<br>
-Algún gordo melón hubiera sido<br>
-Desde luego pudiera<br>
-Tomar a buen partido<br>
-En caso semejante<br>
-Quedar desnarigado, pero vivo ».<br>
-<br>
-*Aquí la Providencia*<br>
-*Manifestarle quiso,*<br>
-*Que supo a cada cosa*<br>
-*Señalar sabiamente su destino;*<br>
-*A mayor bien del hombre*<br>
-*Todo está repartido;*<br>
-*Preso el pez en su concha,*<br>
+Un labrador cansado
+En el ardiente estío
+Debajo de una encina
+Reposaba pacífico y tranquilo.
+Desde su dulce estancia
+Miraba agradecido
+El bien con que la tierra
+Premiaba sus penosos ejercicios.
+Entre mil producciones
+Hijas de su cultivo,
+Veía calabazas,
+Melones por los suelos esparcidos,
+« ¿Por qué la Providencia.
+Decía entre sí mismo,
+Puso a la ruin bellota
+En elevado, preeminente sitio?
+¿Cuánto mejor sería
+Que trocando el destino.
+Pendiesen de las ramas
+Calabazas, melones y pepinos? »
+Bien oportunamente.
+Al tiempo que esto dijo,
+Cayendo una bellota,
+Le pegó en las narices de improvisto:
+« Pardiez, prorrumpió entoces
+El labrador sencillo;
+Si lo que fué bellota
+Algún gordo melón hubiera sido
+Desde luego pudiera
+Tomar a buen partido
+En caso semejante
+Quedar desnarigado, pero vivo ».
+
+*Aquí la Providencia*
+*Manifestarle quiso,*
+*Que supo a cada cosa*
+*Señalar sabiamente su destino;*
+*A mayor bien del hombre*
+*Todo está repartido;*
+*Preso el pez en su concha,*
 *Y libre por el aire el pajarillo.*

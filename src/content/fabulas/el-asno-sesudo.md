@@ -13,43 +13,43 @@ es_seudonimo: true
 nombre_real: "Alejandro Morales Loaiza"
 ---
 
-Cierto burro pacía<br>
-en la fresca y hermosa pradería,<br>
-con tanta paz como si aquella tierra<br>
+Cierto burro pacía
+en la fresca y hermosa pradería,
+con tanta paz como si aquella tierra
 no fuese entonces teatro de la guerra.
 
-Su dueño, que con miedo lo guardaba,<br>
-de centinela en la ribera estaba.<br>
-Divisa al enemigo en la llanura;<br>
-baja, y al buen Borrico le conjura<br>
+Su dueño, que con miedo lo guardaba,
+de centinela en la ribera estaba.
+Divisa al enemigo en la llanura;
+baja, y al buen Borrico le conjura
 que huya precipitado.
 
-El Asno, muy sesudo y reposado,<br>
-empieza a andar a paso perezoso.<br>
-Impaciente su dueño y temeroso<br>
-con el marcial ruido<br>
-de bélicas trompetas al oído,<br>
+El Asno, muy sesudo y reposado,
+empieza a andar a paso perezoso.
+Impaciente su dueño y temeroso
+con el marcial ruido
+de bélicas trompetas al oído,
 le exhorta con fervor a la carrera.
 
--¡Yo correr!, dijo el asno, bueno fuera;<br>
-que llegue en hora buena Marte fiero,<br>
-me rindo, y él me lleva prisionero.<br>
-¿Servir aquí o allí no es todo uno?<br>
-¿Me pondrán dos albardas? No, ninguno.<br>
-Pues nada pierdo, nada me acobarda;<br>
+-¡Yo correr!, dijo el asno, bueno fuera;
+que llegue en hora buena Marte fiero,
+me rindo, y él me lleva prisionero.
+¿Servir aquí o allí no es todo uno?
+¿Me pondrán dos albardas? No, ninguno.
+Pues nada pierdo, nada me acobarda;
 siempre seré un esclavo con albarda.
 
-No estuvo más en sí ni más entero<br>
-que el buen pollino Amiclas el barquero,<br>
-cuando en su humilde choza le despierta<br>
-César, con sus soldados a la puerta,<br>
+No estuvo más en sí ni más entero
+que el buen pollino Amiclas el barquero,
+cuando en su humilde choza le despierta
+César, con sus soldados a la puerta,
 para que a la Calabria los guiase.
 
-¿Se podría encontrar quien no temblase<br>
-entre los poderosos<br>
-de insultos militares horrorosos<br>
-de la guerra enemiga?<br>
-No hay sino la pobreza que consiga<br>
+¿Se podría encontrar quien no temblase
+entre los poderosos
+de insultos militares horrorosos
+de la guerra enemiga?
+No hay sino la pobreza que consiga
 esta gran exención, de aquí le viene:
 
 Nada teme perder quien nada tiene.

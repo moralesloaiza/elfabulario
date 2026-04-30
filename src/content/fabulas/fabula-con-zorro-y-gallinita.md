@@ -12,13 +12,13 @@ es_seudonimo: true
 nombre_real: "Alejandro Morales Loaiza"
 ---
 
-Viendo una gallinita enfermo a un zorro,<br>
-acudió conmovida en su socorro.<br>
-<br>
-   Y lo trató tan bien<br>
-que el zorro se curó en un santiamén.<br>
-<br>
-   Y el final fue que el zorro de este cuento<br>
-dio una fiesta exquisita<br>
-y celebró su restablecimiento<br>
+Viendo una gallinita enfermo a un zorro,
+acudió conmovida en su socorro.
+
+   Y lo trató tan bien
+que el zorro se curó en un santiamén.
+
+   Y el final fue que el zorro de este cuento
+dio una fiesta exquisita
+y celebró su restablecimiento
 comiendo gallinita.

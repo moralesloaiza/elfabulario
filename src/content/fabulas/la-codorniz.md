@@ -13,24 +13,24 @@ es_seudonimo: true
 nombre_real: "Alejandro Morales Loaiza"
 ---
 
-Presa en estrecho lazo,<br>
-la Codorniz sencilla<br>
-daba quejas al aire,<br>
-ya tarde arrepentida.<br>
-«¡Ay de mí miserable, 5<br>
-infeliz avecilla,<br>
-que antes cantaba libre,<br>
-y ya lloro cautiva!<br>
-Perdí mi nido amado,<br>
-perdí en él mis delicias; 10<br>
-al fin perdilo todo,<br>
-pues que perdí la vida.<br>
-¿Por qué desgracia tanta?<br>
-¿Por qué tanta desdicha?<br>
-¡Por un grano de trigo! 15<br>
+Presa en estrecho lazo,
+la Codorniz sencilla
+daba quejas al aire,
+ya tarde arrepentida.
+«¡Ay de mí miserable, 5
+infeliz avecilla,
+que antes cantaba libre,
+y ya lloro cautiva!
+Perdí mi nido amado,
+perdí en él mis delicias; 10
+al fin perdilo todo,
+pues que perdí la vida.
+¿Por qué desgracia tanta?
+¿Por qué tanta desdicha?
+¡Por un grano de trigo! 15
 ¡Oh cara golosina!».
 
-*El apetito ciego,<br>
-¡a cuántos precipita,<br>
-que por lograr un nada,<br>
-un todo sacrific*an!<br>
+*El apetito ciego,
+¡a cuántos precipita,
+que por lograr un nada,
+un todo sacrific*an!

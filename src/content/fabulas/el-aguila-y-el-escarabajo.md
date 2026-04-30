@@ -13,66 +13,66 @@ es_seudonimo: true
 nombre_real: "Alejandro Morales Loaiza"
 ---
 
-—¡Que me matan, favor! Así clamaba<br>
-una liebre infeliz, que se miraba<br>
-en las garras de una águila sangrienta.<br>
-A las voces, según esopo cuenta,<br>
-acudió un compasivo escarabajo;<br>
-y viendo a la cuitada en tal trabajo,<br>
-por libertarla de tan cruda muerte,<br>
-lleno de horror, exclama de esta suerte:<br>
-—¡Oh reina de las aves escogida!,<br>
-¿por qué quitas la vida<br>
-a este pobre animal, manso y cobarde?<br>
-¿No sería mejor hacer alarde<br>
-de devorar a dañadoras fieras,<br>
-o ya que resistencia hallar no quieras,<br>
-cebar tus uñas y tu corvo pico<br>
-en el frío cadáver de un borrico?<br>
-Cuando el escarabajo así decía,<br>
-la águila con desprecio se reía,<br>
-y sin usar de más atenta frase,<br>
-mata, trincha, devora, pilla y vase.<br>
-El pequeño animal así burlado<br>
-quiere verse vengado.<br>
-En la ocasión primera<br>
-vuela al nido del águila altanera;<br>
-halla solos los huevos y, arrastrando,<br>
-uno por uno fuelos despeñando.<br>
-Mas como nada alcanza<br>
-a dejar satisfecha una venganza,<br>
-cuantos huevos ponía en adelante<br>
-se los hizo tortilla en el instante.<br>
-La reina de las aves sin consuelo,<br>
-remontando su vuelo,<br>
-a Júpiter excelso humilde llega,<br>
-expone su dolor, pídele, ruega<br>
-remedie tanto mal. El dios propicio<br>
-por un incomparable beneficio,<br>
-en su regazo hizo que pusiese<br>
-el águila sus huevos y se fuese;<br>
-que a la vuelta, colmada de consuelos,<br>
-encontraría hermosos sus polluelos.<br>
-Supo el escarabajo el caso todo.<br>
-Astuto e ingenioso, hace de modo<br>
-que una bola fabrica diestramente<br>
-de la materia en que continuamente<br>
-trabajando se halla,<br>
-cuyo nombre se sabe, aunque se calla,<br>
-y que, según yo pienso,<br>
-para los dioses no es muy buen incienso.<br>
-Carga con ella, vuela, y atrevido<br>
-pone su bola en el sagrado nido.<br>
-Júpiter que se vio con tal basura,<br>
-al punto sacudió su vestidura,<br>
-haciendo, al arrojar la albondiguilla,<br>
-con la bola y los huevos su tortilla.<br>
-Del trágico suceso noticiosa,<br>
-arrepentida el águila y llorosa,<br>
+—¡Que me matan, favor! Así clamaba
+una liebre infeliz, que se miraba
+en las garras de una águila sangrienta.
+A las voces, según esopo cuenta,
+acudió un compasivo escarabajo;
+y viendo a la cuitada en tal trabajo,
+por libertarla de tan cruda muerte,
+lleno de horror, exclama de esta suerte:
+—¡Oh reina de las aves escogida!,
+¿por qué quitas la vida
+a este pobre animal, manso y cobarde?
+¿No sería mejor hacer alarde
+de devorar a dañadoras fieras,
+o ya que resistencia hallar no quieras,
+cebar tus uñas y tu corvo pico
+en el frío cadáver de un borrico?
+Cuando el escarabajo así decía,
+la águila con desprecio se reía,
+y sin usar de más atenta frase,
+mata, trincha, devora, pilla y vase.
+El pequeño animal así burlado
+quiere verse vengado.
+En la ocasión primera
+vuela al nido del águila altanera;
+halla solos los huevos y, arrastrando,
+uno por uno fuelos despeñando.
+Mas como nada alcanza
+a dejar satisfecha una venganza,
+cuantos huevos ponía en adelante
+se los hizo tortilla en el instante.
+La reina de las aves sin consuelo,
+remontando su vuelo,
+a Júpiter excelso humilde llega,
+expone su dolor, pídele, ruega
+remedie tanto mal. El dios propicio
+por un incomparable beneficio,
+en su regazo hizo que pusiese
+el águila sus huevos y se fuese;
+que a la vuelta, colmada de consuelos,
+encontraría hermosos sus polluelos.
+Supo el escarabajo el caso todo.
+Astuto e ingenioso, hace de modo
+que una bola fabrica diestramente
+de la materia en que continuamente
+trabajando se halla,
+cuyo nombre se sabe, aunque se calla,
+y que, según yo pienso,
+para los dioses no es muy buen incienso.
+Carga con ella, vuela, y atrevido
+pone su bola en el sagrado nido.
+Júpiter que se vio con tal basura,
+al punto sacudió su vestidura,
+haciendo, al arrojar la albondiguilla,
+con la bola y los huevos su tortilla.
+Del trágico suceso noticiosa,
+arrepentida el águila y llorosa,
 aprendió esta lección a mucho precio:
 
-*A nadie se le trate con desprecio,<br>
-como al escarabajo,<br>
-porque al más miserable, vil y bajo,<br>
-para tomar venganza, si se irrita,<br>
+*A nadie se le trate con desprecio,
+como al escarabajo,
+porque al más miserable, vil y bajo,
+para tomar venganza, si se irrita,
 ¿le faltará siquiera una* bolita?
