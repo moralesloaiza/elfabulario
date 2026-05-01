@@ -1,0 +1,121 @@
+---
+import { getCollection } from 'astro:content';
+import BaseHead from '../../components/BaseHead.astro';
+import Footer from '../../components/Footer.astro';
+import Header from '../../components/Header.astro';
+import Sol from '../../components/ornaments/Sol.astro';
+import { SITE_TITLE } from '../../consts';
+import { TEMAS_DISPLAY, type Tema } from '../../utils/taxonomia';
+
+const fabulas = await getCollection('fabulas', ({ data }) => !data.borrador);
+
+const conteo = new Map<Tema, number>();
+for (const f of fabulas) {
+	for (const t of f.data.temas) {
+		conteo.set(t, (conteo.get(t) ?? 0) + 1);
+	}
+}
+
+const items = Array.from(conteo.entries())
+	.map(([slug, n]) => ({ slug, conteo: n, display: TEMAS_DISPLAY[slug] }))
+	.sort((a, b) => {
+		if (b.conteo !== a.conteo) return b.conteo - a.conteo;
+		return a.display.localeCompare(b.display, 'es');
+	});
+---
+
+<!doctype html>
+<html lang="es">
+	<head>
+		<BaseHead title={`Temas · ${SITE_TITLE}`} description="Temas y moralejas de las fábulas del Fabulario." />
+	</head>
+	<body>
+		<Header />
+		<main class="page indice">
+			<header class="title">
+				<Sol />
+				<h1>Temas</h1>
+				<p class="subtitulo">Las moralejas y motivos que recorren las fábulas.</p>
+			</header>
+
+			<hr class="ornate" />
+
+			<ul class="lista">
+				{items.map((item) => (
+					<li class="item">
+						<a href={`/temas/${item.slug}/`} class="item-link">
+							<h2 class="item-nombre">{item.display}</h2>
+							<p class="item-conteo">
+								{item.conteo === 1 ? '1 fábula' : `${item.conteo} fábulas`}
+							</p>
+						</a>
+					</li>
+				))}
+			</ul>
+		</main>
+		<Footer />
+	</body>
+</html>
+
+<style>
+	.indice {
+		padding-block: var(--space-2xl);
+	}
+	.title {
+		text-align: center;
+		margin-bottom: var(--space-md);
+	}
+	.title h1 {
+		margin: 0 0 var(--space-sm);
+		font-size: var(--fs-3xl);
+	}
+	.subtitulo {
+		font-family: var(--font-body);
+		font-style: italic;
+		font-size: var(--fs-md);
+		color: var(--color-text-soft);
+		max-width: var(--measure-narrow);
+		margin: 0 auto;
+	}
+	.lista {
+		list-style: none;
+		padding: 0;
+		margin: var(--space-2xl) 0 0;
+		display: grid;
+		grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+		gap: var(--space-md);
+	}
+	.item-link {
+		display: block;
+		text-decoration: none;
+		color: inherit;
+		text-align: center;
+		padding: var(--space-md);
+		border: var(--rule-hairline) solid var(--color-oro);
+		transition: background-color var(--dur-fast) var(--ease-standard);
+	}
+	.item-link:hover,
+	.item-link:focus-visible {
+		background-color: rgba(0, 0, 0, 0.03);
+	}
+	.item-nombre {
+		font-family: var(--font-display);
+		font-size: var(--fs-md);
+		font-weight: var(--fw-bold);
+		letter-spacing: var(--ls-wide);
+		line-height: var(--lh-snug);
+		margin: 0 0 var(--space-2xs);
+		color: var(--color-text);
+		text-transform: none;
+	}
+	.item-link:hover .item-nombre {
+		color: var(--color-oro-texto);
+	}
+	.item-conteo {
+		font-family: var(--font-display);
+		font-size: var(--fs-3xs);
+		letter-spacing: var(--ls-widest);
+		color: var(--color-esmeralda);
+		margin: 0;
+	}
+</style>
