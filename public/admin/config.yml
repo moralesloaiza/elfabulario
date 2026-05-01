@@ -1,6 +1,7 @@
 # Panel editorial de El Fabulario (Decap CMS).
 # Este archivo define cómo los colaboradores ven y editan las fábulas.
-# Debe mantenerse sincronizado A MANO con src/content.config.ts
+# Debe mantenerse sincronizado A MANO con src/content.config.ts y
+# src/utils/taxonomia.ts (la fuente única de verdad de slugs/displays).
 
 backend:
   name: github
@@ -37,8 +38,159 @@ collections:
       - { name: "fecha", label: "Fecha de publicación", widget: "datetime", format: "YYYY-MM-DD", date_format: "YYYY-MM-DD", time_format: false }
       - { name: "fecha_actualizada", label: "Fecha de última actualización", widget: "datetime", required: false, format: "YYYY-MM-DD", date_format: "YYYY-MM-DD", time_format: false }
       - { name: "ilustracion", label: "Ilustración", widget: "image", required: false, hint: "Proporción recomendada 3:2, mínimo 1200×800." }
-      - { name: "etiquetas", label: "Etiquetas", widget: "list", required: false, default: [] }
       - { name: "borrador", label: "Borrador (no se publica todavía)", widget: "boolean", default: false }
+
+      # --- Taxonomía ---
+      # Cuatro campos que sustituyen al antiguo `etiquetas`. Listas cerradas:
+      # los colaboradores eligen de un dropdown, no escriben libre. El humano
+      # genérico no se etiqueta (queda implícito); solo se etiquetan roles
+      # humanos específicos (rey, cazador, abogado, etc.).
+      - name: "personajes"
+        label: "Personajes"
+        widget: "select"
+        multiple: true
+        required: false
+        default: []
+        hint: "Animales, roles humanos o entidades míticas que protagonizan la fábula. El humano genérico no se etiqueta."
+        options:
+          # Animales
+          - { label: "Águila", value: "aguila" }
+          - { label: "Ardilla", value: "ardilla" }
+          - { label: "Avispa", value: "avispa" }
+          - { label: "Búho", value: "buho" }
+          - { label: "Burro", value: "burro" }
+          - { label: "Caballo", value: "caballo" }
+          - { label: "Camello", value: "camello" }
+          - { label: "Cangrejo", value: "cangrejo" }
+          - { label: "Carnero", value: "carnero" }
+          - { label: "Cerdo", value: "cerdo" }
+          - { label: "Ciervo", value: "ciervo" }
+          - { label: "Cigarra", value: "cigarra" }
+          - { label: "Cigüeña", value: "ciguena" }
+          - { label: "Cisne", value: "cisne" }
+          - { label: "Codorniz", value: "codorniz" }
+          - { label: "Comadreja", value: "comadreja" }
+          - { label: "Conejo", value: "conejo" }
+          - { label: "Culebra", value: "culebra" }
+          - { label: "Elefante", value: "elefante" }
+          - { label: "Escarabajo", value: "escarabajo" }
+          - { label: "Gallina", value: "gallina" }
+          - { label: "Gallo", value: "gallo" }
+          - { label: "Ganso", value: "ganso" }
+          - { label: "Gato", value: "gato" }
+          - { label: "Grulla", value: "grulla" }
+          - { label: "Hormiga", value: "hormiga" }
+          - { label: "Jabalí", value: "jabali" }
+          - { label: "León", value: "leon" }
+          - { label: "Leopardo", value: "leopardo" }
+          - { label: "Liebre", value: "liebre" }
+          - { label: "Lobo", value: "lobo" }
+          - { label: "Loro", value: "loro" }
+          - { label: "Mariposa", value: "mariposa" }
+          - { label: "Milano", value: "milano" }
+          - { label: "Mona", value: "mona" }
+          - { label: "Mosca", value: "mosca" }
+          - { label: "Murciélago", value: "murcielago" }
+          - { label: "Oso", value: "oso" }
+          - { label: "Paloma", value: "paloma" }
+          - { label: "Pelícano", value: "pelicano" }
+          - { label: "Perro", value: "perro" }
+          - { label: "Pez", value: "pez" }
+          - { label: "Ratón", value: "raton" }
+          - { label: "Tigre", value: "tigre" }
+          - { label: "Tortuga", value: "tortuga" }
+          - { label: "Toro", value: "toro" }
+          - { label: "Zarigüeya", value: "zarigueya" }
+          - { label: "Zorro", value: "zorro" }
+          # Roles humanos
+          - { label: "Abogado", value: "abogado" }
+          - { label: "Anciano", value: "anciano" }
+          - { label: "Cazador", value: "cazador" }
+          - { label: "Doctor", value: "doctor" }
+          - { label: "Emperador", value: "emperador" }
+          - { label: "Labrador", value: "labrador" }
+          - { label: "Lechera", value: "lechera" }
+          - { label: "Mago", value: "mago" }
+          - { label: "Niño", value: "nino" }
+          - { label: "Pobre", value: "pobre" }
+          - { label: "Príncipe", value: "principe" }
+          - { label: "Rey", value: "rey" }
+          # Entidades míticas
+          - { label: "Hada", value: "hada" }
+          - { label: "Zeus", value: "zeus" }
+
+      - name: "temas"
+        label: "Temas"
+        widget: "select"
+        multiple: true
+        required: true
+        min: 1
+        hint: "Moralejas y motivos centrales. Al menos uno."
+        options:
+          - { label: "Adulación", value: "adulacion" }
+          - { label: "Amistad", value: "amistad" }
+          - { label: "Astucia", value: "astucia" }
+          - { label: "Cobardía", value: "cobardia" }
+          - { label: "Codicia", value: "codicia" }
+          - { label: "Crítica social", value: "critica-social" }
+          - { label: "Engaño", value: "engano" }
+          - { label: "Envidia", value: "envidia" }
+          - { label: "Esperanza", value: "esperanza" }
+          - { label: "Generosidad", value: "generosidad" }
+          - { label: "Gula", value: "gula" }
+          - { label: "Guerra", value: "guerra" }
+          - { label: "Hambre", value: "hambre" }
+          - { label: "Humildad", value: "humildad" }
+          - { label: "Ingratitud", value: "ingratitud" }
+          - { label: "Inocencia", value: "inocencia" }
+          - { label: "Ironía", value: "ironia" }
+          - { label: "Justicia", value: "justicia" }
+          - { label: "Lealtad", value: "lealtad" }
+          - { label: "Libertad", value: "libertad" }
+          - { label: "Maldad", value: "maldad" }
+          - { label: "Mentira", value: "mentira" }
+          - { label: "Miedo", value: "miedo" }
+          - { label: "Muerte", value: "muerte" }
+          - { label: "Naturaleza", value: "naturaleza" }
+          - { label: "Necedad", value: "necedad" }
+          - { label: "Pereza", value: "pereza" }
+          - { label: "Piedad", value: "piedad" }
+          - { label: "Pobreza", value: "pobreza" }
+          - { label: "Poder", value: "poder" }
+          - { label: "Prudencia", value: "prudencia" }
+          - { label: "Riqueza", value: "riqueza" }
+          - { label: "Sabiduría", value: "sabiduria" }
+          - { label: "Soberbia", value: "soberbia" }
+          - { label: "Trabajo", value: "trabajo" }
+          - { label: "Traición", value: "traicion" }
+          - { label: "Trampa", value: "trampa" }
+          - { label: "Valentía", value: "valentia" }
+          - { label: "Vanidad", value: "vanidad" }
+          - { label: "Vejez", value: "vejez" }
+          - { label: "Venganza", value: "venganza" }
+          - { label: "Verdad", value: "verdad" }
+
+      - name: "forma"
+        label: "Forma"
+        widget: "select"
+        required: true
+        default: "prosa"
+        options:
+          - { label: "Prosa", value: "prosa" }
+          - { label: "Verso", value: "verso" }
+
+      - name: "tradicion"
+        label: "Tradición"
+        widget: "select"
+        required: false
+        hint: "Tradición fabulística de origen. Opcional."
+        options:
+          - { label: "Budista", value: "budista" }
+          - { label: "Esópica", value: "esopica" }
+          - { label: "Hispánica", value: "hispanica" }
+          - { label: "Oriental", value: "oriental" }
+          - { label: "Popular", value: "popular" }
+          - { label: "Talmúdica", value: "talmudica" }
 
       # --- Autor (escritor original) ---
       - { name: "autor", label: "Autor", widget: "string", hint: "Nombre real del escritor original de la fábula. Invariable. Ej.: Félix María Samaniego." }
@@ -77,13 +229,6 @@ collections:
       - { name: "es_seudonimo", label: "¿La firma es un seudónimo?", widget: "boolean", default: false }
       - { name: "nombre_real", label: "Nombre real (privado)", widget: "string", required: false }
       - { name: "body", label: "Cuerpo", widget: "markdown" }
-
-# =============================================================
-# AÑADIR ESTE BLOQUE AL FINAL DE collections: en public/admin/config.yml
-# =============================================================
-# Mantén las colecciones existentes (fabulas, entradas) tal cual.
-# Solo agrega esta nueva colección al final, con la misma indentación
-# que las anteriores.
 
   - name: "autores"
     label: "Autores"
