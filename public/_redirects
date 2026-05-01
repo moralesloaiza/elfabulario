@@ -1,0 +1,10 @@
+# Redirects servidos por Cloudflare Pages.
+# Sintaxis: <origen>  <destino>  <código>
+# Más info: https://developers.cloudflare.com/pages/configuration/redirects/
+
+# Las URLs de la antigua taxonomía plana `/etiquetas/<slug>/` ya no
+# existen. La información se reparte ahora en cuatro dimensiones
+# (personajes, temas, formas, tradiciones), por lo que un mapeo 1:1
+# no es posible. Llevamos al visitante al índice de temas — el más
+# cercano semánticamente — para que navegue desde ahí.
+/etiquetas/*  /temas/  301
