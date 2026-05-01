@@ -1,7 +1,10 @@
 ---
 titulo: "La lechera"
 fecha: 2011-11-08
-etiquetas: ["leche", "lechera", "lechón", "cochino", "pollo", "huevos", "ambición", "ilusión", "fantasía"]
+personajes: ["cerdo", "gallina", "lechera"]
+temas: ["codicia"]
+forma: verso
+tradicion:
 borrador: false
 autor: "Félix María Samaniego"
 autor_nacionalidad: "español"

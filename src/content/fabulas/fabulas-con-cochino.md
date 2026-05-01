@@ -1,7 +1,10 @@
 ---
 titulo: "Fábulas con cochino"
 fecha: 2012-01-03
-etiquetas: ["cochino", "cochinos", "elegante", "elefante", "trompa", "matar", "palo"]
+personajes: ["cerdo", "elefante"]
+temas: ["ironia", "necedad", "vanidad"]
+forma: verso
+tradicion:
 borrador: false
 autor: "Aquiles Nazoa"
 autor_nacionalidad: "venezolano"

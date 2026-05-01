@@ -1,7 +1,10 @@
 ---
 titulo: "La grulla y el cangrejo"
 fecha: 2011-11-10
-etiquetas: ["grulla", "cangrejo", "peces", "estanque", "hombre", "hombres", "astucia", "maldad", "budismo", "artimaña"]
+personajes: ["cangrejo", "grulla", "pez"]
+temas: ["astucia", "engano", "maldad"]
+forma: prosa
+tradicion: budista
 borrador: false
 autor: "Anónimo"
 curador: "Don Alejandro"

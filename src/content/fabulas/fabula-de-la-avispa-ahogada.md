@@ -1,7 +1,10 @@
 ---
 titulo: "Fábula de la avispa ahogada"
 fecha: 2012-01-05
-etiquetas: ["avispa", "ahogada", "ahogado", "vaso", "agua", "ira", "brava", "furia"]
+personajes: ["avispa"]
+temas: ["ironia", "muerte", "necedad"]
+forma: verso
+tradicion:
 borrador: false
 autor: "Aquiles Nazoa"
 autor_nacionalidad: "venezolano"

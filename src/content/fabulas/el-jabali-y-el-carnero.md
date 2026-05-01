@@ -1,7 +1,10 @@
 ---
 titulo: "El jabalí y el carnero"
 fecha: 2012-04-22
-etiquetas: ["jabalí", "carnero", "tambor", "desollar", "piel", "guerra", "pergamino", "pleito", "venganza", "justicia", "castigo"]
+personajes: ["carnero", "jabali"]
+temas: ["guerra", "justicia", "venganza"]
+forma: verso
+tradicion:
 borrador: false
 autor: "Félix María Samaniego"
 autor_nacionalidad: "español"

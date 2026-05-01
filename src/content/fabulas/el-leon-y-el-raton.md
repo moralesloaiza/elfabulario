@@ -1,7 +1,10 @@
 ---
 titulo: "El león y el ratón"
 fecha: 2012-04-08
-etiquetas: ["ratón", "león", "rey", "piedad", "piadoso", "poder", "poderoso", "necesitado", "trampa", "red", "perdonar"]
+personajes: ["leon", "pobre", "raton", "rey"]
+temas: ["piedad", "poder", "trampa"]
+forma: verso
+tradicion:
 borrador: false
 autor: "Félix María Samaniego"
 autor_nacionalidad: "español"

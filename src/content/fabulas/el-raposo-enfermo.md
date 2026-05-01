@@ -1,7 +1,10 @@
 ---
 titulo: "El raposo enfermo"
 fecha: 2011-11-09
-etiquetas: ["raposo", "zorro", "enfermo", "tiempo", "muerte", "lecho", "pollo", "ganso", "moribundo", "culpa", "pariente", "amigo", "costumbre", "maña", "maldad", "malo", "opinión"]
+personajes: ["gallina", "ganso", "zorro"]
+temas: ["amistad", "maldad", "muerte"]
+forma: verso
+tradicion:
 borrador: false
 autor: "Félix María Samaniego"
 autor_nacionalidad: "español"

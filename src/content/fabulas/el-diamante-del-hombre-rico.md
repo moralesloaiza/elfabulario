@@ -1,7 +1,10 @@
 ---
 titulo: "El diamante del hombre rico"
 fecha: 2012-04-08
-etiquetas: ["talmud", "historia", "judío", "rico", "riqueza", "hombre", "diamante", "pez", "pobre", "mercado", "adivino"]
+personajes: ["mago", "pez", "pobre"]
+temas: ["riqueza"]
+forma: prosa
+tradicion: talmudica
 borrador: false
 autor: "Anónimo"
 curador: "Don Alejandro"

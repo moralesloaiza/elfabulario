@@ -1,7 +1,10 @@
 ---
 titulo: "Los guardianes del rey"
 fecha: 2012-04-14
-etiquetas: ["rey", "cojo", "ciego", "higos", "higo", "higuera", "guardián", "guardianes", "piernas", "ojos", "manos", "robar"]
+personajes: ["rey"]
+temas: ["engano", "justicia", "trampa"]
+forma: prosa
+tradicion: talmudica
 borrador: false
 autor: "Anónimo"
 curador: "Don Alejandro"

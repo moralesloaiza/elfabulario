@@ -2,7 +2,10 @@
 titulo: "El león vencido por el hombre"
 fecha: 2025-06-12
 ilustracion: "../../assets/imagenes/fabulas/el-leon-vencido-por-el-hombre.png"
-etiquetas: ["el león vencido por el hombre", "arte y verdad", "pintar como querer", "cuento en verso", "leones sabios", "ironía clásica", "crítica simbólica", "representación y poder"]
+personajes: ["leon"]
+temas: ["critica-social", "ironia", "poder", "sabiduria", "verdad"]
+forma: verso
+tradicion:
 borrador: false
 autor: "Félix María Samaniego"
 autor_nacionalidad: "español"

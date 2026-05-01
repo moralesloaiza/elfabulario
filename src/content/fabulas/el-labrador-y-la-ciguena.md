@@ -2,7 +2,10 @@
 titulo: "El labrador y la cigüeña"
 fecha: 2025-06-19
 ilustracion: "../../assets/imagenes/fabulas/el-labrador-y-la-ciguena.png"
-etiquetas: []
+personajes: ["ciguena", "labrador"]
+temas: ["justicia"]
+forma: verso
+tradicion:
 borrador: false
 autor: "Félix María Samaniego"
 autor_nacionalidad: "español"

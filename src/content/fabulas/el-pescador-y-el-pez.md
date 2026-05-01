@@ -2,7 +2,10 @@
 titulo: "El pescador y el pez"
 fecha: 2025-11-10
 ilustracion: "../../assets/imagenes/fabulas/el-pescador-y-el-pez.png"
-etiquetas: ["pescador", "pez", "esperanza", "prudencia", "avaricia", "decision"]
+personajes: ["pez"]
+temas: ["codicia", "esperanza", "prudencia"]
+forma: verso
+tradicion:
 borrador: false
 autor: "Félix María Samaniego"
 autor_nacionalidad: "español"

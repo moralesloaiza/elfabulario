@@ -1,7 +1,10 @@
 ---
 titulo: "El perro y el asno"
 fecha: 2011-11-08
-etiquetas: ["perro", "asno", "amigos", "amistad", "servicio", "servicial", "pan", "camino", "lobo", "hambre"]
+personajes: ["burro", "lobo", "perro"]
+temas: ["amistad", "hambre"]
+forma: prosa
+tradicion:
 borrador: false
 autor: "Esopo"
 autor_nacionalidad: "griego"

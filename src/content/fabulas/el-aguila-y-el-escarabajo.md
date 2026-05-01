@@ -2,7 +2,10 @@
 titulo: "El águila y el escarabajo"
 fecha: 2025-06-10
 ilustracion: "../../assets/imagenes/fabulas/el-aguila-y-el-escarabajo.png"
-etiquetas: ["el águila y el escarabajo", "cuentos con moraleja", "justicia poética", "escarabajo vengador", "fábulas en verso", "clásicos en español", "literatura del siglo xviii", "cuento con mensaje"]
+personajes: ["aguila", "escarabajo"]
+temas: ["justicia", "venganza"]
+forma: verso
+tradicion:
 borrador: false
 autor: "Félix María Samaniego"
 autor_nacionalidad: "español"

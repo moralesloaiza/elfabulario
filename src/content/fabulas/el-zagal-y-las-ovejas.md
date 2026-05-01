@@ -2,7 +2,10 @@
 titulo: "El zagal y las ovejas"
 fecha: 2025-11-05
 ilustracion: "../../assets/imagenes/fabulas/el-zagal-y-las-ovejas.png"
-etiquetas: ["arte", "deco", "ilustracion", "clasico", "animal", "engaño"]
+personajes: []
+temas: ["engano"]
+forma: verso
+tradicion:
 borrador: false
 autor: "Félix María Samaniego"
 autor_nacionalidad: "español"

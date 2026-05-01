@@ -2,7 +2,10 @@
 titulo: "El herrero y el perro"
 fecha: 2025-06-15
 ilustracion: "../../assets/imagenes/fabulas/el-herrero-y-el-perro.png"
-etiquetas: ["el herrero y el perro", "moraleja ilustrada", "perros holgazanes", "trabajo y destino", "vida de perros", "cuento en verso", "ilustración poética", "crítica social", "perros con nobleza falsa"]
+personajes: ["perro"]
+temas: ["critica-social", "engano", "pereza", "trabajo"]
+forma: verso
+tradicion:
 borrador: false
 autor: "Félix María Samaniego"
 autor_nacionalidad: "español"

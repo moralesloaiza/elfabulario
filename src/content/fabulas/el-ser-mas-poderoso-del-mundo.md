@@ -1,7 +1,10 @@
 ---
 titulo: "El ser más poderoso del mundo"
 fecha: 2011-11-10
-etiquetas: ["budismo", "mundo", "poder", "poderoso", "casar", "sol", "nube", "viento", "montaña", "ratón", "búho", "mago", "nigromante"]
+personajes: ["buho", "mago", "raton"]
+temas: ["poder"]
+forma: prosa
+tradicion: budista
 borrador: false
 autor: "Anónimo"
 curador: "Don Alejandro"

@@ -1,7 +1,10 @@
 ---
 titulo: "Fábula con otro cochino"
 fecha: 2012-01-03
-etiquetas: ["cochino", "perro", "orejas", "sordo", "sordera"]
+personajes: ["cerdo", "perro"]
+temas: ["ironia", "necedad"]
+forma: verso
+tradicion:
 borrador: false
 autor: "Aquiles Nazoa"
 autor_nacionalidad: "venezolano"

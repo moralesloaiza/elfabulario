@@ -1,7 +1,10 @@
 ---
 titulo: "Júpiter y el caballo"
 fecha: 2011-11-27
-etiquetas: ["júpiter", "zeus", "caballo", "camello", "silla", "patas", "pecho", "cisne", "corredor", "desconocido", "anónimo"]
+personajes: ["caballo", "camello", "cisne", "zeus"]
+temas: ["necedad", "soberbia"]
+forma: prosa
+tradicion:
 borrador: false
 autor: "Anónimo"
 curador: "Don Alejandro"

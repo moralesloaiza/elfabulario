@@ -1,7 +1,10 @@
 ---
 titulo: "La gallina parlante"
 fecha: 2012-01-04
-etiquetas: ["muerte", "pescuezo", "gallina", "loro", "parlante", "hablar", "vieja"]
+personajes: ["anciano", "gallina", "loro"]
+temas: ["muerte"]
+forma: verso
+tradicion:
 borrador: false
 autor: "Aquiles Nazoa"
 autor_nacionalidad: "venezolano"

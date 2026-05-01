@@ -1,7 +1,10 @@
 ---
 titulo: "Fábula con zorro y gallinita"
 fecha: 2012-01-04
-etiquetas: ["gallinita", "gallina", "zorro", "sancocho", "ingrato", "fiesta"]
+personajes: ["gallina", "zorro"]
+temas: ["ingratitud"]
+forma: verso
+tradicion:
 borrador: false
 autor: "Aquiles Nazoa"
 autor_nacionalidad: "venezolano"

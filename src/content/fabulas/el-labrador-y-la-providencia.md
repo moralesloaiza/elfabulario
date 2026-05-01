@@ -1,7 +1,10 @@
 ---
 titulo: "El labrador y la Providencia"
 fecha: 2012-05-19
-etiquetas: ["labrador", "providencia", "naturaleza", "dios"]
+personajes: ["labrador"]
+temas: ["naturaleza"]
+forma: verso
+tradicion:
 borrador: false
 autor: "Félix María Samaniego"
 autor_nacionalidad: "español"

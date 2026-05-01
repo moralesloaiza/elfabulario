@@ -1,7 +1,10 @@
 ---
 titulo: "Los dos conejos"
 fecha: 2012-11-29
-etiquetas: ["conejo", "conejos", "aprendizaje", "galgo", "podenco"]
+personajes: ["conejo", "perro"]
+temas: ["sabiduria"]
+forma: verso
+tradicion:
 borrador: false
 autor: "Tomás de Iriarte"
 autor_nacionalidad: "español"

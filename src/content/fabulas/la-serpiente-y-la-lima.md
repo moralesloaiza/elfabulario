@@ -2,7 +2,10 @@
 titulo: "La serpiente y la lima"
 fecha: 2025-06-20
 ilustracion: "../../assets/imagenes/fabulas/la-serpiente-y-la-lima.png"
-etiquetas: ["resistencia"]
+personajes: ["culebra"]
+temas: ["ironia", "necedad"]
+forma: verso
+tradicion:
 borrador: false
 autor: "Félix María Samaniego"
 autor_nacionalidad: "español"

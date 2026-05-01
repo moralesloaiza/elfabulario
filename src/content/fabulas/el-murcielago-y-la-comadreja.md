@@ -1,7 +1,10 @@
 ---
 titulo: "El murciélago y la comadreja"
 fecha: 2012-04-28
-etiquetas: ["comadreja", "murciélago", "cambio", "disfraz", "treta", "volar", "ratón"]
+personajes: ["comadreja", "murcielago", "raton"]
+temas: ["engano"]
+forma: verso
+tradicion:
 borrador: false
 autor: "Félix María Samaniego"
 autor_nacionalidad: "español"

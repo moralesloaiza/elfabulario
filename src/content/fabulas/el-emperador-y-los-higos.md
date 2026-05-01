@@ -1,7 +1,10 @@
 ---
 titulo: "El emperador y los higos"
 fecha: 2012-04-14
-etiquetas: ["higos", "higo", "emperador", "anciano", "cesta", "mujer", "ambición", "avaricia", "oro", "comer", "fruto", "higuera"]
+personajes: ["anciano", "emperador"]
+temas: ["codicia"]
+forma: prosa
+tradicion:
 borrador: false
 autor: "Anónimo"
 curador: "Don Alejandro"

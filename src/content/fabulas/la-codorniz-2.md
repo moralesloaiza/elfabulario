@@ -2,7 +2,10 @@
 titulo: "La codorniz"
 fecha: 2025-06-11
 ilustracion: "../../assets/imagenes/fabulas/la-codorniz-2.png"
-etiquetas: ["la codorniz", "cuento en verso", "ave cautiva", "ilustración poética", "cuento corto", "trampa y deseo", "golosa tragedia"]
+personajes: ["codorniz"]
+temas: ["gula", "trampa"]
+forma: verso
+tradicion:
 borrador: false
 autor: "Félix María Samaniego"
 autor_nacionalidad: "español"

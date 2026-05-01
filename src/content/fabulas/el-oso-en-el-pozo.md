@@ -1,7 +1,10 @@
 ---
 titulo: "El oso en el pozo"
 fecha: 2012-04-14
-etiquetas: ["talmud", "judío", "judaísmo", "oso", "pozo", "zorra", "comida", "luna", "queso", "cubo", "cocinero"]
+personajes: ["oso", "zorro"]
+temas: ["astucia", "engano"]
+forma: prosa
+tradicion: talmudica
 borrador: false
 autor: "Anónimo"
 curador: "Don Alejandro"

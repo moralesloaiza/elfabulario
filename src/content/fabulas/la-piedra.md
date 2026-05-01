@@ -1,7 +1,10 @@
 ---
 titulo: "La piedra"
 fecha: 2011-12-04
-etiquetas: ["piedra", "camino", "pisar", "pisada", "hierbas", "campo", "vida", "desconocido", "anónimo"]
+personajes: []
+temas: ["naturaleza", "prudencia"]
+forma: prosa
+tradicion:
 borrador: false
 autor: "Anónimo"
 curador: "Don Alejandro"

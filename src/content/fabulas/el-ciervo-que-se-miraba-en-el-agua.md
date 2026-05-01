@@ -1,7 +1,10 @@
 ---
 titulo: "El ciervo que se miraba en el agua"
 fecha: 2011-12-04
-etiquetas: ["ciervo", "cuernos", "astas", "cornamenta", "cabeza", "belleza", "patas", "cosas", "cazador", "cazadores", "jauría", "perros", "francés"]
+personajes: ["cazador", "ciervo", "perro"]
+temas: ["prudencia", "vanidad"]
+forma: prosa
+tradicion:
 borrador: false
 autor: "Anónimo"
 curador: "Don Alejandro"

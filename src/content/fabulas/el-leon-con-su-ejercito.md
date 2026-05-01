@@ -2,7 +2,10 @@
 titulo: "El león con su ejército"
 fecha: 2025-07-20
 ilustracion: "../../assets/imagenes/fabulas/el-leon-con-su-ejercito.png"
-etiquetas: []
+personajes: ["burro", "elefante", "leon", "liebre", "lobo", "mona", "oso", "zorro"]
+temas: ["critica-social", "prudencia"]
+forma: verso
+tradicion:
 borrador: false
 autor: "Félix María Samaniego"
 autor_nacionalidad: "español"

@@ -2,7 +2,10 @@
 titulo: "La cigarra y la hormiga"
 fecha: 2025-02-14
 ilustracion: "../../assets/imagenes/fabulas/la-cigarra-y-la-hormiga.png"
-etiquetas: ["cigarra", "hormiga", "cantar", "trabajar", "trabajo", "invierno", "esfuerzo"]
+personajes: ["cigarra", "hormiga"]
+temas: ["trabajo"]
+forma: verso
+tradicion:
 borrador: false
 autor: "Félix María Samaniego"
 autor_nacionalidad: "español"

@@ -1,7 +1,10 @@
 ---
 titulo: "Fábula con perro y cochino"
 fecha: 2012-01-05
-etiquetas: ["perro", "can", "marrano", "cochino", "muerte", "cambio", "disfraz", "palo", "chiquero", "comer", "flaco", "robusto"]
+personajes: ["cerdo", "perro"]
+temas: ["muerte"]
+forma: verso
+tradicion:
 borrador: false
 autor: "Aquiles Nazoa"
 autor_nacionalidad: "venezolano"

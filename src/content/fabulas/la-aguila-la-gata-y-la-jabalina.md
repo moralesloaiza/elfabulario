@@ -2,7 +2,10 @@
 titulo: "La águila, la gata y la jabalina"
 fecha: 2025-07-15
 ilustracion: "../../assets/imagenes/fabulas/la-aguila-la-gata-y-la-jabalina.png"
-etiquetas: ["siglo xviii", "gata astuta", "águila y jabalina", "amistad falsa", "chisme y engaño"]
+personajes: ["aguila", "gato", "jabali"]
+temas: ["amistad", "astucia", "engano"]
+forma: prosa
+tradicion:
 borrador: false
 autor: "Félix María Samaniego"
 autor_nacionalidad: "español"

@@ -2,7 +2,10 @@
 titulo: "El león y la zorra"
 fecha: 2025-06-18
 ilustracion: "../../assets/imagenes/fabulas/el-leon-y-la-zorra.png"
-etiquetas: ["prudencia"]
+personajes: ["leon", "zorro"]
+temas: ["prudencia"]
+forma: verso
+tradicion:
 borrador: false
 autor: "Félix María Samaniego"
 autor_nacionalidad: "español"

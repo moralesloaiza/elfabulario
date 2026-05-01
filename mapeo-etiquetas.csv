@@ -1,0 +1,427 @@
+old_tag,count,action,assignments,note
+cuento en verso,9,map,forma:verso,
+cochino,8,map,personajes:cerdo,
+muerte,7,map,temas:muerte,
+ilustración poética,6,discard,,"atributo editorial / metadata, no es etiqueta de contenido"
+hombre,5,discard,,humano genérico = implícito (no se etiqueta)
+asno,5,map,personajes:burro,
+perro,4,map,personajes:perro,
+poder,4,map,temas:poder,
+animal,4,discard,,demasiado genérico; el personaje específico ya cubre
+naturaleza,4,map,temas:naturaleza,
+loro,3,map,personajes:loro,
+rey,3,map,personajes:rey,
+guerra,3,map,temas:guerra,
+marrano,3,map,personajes:cerdo,
+deco,3,discard,,"atributo editorial / metadata, no es etiqueta de contenido"
+arte,3,discard,,"atributo editorial / metadata, no es etiqueta de contenido"
+clasico,3,discard,,"atributo editorial / metadata, no es etiqueta de contenido"
+ilustracion,3,discard,,"atributo editorial / metadata, no es etiqueta de contenido"
+comer,3,discard,,verbo / acción; no es etiqueta de tema
+malo,3,map,temas:maldad,
+maldad,3,map,temas:maldad,
+ratón,3,map,personajes:raton,
+león,3,map,personajes:leon,
+caballo,3,map,personajes:caballo,
+burro,3,map,personajes:burro,
+camino,3,discard,,lugar / elemento natural / setting
+ciervo,3,map,personajes:ciervo,
+oso,3,map,personajes:oso,
+disfraz,3,discard,,objeto del relato; no es etiqueta de tema
+desconocido,3,discard,,"metadata de autor, ya cubierto por el campo 'autor'"
+matar,3,discard,,verbo / acción; no es etiqueta de tema
+anónimo,3,discard,,"metadata de autor, ya cubierto por el campo 'autor'"
+hambre,3,map,temas:hambre,
+zorro,3,map,personajes:zorro,
+gallina,3,map,personajes:gallina,
+budismo,3,map,tradicion:budista,
+moraleja ilustrada,2,discard,,"atributo editorial / metadata, no es etiqueta de contenido"
+palo,2,discard,,objeto / parte del cuerpo del relato; no es etiqueta de tema
+engaño,2,map,temas:engano,
+amigo,2,map,temas:amistad,
+crítica social,2,map,temas:critica-social,
+pobre,2,map,personajes:pobre,
+higos,2,discard,,objeto / parte del cuerpo del relato; no es etiqueta de tema
+pez,2,map,personajes:pez,
+talmud,2,map,tradicion:talmudica,
+judío,2,map,tradicion:talmudica,
+higo,2,discard,,objeto / parte del cuerpo del relato; no es etiqueta de tema
+patas,2,discard,,objeto / parte del cuerpo del relato; no es etiqueta de tema
+higuera,2,discard,,objeto / parte del cuerpo del relato; no es etiqueta de tema
+avaricia,2,map,temas:codicia,
+ambición,2,map,temas:codicia,
+sancocho,2,discard,,objeto / parte del cuerpo del relato; no es etiqueta de tema
+pollo,2,map,personajes:gallina,asumido pollo joven; revisar si en alguna fábula es plato
+pozo,2,discard,,lugar / elemento natural / setting
+cambio,2,discard,,sin equivalente; calificativo / estado / setting
+zorra,2,map,personajes:zorro,
+lobo,2,map,personajes:lobo,
+astucia,2,map,temas:astucia,
+trampa y deseo,2,map,temas:trampa,
+cuento corto,2,discard,,"atributo editorial / metadata, no es etiqueta de contenido"
+golosa tragedia,2,map,temas:gula,
+la codorniz,2,map,personajes:codorniz,
+ave cautiva,2,map,personajes:codorniz,probablemente la fábula de la codorniz; revisar
+hijo,2,discard,,rol humano no incluido en vocabulario controlado
+poderoso,2,map,temas:poder,
+amigos,2,map,temas:amistad,
+abogado,2,map,personajes:abogado,
+amistad,2,map,temas:amistad,
+tortuga,2,map,personajes:tortuga,
+queso,2,discard,,objeto / parte del cuerpo del relato; no es etiqueta de tema
+crítica moral,2,map,temas:critica-social,
+trampa,2,map,temas:trampa,
+prudencia,2,map,temas:prudencia,
+venganza,2,map,temas:venganza,
+riqueza,2,map,temas:riqueza,
+cazador,2,map,personajes:cazador,
+pleito,2,map,temas:justicia,
+hablar,2,discard,,verbo / acción; no es etiqueta de tema
+príncipe,2,map,personajes:principe,
+silla,2,discard,,objeto / parte del cuerpo del relato; no es etiqueta de tema
+justicia,2,map,temas:justicia,
+jupiter,1,map,personajes:zeus,
+deber,1,discard,,estado / abstracción genérica sin equivalente en vocabulario
+cobarde,1,map,temas:cobardia,
+pereza,1,map,temas:pereza,
+cobardía,1,map,temas:cobardia,
+retiro,1,discard,,estado / abstracción genérica sin equivalente en vocabulario
+conejo,1,map,personajes:conejo,
+podenco,1,map,personajes:perro,
+galgo,1,map,personajes:perro,
+cojo,1,discard,,sin equivalente; calificativo / estado / setting
+esfuerzo,1,map,temas:trabajo,
+zeus,1,map,personajes:zeus,
+camello,1,map,personajes:camello,
+corredor,1,discard,,sin equivalente; calificativo / estado / setting
+conejos,1,map,personajes:conejo,
+cisne,1,map,personajes:cisne,
+pecho,1,discard,,objeto / parte del cuerpo del relato; no es etiqueta de tema
+aprendizaje,1,map,temas:sabiduria,
+ironia,1,map,temas:ironia,
+critica,1,map,temas:critica-social,
+cigarra,1,map,personajes:cigarra,
+santillana,1,discard,,metadata de autor (Marqués de Santillana)
+chisme y engaño,1,map,temas:engano,
+alacena,1,discard,,objeto / parte del cuerpo del relato; no es etiqueta de tema
+trabajo,1,map,temas:trabajo,
+invierno,1,discard,,estado / abstracción genérica sin equivalente en vocabulario
+trabajar,1,map,temas:trabajo,
+hormiga,1,map,personajes:hormiga,
+cantar,1,discard,,verbo / acción; no es etiqueta de tema
+virtud,1,discard,,estado / abstracción genérica sin equivalente en vocabulario
+siglo xviii,1,discard,,"atributo editorial / metadata, no es etiqueta de contenido"
+bueno,1,discard,,calificativo suelto
+abandono,1,discard,,estado / abstracción genérica sin equivalente en vocabulario
+miserable,1,map,personajes:pobre,
+jumento,1,map,personajes:burro,
+amistad falsa,1,map,temas:amistad,
+peste,1,discard,,estado / abstracción genérica sin equivalente en vocabulario
+gata astuta,1,map,personajes:gato;temas:astucia,
+águila y jabalina,1,map,personajes:aguila;personajes:jabali,título-como-etiqueta; jabalina = jabalí hembra
+can,1,map,personajes:perro,
+chiquero,1,discard,,lugar / elemento natural / setting
+sordera,1,discard,,rol humano no incluido en vocabulario controlado
+orejas,1,discard,,objeto / parte del cuerpo del relato; no es etiqueta de tema
+sordo,1,discard,,rol humano no incluido en vocabulario controlado
+piernas,1,discard,,objeto / parte del cuerpo del relato; no es etiqueta de tema
+ingrato,1,map,temas:ingratitud,
+gallinita,1,map,personajes:gallina,
+flaco,1,discard,,calificativo suelto
+robusto,1,discard,,calificativo suelto
+ojos,1,discard,,objeto / parte del cuerpo del relato; no es etiqueta de tema
+leñazo,1,discard,,objeto / parte del cuerpo del relato; no es etiqueta de tema
+robar,1,discard,,verbo / acción; no es etiqueta de tema
+cinismo,1,discard,,estado / abstracción genérica sin equivalente en vocabulario
+nogal,1,discard,,objeto / parte del cuerpo del relato; no es etiqueta de tema
+suicidio,1,map,temas:muerte,
+pelea,1,discard,,estado / abstracción genérica sin equivalente en vocabulario
+fuerza,1,discard,,estado / abstracción genérica sin equivalente en vocabulario
+idea,1,discard,,objeto / parte del cuerpo del relato; no es etiqueta de tema
+toro,1,map,personajes:toro,
+manos,1,discard,,objeto / parte del cuerpo del relato; no es etiqueta de tema
+fiesta,1,discard,,estado / abstracción genérica sin equivalente en vocabulario
+ciego,1,discard,,rol humano no incluido en vocabulario controlado
+ardita,1,map,personajes:ardilla,
+ardilla,1,map,personajes:ardilla,
+zarigüeya,1,map,personajes:zarigueya,
+cola,1,discard,,objeto / parte del cuerpo del relato; no es etiqueta de tema
+trompa,1,discard,,objeto / parte del cuerpo del relato; no es etiqueta de tema
+júpiter,1,map,personajes:zeus,
+elefante,1,map,personajes:elefante,
+cochinos,1,map,personajes:cerdo,
+elegante,1,discard,,calificativo suelto
+guardián,1,discard,,rol humano no incluido en vocabulario controlado
+vaso,1,discard,,objeto / parte del cuerpo del relato; no es etiqueta de tema
+agua,1,discard,,lugar / elemento natural / setting
+ahogado,1,discard,,rol humano no incluido en vocabulario controlado
+avispa,1,map,personajes:avispa,
+ahogada,1,discard,,rol humano no incluido en vocabulario controlado
+furia,1,discard,,estado / abstracción genérica sin equivalente en vocabulario
+rabipelado,1,map,personajes:zarigueya,
+brava,1,discard,,calificativo suelto
+guardianes,1,discard,,rol humano no incluido en vocabulario controlado
+ira,1,discard,,estado / abstracción genérica sin equivalente en vocabulario
+onza,1,map,personajes:leopardo,onza = leopardo en español antiguo
+la zorra y el busto,1,map,personajes:zorro,título-como-etiqueta; el busto es objeto
+prudentes,1,map,temas:prudencia,
+árbol,1,discard,,lugar / elemento natural / setting
+vida,1,discard,,estado / abstracción genérica sin equivalente en vocabulario
+resistencia,1,discard,,estado / abstracción genérica sin equivalente en vocabulario
+necio,1,map,temas:necedad,
+prudente,1,map,temas:prudencia,
+bustos sin seso,1,map,temas:necedad,dudosa
+zorra crítica,1,map,personajes:zorro;temas:critica-social,
+necia,1,map,temas:necedad,
+campo,1,discard,,lugar / elemento natural / setting
+piedra,1,discard,,objeto / parte del cuerpo del relato; no es etiqueta de tema
+pisar,1,discard,,verbo / acción; no es etiqueta de tema
+tabla,1,discard,,objeto / parte del cuerpo del relato; no es etiqueta de tema
+paloma,1,map,personajes:paloma,
+apetito,1,map,temas:hambre,
+bosque,1,discard,,lugar / elemento natural / setting
+árboles,1,discard,,lugar / elemento natural / setting
+selva,1,discard,,lugar / elemento natural / setting
+pisada,1,discard,,estado / abstracción genérica sin equivalente en vocabulario
+hierbas,1,discard,,lugar / elemento natural / setting
+muerta,1,discard,,rol humano no incluido en vocabulario controlado
+esposa,1,discard,,rol humano no incluido en vocabulario controlado
+leona,1,map,personajes:leon,
+crítica disfrazada de cuento,1,map,temas:critica-social,
+milagro,1,discard,,registro religioso; sin equivalente en vocabulario
+adulación,1,map,temas:adulacion,
+servil,1,map,temas:adulacion,
+lisonja,1,map,temas:adulacion,
+corte,1,discard,,rol humano no incluido en vocabulario controlado
+cortesanos,1,discard,,rol humano no incluido en vocabulario controlado
+cielo,1,discard,,lugar / elemento natural / setting
+venganza elegante,1,map,temas:venganza,
+engaño y castigo,1,map,temas:engano,
+la zorra y la cigüeña,1,map,personajes:zorro;personajes:ciguena,título-como-etiqueta
+ironía ilustrada,1,map,temas:ironia,
+crítica social clásica,1,map,temas:critica-social,
+cigüeña vengativa,1,map,personajes:ciguena;temas:venganza,
+banquete animal,1,map,personajes:mona,probable referencia a fábula concreta; revisar
+hada,1,map,personajes:hada,
+zorra astuta,1,map,personajes:zorro;temas:astucia,
+hadas,1,map,personajes:hada,
+leche,1,discard,,objeto / parte del cuerpo del relato; no es etiqueta de tema
+lechera,1,map,personajes:lechera,
+artimaña,1,map,temas:engano,
+hombres,1,discard,,humano genérico = implícito (no se etiqueta)
+allegoría ilustrada,1,discard,,"atributo editorial / metadata, no es etiqueta de contenido"
+ilusión,1,discard,,estado / abstracción genérica sin equivalente en vocabulario
+fantasía,1,discard,,estado / abstracción genérica sin equivalente en vocabulario
+huevos,1,discard,,objeto / parte del cuerpo del relato; no es etiqueta de tema
+vicio mortal,1,map,temas:gula,
+lechón,1,map,personajes:cerdo,
+estanque,1,discard,,lugar / elemento natural / setting
+pescuezo,1,discard,,objeto / parte del cuerpo del relato; no es etiqueta de tema
+parlante,1,discard,,calificativo suelto
+dulce trampa,1,map,temas:trampa;temas:engano,
+tigre,1,map,personajes:tigre,
+muerte por gula,1,map,temas:gula;temas:muerte,
+cangrejo,1,map,personajes:cangrejo,
+peces,1,map,personajes:pez,
+grulla,1,map,personajes:grulla,
+vieja,1,map,personajes:anciano,
+vida breve,1,map,temas:muerte,
+nuez,1,discard,,objeto / parte del cuerpo del relato; no es etiqueta de tema
+solo,1,discard,,calificativo suelto
+mona,1,map,personajes:mona,
+candela,1,discard,,objeto / parte del cuerpo del relato; no es etiqueta de tema
+sebo,1,discard,,objeto / parte del cuerpo del relato; no es etiqueta de tema
+presa,1,discard,,objeto / parte del cuerpo del relato; no es etiqueta de tema
+abandonar,1,discard,,verbo / acción; no es etiqueta de tema
+vencer,1,discard,,verbo / acción; no es etiqueta de tema
+verde,1,discard,,calificativo suelto
+mal,1,map,temas:maldad,
+llama,1,discard,,objeto / parte del cuerpo del relato; no es etiqueta de tema
+carrera,1,discard,,estado / abstracción genérica sin equivalente en vocabulario
+las moscas,1,map,personajes:mosca,
+granja,1,discard,,lugar / elemento natural / setting
+liebre,1,map,personajes:liebre,
+golosos atrapados,1,map,temas:gula,
+unidos,1,map,temas:amistad,
+unión,1,map,temas:amistad,
+bujía,1,discard,,objeto / parte del cuerpo del relato; no es etiqueta de tema
+polvo,1,discard,,objeto / parte del cuerpo del relato; no es etiqueta de tema
+mariposa,1,map,personajes:mariposa,
+anciano,1,map,personajes:anciano,
+cesta,1,discard,,objeto / parte del cuerpo del relato; no es etiqueta de tema
+emperador,1,map,personajes:emperador,
+mercado,1,discard,,lugar / elemento natural / setting
+adivino,1,map,personajes:mago,
+mujer,1,discard,,humano genérico = implícito (no se etiqueta)
+perros holgazanes,1,map,personajes:perro;temas:pereza,
+trabajo y destino,1,map,temas:trabajo,
+el herrero y el perro,1,map,personajes:perro,título-como-etiqueta; herrero no está en personajes
+oro,1,discard,,objeto / parte del cuerpo del relato; no es etiqueta de tema
+fruto,1,discard,,objeto / parte del cuerpo del relato; no es etiqueta de tema
+cosas,1,discard,,objeto / parte del cuerpo del relato; no es etiqueta de tema
+cazadores,1,map,personajes:cazador,
+belleza,1,discard,,sin equivalente; calificativo / estado / setting
+cornamenta,1,discard,,objeto / parte del cuerpo del relato; no es etiqueta de tema
+cabeza,1,discard,,objeto / parte del cuerpo del relato; no es etiqueta de tema
+jauría,1,map,personajes:perro,
+rico,1,map,temas:riqueza,
+diamante,1,discard,,objeto / parte del cuerpo del relato; no es etiqueta de tema
+historia,1,discard,,"atributo editorial / metadata, no es etiqueta de contenido"
+perros,1,map,personajes:perro,
+francés,1,discard,,"metadata de origen, no etiqueta de contenido"
+pintar como querer,1,discard,,frase oscura sin equivalente
+leones sabios,1,map,personajes:leon;temas:sabiduria,
+arte y verdad,1,map,temas:verdad,
+dios,1,discard,,lugar / elemento natural / setting
+el león vencido por el hombre,1,map,personajes:leon,título-como-etiqueta
+ironía clásica,1,map,temas:ironia,
+piadoso,1,map,temas:piedad,
+necesitado,1,map,personajes:pobre,
+piedad,1,map,temas:piedad,
+crítica simbólica,1,map,temas:critica-social,
+representación y poder,1,map,temas:poder,
+carnero,1,map,personajes:carnero,
+tambor,1,discard,,objeto / parte del cuerpo del relato; no es etiqueta de tema
+jabalí,1,map,personajes:jabali,
+vida de perros,1,map,personajes:perro,dudosa; ¿es 'vida dura' o el título de una fábula?
+perros con nobleza falsa,1,map,personajes:perro;temas:engano,dudosa
+desollar,1,discard,,verbo / acción; no es etiqueta de tema
+labrador,1,map,personajes:labrador,
+providencia,1,discard,,registro religioso; sin equivalente en vocabulario
+castigo,1,map,temas:justicia,
+piel,1,discard,,objeto / parte del cuerpo del relato; no es etiqueta de tema
+pergamino,1,discard,,objeto / parte del cuerpo del relato; no es etiqueta de tema
+astas,1,discard,,objeto / parte del cuerpo del relato; no es etiqueta de tema
+fábulas en verso,1,map,forma:verso,
+clásicos en español,1,discard,,"atributo editorial / metadata, no es etiqueta de contenido"
+escarabajo vengador,1,map,personajes:escarabajo;temas:venganza,
+cuentos con moraleja,1,discard,,"atributo editorial / metadata, no es etiqueta de contenido"
+justicia poética,1,map,temas:justicia,
+literatura del siglo xviii,1,discard,,"atributo editorial / metadata, no es etiqueta de contenido"
+reptil,1,discard,,demasiado genérico; el personaje específico ya cubre
+reptiles,1,discard,,demasiado genérico; el personaje específico ya cubre
+lagartos,1,discard,,demasiado genérico; el personaje específico ya cubre
+cuento con mensaje,1,discard,,"atributo editorial / metadata, no es etiqueta de contenido"
+águila,1,map,personajes:aguila,
+peras,1,discard,,objeto / parte del cuerpo del relato; no es etiqueta de tema
+fango,1,discard,,lugar / elemento natural / setting
+fallo,1,discard,,estado / abstracción genérica sin equivalente en vocabulario
+ostra,1,discard,,objeto / parte del cuerpo del relato; no es etiqueta de tema
+disputa,1,discard,,estado / abstracción genérica sin equivalente en vocabulario
+río,1,discard,,lugar / elemento natural / setting
+banquete,1,discard,,estado / abstracción genérica sin equivalente en vocabulario
+el águila y el escarabajo,1,map,personajes:aguila;personajes:escarabajo,título-como-etiqueta
+boda,1,discard,,estado / abstracción genérica sin equivalente en vocabulario
+útil,1,discard,,calificativo suelto
+necesario,1,discard,,calificativo suelto
+egoísmo,1,discard,,estado / abstracción genérica sin equivalente en vocabulario
+amo,1,discard,,rol humano no incluido en vocabulario controlado
+egoísta,1,discard,,calificativo suelto
+espuela,1,discard,,objeto / parte del cuerpo del relato; no es etiqueta de tema
+preso,1,discard,,rol humano no incluido en vocabulario controlado
+ganar,1,discard,,verbo / acción; no es etiqueta de tema
+doctor,1,map,personajes:doctor,
+cuernos,1,discard,,objeto / parte del cuerpo del relato; no es etiqueta de tema
+orador,1,discard,,rol humano no incluido en vocabulario controlado
+charlatán,1,discard,,rol humano no incluido en vocabulario controlado
+horca,1,discard,,objeto / parte del cuerpo del relato; no es etiqueta de tema
+filosofia,1,discard,,demasiado genérico
+sesudo,1,discard,,calificativo suelto
+monte,1,discard,,lugar / elemento natural / setting
+alto,1,discard,,calificativo suelto
+subir,1,discard,,verbo / acción; no es etiqueta de tema
+cerdo,1,map,personajes:cerdo,
+leve,1,discard,,calificativo suelto
+yugo,1,discard,,objeto / parte del cuerpo del relato; no es etiqueta de tema
+ofensa,1,discard,,estado / abstracción genérica sin equivalente en vocabulario
+pocilga,1,discard,,lugar / elemento natural / setting
+ocio,1,map,temas:pereza,
+tiempo,1,discard,,estado / abstracción genérica sin equivalente en vocabulario
+lecho,1,discard,,lugar / elemento natural / setting
+enfermo,1,discard,,rol humano no incluido en vocabulario controlado
+decision,1,discard,,estado / abstracción genérica sin equivalente en vocabulario
+raposo,1,map,personajes:zorro,
+ganso,1,map,personajes:ganso,
+costumbre,1,discard,,estado / abstracción genérica sin equivalente en vocabulario
+maña,1,discard,,estado / abstracción genérica sin equivalente en vocabulario
+pariente,1,discard,,rol humano no incluido en vocabulario controlado
+moribundo,1,discard,,rol humano no incluido en vocabulario controlado
+culpa,1,discard,,estado / abstracción genérica sin equivalente en vocabulario
+sangre,1,discard,,objeto / parte del cuerpo del relato; no es etiqueta de tema
+padre,1,discard,,rol humano no incluido en vocabulario controlado
+ave,1,discard,,aves genéricas; usuario optó por aves específicas
+crueldad,1,map,temas:maldad,
+pelícano,1,map,personajes:pelicano,
+padres,1,discard,,rol humano no incluido en vocabulario controlado
+pescador,1,discard,,rol humano no incluido en vocabulario controlado
+esperanza,1,map,temas:esperanza,
+pan,1,discard,,objeto / parte del cuerpo del relato; no es etiqueta de tema
+servicio,1,discard,,estado / abstracción genérica sin equivalente en vocabulario
+servicial,1,discard,,estado / abstracción genérica sin equivalente en vocabulario
+gallo,1,map,personajes:gallo,
+pícaro,1,map,temas:engano,
+nigromante,1,map,personajes:mago,
+búho,1,map,personajes:buho,
+mago,1,map,personajes:mago,
+lebrel,1,map,personajes:perro,
+matadero,1,discard,,lugar / elemento natural / setting
+pantano,1,discard,,lugar / elemento natural / setting
+cochinero,1,discard,,lugar / elemento natural / setting
+cochina,1,map,personajes:cerdo,
+viejo,1,map,personajes:anciano,
+opulencia y miedo,1,map,temas:riqueza;temas:miedo,
+comida y filosofía,1,discard,,demasiado vago
+vida simple,1,discard,,frase tema-adyacente sin equivalente
+opinión,1,discard,,objeto / parte del cuerpo del relato; no es etiqueta de tema
+el ratón de la corte y el del campo,1,map,personajes:raton,título-como-etiqueta; el ratón de la ciudad y el del campo
+mundo,1,discard,,lugar / elemento natural / setting
+viento,1,discard,,lugar / elemento natural / setting
+montaña,1,discard,,lugar / elemento natural / setting
+nube,1,discard,,lugar / elemento natural / setting
+casar,1,discard,,verbo / acción; no es etiqueta de tema
+sol,1,discard,,lugar / elemento natural / setting
+inocencia,1,map,temas:inocencia,
+traicion,1,map,temas:traicion,
+voz,1,discard,,objeto / parte del cuerpo del relato; no es etiqueta de tema
+culebra,1,map,personajes:culebra,
+ingratitud,1,map,temas:ingratitud,
+animales,1,discard,,demasiado genérico; el personaje específico ya cubre
+enano,1,discard,,rol humano no incluido en vocabulario controlado
+temor,1,map,temas:miedo,
+terror,1,map,temas:miedo,
+caverna,1,discard,,lugar / elemento natural / setting
+oscuro,1,discard,,sin equivalente; calificativo / estado / setting
+oscuridad,1,discard,,sin equivalente; calificativo / estado / setting
+engaño y venganza,1,map,temas:engano;temas:venganza,
+el enemigo oculto,1,discard,,frase oscura sin equivalente
+El leopardo y las monas,1,map,personajes:leopardo;personajes:mona,título-como-etiqueta
+red,1,discard,,objeto / parte del cuerpo del relato; no es etiqueta de tema
+perdonar,1,discard,,verbo / acción; no es etiqueta de tema
+monos burlones,1,map,personajes:mona,
+apariencias engañan,1,map,temas:engano,
+cigüeña,1,map,personajes:ciguena,
+desenlace sangriento,1,discard,,sin equivalente; calificativo / estado / setting
+leopardo astuto,1,map,personajes:leopardo;temas:astucia,
+fábulas con moraleja,1,discard,,"atributo editorial / metadata, no es etiqueta de contenido"
+volar,1,discard,,verbo / acción; no es etiqueta de tema
+judaísmo,1,map,tradicion:talmudica,
+treta,1,map,temas:engano,
+comadreja,1,map,personajes:comadreja,
+murciélago,1,map,personajes:murcielago,
+comida,1,discard,,objeto / parte del cuerpo del relato; no es etiqueta de tema
+pajaro,1,discard,,aves genéricas; usuario optó por aves específicas
+flecha,1,discard,,objeto / parte del cuerpo del relato; no es etiqueta de tema
+cocinero,1,discard,,rol humano no incluido en vocabulario controlado
+luna,1,discard,,lugar / elemento natural / setting
+cubo,1,discard,,objeto / parte del cuerpo del relato; no es etiqueta de tema
+palomas,1,map,personajes:paloma,
+tirania,1,map,temas:poder,
+milano,1,map,personajes:milano,
+niño,1,map,personajes:nino,
+perú,1,discard,,geografía irrelevante a la fábula
+desdicha,1,discard,,estado / abstracción genérica sin equivalente en vocabulario
+necedad,1,map,temas:necedad,
+suerte,1,discard,,estado / abstracción genérica sin equivalente en vocabulario
+muchacho,1,map,personajes:nino,
+reino,1,discard,,lugar / elemento natural / setting
+fortuna,1,discard,,estado / abstracción genérica sin equivalente en vocabulario

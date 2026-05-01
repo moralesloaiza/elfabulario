@@ -2,7 +2,10 @@
 titulo: "La zorra y la cigüeña"
 fecha: 2025-06-15
 ilustracion: "../../assets/imagenes/fabulas/la-zorra-y-la-ciguena.png"
-etiquetas: ["la zorra y la cigüeña", "cuento en verso", "venganza elegante", "engaño y castigo", "ilustración poética", "zorra astuta", "cigüeña vengativa", "banquete animal", "crítica disfrazada de cuento"]
+personajes: ["ciguena", "mona", "zorro"]
+temas: ["astucia", "critica-social", "engano", "venganza"]
+forma: verso
+tradicion:
 borrador: false
 autor: "Félix María Samaniego"
 autor_nacionalidad: "español"

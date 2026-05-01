@@ -1,7 +1,10 @@
 ---
 titulo: "El abogado y la ostra"
 fecha: 2012-04-22
-etiquetas: ["abogado", "ostra", "disputa", "pleito", "fallo", "justicia"]
+personajes: ["abogado"]
+temas: ["justicia"]
+forma: prosa
+tradicion:
 borrador: false
 autor: "Anónimo"
 curador: "Don Alejandro"

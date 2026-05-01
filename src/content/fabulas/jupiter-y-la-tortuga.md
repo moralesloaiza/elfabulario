@@ -2,7 +2,10 @@
 titulo: "Júpiter y la tortuga"
 fecha: 2025-11-11
 ilustracion: "../../assets/imagenes/fabulas/jupiter-y-la-tortuga.png"
-etiquetas: ["jupiter", "tortuga", "retiro", "pereza", "deber", "ironia"]
+personajes: ["tortuga", "zeus"]
+temas: ["ironia", "pereza"]
+forma: verso
+tradicion:
 borrador: false
 autor: "Félix María Samaniego"
 autor_nacionalidad: "español"
