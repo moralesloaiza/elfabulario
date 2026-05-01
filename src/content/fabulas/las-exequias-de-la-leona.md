@@ -1,7 +1,10 @@
 ---
 titulo: "Las exequias de la leona"
 fecha: 2012-05-05
-etiquetas: ["león", "leona", "muerta", "muerte", "ciervo", "esposa", "hijo", "corte", "cortesanos", "adulación", "servil", "lisonja", "milagro", "cielo"]
+personajes: ["ciervo", "leon"]
+temas: ["adulacion", "muerte"]
+forma: verso
+tradicion:
 borrador: false
 autor: "Félix María Samaniego"
 autor_nacionalidad: "español"

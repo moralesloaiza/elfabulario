@@ -2,7 +2,10 @@
 titulo: "La cierva y el cervato"
 fecha: 2025-06-18
 ilustracion: "../../assets/imagenes/fabulas/la-cierva-y-el-cervato.png"
-etiquetas: []
+personajes: ["ciervo"]
+temas: ["cobardia", "miedo"]
+forma: verso
+tradicion:
 borrador: false
 autor: "Anónimo"
 curador: "Don Alejandro"

@@ -1,7 +1,10 @@
 ---
 titulo: "Fábula con loro"
 fecha: 2012-01-03
-etiquetas: ["loro", "toro", "idea", "pelea", "fuerza"]
+personajes: ["loro", "toro"]
+temas: ["necedad", "poder"]
+forma: verso
+tradicion:
 borrador: false
 autor: "Aquiles Nazoa"
 autor_nacionalidad: "venezolano"

@@ -1,7 +1,10 @@
 ---
 titulo: "El caballo, el ciervo y el cazador"
 fecha: 2012-05-19
-etiquetas: ["caballo", "ciervo", "cazador", "venganza", "muerte", "ofensa", "leve", "yugo", "silla", "espuela", "hombre", "preso"]
+personajes: ["caballo", "cazador", "ciervo"]
+temas: ["muerte", "venganza"]
+forma: verso
+tradicion:
 borrador: false
 autor: "Félix María Samaniego"
 autor_nacionalidad: "español"

@@ -2,7 +2,10 @@
 titulo: "La paloma"
 fecha: 2025-02-13
 ilustracion: "../../assets/imagenes/fabulas/la-paloma.png"
-etiquetas: ["paloma", "pozo", "apetito", "tabla"]
+personajes: ["paloma"]
+temas: ["hambre"]
+forma: verso
+tradicion:
 borrador: false
 autor: "Félix María Samaniego"
 autor_nacionalidad: "español"

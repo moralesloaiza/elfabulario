@@ -2,7 +2,10 @@
 titulo: "El muchacho y la fortuna"
 fecha: 2025-02-22
 ilustracion: "../../assets/imagenes/fabulas/el-muchacho-y-la-fortuna.png"
-etiquetas: ["fortuna", "muchacho", "necedad", "suerte"]
+personajes: ["nino"]
+temas: ["necedad"]
+forma: verso
+tradicion:
 borrador: false
 autor: "Félix María Samaniego"
 autor_nacionalidad: "español"

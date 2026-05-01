@@ -1,7 +1,10 @@
 ---
 titulo: "Las hadas prudentes y las hadas necias"
 fecha: 2011-11-10
-etiquetas: ["hada", "hadas", "prudente", "necio", "necia", "prudentes", "budismo", "árbol", "árboles", "bosque", "selva", "solo", "unión", "unidos"]
+personajes: ["hada"]
+temas: ["amistad", "necedad", "prudencia"]
+forma: prosa
+tradicion: budista
 borrador: false
 autor: "Anónimo"
 curador: "Don Alejandro"

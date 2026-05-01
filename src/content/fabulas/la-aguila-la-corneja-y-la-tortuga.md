@@ -2,7 +2,10 @@
 titulo: "La águila, la corneja y la tortuga"
 fecha: 2025-11-06
 ilustracion: "../../assets/imagenes/fabulas/la-aguila-la-corneja-y-la-tortuga.png"
-etiquetas: ["arte", "deco", "ilustracion", "clasico", "animal", "astucia"]
+personajes: ["aguila", "tortuga"]
+temas: ["astucia"]
+forma: verso
+tradicion:
 borrador: false
 autor: "Félix María Samaniego"
 autor_nacionalidad: "español"

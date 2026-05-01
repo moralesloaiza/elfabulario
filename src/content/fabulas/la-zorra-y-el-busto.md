@@ -2,7 +2,10 @@
 titulo: "La zorra y el busto"
 fecha: 2025-06-13
 ilustracion: "../../assets/imagenes/fabulas/la-zorra-y-el-busto.png"
-etiquetas: ["la zorra y el busto", "zorra crítica", "bustos sin seso", "ironía ilustrada", "cuento en verso", "crítica social clásica"]
+personajes: ["zorro"]
+temas: ["critica-social", "ironia", "necedad"]
+forma: verso
+tradicion:
 borrador: false
 autor: "Félix María Samaniego"
 autor_nacionalidad: "español"

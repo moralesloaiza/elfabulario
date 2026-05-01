@@ -2,7 +2,10 @@
 titulo: "El lobo y la cigüeña"
 fecha: 2025-11-07
 ilustracion: "../../assets/imagenes/fabulas/el-lobo-y-la-ciguena.png"
-etiquetas: ["lobo", "cigüeña", "ingratitud", "naturaleza", "animales", "culebra", "hombre", "traicion"]
+personajes: ["ciguena", "culebra", "lobo"]
+temas: ["ingratitud", "naturaleza", "traicion"]
+forma: verso
+tradicion:
 borrador: false
 autor: "Félix María Samaniego"
 autor_nacionalidad: "español"

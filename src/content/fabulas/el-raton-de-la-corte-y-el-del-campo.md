@@ -2,7 +2,10 @@
 titulo: "El ratón de la corte y el del campo"
 fecha: 2025-06-14
 ilustracion: "../../assets/imagenes/fabulas/el-raton-de-la-corte-y-el-del-campo.png"
-etiquetas: ["el ratón de la corte y el del campo", "vida simple", "crítica social", "cuento en verso", "moraleja ilustrada", "opulencia y miedo", "comida y filosofía"]
+personajes: ["raton"]
+temas: ["critica-social", "miedo", "riqueza"]
+forma: verso
+tradicion:
 borrador: false
 autor: "Félix María Samaniego"
 autor_nacionalidad: "español"

@@ -1,7 +1,10 @@
 ---
 titulo: "El caballo y el asno"
 fecha: 2011-12-04
-etiquetas: ["caballo", "asno", "egoísta", "malo", "maldad", "egoísmo", "camino", "amo", "ganar"]
+personajes: ["burro", "caballo"]
+temas: ["maldad"]
+forma: prosa
+tradicion:
 borrador: false
 autor: "Anónimo"
 curador: "Don Alejandro"

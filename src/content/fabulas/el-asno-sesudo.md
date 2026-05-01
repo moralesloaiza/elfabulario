@@ -2,7 +2,10 @@
 titulo: "El asno sesudo"
 fecha: 2025-11-01
 ilustracion: "../../assets/imagenes/fabulas/el-asno-sesudo.png"
-etiquetas: ["arte", "deco", "ilustracion", "clasico", "animal", "filosofia", "asno", "guerra", "sesudo"]
+personajes: ["burro"]
+temas: ["guerra"]
+forma: verso
+tradicion:
 borrador: false
 autor: "Félix María Samaniego"
 autor_nacionalidad: "español"

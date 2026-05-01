@@ -1,7 +1,10 @@
 ---
 titulo: "El loro y el enano de la venta"
 fecha: 2011-11-26
-etiquetas: ["loro", "voz", "enano", "oscuro", "oscuridad", "caverna", "temor", "terror", "niño", "perú"]
+personajes: ["loro", "nino"]
+temas: ["miedo"]
+forma: verso
+tradicion:
 borrador: false
 autor: "Juan Eugenio Hartzenbusch"
 autor_nacionalidad: "español"

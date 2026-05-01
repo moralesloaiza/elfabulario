@@ -2,7 +2,10 @@
 titulo: "El pájaro herido de una flecha"
 fecha: 2025-11-09
 ilustracion: "../../assets/imagenes/fabulas/el-pajaro-herido-de-una-flecha.png"
-etiquetas: ["pajaro", "flecha", "naturaleza", "guerra", "inocencia", "crueldad"]
+personajes: []
+temas: ["guerra", "inocencia", "maldad", "naturaleza"]
+forma: verso
+tradicion:
 borrador: false
 autor: "Félix María Samaniego"
 autor_nacionalidad: "español"

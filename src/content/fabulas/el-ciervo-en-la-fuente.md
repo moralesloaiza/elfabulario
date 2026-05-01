@@ -2,7 +2,10 @@
 titulo: "El ciervo en la fuente"
 fecha: 2025-06-17
 ilustracion: "../../assets/imagenes/fabulas/el-ciervo-en-la-fuente.png"
-etiquetas: []
+personajes: ["ciervo"]
+temas: ["prudencia", "vanidad"]
+forma: prosa
+tradicion:
 borrador: false
 autor: "Félix María Samaniego"
 autor_nacionalidad: "español"

@@ -1,7 +1,10 @@
 ---
 titulo: "Fábula 5"
 fecha: 2012-01-04
-etiquetas: ["cochino", "matar", "hambre", "hombre", "muerte"]
+personajes: ["cerdo"]
+temas: ["hambre", "muerte"]
+forma: verso
+tradicion:
 borrador: false
 autor: "Aquiles Nazoa"
 autor_nacionalidad: "venezolano"

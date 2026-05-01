@@ -1,7 +1,10 @@
 ---
 titulo: "El águila y los lagartos"
 fecha: 2011-11-16
-etiquetas: ["águila", "lagartos", "reptil", "reptiles", "alto", "príncipe", "subir", "monte"]
+personajes: ["aguila", "principe"]
+temas: ["soberbia", "vanidad"]
+forma: verso
+tradicion:
 borrador: false
 autor: "Miguel Ángel Príncipe"
 autor_nacionalidad: "español"

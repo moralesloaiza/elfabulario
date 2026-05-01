@@ -1,7 +1,10 @@
 ---
 titulo: "El pelícano y la naturaleza"
 fecha: 2012-04-08
-etiquetas: ["pelícano", "ave", "sangre", "hijo", "naturaleza", "padre", "padres", "príncipe"]
+personajes: ["pelicano", "principe"]
+temas: ["naturaleza"]
+forma: verso
+tradicion:
 borrador: false
 autor: "Miguel Ángel Príncipe"
 autor_nacionalidad: "español"

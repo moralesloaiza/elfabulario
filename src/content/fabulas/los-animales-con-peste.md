@@ -1,7 +1,10 @@
 ---
 titulo: "Los animales con peste"
 fecha: 2012-04-22
-etiquetas: ["animal", "león", "zorra", "tigre", "onza", "jumento", "burro", "oso", "peste", "virtud", "poder", "bueno", "malo", "pobre", "miserable"]
+personajes: ["burro", "leon", "leopardo", "oso", "pobre", "tigre", "zorro"]
+temas: ["maldad", "poder"]
+forma: verso
+tradicion:
 borrador: false
 autor: "Félix María Samaniego"
 autor_nacionalidad: "español"

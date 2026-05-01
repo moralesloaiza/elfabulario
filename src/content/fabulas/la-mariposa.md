@@ -1,7 +1,10 @@
 ---
 titulo: "La mariposa"
 fecha: 2011-11-27
-etiquetas: ["mariposa", "bujía", "llama", "candela", "sebo", "anónimo", "desconocido"]
+personajes: ["mariposa"]
+temas: ["muerte", "necedad", "vanidad"]
+forma: prosa
+tradicion:
 borrador: false
 autor: "Anónimo"
 curador: "Don Alejandro"

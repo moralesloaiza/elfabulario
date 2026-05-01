@@ -1,7 +1,10 @@
 ---
 titulo: "Fábula con cochino (III)"
 fecha: 2012-01-04
-etiquetas: ["cochino", "marrano", "suicidio", "cinismo", "matar", "leñazo"]
+personajes: ["cerdo"]
+temas: ["muerte"]
+forma: verso
+tradicion:
 borrador: false
 autor: "Aquiles Nazoa"
 autor_nacionalidad: "venezolano"

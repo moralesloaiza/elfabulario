@@ -1,7 +1,10 @@
 ---
 titulo: "La liebre y la tortuga"
 fecha: 2012-08-18
-etiquetas: ["liebre", "tortuga", "granja", "carrera", "polvo"]
+personajes: ["liebre", "tortuga"]
+temas: ["pereza", "prudencia"]
+forma: verso
+tradicion:
 borrador: false
 autor: "Sergio Laignelet"
 autor_nacionalidad: "colombiano"

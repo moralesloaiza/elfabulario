@@ -1,7 +1,10 @@
 ---
 titulo: "La alacena"
 fecha: 2011-11-26
-etiquetas: ["alacena", "queso", "santillana", "critica"]
+personajes: []
+temas: ["critica-social"]
+forma: verso
+tradicion:
 borrador: false
 autor: "Juan Eugenio Hartzenbusch"
 autor_nacionalidad: "español"

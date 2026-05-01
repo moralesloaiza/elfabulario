@@ -2,7 +2,10 @@
 titulo: "El leopardo y las monas"
 fecha: 2025-06-17
 ilustracion: "../../assets/imagenes/fabulas/el-leopardo-y-las-monas.png"
-etiquetas: ["El leopardo y las monas", "cuento en verso", "engaño y venganza", "el enemigo oculto", "monos burlones", "leopardo astuto", "ilustración poética", "crítica moral", "fábulas con moraleja", "desenlace sangriento", "apariencias engañan"]
+personajes: ["leopardo", "mona"]
+temas: ["astucia", "critica-social", "engano", "venganza"]
+forma: verso
+tradicion:
 borrador: false
 autor: "Félix María Samaniego"
 autor_nacionalidad: "español"

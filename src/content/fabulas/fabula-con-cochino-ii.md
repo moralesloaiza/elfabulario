@@ -1,7 +1,10 @@
 ---
 titulo: "Fábula con cochino (II)"
 fecha: 2012-01-04
-etiquetas: ["cochino", "cochinero", "matadero", "pantano", "marrano"]
+personajes: ["cerdo"]
+temas: ["engano", "traicion"]
+forma: verso
+tradicion:
 borrador: false
 autor: "Aquiles Nazoa"
 autor_nacionalidad: "venezolano"

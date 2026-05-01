@@ -1,7 +1,10 @@
 ---
 titulo: "El charlatán"
 fecha: 2011-11-08
-etiquetas: ["charlatán", "asno", "rey", "muerte", "horca", "riqueza", "hablar", "orador", "doctor", "burro"]
+personajes: ["burro", "doctor", "rey"]
+temas: ["muerte", "riqueza"]
+forma: verso
+tradicion:
 borrador: false
 autor: "Félix María Samaniego"
 autor_nacionalidad: "español"

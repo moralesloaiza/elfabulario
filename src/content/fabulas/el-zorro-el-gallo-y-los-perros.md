@@ -1,7 +1,10 @@
 ---
 titulo: "El zorro, el gallo y los perros"
 fecha: 2012-05-05
-etiquetas: ["zorro", "gallo", "perro", "pícaro", "trampa", "engaño", "lebrel", "amigo"]
+personajes: ["gallo", "perro", "zorro"]
+temas: ["amistad", "engano", "trampa"]
+forma: verso
+tradicion:
 borrador: false
 autor: "Félix María Samaniego"
 autor_nacionalidad: "español"

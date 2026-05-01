@@ -2,7 +2,10 @@
 titulo: "Las moscas"
 fecha: 2025-06-16
 ilustracion: "../../assets/imagenes/fabulas/las-moscas.png"
-etiquetas: ["las moscas", "cuento en verso", "golosos atrapados", "vicio mortal", "allegoría ilustrada", "vida breve", "dulce trampa", "ilustración poética", "crítica moral", "muerte por gula"]
+personajes: ["mosca"]
+temas: ["critica-social", "engano", "gula", "muerte", "trampa"]
+forma: verso
+tradicion:
 borrador: false
 autor: "Félix María Samaniego"
 autor_nacionalidad: "español"

@@ -1,7 +1,10 @@
 ---
 titulo: "Fábula del rabipelado"
 fecha: 2012-01-04
-etiquetas: ["rabipelado", "zarigüeya", "cola", "ardilla", "ardita"]
+personajes: ["ardilla", "zarigueya"]
+temas: ["muerte", "necedad", "vanidad"]
+forma: verso
+tradicion:
 borrador: false
 autor: "Aquiles Nazoa"
 autor_nacionalidad: "venezolano"

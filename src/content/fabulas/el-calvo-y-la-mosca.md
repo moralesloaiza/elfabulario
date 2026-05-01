@@ -2,7 +2,10 @@
 titulo: "El calvo y la mosca"
 fecha: 2025-06-21
 ilustracion: "../../assets/imagenes/fabulas/el-calvo-y-la-mosca.png"
-etiquetas: []
+personajes: ["mosca"]
+temas: ["ironia", "necedad"]
+forma: verso
+tradicion:
 borrador: false
 autor: "Félix María Samaniego"
 autor_nacionalidad: "español"

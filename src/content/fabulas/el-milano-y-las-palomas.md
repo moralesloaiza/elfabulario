@@ -2,7 +2,10 @@
 titulo: "El milano y las palomas"
 fecha: 2025-11-12
 ilustracion: "../../assets/imagenes/fabulas/el-milano-y-las-palomas.png"
-etiquetas: ["milano", "palomas", "poder", "tirania", "desdicha", "reino"]
+personajes: ["milano", "paloma"]
+temas: ["poder"]
+forma: verso
+tradicion:
 borrador: false
 autor: "Félix María Samaniego"
 autor_nacionalidad: "español"

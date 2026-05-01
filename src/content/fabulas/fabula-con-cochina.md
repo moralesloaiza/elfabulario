@@ -1,7 +1,10 @@
 ---
 titulo: "Fábula con cochina"
 fecha: 2012-01-03
-etiquetas: ["gallina", "cochina", "sancocho", "disfraz", "viejo"]
+personajes: ["anciano", "cerdo", "gallina"]
+temas: ["engano", "ironia"]
+forma: verso
+tradicion:
 borrador: false
 autor: "Aquiles Nazoa"
 autor_nacionalidad: "venezolano"

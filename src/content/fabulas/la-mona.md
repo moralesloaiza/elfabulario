@@ -1,7 +1,10 @@
 ---
 titulo: "La mona"
 fecha: 2012-04-28
-etiquetas: ["mona", "nuez", "nogal", "verde", "mal", "comer", "vencer", "presa", "abandonar"]
+personajes: ["mona"]
+temas: ["maldad"]
+forma: verso
+tradicion:
 borrador: false
 autor: "Félix María Samaniego"
 autor_nacionalidad: "español"

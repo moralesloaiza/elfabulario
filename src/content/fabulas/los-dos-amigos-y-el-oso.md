@@ -2,7 +2,10 @@
 titulo: "Los dos amigos y el oso"
 fecha: 2025-07-13
 ilustracion: "../../assets/imagenes/fabulas/los-dos-amigos-y-el-oso.png"
-etiquetas: ["amistad", "amigos", "oso", "abandono", "cobarde", "cobardía"]
+personajes: ["oso"]
+temas: ["amistad", "cobardia"]
+forma: verso
+tradicion:
 borrador: false
 autor: "Félix María Samaniego"
 autor_nacionalidad: "español"

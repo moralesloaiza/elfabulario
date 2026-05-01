@@ -2,7 +2,10 @@
 titulo: "El asno y el cochino"
 fecha: 2025-02-14
 ilustracion: "../../assets/imagenes/fabulas/el-asno-y-el-cochino.png"
-etiquetas: ["asno", "cochino", "burro", "cerdo", "pocilga", "ocio"]
+personajes: ["burro", "cerdo"]
+temas: ["pereza"]
+forma: verso
+tradicion:
 borrador: false
 autor: "Félix María Samaniego"
 autor_nacionalidad: "español"

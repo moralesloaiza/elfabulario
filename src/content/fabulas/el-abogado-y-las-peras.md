@@ -1,7 +1,10 @@
 ---
 titulo: "El abogado y las peras"
 fecha: 2011-11-08
-etiquetas: ["abogado", "hambre", "peras", "fango", "río", "útil", "necesario", "boda", "banquete"]
+personajes: ["abogado"]
+temas: ["hambre"]
+forma: prosa
+tradicion:
 borrador: false
 autor: "Esopo"
 autor_nacionalidad: "griego"
