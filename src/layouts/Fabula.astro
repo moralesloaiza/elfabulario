@@ -7,6 +7,16 @@ import FormattedDate from '../components/FormattedDate.astro';
 import Header from '../components/Header.astro';
 import Sol from '../components/ornaments/Sol.astro';
 import { slugify } from '../utils/slug';
+import {
+	PERSONAJES_DISPLAY,
+	TEMAS_DISPLAY,
+	FORMAS_DISPLAY,
+	TRADICIONES_DISPLAY,
+	URL_PERSONAJES,
+	URL_TEMAS,
+	URL_FORMAS,
+	URL_TRADICIONES,
+} from '../utils/taxonomia';
 
 type Props = CollectionEntry<'fabulas'>['data'];
 
@@ -22,7 +32,10 @@ const {
 	fecha,
 	fecha_actualizada,
 	ilustracion,
-	etiquetas,
+	personajes,
+	temas,
+	forma,
+	tradicion,
 } = Astro.props;
 
 // Resolvemos el slug del archivo de autor (si existe) buscando por nombre
@@ -59,11 +72,8 @@ const datosAutor = [autor_nacionalidad, epoca].filter(Boolean).join(' · ');
 
 				<header class="title">
 					<Sol width="80px" />
-
 					<h1>{titulo}</h1>
-
 					{resumen && <p class="resumen">{resumen}</p>}
-
 					<p class="autor">
 						por
 						{autorHref ? (
@@ -73,7 +83,6 @@ const datosAutor = [autor_nacionalidad, epoca].filter(Boolean).join(' · ');
 						)}
 					</p>
 					{datosAutor && <p class="autor-meta">{datosAutor}</p>}
-
 					<p class="fecha">
 						<FormattedDate date={fecha} />
 						{fecha_actualizada && (
@@ -96,11 +105,63 @@ const datosAutor = [autor_nacionalidad, epoca].filter(Boolean).join(' · ');
 					</p>
 				)}
 
-				{etiquetas && etiquetas.length > 0 && (
-					<footer class="etiquetas" aria-label="Etiquetas">
-						{etiquetas.map((e) => (
-							<a class="etiqueta" href={`/etiquetas/${slugify(e)}/`}>#{e}</a>
-						))}
+				{(personajes.length > 0 || temas.length > 0 || forma || tradicion) && (
+					<footer class="taxonomia" aria-label="Clasificación de la fábula">
+						{personajes.length > 0 && (
+							<div class="taxonomia-grupo">
+								<span class="taxonomia-rotulo">Personajes</span>
+								<ul class="taxonomia-lista">
+									{personajes.map((p) => (
+										<li>
+											<a href={`${URL_PERSONAJES}/${p}/`}>
+												{PERSONAJES_DISPLAY[p]}
+											</a>
+										</li>
+									))}
+								</ul>
+							</div>
+						)}
+
+						{temas.length > 0 && (
+							<div class="taxonomia-grupo">
+								<span class="taxonomia-rotulo">Temas</span>
+								<ul class="taxonomia-lista">
+									{temas.map((t) => (
+										<li>
+											<a href={`${URL_TEMAS}/${t}/`}>
+												{TEMAS_DISPLAY[t]}
+											</a>
+										</li>
+									))}
+								</ul>
+							</div>
+						)}
+
+						{forma && (
+							<div class="taxonomia-grupo">
+								<span class="taxonomia-rotulo">Forma</span>
+								<ul class="taxonomia-lista">
+									<li>
+										<a href={`${URL_FORMAS}/${forma}/`}>
+											{FORMAS_DISPLAY[forma]}
+										</a>
+									</li>
+								</ul>
+							</div>
+						)}
+
+						{tradicion && (
+							<div class="taxonomia-grupo">
+								<span class="taxonomia-rotulo">Tradición</span>
+								<ul class="taxonomia-lista">
+									<li>
+										<a href={`${URL_TRADICIONES}/${tradicion}/`}>
+											{TRADICIONES_DISPLAY[tradicion]}
+										</a>
+									</li>
+								</ul>
+							</div>
+						)}
 					</footer>
 				)}
 			</article>
@@ -211,14 +272,41 @@ const datosAutor = [autor_nacionalidad, epoca].filter(Boolean).join(' · ');
 		font-style: normal;
 		color: var(--color-text);
 	}
-	.etiquetas {
+
+	/* ── Taxonomía: cuatro grupos al pie de la fábula ────────────────────── */
+	.taxonomia {
 		margin-top: var(--space-xl);
+		padding-top: var(--space-md);
+		border-top: var(--rule-hairline) solid var(--color-oro);
+		display: flex;
+		flex-direction: column;
+		gap: var(--space-sm);
+	}
+	.taxonomia-grupo {
 		display: flex;
 		flex-wrap: wrap;
-		gap: var(--space-sm);
-		justify-content: center;
+		align-items: baseline;
+		gap: var(--space-xs) var(--space-md);
 	}
-	.etiqueta {
+	.taxonomia-rotulo {
+		font-family: var(--font-display);
+		font-size: var(--fs-3xs);
+		letter-spacing: var(--ls-widest);
+		color: var(--color-oro-texto);
+		font-weight: var(--fw-bold);
+		text-transform: uppercase;
+		flex-shrink: 0;
+		min-width: 6.5rem;
+	}
+	.taxonomia-lista {
+		list-style: none;
+		padding: 0;
+		margin: 0;
+		display: flex;
+		flex-wrap: wrap;
+		gap: var(--space-2xs) var(--space-sm);
+	}
+	.taxonomia-lista a {
 		font-family: var(--font-display);
 		font-size: var(--fs-3xs);
 		letter-spacing: var(--ls-wide);
@@ -227,8 +315,8 @@ const datosAutor = [autor_nacionalidad, epoca].filter(Boolean).join(' · ');
 		border-bottom: var(--rule-hairline) solid transparent;
 		transition: border-color var(--dur-fast) var(--ease-standard);
 	}
-	.etiqueta:hover,
-	.etiqueta:focus-visible {
+	.taxonomia-lista a:hover,
+	.taxonomia-lista a:focus-visible {
 		border-bottom-color: var(--color-esmeralda);
 	}
 </style>
