@@ -1,6 +1,6 @@
 ---
 nombre: "Félix María de Samaniego"
-tipo: clásico
+tipo: clasico
 nacionalidad: Español
 nacimiento: 1745
 muerte: 1801
