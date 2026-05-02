@@ -7,7 +7,7 @@ temas: ["critica-social", "miedo", "riqueza"]
 forma: verso
 tradicion:
 borrador: false
-autor: "Félix María Samaniego"
+autor: "Félix María de Samaniego"
 autor_nacionalidad: "español"
 autor_nacimiento: 1745
 autor_muerte: 1801

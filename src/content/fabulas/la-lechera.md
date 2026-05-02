@@ -14,7 +14,7 @@ temas:
   - codicia
 forma: verso
 tradicion: hispanica
-autor: Félix María de Samaniego
+autor: "Félix María de Samaniego"
 autor_nacionalidad: Español
 autor_nacimiento: 1745
 autor_muerte: 1801

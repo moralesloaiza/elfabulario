@@ -7,7 +7,7 @@ temas: ["amistad", "astucia", "engano"]
 forma: prosa
 tradicion:
 borrador: false
-autor: "Félix María Samaniego"
+autor: "Félix María de Samaniego"
 autor_nacionalidad: "español"
 autor_nacimiento: 1745
 autor_muerte: 1801
