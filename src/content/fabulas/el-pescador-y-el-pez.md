@@ -1,19 +1,26 @@
 ---
-titulo: "El pescador y el pez"
+titulo: El pescador y el pez
+resumen: El pez promete una fortuna futura si se le perdona la vida. El
+  pescador, sabiamente, cuestiona su promesa.
 fecha: 2025-11-10
-ilustracion: "../../assets/imagenes/fabulas/el-pescador-y-el-pez.png"
-personajes: ["pez"]
-temas: ["codicia", "esperanza", "prudencia"]
-forma: verso
-tradicion:
+fecha_actualizada: 2026-05-02
+ilustracion: /src/assets/uploads/chatgpt-image-2-may-2026-10_37_29.png
 borrador: false
-autor: "Félix María de Samaniego"
-autor_nacionalidad: "español"
+personajes:
+  - pez
+temas:
+  - codicia
+  - esperanza
+  - prudencia
+forma: verso
+tradicion: esopica
+autor: Félix María de Samaniego
+autor_nacionalidad: Español
 autor_nacimiento: 1745
 autor_muerte: 1801
-curador: "Don Alejandro"
+curador: Don Alejandro
 es_seudonimo: true
-nombre_real: "Alejandro Morales Loaiza"
+nombre_real: Alejandro Morales Loaiza
 ---
 
 Recoge un pescador su red tendida,
