@@ -1,21 +1,26 @@
 ---
-titulo: "El milano y las palomas"
+titulo: El milano y las palomas
+resumen: Las palomas, perseguidas por el milano, le creen cuando promete
+  protegerlas si lo nombran rey; al primer día de reinado las devora una a una.
 fecha: 2025-11-12
-ilustracion: "../../assets/imagenes/fabulas/el-milano-y-las-palomas.png"
-personajes: ["milano", "paloma"]
-temas: ["poder"]
-forma: verso
-tradicion:
+fecha_actualizada: 2026-05-01
+ilustracion: /src/assets/uploads/chatgpt-image-1-may-2026-21_00_25.png
 borrador: false
-autor: "Félix María Samaniego"
-autor_nacionalidad: "español"
+personajes:
+  - milano
+  - paloma
+temas:
+  - poder
+forma: verso
+tradicion: hispanica
+autor: Félix María de Samaniego
+autor_nacionalidad: Español
 autor_nacimiento: 1745
 autor_muerte: 1801
-curador: "Don Alejandro"
+curador: Don Alejandro
 es_seudonimo: true
-nombre_real: "Alejandro Morales Loaiza"
+nombre_real: Alejandro Morales Loaiza
 ---
-
 A las tristes Palomas un Milano,
 sin poderlas pillar, seguía en vano;
 mas él a todas horas
