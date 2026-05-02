@@ -1,7 +1,7 @@
 ---
-nombre: "Félix María Samaniego"
-tipo: clasico
-nacionalidad: español
+nombre: "Félix María de Samaniego"
+tipo: clásico
+nacionalidad: Español
 nacimiento: 1745
 muerte: 1801
 ---
