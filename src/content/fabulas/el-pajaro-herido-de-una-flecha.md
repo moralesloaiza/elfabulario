@@ -1,21 +1,28 @@
 ---
-titulo: "El pájaro herido de una flecha"
+titulo: El pájaro herido de una flecha
+resumen: Con su último aliento, un ave reflexiona sobre las crueles ironías de
+  los hombres que hacen la guerra.
 fecha: 2025-11-09
-ilustracion: "../../assets/imagenes/fabulas/el-pajaro-herido-de-una-flecha.png"
-personajes: []
-temas: ["guerra", "inocencia", "maldad", "naturaleza"]
-forma: verso
-tradicion:
+fecha_actualizada: 2026-05-02
+ilustracion: /src/assets/uploads/pajaro_herido_flecha.png
 borrador: false
-autor: "Félix María de Samaniego"
-autor_nacionalidad: "español"
+personajes:
+  - cazador
+temas:
+  - guerra
+  - inocencia
+  - maldad
+  - naturaleza
+forma: verso
+tradicion: esopica
+autor: Félix María de Samaniego
+autor_nacionalidad: Español
 autor_nacimiento: 1745
 autor_muerte: 1801
-curador: "Don Alejandro"
+curador: Don Alejandro
 es_seudonimo: true
-nombre_real: "Alejandro Morales Loaiza"
+nombre_real: Alejandro Morales Loaiza
 ---
-
 Un pájaro inocente,
 herido de una flecha
 guarnecida de acero
@@ -40,4 +47,4 @@ trabajan, y no cesan.
 ***Los unos y otros fraguan
 armas para la guerra,
 y es dar contra sus vidas
-plumas para las flech***as.
+plumas para las flechas.***
