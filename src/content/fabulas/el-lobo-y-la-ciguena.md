@@ -1,19 +1,28 @@
 ---
-titulo: "El lobo y la cigüeña"
+titulo: El lobo y la cigüeña
+resumen: El autor combina dos historias con una misma moraleja, enseñándonos a
+  ejercer prudencia al momento de ayudar a alguien.
 fecha: 2025-11-07
-ilustracion: "../../assets/imagenes/fabulas/el-lobo-y-la-ciguena.png"
-personajes: ["ciguena", "culebra", "lobo"]
-temas: ["ingratitud", "naturaleza", "traicion"]
-forma: verso
-tradicion:
+fecha_actualizada: 2026-05-02
+ilustracion: /src/assets/uploads/chatgpt-image-2-may-2026-13_11_28.png
 borrador: false
-autor: "Félix María de Samaniego"
-autor_nacionalidad: "español"
+personajes:
+  - ciguena
+  - culebra
+  - lobo
+temas:
+  - ingratitud
+  - naturaleza
+  - traicion
+forma: verso
+tradicion: hispanica
+autor: Félix María de Samaniego
+autor_nacionalidad: Español
 autor_nacimiento: 1745
 autor_muerte: 1801
-curador: "Don Alejandro"
+curador: Don Alejandro
 es_seudonimo: true
-nombre_real: "Alejandro Morales Loaiza"
+nombre_real: Alejandro Morales Loaiza
 ---
 
 Sin duda alguna que se hubiera ahogado
