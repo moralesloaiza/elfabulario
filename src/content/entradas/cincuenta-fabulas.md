@@ -2,7 +2,7 @@
 titulo: ¡Cincuenta fábulas y contando!
 fecha: 2025-06-11
 resumen: Un alegre mensaje de agradecimiento tras nuestro primer hito literario.
-ilustracion: /src/assets/uploads/gran-sello.png
+ilustracion: /src/assets/uploads/gran-sello-32.png
 borrador: false
 curador: Don Alejandro de Morales y Loaiza
 es_seudonimo: true
