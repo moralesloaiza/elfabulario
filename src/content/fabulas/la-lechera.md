@@ -4,6 +4,7 @@ resumen: La lechera camina al mercado tejiendo en su mente una cadena de
   prosperidad que se rompe con su cántaro al primer tropiezo.
 fecha: 2011-11-08
 fecha_actualizada: 2026-05-01
+ilustracion: /src/assets/uploads/chatgpt-image-1-may-2026-20_25_23.png
 borrador: false
 personajes:
   - cerdo
