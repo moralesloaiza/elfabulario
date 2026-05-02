@@ -1,21 +1,27 @@
 ---
-titulo: "Júpiter y la tortuga"
+titulo: Júpiter y la tortuga
+resumen: La tortuga, tras llegar tarde a la boda de Júpiter, da una excusa por
+  la cual es castigada severamente.
 fecha: 2025-11-11
-ilustracion: "../../assets/imagenes/fabulas/jupiter-y-la-tortuga.png"
-personajes: ["tortuga", "zeus"]
-temas: ["ironia", "pereza"]
-forma: verso
-tradicion:
+fecha_actualizada: 2026-05-02
+ilustracion: /src/assets/uploads/chatgpt-image-2-may-2026-10_25_56.png
 borrador: false
-autor: "Félix María de Samaniego"
-autor_nacionalidad: "español"
+personajes:
+  - tortuga
+  - zeus
+temas:
+  - ironia
+  - pereza
+forma: verso
+tradicion: esopica
+autor: Félix María de Samaniego
+autor_nacionalidad: Español
 autor_nacimiento: 1745
 autor_muerte: 1801
-curador: "Don Alejandro"
+curador: Don Alejandro
 es_seudonimo: true
-nombre_real: "Alejandro Morales Loaiza"
+nombre_real: Alejandro Morales Loaiza
 ---
-
 A las bodas de Júpiter estaban
 todos los animales convidados.
 Unos y otros llegaban
@@ -36,4 +42,4 @@ que es andar con la casa siempre a cuestas.
 ***Gentes machuchas hay que hacen alarde
 de que aman su retiro con exceso;
 pero a su obligación acuden tarde:
-Viven, como el ratón, dentro del que***so.
+Viven, como el ratón, dentro del queso.***
