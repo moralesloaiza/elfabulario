@@ -1,21 +1,24 @@
 ---
-titulo: "El zagal y las ovejas"
+titulo: El zagal y las ovejas
+resumen: Un joven alerta a los aldeanos una y otra vez, en vano, hasta descubrir
+  la suerte de quienes viven engañando.
 fecha: 2025-11-05
-ilustracion: "../../assets/imagenes/fabulas/el-zagal-y-las-ovejas.png"
-personajes: []
-temas: ["engano"]
-forma: verso
-tradicion:
+fecha_actualizada: 2026-05-03
+ilustracion: /src/assets/uploads/zagal_ovejas.png
 borrador: false
-autor: "Félix María de Samaniego"
-autor_nacionalidad: "español"
+personajes: []
+temas:
+  - engano
+forma: verso
+tradicion: null
+autor: Félix María de Samaniego
+autor_nacionalidad: Español
 autor_nacimiento: 1745
 autor_muerte: 1801
-curador: "Don Alejandro"
+curador: Don Alejandro
 es_seudonimo: true
-nombre_real: "Alejandro Morales Loaiza"
+nombre_real: Alejandro Morales Loaiza
 ---
-
 Apacentando un joven su ganado,
 gritó desde la cima de un collado:
 —¡Favor!, que viene el lobo, labradores.
@@ -34,4 +37,4 @@ no se mueve la gente escarmentada,
 y el lobo le devora la manada.
 
 ***¡Cuántas veces resulta de un engaño
-contra el engañador el mayor daño***!
+contra el engañador el mayor daño!***
