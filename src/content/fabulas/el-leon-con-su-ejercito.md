@@ -1,21 +1,33 @@
 ---
-titulo: "El león con su ejército"
+titulo: El león con su ejército
+resumen: Un sabio león organiza su ejército y demuestra a todos que cada uno
+  tiene lugar y oficio dentro del mismo.
 fecha: 2025-07-20
-ilustracion: "../../assets/imagenes/fabulas/el-leon-con-su-ejercito.png"
-personajes: ["burro", "elefante", "leon", "liebre", "lobo", "mona", "oso", "zorro"]
-temas: ["critica-social", "prudencia"]
-forma: verso
-tradicion:
+fecha_actualizada: 2026-05-03
+ilustracion: /src/assets/uploads/chatgpt-image-3-may-2026-14_05_31.png
 borrador: false
-autor: "Félix María de Samaniego"
-autor_nacionalidad: "español"
+personajes:
+  - burro
+  - elefante
+  - leon
+  - liebre
+  - lobo
+  - mona
+  - oso
+  - zorro
+temas:
+  - critica-social
+  - prudencia
+forma: verso
+tradicion: hispanica
+autor: Félix María de Samaniego
+autor_nacionalidad: Español
 autor_nacimiento: 1745
 autor_muerte: 1801
-curador: "Don Alejandro"
+curador: Don Alejandro
 es_seudonimo: true
-nombre_real: "Alejandro Morales Loaiza"
+nombre_real: Alejandro Morales Loaiza
 ---
-
 El león, rey de los bosques poderoso,
 quiso armar un ejército famoso.
 Juntó sus animales al instante.
@@ -38,5 +50,5 @@ Tu retrato es el león, conde prudente,
 y si a tu imitación, según deseo,
 examinan los jefes a su gente,
 a todos han de dar útil empleo.
-*¿Por qué no lo han de hacer? ¿Habrá cucaña
-como no hallar ociosos en España*?
+***¿Por qué no lo han de hacer? ¿Habrá cucaña
+como no hallar ociosos en España*?**
