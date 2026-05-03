@@ -1,21 +1,26 @@
 ---
-titulo: "La águila, la corneja y la tortuga"
+titulo: La águila, la corneja y la tortuga
+resumen: Una poderosa y malvada águila se guía del consejo de una corneja para
+  lidiar con una tortuga.
 fecha: 2025-11-06
-ilustracion: "../../assets/imagenes/fabulas/la-aguila-la-corneja-y-la-tortuga.png"
-personajes: ["aguila", "tortuga"]
-temas: ["astucia"]
-forma: verso
-tradicion:
+fecha_actualizada: 2026-05-03
+ilustracion: /src/assets/uploads/chatgpt-image-3-may-2026-13_28_21.png
 borrador: false
-autor: "Félix María de Samaniego"
-autor_nacionalidad: "español"
+personajes:
+  - aguila
+  - tortuga
+temas:
+  - astucia
+forma: verso
+tradicion: esopica
+autor: Félix María de Samaniego
+autor_nacionalidad: Español
 autor_nacimiento: 1745
 autor_muerte: 1801
-curador: "Don Alejandro"
+curador: Don Alejandro
 es_seudonimo: true
-nombre_real: "Alejandro Morales Loaiza"
+nombre_real: Alejandro Morales Loaiza
 ---
-
 A una tortuga una águila arrebata.
 La ladrona se apura y desbarata
 por hacerla pedazos,
@@ -39,9 +44,9 @@ y la corneja astuta,
 por autora de aquella maravilla,
 juntamente comieron la tortilla.
 
-*¿Qué podrá resistirse a un poderoso,
+***¿Qué podrá resistirse a un poderoso,
 guiado de un consejo malicioso?
 De estos tales se aparta el que es prudente;
 y así, por escaparse de esta gente,
 las descendientes de la tal tortuga
-a cuevas ignoradas hacen fuga.*
+a cuevas ignoradas hacen fuga.***
