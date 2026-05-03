@@ -1,21 +1,25 @@
 ---
-titulo: "El asno sesudo"
+titulo: El asno sesudo
+resumen: Un sabio asno reflexiona, ante el asombro de su amo, sobre el destino
+  que le aguarda en la cercanía de la guerra.
 fecha: 2025-11-01
-ilustracion: "../../assets/imagenes/fabulas/el-asno-sesudo.png"
-personajes: ["burro"]
-temas: ["guerra"]
-forma: verso
-tradicion:
+fecha_actualizada: 2026-05-03
+ilustracion: /src/assets/uploads/chatgpt-image-3-may-2026-13_53_57.png
 borrador: false
-autor: "Félix María de Samaniego"
-autor_nacionalidad: "español"
+personajes:
+  - burro
+temas:
+  - guerra
+forma: verso
+tradicion: esopica
+autor: Félix María de Samaniego
+autor_nacionalidad: Español
 autor_nacimiento: 1745
 autor_muerte: 1801
-curador: "Don Alejandro"
+curador: Don Alejandro
 es_seudonimo: true
-nombre_real: "Alejandro Morales Loaiza"
+nombre_real: Alejandro Morales Loaiza
 ---
-
 Cierto burro pacía
 en la fresca y hermosa pradería,
 con tanta paz como si aquella tierra
@@ -34,7 +38,7 @@ con el marcial ruido
 de bélicas trompetas al oído,
 le exhorta con fervor a la carrera.
 
--¡Yo correr!, dijo el asno, bueno fuera;
+\-¡Yo correr!, dijo el asno, bueno fuera;
 que llegue en hora buena Marte fiero,
 me rindo, y él me lleva prisionero.
 ¿Servir aquí o allí no es todo uno?
@@ -55,4 +59,4 @@ de la guerra enemiga?
 No hay sino la pobreza que consiga
 esta gran exención, de aquí le viene:
 
-Nada teme perder quien nada tiene.
+***Nada teme perder quien nada tiene.***
