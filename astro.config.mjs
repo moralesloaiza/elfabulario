@@ -2,6 +2,7 @@
 import mdx from '@astrojs/mdx';
 import sitemap from '@astrojs/sitemap';
 import { defineConfig } from 'astro/config';
+import pagefind from 'astro-pagefind';
 import remarkBreaks from 'remark-breaks';
 
 // https://astro.build/config
@@ -18,5 +19,6 @@ export default defineConfig({
 				locales: { es: 'es-ES' },
 			},
 		}),
+		pagefind(),
 	],
 });

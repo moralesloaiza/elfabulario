@@ -28,7 +28,7 @@ const { Content } = await render(entrada);
 	<body>
 		<Header />
 		<main class="page">
-			<article class="entrada">
+			<article class="entrada" data-pagefind-body>
 				{ilustracion && (
 					<figure class="hero-image">
 						<Image width={1200} height={800} src={ilustracion} alt="" />
@@ -51,7 +51,7 @@ const { Content } = await render(entrada);
 
 				{curador && (
 					<p class="curaduria">
-						Por <strong>{curador}</strong>.
+						Por <strong data-pagefind-meta="author">{curador}</strong>.
 					</p>
 				)}
 			</article>

@@ -63,7 +63,7 @@ const datosAutor = [autor_nacionalidad, epoca].filter(Boolean).join(' · ');
 	<body>
 		<Header />
 		<main class="page">
-			<article class="fabula">
+			<article class="fabula" data-pagefind-body>
 				{ilustracion && (
 					<figure class="hero-image">
 						<Image width={1200} height={800} src={ilustracion} alt="" />
@@ -77,9 +77,9 @@ const datosAutor = [autor_nacionalidad, epoca].filter(Boolean).join(' · ');
 					<p class="autor">
 						por
 						{autorHref ? (
-							<a href={autorHref}><span>{autor}</span></a>
+							<a href={autorHref}><span data-pagefind-meta="author">{autor}</span></a>
 						) : (
-							<span>{autor}</span>
+							<span data-pagefind-meta="author">{autor}</span>
 						)}
 					</p>
 					{datosAutor && <p class="autor-meta">{datosAutor}</p>}
@@ -101,7 +101,7 @@ const datosAutor = [autor_nacionalidad, epoca].filter(Boolean).join(' · ');
 
 				{curador && (
 					<p class="curaduria">
-						Esta fábula la trae al Fabulario <strong>{curador}</strong>.
+						Esta fábula la trae al fabulario <strong>{curador}</strong>.
 					</p>
 				)}
 
