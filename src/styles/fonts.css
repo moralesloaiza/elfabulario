@@ -137,8 +137,9 @@ ul, ol {
   max-width: var(--measure);
 }
 
-li + li {
-  margin-top: var(--space-2xs);
+.prose li+li,
+.prose-narrow li+li {
+    margin-top: var(--space-2xs);
 }
 
 /* ---------- Código (raro en un sitio literario, pero por si acaso) ---------- */
