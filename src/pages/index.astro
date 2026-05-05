@@ -118,8 +118,14 @@ const ultimas = (await getCollection('fabulas', ({ data }) => !data.borrador))
 		gap: var(--space-2xl);
 		max-width: none;
 	}
+.fabula-item {
+		display: flex;
+		flex-direction: column;
+	}
 	.fabula-link {
-		display: block;
+		display: flex;
+		flex-direction: column;
+		flex: 1;
 		text-decoration: none;
 		color: inherit;
 	}
