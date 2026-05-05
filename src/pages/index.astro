@@ -123,15 +123,16 @@ const ultimas = (await getCollection('fabulas', ({ data }) => !data.borrador))
 		text-decoration: none;
 		color: inherit;
 	}
-	.fabula-img {
+.fabula-img {
 		margin: 0 0 var(--space-md);
 		overflow: hidden;
+		aspect-ratio: 3 / 2;
 	}
 	.fabula-img :global(img) {
 		display: block;
 		width: 100%;
-		height: auto;
-		border: var(--rule-hairline) solid var(--color-oro);
+		height: 100%;
+		object-fit: cover;
 		transition: transform var(--dur-slow) var(--ease-standard);
 	}
 	.fabula-link:hover .fabula-img :global(img),
