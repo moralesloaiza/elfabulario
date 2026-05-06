@@ -33,6 +33,7 @@ const fabulas = defineCollection({
 			fecha: z.coerce.date(),
 			fecha_actualizada: optionalDate,
 			ilustracion: z.optional(image()),
+			spotify_url: z.string().url().optional(),
 			borrador: z.boolean().default(false),
 
 			// --- Taxonomía ---
