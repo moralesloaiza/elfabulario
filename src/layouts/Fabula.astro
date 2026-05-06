@@ -97,6 +97,13 @@ const datosAutor = [autor_nacionalidad, epoca].filter(Boolean).join(' · ');
 
 				<hr class="ornate" />
 
+				{spotify_url && (
+					<>
+						<SpotifyEmbed url={spotify_url} />
+						<hr class="ornate" />
+					</>
+				)}
+
 				<div class="prose">
 					<slot />
 				</div>
@@ -188,7 +195,6 @@ const datosAutor = [autor_nacionalidad, epoca].filter(Boolean).join(' · ');
 	width: 100%;
 	height: auto;
 }
-	}
 	.title {
 		text-align: center;
 		margin-bottom: var(--space-xl);
