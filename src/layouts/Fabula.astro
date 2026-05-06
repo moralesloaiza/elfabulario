@@ -7,6 +7,7 @@ import FormattedDate from '../components/FormattedDate.astro';
 import Header from '../components/Header.astro';
 import Sol from '../components/ornaments/Sol.astro';
 import { slugify } from '../utils/slug';
+import SpotifyEmbed from '../components/SpotifyEmbed.astro';
 import {
 	PERSONAJES_DISPLAY,
 	TEMAS_DISPLAY,
@@ -36,6 +37,7 @@ const {
 	temas,
 	forma,
 	tradicion,
+	spotify_url,
 } = Astro.props;
 
 // Resolvemos el slug del archivo de autor (si existe) buscando por nombre
@@ -98,6 +100,8 @@ const datosAutor = [autor_nacionalidad, epoca].filter(Boolean).join(' · ');
 				<div class="prose">
 					<slot />
 				</div>
+
+				{spotify_url && <SpotifyEmbed url={spotify_url} />}
 
 				{curador && (
 					<p class="curaduria">
