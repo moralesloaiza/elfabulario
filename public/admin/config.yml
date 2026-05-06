@@ -38,6 +38,7 @@ collections:
       - { name: "fecha", label: "Fecha de publicación", widget: "datetime", format: "YYYY-MM-DD", date_format: "YYYY-MM-DD", time_format: false }
       - { name: "fecha_actualizada", label: "Fecha de última actualización", widget: "datetime", required: false, format: "YYYY-MM-DD", date_format: "YYYY-MM-DD", time_format: false }
       - { name: "ilustracion", label: "Ilustración", widget: "image", required: false, hint: "Proporción recomendada 3:2, mínimo 1200×800." }
+      - { name: "spotify_url", label: "Enlace Spotify", widget: "string", required: false, hint: "URL de la narración/declamación en Spotify (track o episodio de podcast)." }
       - { name: "borrador", label: "Borrador (no se publica todavía)", widget: "boolean", default: false }
 
       # --- Taxonomía ---
