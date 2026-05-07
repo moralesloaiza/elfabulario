@@ -24,9 +24,9 @@ curador: Don Alejandro
 es_seudonimo: true
 nombre_real: Alejandro Morales Loaiza
 nota_curador: >-
-  En esta fábula, la **jabalina** no es un arma ni una lanza—aunque ese es otro
-  significado de la palabra—sino la **hembra del jabalí**, es decir, una **cerda
-  salvaje**.
+  En esta fábula, la **jabalina** no es un arma ni una lanza —aunque ese es otro
+  significado de la palabra—, sino la **hembra del jabalí**, es decir, una
+  **cerda salvaje**.
 
 
   En el contexto de la fábula:
