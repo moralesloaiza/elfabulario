@@ -207,7 +207,7 @@ collections:
 
       # --- Cuerpo y nota ---
       - { name: "body", label: "Cuerpo de la fábula", widget: "markdown" }
-      - { name: "nota_curador", label: "Nota del curador (opcional)", widget: "markdown", required: false, hint: "Comentarios adicionales del curador. Aparece como sección aparte tras la fábula." }
+      - { name: "nota_curador", label: "Nota del curador", widget: "markdown", required: false, hint: "Comentarios adicionales del curador. Aparece como sección aparte tras la fábula." }
 
   - name: "entradas"
     label: "Entradas"
