@@ -82,4 +82,4 @@ y de ellas hizo víveres la gata.
 ***Jóvenes, ojo alerta, gran cuidado:***
 ***Que un chismoso en amigo disfrazado,
 con capa de amistad cubre sus trazas,
-y así causan el mal sus aña*gazas.**
+y así causan el mal sus añagazas.***
