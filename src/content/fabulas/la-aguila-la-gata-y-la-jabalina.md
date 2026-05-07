@@ -1,7 +1,7 @@
 ---
 titulo: La águila, la gata y la jabalina
-resumen: "Una astuta gata hace de las suyas al sembrar la intriga entre sus
-  compañeras de madriguera. "
+resumen: Una astuta gata hace de las suyas al sembrar la intriga entre sus
+  compañeras de estancia.
 fecha: 2025-07-15
 fecha_actualizada: 2026-05-06
 ilustracion: /src/assets/uploads/aguila_gata_jabalina.png
@@ -32,13 +32,13 @@ nota_curador: >-
   En el contexto de la fábula:
 
 
-  El **águila** anida en lo alto del árbol.La **gata** vive dentro del tronco, con sus crías.Y **la jabalina** (mamífero salvaje) cría a sus lechones en el pie del árbol, en una cueva o madriguera.
+  El **águila** anida en lo alto del árbol. La **gata** vive dentro del tronco, con sus crías. Y **la jabalina** (mamífero salvaje) cría a sus lechones al pie del árbol, en una cueva o madriguera.
 
 
-  La fábula juega con la **estructura vertical del árbol** para mostrar cómo la gata—la más astuta y maliciosa—manipula tanto al ave como al animal terrestre para quedarse sola con comida (sus crías) y espacio.
+  La fábula juega con la **estructura vertical del árbol** para mostrar cómo la gata —la más astuta y maliciosa—manipula tanto al ave como al animal terrestre para quedarse sola con comida (sus crías) y espacio.
 
 
-  **¿Por qué Samaniego escribe \*\****la águila**\*** y no **\***el águila**\***?\*\*
+  **¿Por qué Samaniego escribe *la águila* y no *el águila*?**
 
 
   Aunque en el español actual decimos **el águila** (por razones de eufonía), el sustantivo *águila* es gramaticalmente **femenino**. Se emplea *el* únicamente para evitar la cacofonía de “la á…”.
