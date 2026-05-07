@@ -8,6 +8,7 @@ import Header from '../components/Header.astro';
 import Sol from '../components/ornaments/Sol.astro';
 import { slugify } from '../utils/slug';
 import SpotifyEmbed from '../components/SpotifyEmbed.astro';
+import { marked } from 'marked';
 import {
 	PERSONAJES_DISPLAY,
 	TEMAS_DISPLAY,
@@ -30,6 +31,7 @@ const {
 	autor_muerte,
 	autor_siglo,
 	curador,
+	nota_curador,
 	fecha,
 	fecha_actualizada,
 	ilustracion,
@@ -55,6 +57,9 @@ const epoca =
 			? `siglo ${autor_siglo}`
 			: null;
 const datosAutor = [autor_nacionalidad, epoca].filter(Boolean).join(' · ');
+const notaHtml = nota_curador
+	? marked.parse(nota_curador, { breaks: true })
+	: null;
 ---
 
 <html lang="es">
@@ -104,14 +109,22 @@ const datosAutor = [autor_nacionalidad, epoca].filter(Boolean).join(' · ');
 					</>
 				)}
 
-				<div class="prose">
-					<slot />
-				</div>
-				{curador && (
-					<p class="curaduria">
-						Esta fábula la trae al fabulario <strong>{curador}</strong>.
-					</p>
-				)}
+<div class="prose">
+			<slot />
+		</div>
+
+		{notaHtml && (
+			<aside class="nota-curador" aria-label="Nota del curador">
+				<h2 class="nota-curador-titulo">Nota del curador</h2>
+				<div class="nota-curador-cuerpo" set:html={notaHtml} />
+			</aside>
+		)}
+
+		{curador && (
+			<p class="curaduria">
+				Esta fábula la trae al fabulario <strong>{curador}</strong>.
+			</p>
+		)}
 
 				{(personajes.length > 0 || temas.length > 0 || forma || tradicion) && (
 					<footer class="taxonomia" aria-label="Clasificación de la fábula">
@@ -279,7 +292,36 @@ const datosAutor = [autor_nacionalidad, epoca].filter(Boolean).join(' · ');
 		font-style: normal;
 		color: var(--color-text);
 	}
-
+/* Nota editorial del curador, opcional, después del cuerpo */
+	.nota-curador {
+		margin-top: var(--space-2xl);
+		padding-block: var(--space-lg);
+		border-top: var(--rule-hairline) solid var(--color-oro);
+		border-bottom: var(--rule-hairline) solid var(--color-oro);
+	}
+	.nota-curador-titulo {
+		font-family: var(--font-display);
+		font-size: var(--fs-2xs);
+		letter-spacing: var(--ls-widest);
+		text-transform: uppercase;
+		color: var(--color-oro-texto);
+		text-align: center;
+		margin: 0 0 var(--space-md);
+	}
+	.nota-curador-cuerpo :global(p) {
+		font-size: var(--fs-sm);
+		line-height: var(--lh-relaxed);
+		margin-bottom: var(--space-sm);
+	}
+	.nota-curador-cuerpo :global(p:last-child) {
+		margin-bottom: 0;
+	}
+	.nota-curador-cuerpo :global(em) {
+		font-style: italic;
+	}
+	.nota-curador-cuerpo :global(strong) {
+		font-weight: var(--fw-bold);
+	}
 	/* ── Taxonomía: cuatro grupos al pie de la fábula ────────────────────── */
 	.taxonomia {
 		margin-top: var(--space-xl);
