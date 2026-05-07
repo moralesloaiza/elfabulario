@@ -1,21 +1,54 @@
 ---
-titulo: "La águila, la gata y la jabalina"
+titulo: La águila, la gata y la jabalina
+resumen: "Una astuta gata hace de las suyas al sembrar la intriga entre sus
+  compañeras de madriguera. "
 fecha: 2025-07-15
-ilustracion: "../../assets/imagenes/fabulas/la-aguila-la-gata-y-la-jabalina.png"
-personajes: ["aguila", "gato", "jabali"]
-temas: ["amistad", "astucia", "engano"]
-forma: prosa
-tradicion:
+fecha_actualizada: 2026-05-06
+ilustracion: ../../assets/imagenes/fabulas/la-aguila-la-gata-y-la-jabalina.png
 borrador: false
-autor: "Félix María de Samaniego"
-autor_nacionalidad: "español"
+personajes:
+  - aguila
+  - gato
+  - jabali
+temas:
+  - amistad
+  - astucia
+  - engano
+forma: verso
+tradicion: hispanica
+autor: Félix María de Samaniego
+autor_nacionalidad: Español
 autor_nacimiento: 1745
 autor_muerte: 1801
-curador: "Don Alejandro"
+curador: Don Alejandro
 es_seudonimo: true
-nombre_real: "Alejandro Morales Loaiza"
----
+nombre_real: Alejandro Morales Loaiza
+nota_curador: >-
+  En esta fábula, la **jabalina** no es un arma ni una lanza—aunque ese es otro
+  significado de la palabra—sino la **hembra del jabalí**, es decir, una **cerda
+  salvaje**.
 
+
+  En el contexto de la fábula:
+
+
+  El **águila** anida en lo alto del árbol.La **gata** vive dentro del tronco, con sus crías.Y **la jabalina** (mamífero salvaje) cría a sus lechones en el pie del árbol, en una cueva o madriguera.
+
+
+  La fábula juega con la **estructura vertical del árbol** para mostrar cómo la gata—la más astuta y maliciosa—manipula tanto al ave como al animal terrestre para quedarse sola con comida (sus crías) y espacio.
+
+
+  **¿Por qué Samaniego escribe \*\****la águila**\*** y no **\***el águila**\***?\*\*
+
+
+  Aunque en el español actual decimos **el águila** (por razones de eufonía), el sustantivo *águila* es gramaticalmente **femenino**. Se emplea *el* únicamente para evitar la cacofonía de “la á…”.
+
+
+  En la época de **Félix María Samaniego** (siglo XVIII), esta regla aún no estaba plenamente fijada, y era común encontrar expresiones como *la águila* en registros literarios o poéticos.Además, en este caso, la métrica del verso pudo haber influido en la elección.
+
+
+  Así, *la águila* en la fábula no es un error, sino un reflejo del uso lingüístico de su tiempo.
+---
 Una águila anidó sobre una encina.
 Al pie criaba cierta jabalina,
 y era un hueco del tronco corpulento
@@ -46,30 +79,7 @@ La águila, en el ramaje temerosa
 haciendo centinela, no reposa.
 En fin, a ambas familias la hambre mata
 y de ellas hizo víveres la gata.
-*Jóvenes, ojo alerta, gran cuidado:*
-*Que un chismoso en amigo disfrazado,
+***Jóvenes, ojo alerta, gran cuidado:***
+***Que un chismoso en amigo disfrazado,
 con capa de amistad cubre sus trazas,
-y así causan el mal sus aña*gazas.
-
-**—Félix María Samaniego.**
-
-_________________________
-
-## *Nota de don Alejandro:
-
-En esta fábula, la **jabalina** no es un arma ni una lanza—aunque ese es otro significado de la palabra—sino la **hembra del jabalí**, es decir, una **cerda salvaje**.
-
-En el contexto de la fábula:
-
-El **águila** anida en lo alto del árbol.La **gata** vive dentro del tronco, con sus crías.Y **la jabalina** (mamífero salvaje) cría a sus lechones en el pie del árbol, en una cueva o madriguera.
-
-La fábula juega con la **estructura vertical del árbol** para mostrar cómo la gata—la más astuta y maliciosa—manipula tanto al ave como al animal terrestre para quedarse sola con comida (sus crías) y espacio.
-
-**¿Por qué Samaniego escribe *****la águila***** y no *****el águila*****?**
-
-Aunque en el español actual decimos **el águila** (por razones de eufonía), el sustantivo *águila* es gramaticalmente **femenino**. Se emplea *el* únicamente para evitar la cacofonía de “la á…”.
-
-En la época de **Félix María Samaniego** (siglo XVIII), esta regla aún no estaba plenamente fijada, y era común encontrar expresiones como *la águila* en registros literarios o poéticos.
-Además, en este caso, la métrica del verso pudo haber influido en la elección.
-
-Así, *la águila* en la fábula no es un error, sino un reflejo del uso lingüístico de su tiempo.
+y así causan el mal sus aña*gazas.**
