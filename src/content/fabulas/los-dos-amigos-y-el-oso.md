@@ -1,21 +1,26 @@
 ---
-titulo: "Los dos amigos y el oso"
+titulo: Los dos amigos y el oso
+resumen: Dos amigos se encuentran ante el peligro de un gran oso; el final da
+  una importante lección.
 fecha: 2025-07-13
-ilustracion: "../../assets/imagenes/fabulas/los-dos-amigos-y-el-oso.png"
-personajes: ["oso"]
-temas: ["amistad", "cobardia"]
-forma: verso
-tradicion:
+fecha_actualizada: 2026-05-06
+ilustracion: /src/assets/uploads/amigos_oso.png
 borrador: false
-autor: "Félix María de Samaniego"
-autor_nacionalidad: "español"
+personajes:
+  - oso
+temas:
+  - amistad
+  - cobardia
+forma: verso
+tradicion: hispanica
+autor: Félix María de Samaniego
+autor_nacionalidad: Español
 autor_nacimiento: 1745
 autor_muerte: 1801
-curador: "Don Alejandro"
+curador: Don Alejandro
 es_seudonimo: true
-nombre_real: "Alejandro Morales Loaiza"
+nombre_real: Alejandro Morales Loaiza
 ---
-
 A dos amigos se aparece un oso:
 El uno, muy medroso,
 en las ramas de un árbol se asegura;
@@ -41,5 +46,5 @@ que el Oso te decía algún recado.
 ¿Qué pudo ser?
 -Direte lo que ha sido,
 estas dos palabritas al oído:
-*Aparta tu amistad de la persona
-que si te ve en el riesgo, te abandon*a.
+***Aparta tu amistad de la persona
+que si te ve en el riesgo, te abandon*a.**
