@@ -4,7 +4,7 @@ resumen: "Una astuta gata hace de las suyas al sembrar la intriga entre sus
   compañeras de madriguera. "
 fecha: 2025-07-15
 fecha_actualizada: 2026-05-06
-ilustracion: ../../assets/imagenes/fabulas/la-aguila-la-gata-y-la-jabalina.png
+ilustracion: /src/assets/uploads/aguila_gata_jabalina.png
 borrador: false
 personajes:
   - aguila
