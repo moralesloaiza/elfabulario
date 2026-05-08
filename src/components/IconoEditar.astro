@@ -16,7 +16,7 @@ const { slug, coleccion = 'fabulas' } = Astro.props;
 const href = `/admin/#/collections/${coleccion}/entries/${slug}`;
 ---
 
-
+<a
   class="icono-editar oculto"
   href={href}
   aria-label="Editar esta entrada en el panel editorial"
