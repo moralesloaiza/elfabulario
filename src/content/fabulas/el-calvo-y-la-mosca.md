@@ -1,21 +1,26 @@
 ---
-titulo: "El calvo y la mosca"
+titulo: El calvo y la mosca
+resumen: Un calvo y una mosca que lo atormenta discuten sobre la proporción del
+  castigo ante la ofensa.
 fecha: 2025-06-21
-ilustracion: "../../assets/imagenes/fabulas/el-calvo-y-la-mosca.png"
-personajes: ["mosca"]
-temas: ["ironia", "necedad"]
-forma: verso
-tradicion:
+fecha_actualizada: 2026-05-07
+ilustracion: /src/assets/uploads/calvo_mosca.png
 borrador: false
-autor: "Félix María de Samaniego"
-autor_nacionalidad: "español"
+personajes:
+  - mosca
+temas:
+  - ironia
+  - necedad
+forma: verso
+tradicion: hispanica
+autor: Félix María de Samaniego
+autor_nacionalidad: Español
 autor_nacimiento: 1745
 autor_muerte: 1801
-curador: "Don Alejandro"
+curador: Don Alejandro
 es_seudonimo: true
-nombre_real: "Alejandro Morales Loaiza"
+nombre_real: Alejandro Morales Loaiza
 ---
-
 Picaba impertinente
 en la espaciosa calva de un anciano
 una mosca insolente.
@@ -41,5 +46,5 @@ Sabe, mosca villana,
 que coteja el agravio recibido
 la condición humana,
 según la mano de donde ha venido.
-*Que el grado de la ofensa tanto asciende,
-cuanto sea más vil aquel que ofend*e.
+***Que el grado de la ofensa tanto asciende,
+cuanto sea más vil aquel que ofend*e.**
