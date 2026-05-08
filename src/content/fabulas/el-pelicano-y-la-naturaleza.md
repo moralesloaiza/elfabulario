@@ -24,6 +24,6 @@ Dar su sangre a sus hijuelos;
 Y exclamó « ¡Gran Dios! ¡qué ave! »
 
    Naturaleza lo oyó,
-Y preguntóle:* **« ¿Qué padres*****
-*Conoces tú, que a sus hijos*
-*Les nieguen nunca su sangre? »***
+Y preguntóle: ***« ¿Qué padres
+Conoces tú, que a sus hijos
+Les nieguen nunca su sangre? »***
