@@ -1,9 +1,9 @@
 ---
-nombre: "Miguel Ángel Príncipe"
+nombre: Miguel Agustín Príncipe
 tipo: clasico
-nacionalidad: español
+nacionalidad: Español
 nacimiento: 1811
-muerte: 1866
+muerte: 1863
 ---
 
 Escritor y periodista zaragozano del XIX, autor de *Tirios y troyanos* y de una colección de fábulas políticas que satirizan la vida pública española de su tiempo.
