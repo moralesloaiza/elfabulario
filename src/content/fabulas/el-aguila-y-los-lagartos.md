@@ -1,20 +1,24 @@
 ---
-titulo: "El águila y los lagartos"
+titulo: El águila y los lagartos
+resumen: Un águila en su asombro termina comprendiendo el destino de humanos y reptiles.
 fecha: 2011-11-16
-personajes: ["aguila", "principe"]
-temas: ["soberbia", "vanidad"]
-forma: verso
-tradicion:
+fecha_actualizada: 2026-05-08
 borrador: false
-autor: "Miguel Ángel Príncipe"
-autor_nacionalidad: "español"
+personajes:
+  - aguila
+temas:
+  - soberbia
+  - vanidad
+forma: verso
+tradicion: hispanica
+autor: Miguel Agustín Príncipe
+autor_nacionalidad: Español
 autor_nacimiento: 1811
-autor_muerte: 1866
-curador: "Don Alejandro"
+autor_muerte: 1862
+curador: Don Alejandro
 es_seudonimo: true
-nombre_real: "Alejandro Morales Loaiza"
+nombre_real: Alejandro Morales Loaiza
 ---
-
 A un alto monte voló
 Un águila y puesta allí,
 Dijo: « ¿Quién sube hasta aquí,
@@ -24,5 +28,5 @@ Con otros lagartos viles
 Trepar a la cumbre a miles,
 Y « ¡Ay!, exclamó: ¿qué hacen éstos?
 
-*¿Conque a los más altos puestos*
-*Suben también los reptiles?* »
+***¿Conque a los más altos puestos*
+*Suben también los reptiles?* »**
