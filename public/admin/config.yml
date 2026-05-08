@@ -10,6 +10,10 @@ backend:
   base_url: https://auth.elfabulario.com
   auth_endpoint: /auth
 
+# URL pública del sitio (usada por el botón "Ver en directo")
+site_url: https://elfabulario.com
+display_url: https://elfabulario.com
+
 # Dónde Decap sube las imágenes
 media_folder: "src/assets/uploads"
 public_folder: "/src/assets/uploads"
@@ -28,6 +32,7 @@ collections:
     folder: "src/content/fabulas"
     create: true
     slug: "{{slug}}"
+    preview_path: "fabulas/{{slug}}"
     extension: "md"
     format: "frontmatter"
     summary: "{{titulo}} — {{autor}} ({{fecha | date('YYYY-MM-DD')}})"
@@ -216,6 +221,7 @@ collections:
     folder: "src/content/entradas"
     create: true
     slug: "{{slug}}"
+    preview_path: "entradas/{{slug}}"
     extension: "md"
     format: "frontmatter"
     summary: "{{titulo}} ({{fecha | date('YYYY-MM-DD')}})"
@@ -238,6 +244,7 @@ collections:
     folder: "src/content/autores"
     create: true
     slug: "{{slug}}"
+    preview_path: "autores/{{slug}}"
     extension: "md"
     format: "frontmatter"
     summary: "{{nombre}} ({{tipo}})"
