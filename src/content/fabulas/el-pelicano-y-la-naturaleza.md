@@ -13,7 +13,7 @@ tradicion: hispanica
 autor: Miguel Agustín Príncipe
 autor_nacionalidad: Español
 autor_nacimiento: 1811
-autor_muerte: 1866
+autor_muerte: 1862
 curador: Don Alejandro
 es_seudonimo: true
 nombre_real: Alejandro Morales Loaiza
