@@ -40,7 +40,7 @@ const href = `/admin/#/collections/${coleccion}/entries/${slug}`;
 <style>
   .icono-editar {
     position: fixed;
-    right: var(--space-md);
+    right: calc(var(--space-md) + 2.75rem + var(--space-sm));
     bottom: var(--space-md);
     z-index: 100;
     display: inline-flex;
@@ -76,12 +76,12 @@ const href = `/admin/#/collections/${coleccion}/entries/${slug}`;
     display: none;
   }
 
-  @media (max-width: 480px) {
-    .icono-editar {
-      right: var(--space-sm);
-      bottom: var(--space-sm);
-      width: 2.5rem;
-      height: 2.5rem;
-    }
-  }
+@media (max-width: 480px) {
+		.icono-editar {
+			right: calc(var(--space-sm) + 2.5rem + var(--space-2xs));
+			bottom: var(--space-sm);
+			width: 2.5rem;
+			height: 2.5rem;
+		}
+	}
 </style>
