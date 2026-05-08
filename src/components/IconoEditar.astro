@@ -1,0 +1,87 @@
+---
+// Icono "Editar en Decap" — visible solo cuando hay sesión activa.
+// Comprueba la clave `decap-cms-user` en localStorage. Si existe, se
+// muestra el icono. No valida el token contra la API: si está caducado,
+// Decap reautenticará al hacer clic. La URL del admin está protegida por
+// OAuth, así que tener el enlace en HTML público no es un riesgo.
+
+interface Props {
+  /** Slug del archivo .md de la entrada (sin extensión). */
+  slug: string;
+  /** Nombre de la colección Decap. */
+  coleccion?: string;
+}
+
+const { slug, coleccion = 'fabulas' } = Astro.props;
+const href = `/admin/#/collections/${coleccion}/entries/${slug}`;
+---
+
+
+  class="icono-editar oculto"
+  href={href}
+  aria-label="Editar esta entrada en el panel editorial"
+  data-icono-editar
+>
+  <svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true" focusable="false">
+    <path
+      fill="currentColor"
+      d="M3 17.25V21h3.75L17.81 9.94l-3.75-3.75L3 17.25zm17.71-10.04a1 1 0 0 0 0-1.41l-2.51-2.51a1 1 0 0 0-1.41 0l-1.83 1.83 3.75 3.75 2-2z"
+    />
+  </svg>
+</a>
+
+<script>
+  const icono = document.querySelector('[data-icono-editar]');
+  if (icono && localStorage.getItem('decap-cms-user')) {
+    icono.classList.remove('oculto');
+  }
+</script>
+
+<style>
+  .icono-editar {
+    position: fixed;
+    right: var(--space-md);
+    bottom: var(--space-md);
+    z-index: 100;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 2.75rem;
+    height: 2.75rem;
+    border-radius: 50%;
+    background: var(--color-bg);
+    color: var(--color-oro-texto);
+    border: var(--rule-hairline) solid var(--color-oro);
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.12);
+    text-decoration: none;
+    transition:
+      transform var(--dur-fast) var(--ease-standard),
+      background var(--dur-fast) var(--ease-standard),
+      color var(--dur-fast) var(--ease-standard);
+  }
+
+  .icono-editar:hover,
+  .icono-editar:focus-visible {
+    background: var(--color-oro);
+    color: var(--color-bg);
+    transform: translateY(-1px);
+  }
+
+  .icono-editar:focus-visible {
+    outline: 2px solid var(--color-esmeralda);
+    outline-offset: 2px;
+  }
+
+  .icono-editar.oculto {
+    display: none;
+  }
+
+  @media (max-width: 480px) {
+    .icono-editar {
+      right: var(--space-sm);
+      bottom: var(--space-sm);
+      width: 2.5rem;
+      height: 2.5rem;
+    }
+  }
+</style>

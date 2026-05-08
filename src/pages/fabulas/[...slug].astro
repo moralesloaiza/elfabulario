@@ -15,6 +15,6 @@ const fabula = Astro.props;
 const { Content } = await render(fabula);
 ---
 
-<Fabula {...fabula.data}>
+<Fabula {...fabula.data} id={fabula.id}>
 	<Content />
 </Fabula>

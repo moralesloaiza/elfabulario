@@ -6,6 +6,7 @@ import Footer from '../components/Footer.astro';
 import FormattedDate from '../components/FormattedDate.astro';
 import Header from '../components/Header.astro';
 import Sol from '../components/ornaments/Sol.astro';
+import IconoEditar from '../components/IconoEditar.astro';
 import { slugify } from '../utils/slug';
 import SpotifyEmbed from '../components/SpotifyEmbed.astro';
 import { marked } from 'marked';
@@ -20,9 +21,10 @@ import {
 	URL_TRADICIONES,
 } from '../utils/taxonomia';
 
-type Props = CollectionEntry<'fabulas'>['data'];
+type Props = CollectionEntry<'fabulas'>['data'] & { id: string };
 
 const {
+	id,
 	titulo,
 	resumen,
 	autor,
@@ -187,7 +189,8 @@ const notaHtml = nota_curador
 				)}
 			</article>
 		</main>
-		<Footer />
+	<Footer />
+	<IconoEditar slug={id} />
 	</body>
 </html>
 
