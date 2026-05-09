@@ -76,10 +76,10 @@ const ultimas = (await getCollection('fabulas', ({ data }) => !data.borrador))
 						</a>
 					</li>
 					<li>
-						<a href="/buscar/">
+						<button type="button" class="explorar-trigger" data-buscador-trigger>
 							<h3 class="titulo-explorar">Buscar</h3>
 							<p class="descripcion-explorar">Encuentra una fábula o un autor por nombre.</p>
-						</a>
+						</button>
 					</li>
 					<li>
 						<a href="mailto:contacto@elfabulario.com">
@@ -197,9 +197,8 @@ const ultimas = (await getCollection('fabulas', ({ data }) => !data.borrador))
 		margin: var(--space-2xs) 0 0;
 	}
 
-	/* ---------- EXPLORAR ---------- */
+/* ---------- EXPLORAR ---------- */
 	.seccion-explorar {
-		margin-bottom: var(--space-4xl);
 		text-align: center;
 	}
 	.eyebrow {
@@ -219,13 +218,19 @@ const ultimas = (await getCollection('fabulas', ({ data }) => !data.borrador))
 		display: grid;
 		grid-template-columns: repeat(2, minmax(0, 1fr));
 		gap: var(--space-2xl);
-		text-align: left;
 	}
-	ul.exploracion a {
+	ul.exploracion a,
+	ul.exploracion .explorar-trigger {
 		display: block;
+		width: 100%;
 		text-decoration: none;
 		color: inherit;
 		padding: var(--space-md) 0;
+		background: transparent;
+		border: 0;
+		font: inherit;
+		text-align: inherit;
+		cursor: pointer;
 	}
 	.titulo-explorar {
 		font-family: var(--font-display);
@@ -238,7 +243,9 @@ const ultimas = (await getCollection('fabulas', ({ data }) => !data.borrador))
 		text-transform: none;
 	}
 	ul.exploracion a:hover .titulo-explorar,
-	ul.exploracion a:focus-visible .titulo-explorar {
+	ul.exploracion a:focus-visible .titulo-explorar,
+	ul.exploracion .explorar-trigger:hover .titulo-explorar,
+	ul.exploracion .explorar-trigger:focus-visible .titulo-explorar {
 		color: var(--color-oro-texto);
 	}
 	.descripcion-explorar {
@@ -248,7 +255,6 @@ const ultimas = (await getCollection('fabulas', ({ data }) => !data.borrador))
 		color: var(--color-text-soft);
 		margin: 0;
 	}
-
 	/* ---------- RESPONSIVE ---------- */
 @media (max-width: 720px) {
 		ul.fabulas,
