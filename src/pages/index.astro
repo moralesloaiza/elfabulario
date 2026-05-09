@@ -59,13 +59,35 @@ const ultimas = (await getCollection('fabulas', ({ data }) => !data.borrador))
 				</section>
 			)}
 
-			<section class="cta-colaborar frame frame-lg">
-				<h3>¿Deseas colaborar?</h3>
-				<p>
-					¿Escribes fábulas, o conoces alguna olvidada?
-					Escribe a
-					<a href="mailto:colaboradores@elfabulario.com">colaboradores@elfabulario.com</a>.
-				</p>
+<section class="seccion-explorar" aria-labelledby="explorar-titulo">
+				<p class="eyebrow">— Explorar —</p>
+				<h2 id="explorar-titulo" class="seccion-titulo">Sigue leyendo</h2>
+				<ul class="exploracion">
+					<li>
+						<a href="/fabulas/">
+							<h3 class="titulo-explorar">Todas las fábulas</h3>
+							<p class="descripcion-explorar">El catálogo completo, ordenado cronológicamente.</p>
+						</a>
+					</li>
+					<li>
+						<a href="/autores/">
+							<h3 class="titulo-explorar">Autores</h3>
+							<p class="descripcion-explorar">Clásicos y colaboradores actuales.</p>
+						</a>
+					</li>
+					<li>
+						<a href="/buscar/">
+							<h3 class="titulo-explorar">Buscar</h3>
+							<p class="descripcion-explorar">Encuentra una fábula o un autor por nombre.</p>
+						</a>
+					</li>
+					<li>
+						<a href="mailto:contacto@elfabulario.com">
+							<h3 class="titulo-explorar">Colaborar</h3>
+							<p class="descripcion-explorar">¿Escribes fábulas o conoces alguna olvidada?</p>
+						</a>
+					</li>
+				</ul>
 			</section>
 		</main>
 		<Footer />
@@ -175,25 +197,62 @@ const ultimas = (await getCollection('fabulas', ({ data }) => !data.borrador))
 		margin: var(--space-2xs) 0 0;
 	}
 
-	/* ---------- CTA ---------- */
-	.cta-colaborar {
+	/* ---------- EXPLORAR ---------- */
+	.seccion-explorar {
+		margin-bottom: var(--space-4xl);
 		text-align: center;
-		max-width: var(--measure);
-		margin-inline: auto;
 	}
-	.cta-colaborar h2 {
-		margin: 0 0 var(--space-md);
-		font-size: var(--fs-xl);
+	.eyebrow {
+		font-family: var(--font-display);
+		font-size: var(--fs-3xs);
+		letter-spacing: var(--ls-widest);
+		color: var(--color-esmeralda);
+		margin: 0 0 var(--space-2xs);
 	}
-	.cta-colaborar p {
-		font-size: var(--fs-md);
-		max-width: var(--measure-narrow);
-		margin: 0 auto;
+	.seccion-explorar .seccion-titulo {
+		margin: 0 0 var(--space-xl);
+	}
+	ul.exploracion {
+		list-style: none;
+		padding: 0;
+		margin: 0;
+		display: grid;
+		grid-template-columns: repeat(2, minmax(0, 1fr));
+		gap: var(--space-2xl);
+		text-align: left;
+	}
+	ul.exploracion a {
+		display: block;
+		text-decoration: none;
+		color: inherit;
+		padding: var(--space-md) 0;
+	}
+	.titulo-explorar {
+		font-family: var(--font-display);
+		font-size: var(--fs-lg);
+		font-weight: var(--fw-bold);
+		letter-spacing: var(--ls-wide);
+		line-height: var(--lh-snug);
+		margin: 0 0 var(--space-2xs);
+		color: var(--color-text);
+		text-transform: none;
+	}
+	ul.exploracion a:hover .titulo-explorar,
+	ul.exploracion a:focus-visible .titulo-explorar {
+		color: var(--color-oro-texto);
+	}
+	.descripcion-explorar {
+		font-family: var(--font-body);
+		font-style: italic;
+		font-size: var(--fs-sm);
+		color: var(--color-text-soft);
+		margin: 0;
 	}
 
 	/* ---------- RESPONSIVE ---------- */
-	@media (max-width: 720px) {
-		ul.fabulas {
+@media (max-width: 720px) {
+		ul.fabulas,
+		ul.exploracion {
 			grid-template-columns: 1fr;
 			gap: var(--space-xl);
 		}
