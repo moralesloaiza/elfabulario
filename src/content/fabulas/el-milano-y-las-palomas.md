@@ -3,7 +3,7 @@ titulo: El milano y las palomas
 resumen: Las palomas, perseguidas por el milano, le creen cuando promete
   protegerlas si lo nombran rey; al primer día de reinado las devora una a una.
 fecha: 2025-11-12
-fecha_actualizada: 2026-05-05
+fecha_actualizada: 2026-05-09
 ilustracion: /src/assets/uploads/chatgpt-image-1-may-2026-21_00_25.png
 spotify_url: https://open.spotify.com/episode/2HxcupDvxG5JJM2mvID1hU?si=2d45f7eb2f4c4333
 borrador: false
