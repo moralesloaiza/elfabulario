@@ -1,21 +1,27 @@
 ---
-titulo: "El león y la zorra"
+titulo: El león y la zorra
+resumen: Un viejo león intenta con astucia hacer que una zorra entre en su
+  madriguera. La zorra demuestra ser más taimada.
 fecha: 2025-06-18
-ilustracion: "../../assets/imagenes/fabulas/el-leon-y-la-zorra.png"
-personajes: ["leon", "zorro"]
-temas: ["prudencia"]
-forma: verso
-tradicion:
+fecha_actualizada: 2026-05-08
+ilustracion: /src/assets/uploads/leon_zorra.png
 borrador: false
-autor: "Félix María de Samaniego"
-autor_nacionalidad: "español"
+personajes:
+  - leon
+  - zorro
+temas:
+  - prudencia
+  - astucia
+forma: verso
+tradicion: esopica
+autor: Félix María de Samaniego
+autor_nacionalidad: Español
 autor_nacimiento: 1745
 autor_muerte: 1801
-curador: "Don Alejandro"
+curador: Don Alejandro
 es_seudonimo: true
-nombre_real: "Alejandro Morales Loaiza"
+nombre_real: Alejandro Morales Loaiza
 ---
-
 Un León en otro tiempo poderoso,
 ya viejo y achacoso,
 en vano perseguía, hambriento y fiero,
@@ -37,12 +43,12 @@ y, a la puerta asomada,
 atisba muy de espacio
 la entrada de aquel cóncavo palacio.
 El León la divisó, y en el momento
-la dice: -Ven acá; pues que me siento
+la dice: —Ven acá; pues que me siento
 en el último instante de mi vida,
 visítame como otros, mi querida.
--¿Cómo otros? ¡Ah, señor!, he conocido
+—¿Cómo otros? ¡Ah, señor!, he conocido
 que entraron, sí, pero que no han salido.
-*Mirad, mirad la huella,
+***Mirad, mirad la huella,
 bien claro lo dice ella;
 y no es bien el entrar do no se sale.
-La prudente cautela mucho va*le.
+La prudente cautela mucho va*le.**
