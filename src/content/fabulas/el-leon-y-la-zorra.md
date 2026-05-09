@@ -51,4 +51,4 @@ que entraron, sí, pero que no han salido.
 ***Mirad, mirad la huella,
 bien claro lo dice ella;
 y no es bien el entrar do no se sale.
-La prudente cautela mucho va*le.**
+La prudente cautela mucho vale.***
