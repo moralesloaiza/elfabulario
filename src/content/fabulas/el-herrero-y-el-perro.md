@@ -1,21 +1,28 @@
 ---
-titulo: "El herrero y el perro"
+titulo: El herrero y el perro
+resumen: Un perro, convencido de que su estilo de vida era compartido por todos
+  los de su especie, descubre la realidad tras ver a sus vecinos.
 fecha: 2025-06-15
-ilustracion: "../../assets/imagenes/fabulas/el-herrero-y-el-perro.png"
-personajes: ["perro"]
-temas: ["critica-social", "engano", "pereza", "trabajo"]
-forma: verso
-tradicion:
+fecha_actualizada: 2026-05-09
+ilustracion: /src/assets/uploads/chatgpt-image-8-may-2026-22_59_34.png
 borrador: false
-autor: "Félix María de Samaniego"
-autor_nacionalidad: "español"
+personajes:
+  - perro
+temas:
+  - critica-social
+  - engano
+  - pereza
+  - trabajo
+forma: verso
+tradicion: esopica
+autor: Félix María de Samaniego
+autor_nacionalidad: Español
 autor_nacimiento: 1745
 autor_muerte: 1801
-curador: "Don Alejandro"
+curador: Don Alejandro
 es_seudonimo: true
-nombre_real: "Alejandro Morales Loaiza"
+nombre_real: Alejandro Morales Loaiza
 ---
-
 Un herrero tenía
 un perro que no hacía
 sino comer, dormir y estarse echado;
@@ -37,7 +44,7 @@ Anda, anda, poltrón; no es bien que cuentes
 que el amo, hecho un gañán y sin reposo,
 te mantiene a lo conde muy ocioso.
 El perro le responde:
--¿Qué más tiene que yo cualquiera conde?
+—¿Qué más tiene que yo cualquiera conde?
 Para no trabajar debo al destino
 haber nacido perro y no pollino.
 -Pues, señor conde, fuera de mi casa;
@@ -49,6 +56,6 @@ y que pase la noche toda en vela,
 acá de lazarillo y de danzante,
 allá, dentro de un torno, a cada instante
 asa la carne que comer no espera.
-*Al cabo conoció de esta manera
+***Al cabo conoció de esta manera
 que el destino, y no es cuento,
-a todos nos cargó como al jument*o.
+a todos nos cargó como al jument*o.**
