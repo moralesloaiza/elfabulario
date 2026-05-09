@@ -130,8 +130,6 @@ const overlay = document.querySelector<HTMLElement>('[data-buscador-overlay]');
 	if (overlay && triggers.length > 0 && cerrar && input && lista) {
 		document.body.appendChild(overlay);
 	}
-
-	if (overlay && trigger && cerrar && input && lista) {
 		// ── Estado ────────────────────────────────────────────────────────
 		let entidades: Entidad[] = [];
 		let entidadesPromise: Promise<Entidad[]> | null = null;
