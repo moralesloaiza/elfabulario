@@ -1,21 +1,28 @@
 ---
-titulo: "El ciervo en la fuente"
+titulo: El ciervo en la fuente
+resumen: Un ciervo al contemplarse en una fuente nos enseña cuán equivocados
+  podemos estar al evaluar nuestros dones.
 fecha: 2025-06-17
-ilustracion: "../../assets/imagenes/fabulas/el-ciervo-en-la-fuente.png"
-personajes: ["ciervo"]
-temas: ["prudencia", "vanidad"]
-forma: prosa
-tradicion:
+fecha_actualizada: 2026-05-08
+ilustracion: /src/assets/uploads/ciervo_fuente.png
 borrador: false
-autor: "Félix María de Samaniego"
-autor_nacionalidad: "español"
+personajes:
+  - ciervo
+temas:
+  - prudencia
+  - vanidad
+forma: verso
+tradicion: null
+autor: Félix María de Samaniego
+autor_nacionalidad: Español
 autor_nacimiento: 1745
 autor_muerte: 1801
-curador: "Don Alejandro"
+curador: Don Alejandro
 es_seudonimo: true
-nombre_real: "Alejandro Morales Loaiza"
+nombre_real: Alejandro Morales Loaiza
+nota_curador: Versión en español de la fábula *Le Cerf se mirant dans l'eau*,
+  de **Jean de La Fontaine** (Libro VI, fábula 9).
 ---
-
 Un ciervo se miraba
 en una hermosa cristalina fuente;
 placentero admiraba
@@ -23,7 +30,7 @@ los enramados cuernos de su frente.
 Pero al ver sus delgadas, largas piernas,
 al alto cielo daba quejas tiernas:
 
--¡Oh dioses!, ¿a qué intento,
+\-¡Oh dioses!, ¿a qué intento,
 a esta fábrica hermosa de cabeza
 construís su cimiento
 sin guardar proporción en la belleza?
@@ -48,9 +55,5 @@ Así, frecuentemente,
 el hombre se deslumbra con lo hermoso;
 elige lo aparente,
 abrazando tal vez lo más dañoso.
-*Pero escarmiente ahora en tal cabeza:
-El útil bien es la mejor belleza*.
-
-**Félix María Samaniego.**
-
-**Inspirada en la fábula de [Jean de La Fontaine](https://elfabulario.tumblr.com/post/13758180262/el-ciervo).*
+***Pero escarmiente ahora en tal cabeza:
+El útil bien es la mejor belleza*.**
