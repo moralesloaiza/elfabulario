@@ -99,10 +99,10 @@ const autores = defineCollection({
 			siglo: optionalString,
 
 			nombre_real: optionalString,
+			github_username: optionalString,
 			enlaces: z
 				.array(z.object({ etiqueta: z.string(), url: z.string().url() }))
 				.optional(),
 		}),
 });
-
 export const collections = { fabulas, entradas, autores };
