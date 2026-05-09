@@ -124,13 +124,16 @@ const overlay = document.querySelector<HTMLElement>('[data-buscador-overlay]');
 	const input = document.querySelector<HTMLInputElement>('[data-buscador-input]');
 	const lista = document.querySelector<HTMLElement>('[data-buscador-resultados]');
 
-	// Portal: movemos el overlay al final del <body> para que su position:fixed
-	// no quede atrapado en un ancestro con su propio contexto de apilado y para
-	// que el atributo [hidden] no compita con display:flex heredado del nav.
-	if (overlay && triggers.length > 0 && cerrar && input && lista) {
-		document.body.appendChild(overlay);
-	}
-		// ── Estado ────────────────────────────────────────────────────────
+// Portal: movemos el overlay al final del <body> para que su position:fixed
+		// no quede atrapado en un ancestro con su propio contexto de apilado y para
+		// que el atributo [hidden] no compita con display:flex heredado del nav.
+		if (overlay && overlay.parentElement !== document.body) {
+			document.body.appendChild(overlay);
+		}
+
+		if (overlay && triggers.length > 0 && cerrar && input && lista) {
+				// ── Estado ──────────────────────────────────────────────────────────────
+
 		let entidades: Entidad[] = [];
 		let entidadesPromise: Promise<Entidad[]> | null = null;
 		let pagefind: { search: (q: string) => Promise<{ results: PagefindRaw[] }> } | null = null;
