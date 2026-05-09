@@ -1,21 +1,28 @@
 ---
-titulo: "El leopardo y las monas"
+titulo: El leopardo y las monas
+resumen: Un leopardo astuto se finge muerto entre un grupo de monas, que le acosan.
 fecha: 2025-06-17
-ilustracion: "../../assets/imagenes/fabulas/el-leopardo-y-las-monas.png"
-personajes: ["leopardo", "mona"]
-temas: ["astucia", "critica-social", "engano", "venganza"]
-forma: verso
-tradicion:
+fecha_actualizada: 2026-05-08
+ilustracion: /src/assets/uploads/chatgpt-image-8-may-2026-22_51_57.png
 borrador: false
-autor: "Félix María de Samaniego"
-autor_nacionalidad: "español"
+personajes:
+  - leopardo
+  - mona
+temas:
+  - astucia
+  - critica-social
+  - engano
+  - venganza
+forma: verso
+tradicion: hispanica
+autor: Félix María de Samaniego
+autor_nacionalidad: Español
 autor_nacimiento: 1745
 autor_muerte: 1801
-curador: "Don Alejandro"
+curador: Don Alejandro
 es_seudonimo: true
-nombre_real: "Alejandro Morales Loaiza"
+nombre_real: Alejandro Morales Loaiza
 ---
-
 No a pares, a docenas encontraba
 las monas en Tetuán, cuando cazaba,
 un leopardo. Apenas lo veían,
@@ -30,7 +37,7 @@ empiezan a saltar. La más osada
 baja, arrímase al muerto de callada,
 mira, huele y aun tienta,
 y grita muy contenta:
--Llegad, que muerto está de todo punto,
+—Llegad, que muerto está de todo punto,
 tanto, que empieza a oler el tal difunto.
 Bajan todas con bulla y algazara:
 Ya le tocan la cara,
@@ -46,7 +53,7 @@ pilla, mata, devora, de manera
 que parecía la sangrienta fiera,
 cubriendo con los muertos la campaña,
 al Cid matando moros en España.
-*Es el peor enemigo el que aparenta
+***Es el peor enemigo el que aparenta
 no poder causar daño; porque intenta,
 inspirando confianza,
-asegurar su golpe de vengan*za.
+asegurar su golpe de venganza.***
