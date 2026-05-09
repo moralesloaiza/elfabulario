@@ -96,7 +96,7 @@ const ultimas = (await getCollection('fabulas', ({ data }) => !data.borrador))
 
 <style>
 	.home {
-		padding-block: var(--space-2xl);
+		padding-block: var(--space-2xl) var(--space-lg);
 	}
 
 	/* ---------- HERO ---------- */
@@ -206,6 +206,7 @@ const ultimas = (await getCollection('fabulas', ({ data }) => !data.borrador))
 		font-size: var(--fs-3xs);
 		letter-spacing: var(--ls-widest);
 		color: var(--color-esmeralda);
+		max-width: none;
 		margin: 0 0 var(--space-2xs);
 	}
 	.seccion-explorar .seccion-titulo {
@@ -218,7 +219,8 @@ const ultimas = (await getCollection('fabulas', ({ data }) => !data.borrador))
 		max-width: none;
 		display: grid;
 		grid-template-columns: repeat(2, minmax(0, 1fr));
-		gap: var(--space-2xl);
+		column-gap: var(--space-2xl);
+		row-gap: var(--space-lg);
 	}
 	ul.exploracion a,
 	ul.exploracion .explorar-trigger {
