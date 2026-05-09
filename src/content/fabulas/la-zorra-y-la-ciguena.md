@@ -1,21 +1,29 @@
 ---
-titulo: "La zorra y la cigüeña"
+titulo: La zorra y la cigüeña
+resumen: Una zorra invita a comer a una cigüeña y la pone en apuros. La cigüeña,
+  luego, se venga con igual arte.
 fecha: 2025-06-15
-ilustracion: "../../assets/imagenes/fabulas/la-zorra-y-la-ciguena.png"
-personajes: ["ciguena", "mona", "zorro"]
-temas: ["astucia", "critica-social", "engano", "venganza"]
-forma: verso
-tradicion:
+fecha_actualizada: 2026-05-09
+ilustracion: /src/assets/uploads/chatgpt-image-8-may-2026-23_02_34.png
 borrador: false
-autor: "Félix María de Samaniego"
-autor_nacionalidad: "español"
+personajes:
+  - ciguena
+  - zorro
+temas:
+  - astucia
+  - critica-social
+  - engano
+  - venganza
+forma: verso
+tradicion: null
+autor: Félix María de Samaniego
+autor_nacionalidad: Español
 autor_nacimiento: 1745
 autor_muerte: 1801
-curador: "Don Alejandro"
+curador: Don Alejandro
 es_seudonimo: true
-nombre_real: "Alejandro Morales Loaiza"
+nombre_real: Alejandro Morales Loaiza
 ---
-
 Una zorra se empeña
 en dar una comida a la cigüeña.
 La convidó con tales expresiones,
@@ -43,7 +51,7 @@ chupaba la del pico a su presencia,
 vuelve, tienta, discurre,
 huele, se desatina, en fin se aburre.
 
-*Marchó rabo entre piernas, tan corrida,
+***Marchó rabo entre piernas, tan corrida,
 que ni aun tuvo siquiera la salida
 de decir: «Están verdes», como antaño.
-También hay para pícaros enga*ño.
+También hay para pícaros enga*ño.**
