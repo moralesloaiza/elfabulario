@@ -1,19 +1,28 @@
 ---
-titulo: "Las moscas"
+titulo: Las moscas
+resumen: Las moscas en su insaciable voracidad encuentran el destino de aquellos
+  dominados por sus vicios.
 fecha: 2025-06-16
-ilustracion: "../../assets/imagenes/fabulas/las-moscas.png"
-personajes: ["mosca"]
-temas: ["critica-social", "engano", "gula", "muerte", "trampa"]
-forma: verso
-tradicion:
+fecha_actualizada: 2026-05-09
+ilustracion: /src/assets/uploads/chatgpt-image-8-may-2026-22_56_53-2-.png
 borrador: false
-autor: "Félix María de Samaniego"
-autor_nacionalidad: "español"
+personajes:
+  - mosca
+temas:
+  - critica-social
+  - engano
+  - gula
+  - muerte
+  - trampa
+forma: verso
+tradicion: hispanica
+autor: Félix María de Samaniego
+autor_nacionalidad: Español
 autor_nacimiento: 1745
 autor_muerte: 1801
-curador: "Don Alejandro"
+curador: Don Alejandro
 es_seudonimo: true
-nombre_real: "Alejandro Morales Loaiza"
+nombre_real: Alejandro Morales Loaiza
 ---
 
 A un panal de rica miel
