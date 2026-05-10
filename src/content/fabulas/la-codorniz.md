@@ -1,7 +1,7 @@
 ---
 titulo: "La codorniz"
-fecha: 2025-06-10
-ilustracion: "../../assets/imagenes/fabulas/la-codorniz.png"
+fecha: 2025-06-11
+ilustracion: "../../assets/imagenes/fabulas/la-codorniz-2.png"
 personajes: ["codorniz"]
 temas: ["gula", "trampa"]
 forma: verso
@@ -17,23 +17,23 @@ nombre_real: "Alejandro Morales Loaiza"
 ---
 
 Presa en estrecho lazo,
-la Codorniz sencilla
+la codorniz sencilla
 daba quejas al aire,
 ya tarde arrepentida.
-«¡Ay de mí miserable, 5
+«¡Ay de mí miserable,
 infeliz avecilla,
 que antes cantaba libre,
 y ya lloro cautiva!
 Perdí mi nido amado,
-perdí en él mis delicias; 10
+perdí en él mis delicias;
 al fin perdilo todo,
 pues que perdí la vida.
 ¿Por qué desgracia tanta?
 ¿Por qué tanta desdicha?
-¡Por un grano de trigo! 15
+¡Por un grano de trigo!
 ¡Oh cara golosina!».
 
 *El apetito ciego,
 ¡a cuántos precipita,
 que por lograr un nada,
-un todo sacrific*an!
+un todo* sacrifican!
