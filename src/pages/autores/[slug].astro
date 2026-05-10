@@ -50,7 +50,13 @@ const datos = [nacionalidad, epoca].filter(Boolean).join(' · ');
 <!doctype html>
 <html lang="es">
 	<head>
-		<BaseHead title={`${nombre} · El Fabulario`} description={`Fábulas de ${nombre} en El Fabulario.`} />
+<BaseHead
+	title={`${nombre} · El Fabulario`}
+	description={`Fábulas de ${nombre} en El Fabulario.`}
+	image={imagen}
+	imageAlt={imagen ? `Retrato de ${nombre}` : undefined}
+	author={nombre}
+/>
 	</head>
 	<body>
 		<Header />

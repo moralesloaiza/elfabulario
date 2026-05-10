@@ -64,9 +64,19 @@ const notaHtml = nota_curador
 	: null;
 ---
 
+<!doctype html>
 <html lang="es">
 	<head>
-		<BaseHead title={titulo} description={resumen ?? titulo} />
+		<BaseHead
+			title={titulo}
+			description={resumen ?? titulo}
+			image={ilustracion}
+			imageAlt={ilustracion ? `Ilustración de "${titulo}"` : undefined}
+			type="article"
+			publishedTime={fecha}
+			modifiedTime={fecha_actualizada}
+			author={autor}
+		/>
 	</head>
 
 	<body>
