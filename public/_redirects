@@ -9,6 +9,17 @@
 # cercano semánticamente — para que navegue desde ahí.
 /etiquetas/*  /temas/  301
 
+# Cambio de slug: el nombre histórico es Miguel Agustín Príncipe,
+# no Miguel Ángel. La URL antigua queda viva con redirección permanente
+# para no romper enlaces externos.
+/autores/miguel-angel-principe/  /autores/miguel-agustin-principe/  301
+/autores/miguel-angel-principe   /autores/miguel-agustin-principe/  301
+
+# Fábula retirada: la única entrada de Sergio Laignelet sale del
+# catálogo. Mandamos al visitante al índice general de fábulas.
+/fabulas/la-liebre-y-la-tortuga/  /fabulas/  301
+/fabulas/la-liebre-y-la-tortuga   /fabulas/  301
+
 # Slug duplicado: existían dos versiones del mismo texto, la segunda
 # (`la-codorniz-2`) era la buena. Tras consolidar en `la-codorniz`,
 # redirigimos la URL antigua para no perder enlaces externos.
