@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" width="1200" height="630">
+  <!-- El Fabulario · OG card por defecto · 1200×630 -->
+  <!-- Paleta: marfil #F0E5CE · oro envejecido #B8923A · negro cálido #1F1A14 -->
+
+  <!-- Background -->
+  <rect width="1200" height="630" fill="#F0E5CE"/>
+
+  <!-- Outer frame -->
+  <rect x="40" y="40" width="1120" height="550" fill="none" stroke="#B8923A" stroke-width="2.5"/>
+
+  <!-- Inner frame -->
+  <rect x="64" y="64" width="1072" height="502" fill="none" stroke="#B8923A" stroke-width="1"/>
+
+  <!-- Corner diamonds (between frames) -->
+  <g fill="#B8923A">
+    <polygon points="52,46 58,52 52,58 46,52"/>
+    <polygon points="1148,46 1154,52 1148,58 1142,52"/>
+    <polygon points="1148,572 1154,578 1148,584 1142,578"/>
+    <polygon points="52,572 58,578 52,584 46,578"/>
+  </g>
+
+  <!-- Stepped corner ornaments (Art-Déco), inside the inner frame -->
+  <g fill="none" stroke="#B8923A" stroke-width="1">
+    <!-- top-left -->
+    <polyline points="84,104 84,84 104,84"/>
+    <polyline points="92,112 92,92 112,92"/>
+    <!-- top-right -->
+    <polyline points="1116,104 1116,84 1096,84"/>
+    <polyline points="1108,112 1108,92 1088,92"/>
+    <!-- bottom-right -->
+    <polyline points="1116,526 1116,546 1096,546"/>
+    <polyline points="1108,518 1108,538 1088,538"/>
+    <!-- bottom-left -->
+    <polyline points="84,526 84,546 104,546"/>
+    <polyline points="92,518 92,538 112,538"/>
+  </g>
+
+  <!-- Sun radiant (Art-Déco, alternating long/short rays) -->
+  <g transform="translate(600,170)" fill="#B8923A">
+    <!-- Long rays at 0°, ±40°, ±80° -->
+    <polygon points="-2.5,-18 2.5,-18 0,-62"/>
+    <polygon points="-2.5,-18 2.5,-18 0,-62" transform="rotate(40)"/>
+    <polygon points="-2.5,-18 2.5,-18 0,-62" transform="rotate(-40)"/>
+    <polygon points="-2.5,-18 2.5,-18 0,-62" transform="rotate(80)"/>
+    <polygon points="-2.5,-18 2.5,-18 0,-62" transform="rotate(-80)"/>
+    <!-- Short rays at ±20°, ±60° -->
+    <polygon points="-2,-18 2,-18 0,-46" transform="rotate(20)"/>
+    <polygon points="-2,-18 2,-18 0,-46" transform="rotate(-20)"/>
+    <polygon points="-2,-18 2,-18 0,-46" transform="rotate(60)"/>
+    <polygon points="-2,-18 2,-18 0,-46" transform="rotate(-60)"/>
+    <!-- Disc with inner eye -->
+    <circle cx="0" cy="0" r="13" fill="#B8923A"/>
+    <circle cx="0" cy="0" r="5" fill="#F0E5CE"/>
+  </g>
+
+  <!-- Title -->
+  <text x="600" y="345" text-anchor="middle"
+        font-family="Cinzel, 'Trajan Pro', 'Times New Roman', serif"
+        font-weight="700" font-size="92" letter-spacing="10"
+        fill="#1F1A14">EL FABULARIO</text>
+
+  <!-- Filete under title with central diamond -->
+  <line x1="500" y1="382" x2="586" y2="382" stroke="#B8923A" stroke-width="1"/>
+  <line x1="614" y1="382" x2="700" y2="382" stroke="#B8923A" stroke-width="1"/>
+  <polygon points="600,376 606,382 600,388 594,382" fill="#B8923A"/>
+
+  <!-- Tagline -->
+  <text x="600" y="430" text-anchor="middle"
+        font-family="'Cormorant Garamond', 'EB Garamond', Georgia, serif"
+        font-style="italic" font-size="30" letter-spacing="1"
+        fill="#6B5530">Colección de fábulas en español</text>
+
+  <!-- Bottom ornament: three diamonds in line -->
+  <g fill="#B8923A">
+    <polygon points="576,498 580,502 576,506 572,502"/>
+    <polygon points="600,494 606,502 600,510 594,502"/>
+    <polygon points="624,498 628,502 624,506 620,502"/>
+  </g>
+</svg>

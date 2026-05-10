@@ -1,0 +1,11 @@
+# Security headers for elfabulario.com (Cloudflare Pages)
+# Apply to every path. CSP intentionally omitted: would need
+# careful audit for Spotify embeds, Cloudflare email obfuscation
+# and Pagefind. Add later as a separate PR.
+
+/*
+  X-Content-Type-Options: nosniff
+  Referrer-Policy: strict-origin-when-cross-origin
+  Strict-Transport-Security: max-age=63072000; includeSubDomains; preload
+  Permissions-Policy: camera=(), microphone=(), geolocation=(), payment=(), interest-cohort=()
+  X-Frame-Options: SAMEORIGIN

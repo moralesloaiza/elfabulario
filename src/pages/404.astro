@@ -1,0 +1,87 @@
+---
+import BaseHead from '../components/BaseHead.astro';
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
+import Sol from '../components/ornaments/Sol.astro';
+---
+
+<!doctype html>
+<html lang="es">
+	<head>
+		<BaseHead
+			title="Página no encontrada · El Fabulario"
+			description="La página que buscabas no se encuentra en el Fabulario."
+		/>
+	</head>
+	<body>
+		<Header />
+		<main class="page error-page">
+			<header class="title">
+				<Sol width="80px" />
+				<h1>Aquí no hay fábula</h1>
+				<p class="lead">
+					La página que buscabas no se encuentra en el Fabulario,
+					o quizá nunca estuvo.
+				</p>
+			</header>
+
+			<hr class="ornate" />
+
+			<nav class="acciones" aria-label="Navegación de rescate">
+				<a href="/">Volver al inicio</a>
+				<span aria-hidden="true">·</span>
+				<a href="/fabulas/">Ver todas las fábulas</a>
+				<span aria-hidden="true">·</span>
+				<a href="/autores/">Ver autores</a>
+			</nav>
+		</main>
+		<Footer />
+	</body>
+</html>
+
+<style>
+	.error-page {
+		max-width: var(--measure-narrow);
+		margin-inline: auto;
+		padding-block: var(--space-2xl);
+		text-align: center;
+	}
+	.title {
+		margin-bottom: var(--space-xl);
+	}
+	.title h1 {
+		font-size: var(--fs-3xl);
+		margin: var(--space-md) 0 var(--space-md);
+		text-wrap: balance;
+	}
+	.lead {
+		font-family: var(--font-body);
+		font-style: italic;
+		font-size: var(--fs-lg);
+		line-height: var(--lh-snug);
+		color: var(--color-text-soft);
+		max-width: var(--measure-narrow);
+		margin: 0 auto;
+	}
+	.acciones {
+		font-family: var(--font-display);
+		font-size: var(--fs-xs);
+		letter-spacing: var(--ls-widest);
+		color: var(--color-oro-texto);
+		margin-top: var(--space-xl);
+	}
+	.acciones a {
+		color: inherit;
+		text-decoration: none;
+		border-bottom: var(--rule-hairline) solid transparent;
+		transition: border-color var(--dur-fast) var(--ease-standard);
+	}
+	.acciones a:hover,
+	.acciones a:focus-visible {
+		border-bottom-color: var(--color-oro-texto);
+	}
+	.acciones span {
+		margin-inline: var(--space-xs);
+		color: var(--color-oro);
+	}
+</style>
