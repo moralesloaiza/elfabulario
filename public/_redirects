@@ -8,3 +8,9 @@
 # no es posible. Llevamos al visitante al índice de temas — el más
 # cercano semánticamente — para que navegue desde ahí.
 /etiquetas/*  /temas/  301
+
+# Slug duplicado: existían dos versiones del mismo texto, la segunda
+# (`la-codorniz-2`) era la buena. Tras consolidar en `la-codorniz`,
+# redirigimos la URL antigua para no perder enlaces externos.
+/fabulas/la-codorniz-2/  /fabulas/la-codorniz/  301
+/fabulas/la-codorniz-2   /fabulas/la-codorniz/  301
