@@ -1,0 +1,4 @@
+# All CI definitions and scripts require admin review.
+# Branch protection on `main` must have "Require review from Code Owners"
+# enabled for this to take effect.
+.github/ @moralesloaiza
