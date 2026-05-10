@@ -6,10 +6,7 @@ temas: ["sabiduria"]
 forma: verso
 tradicion:
 borrador: false
-autor: "Tomás de Iriarte"
-autor_nacionalidad: "español"
-autor_nacimiento: 1750
-autor_muerte: 1791
+autor: tomas-de-iriarte
 curador: "Don Alejandro"
 es_seudonimo: true
 nombre_real: "Alejandro Morales Loaiza"

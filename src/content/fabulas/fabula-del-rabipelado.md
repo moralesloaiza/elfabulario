@@ -6,10 +6,7 @@ temas: ["muerte", "necedad", "vanidad"]
 forma: verso
 tradicion:
 borrador: false
-autor: "Aquiles Nazoa"
-autor_nacionalidad: "venezolano"
-autor_nacimiento: 1920
-autor_muerte: 1976
+autor: aquiles-nazoa
 curador: "Don Alejandro"
 es_seudonimo: true
 nombre_real: "Alejandro Morales Loaiza"

@@ -6,10 +6,7 @@ temas: ["miedo"]
 forma: verso
 tradicion:
 borrador: false
-autor: "Juan Eugenio Hartzenbusch"
-autor_nacionalidad: "español"
-autor_nacimiento: 1806
-autor_muerte: 1880
+autor: juan-eugenio-hartzenbusch
 curador: "Don Alejandro"
 es_seudonimo: true
 nombre_real: "Alejandro Morales Loaiza"
