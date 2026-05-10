@@ -8,3 +8,14 @@
 # no es posible. Llevamos al visitante al índice de temas — el más
 # cercano semánticamente — para que navegue desde ahí.
 /etiquetas/*  /temas/  301
+
+# Cambio de slug: el nombre histórico es Miguel Agustín Príncipe,
+# no Miguel Ángel. La URL antigua queda viva con redirección permanente
+# para no romper enlaces externos.
+/autores/miguel-angel-principe/  /autores/miguel-agustin-principe/  301
+/autores/miguel-angel-principe   /autores/miguel-agustin-principe/  301
+
+# Fábula retirada: la única entrada de Sergio Laignelet sale del
+# catálogo. Mandamos al visitante al índice general de fábulas.
+/fabulas/la-liebre-y-la-tortuga/  /fabulas/  301
+/fabulas/la-liebre-y-la-tortuga   /fabulas/  301
