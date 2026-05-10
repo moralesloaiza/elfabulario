@@ -1,0 +1,39 @@
+# robots.txt for elfabulario.com
+# Policy: allow search/retrieval crawlers (traditional and AI),
+# block AI training crawlers, hide internal routes.
+
+# Default rules — apply to all bots not listed below.
+# Covers Googlebot, Bingbot, DuckDuckBot, OAI-SearchBot, ChatGPT-User,
+# Claude-SearchBot, Claude-User, PerplexityBot, Perplexity-User, etc.
+User-agent: *
+Allow: /
+Disallow: /admin/
+Disallow: /buscar/
+
+# AI training crawlers — disallowed.
+# Curatorial work (selection, illustrations, taxonomy, bios)
+# is not licensed for model training. Public-domain fables remain
+# freely available from their original sources.
+
+User-agent: GPTBot
+Disallow: /
+
+User-agent: ClaudeBot
+Disallow: /
+
+User-agent: CCBot
+Disallow: /
+
+User-agent: Google-Extended
+Disallow: /
+
+User-agent: Applebot-Extended
+Disallow: /
+
+User-agent: Meta-ExternalAgent
+Disallow: /
+
+User-agent: Bytespider
+Disallow: /
+
+Sitemap: https://elfabulario.com/sitemap-index.xml
