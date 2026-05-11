@@ -11,6 +11,13 @@ import { SITE_DESCRIPTION, SITE_TITLE } from '../consts';
 const ultimas = (await getCollection('fabulas', ({ data }) => !data.borrador))
 	.sort((a, b) => b.data.fecha.valueOf() - a.data.fecha.valueOf())
 	.slice(0, 6);
+
+// Author names live in the `autores` collection now (the `autor` field on a
+// fable is a reference, not a string). Build an id→name map once so the
+// template can render the author without awaiting per row.
+const autoresLista = await getCollection('autores');
+const autoresPorId = new Map(autoresLista.map((a) => [a.id, a.data.nombre]));
+
 ---
 
 <!doctype html>
@@ -47,7 +54,7 @@ const ultimas = (await getCollection('fabulas', ({ data }) => !data.borrador))
 									)}
 									<div class="fabula-meta">
 										<h3 class="titulo-fabula">{fabula.data.titulo}</h3>
-										<p class="autor-fabula">por {fabula.data.autor}</p>
+										<p class="autor-fabula">por {autoresPorId.get(fabula.data.autor.id)}</p>
 										<p class="fecha-fabula">
 											<FormattedDate date={fabula.data.fecha} />
 										</p>

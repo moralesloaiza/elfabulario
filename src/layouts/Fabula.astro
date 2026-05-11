@@ -1,6 +1,6 @@
 ---
 import { Image } from 'astro:assets';
-import { getEntry, type CollectionEntry } from 'astro:content';
+import { getCollection, getEntry, type CollectionEntry } from 'astro:content';
 import BaseHead from '../components/BaseHead.astro';
 import Footer from '../components/Footer.astro';
 import FormattedDate from '../components/FormattedDate.astro';
@@ -58,6 +58,27 @@ const epoca =
 			? `siglo ${siglo}`
 			: null;
 const datosAutor = [nacionalidad, epoca].filter(Boolean).join(' · ');
+
+// Count published fables by the same author to decide the AUTHOR link target.
+// Below the threshold the corpus is too thin to send the reader to the author
+// page; we fall back to the general index. "Anónimo" gets a special string
+// so the link reads naturally as an adjective ("anónimas") rather than a name.
+
+const todasLasFabulas = await getCollection('fabulas', ({ data }) => !data.borrador);
+const fabulasDelAutor = todasLasFabulas.filter(
+	(f) => f.data.autor.id === autorEntry.id,
+).length;
+
+const ENLACE_AUTOR_UMBRAL = 3;
+const autorEnlaceHref =
+	fabulasDelAutor >= ENLACE_AUTOR_UMBRAL ? autorHref : '/fabulas/';
+const autorEnlaceTexto =
+	fabulasDelAutor < ENLACE_AUTOR_UMBRAL
+		? 'Otras fábulas'
+		: autorNombre === 'Anónimo'
+			? 'Más fábulas anónimas'
+			: `Más fábulas de ${autorNombre}`;
+
 const notaHtml = nota_curador
 	? marked.parse(nota_curador, { breaks: true })
 	: null;
@@ -133,69 +154,85 @@ const notaHtml = nota_curador
 			</p>
 		)}
 
-				{(personajes.length > 0 || temas.length > 0 || forma || tradicion) && (
-					<footer class="taxonomia" aria-label="Clasificación de la fábula">
-						{personajes.length > 0 && (
-							<div class="taxonomia-grupo">
-								<span class="taxonomia-rotulo">Personajes</span>
-								<ul class="taxonomia-lista">
-									{personajes.map((p) => (
-										<li>
-											<a href={`${URL_PERSONAJES}/${p}/`}>
-												{PERSONAJES_DISPLAY[p]}
-											</a>
-										</li>
-									))}
-								</ul>
-							</div>
-						)}
-
-						{temas.length > 0 && (
-							<div class="taxonomia-grupo">
-								<span class="taxonomia-rotulo">Temas</span>
-								<ul class="taxonomia-lista">
-									{temas.map((t) => (
-										<li>
-											<a href={`${URL_TEMAS}/${t}/`}>
-												{TEMAS_DISPLAY[t]}
-											</a>
-										</li>
-									))}
-								</ul>
-							</div>
-						)}
-
-						{forma && (
-							<div class="taxonomia-grupo">
-								<span class="taxonomia-rotulo">Forma</span>
-								<ul class="taxonomia-lista">
+<footer class="taxonomia" aria-label="Clasificación de la fábula">
+					{personajes.length > 0 && (
+						<div class="taxonomia-grupo">
+							<span class="taxonomia-rotulo">Personajes</span>
+							<ul class="taxonomia-lista">
+								{personajes.map((p) => (
 									<li>
-										<a href={`${URL_FORMAS}/${forma}/`}>
-											{FORMAS_DISPLAY[forma]}
+										<a href={`${URL_PERSONAJES}/${p}/`}>
+											{PERSONAJES_DISPLAY[p]}
 										</a>
 									</li>
-								</ul>
-							</div>
-						)}
+								))}
+							</ul>
+						</div>
+					)}
 
-						{tradicion && (
-							<div class="taxonomia-grupo">
-								<span class="taxonomia-rotulo">Tradición</span>
-								<ul class="taxonomia-lista">
+					{temas.length > 0 && (
+						<div class="taxonomia-grupo">
+							<span class="taxonomia-rotulo">Temas</span>
+							<ul class="taxonomia-lista">
+								{temas.map((t) => (
 									<li>
-										<a href={`${URL_TRADICIONES}/${tradicion}/`}>
-											{TRADICIONES_DISPLAY[tradicion]}
+										<a href={`${URL_TEMAS}/${t}/`}>
+											{TEMAS_DISPLAY[t]}
 										</a>
 									</li>
-								</ul>
-							</div>
-						)}
-					</footer>
-				)}
+								))}
+							</ul>
+						</div>
+					)}
+
+					{forma && (
+						<div class="taxonomia-grupo">
+							<span class="taxonomia-rotulo">Forma</span>
+							<ul class="taxonomia-lista">
+								<li>
+									<a href={`${URL_FORMAS}/${forma}/`}>
+										{FORMAS_DISPLAY[forma]}
+									</a>
+								</li>
+							</ul>
+						</div>
+					)}
+
+					{tradicion && (
+						<div class="taxonomia-grupo">
+							<span class="taxonomia-rotulo">Tradición</span>
+							<ul class="taxonomia-lista">
+								<li>
+									<a href={`${URL_TRADICIONES}/${tradicion}/`}>
+										{TRADICIONES_DISPLAY[tradicion]}
+									</a>
+								</li>
+							</ul>
+						</div>
+					)}
+
+					<div class="taxonomia-grupo">
+						<span class="taxonomia-rotulo">Autor</span>
+						<ul class="taxonomia-lista">
+							<li>
+								<a href={autorEnlaceHref}>{autorEnlaceTexto}</a>
+							</li>
+						</ul>
+					</div>
+
+					<div class="taxonomia-grupo">
+						<span class="taxonomia-rotulo">Ayuda</span>
+						<ul class="taxonomia-lista">
+							<li>
+								<a href="/colaborar/">Sugiere otra fábula</a>
+							</li>
+						</ul>
+					</div>
+				</footer>
 			</article>
 		</main>
-	<Footer />
-	<IconoEditar slug={id} />
+		<Footer />
+		<IconoEditar slug={id} />
 	</body>
 </html>
 
