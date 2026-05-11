@@ -10,11 +10,13 @@ import { SITE_TITLE } from '../../consts';
 const autores = await getCollection('autores');
 const fabulas = await getCollection('fabulas', ({ data }) => !data.borrador);
 
-// Cuenta cuántas fábulas hay por autor (match exacto por nombre).
-const conteoPorNombre = new Map<string, number>();
+// Cuenta cuántas fábulas hay por autor. `f.data.autor` es una
+// reference('autores'), o sea un objeto { collection, id }; indexamos por
+// el slug (`id`) del archivo de autor.
+const conteoPorId = new Map<string, number>();
 for (const f of fabulas) {
-	const k = f.data.autor;
-	conteoPorNombre.set(k, (conteoPorNombre.get(k) ?? 0) + 1);
+	const k = f.data.autor.id;
+	conteoPorId.set(k, (conteoPorId.get(k) ?? 0) + 1);
 }
 
 // Enriquecemos los autores con su conteo y los ordenamos:
@@ -22,7 +24,7 @@ for (const f of fabulas) {
 const autoresConConteo = autores
 	.map((a) => ({
 		...a,
-		conteo: conteoPorNombre.get(a.data.nombre) ?? 0,
+		conteo: conteoPorId.get(a.id) ?? 0,
 	}))
 	.sort((a, b) => {
 		if (b.conteo !== a.conteo) return b.conteo - a.conteo;
