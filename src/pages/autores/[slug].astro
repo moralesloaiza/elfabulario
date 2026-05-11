@@ -13,7 +13,7 @@ export async function getStaticPaths() {
 
 	return autores.map((autor) => {
 		const fabulasDelAutor = fabulas
-			.filter((f) => f.data.autor === autor.data.nombre)
+			.filter((f) => f.data.autor.id === autor.id)
 			.sort((a, b) => b.data.fecha.valueOf() - a.data.fecha.valueOf());
 
 		return {

@@ -80,8 +80,10 @@ const entradas = defineCollection({
 });
 
 // Colección de autores: una entrada por autor (clásico o colaborador).
-// El "match" entre una fábula y un autor se hace por coincidencia exacta
-// entre `autor` (campo de la fábula) y `nombre` (campo del autor).
+// El "match" entre una fábula y un autor se resuelve por la referencia
+// `autor: reference('autores')` del schema de fábulas: el slug del archivo
+// del autor (su `id`) es la clave canónica. El campo `nombre` es solo para
+// presentación; renombrar un autor no rompe los vínculos.
 // El cuerpo Markdown del archivo es la bio/reseña del autor.
 const autores = defineCollection({
 	loader: glob({ base: './src/content/autores', pattern: '**/*.{md,mdx}' }),
