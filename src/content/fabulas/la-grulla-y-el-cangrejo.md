@@ -6,7 +6,7 @@ temas: ["astucia", "engano", "maldad"]
 forma: prosa
 tradicion: budista
 borrador: false
-autor: "Anónimo"
+autor: anonimo
 curador: "Don Alejandro"
 es_seudonimo: true
 nombre_real: "Alejandro Morales Loaiza"

@@ -1,6 +1,6 @@
 ---
 import { Image } from 'astro:assets';
-import { getCollection, type CollectionEntry } from 'astro:content';
+import { getEntry, type CollectionEntry } from 'astro:content';
 import BaseHead from '../components/BaseHead.astro';
 import Footer from '../components/Footer.astro';
 import FormattedDate from '../components/FormattedDate.astro';
@@ -28,10 +28,6 @@ const {
 	titulo,
 	resumen,
 	autor,
-	autor_nacionalidad,
-	autor_nacimiento,
-	autor_muerte,
-	autor_siglo,
 	curador,
 	nota_curador,
 	fecha,
@@ -44,21 +40,24 @@ const {
 	spotify_url,
 } = Astro.props;
 
-// Resolvemos el slug del archivo de autor (si existe) buscando por nombre
-// exacto. Si no hay match, el nombre se renderiza como texto plano sin enlace.
-const autoresColeccion = await getCollection('autores');
-const autorEntry = autoresColeccion.find((a) => a.data.nombre === autor);
-const autorHref = autorEntry ? `/autores/${autorEntry.id}/` : null;
+// `autor` es una reference('autores') validada por Zod en build, así que el
+// archivo siempre existe. Resolvemos la entrada y leemos los datos
+// biográficos desde ahí, en lugar de duplicarlos en el frontmatter de fábula.
+const autorEntry = await getEntry(autor);
+if (!autorEntry) throw new Error(`Author entry not found for fábula "${id}"`);
 
-// Construye una línea secundaria con nacionalidad y época del autor.
-// Ej.: "español · 1745–1801"  o  "griego · siglo VI a.C."
+const autorNombre = autorEntry.data.nombre;
+const autorHref = `/autores/${autorEntry.id}/`;
+
+// Línea secundaria con nacionalidad y época. Ej.: "español · 1745–1801".
+const { nacionalidad, nacimiento, muerte, siglo } = autorEntry.data;
 const epoca =
-	autor_nacimiento && autor_muerte
-		? `${autor_nacimiento}–${autor_muerte}`
-		: autor_siglo
-			? `siglo ${autor_siglo}`
+	nacimiento && muerte
+		? `${nacimiento}–${muerte}`
+		: siglo
+			? `siglo ${siglo}`
 			: null;
-const datosAutor = [autor_nacionalidad, epoca].filter(Boolean).join(' · ');
+const datosAutor = [nacionalidad, epoca].filter(Boolean).join(' · ');
 const notaHtml = nota_curador
 	? marked.parse(nota_curador, { breaks: true })
 	: null;
@@ -75,7 +74,7 @@ const notaHtml = nota_curador
 			type="article"
 			publishedTime={fecha}
 			modifiedTime={fecha_actualizada}
-			author={autor}
+			author={autorNombre}
 		/>
 	</head>
 
@@ -95,11 +94,7 @@ const notaHtml = nota_curador
 					{resumen && <p class="resumen">{resumen}</p>}
 					<p class="autor">
 						por
-						{autorHref ? (
-							<a href={autorHref}><span data-pagefind-meta="author">{autor}</span></a>
-						) : (
-							<span data-pagefind-meta="author">{autor}</span>
-						)}
+						<a href={autorHref}><span data-pagefind-meta="author">{autorNombre}</span></a>
 					</p>
 					{datosAutor && <p class="autor-meta">{datosAutor}</p>}
 					<p class="fecha">

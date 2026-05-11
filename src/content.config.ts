@@ -1,4 +1,4 @@
-import { defineCollection } from 'astro:content';
+import { defineCollection, reference } from 'astro:content';
 import { glob } from 'astro/loaders';
 import { z } from 'astro/zod';
 import {
@@ -46,12 +46,10 @@ const fabulas = defineCollection({
 			forma: z.enum(FORMAS),
 			tradicion: z.preprocess(emptyToUndefined, z.enum(TRADICIONES).optional()),
 
-			// --- Autor (escritor original; siempre nombre real, invariable) ---
-			autor: z.string(),
-			autor_nacionalidad: z.string().optional(),
-			autor_nacimiento: optionalInt,
-			autor_muerte: optionalInt,
-			autor_siglo: z.string().optional(),
+			// --- Autor (referencia a la colección `autores`) ---
+			// Los datos biográficos (nacionalidad, fechas, siglo) viven en el
+			// archivo del autor referenciado, no se duplican en cada fábula.
+			autor: reference('autores'),
 
 			// --- Curador (quien publica en el blog; puede usar seudónimo) ---
 			curador: z.string(),

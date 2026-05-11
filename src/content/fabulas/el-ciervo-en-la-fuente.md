@@ -13,10 +13,7 @@ temas:
   - vanidad
 forma: verso
 tradicion: null
-autor: Félix María de Samaniego
-autor_nacionalidad: Español
-autor_nacimiento: 1745
-autor_muerte: 1801
+autor: felix-maria-de-samaniego
 curador: Don Alejandro
 es_seudonimo: true
 nombre_real: Alejandro Morales Loaiza

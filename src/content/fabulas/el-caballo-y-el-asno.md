@@ -6,7 +6,7 @@ temas: ["maldad"]
 forma: prosa
 tradicion:
 borrador: false
-autor: "Anónimo"
+autor: anonimo
 curador: "Don Alejandro"
 es_seudonimo: true
 nombre_real: "Alejandro Morales Loaiza"

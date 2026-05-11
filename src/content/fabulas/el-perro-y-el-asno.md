@@ -6,9 +6,7 @@ temas: ["amistad", "hambre"]
 forma: prosa
 tradicion:
 borrador: false
-autor: "Esopo"
-autor_nacionalidad: "griego"
-autor_siglo: "VI a.C."
+autor: esopo
 curador: "Don Alejandro"
 es_seudonimo: true
 nombre_real: "Alejandro Morales Loaiza"

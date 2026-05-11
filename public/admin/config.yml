@@ -198,12 +198,15 @@ collections:
           - { label: "Popular", value: "popular" }
           - { label: "Talmúdica", value: "talmudica" }
 
-      # --- Autor (escritor original) ---
-      - { name: "autor", label: "Autor", widget: "string", hint: "Nombre real del escritor original de la fábula. Invariable. Ej.: Félix María Samaniego." }
-      - { name: "autor_nacionalidad", label: "Nacionalidad del autor", widget: "string", required: false, hint: "Ej.: español, francesa, griego." }
-      - { name: "autor_nacimiento", label: "Año de nacimiento del autor", widget: "number", required: false, value_type: "int", hint: "Ej.: 1745. Dejar vacío si no se conoce con precisión." }
-      - { name: "autor_muerte", label: "Año de muerte del autor", widget: "number", required: false, value_type: "int", hint: "Ej.: 1801. Dejar vacío si no se conoce con precisión o si vive." }
-      - { name: "autor_siglo", label: "Siglo del autor", widget: "string", required: false, hint: "Solo si las fechas no son claras. Ej.: XVIII, VI a.C." }
+	# --- Autor (referencia a la colección de autores) ---
+      - name: "autor"
+        label: "Autor"
+        widget: "relation"
+        collection: "autores"
+        value_field: "{{slug}}"
+        search_fields: ["nombre"]
+        display_fields: ["nombre"]
+        hint: "Escritor original de la fábula. Selecciona del listado."
 
       # --- Curador (quien publica) ---
       - { name: "curador", label: "Curador (firma pública)", widget: "string", hint: "Nombre real o seudónimo de quien publica la entrada en el blog." }

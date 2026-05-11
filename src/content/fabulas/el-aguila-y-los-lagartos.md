@@ -11,10 +11,7 @@ temas:
   - vanidad
 forma: verso
 tradicion: hispanica
-autor: Miguel Agustín Príncipe
-autor_nacionalidad: Español
-autor_nacimiento: 1811
-autor_muerte: 1862
+autor: miguel-agustin-principe
 curador: Don Alejandro
 es_seudonimo: true
 nombre_real: Alejandro Morales Loaiza
