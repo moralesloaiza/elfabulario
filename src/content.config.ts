@@ -36,6 +36,15 @@ const fabulas = defineCollection({
 			spotify_url: z.string().url().optional(),
 			borrador: z.boolean().default(false),
 
+			// --- Curaduría editorial ---
+			// `destacada`: marca curatorial. Solo una fábula a la vez debería
+			// llevarla; si hay varias marcadas, gana la más reciente por fecha
+			// (resuelto en src/pages/fabulas/index.astro).
+			//
+			// NO está expuesto en Decap (public/admin/config.yml). Es decisión
+			// editorial reservada al director: se edita a mano vía Git.
+			destacada: z.boolean().default(false),
+
 			// --- Taxonomía ---
 			// personajes: opcional. Lista cerrada. Humano genérico = implícito.
 			// temas:      al menos uno obligatorio. Lista cerrada.
@@ -56,9 +65,15 @@ const fabulas = defineCollection({
 			es_seudonimo: z.boolean().default(false),
 			nombre_real: z.string().optional(),
 
-			// --- Extra ---
+// --- Extra ---
 			nota_curador: z.string().optional(),
-		}),
+		}).refine(
+			(data) => !data.destacada || data.ilustracion !== undefined,
+			{
+				message: 'Una fábula no puede estar `destacada: true` sin `ilustracion`. Genera la ilustración primero o desmarca el destacado.',
+				path: ['destacada'],
+			},
+		),
 });
 
 // Colección de entradas: bitácora del blog (anuncios, hitos, biografías de

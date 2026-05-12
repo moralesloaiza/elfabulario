@@ -1,9 +1,8 @@
 ---
-import { Image } from 'astro:assets';
 import { getCollection } from 'astro:content';
 import BaseHead from '../../components/BaseHead.astro';
+import FabulaCard from '../../components/FabulaCard.astro';
 import Footer from '../../components/Footer.astro';
-import FormattedDate from '../../components/FormattedDate.astro';
 import Header from '../../components/Header.astro';
 import Sol from '../../components/ornaments/Sol.astro';
 import { SITE_DESCRIPTION, SITE_TITLE } from '../../consts';
@@ -12,12 +11,17 @@ const fabulas = (await getCollection('fabulas', ({ data }) => !data.borrador)).s
 	(a, b) => b.data.fecha.valueOf() - a.data.fecha.valueOf(),
 );
 
+// The featured fable is the most recent one flagged `destacada: true`.
+// The Zod refinement in content.config.ts guarantees that only fables
+// with an illustration can be flagged; here we just pick by the flag.
+const destacada = fabulas.find((f) => f.data.destacada);
+const resto = destacada ? fabulas.filter((f) => f.id !== destacada.id) : fabulas;
+
 // Author names live in the `autores` collection now (the `autor` field on a
 // fable is a reference, not a string). Build an id→name map once so the
 // template can render the author without awaiting per row.
 const autoresLista = await getCollection('autores');
 const autoresPorId = new Map(autoresLista.map((a) => [a.id, a.data.nombre]));
-
 ---
 
 <!doctype html>
@@ -40,29 +44,22 @@ const autoresPorId = new Map(autoresLista.map((a) => [a.id, a.data.nombre]));
 				<p class="vacio">Aún no hay fábulas publicadas.</p>
 			)}
 
-			{fabulas.length > 0 && (
+			{destacada && (
+				<FabulaCard
+					fabula={destacada}
+					autorNombre={autoresPorId.get(destacada.data.autor.id) ?? ''}
+					destacada
+				/>
+			)}
+
+			{resto.length > 0 && (
 				<ul class="lista">
-					{fabulas.map((fabula, idx) => (
-						<li class:list={['item', { destacada: idx === 0 }]}>
-							<a href={`/fabulas/${fabula.id}/`} class="item-link">
-								{fabula.data.ilustracion && (
-									<figure class="item-img">
-										<Image
-											width={idx === 0 ? 1200 : 600}
-											height={idx === 0 ? 800 : 400}
-											src={fabula.data.ilustracion}
-											alt=""
-										/>
-									</figure>
-								)}
-								<div class="item-meta">
-									<h2 class="item-titulo">{fabula.data.titulo}</h2>
-									<p class="item-autor">por {autoresPorId.get(fabula.data.autor.id)}</p>
-									<p class="item-fecha">
-										<FormattedDate date={fabula.data.fecha} />
-									</p>
-								</div>
-							</a>
+					{resto.map((fabula) => (
+						<li>
+							<FabulaCard
+								fabula={fabula}
+								autorNombre={autoresPorId.get(fabula.data.autor.id) ?? ''}
+							/>
 						</li>
 					))}
 				</ul>
@@ -110,78 +107,11 @@ const autoresPorId = new Map(autoresLista.map((a) => [a.id, a.data.nombre]));
 		gap: var(--space-2xl);
 		max-width: none;
 	}
-	.item.destacada {
-		grid-column: 1 / -1;
-		text-align: center;
-	}
-
-	.item-link {
-		display: block;
-		text-decoration: none;
-		color: inherit;
-	}
-	.item-img {
-		margin: 0 0 var(--space-md);
-		overflow: hidden;
-	}
-	.item.destacada .item-img {
-		max-width: var(--measure-wide);
-		margin-inline: auto;
-		margin-bottom: var(--space-lg);
-	}
-.item-img :global(img) {
-	display: block;
-	width: 100%;
-	height: auto;
-	transition: transform var(--dur-slow) var(--ease-standard);
-}
-	.item-link:hover .item-img :global(img),
-	.item-link:focus-visible .item-img :global(img) {
-		transform: scale(1.02);
-	}
-
-	.item-titulo {
-		font-family: var(--font-display);
-		font-size: var(--fs-lg);
-		font-weight: var(--fw-bold);
-		letter-spacing: var(--ls-wide);
-		line-height: var(--lh-snug);
-		margin: 0 0 var(--space-2xs);
-		color: var(--color-text);
-		text-transform: none;
-	}
-	.item.destacada .item-titulo {
-		font-size: var(--fs-2xl);
-		text-transform: uppercase;
-		letter-spacing: var(--ls-wider);
-	}
-	.item-link:hover .item-titulo,
-	.item-link:focus-visible .item-titulo {
-		color: var(--color-oro-texto);
-	}
-	.item-autor {
-		font-family: var(--font-body);
-		font-style: italic;
-		font-size: var(--fs-sm);
-		color: var(--color-text-soft);
-		margin: 0;
-	}
-	.item-fecha {
-		font-family: var(--font-display);
-		font-size: var(--fs-3xs);
-		letter-spacing: var(--ls-widest);
-		text-transform: uppercase;
-		color: var(--color-esmeralda);
-		margin: var(--space-2xs) 0 0;
-	}
 
 	@media (max-width: 720px) {
 		.lista {
 			grid-template-columns: 1fr;
 			gap: var(--space-xl);
-		}
-		.item.destacada .item-titulo {
-			font-size: var(--fs-xl);
 		}
 	}
 </style>

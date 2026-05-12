@@ -1,9 +1,8 @@
 ---
-import { Image } from 'astro:assets';
 import { getCollection } from 'astro:content';
 import BaseHead from '../components/BaseHead.astro';
+import FabulaCard from '../components/FabulaCard.astro';
 import Footer from '../components/Footer.astro';
-import FormattedDate from '../components/FormattedDate.astro';
 import Header from '../components/Header.astro';
 import Sol from '../components/ornaments/Sol.astro';
 import { SITE_DESCRIPTION, SITE_TITLE } from '../consts';
@@ -17,7 +16,6 @@ const ultimas = (await getCollection('fabulas', ({ data }) => !data.borrador))
 // template can render the author without awaiting per row.
 const autoresLista = await getCollection('autores');
 const autoresPorId = new Map(autoresLista.map((a) => [a.id, a.data.nombre]));
-
 ---
 
 <!doctype html>
@@ -40,33 +38,18 @@ const autoresPorId = new Map(autoresLista.map((a) => [a.id, a.data.nombre]));
 					<h2 id="ultimas-titulo" class="seccion-titulo">Últimas fábulas</h2>
 					<ul class="fabulas">
 						{ultimas.map((fabula) => (
-							<li class="fabula-item">
-								<a href={`/fabulas/${fabula.id}/`} class="fabula-link">
-									{fabula.data.ilustracion && (
-										<figure class="fabula-img">
-											<Image
-												width={600}
-												height={400}
-												src={fabula.data.ilustracion}
-												alt=""
-											/>
-										</figure>
-									)}
-									<div class="fabula-meta">
-										<h3 class="titulo-fabula">{fabula.data.titulo}</h3>
-										<p class="autor-fabula">por {autoresPorId.get(fabula.data.autor.id)}</p>
-										<p class="fecha-fabula">
-											<FormattedDate date={fabula.data.fecha} />
-										</p>
-									</div>
-								</a>
+							<li>
+								<FabulaCard
+									fabula={fabula}
+									autorNombre={autoresPorId.get(fabula.data.autor.id) ?? ''}
+								/>
 							</li>
 						))}
 					</ul>
 				</section>
 			)}
 
-<section class="seccion-explorar" aria-labelledby="explorar-titulo">
+			<section class="seccion-explorar" aria-labelledby="explorar-titulo">
 				<p class="eyebrow">— Explorar —</p>
 				<h2 id="explorar-titulo" class="seccion-titulo">Sigue leyendo</h2>
 				<ul class="exploracion">
@@ -147,64 +130,8 @@ const autoresPorId = new Map(autoresLista.map((a) => [a.id, a.data.nombre]));
 		gap: var(--space-2xl);
 		max-width: none;
 	}
-.fabula-item {
-		display: flex;
-		flex-direction: column;
-	}
-	.fabula-link {
-		display: flex;
-		flex-direction: column;
-		flex: 1;
-		text-decoration: none;
-		color: inherit;
-	}
-.fabula-img {
-		margin: 0 0 var(--space-md);
-		overflow: hidden;
-		aspect-ratio: 3 / 2;
-	}
-	.fabula-img :global(img) {
-		display: block;
-		width: 100%;
-		height: 100%;
-		object-fit: cover;
-		transition: transform var(--dur-slow) var(--ease-standard);
-	}
-	.fabula-link:hover .fabula-img :global(img),
-	.fabula-link:focus-visible .fabula-img :global(img) {
-		transform: scale(1.02);
-	}
-	.titulo-fabula {
-		font-family: var(--font-display);
-		font-size: var(--fs-lg);
-		font-weight: var(--fw-bold);
-		letter-spacing: var(--ls-wide);
-		line-height: var(--lh-snug);
-		margin: 0 0 var(--space-2xs);
-		color: var(--color-text);
-		text-transform: none;
-	}
-	.fabula-link:hover .titulo-fabula,
-	.fabula-link:focus-visible .titulo-fabula {
-		color: var(--color-oro-texto);
-	}
-	.autor-fabula {
-		font-family: var(--font-body);
-		font-style: italic;
-		font-size: var(--fs-sm);
-		color: var(--color-text-soft);
-		margin: 0;
-	}
-	.fecha-fabula {
-		font-family: var(--font-display);
-		font-size: var(--fs-3xs);
-		letter-spacing: var(--ls-widest);
-		/* uppercase eliminado: Cinzel ya es all-caps */
-		color: var(--color-esmeralda);
-		margin: var(--space-2xs) 0 0;
-	}
 
-/* ---------- EXPLORAR ---------- */
+	/* ---------- EXPLORAR ---------- */
 	.seccion-explorar {
 		text-align: center;
 	}
@@ -265,8 +192,9 @@ const autoresPorId = new Map(autoresLista.map((a) => [a.id, a.data.nombre]));
 		color: var(--color-text-soft);
 		margin: 0;
 	}
+
 	/* ---------- RESPONSIVE ---------- */
-@media (max-width: 720px) {
+	@media (max-width: 720px) {
 		ul.fabulas,
 		ul.exploracion {
 			grid-template-columns: 1fr;
