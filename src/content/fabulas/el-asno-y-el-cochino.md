@@ -4,7 +4,7 @@ resumen: Un asno envidia a un cerdo que parece bien atendido... Hasta que conoce
   su suerte.
 fecha: 2025-02-14
 fecha_actualizada: 2026-05-11
-ilustracion: ../../assets/imagenes/fabulas/el-asno-y-el-cochino.png
+ilustracion: /src/assets/uploads/chatgpt-image-10-may-2026-11_14_03.png
 borrador: false
 personajes:
   - burro
