@@ -1,16 +1,22 @@
 ---
-titulo: "La cigarra y la hormiga"
+titulo: La cigarra y la hormiga
+resumen: Una de las más famosas fábulas de todos los tiempos, que enseña sobre
+  la previsión.
 fecha: 2025-02-14
-ilustracion: "../../assets/imagenes/fabulas/la-cigarra-y-la-hormiga.png"
-personajes: ["cigarra", "hormiga"]
-temas: ["trabajo"]
-forma: verso
-tradicion:
+fecha_actualizada: 2026-05-11
+ilustracion: /src/assets/uploads/chatgpt-image-10-may-2026-11_15_47.png
 borrador: false
+personajes:
+  - cigarra
+  - hormiga
+temas:
+  - trabajo
+forma: verso
+tradicion: null
 autor: felix-maria-de-samaniego
-curador: "Don Alejandro"
+curador: Don Alejandro
 es_seudonimo: true
-nombre_real: "Alejandro Morales Loaiza"
+nombre_real: Alejandro Morales Loaiza
 ---
 
 Cantando la Cigarra
