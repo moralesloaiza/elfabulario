@@ -1,17 +1,24 @@
 ---
-titulo: "Las exequias de la leona"
+titulo: Las exequias de la leona
+resumen: Un ciervo muestra el peligro de los poderosos en medio del duelo, pero
+  cuan débiles pueden ser ante la servil adulación.
 fecha: 2012-05-05
-personajes: ["ciervo", "leon"]
-temas: ["adulacion", "muerte"]
-forma: verso
-tradicion:
+fecha_actualizada: 2026-05-12
+ilustracion: /src/assets/uploads/chatgpt-image-11-may-2026-20_43_15.png
 borrador: false
+personajes:
+  - ciervo
+  - leon
+temas:
+  - adulacion
+  - muerte
+forma: verso
+tradicion: hispanica
 autor: felix-maria-de-samaniego
-curador: "Don Alejandro"
+curador: Don Alejandro
 es_seudonimo: true
-nombre_real: "Alejandro Morales Loaiza"
+nombre_real: Alejandro Morales Loaiza
 ---
-
 En su regia caverna inconsolable
 El rey león yacía,
 Porque en el mismo día
@@ -49,11 +56,11 @@ Aclamó por milagro la patraña.
 El ciervo consiguió que el soberano
 Cambiase en amistad su fiera saña.
 
-*   Los que en la indignación han incurrido*
+ ** * Los que en la indignación han incurrido*
 *De los grandes señores,*
 *A veces su favor han conseguido*
 *Con ser aduladores;*
 *Mas no por eso, advierto,*
 *Que el medio sea justo, pues es cierto*
 *Que a más príncipes vicia*
-*La adulación servil, que la malicia.*
+*La adulación servil, que la malicia.***
