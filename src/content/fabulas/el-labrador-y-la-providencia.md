@@ -1,17 +1,21 @@
 ---
-titulo: "El labrador y la Providencia"
+titulo: El labrador y la Providencia
+resumen: La Providencia enseña a un labrador que cada cosa ocupa un lugar por una razón.
 fecha: 2012-05-19
-personajes: ["labrador"]
-temas: ["naturaleza"]
-forma: verso
-tradicion:
+fecha_actualizada: 2026-05-12
+ilustracion: /src/assets/uploads/chatgpt-image-11-may-2026-20_37_32.png
 borrador: false
+personajes:
+  - labrador
+temas:
+  - naturaleza
+forma: verso
+tradicion: hispanica
 autor: felix-maria-de-samaniego
-curador: "Don Alejandro"
+curador: Don Alejandro
 es_seudonimo: true
-nombre_real: "Alejandro Morales Loaiza"
+nombre_real: Alejandro Morales Loaiza
 ---
-
 Un labrador cansado
 En el ardiente estío
 Debajo de una encina
@@ -45,11 +49,11 @@ Tomar a buen partido
 En caso semejante
 Quedar desnarigado, pero vivo ».
 
-*Aquí la Providencia*
+***Aquí la Providencia*
 *Manifestarle quiso,*
 *Que supo a cada cosa*
 *Señalar sabiamente su destino;*
 *A mayor bien del hombre*
 *Todo está repartido;*
 *Preso el pez en su concha,*
-*Y libre por el aire el pajarillo.*
+*Y libre por el aire el pajarillo.***
