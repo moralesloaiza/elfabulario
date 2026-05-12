@@ -1,17 +1,25 @@
 ---
-titulo: "El murciélago y la comadreja"
+titulo: El murciélago y la comadreja
+resumen: Con ingenio y astucia un murciélago se salva de ser devorado dos veces
+  por la misma comadreja.
 fecha: 2012-04-28
-personajes: ["comadreja", "murcielago", "raton"]
-temas: ["engano"]
-forma: verso
-tradicion:
+fecha_actualizada: 2026-05-12
+ilustracion: /src/assets/uploads/chatgpt-image-11-may-2026-20_46_52.png
 borrador: false
+personajes:
+  - comadreja
+  - murcielago
+  - raton
+temas:
+  - engano
+  - astucia
+forma: verso
+tradicion: hispanica
 autor: felix-maria-de-samaniego
-curador: "Don Alejandro"
+curador: Don Alejandro
 es_seudonimo: true
-nombre_real: "Alejandro Morales Loaiza"
+nombre_real: Alejandro Morales Loaiza
 ---
-
 Cayó sin saber cómo
 Un murciélago a tierra;
 Al instante le atrapa
@@ -43,11 +51,11 @@ En efecto, le deja;
 Y merced a su ingenio
 Libre el pájaro vuela.
 
-*Aquí aprendió de Esopo*
+***Aquí aprendió de Esopo*
 *La gente marinera,*
 *Murciélagos que fingen*
 *Pasaporte bandera.*
 *No importa que haya pocos*
 *Ingleses comadrejas,*
 *Tal vez puede de un riesgo*
-*Sacarnos una treta.*
+*Sacarnos una treta.***
