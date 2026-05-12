@@ -1,17 +1,25 @@
 ---
-titulo: "El caballo, el ciervo y el cazador"
+titulo: El caballo, el ciervo y el cazador
+resumen: Un caballo pide ayuda al hombre para vengar una ofensa menor que le
+  hiciera un ciervo. Pronto descubre el precio de su venganza.
 fecha: 2012-05-19
-personajes: ["caballo", "cazador", "ciervo"]
-temas: ["muerte", "venganza"]
-forma: verso
-tradicion:
+fecha_actualizada: 2026-05-11
+ilustracion: /src/assets/uploads/chatgpt-image-11-may-2026-20_32_44.png
 borrador: false
+personajes:
+  - caballo
+  - cazador
+  - ciervo
+temas:
+  - muerte
+  - venganza
+forma: verso
+tradicion: hispanica
 autor: felix-maria-de-samaniego
-curador: "Don Alejandro"
+curador: Don Alejandro
 es_seudonimo: true
-nombre_real: "Alejandro Morales Loaiza"
+nombre_real: Alejandro Morales Loaiza
 ---
-
 Perseguía un caballo vengativo
 A un ciervo que le hizo leve ofensa:
 Mas hallaba segura la defensa
@@ -29,7 +37,7 @@ Quiere marchare libre de su peso:
 Mas desde entonces mismo quedó preso
 Y eternamente sometido.
 
-*   El caballo que, suelto y rozagante,
+ ** * El caballo que, suelto y rozagante,
 En el frondoso bosque y prado ameno
 Su libertad gozaba tan de lleno,
 Padece sujeción desde este instante.
@@ -40,4 +48,4 @@ Y aguanta los horrores de la guerra.
    En fin, perdió la libertad amable
 Por vengar una ofensa solamente.
 Tales los frutos son que ciertamente
-Produce la venganza detestable.*
+Produce la venganza detestable.***
