@@ -1,18 +1,24 @@
 ---
-titulo: "El ratón de la corte y el del campo"
+titulo: El ratón de la corte y el del campo
+resumen: La abundancia de un ratón cortesano viene a un alto precio, según
+  observa su compañero campesino.
 fecha: 2025-06-14
-ilustracion: "../../assets/imagenes/fabulas/el-raton-de-la-corte-y-el-del-campo.png"
-personajes: ["raton"]
-temas: ["critica-social", "miedo", "riqueza"]
-forma: verso
-tradicion:
+fecha_actualizada: 2026-05-11
+ilustracion: /src/assets/uploads/raton_cortesano.png
 borrador: false
+personajes:
+  - raton
+temas:
+  - critica-social
+  - miedo
+  - riqueza
+forma: verso
+tradicion: hispanica
 autor: felix-maria-de-samaniego
-curador: "Don Alejandro"
+curador: Don Alejandro
 es_seudonimo: true
-nombre_real: "Alejandro Morales Loaiza"
+nombre_real: Alejandro Morales Loaiza
 ---
-
 Un ratón cortesano
 convidó con un modo muy urbano
 a un ratón campesino.
@@ -42,7 +48,7 @@ reniego yo del queso, del tocino,
 y de quien busca gustos
 entre los sobresaltos y los sustos.
 
-*Volviose a su campaña en el instante
+***Volviose a su campaña en el instante
 y estimó mucho más de allí adelante,
 sin zozobra, temor ni pesadumbres,
-su casita de tierra y sus legumbr*es.
+su casita de tierra y sus legumbr*es.**
