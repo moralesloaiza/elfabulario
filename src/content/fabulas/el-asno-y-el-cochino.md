@@ -1,18 +1,23 @@
 ---
-titulo: "El asno y el cochino"
+titulo: El asno y el cochino
+resumen: Un asno envidia a un cerdo que parece bien atendido... Hasta que conoce
+  su suerte.
 fecha: 2025-02-14
-ilustracion: "../../assets/imagenes/fabulas/el-asno-y-el-cochino.png"
-personajes: ["burro", "cerdo"]
-temas: ["pereza"]
-forma: verso
-tradicion:
+fecha_actualizada: 2026-05-11
+ilustracion: ../../assets/imagenes/fabulas/el-asno-y-el-cochino.png
 borrador: false
+personajes:
+  - burro
+  - cerdo
+temas:
+  - pereza
+forma: verso
+tradicion: hispanica
 autor: felix-maria-de-samaniego
-curador: "Don Alejandro"
+curador: Don Alejandro
 es_seudonimo: true
-nombre_real: "Alejandro Morales Loaiza"
+nombre_real: Alejandro Morales Loaiza
 ---
-
 Envidiando la suerte del Cochino,
 un Asno maldecía su destino.
 —Yo, decía, trabajo y como paja;
@@ -27,5 +32,5 @@ armada de cuchillo y de caldera,
 y que con maña fiera
 dan al gordo Cochino fin sangriento,
 dijo entre sí el Jumento:
-*« Si en esto para el ocio y los regalos,
-al trabajo me atengo y a los palos *».
+***« Si en esto para el ocio y los regalos,
+al trabajo me atengo y a los palos* ».**
