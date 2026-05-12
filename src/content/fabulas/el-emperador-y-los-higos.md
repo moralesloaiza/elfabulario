@@ -1,18 +1,24 @@
 ---
-titulo: "El emperador y los higos"
+titulo: El emperador y los higos
+resumen: Un anciano es recompensado tras honrar a su emperador con una cesta de
+  higos. Una vecina avara convence a su marido de hacer lo mismo.
 fecha: 2012-04-14
-personajes: ["anciano", "emperador"]
-temas: ["codicia"]
-forma: prosa
-tradicion:
+fecha_actualizada: 2026-05-11
+ilustracion: /src/assets/uploads/chatgpt-image-11-may-2026-21_04_51.png
 borrador: false
+personajes:
+  - anciano
+  - emperador
+temas:
+  - codicia
+forma: prosa
+tradicion: talmudica
 autor: anonimo
-curador: "Don Alejandro"
+curador: Don Alejandro
 es_seudonimo: true
-nombre_real: "Alejandro Morales Loaiza"
-nota_curador: "Atribución pendiente de verificar. Procedente del archivo de elfabulario.tumblr.com."
+nombre_real: Alejandro Morales Loaiza
+nota_curador: ""
 ---
-
 Un emperador, viendo a un viejo plantar una higuera, le preguntó por lo que hacía. El labrador le contestó que si le alcanzaba la vida comería de la fruta; pero si no, su hijo disfrutaría de los higos.
 
 —Bien—respondió el emperador—si vives para llegar a comer los frutos de este árbol te ruego que me lo hagas saber.
@@ -28,5 +34,3 @@ Pues bien, cerca de la casa del viejo, vivía una mujer muy avara y codiciosa, l
 Pero el emperador, al saber el propósito del hombre, mandó que lo llevaran al patio y apedrearan con los higos. Cuando el marido llegó a casa y contó a su mujer lo sucedido, esta le consoló diciendo:
 
 —¡Aún puedes dar gracias de que eran higos y no cocos duros!
-
-**Del Talmud.**
