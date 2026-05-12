@@ -1,17 +1,27 @@
 ---
-titulo: "El zorro, el gallo y los perros"
+titulo: El zorro, el gallo y los perros
+resumen: Un zorro ofrece amistad a un gallo quien, sabio y aún astuto, le
+  propone sellarla en presencia de dos perros.
 fecha: 2012-05-05
-personajes: ["gallo", "perro", "zorro"]
-temas: ["amistad", "engano", "trampa"]
-forma: verso
-tradicion:
+fecha_actualizada: 2026-05-12
+ilustracion: /src/assets/uploads/chatgpt-image-11-may-2026-20_40_18.png
 borrador: false
+personajes:
+  - gallo
+  - perro
+  - zorro
+temas:
+  - amistad
+  - engano
+  - trampa
+  - astucia
+forma: verso
+tradicion: hispanica
 autor: felix-maria-de-samaniego
-curador: "Don Alejandro"
+curador: Don Alejandro
 es_seudonimo: true
-nombre_real: "Alejandro Morales Loaiza"
+nombre_real: Alejandro Morales Loaiza
 ---
-
 Un gallo muy maduro,
 De edad provecta, duros espolones,
 Pacífico y seguro,
@@ -43,7 +53,7 @@ Para finalizar este tratado ».
 El gallo se quedó lleno de gloria,
 Cantando en esta letra su victoria:
 
-*   Siempre trabaja en su daño*
-*   El astuto engañador:*
-*   A un engaño hay otro engaño,*
-*   A un pícaro otro mayor.*
+ ** * Siempre trabaja en su daño*
+ *  El astuto engañador:*
+ *  A un engaño hay otro engaño,*
+ *  A un pícaro otro mayor.***
