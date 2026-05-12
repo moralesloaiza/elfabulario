@@ -1,15 +1,22 @@
 ---
-titulo: "Los dos conejos"
+titulo: Los dos conejos
+resumen: Dos conejos se quedan discutiendo por algo menor, mientras el peligro
+  los acecha.
 fecha: 2012-11-29
-personajes: ["conejo", "perro"]
-temas: ["sabiduria"]
-forma: verso
-tradicion:
+fecha_actualizada: 2026-05-11
+ilustracion: /src/assets/uploads/chatgpt-image-10-may-2026-11_18_42.png
 borrador: false
+personajes:
+  - conejo
+  - perro
+temas:
+  - sabiduria
+forma: verso
+tradicion: hispanica
 autor: tomas-de-iriarte
-curador: "Don Alejandro"
+curador: Don Alejandro
 es_seudonimo: true
-nombre_real: "Alejandro Morales Loaiza"
+nombre_real: Alejandro Morales Loaiza
 ---
 
 Por entre unas matas,
