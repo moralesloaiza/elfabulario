@@ -1,18 +1,23 @@
 ---
-titulo: "El águila y el escarabajo"
+titulo: El águila y el escarabajo
+resumen: Un escarabajo demuestra cómo no hay enemigo pequeño ante el poderoso.
 fecha: 2025-06-10
-ilustracion: "../../assets/imagenes/fabulas/el-aguila-y-el-escarabajo.png"
-personajes: ["aguila", "escarabajo"]
-temas: ["justicia", "venganza"]
-forma: verso
-tradicion:
+fecha_actualizada: 2026-05-11
+ilustracion: /src/assets/uploads/chatgpt-image-10-may-2026-10_48_59.png
 borrador: false
+personajes:
+  - aguila
+  - escarabajo
+temas:
+  - justicia
+  - venganza
+forma: verso
+tradicion: hispanica
 autor: felix-maria-de-samaniego
-curador: "Don Alejandro"
+curador: Don Alejandro
 es_seudonimo: true
-nombre_real: "Alejandro Morales Loaiza"
+nombre_real: Alejandro Morales Loaiza
 ---
-
 —¡Que me matan, favor! Así clamaba
 una liebre infeliz, que se miraba
 en las garras de una águila sangrienta.
@@ -71,8 +76,8 @@ Del trágico suceso noticiosa,
 arrepentida el águila y llorosa,
 aprendió esta lección a mucho precio:
 
-*A nadie se le trate con desprecio,
+***A nadie se le trate con desprecio,
 como al escarabajo,
 porque al más miserable, vil y bajo,
 para tomar venganza, si se irrita,
-¿le faltará siquiera una* bolita?
+¿le faltará siquiera una bolita?***
