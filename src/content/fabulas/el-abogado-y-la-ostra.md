@@ -1,18 +1,22 @@
 ---
-titulo: "El abogado y la ostra"
+titulo: El abogado y la ostra
+resumen: Esta fábula enseña cómo a veces un mal acuerdo es mejor que un buen pleito.
 fecha: 2012-04-22
-personajes: ["abogado"]
-temas: ["justicia"]
-forma: prosa
-tradicion:
+fecha_actualizada: 2026-05-12
+ilustracion: /src/assets/uploads/chatgpt-image-11-may-2026-20_55_29.png
 borrador: false
+personajes:
+  - abogado
+temas:
+  - justicia
+forma: prosa
+tradicion: talmudica
 autor: anonimo
-curador: "Don Alejandro"
+curador: Don Alejandro
 es_seudonimo: true
-nombre_real: "Alejandro Morales Loaiza"
-nota_curador: "Atribución pendiente de verificar. Procedente del archivo de elfabulario.tumblr.com."
+nombre_real: Alejandro Morales Loaiza
+nota_curador: ""
 ---
-
 Paseándose dos hombres por la orilla del mar, encontraron una ostra y empezaron a disputársela.
 
 —Yo la he visto primero—dijo uno—por lo tanto me pertenece.
@@ -32,5 +36,3 @@ Abriendo la ostra, se la comió rápidamente y con gran seriedad entregó a cada
 —¡Ah! Esta es mi remuneración por resolver el asunto—dijo el abogado.—Pero he dividido todo lo que queda de una manera leal y justa.
 
 Eso es lo que generalmente sucede a las personas aficionadas a pleitear si acuden al amparo de los tribunales.
-
-**Del Talmud.**
