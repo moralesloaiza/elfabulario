@@ -1,17 +1,29 @@
 ---
-titulo: "Los animales con peste"
+titulo: Los animales con peste
+resumen: Esta fábula cuenta las ironías del poder y las injusticias que trae
+  muchas veces su ejercicio.
 fecha: 2012-04-22
-personajes: ["burro", "leon", "leopardo", "oso", "pobre", "tigre", "zorro"]
-temas: ["maldad", "poder"]
-forma: verso
-tradicion:
+fecha_actualizada: 2026-05-12
+ilustracion: /src/assets/uploads/chatgpt-image-11-may-2026-21_01_42.png
 borrador: false
+personajes:
+  - burro
+  - leon
+  - leopardo
+  - oso
+  - pobre
+  - tigre
+  - zorro
+temas:
+  - maldad
+  - poder
+forma: verso
+tradicion: hispanica
 autor: felix-maria-de-samaniego
-curador: "Don Alejandro"
+curador: Don Alejandro
 es_seudonimo: true
-nombre_real: "Alejandro Morales Loaiza"
+nombre_real: Alejandro Morales Loaiza
 ---
-
 En los montes, los valles y collados
 De animales poblados,
 Se introdujo la peste de tal modo,
@@ -61,9 +73,9 @@ Irrita al cielo que nos da la peste ».
 Pronuncia el rey de muerte la sentencia,
 Y ejecutóla el lobo a su presencia.
 
-*Te juzgarán virtuoso*
+***Te juzgarán virtuoso*
 *Si eres, aunque perverso, poderoso.*
 *Y aunque bueno, por malo detestable*
 *Cuando te miren pobre, miserable.*
 *Esto hallará en la corte, quien lo vea;*
-*Y aun en el mundo todo. ¡Pobre Astrea!*
+*Y aun en el mundo todo. ¡Pobre Astrea!***
