@@ -51,4 +51,4 @@ entre los sobresaltos y los sustos.
 ***Volviose a su campaña en el instante
 y estimó mucho más de allí adelante,
 sin zozobra, temor ni pesadumbres,
-su casita de tierra y sus legumbr*es.**
+su casita de tierra y sus legumbres.***
