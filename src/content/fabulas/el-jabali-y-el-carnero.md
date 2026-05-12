@@ -1,17 +1,25 @@
 ---
-titulo: "El jabalí y el carnero"
+titulo: El jabalí y el carnero
+resumen: Un carnero enseña a un fiero jabalí, cómo los malvados forjan su ruina
+  en su propia maldad.
 fecha: 2012-04-22
-personajes: ["carnero", "jabali"]
-temas: ["guerra", "justicia", "venganza"]
-forma: verso
-tradicion:
+fecha_actualizada: 2026-05-12
+ilustracion: /src/assets/uploads/chatgpt-image-11-may-2026-20_59_52.png
 borrador: false
+personajes:
+  - carnero
+  - jabali
+temas:
+  - guerra
+  - justicia
+  - venganza
+forma: verso
+tradicion: hispanica
 autor: felix-maria-de-samaniego
-curador: "Don Alejandro"
+curador: Don Alejandro
 es_seudonimo: true
-nombre_real: "Alejandro Morales Loaiza"
+nombre_real: Alejandro Morales Loaiza
 ---
-
 De la rama de un árbol un carnero
 Degollado pendía:
 En él a sangre fría
@@ -31,5 +39,5 @@ Que afligen a los míseros humanos;
 Apenas nos desuellan, se destina
 Para hacer pergaminos y tambores.
 
-*Mira como los hombres malhechores*
-*Labran en su maldad su propia ruina ».*
+***Mira como los hombres malhechores*
+*Labran en su maldad su propia ruina ».***
