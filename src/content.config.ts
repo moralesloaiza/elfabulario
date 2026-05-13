@@ -118,6 +118,15 @@ const autores = defineCollection({
 			enlaces: z
 				.array(z.object({ etiqueta: z.string(), url: z.string().url() }))
 				.optional(),
+
+			// --- Campos canónicos para JSON-LD (Person, schema.org) ---
+			// No expuestos en Decap por ahora: solo aplican a autores
+			// clásicos y se editan a mano vía Git. Si más adelante hay
+			// colaboradores con Wikipedia entry, se exponen en config.yml.
+			descripcion: optionalString,
+			sameAs: z.array(z.string().url()).optional(),
+			lugar_nacimiento: optionalString,
+			lugar_muerte: optionalString,
 		}),
 });
 export const collections = { fabulas, entradas, autores };
