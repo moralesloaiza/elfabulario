@@ -76,7 +76,7 @@ const jsonLd = buildAutorJsonLd(autor, Astro.site!);
 
 			{imagen && (
 				<figure class="retrato">
-					<Image src={imagen} alt={`Retrato de ${nombre}`} width={400} height={400} />
+					<Image src={imagen} alt={`Retrato de ${nombre}`} width={900} height={600} />
 				</figure>
 			)}
 
@@ -149,14 +149,13 @@ const jsonLd = buildAutorJsonLd(autor, Astro.site!);
 	}
 	.retrato {
 		margin: 0 auto var(--space-xl);
-		max-width: 280px;
+		max-width: var(--measure-narrow);
 	}
 	.retrato :global(img) {
 		display: block;
 		width: 100%;
 		height: auto;
 		border: var(--rule-hairline) solid var(--color-oro);
-		border-radius: 50%;
 	}
 	.bio {
 		max-width: var(--measure-narrow);

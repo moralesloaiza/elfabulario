@@ -54,7 +54,7 @@ const autoresConConteo = autores
 						<a href={`/autores/${a.id}/`} class="item-link">
 							{a.data.imagen && (
 								<figure class="item-img">
-									<Image src={a.data.imagen} alt={`Retrato de ${a.data.nombre}`} width={200} height={200} />
+									<Image src={a.data.imagen} alt={`Retrato de ${a.data.nombre}`} width={360} height={240} />
 								</figure>
 							)}
 							<div class="item-meta">
@@ -109,12 +109,6 @@ const autoresConConteo = autores
 			grid-template-columns: repeat(3, minmax(0, 1fr));
 		}
 	}
-
-	@media (min-width: 1024px) {
-		.lista {
-			grid-template-columns: repeat(4, minmax(0, 1fr));
-		}
-	}
 	.item-link {
 		display: block;
 		text-decoration: none;
@@ -124,14 +118,13 @@ const autoresConConteo = autores
 	}
 	.item-img {
 		margin: 0 auto var(--space-sm);
-		max-width: 140px;
+		max-width: 220px;
 	}
 	.item-img :global(img) {
 		display: block;
 		width: 100%;
 		height: auto;
 		border: var(--rule-hairline) solid var(--color-oro);
-		border-radius: 50%;
 	}
 	.item-nombre {
 		font-family: var(--font-display);
