@@ -5,17 +5,22 @@ interface Props {
 
 const { url } = Astro.props;
 
-const trackMatch = url.match(/spotify\.com\/track\/([a-zA-Z0-9]+)/);
-const episodeMatch = url.match(/spotify\.com\/episode\/([a-zA-Z0-9]+)/);
+// Match Spotify URLs with optional regional prefix (e.g. intl-es, intl-pt)
+const trackMatch = url.match(/spotify\.com\/(?:intl-[a-z]+\/)?track\/([a-zA-Z0-9]+)/);
+const episodeMatch = url.match(/spotify\.com\/(?:intl-[a-z]+\/)?episode\/([a-zA-Z0-9]+)/);
 
 const trackId = trackMatch?.[1];
 const episodeId = episodeMatch?.[1];
+
+// Warn at build time if a URL was provided but did not match any supported pattern
+if (url && !trackId && !episodeId) {
+  console.warn(`[SpotifyEmbed] URL no reconocida (solo se admiten track y episode): ${url}`);
+}
 ---
 
 {trackId && (
   <div class="spotify-embed">
     <iframe
-      style="border-radius: 12px"
       src={`https://open.spotify.com/embed/track/${trackId}?utm_source=generator`}
       width="100%"
       height="152"
@@ -30,7 +35,6 @@ const episodeId = episodeMatch?.[1];
 {episodeId && (
   <div class="spotify-embed">
     <iframe
-      style="border-radius: 12px"
       src={`https://open.spotify.com/embed/episode/${episodeId}?utm_source=generator`}
       width="100%"
       height="232"
