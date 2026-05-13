@@ -21,6 +21,9 @@ import {
 	URL_TRADICIONES,
 } from '../utils/taxonomia';
 
+import JsonLd from '../components/JsonLd.astro';
+import { buildFabulaJsonLd } from '../utils/jsonld';
+
 type Props = CollectionEntry<'fabulas'>['data'] & { id: string };
 
 const {
@@ -82,6 +85,10 @@ const autorEnlaceTexto =
 const notaHtml = nota_curador
 	? marked.parse(nota_curador, { breaks: true })
 	: null;
+
+// Structured data (JSON-LD ShortStory). Lives in <head>, near BaseHead.
+const jsonLd = buildFabulaJsonLd(Astro.props, autorEntry, Astro.site!);
+
 ---
 
 <!doctype html>
@@ -97,6 +104,9 @@ const notaHtml = nota_curador
 			modifiedTime={fecha_actualizada}
 			author={autorNombre}
 		/>
+
+<JsonLd data={jsonLd} />
+
 	</head>
 
 	<body>
