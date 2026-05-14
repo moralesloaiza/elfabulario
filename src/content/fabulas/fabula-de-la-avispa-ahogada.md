@@ -1,17 +1,24 @@
 ---
-titulo: "Fábula de la avispa ahogada"
+titulo: Fábula de la avispa ahogada
+resumen: Una avispa lleva de ira lidia con el mundo enardecida, hasta que pronto
+  descubre su final.
 fecha: 2012-01-05
-personajes: ["avispa"]
-temas: ["ironia", "muerte", "necedad"]
-forma: verso
-tradicion:
+fecha_actualizada: 2026-05-14
+ilustracion: /src/assets/uploads/chatgpt-image-14-may-2026-18_38_20.png
 borrador: false
+personajes:
+  - avispa
+temas:
+  - ironia
+  - muerte
+  - necedad
+forma: verso
+tradicion: popular
 autor: aquiles-nazoa
-curador: "Don Alejandro"
+curador: Don Alejandro
 es_seudonimo: true
-nombre_real: "Alejandro Morales Loaiza"
+nombre_real: Alejandro Morales Loaiza
 ---
-
 La avispa aquel día
 desde la mañana,
 como de costumbre
@@ -100,7 +107,7 @@ pero emparamada,
 terminó la avispa
 por morir ahogada.
 
-*   Tal como la avispa*
+ ** * Tal como la avispa*
 *que cuenta esta fábula,*
 *el mundo está lleno*
 *de personas bravas,*
@@ -109,4 +116,4 @@ por morir ahogada.
 *que se hacen famosas*
 *debido a sus rabias*
 *y al final se ahogan*
-*en un vaso de agua.*
+*en un vaso de agua.***
