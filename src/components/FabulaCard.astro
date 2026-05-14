@@ -8,9 +8,10 @@ interface Props {
 	fabula: CollectionEntry<'fabulas'>;
 	autorNombre: string;
 	destacada?: boolean;
+	mostrarAutor?: boolean;
 }
 
-const { fabula, autorNombre, destacada = false } = Astro.props;
+const { fabula, autorNombre, destacada = false, mostrarAutor = true } = Astro.props;
 const { titulo, ilustracion, fecha } = fabula.data;
 
 // Astro:assets hints. Larger for the featured card since it spans full width.
@@ -19,45 +20,39 @@ const imgHeight = destacada ? 800 : 600;
 ---
 
 <article class:list={['card', { 'card-destacada': destacada }]}>
-	<a href={`/fabulas/${fabula.id}/`} class="card-link">
-		<figure class:list={['card-img', { 'con-ornamento': !ilustracion }]}>
-			{ilustracion ? (
-				<Image
-					width={imgWidth}
-					height={imgHeight}
-					src={ilustracion}
-					alt=""
-					loading="lazy"
-				/>
-			) : (
-				<OrnamentoTarjeta />
-			)}
-		</figure>
-		<div class="card-meta">
-			<h3 class="card-titulo">{titulo}</h3>
-			<p class="card-autor">por {autorNombre}</p>
-			<p class="card-fecha">
-				<FormattedDate date={fecha} />
-			</p>
-		</div>
-	</a>
+	<figure class:list={['card-img', { 'con-ornamento': !ilustracion }]}>
+		{ilustracion ? (
+			<Image
+				width={imgWidth}
+				height={imgHeight}
+				src={ilustracion}
+				alt=""
+				loading="lazy"
+			/>
+		) : (
+			<OrnamentoTarjeta />
+		)}
+	</figure>
+	<div class="card-meta">
+		<h3 class="card-titulo">
+			<a href={`/fabulas/${fabula.id}/`}>{titulo}</a>
+		</h3>
+		{mostrarAutor && <p class="card-autor">por {autorNombre}</p>}
+		<p class="card-fecha">
+			<FormattedDate date={fecha} />
+		</p>
+	</div>
 </article>
 
 <style>
+	/* The card is the positioning context for the block-link pseudo-element. */
 	.card {
 		display: flex;
 		flex-direction: column;
+		position: relative;
 	}
 	.card-destacada {
 		text-align: center;
-	}
-
-	.card-link {
-		display: flex;
-		flex-direction: column;
-		flex: 1;
-		text-decoration: none;
-		color: inherit;
 	}
 
 	/* Frame: aspect ratio shared by both image and ornament variants */
@@ -99,8 +94,8 @@ const imgHeight = destacada ? 800 : 600;
 		width: 100%;
 		height: 100%;
 	}
-	.card-link:hover .card-img :global(img),
-	.card-link:focus-visible .card-img :global(img) {
+	.card:has(.card-titulo a:hover) .card-img :global(img),
+	.card:has(.card-titulo a:focus-visible) .card-img :global(img) {
 		transform: scale(1.02);
 	}
 
@@ -119,8 +114,20 @@ const imgHeight = destacada ? 800 : 600;
 		text-transform: uppercase;
 		letter-spacing: var(--ls-wider);
 	}
-	.card-link:hover .card-titulo,
-	.card-link:focus-visible .card-titulo {
+
+	/* Block-link: the <a> wraps only the title, but its ::before overlay
+	   extends the clickable area across the whole .card. */
+	.card-titulo a {
+		text-decoration: none;
+		color: inherit;
+	}
+	.card-titulo a::before {
+		content: "";
+		position: absolute;
+		inset: 0;
+	}
+	.card:has(.card-titulo a:hover) .card-titulo,
+	.card:has(.card-titulo a:focus-visible) .card-titulo {
 		color: var(--color-oro-texto);
 	}
 
