@@ -1,15 +1,22 @@
 ---
-titulo: "Fábula con perro y cochino"
+titulo: Fábula con perro y cochino
+resumen: Un perro y un cochino intercambian lugares y el destino muestra a cada
+  uno su final.
 fecha: 2012-01-05
-personajes: ["cerdo", "perro"]
-temas: ["muerte"]
-forma: verso
-tradicion:
+fecha_actualizada: 2026-05-14
+ilustracion: /src/assets/uploads/chatgpt-image-14-may-2026-18_35_33.png
 borrador: false
+personajes:
+  - cerdo
+  - perro
+temas:
+  - muerte
+forma: verso
+tradicion: popular
 autor: aquiles-nazoa
-curador: "Don Alejandro"
+curador: Don Alejandro
 es_seudonimo: true
-nombre_real: "Alejandro Morales Loaiza"
+nombre_real: Alejandro Morales Loaiza
 ---
 
 Para eludir su trágico destino
