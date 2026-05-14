@@ -1,15 +1,22 @@
 ---
-titulo: "Fábula con cochino (II)"
+titulo: Fábula con cochino (II)
+resumen: Un hombre salva a un cochino de morir en un pantano, para llevarlo
+  luego hacia el final acostumbrado.
 fecha: 2012-01-04
-personajes: ["cerdo"]
-temas: ["engano", "traicion"]
-forma: verso
-tradicion:
+fecha_actualizada: 2026-05-14
+ilustracion: /src/assets/uploads/chatgpt-image-14-may-2026-18_42_11.png
 borrador: false
+personajes:
+  - cerdo
+temas:
+  - engano
+  - traicion
+forma: verso
+tradicion: popular
 autor: aquiles-nazoa
-curador: "Don Alejandro"
+curador: Don Alejandro
 es_seudonimo: true
-nombre_real: "Alejandro Morales Loaiza"
+nombre_real: Alejandro Morales Loaiza
 ---
 
 Ahogándose una vez en un pantano
