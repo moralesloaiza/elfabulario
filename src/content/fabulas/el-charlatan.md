@@ -4,7 +4,7 @@ fecha: 2011-11-08
 personajes: ["burro", "doctor", "rey"]
 temas: ["muerte", "riqueza"]
 forma: verso
-tradicion:
+tradicion: hispanica
 borrador: false
 autor: felix-maria-de-samaniego
 curador: "Don Alejandro"

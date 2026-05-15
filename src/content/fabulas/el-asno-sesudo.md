@@ -11,7 +11,7 @@ personajes:
 temas:
   - guerra
 forma: verso
-tradicion: esopica
+tradicion: hispanica
 autor: felix-maria-de-samaniego
 curador: Don Alejandro
 es_seudonimo: true
