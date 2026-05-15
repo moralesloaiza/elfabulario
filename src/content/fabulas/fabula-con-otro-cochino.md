@@ -19,7 +19,6 @@ curador: Don Alejandro
 es_seudonimo: true
 nombre_real: Alejandro Morales Loaiza
 ---
-
 Pues señor, éste era
 un perro que sufría de sordera,
 y culpando del caso a lo muy viejas
@@ -41,5 +40,5 @@ pues al verle una vieja esas orejas
 coloradas y gruesas como tejas,
 creyéndolo un cochino lo mató.
 
-*   Así cumplió aquel perro su trágico destino:*
+   *Así cumplió aquel perro su trágico destino:*\
 *¡lo mataron a cuenta de oreja de cochino!*
