@@ -1,15 +1,23 @@
 ---
-titulo: "Fábula con otro cochino"
+titulo: Fábula con otro cochino
+resumen: Un perro con sordera hace un intercambio conveniente con el cochino,
+  hasta que el destino lo encuentra.
 fecha: 2012-01-03
-personajes: ["cerdo", "perro"]
-temas: ["ironia", "necedad"]
-forma: verso
-tradicion:
+fecha_actualizada: 2026-05-15
+ilustracion: /src/assets/uploads/chatgpt-image-15-may-2026-19_13_10.png
 borrador: false
+personajes:
+  - cerdo
+  - perro
+temas:
+  - ironia
+  - necedad
+forma: verso
+tradicion: popular
 autor: aquiles-nazoa
-curador: "Don Alejandro"
+curador: Don Alejandro
 es_seudonimo: true
-nombre_real: "Alejandro Morales Loaiza"
+nombre_real: Alejandro Morales Loaiza
 ---
 
 Pues señor, éste era
