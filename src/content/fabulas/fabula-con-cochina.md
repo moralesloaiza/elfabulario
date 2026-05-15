@@ -1,20 +1,27 @@
 ---
-titulo: "Fábula con cochina"
+titulo: Fábula con cochina
+resumen: Una cochina se viste de plumas para hacerse pasar por gallina.
 fecha: 2012-01-03
-personajes: ["anciano", "cerdo", "gallina"]
-temas: ["engano", "ironia"]
-forma: verso
-tradicion:
+fecha_actualizada: 2026-05-15
+ilustracion: /src/assets/uploads/chatgpt-image-15-may-2026-08_00_06.png
 borrador: false
+personajes:
+  - anciano
+  - cerdo
+  - gallina
+temas:
+  - engano
+  - ironia
+forma: verso
+tradicion: popular
 autor: aquiles-nazoa
-curador: "Don Alejandro"
+curador: Don Alejandro
 es_seudonimo: true
-nombre_real: "Alejandro Morales Loaiza"
+nombre_real: Alejandro Morales Loaiza
 ---
-
 Para salvarse un día una cochina
 del clásico leñazo,
-deició disfrazarse de gallina
+decidió disfrazarse de gallina
 y se sentó a poner en un cedazo.
 
    En eso el propietario, un viejo chocho,
