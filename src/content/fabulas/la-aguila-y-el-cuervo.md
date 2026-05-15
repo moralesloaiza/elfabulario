@@ -1,0 +1,48 @@
+---
+titulo: La Águila y el Cuervo
+resumen: >-
+  Un cuervo intenta imitar al águila lanzándose sobre un carnero, pero queda atrapado en el vellón y los pastores se burlan de él.
+fecha: 2026-05-15
+borrador: true
+personajes: 
+  - aguila
+  - cuervo
+  - carnero
+  - cordero
+temas: 
+  - vanidad
+  - necedad
+forma: verso
+tradicion: hispanica
+autor: felix-maria-de-samaniego
+curador: Don Alejandro
+es_seudonimo: true
+nombre_real: Alejandro Morales Loaiza
+---
+Una Águila rapante,
+con vista perspicaz, rápido vuelo,
+descendiendo veloz de junto al cielo,
+arrebató un cordero en un instante.
+Quiere un Cuervo imitarla: De un carnero
+en el vellón sus uñas hacen presa;
+queda enredado entre la lana espesa,
+como pájaro en liga prisionero.
+Hacen de él los pastores vil juguete,
+para castigo de su intento necio.
+Bien merece la burla y el desprecio
+el Cuervo que a ser Águila se mete.
+El viejo me ha dictado esta patraña,
+y astutamente así me desengaña.
+Esa facilidad, esa destreza,
+con que arrebató el Águila su pieza,
+fue la que engañó al Cuervo, pues creía
+que otro tanto a lo menos él haría.
+Mas ¿qué logró? Servirme de
+escarmiento.
+¡Ojalá que sirviese a más de ciento,
+poetas de mal gusto inficionados,
+y dijesen, cual yo, desengañados:
+El Águila eres tú, divino Iriarte,
+ya no pretendo más sino admirarte;
+sea tuyo el laurel, tuya la gloria,
+y no sea yo el Cuervo de la historia!
