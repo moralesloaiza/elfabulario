@@ -1,15 +1,23 @@
 ---
-titulo: "La gallina parlante"
+titulo: La gallina parlante
+resumen: Una gallina en su deseo de hablar como el loro, encuentra una cruel
+  recompensa a su hazaña.
 fecha: 2012-01-04
-personajes: ["anciano", "gallina", "loro"]
-temas: ["muerte"]
-forma: verso
-tradicion:
+fecha_actualizada: 2026-05-15
+ilustracion: /src/assets/uploads/chatgpt-image-15-may-2026-07_53_49.png
 borrador: false
+personajes:
+  - anciano
+  - gallina
+  - loro
+temas:
+  - muerte
+forma: verso
+tradicion: popular
 autor: aquiles-nazoa
-curador: "Don Alejandro"
+curador: Don Alejandro
 es_seudonimo: true
-nombre_real: "Alejandro Morales Loaiza"
+nombre_real: Alejandro Morales Loaiza
 ---
 
 Viendo lo bien que el loro la pasaba
