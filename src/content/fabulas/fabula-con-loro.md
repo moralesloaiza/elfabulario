@@ -1,7 +1,7 @@
 ---
 titulo: Fábula con loro
 resumen: Un loro, convencido de que la razón puede más que la fuerza, se
-  enfrenta a un tgoro.
+  enfrenta a un toro.
 fecha: 2012-01-03
 fecha_actualizada: 2026-05-15
 ilustracion: /src/assets/uploads/chatgpt-image-15-may-2026-08_01_51.png
