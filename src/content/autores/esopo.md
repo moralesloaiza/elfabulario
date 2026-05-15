@@ -2,8 +2,8 @@
 nombre: Esopo
 tipo: clasico
 imagen: /src/assets/uploads/chatgpt-image-12-may-2026-21_44_04.png
-nacionalidad: griego
-nacimiento: -2
+nacionalidad: Griego
+nacimiento: ""
 siglo: VI a.C.
 ---
 De su vida apenas queda el contorno: una sombra griega del siglo VI antes de Cristo, esclavo según unas tradiciones, frigio según otras, samio o tracio según las que vinieron después. Heródoto lo nombra de pasada, Aristóteles y Plutarco lo aluden, y la posteridad le tejió alrededor una biografía novelada que ya en el siglo I de nuestra era circulaba como leyenda. Hay quien duda incluso de que existiera; otros lo defienden como hombre de carne y hueso al que se atribuyeron, con el correr de los siglos, fábulas que nunca pudo haber contado.
