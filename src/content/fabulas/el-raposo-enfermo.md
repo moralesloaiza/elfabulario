@@ -4,7 +4,7 @@ fecha: 2011-11-09
 personajes: ["gallina", "ganso", "zorro"]
 temas: ["amistad", "maldad", "muerte"]
 forma: verso
-tradicion:
+tradicion: hispanica
 borrador: false
 autor: felix-maria-de-samaniego
 curador: "Don Alejandro"
