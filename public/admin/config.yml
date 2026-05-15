@@ -63,27 +63,36 @@ collections:
           - { label: "Águila", value: "aguila" }
           - { label: "Ardilla", value: "ardilla" }
           - { label: "Avispa", value: "avispa" }
+          - { label: "Buey", value: "buey" }
           - { label: "Búho", value: "buho" }
           - { label: "Burro", value: "burro" }
           - { label: "Caballo", value: "caballo" }
+          - { label: "Cabra", value: "cabra" }
           - { label: "Camello", value: "camello" }
           - { label: "Cangrejo", value: "cangrejo" }
+          - { label: "Caracol", value: "caracol" }
           - { label: "Carnero", value: "carnero" }
           - { label: "Cerdo", value: "cerdo" }
+          - { label: "Chivo", value: "chivo" }
           - { label: "Ciervo", value: "ciervo" }
           - { label: "Cigarra", value: "cigarra" }
           - { label: "Cigüeña", value: "ciguena" }
           - { label: "Cisne", value: "cisne" }
+          - { label: "Cocodrilo", value: "cocodrilo" }
           - { label: "Codorniz", value: "codorniz" }
           - { label: "Comadreja", value: "comadreja" }
           - { label: "Conejo", value: "conejo" }
+          - { label: "Cordero", value: "cordero" }
+          - { label: "Cuervo", value: "cuervo" }
           - { label: "Culebra", value: "culebra" }
           - { label: "Elefante", value: "elefante" }
           - { label: "Escarabajo", value: "escarabajo" }
+          - { label: "Faisán", value: "faisan" }
           - { label: "Gallina", value: "gallina" }
           - { label: "Gallo", value: "gallo" }
           - { label: "Ganso", value: "ganso" }
           - { label: "Gato", value: "gato" }
+          - { label: "Gorrión", value: "gorrion" }
           - { label: "Grulla", value: "grulla" }
           - { label: "Hormiga", value: "hormiga" }
           - { label: "Jabalí", value: "jabali" }
@@ -94,18 +103,28 @@ collections:
           - { label: "Loro", value: "loro" }
           - { label: "Mariposa", value: "mariposa" }
           - { label: "Milano", value: "milano" }
+          - { label: "Mochuelo", value: "mochuelo" }
           - { label: "Mona", value: "mona" }
+          - { label: "Mono", value: "mono" }
           - { label: "Mosca", value: "mosca" }
           - { label: "Murciélago", value: "murcielago" }
           - { label: "Oso", value: "oso" }
+          - { label: "Oveja", value: "oveja" }
           - { label: "Paloma", value: "paloma" }
+          - { label: "Pava", value: "pava" }
           - { label: "Pelícano", value: "pelicano" }
+          - { label: "Perdiz", value: "perdiz" }
           - { label: "Perro", value: "perro" }
           - { label: "Pez", value: "pez" }
+          - { label: "Pulga", value: "pulga" }
+          - { label: "Rana", value: "rana" }
           - { label: "Ratón", value: "raton" }
+          - { label: "Ruiseñor", value: "ruisenor" }
+          - { label: "Serpiente", value: "serpiente" }
           - { label: "Tigre", value: "tigre" }
-          - { label: "Tortuga", value: "tortuga" }
+          - { label: "Tordo", value: "tordo" }
           - { label: "Toro", value: "toro" }
+          - { label: "Tortuga", value: "tortuga" }
           - { label: "Zarigüeya", value: "zarigueya" }
           - { label: "Zorro", value: "zorro" }
           # Roles humanos
@@ -114,15 +133,19 @@ collections:
           - { label: "Cazador", value: "cazador" }
           - { label: "Doctor", value: "doctor" }
           - { label: "Emperador", value: "emperador" }
+          - { label: "Filósofo", value: "filosofo" }
           - { label: "Labrador", value: "labrador" }
           - { label: "Lechera", value: "lechera" }
           - { label: "Mago", value: "mago" }
           - { label: "Niño", value: "nino" }
+          - { label: "Pastor", value: "pastor" }
           - { label: "Pobre", value: "pobre" }
+          - { label: "Poeta", value: "poeta" }
           - { label: "Príncipe", value: "principe" }
           - { label: "Rey", value: "rey" }
           # Entidades míticas
           - { label: "Hada", value: "hada" }
+          - { label: "Muerte", value: "muerte" }
           - { label: "Zeus", value: "zeus" }
 
       - name: "temas"
