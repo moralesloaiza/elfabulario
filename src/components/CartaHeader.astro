@@ -1,0 +1,42 @@
+---
+interface Props {
+	remitente: string;
+	fabulaTitulo?: string;
+	fabulaSlug?: string;
+}
+const { remitente, fabulaTitulo, fabulaSlug } = Astro.props;
+---
+
+<p class="carta-attribution">
+	Carta de <strong>{remitente}</strong>{fabulaTitulo && fabulaSlug && (
+		<>
+			, sobre <a href={`/fabulas/${fabulaSlug}/`}>«{fabulaTitulo}»</a>
+		</>
+	)}
+</p>
+
+<style>
+	.carta-attribution {
+		text-align: center;
+		font-family: var(--font-body);
+		font-style: italic;
+		font-size: var(--fs-md);
+		color: var(--color-text-soft);
+		margin: var(--space-md) 0 0;
+	}
+	.carta-attribution strong {
+		font-style: normal;
+		font-weight: var(--fw-regular);
+		color: var(--color-text);
+	}
+	.carta-attribution a {
+		color: var(--color-text);
+		text-decoration: none;
+		border-bottom: var(--rule-hairline) solid var(--color-oro);
+		transition: color var(--dur-base) var(--ease-standard);
+	}
+	.carta-attribution a:hover,
+	.carta-attribution a:focus-visible {
+		color: var(--color-oro-texto);
+	}
+</style>
