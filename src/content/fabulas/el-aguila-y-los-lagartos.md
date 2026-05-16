@@ -3,6 +3,7 @@ titulo: El águila y los lagartos
 resumen: Un águila en su asombro termina comprendiendo el destino de humanos y reptiles.
 fecha: 2011-11-16
 fecha_actualizada: 2026-05-08
+ilustracion: /src/assets/uploads/chatgpt-image-15-may-2026-23_25_54.png
 borrador: false
 personajes:
   - aguila
