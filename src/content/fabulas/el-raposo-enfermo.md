@@ -1,15 +1,25 @@
 ---
-titulo: "El raposo enfermo"
+titulo: El raposo enfermo
+resumen: Un zorro expresa un aparente arrepentimiento de sus antiguas fechorías,
+  ahora que se encuentra en el lecho de la enfermedad.
 fecha: 2011-11-09
-personajes: ["gallina", "ganso", "zorro"]
-temas: ["amistad", "maldad", "muerte"]
+fecha_actualizada: 2026-05-16
+ilustracion: /src/assets/uploads/chatgpt-image-15-may-2026-23_38_01.png
+borrador: false
+personajes:
+  - gallina
+  - ganso
+  - zorro
+temas:
+  - amistad
+  - maldad
+  - muerte
 forma: verso
 tradicion: hispanica
-borrador: false
 autor: felix-maria-de-samaniego
-curador: "Don Alejandro"
+curador: Don Alejandro
 es_seudonimo: true
-nombre_real: "Alejandro Morales Loaiza"
+nombre_real: Alejandro Morales Loaiza
 ---
 
 El tiempo, que consume de hora en hora
