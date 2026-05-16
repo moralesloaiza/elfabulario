@@ -3,6 +3,7 @@ titulo: La alacena
 resumen: Una crítica social de la época del autor, que ilustra la conducta de
   algunos necios y ciegos.
 fecha: 2011-11-26
+fecha_actualizada: 2026-05-16
 ilustracion: /src/assets/uploads/chatgpt-image-15-may-2026-23_22_15.png
 borrador: false
 personajes: []
