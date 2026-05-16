@@ -1,18 +1,27 @@
 ---
-titulo: "La grulla y el cangrejo"
+titulo: La grulla y el cangrejo
+resumen: Una vieja grulla concibe un plan para devorar uno a uno a los
+  habitantes de un estanque, pero el cangrejo le enseña una lección.
 fecha: 2011-11-10
-personajes: ["cangrejo", "grulla", "pez"]
-temas: ["astucia", "engano", "maldad"]
+fecha_actualizada: 2026-05-16
+ilustracion: /src/assets/uploads/chatgpt-image-16-may-2026-14_16_01.png
+borrador: false
+personajes:
+  - cangrejo
+  - grulla
+  - pez
+temas:
+  - astucia
+  - engano
+  - maldad
 forma: prosa
 tradicion: budista
-borrador: false
 autor: anonimo
-curador: "Don Alejandro"
+curador: Don Alejandro
 es_seudonimo: true
-nombre_real: "Alejandro Morales Loaiza"
-nota_curador: "Atribución pendiente de verificar. Procedente del archivo de elfabulario.tumblr.com."
+nombre_real: Alejandro Morales Loaiza
+nota_curador: ""
 ---
-
 Estaba una grulla tan vieja y achacosa, que no podía coger los peces de una laguna, a cuya orilla tenía su nido. Así resolvió llegar por astucia a donde le era imposible por la fuerza.
 
 Dijo, pues, un día a un cangrejo:
@@ -44,5 +53,3 @@ No vio la grulla que el cangrejo la aventajaba en astucia, y por esto accedió. 
 Y diciendo así, clavó sus tenazas en el cuello de la taimada grulla, que cayó muerta al suelo.
 
 *Los malvados y los ladinos son víctimas de sus propias artimañas.*
-
-*Fábula atribuida a **Buda**.*
