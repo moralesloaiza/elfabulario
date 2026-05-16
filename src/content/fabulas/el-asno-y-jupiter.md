@@ -1,0 +1,55 @@
+---
+titulo: El Asno y Júpiter
+# resumen: pendiente de curaduría
+fecha: 2026-05-15   # MARCADOR — fijar la fecha real al publicar
+borrador: true
+# --- Taxonomía: PENDIENTE DE CURADURÍA (rellenar antes de build) ---
+personajes: [burro, zeus]
+temas: [necedad, pereza]
+forma: verso
+tradicion: hispanica
+autor: felix-maria-de-samaniego
+curador: Don Alejandro
+es_seudonimo: true
+nombre_real: Alejandro Morales Loaiza
+# --- Procedencia ---
+# Libro IV, Fábula II — ed. Emilio Palacios Fernández,
+# Biblioteca Virtual Miguel de Cervantes (texto de dominio público).
+# Última estrofa envuelta en ***...*** como hipótesis de moraleja; revisar.
+---
+—No sé cómo hay Jumento
+que, teniendo un adarme de talento,
+quiera meterse a Burro de hortelano.
+Llevo a la plaza desde muy temprano
+cada día cien cargas de verdura;
+vuelvo con otras tantas de basura;
+y, para minorar mi pesadumbre,
+un criado me azota por costumbre.
+Mi vida es ésta, ¿qué será mi muerte,
+como no mude Júpiter mi suerte?.
+Un Asno de este modo se quejaba.
+El dios, que sus lamentos escuchaba,
+al dominio le entrega de un tejero.
+—Esta vida, decía, no la quiero:
+del peso de las tejas oprimido,
+bien azotado, pero mal comido
+a Júpiter me voy con el empeño
+de lograr nuevo dueño.
+Enviolo a un curtidor, entonces dice:
+—Aún con este amo soy más infelice.
+Cargado de pellejos de difunto
+me hace correr sin sosegar un punto,
+para matarme sin llegar a viejo,
+y curtir al instante mi pellejo.
+Júpiter, por no oír tan largas quejas,
+se tapó lindamente las orejas,
+y a nadie escucha, desde el tal Pollino,
+si le habla de mudanza de destino.
+Sólo en verso se encuentran los dichosos,
+que viven ni envidiados ni envidiosos.
+La espada por feliz tiene al arado,
+como el remo a la pluma y al cayado;
+mas se tienen por míseros en suma
+remo, espada, cayado, esteva y pluma.
+Pues ¿a qué estado el hombre llama bueno?
+Al propio, nunca; pero sí, al ajeno.
