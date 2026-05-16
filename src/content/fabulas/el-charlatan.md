@@ -1,15 +1,23 @@
 ---
-titulo: "El charlatán"
+titulo: El charlatán
+resumen: Un hombre promete a un rey hacer hablar a un burro en diez años.
 fecha: 2011-11-08
-personajes: ["burro", "doctor", "rey"]
-temas: ["muerte", "riqueza"]
+fecha_actualizada: 2026-05-16
+ilustracion: /src/assets/uploads/chatgpt-image-15-may-2026-23_41_41.png
+borrador: false
+personajes:
+  - burro
+  - doctor
+  - rey
+temas:
+  - muerte
+  - riqueza
 forma: verso
 tradicion: hispanica
-borrador: false
 autor: felix-maria-de-samaniego
-curador: "Don Alejandro"
+curador: Don Alejandro
 es_seudonimo: true
-nombre_real: "Alejandro Morales Loaiza"
+nombre_real: Alejandro Morales Loaiza
 ---
 
 « Si cualquiera de ustedes
