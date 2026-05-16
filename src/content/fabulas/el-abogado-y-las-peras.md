@@ -1,17 +1,24 @@
 ---
-titulo: "El abogado y las peras"
+titulo: El abogado y las peras
+resumen: Un abogado es invitado a una boda y en el camino, encuentra una cestita
+  llena de jugosas peras.
 fecha: 2011-11-08
-personajes: ["abogado"]
-temas: ["hambre"]
-forma: prosa
-tradicion:
+fecha_actualizada: 2026-05-16
+ilustracion: /src/assets/uploads/chatgpt-image-16-may-2026-14_02_25.png
 borrador: false
+personajes:
+  - abogado
+temas:
+  - hambre
+forma: prosa
+tradicion: esopica
 autor: esopo
-curador: "Don Alejandro"
+curador: Don Alejandro
 es_seudonimo: true
-nombre_real: "Alejandro Morales Loaiza"
+nombre_real: Alejandro Morales Loaiza
+nota_curador: Versión en español de *El tesoro de la juventud o Enciclopedia de
+  conocimientos*, publicada en 1920 por W. M. Jackson.
 ---
-
 Fue una vez invitado cierto abogado a los festejos de una boda que se celebraban en una casa un tanto distante de la ciudad en que vivía. Púsose, pues, en marcha, y en el camino encontró a la orilla de la carretera una cestita llena de hermosas peras.
 
 Como era muy de mañana, no le faltaban ganas de desayunarse con ellas, pero la perspectiva del banquete de boda le indujo a no estropear su buen apetito; y así, dando un puntapié al cesto, lo arrojó al lodo de la cuneta.
@@ -23,6 +30,3 @@ No viendo por allí el abogado ninguna barca, desistió de su intento de pasar a
 Sentía el pobre abogado un hambre tal, que al pasar delante de las peras revueltas entre el fango, se dio por muy contento de poderlas comer después de haberlas limpiado del mejor modo posible, hallando así manera de saciar su apetito.
 
 *El que no desperdicia lo útil, no carecerá de lo necesario.*
-
-**Esopo.***
-*
