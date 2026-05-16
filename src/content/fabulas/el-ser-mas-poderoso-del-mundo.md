@@ -1,18 +1,25 @@
 ---
-titulo: "El ser más poderoso del mundo"
+titulo: El ser más poderoso del mundo
+resumen: Un nigromante indio regala a un pobre ratoncito el destino de
+  convertirse en el ser más poderoso del mundo.
 fecha: 2011-11-10
-personajes: ["buho", "mago", "raton"]
-temas: ["poder"]
+fecha_actualizada: 2026-05-16
+ilustracion: /src/assets/uploads/chatgpt-image-15-may-2026-23_29_08.png
+borrador: false
+personajes:
+  - buho
+  - mago
+  - raton
+temas:
+  - poder
 forma: prosa
 tradicion: budista
-borrador: false
 autor: anonimo
-curador: "Don Alejandro"
+curador: Don Alejandro
 es_seudonimo: true
-nombre_real: "Alejandro Morales Loaiza"
-nota_curador: "Atribución pendiente de verificar. Procedente del archivo de elfabulario.tumblr.com."
+nombre_real: Alejandro Morales Loaiza
+nota_curador: ""
 ---
-
 Pasaba cierto día un nigromante indio por la orilla del Ganges, cuando acertó a volar sobre su cabeza un búho que llevaba un ratoncito en su corvo y agudo pico.
 
 Asustada el ave, soltó la presa, y el nigromante, que era hombre de delicados sentimientos, tomó el magullado ratoncito, y después de curarlo lo transformó en una encantadora joven.
@@ -39,6 +46,4 @@ Pero luego vio el mago que la montaña era más poderosa que el viento, pues ele
 
 Quedó el mago entristecido por el fracaso de sus tentativas, pensando que su protegida no consentiría descender a ser la esposa de un ratón. No obstante acababa de aprender que el ratón era el ser más poderoso del mundo. Convirtióla, pues, de nuevo en una ratita y casóla con el raton de la montaña, que la hizo feliz, viviendo ambos dichosos largos años.
 
-Por mucho que alteremos nuestra apariencia, en el fondo siempre seremos los mismos.
-
-*Fábula atribuida a **Buda**.*
+*Por mucho que alteremos nuestra apariencia, en el fondo siempre seremos los mismos.*
