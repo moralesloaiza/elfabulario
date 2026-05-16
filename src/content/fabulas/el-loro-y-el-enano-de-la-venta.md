@@ -1,15 +1,22 @@
 ---
-titulo: "El loro y el enano de la venta"
+titulo: El loro y el enano de la venta
+resumen: "Dos fábulas que juntas dan el mismo mensaje: una con un lorito y otra
+  con un enano."
 fecha: 2011-11-26
-personajes: ["loro", "nino"]
-temas: ["miedo"]
-forma: verso
-tradicion:
+fecha_actualizada: 2026-05-16
+ilustracion: /src/assets/uploads/chatgpt-image-15-may-2026-23_19_50.png
 borrador: false
+personajes:
+  - loro
+  - nino
+temas:
+  - miedo
+forma: verso
+tradicion: hispanica
 autor: juan-eugenio-hartzenbusch
-curador: "Don Alejandro"
+curador: Don Alejandro
 es_seudonimo: true
-nombre_real: "Alejandro Morales Loaiza"
+nombre_real: Alejandro Morales Loaiza
 ---
 
 **EL LORO**
