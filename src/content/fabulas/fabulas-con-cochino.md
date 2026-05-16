@@ -1,15 +1,24 @@
 ---
-titulo: "Fábulas con cochino"
+titulo: Fábulas con cochino
+resumen: Dos fábulas que, combinadas, comparten el mismo mensaje sobre ser —o
+  parecer— cochino.
 fecha: 2012-01-03
-personajes: ["cerdo", "elefante"]
-temas: ["ironia", "necedad", "vanidad"]
-forma: verso
-tradicion:
+fecha_actualizada: 2026-05-15
+ilustracion: /src/assets/uploads/chatgpt-image-15-may-2026-22_55_49.png
 borrador: false
+personajes:
+  - cerdo
+  - elefante
+temas:
+  - ironia
+  - necedad
+  - vanidad
+forma: verso
+tradicion: popular
 autor: aquiles-nazoa
-curador: "Don Alejandro"
+curador: Don Alejandro
 es_seudonimo: true
-nombre_real: "Alejandro Morales Loaiza"
+nombre_real: Alejandro Morales Loaiza
 ---
 
 Cortóse, por lucir más elegante,
