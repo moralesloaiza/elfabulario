@@ -1,15 +1,19 @@
 ---
-titulo: "La alacena"
+titulo: La alacena
+resumen: Una crítica social de la época del autor, que ilustra la conducta de
+  algunos necios y ciegos.
 fecha: 2011-11-26
-personajes: []
-temas: ["critica-social"]
-forma: verso
-tradicion:
+ilustracion: /src/assets/uploads/chatgpt-image-15-may-2026-23_22_15.png
 borrador: false
+personajes: []
+temas:
+  - critica-social
+forma: verso
+tradicion: hispanica
 autor: juan-eugenio-hartzenbusch
-curador: "Don Alejandro"
+curador: Don Alejandro
 es_seudonimo: true
-nombre_real: "Alejandro Morales Loaiza"
+nombre_real: Alejandro Morales Loaiza
 ---
 
 Caminando un Relator
