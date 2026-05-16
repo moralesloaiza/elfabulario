@@ -1,5 +1,6 @@
 # Panel editorial de El Fabulario (Decap CMS).
-# Este archivo define cómo los colaboradores ven y editan las fábulas.
+# Este archivo define cómo los colaboradores ven y editan fábulas,
+# entradas (bitácora y correspondencia) y autores.
 # Debe mantenerse sincronizado A MANO con src/content.config.ts y
 # src/utils/taxonomia.ts (la fuente única de verdad de slugs/displays).
 
@@ -221,7 +222,7 @@ collections:
           - { label: "Popular", value: "popular" }
           - { label: "Talmúdica", value: "talmudica" }
 
-	# --- Autor (referencia a la colección de autores) ---
+      # --- Autor (referencia a la colección de autores) ---
       - name: "autor"
         label: "Autor"
         widget: "relation"
@@ -251,17 +252,45 @@ collections:
     extension: "md"
     format: "frontmatter"
     summary: "{{titulo}} ({{fecha | date('YYYY-MM-DD')}})"
-    description: "Bitácora del blog: anuncios, hitos, biografías de colaboradores."
+    description: "Bitácora del blog (anuncios, hitos, biografías de colaboradores) y correspondencia (cartas del público con réplica del curador)."
     fields:
+      # --- Identidad ---
       - { name: "titulo", label: "Título", widget: "string" }
       - { name: "fecha", label: "Fecha de publicación", widget: "datetime", format: "YYYY-MM-DD", date_format: "YYYY-MM-DD", time_format: false }
       - { name: "resumen", label: "Resumen", widget: "text", required: false }
       - { name: "ilustracion", label: "Ilustración", widget: "image", required: false }
       - { name: "borrador", label: "Borrador", widget: "boolean", default: false }
+
+      # --- Firma del curador ---
       - { name: "curador", label: "Curador (firma pública)", widget: "string" }
       - { name: "es_seudonimo", label: "¿La firma es un seudónimo?", widget: "boolean", default: false }
       - { name: "nombre_real", label: "Nombre real (privado)", widget: "string", required: false }
-      - { name: "body", label: "Cuerpo", widget: "markdown" }
+
+      # --- Discriminador de formato ---
+      - name: "tipo"
+        label: "Tipo de entrada"
+        widget: "select"
+        required: true
+        default: "bitacora"
+        hint: "Bitácora = entrada editorial regular. Correspondencia = carta de un lector con réplica."
+        options:
+          - { label: "Bitácora", value: "bitacora" }
+          - { label: "Correspondencia (carta)", value: "correspondencia" }
+
+      # --- Campos exclusivos de correspondencia (rellenar solo si Tipo = Correspondencia) ---
+      - { name: "remitente", label: "Remitente", widget: "string", required: false, hint: "Solo correspondencia. Nombre publicable del autor de la carta; usa 'Un lector' para cartas anónimas. Obligatorio si Tipo = Correspondencia." }
+      - name: "fabula_referida"
+        label: "Fábula referida"
+        widget: "relation"
+        collection: "fabulas"
+        value_field: "{{slug}}"
+        search_fields: ["titulo"]
+        display_fields: ["titulo"]
+        required: false
+        hint: "Solo correspondencia. Si la carta discute una fábula concreta, selecciónala."
+
+      # --- Cuerpo ---
+      - { name: "body", label: "Cuerpo", widget: "markdown", hint: "Para correspondencia: usa '## Carta' y '## Respuesta' como encabezados de las dos secciones." }
 
   - name: "autores"
     label: "Autores"
@@ -274,38 +303,37 @@ collections:
     extension: "md"
     format: "frontmatter"
     summary: "{{nombre}} ({{tipo}})"
-    description: "Una entrada por autor (clásico o colaborador). El campo 'nombre' debe coincidir EXACTO con el campo 'autor' que las fábulas usan para esta persona."
+    description: "Una entrada por autor (clásico o colaborador). El slug del archivo es la clave canónica que las fábulas referencian; renombrar el campo 'nombre' no rompe vínculos. El cuerpo Markdown es la bio o reseña."
     fields:
-      - { name: "titulo", label: "Título", widget: "string" }
-      - { name: "fecha", label: "Fecha de publicación", widget: "datetime", format: "YYYY-MM-DD", date_format: "YYYY-MM-DD", time_format: false }
-      - { name: "resumen", label: "Resumen", widget: "text", required: false }
-      - { name: "ilustracion", label: "Ilustración", widget: "image", required: false }
-      - { name: "borrador", label: "Borrador", widget: "boolean", default: false }
-      - { name: "curador", label: "Curador (firma pública)", widget: "string" }
-      - { name: "es_seudonimo", label: "¿La firma es un seudónimo?", widget: "boolean", default: false }
-      - { name: "nombre_real", label: "Nombre real (privado)", widget: "string", required: false }
-
-      # --- Tipo de entrada ---
+      # --- Identidad ---
+      - { name: "nombre", label: "Nombre", widget: "string", hint: "Nombre completo tal como debe mostrarse en el sitio." }
       - name: "tipo"
-        label: "Tipo de entrada"
+        label: "Tipo"
         widget: "select"
         required: true
-        default: "bitacora"
-        hint: "Bitácora = entrada editorial. Correspondencia = carta de un lector con réplica."
+        default: "clasico"
         options:
-          - { label: "Bitácora", value: "bitacora" }
-          - { label: "Correspondencia (carta)", value: "correspondencia" }
+          - { label: "Clásico", value: "clasico" }
+          - { label: "Colaborador", value: "colaborador" }
+      - { name: "imagen", label: "Retrato / ilustración", widget: "image", required: false, hint: "Imagen del autor. Proporción 1:1 preferida; 3:2 también funciona." }
 
-      # --- Campos de correspondencia (rellenar solo si Tipo = Correspondencia) ---
-      - { name: "remitente", label: "Remitente", widget: "string", required: false, hint: "Solo correspondencia. Nombre real, seudónimo o 'Un lector' (anónimo). Obligatorio si Tipo = Correspondencia." }
-      - name: "fabula_referida"
-        label: "Fábula referida"
-        widget: "relation"
-        collection: "fabulas"
-        value_field: "{{slug}}"
-        search_fields: ["titulo"]
-        display_fields: ["titulo"]
+      # --- Datos biográficos ---
+      - { name: "nacionalidad", label: "Nacionalidad", widget: "string", required: false }
+      - { name: "nacimiento", label: "Año de nacimiento", widget: "number", required: false, value_type: "int", min: 0, max: 2100 }
+      - { name: "muerte", label: "Año de muerte", widget: "number", required: false, value_type: "int", min: 0, max: 2100 }
+      - { name: "siglo", label: "Siglo (texto libre)", widget: "string", required: false, hint: "Opcional. Útil cuando no se conocen fechas exactas (p.ej., 'siglo VI a. C.')." }
+
+      # --- Identidad real y enlaces (sobre todo para colaboradores) ---
+      - { name: "nombre_real", label: "Nombre real (privado)", widget: "string", required: false, hint: "Solo para registros internos cuando 'nombre' es un seudónimo." }
+      - { name: "github_username", label: "Usuario de GitHub", widget: "string", required: false }
+      - name: "enlaces"
+        label: "Enlaces"
+        widget: "list"
         required: false
-        hint: "Solo correspondencia. Si la carta discute una fábula concreta, selecciónala."
+        summary: "{{fields.etiqueta}}"
+        fields:
+          - { name: "etiqueta", label: "Etiqueta", widget: "string" }
+          - { name: "url", label: "URL", widget: "string", pattern: ['^https?://', 'Debe empezar con http:// o https://'] }
 
-      - { name: "body", label: "Cuerpo", widget: "markdown", hint: "Para correspondencia: usa '## Carta' y '## Respuesta' como encabezados de las dos secciones." }
+      # --- Bio / reseña ---
+      - { name: "body", label: "Bio / reseña", widget: "markdown", hint: "Texto biográfico (para clásicos) o reseña personal (para colaboradores)." }
