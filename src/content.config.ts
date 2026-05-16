@@ -77,7 +77,10 @@ const fabulas = defineCollection({
 });
 
 // Colección de entradas: bitácora del blog (anuncios, hitos, biografías de
-// colaboradores). No tienen autor histórico ni etiquetas; el curador firma.
+// colaboradores) y correspondencia (cartas del público con réplica del curador).
+// El campo `tipo` discrimina entre ambos formatos. Las cartas se diferencian
+// en plantilla mediante un componente <CartaHeader> que se renderiza solo
+// cuando tipo='correspondencia'.
 const entradas = defineCollection({
 	loader: glob({ base: './src/content/entradas', pattern: '**/*.{md,mdx}' }),
 	schema: ({ image }) =>
@@ -91,7 +94,33 @@ const entradas = defineCollection({
 			curador: z.string(),
 			es_seudonimo: z.boolean().default(false),
 			nombre_real: z.string().optional(),
-		}),
+
+			// --- Discriminador de formato ---
+			// 'bitacora':       entrada editorial regular (anuncios, hitos, bios).
+			// 'correspondencia': carta de un lector con réplica del curador.
+			tipo: z.enum(['bitacora', 'correspondencia']).default('bitacora'),
+
+			// --- Campos exclusivos de correspondencia ---
+			// `remitente`: nombre publicable del autor de la carta. Para cartas
+			//   anónimas se publica como 'Un lector'. Obligatorio si
+			//   tipo='correspondencia' (validado abajo en .refine()).
+			// `fabula_referida`: opcional. Si la carta discute una fábula concreta,
+			//   se enlaza desde el encabezado.
+			remitente: optionalString,
+			fabula_referida: z.preprocess(
+				emptyToUndefined,
+				reference('fabulas').optional(),
+			),
+		}).refine(
+			(data) =>
+				data.tipo !== 'correspondencia' ||
+				(typeof data.remitente === 'string' && data.remitente.length > 0),
+			{
+				message:
+					"Las entradas con tipo='correspondencia' requieren `remitente`. Usa 'Un lector' para cartas anónimas.",
+				path: ['remitente'],
+			},
+		),
 });
 
 // Colección de autores: una entrada por autor (clásico o colaborador).
