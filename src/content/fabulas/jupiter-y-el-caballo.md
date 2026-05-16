@@ -1,18 +1,29 @@
 ---
-titulo: "Júpiter y el caballo"
+titulo: Júpiter y el caballo
+resumen: El caballo pide al antiguo dios unas mejoras en su creación. El dios le
+  da una lección.
 fecha: 2011-11-27
-personajes: ["caballo", "camello", "cisne", "zeus"]
-temas: ["necedad", "soberbia"]
-forma: prosa
-tradicion:
+fecha_actualizada: 2026-05-16
+ilustracion: /src/assets/uploads/chatgpt-image-16-may-2026-10_27_38.png
 borrador: false
-autor: anonimo
-curador: "Don Alejandro"
+personajes:
+  - caballo
+  - camello
+  - cisne
+  - zeus
+temas:
+  - necedad
+  - soberbia
+forma: prosa
+tradicion: esopica
+autor: esopo
+curador: Don Alejandro
 es_seudonimo: true
-nombre_real: "Alejandro Morales Loaiza"
-nota_curador: "Atribución pendiente de verificar. Procedente del archivo de elfabulario.tumblr.com."
+nombre_real: Alejandro Morales Loaiza
+nota_curador: Fábula atribuida a Esopo y tomada de *El tesoro de la juventud o
+  Enciclopedia de conocimientos*, publicada en 1920 por la editorial W. M.
+  Jackson.
 ---
-
 — PADRE de las fierras y de los hombres—así decía el caballo ante el trono de Júpiter—es posible que yo sea una de tus más bellas obras, y así lo creo para satisfacción propia. Pero, ¿no habría algo que perfeccionar en mí?
 
 —¿Qué es lo que a tu juicio puedo mejorar en ti? Veamos. Te escucho;—respondió el buen Júpiter, sonriente.
@@ -30,5 +41,3 @@ El caballo lo vio y tembló.
 El caballo temblaba.
 
 —Vete—prosiguió Júpiter—bástete por esta vez la advertencia. Y para que jamás se borre de tu memoria tu impertinencia y te dure el arrepentimiento, quédate tú también en el mundo—y Júpiter echó al camello una mirada de conservación;—pero, ¡que jamás te vea el caballo sin echarse a temblar!
-
-**Autor desconocido.**
