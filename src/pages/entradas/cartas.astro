@@ -9,17 +9,18 @@ import Header from '../../components/Header.astro';
 import Sol from '../../components/ornaments/Sol.astro';
 import { SITE_TITLE } from '../../consts';
 
-const entradas = (await getCollection('entradas', ({ data }) => !data.borrador)).sort(
-	(a, b) => b.data.fecha.valueOf() - a.data.fecha.valueOf(),
-);
+const cartas = (await getCollection(
+	'entradas',
+	({ data }) => !data.borrador && data.tipo === 'correspondencia',
+)).sort((a, b) => b.data.fecha.valueOf() - a.data.fecha.valueOf());
 ---
 
 <!doctype html>
 <html lang="es">
 	<head>
 		<BaseHead
-			title={`Bitácora · ${SITE_TITLE}`}
-			description="Anuncios, hitos, notas y cartas del Fabulario."
+			title={`Cartas · ${SITE_TITLE}`}
+			description="Correspondencia del público con el curador de El Fabulario, publicada selectivamente."
 		/>
 	</head>
 	<body>
@@ -27,21 +28,24 @@ const entradas = (await getCollection('entradas', ({ data }) => !data.borrador))
 		<main class="page bitacora">
 			<header class="title">
 				<Sol />
-				<h1>Bitácora</h1>
-				<p class="subtitulo">Anuncios, hitos, notas y correspondencia del Fabulario.</p>
+				<h1>Cartas</h1>
+				<p class="subtitulo">
+					Correspondencia del público con el curador, publicada selectivamente.
+					Para escribir una carta, visita <a href="/correspondencia/">correspondencia</a>.
+				</p>
 			</header>
 
 			<hr class="ornate" />
 
-			<EntradasTabs activa="todas" />
+			<EntradasTabs activa="cartas" />
 
-			{entradas.length === 0 && (
-				<p class="vacio">Aún no hay entradas en la bitácora.</p>
+			{cartas.length === 0 && (
+				<p class="vacio">Aún no hay cartas publicadas.</p>
 			)}
 
-			{entradas.length > 0 && (
+			{cartas.length > 0 && (
 				<ul class="lista">
-					{entradas.map((entrada) => (
+					{cartas.map((entrada) => (
 						<li class="item">
 							<a href={`/entradas/${entrada.id}/`} class="item-link">
 								{entrada.data.ilustracion && (
@@ -55,10 +59,11 @@ const entradas = (await getCollection('entradas', ({ data }) => !data.borrador))
 									</figure>
 								)}
 								<div class="item-meta">
-									{entrada.data.tipo === 'correspondencia' && (
-										<p class="item-kicker">Carta</p>
-									)}
+									<p class="item-kicker">Carta</p>
 									<h2 class="item-titulo">{entrada.data.titulo}</h2>
+									{entrada.data.remitente && (
+										<p class="item-remitente">de {entrada.data.remitente}</p>
+									)}
 									<p class="item-fecha">
 										<FormattedDate date={entrada.data.fecha} />
 									</p>
@@ -92,6 +97,14 @@ const entradas = (await getCollection('entradas', ({ data }) => !data.borrador))
 		color: var(--color-text-soft);
 		max-width: var(--measure-narrow);
 		margin: 0 auto;
+	}
+	.subtitulo a {
+		color: var(--color-text);
+		border-bottom: var(--rule-hairline) solid var(--color-oro);
+		text-decoration: none;
+	}
+	.subtitulo a:hover {
+		color: var(--color-oro-texto);
 	}
 	.vacio {
 		text-align: center;
@@ -147,6 +160,13 @@ const entradas = (await getCollection('entradas', ({ data }) => !data.borrador))
 	.item-link:hover .item-titulo,
 	.item-link:focus-visible .item-titulo {
 		color: var(--color-oro-texto);
+	}
+	.item-remitente {
+		font-family: var(--font-body);
+		font-style: italic;
+		font-size: var(--fs-sm);
+		color: var(--color-text-soft);
+		margin: 0 0 var(--space-2xs);
 	}
 	.item-fecha {
 		font-family: var(--font-display);

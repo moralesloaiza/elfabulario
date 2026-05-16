@@ -1,7 +1,8 @@
 ---
 import { Image } from 'astro:assets';
-import { type CollectionEntry, getCollection, render } from 'astro:content';
+import { type CollectionEntry, getCollection, getEntry, render } from 'astro:content';
 import BaseHead from '../../components/BaseHead.astro';
+import CartaHeader from '../../components/CartaHeader.astro';
 import Footer from '../../components/Footer.astro';
 import FormattedDate from '../../components/FormattedDate.astro';
 import Header from '../../components/Header.astro';
@@ -18,8 +19,20 @@ export async function getStaticPaths() {
 
 type Props = CollectionEntry<'entradas'>;
 const entrada = Astro.props;
-const { titulo, fecha, ilustracion, curador, resumen } = entrada.data;
+const { titulo, fecha, ilustracion, curador, resumen, tipo, remitente, fabula_referida } = entrada.data;
 const { Content } = await render(entrada);
+
+// Si es correspondencia con fabula referida, resolver el titulo y slug
+// para que CartaHeader pueda enlazar a la fabula.
+let fabulaTitulo: string | undefined;
+let fabulaSlug: string | undefined;
+if (tipo === 'correspondencia' && fabula_referida) {
+	const fab = await getEntry(fabula_referida);
+	if (fab) {
+		fabulaTitulo = fab.data.titulo;
+		fabulaSlug = fab.id;
+	}
+}
 ---
 
 <html lang="es">
@@ -29,7 +42,7 @@ const { Content } = await render(entrada);
 	<body>
 		<Header />
 		<main class="page">
-			<article class="entrada" data-pagefind-body>
+			<article class="entrada" data-pagefind-body data-pagefind-meta={`tipo:${tipo}`}>
 				{ilustracion && (
 					<figure class="hero-image">
 						<Image width={1200} height={800} src={ilustracion} alt="" />
@@ -42,6 +55,13 @@ const { Content } = await render(entrada);
 					<p class="fecha">
 						<FormattedDate date={fecha} />
 					</p>
+					{tipo === 'correspondencia' && remitente && (
+						<CartaHeader
+							remitente={remitente}
+							fabulaTitulo={fabulaTitulo}
+							fabulaSlug={fabulaSlug}
+						/>
+					)}
 				</header>
 
 				<hr class="ornate" />
