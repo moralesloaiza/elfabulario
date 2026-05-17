@@ -130,21 +130,34 @@ collections:
           - { label: "Zorro", value: "zorro" }
           # Roles humanos
           - { label: "Abogado", value: "abogado" }
+          - { label: "Amo", value: "amo" }
           - { label: "Anciano", value: "anciano" }
+          - { label: "Caminante", value: "caminante" }
+          - { label: "Carretero", value: "carretero" }
           - { label: "Cazador", value: "cazador" }
+          - { label: "Chalán", value: "chalan" }
+          - { label: "Cojo", value: "cojo" }
           - { label: "Doctor", value: "doctor" }
           - { label: "Emperador", value: "emperador" }
+          - { label: "Enfermo", value: "enfermo" }
           - { label: "Filósofo", value: "filosofo" }
           - { label: "Labrador", value: "labrador" }
+          - { label: "Ladrón", value: "ladron" }
           - { label: "Lechera", value: "lechera" }
           - { label: "Mago", value: "mago" }
+          - { label: "Médico", value: "medico" }
           - { label: "Niño", value: "nino" }
           - { label: "Pastor", value: "pastor" }
+          - { label: "Pícaro", value: "picaro" }
           - { label: "Pobre", value: "pobre" }
           - { label: "Poeta", value: "poeta" }
           - { label: "Príncipe", value: "principe" }
           - { label: "Rey", value: "rey" }
+          - { label: "Rústico", value: "rustico" }
+          - { label: "Titiritero", value: "titiritero" }
+          - { label: "Zapatero", value: "zapatero" }
           # Entidades míticas
+          - { label: "Fantasma", value: "fantasma" }
           - { label: "Hada", value: "hada" }
           - { label: "Muerte", value: "muerte" }
           - { label: "Zeus", value: "zeus" }
