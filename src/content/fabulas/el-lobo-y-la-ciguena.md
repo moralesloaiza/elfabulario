@@ -4,7 +4,7 @@ resumen: El autor combina dos historias con una misma moraleja, enseñándonos a
   ejercer prudencia al momento de ayudar a alguien.
 fecha: 2025-11-07
 fecha_actualizada: 2026-05-02
-ilustracion: /src/assets/uploads/chatgpt-image-2-may-2026-13_11_28.png
+ilustracion: /src/assets/uploads/chatgpt-image-17-may-2026-12_36_52.png
 borrador: false
 personajes:
   - ciguena
