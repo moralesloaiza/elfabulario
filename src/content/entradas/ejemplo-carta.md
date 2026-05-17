@@ -1,12 +1,13 @@
 ---
-titulo: "Ejemplo de carta del público"
+titulo: Ejemplo de carta del público
 fecha: 2026-05-16
-tipo: correspondencia
-remitente: "Un lector"
-borrador: true
-curador: "Alejandro de Morales y Loaiza"
+resumen: Archivo de prueba para validar el schema de correspondencia. Borrar
+  antes de merge o conservar como referencia interna.
+borrador: false
+curador: Alejandro de Morales y Loaiza
 es_seudonimo: false
-resumen: "Archivo de prueba para validar el schema de correspondencia. Borrar antes de merge o conservar como referencia interna."
+tipo: correspondencia
+remitente: Un lector
 ---
 
 ## Carta
