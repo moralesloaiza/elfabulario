@@ -4,7 +4,7 @@ resumen: Una poderosa y malvada águila se guía del consejo de una corneja para
   lidiar con una tortuga.
 fecha: 2025-11-06
 fecha_actualizada: 2026-05-03
-ilustracion: /src/assets/uploads/chatgpt-image-3-may-2026-13_28_21.png
+ilustracion: /src/assets/uploads/chatgpt-image-17-may-2026-12_57_20.png
 borrador: false
 personajes:
   - aguila
