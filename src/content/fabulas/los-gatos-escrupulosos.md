@@ -1,0 +1,67 @@
+---
+titulo: Los Gatos escrupulosos
+# resumen: pendiente de curaduría
+fecha: 2026-05-17   # MARCADOR — fijar la fecha real al publicar
+borrador: true
+personajes: [gato]
+temas: [critica-social, gula, ironia]
+forma: verso
+tradicion: hispanica
+autor: felix-maria-de-samaniego
+curador: Don Alejandro
+es_seudonimo: true
+nombre_real: Alejandro Morales Loaiza
+# --- Procedencia ---
+# Libro VII, Fábula IX — ed. Emilio Palacios Fernández,
+# Biblioteca Virtual Miguel de Cervantes (texto de dominio público).
+# Última estrofa envuelta en ***...*** como hipótesis de moraleja; revisar.
+---
+A las once y aun más de la mañana
+la cocinera Juana,
+con pretexto de hablar a la vecina,
+se sale, cierra, y deja en la cocina
+a Micifuf y Zapirón hambrientos.
+Al punto, pues no gastan cumplimientos
+Gatos enhambrecidos,
+se avanzan a probar de los cocidos.
+—¡Fu, dijo Zapirón, maldita olla!
+¡Cómo abrasa! Veamos esa polla
+que está en el asador lejos del fuego.
+Ya también escaldado, desde luego
+se arrima Micifuf, y en un instante
+muestra cada trinchante
+que en el arte cisoria, sin gran pena,
+pudiera dar lecciones a Villena.
+Concluido el asunto,
+el señor Micifuf tocó este punto.
+Útrum si se podía o no en conciencia
+comer el asador. —¡Oh, qué demencia!,
+exclamó Zapirón en altos gritos.
+¡Cometer el mayor de los delitos!
+¿No sabes que el herrero
+ha llevado por él mucho dinero,
+y que, si bien la cosa se examina,
+entre la batería de cocina
+no hay un mueble más serio y respetable?
+Tu pasión te ha engañado, miserable.
+Micifuf, en efecto,
+abandonó el proyecto;
+pues eran los dos Gatos
+de suerte timoratos,
+que si el diablo, tentando sus pasiones,
+les pusiese asadores a millones,
+no hablo yo de las pollas, o me engaño,
+o no comieran uno en todo el año.
+
+***
+¡Qué dolor!, por un descuido
+Micifuf y Zapirón
+se comieron un capón,
+en un asador metido.
+Después de haberse lamido,
+trataron en conferencia
+si obrarían con prudencia
+en comerse el asador.
+¿Le comieron? No señor.
+Era caso de conciencia.
+***
