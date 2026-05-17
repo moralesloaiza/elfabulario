@@ -1,0 +1,76 @@
+---
+titulo: El Hombre y la Fantasma
+# resumen: pendiente de curaduría
+fecha: 2026-05-16   # MARCADOR — fijar la fecha real al publicar
+borrador: true
+personajes: [fantasma]
+temas: [codicia, ironia, critica-social]
+forma: verso
+tradicion: hispanica
+autor: felix-maria-de-samaniego
+curador: Don Alejandro
+es_seudonimo: true
+nombre_real: Alejandro Morales Loaiza
+# --- Procedencia ---
+# Libro VI, Fábula II — ed. Emilio Palacios Fernández,
+# Biblioteca Virtual Miguel de Cervantes (texto de dominio público).
+# Última estrofa envuelta en ***...*** como hipótesis de moraleja; revisar.
+---
+Un Joven licencioso
+se hallaba en un estado vergonzoso
+con sus males secretos retirado:
+En soledad, doliente, exasperado,
+cavila, llora, canta, jura, reza,
+como quien ha perdido la cabeza.
+—¿Te falta la salud? Pues, Caballero
+de todo tu dinero,
+nobleza, juventud y poderío
+sábete que me río;
+trata de recobrarla, pues perdida,
+¿de qué sirven los bienes de la vida?
+Todo esto una Fantasma le previno,
+y al instante se fue como se vino.
+El enfermo se cuida, se repone;
+un nuevo plan de vida se propone:
+En efecto, se casa.
+Cércanle los cuidados de la casa,
+que se van aumentando de hora en hora.
+La mujer, Dios nos libre, gastadora
+aun mucho más que rica,
+los hijos y las deudas multiplica;
+de modo que el marido,
+más que nunca aburrido,
+se puso sobre un pie de economía,
+que estrechándola más de día en día,
+al fin se enriqueció con opulencia.
+La Fantasma le dice: —En mi conciencia,
+que te veo amarillo como el oro;
+tienes tu corazón en el tesoro;
+miras sobre tu pecho acongojado
+el puñal del ladrón enarbolado;
+las noches pasas en mortal desvelo.
+¿Y así quieres vivir...? ¡Qué desconsuelo!
+El Hombre, como caso milagroso,
+se transformó de avaro en ambicioso.
+Llegó dentro de poco a la privanza:
+¡El señor don Dinero qué no alcanza!
+La Fantasma le muestra claramente
+un falso confidente:
+Cien traidores amigos,
+que quieren ser autores y testigos
+de su pronta caída.
+Resuélvese a dejar aquella vida,
+y, ya desengañado,
+en los campos se mira retirado.
+Buscaba los placeres inocentes
+en las flores y frutas diferentes.
+¿Quieren ustedes creer, esto me pasma,
+que aun allí le persigue la Fantasma?
+Los insectos, los yelos y los vientos,
+todos los elementos
+y las plagas de todas estaciones
+han de ser en el campo tus ladrones.
+Pues ¿adónde irá el pobre Caballero?...
+Digo que es un solemne majadero
+todo aquel que pretende
+vivir en este mundo sin su duende.
