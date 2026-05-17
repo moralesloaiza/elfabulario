@@ -36,7 +36,22 @@ collections:
     preview_path: "fabulas/{{slug}}"
     extension: "md"
     format: "frontmatter"
-    summary: "{{titulo}} — {{autor}} ({{fecha | date('YYYY-MM-DD')}})"
+    summary: "{{borrador | ternary('[BORRADOR] ', '')}}{{titulo}} ({{fecha | date('YYYY-MM-DD')}})"
+    view_filters:
+      - { label: "Borradores", field: borrador, pattern: true }
+      - { label: "Publicadas", field: borrador, pattern: false }
+      - { label: "En verso", field: forma, pattern: "verso" }
+      - { label: "En prosa", field: forma, pattern: "prosa" }
+      - { label: "Tradición esópica", field: tradicion, pattern: "esopica" }
+      - { label: "Tradición hispánica", field: tradicion, pattern: "hispanica" }
+      - { label: "Tradición popular", field: tradicion, pattern: "popular" }
+      - { label: "Tradición oriental", field: tradicion, pattern: "oriental" }
+      - { label: "Tradición budista", field: tradicion, pattern: "budista" }
+      - { label: "Tradición talmúdica", field: tradicion, pattern: "talmudica" }
+    view_groups:
+      - { label: "Estado", field: borrador }
+      - { label: "Forma", field: forma }
+      - { label: "Tradición", field: tradicion }
     fields:
       # --- Identidad de la fábula ---
       - { name: "titulo", label: "Título", widget: "string" }
@@ -267,8 +282,16 @@ collections:
     preview_path: "entradas/{{slug}}"
     extension: "md"
     format: "frontmatter"
-    summary: "{{titulo}} ({{fecha | date('YYYY-MM-DD')}})"
+    summary: "{{borrador | ternary('[BORRADOR] ', '')}}{{titulo}} — {{tipo}} ({{fecha | date('YYYY-MM-DD')}})"
     description: "Bitácora del blog (anuncios, hitos, biografías de colaboradores) y correspondencia (cartas del público con réplica del curador)."
+    view_filters:
+      - { label: "Borradores", field: borrador, pattern: true }
+      - { label: "Publicadas", field: borrador, pattern: false }
+      - { label: "Bitácora", field: tipo, pattern: "bitacora" }
+      - { label: "Correspondencia", field: tipo, pattern: "correspondencia" }
+    view_groups:
+      - { label: "Tipo", field: tipo }
+      - { label: "Estado", field: borrador }
     fields:
       # --- Identidad ---
       - { name: "titulo", label: "Título", widget: "string" }
@@ -320,6 +343,11 @@ collections:
     format: "frontmatter"
     summary: "{{nombre}} ({{tipo}})"
     description: "Una entrada por autor (clásico o colaborador). El slug del archivo es la clave canónica que las fábulas referencian; renombrar el campo 'nombre' no rompe vínculos. El cuerpo Markdown es la bio o reseña."
+    view_filters:
+      - { label: "Clásicos", field: tipo, pattern: "clasico" }
+      - { label: "Colaboradores", field: tipo, pattern: "colaborador" }
+    view_groups:
+      - { label: "Tipo", field: tipo }
     fields:
       # --- Identidad ---
       - { name: "nombre", label: "Nombre", widget: "string", hint: "Nombre completo tal como debe mostrarse en el sitio." }
