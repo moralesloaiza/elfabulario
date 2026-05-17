@@ -4,7 +4,7 @@ resumen: Un sabio asno reflexiona, ante el asombro de su amo, sobre el destino
   que le aguarda en la cercanía de la guerra.
 fecha: 2025-11-01
 fecha_actualizada: 2026-05-03
-ilustracion: /src/assets/uploads/chatgpt-image-3-may-2026-13_53_57.png
+ilustracion: /src/assets/uploads/chatgpt-image-17-may-2026-13_04_44.png
 borrador: false
 personajes:
   - burro
