@@ -1,15 +1,24 @@
 ---
-titulo: "El perro y el asno"
+titulo: El perro y el asno
+resumen: Un perro y un asno comparten camino y en medio de su marcha, los
+  sorprende el hambre.
 fecha: 2011-11-08
-personajes: ["burro", "lobo", "perro"]
-temas: ["amistad", "hambre"]
-forma: prosa
-tradicion:
+fecha_actualizada: 2026-05-16
+ilustracion: /src/assets/uploads/chatgpt-image-16-may-2026-14_38_18.png
 borrador: false
+personajes:
+  - burro
+  - lobo
+  - perro
+temas:
+  - amistad
+  - hambre
+forma: prosa
+tradicion: esopica
 autor: esopo
-curador: "Don Alejandro"
+curador: Don Alejandro
 es_seudonimo: true
-nombre_real: "Alejandro Morales Loaiza"
+nombre_real: Alejandro Morales Loaiza
 ---
 
 Caminaba un mastín en compañía de un asno, cargado de pan. La larga marcha despertóles el hambre, por lo que el asno se detuvo a comer los yerbajos que crecían al borde del camino. Esto aumentó el apetito del mastín que le contemplaba envidioso y que no pudiendo aguantar más, le pidió un pedazo de pan de los que llevaba sobre la albarda.
