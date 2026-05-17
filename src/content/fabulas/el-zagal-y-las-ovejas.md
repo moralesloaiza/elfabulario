@@ -4,7 +4,7 @@ resumen: Un joven alerta a los aldeanos una y otra vez, en vano, hasta descubrir
   la suerte de quienes viven engañando.
 fecha: 2025-11-05
 fecha_actualizada: 2026-05-03
-ilustracion: /src/assets/uploads/zagal_ovejas.png
+ilustracion: /src/assets/uploads/chatgpt-image-17-may-2026-13_00_26.png
 borrador: false
 personajes: []
 temas:
