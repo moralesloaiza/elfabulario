@@ -30,7 +30,7 @@ export const PERSONAJES = [
         'picaro', 'pobre', 'poeta', 'principe', 'rey', 'rustico', 'titiritero',
         'zapatero',
 	// Entidades míticas
-        'fantasma', 'hada', 'muerte', 'zeus',
+        'amor', 'fantasma', 'hada', 'locura', 'muerte', 'vision', 'zeus',
 ] as const;
 
 export const TEMAS = [
@@ -156,9 +156,12 @@ export const PERSONAJES_DISPLAY: Record<Personaje, string> = {
         titiritero: 'Titiritero',
         zapatero: 'Zapatero',
 	// Entidades míticas
+        amor: 'Amor',
         fantasma: 'Fantasma',
         hada: 'Hada',
+        locura: 'Locura',
         muerte: 'Muerte',
+        vision: 'Visión',
         zeus: 'Zeus',
 };
 
