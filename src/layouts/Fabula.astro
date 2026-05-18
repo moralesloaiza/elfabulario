@@ -7,6 +7,7 @@ import FormattedDate from '../components/FormattedDate.astro';
 import Header from '../components/Header.astro';
 import Sol from '../components/ornaments/Sol.astro';
 import IconoEditar from '../components/IconoEditar.astro';
+import NavegacionFabulas from '../components/NavegacionFabulas.astro';
 import { slugify } from '../utils/slug';
 import SpotifyEmbed from '../components/SpotifyEmbed.astro';
 import { marked } from 'marked';
@@ -81,7 +82,18 @@ const autorEnlaceTexto =
 		: autorNombre === 'Anónimo'
 			? 'Más fábulas anónimas'
 			: `Más fábulas de ${autorNombre}`;
-
+// Navegación entre fábulas: orden cronológico descendente (más reciente primero),
+// con `id` como desempate determinista para fechas idénticas. Loop en los extremos:
+// la primera enlaza con la última como "anterior", y viceversa.
+const fabulasOrdenadas = [...todasLasFabulas].sort((a, b) => {
+	const diff = b.data.fecha.getTime() - a.data.fecha.getTime();
+	if (diff !== 0) return diff;
+	return a.id.localeCompare(b.id);
+});
+const indiceActual = fabulasOrdenadas.findIndex((f) => f.id === id);
+const total = fabulasOrdenadas.length;
+const fabulaAnterior = fabulasOrdenadas[(indiceActual - 1 + total) % total];
+const fabulaSiguiente = fabulasOrdenadas[(indiceActual + 1) % total];
 const notaHtml = nota_curador
 	? marked.parse(nota_curador, { breaks: true })
 	: null;
@@ -240,6 +252,12 @@ const jsonLd = buildFabulaJsonLd(Astro.props, autorEntry, Astro.site!);
 					</div>
 				</footer>
 			</article>
+{total > 1 && (
+	<NavegacionFabulas
+		anterior={{ slug: fabulaAnterior.id, titulo: fabulaAnterior.data.titulo }}
+		siguiente={{ slug: fabulaSiguiente.id, titulo: fabulaSiguiente.data.titulo }}
+	/>
+)}
 		</main>
 		<Footer />
 		<IconoEditar slug={id} />
