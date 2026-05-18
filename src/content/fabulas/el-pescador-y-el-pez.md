@@ -5,6 +5,7 @@ resumen: El pez promete una fortuna futura si se le perdona la vida. El
 fecha: 2025-11-10
 fecha_actualizada: 2026-05-02
 ilustracion: /src/assets/uploads/chatgpt-image-17-may-2026-12_25_47.png
+spotify_url: https://open.spotify.com/episode/5uFl04OGY0nt7HKqeUCmTl?si=3bCNu8QKTLagXbWACSYgKQ
 borrador: false
 personajes:
   - pez
