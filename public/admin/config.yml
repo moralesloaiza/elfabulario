@@ -209,6 +209,7 @@ collections:
           - { label: "Lealtad", value: "lealtad" }
           - { label: "Libertad", value: "libertad" }
           - { label: "Maldad", value: "maldad" }
+          - { label: "Mar", value: "mar" }
           - { label: "Mentira", value: "mentira" }
           - { label: "Miedo", value: "miedo" }
           - { label: "Muerte", value: "muerte" }
