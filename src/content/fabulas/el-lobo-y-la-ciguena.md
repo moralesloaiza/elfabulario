@@ -5,6 +5,7 @@ resumen: El autor combina dos historias con una misma moraleja, enseñándonos a
 fecha: 2025-11-07
 fecha_actualizada: 2026-05-02
 ilustracion: /src/assets/uploads/chatgpt-image-17-may-2026-12_36_52.png
+spotify_url: https://open.spotify.com/episode/6Iiwd5LrMfWrT3H6Hb7hh2?si=c-n5GnnESg6LlV16zU0W4w
 borrador: false
 personajes:
   - ciguena
