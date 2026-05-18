@@ -1,0 +1,99 @@
+---
+type FabulaVecina = {
+  slug: string;
+  titulo: string;
+};
+
+interface Props {
+  anterior: FabulaVecina;
+  siguiente: FabulaVecina;
+}
+
+const { anterior, siguiente } = Astro.props;
+---
+
+<nav class="nav-fabulas" aria-label="Navegación entre fábulas">
+  <a class="nav-fabulas-enlace anterior" href={`/fabulas/${anterior.slug}/`} rel="prev">
+    <span class="nav-fabulas-flecha" aria-hidden="true">←</span>
+    <span class="nav-fabulas-meta">
+      <span class="nav-fabulas-rotulo">Fábula anterior</span>
+      <span class="nav-fabulas-titulo">{anterior.titulo}</span>
+    </span>
+  </a>
+  <a class="nav-fabulas-enlace siguiente" href={`/fabulas/${siguiente.slug}/`} rel="next">
+    <span class="nav-fabulas-meta">
+      <span class="nav-fabulas-rotulo">Fábula siguiente</span>
+      <span class="nav-fabulas-titulo">{siguiente.titulo}</span>
+    </span>
+    <span class="nav-fabulas-flecha" aria-hidden="true">→</span>
+  </a>
+</nav>
+
+<style>
+  .nav-fabulas {
+    max-width: var(--measure);
+    margin: var(--space-2xl) auto 0;
+    padding-block: var(--space-lg);
+    border-top: var(--rule-hairline) solid var(--color-oro);
+    border-bottom: var(--rule-hairline) solid var(--color-oro);
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: var(--space-md);
+  }
+  .nav-fabulas-enlace {
+    display: flex;
+    align-items: center;
+    gap: var(--space-sm);
+    text-decoration: none;
+    color: var(--color-text);
+    padding: var(--space-sm);
+    transition: background-color var(--dur-fast) var(--ease-standard);
+  }
+  .nav-fabulas-enlace:hover,
+  .nav-fabulas-enlace:focus-visible {
+    background-color: color-mix(in srgb, var(--color-oro) 12%, transparent);
+  }
+  .nav-fabulas-enlace.siguiente {
+    justify-content: flex-end;
+    text-align: right;
+  }
+  .nav-fabulas-flecha {
+    font-family: var(--font-display);
+    font-size: var(--fs-2xl);
+    color: var(--color-oro);
+    line-height: 1;
+    flex-shrink: 0;
+  }
+  .nav-fabulas-meta {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-3xs);
+    min-width: 0;
+  }
+  .nav-fabulas-rotulo {
+    font-family: var(--font-display);
+    font-size: var(--fs-3xs);
+    letter-spacing: var(--ls-widest);
+    text-transform: uppercase;
+    color: var(--color-oro-texto);
+    font-weight: var(--fw-bold);
+  }
+  .nav-fabulas-titulo {
+    font-family: var(--font-body);
+    font-style: italic;
+    font-size: var(--fs-md);
+    line-height: var(--lh-snug);
+    color: var(--color-text);
+    text-wrap: balance;
+  }
+  @media (max-width: 640px) {
+    .nav-fabulas {
+      grid-template-columns: 1fr;
+      gap: var(--space-sm);
+    }
+    .nav-fabulas-enlace.siguiente {
+      justify-content: space-between;
+      text-align: left;
+    }
+  }
+</style>
