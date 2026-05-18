@@ -36,7 +36,7 @@ export const PERSONAJES = [
 export const TEMAS = [
 	'adulacion', 'amistad', 'astucia', 'cobardia', 'codicia', 'critica-social',
 	'engano', 'envidia', 'esperanza', 'generosidad', 'gula', 'guerra',
-	'hambre', 'humildad', 'ingratitud', 'inocencia', 'ironia', 'justicia',
+	'hambre', 'hipocresia', 'humildad', 'ingratitud', 'inocencia', 'ironia', 'justicia',
 	'lealtad', 'libertad', 'maldad', 'mar', 'mentira', 'miedo', 'muerte',
 	'naturaleza', 'necedad', 'pereza', 'piedad', 'pobreza', 'poder',
 	'prudencia', 'riqueza', 'sabiduria', 'soberbia', 'trabajo', 'traicion',
@@ -179,7 +179,8 @@ export const TEMAS_DISPLAY: Record<Tema, string> = {
 	gula: 'Gula',
 	guerra: 'Guerra',
 	hambre: 'Hambre',
-	humildad: 'Humildad',
+        hipocresia: 'Hipocresía',
+        humildad: 'Humildad',
 	ingratitud: 'Ingratitud',
 	inocencia: 'Inocencia',
 	ironia: 'Ironía',
