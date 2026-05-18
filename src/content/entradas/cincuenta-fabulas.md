@@ -7,6 +7,7 @@ borrador: false
 curador: Don Alejandro de Morales y Loaiza
 es_seudonimo: true
 nombre_real: Alejandro Morales Loaiza
+tipo: bitacora
 ---
 Hoy **El Fabulario** celebra un pequeño gran hito: **hemos llegado a las 50 fábulas coleccionadas**. Cincuenta relatos breves que entretejen ingenio, crítica, ternura, humor y a veces algo de picardía—fieles herederas del arte milenario de fabular.
 
