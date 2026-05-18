@@ -30,7 +30,5 @@ pnpm-debug.log*
 !.env.example
 
 # Scripts y salidas locales de extraccion Samaniego (no versionar)
-extraer_samaniego.py
-aplicar-taxonomia-*.ps1
 salida-libro-*/
 scout-libro-*/
