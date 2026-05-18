@@ -3,7 +3,7 @@ titulo: Ejemplo de carta del público
 fecha: 2026-05-16
 resumen: Archivo de prueba para validar el schema de correspondencia. Borrar
   antes de merge o conservar como referencia interna.
-borrador: false
+borrador: true
 curador: Alejandro de Morales y Loaiza
 es_seudonimo: false
 tipo: correspondencia
