@@ -201,6 +201,7 @@ collections:
           - { label: "Gula", value: "gula" }
           - { label: "Guerra", value: "guerra" }
           - { label: "Hambre", value: "hambre" }
+          - { label: "Hipocresía", value: "hipocresia" }
           - { label: "Humildad", value: "humildad" }
           - { label: "Ingratitud", value: "ingratitud" }
           - { label: "Inocencia", value: "inocencia" }

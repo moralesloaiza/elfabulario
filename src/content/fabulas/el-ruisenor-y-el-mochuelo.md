@@ -1,0 +1,59 @@
+---
+titulo: El Ruiseñor y el Mochuelo
+# resumen: pendiente de curaduría
+fecha: 2026-05-18   # MARCADOR — fijar la fecha real al publicar
+borrador: true
+# --- Taxonomía: PENDIENTE DE CURADURÍA (rellenar antes de build) ---
+personajes: [ruisenor, mochuelo]
+temas: [necedad, vanidad]
+forma: verso
+tradicion: hispanica
+autor: felix-maria-de-samaniego
+curador: Don Alejandro
+es_seudonimo: true
+nombre_real: Alejandro Morales Loaiza
+# --- Procedencia ---
+# Libro IX, Fábula IX — ed. Emilio Palacios Fernández,
+# Biblioteca Virtual Miguel de Cervantes (texto de dominio público).
+# Última estrofa envuelta en ***...*** como hipótesis de moraleja; revisar.
+---
+Una noche de mayo,
+dentro de un bosque espeso,
+donde, según reinaba
+la triste oscuridad con el silencio,
+parece que tenía
+su habitación Morfeo;
+cuando todo viviente
+disfrutaba del dulce y blando sueño,
+pendiente de una rama
+un Ruiseñor parlero
+empezó con sus ayes
+a publicar sus dolorosos celos.
+Después de mil querellas,
+que llegaron al cielo,
+a cantar empezaba
+la antigua historia del infiel Tereo;
+cuando, sin saber cómo,
+un cazador Mochuelo
+al músico arrebata
+entre las corvas uñas prisionero.
+Jamás Pan con la flauta
+igualó sus gorjeos,
+ni resonó tan grata
+la dulce lira del divino Orfeo.
+No obstante, cuando daba
+sus últimos lamentos,
+los vecinos del bosque
+aplaudían su muerte: Yo lo creo.
+Si con sus serenatas
+el mismo Farinelo
+viniese a despertarme,
+mientras que yo dormía en blando lecho,
+en lugar de los bravos,
+diría: «Caballero,
+¡que no viniese ahora
+para tal Ruiseñor algún Mochuelo!».
+Clori tiene mil gracias,
+y ¿qué logra con eso?
+Hacerse fastidiosa
+por no querer usarlas a su tiempo.
