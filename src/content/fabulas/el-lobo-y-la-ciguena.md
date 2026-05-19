@@ -22,7 +22,6 @@ curador: Don Alejandro
 es_seudonimo: true
 nombre_real: Alejandro Morales Loaiza
 ---
-
 Sin duda alguna que se hubiera ahogado
 un lobo con un hueso atragantado,
 si a la sazón no pasa una Cigüeña.
@@ -50,7 +49,7 @@ que no tiene razón ni por asomo:
 El ejemplo siguiente
 nos hará esta verdad más evidente.
 
-## El Hombre y la Culebra
+**El hombre y la culebra**
 
 A una culebra que, de frío yerta,
 en el suelo yacía medio muerta
