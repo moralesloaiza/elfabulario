@@ -159,8 +159,8 @@ const jsonLd = buildFabulaJsonLd(Astro.props, autorEntry, Astro.site!);
 					</>
 				)}
 
-<div class="prose">
-			<slot />
+<div class:list={['prose', forma === 'verso' && 'prose--verso']}>
+  			<slot />
 		</div>
 
 		{notaHtml && (
@@ -341,7 +341,7 @@ const jsonLd = buildFabulaJsonLd(Astro.props, autorEntry, Astro.site!);
 		margin-bottom: var(--space-md);
 		hyphens: auto;
 	}
-	.prose :global(p:first-of-type)::first-letter {
+	.prose:not(.prose--verso) :global(p:first-of-type)::first-letter {
 		font-family: var(--font-display);
 		font-size: 3.5em;
 		float: left;
@@ -349,6 +349,17 @@ const jsonLd = buildFabulaJsonLd(Astro.props, autorEntry, Astro.site!);
 		padding-right: 0.08em;
 		padding-top: 0.05em;
 		color: var(--color-oro-texto);
+	}
+	/* Verso: bloque centrado, con respiro izquierdo en móvil */
+	.prose--verso {
+  		width: max-content;
+  		max-width: 100%;
+  		margin-inline: auto;
+	}
+	@media (max-width: 40rem) {
+  	.prose--verso {
+    		padding-inline-start: var(--space-md); /* 16px */
+  	}
 	}
 	/* Pie discreto con la firma del curador */
 	.curaduria {
