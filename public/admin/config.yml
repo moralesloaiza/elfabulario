@@ -37,6 +37,7 @@ collections:
     extension: "md"
     format: "frontmatter"
     summary: "{{borrador | ternary('[BORRADOR] ', '')}}{{titulo}} ({{fecha | date('YYYY-MM-DD')}})"
+  - { name: "destacada", label: "Destacada", widget: "boolean", default: false, required: false, hint: "Marca curatorial. Solo una fábula destacada a la vez (si marcas varias, gana la más reciente). Requiere ilustración." }
     view_filters:
       - { label: "Borradores", field: borrador, pattern: true }
       - { label: "Publicadas", field: borrador, pattern: false }

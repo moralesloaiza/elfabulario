@@ -41,10 +41,10 @@ const fabulas = defineCollection({
 			// llevarla; si hay varias marcadas, gana la más reciente por fecha
 			// (resuelto en src/pages/fabulas/index.astro).
 			//
-			// NO está expuesto en Decap (public/admin/config.yml). Es decisión
-			// editorial reservada al director: se edita a mano vía Git.
+			// Expuesto en Decap (public/admin/config.yml) como toggle.
+			// Requiere ilustración: el .refine() abajo bloquea destacada=true
+			// sin ilustracion.
 			destacada: z.boolean().default(false),
-
 			// --- Taxonomía ---
 			// personajes: opcional. Lista cerrada. Humano genérico = implícito.
 			// temas:      al menos uno obligatorio. Lista cerrada.
