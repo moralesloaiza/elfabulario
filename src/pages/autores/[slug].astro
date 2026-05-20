@@ -7,7 +7,7 @@ import Footer from '../../components/Footer.astro';
 import Header from '../../components/Header.astro';
 import Sol from '../../components/ornaments/Sol.astro';
 import JsonLd from '../../components/JsonLd.astro';
-import { buildAutorJsonLd } from '../../utils/jsonld';
+import { buildAutorJsonLd, buildBreadcrumbJsonLd } from '../../utils/jsonld';
 
 export async function getStaticPaths() {
 	const autores = await getCollection('autores');
@@ -50,6 +50,14 @@ const datos = [nacionalidad, epoca].filter(Boolean).join(' · ');
 
 // Structured data (JSON-LD Person). Lives in <head>, near BaseHead.
 const jsonLd = buildAutorJsonLd(autor, Astro.site!);
+const breadcrumbLd = buildBreadcrumbJsonLd(
+	[
+		{ name: 'Inicio', path: '/' },
+		{ name: 'Autores', path: '/autores/' },
+		{ name: nombre, path: `/autores/${autor.id}/` },
+	],
+	Astro.site!,
+);
 
 ---
 
@@ -64,6 +72,7 @@ const jsonLd = buildAutorJsonLd(autor, Astro.site!);
 	author={nombre}
 />
 <JsonLd data={jsonLd} />
+<JsonLd data={breadcrumbLd} />
 	</head>
 	<body>
 		<Header />

@@ -6,6 +6,8 @@ import Footer from '../components/Footer.astro';
 import Header from '../components/Header.astro';
 import Sol from '../components/ornaments/Sol.astro';
 import { SITE_DESCRIPTION, SITE_TITLE } from '../consts';
+import JsonLd from '../components/JsonLd.astro';
+import { buildWebSiteJsonLd } from '../utils/jsonld';
 
 const ultimas = (await getCollection('fabulas', ({ data }) => !data.borrador))
 	.sort((a, b) => b.data.fecha.valueOf() - a.data.fecha.valueOf())
@@ -22,6 +24,7 @@ const autoresPorId = new Map(autoresLista.map((a) => [a.id, a.data.nombre]));
 <html lang="es">
 	<head>
 		<BaseHead title={SITE_TITLE} description={SITE_DESCRIPTION} />
+		<JsonLd data={buildWebSiteJsonLd()} />
 	</head>
 	<body>
 		<Header />

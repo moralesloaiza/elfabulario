@@ -171,3 +171,51 @@ export function buildAutorJsonLd(
 
 	return data;
 }
+
+// Site-wide WebSite entity. Emitted only on the home page (canonical
+// place for the site's identity). Hard-coded name/description match
+// SITE_TITLE/SITE_DESCRIPTION in consts.ts; if those change, update here.
+//
+// The potentialAction (SearchAction) is honest: /buscar/ reads ?q= from
+// the URL and dispatches Pagefind automatically on load. Google retired
+// the Sitelinks Search Box feature in late 2024, but the markup remains
+// valid schema.org and is consumed by Bing, voice assistants, and LLM agents.
+export function buildWebSiteJsonLd(): Record<string, unknown> {
+	return {
+		'@context': 'https://schema.org',
+		'@type': 'WebSite',
+		'@id': `${SITE_ORIGIN}/#website`,
+		name: 'El Fabulario',
+		url: SITE_ORIGIN,
+		description: 'Colección de fábulas en español.',
+		inLanguage: 'es',
+		publisher: { '@id': `${SITE_ORIGIN}/#publisher` },
+		potentialAction: {
+			'@type': 'SearchAction',
+			target: {
+				'@type': 'EntryPoint',
+				urlTemplate: `${SITE_ORIGIN}/buscar/?q={search_term_string}`,
+			},
+			'query-input': 'required name=search_term_string',
+		},
+	};
+}
+
+// Build a BreadcrumbList JSON-LD object from an ordered list of crumbs.
+// The last item should be the current page. URLs are emitted for every
+// item (Google accepts both omitting and including the leaf URL).
+export function buildBreadcrumbJsonLd(
+	items: Array<{ name: string; path: string }>,
+	site: URL,
+): Record<string, unknown> {
+	return {
+		'@context': 'https://schema.org',
+		'@type': 'BreadcrumbList',
+		itemListElement: items.map((item, i) => ({
+			'@type': 'ListItem',
+			position: i + 1,
+			name: item.name,
+			item: absoluteUrl(item.path, site),
+		})),
+	};
+}
