@@ -1,5 +1,5 @@
 ---
-nombre: Leonardo Da Vinci
+nombre: Leonardo da Vinci
 tipo: clasico
 imagen: /src/assets/uploads/chatgpt-image-16-may-2026-11_22_04.png
 nacionalidad: Italiano
