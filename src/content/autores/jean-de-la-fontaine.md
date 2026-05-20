@@ -1,5 +1,5 @@
 ---
-nombre: Jean de la Fontaine
+nombre: Jean de La Fontaine
 tipo: clasico
 imagen: /src/assets/uploads/chatgpt-image-12-may-2026-22_13_30.png
 nacionalidad: Francés
