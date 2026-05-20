@@ -1,7 +1,14 @@
 // Datos globales del sitio. Importables desde cualquier componente.
 
 export const SITE_TITLE = 'El Fabulario';
+
+// Tagline editorial corto, visible en pantalla (p.ej. subtítulo del hero).
+export const SITE_TAGLINE = 'Colección de fábulas en español.';
+
+// Descripción larga, solo para <meta name="description"> y og:description.
+// No aparece en pantalla. Mantener entre 120 y 160 caracteres.
 export const SITE_DESCRIPTION =
-	'Colección de fábulas en español.';
+	'Fábulas clásicas en español, leídas con calma. Una curaduría editorial de Esopo a Samaniego, con ilustración original y narración en audio.';
+
 export const SITE_URL = 'https://elfabulario.com';
 export const SITE_LANG = 'es';
