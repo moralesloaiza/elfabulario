@@ -23,7 +23,7 @@ import {
 } from '../utils/taxonomia';
 
 import JsonLd from '../components/JsonLd.astro';
-import { buildFabulaJsonLd } from '../utils/jsonld';
+import { buildFabulaJsonLd, buildBreadcrumbJsonLd } from '../utils/jsonld';
 
 type Props = CollectionEntry<'fabulas'>['data'] & { id: string };
 
@@ -100,6 +100,14 @@ const notaHtml = nota_curador
 
 // Structured data (JSON-LD ShortStory). Lives in <head>, near BaseHead.
 const jsonLd = buildFabulaJsonLd(Astro.props, autorEntry, Astro.site!);
+const breadcrumbLd = buildBreadcrumbJsonLd(
+	[
+		{ name: 'Inicio', path: '/' },
+		{ name: 'Fábulas', path: '/fabulas/' },
+		{ name: titulo, path: `/fabulas/${id}/` },
+	],
+	Astro.site!,
+);
 
 ---
 
@@ -118,6 +126,7 @@ const jsonLd = buildFabulaJsonLd(Astro.props, autorEntry, Astro.site!);
 		/>
 
 <JsonLd data={jsonLd} />
+<JsonLd data={breadcrumbLd} />
 
 	</head>
 
