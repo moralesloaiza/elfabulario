@@ -144,7 +144,7 @@ collections:
           - { label: "Tortuga", value: "tortuga" }
           - { label: "Zarigüeya", value: "zarigueya" }
           - { label: "Zorro", value: "zorro" }
-	  # Roles humanos
+          # Roles humanos
           - { label: "Abogado", value: "abogado" }
           - { label: "Amo", value: "amo" }
           - { label: "Anciano", value: "anciano" }
@@ -172,7 +172,7 @@ collections:
           - { label: "Rústico", value: "rustico" }
           - { label: "Titiritero", value: "titiritero" }
           - { label: "Zapatero", value: "zapatero" }
-	  # Entidades míticas
+          # Entidades míticas
           - { label: "Amor", value: "amor" }
           - { label: "Fantasma", value: "fantasma" }
           - { label: "Hada", value: "hada" }
