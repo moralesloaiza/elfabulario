@@ -36,15 +36,6 @@ const fabulas = defineCollection({
 			spotify_url: z.string().url().optional(),
 			borrador: z.boolean().default(false),
 
-			// --- Curaduría editorial ---
-			// `destacada`: marca curatorial. Solo una fábula a la vez debería
-			// llevarla; si hay varias marcadas, gana la más reciente por fecha
-			// (resuelto en src/pages/fabulas/index.astro).
-			//
-			// Expuesto en Decap (public/admin/config.yml) como toggle.
-			// Requiere ilustración: el .refine() abajo bloquea destacada=true
-			// sin ilustracion.
-			destacada: z.boolean().default(false),
 			// --- Taxonomía ---
 			// personajes: opcional. Lista cerrada. Humano genérico = implícito.
 			// temas:      al menos uno obligatorio. Lista cerrada.
@@ -65,15 +56,9 @@ const fabulas = defineCollection({
 			es_seudonimo: z.boolean().default(false),
 			nombre_real: z.string().optional(),
 
-// --- Extra ---
+			// --- Extra ---
 			nota_curador: z.string().optional(),
-		}).refine(
-			(data) => !data.destacada || data.ilustracion !== undefined,
-			{
-				message: 'Una fábula no puede estar `destacada: true` sin `ilustracion`. Genera la ilustración primero o desmarca el destacado.',
-				path: ['destacada'],
-			},
-		),
+		}),
 });
 
 // Colección de entradas: bitácora del blog (anuncios, hitos, biografías de
@@ -158,4 +143,50 @@ const autores = defineCollection({
 			lugar_muerte: optionalString,
 		}),
 });
-export const collections = { fabulas, entradas, autores };
+
+// Colección `destacado`: singleton de configuración curatorial.
+// Un único archivo (src/content/destacado/actual.md) describe qué se muestra
+// en el slot destacado de la home. Polimórfico: el destacado puede ser una
+// fábula, una entrada (bitácora o correspondencia) o un autor.
+//
+// La validación "el elemento referido tiene imagen" NO se hace aquí (Zod no
+// hace cross-collection lookups). Se valida en src/pages/index.astro al
+// resolver la referencia; si el target no tiene imagen, el build falla con
+// mensaje explícito.
+const destacado = defineCollection({
+	loader: glob({ base: './src/content/destacado', pattern: '*.md' }),
+	schema: z
+		.object({
+			activo: z.boolean().default(true),
+			cintillo: z.string(),
+			tipo: z.enum(['fabula', 'entrada', 'autor']),
+			fabula_referida: z.preprocess(
+				emptyToUndefined,
+				reference('fabulas').optional(),
+			),
+			entrada_referida: z.preprocess(
+				emptyToUndefined,
+				reference('entradas').optional(),
+			),
+			autor_referido: z.preprocess(
+				emptyToUndefined,
+				reference('autores').optional(),
+			),
+		})
+		.refine(
+			(data) => {
+				if (!data.activo) return true;
+				if (data.tipo === 'fabula') return data.fabula_referida !== undefined;
+				if (data.tipo === 'entrada') return data.entrada_referida !== undefined;
+				if (data.tipo === 'autor') return data.autor_referido !== undefined;
+				return false;
+			},
+			{
+				message:
+					'Cuando `activo: true`, debes seleccionar el elemento referido del tipo correspondiente.',
+				path: ['tipo'],
+			},
+		),
+});
+
+export const collections = { fabulas, entradas, autores, destacado };

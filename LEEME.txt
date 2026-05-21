@@ -1,0 +1,53 @@
+================================================================
+  EL FABULARIO — Paquete de despliegue del logo y favicon
+================================================================
+
+Este ZIP reproduce la estructura de carpetas del repo. Para
+instalarlo, descomprime el contenido DENTRO de:
+
+  C:\Users\LG\Documents\BLOGS\elfabulario\
+
+Eso fusiona automáticamente:
+  - los archivos nuevos en  public\
+  - el Header.astro reescrito en  src\components\
+
+----------------------------------------------------------------
+QUÉ CONTIENE CADA CARPETA
+----------------------------------------------------------------
+
+public\                            <- archivos estáticos del sitio
+  favicon.svg                      Favicon vectorial (navegadores modernos)
+  favicon.ico                      Favicon multi-resolución (legacy/Windows)
+  favicon-16x16.png                Favicon PNG fallback
+  favicon-32x32.png                Favicon PNG fallback
+  apple-touch-icon.png             Icono iOS (180x180)
+  android-chrome-192x192.png       Icono PWA Android
+  android-chrome-512x512.png       Icono PWA Android
+  site.webmanifest                 Manifest PWA mínimo
+  fabulario-diamond.svg            Logo rombo (positivo, fondo claro)
+  fabulario-diamond-dark.svg       Logo rombo (outline, fondo oscuro)
+  fabulario-circle.svg             Logo círculo (positivo, fondo claro)
+  fabulario-circle-dark.svg        Logo círculo (outline, fondo oscuro)
+
+src\components\
+  Header.astro                     Reescritura completa (sustituye al actual)
+
+----------------------------------------------------------------
+PASO FINAL: editar BaseHead.astro a mano
+----------------------------------------------------------------
+
+El único cambio que NO está en el ZIP es la línea que hay que
+añadir a src\components\BaseHead.astro.
+
+Después de la línea:
+    <link rel="icon" type="image/x-icon" href="/favicon.ico" />
+
+añadir esta nueva línea:
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+
+Eso es todo. Después:
+
+    cd C:\Users\LG\Documents\BLOGS\elfabulario
+    npm run build
+
+Si compila sin errores, push a la rama feature y PR como siempre.

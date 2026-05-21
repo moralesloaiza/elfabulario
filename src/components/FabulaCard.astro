@@ -7,24 +7,19 @@ import OrnamentoTarjeta from './ornaments/OrnamentoTarjeta.astro';
 interface Props {
 	fabula: CollectionEntry<'fabulas'>;
 	autorNombre: string;
-	destacada?: boolean;
 	mostrarAutor?: boolean;
 }
 
-const { fabula, autorNombre, destacada = false, mostrarAutor = true } = Astro.props;
+const { fabula, autorNombre, mostrarAutor = true } = Astro.props;
 const { titulo, ilustracion, fecha } = fabula.data;
-
-// Astro:assets hints. Larger for the featured card since it spans full width.
-const imgWidth = destacada ? 1200 : 900;
-const imgHeight = destacada ? 800 : 600;
 ---
 
-<article class:list={['card', { 'card-destacada': destacada }]}>
+<article class="card">
 	<figure class:list={['card-img', { 'con-ornamento': !ilustracion }]}>
 		{ilustracion ? (
 			<Image
-				width={imgWidth}
-				height={imgHeight}
+				width={900}
+				height={600}
 				src={ilustracion}
 				alt=""
 				loading="lazy"
@@ -51,9 +46,6 @@ const imgHeight = destacada ? 800 : 600;
 		flex-direction: column;
 		position: relative;
 	}
-	.card-destacada {
-		text-align: center;
-	}
 
 	/* Frame: aspect ratio shared by both image and ornament variants */
 	.card-img {
@@ -74,12 +66,6 @@ const imgHeight = destacada ? 800 : 600;
 		inset: 6px;
 		border: var(--rule-hairline) solid var(--color-oro);
 		pointer-events: none;
-	}
-
-	.card-destacada .card-img {
-		max-width: var(--measure-wide);
-		margin-inline: auto;
-		margin-bottom: var(--space-lg);
 	}
 
 	.card-img :global(img) {
@@ -108,11 +94,6 @@ const imgHeight = destacada ? 800 : 600;
 		margin: 0 0 var(--space-2xs);
 		color: var(--color-text);
 		text-transform: none;
-	}
-	.card-destacada .card-titulo {
-		font-size: var(--fs-2xl);
-		text-transform: uppercase;
-		letter-spacing: var(--ls-wider);
 	}
 
 	/* Block-link: the <a> wraps only the title, but its ::before overlay

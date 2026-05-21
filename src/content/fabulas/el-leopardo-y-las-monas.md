@@ -5,7 +5,6 @@ fecha: 2025-06-17
 fecha_actualizada: 2026-05-08
 ilustracion: /src/assets/uploads/chatgpt-image-8-may-2026-22_51_57.png
 borrador: false
-destacada: true
 personajes:
   - leopardo
   - mona
