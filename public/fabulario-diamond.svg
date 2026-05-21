@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" role="img" aria-label="El Fabulario">
+  <title>El Fabulario</title>
+  <!-- Rombo exterior dorado -->
+  <polygon points="100,10 190,100 100,190 10,100" fill="#C9A14A"/>
+  <!-- Banda navy entre los dos bordes dorados -->
+  <polygon points="100,16 184,100 100,184 16,100" fill="#0F1B3D"/>
+  <!-- Aro dorado fino interior -->
+  <polygon points="100,24 176,100 100,176 24,100" fill="#C9A14A"/>
+  <!-- Fondo navy principal -->
+  <polygon points="100,27 173,100 100,173 27,100" fill="#0F1B3D"/>
+
+  <!-- Letra F en oro -->
+  <path d="M 80 58 L 122 58 L 122 73 L 95 73 L 95 92 L 113 92 L 113 106 L 95 106 L 95 144 L 80 144 Z"
+        fill="#C9A14A"/>
+</svg>

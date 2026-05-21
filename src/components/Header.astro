@@ -7,7 +7,22 @@ import HeaderLink from './HeaderLink.astro';
 <header>
 	<div class="page header-inner">
 		<a href="/" class="logo" aria-label={`${SITE_TITLE} · inicio`}>
-			<span class="logo-text">{SITE_TITLE}</span>
+			<svg
+				class="logo-mark"
+				viewBox="0 0 200 200"
+				xmlns="http://www.w3.org/2000/svg"
+				aria-hidden="true"
+				focusable="false"
+			>
+				<polygon points="100,10 190,100 100,190 10,100" fill="var(--color-oro)" />
+				<polygon points="100,16 184,100 100,184 16,100" fill="#0F1B3D" />
+				<polygon points="100,24 176,100 100,176 24,100" fill="var(--color-oro)" />
+				<polygon points="100,27 173,100 100,173 27,100" fill="#0F1B3D" />
+				<path
+					d="M 80 58 L 122 58 L 122 73 L 95 73 L 95 92 L 113 92 L 113 106 L 95 106 L 95 144 L 80 144 Z"
+					fill="var(--color-oro)"
+				/>
+			</svg>
 		</a>
 		<nav class="internal-links" aria-label="Navegación principal">
 			<HeaderLink href="/">Inicio</HeaderLink>
@@ -38,38 +53,40 @@ import HeaderLink from './HeaderLink.astro';
 	}
 	.header-inner {
 		display: flex;
+		flex-direction: column;
 		align-items: center;
-		justify-content: space-between;
 		gap: var(--space-md);
-		padding-block: var(--space-md);
-		flex-wrap: wrap;
+		padding-block: var(--space-lg);
+		text-align: center;
 	}
 	.logo {
 		text-decoration: none;
 		color: var(--color-text);
+		display: inline-block;
+		line-height: 0;
 	}
-	.logo-text {
-		font-family: var(--font-display);
-		font-weight: var(--fw-bold);
-		font-size: var(--fs-md);
-		letter-spacing: var(--ls-widest);
-		/* uppercase eliminado: Cinzel ya es all-caps */
-		color: var(--color-text);
+	.logo-mark {
+		display: block;
+		width: 76px;
+		height: 76px;
+		transition: transform var(--dur-base) var(--ease-standard);
 	}
-	.logo:hover .logo-text,
-	.logo:focus-visible .logo-text {
-		color: var(--color-oro-texto);
+	.logo:hover .logo-mark,
+	.logo:focus-visible .logo-mark {
+		transform: scale(1.04);
 	}
 	.internal-links {
 		display: flex;
 		gap: var(--space-lg);
+		flex-wrap: wrap;
+		justify-content: center;
+		align-items: center;
 	}
 	.internal-links :global(a) {
 		font-family: var(--font-display);
 		font-size: var(--fs-xs);
 		font-weight: var(--fw-regular);
 		letter-spacing: var(--ls-widest);
-		/* uppercase eliminado: Cinzel ya es all-caps */
 		color: var(--color-text);
 		text-decoration: none;
 		padding-block: var(--space-2xs);
@@ -87,9 +104,9 @@ import HeaderLink from './HeaderLink.astro';
 		text-decoration: none;
 	}
 	@media (max-width: 540px) {
-		.header-inner {
-			justify-content: center;
-			text-align: center;
+		.logo-mark {
+			width: 64px;
+			height: 64px;
 		}
 		.internal-links {
 			gap: var(--space-md);

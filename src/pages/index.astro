@@ -5,7 +5,7 @@ import FabulaCard from '../components/FabulaCard.astro';
 import Footer from '../components/Footer.astro';
 import Header from '../components/Header.astro';
 import Sol from '../components/ornaments/Sol.astro';
-import { SITE_DESCRIPTION, SITE_TITLE } from '../consts';
+import { SITE_DESCRIPTION, SITE_TAGLINE, SITE_TITLE } from '../consts';
 import JsonLd from '../components/JsonLd.astro';
 import { buildWebSiteJsonLd } from '../utils/jsonld';
 
@@ -32,7 +32,7 @@ const autoresPorId = new Map(autoresLista.map((a) => [a.id, a.data.nombre]));
 			<section class="hero">
 				<Sol />
 				<h1>{SITE_TITLE}</h1>
-				<p class="subtitulo">{SITE_DESCRIPTION}</p>
+				<p class="subtitulo">{SITE_TAGLINE}</p>
 				<hr class="ornate hero-rule" />
 			</section>
 
