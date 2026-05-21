@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" role="img" aria-label="El Fabulario">
+  <title>El Fabulario</title>
+  <!-- Aro exterior grueso (anillo evenodd, transparente entre bordes) -->
+  <path d="M 100,10 L 190,100 L 100,190 L 10,100 Z
+           M 100,16 L 16,100 L 100,184 L 184,100 Z"
+        fill="#C9A14A" fill-rule="evenodd"/>
+  <!-- Aro interior fino -->
+  <path d="M 100,24 L 176,100 L 100,176 L 24,100 Z
+           M 100,27 L 27,100 L 100,173 L 173,100 Z"
+        fill="#C9A14A" fill-rule="evenodd"/>
+
+  <!-- Letra F en oro -->
+  <path d="M 80 58 L 122 58 L 122 73 L 95 73 L 95 92 L 113 92 L 113 106 L 95 106 L 95 144 L 80 144 Z"
+        fill="#C9A14A"/>
+</svg>
