@@ -71,7 +71,6 @@ h6 {
 
 p {
   margin: 0 0 var(--space-md);
-  max-width: var(--measure);
   text-wrap: pretty;               /* mejor rag en párrafos cortos */
   hyphens: auto;
 }
@@ -118,7 +117,6 @@ blockquote {
   font-size: var(--fs-lg);
   line-height: var(--lh-snug);
   color: var(--color-text-soft);
-  max-width: var(--measure-narrow);
 }
 
 blockquote cite {
@@ -134,7 +132,6 @@ blockquote cite {
 ul, ol {
   margin: 0 0 var(--space-md);
   padding-left: var(--space-lg);
-  max-width: var(--measure);
 }
 
 .prose li+li,
@@ -161,7 +158,6 @@ hr {
   border: 0;
   border-top: var(--rule-hairline) solid var(--color-oro);
   margin: var(--space-2xl) auto;
-  max-width: var(--measure);
 }
 
 /* Variante con doble línea paralela — para separar secciones mayores */
@@ -169,7 +165,6 @@ hr.ornate {
   position: relative;
   border: 0;
   height: 7px;
-  max-width: var(--measure);
   background:
     linear-gradient(var(--color-oro), var(--color-oro)) top / 100% 1.5px no-repeat,
     linear-gradient(var(--color-oro), var(--color-oro)) bottom / 100% 0.5px no-repeat;
