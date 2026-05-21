@@ -14,7 +14,7 @@ const { cintillo, imagen, alt = '', titulo, href } = Astro.props;
 ---
 
 <section class="destacado-seccion" aria-label="Destacado de la curaduría">
-	<article class="frame destacado">
+	<article class="destacado">
 		<figure class="destacado-img">
 			<Image src={imagen} alt={alt} width={1400} height={933} loading="eager" />
 		</figure>
@@ -35,18 +35,17 @@ const { cintillo, imagen, alt = '', titulo, href } = Astro.props;
 		margin-block: var(--space-2xl);
 	}
 
-	/* The .frame class supplies the canonical double gold border + 32px padding.
-	   We add position:relative so the block-link ::before overlay can absolute-
-	   position to the whole tarjeta. */
-	.destacado.frame {
+	/* Card root: positioning context for the block-link overlay. */
+	.destacado {
 		position: relative;
+		max-width: var(--measure-wide);
+		margin-inline: auto;
 		text-align: center;
 	}
 
 	.destacado-img {
-		max-width: var(--measure-wide);
 		width: 100%;
-		margin: 0 auto var(--space-lg);
+		margin: 0 0 var(--space-lg);
 		aspect-ratio: 3 / 2;
 		overflow: hidden;
 	}
@@ -66,8 +65,7 @@ const { cintillo, imagen, alt = '', titulo, href } = Astro.props;
 		text-align: center;
 	}
 
-	/* Cintillo: small, gold, uppercase, wide letterspacing. Sits inside the
-	   double-gold frame, above the title. */
+	/* Cintillo: small, gold, uppercase, wide letterspacing, above the title. */
 	.cintillo {
 		font-family: var(--font-display);
 		font-size: var(--fs-3xs);
@@ -85,6 +83,7 @@ const { cintillo, imagen, alt = '', titulo, href } = Astro.props;
 		letter-spacing: var(--ls-wider);
 		line-height: var(--lh-snug);
 		text-transform: uppercase;
+		text-wrap: balance;
 		margin: 0 0 var(--space-md);
 		color: var(--color-text);
 	}
