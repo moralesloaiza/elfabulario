@@ -11,12 +11,6 @@ const fabulas = (await getCollection('fabulas', ({ data }) => !data.borrador)).s
 	(a, b) => b.data.fecha.valueOf() - a.data.fecha.valueOf(),
 );
 
-// The featured fable is the most recent one flagged `destacada: true`.
-// The Zod refinement in content.config.ts guarantees that only fables
-// with an illustration can be flagged; here we just pick by the flag.
-const destacada = fabulas.find((f) => f.data.destacada);
-const resto = destacada ? fabulas.filter((f) => f.id !== destacada.id) : fabulas;
-
 // Author names live in the `autores` collection now (the `autor` field on a
 // fable is a reference, not a string). Build an id→name map once so the
 // template can render the author without awaiting per row.
@@ -40,21 +34,11 @@ const autoresPorId = new Map(autoresLista.map((a) => [a.id, a.data.nombre]));
 
 			<hr class="ornate" />
 
-			{fabulas.length === 0 && (
+			{fabulas.length === 0 ? (
 				<p class="vacio">Aún no hay fábulas publicadas.</p>
-			)}
-
-			{destacada && (
-				<FabulaCard
-					fabula={destacada}
-					autorNombre={autoresPorId.get(destacada.data.autor.id) ?? ''}
-					destacada
-				/>
-			)}
-
-			{resto.length > 0 && (
+			) : (
 				<ul class="lista">
-					{resto.map((fabula) => (
+					{fabulas.map((fabula) => (
 						<li>
 							<FabulaCard
 								fabula={fabula}

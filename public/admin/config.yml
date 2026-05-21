@@ -61,7 +61,6 @@ collections:
       - { name: "ilustracion", label: "Ilustración", widget: "image", required: false, hint: "Proporción recomendada 3:2, mínimo 1200×800." }
       - { name: "spotify_url", label: "Enlace Spotify", widget: "string", required: false, hint: "URL de la narración/declamación en Spotify (track o episodio de podcast)." }
       - { name: "borrador", label: "Borrador (no se publica todavía)", widget: "boolean", default: false }
-      - { name: "destacada", label: "Destacada", widget: "boolean", default: false, required: false, hint: "Marca curatorial. Solo una fábula destacada a la vez (si marcas varias, gana la más reciente). Requiere ilustración." }
 
       # --- Taxonomía ---
       # Cuatro campos que sustituyen al antiguo `etiquetas`. Listas cerradas:
@@ -384,3 +383,50 @@ collections:
 
       # --- Bio / reseña ---
       - { name: "body", label: "Bio / reseña", widget: "markdown", hint: "Texto biográfico (para clásicos) o reseña personal (para colaboradores)." }
+
+- name: "destacado"
+    label: "Destacado de la home"
+    description: "Singleton: el elemento curado que aparece destacado en la home. Solo uno activo a la vez. Polimórfico (fábula, entrada o autor)."
+    files:
+      - name: "actual"
+        label: "Destacado actual"
+        file: "src/content/destacado/actual.md"
+        fields:
+          - { name: "activo", label: "Activo", widget: "boolean", default: true, hint: "Desmarca para apagar el destacado sin borrar la referencia." }
+          - { name: "cintillo", label: "Cintillo (texto sobre el título)", widget: "string", hint: "Texto editorial breve, en mayúsculas se renderiza. Ejemplos: 'Fábula del mes', 'Carta recibida', 'El curador recomienda', 'En portada'." }
+          - name: "tipo"
+            label: "Tipo de destacado"
+            widget: "select"
+            required: true
+            default: "fabula"
+            options:
+              - { label: "Fábula", value: "fabula" }
+              - { label: "Entrada", value: "entrada" }
+              - { label: "Autor", value: "autor" }
+          - name: "fabula_referida"
+            label: "Fábula"
+            widget: "relation"
+            collection: "fabulas"
+            value_field: "{{slug}}"
+            search_fields: ["titulo"]
+            display_fields: ["titulo"]
+            required: false
+            hint: "Selecciona si Tipo = Fábula. La fábula debe tener ilustración."
+          - name: "entrada_referida"
+            label: "Entrada"
+            widget: "relation"
+            collection: "entradas"
+            value_field: "{{slug}}"
+            search_fields: ["titulo"]
+            display_fields: ["titulo"]
+            required: false
+            hint: "Selecciona si Tipo = Entrada. La entrada debe tener ilustración."
+          - name: "autor_referido"
+            label: "Autor"
+            widget: "relation"
+            collection: "autores"
+            value_field: "{{slug}}"
+            search_fields: ["nombre"]
+            display_fields: ["nombre"]
+            required: false
+            hint: "Selecciona si Tipo = Autor. El autor debe tener retrato."
