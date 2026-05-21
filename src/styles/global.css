@@ -64,8 +64,20 @@ button {
   margin-inline: auto;
 }
 
+.prose blockquote {
+  max-width: var(--measure-narrow);
+}
+
 .prose-narrow {
   max-width: var(--measure-narrow);
+  margin-inline: auto;
+}
+
+/* ---------- Separador ornamental ---------- */
+/* hr.ornate vive a veces dentro de prosa y a veces en cabeceras de página,
+   por eso su ancho es global, no atado a .prose. */
+hr.ornate {
+  max-width: var(--measure);
   margin-inline: auto;
 }
 
