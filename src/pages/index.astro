@@ -58,26 +58,30 @@ const autoresPorId = new Map(autoresLista.map((a) => [a.id, a.data.nombre]));
 				<ul class="exploracion">
 					<li>
 						<a href="/fabulas/">
-							<h3 class="titulo-explorar">Todas las fábulas</h3>
-							<p class="descripcion-explorar">El catálogo completo, ordenado cronológicamente.</p>
+							<span class="numeral" aria-hidden="true">I</span>
+							<h3 class="titulo-explorar">Catálogo</h3>
+							<p class="descripcion-explorar">Todas las fábulas.</p>
 						</a>
 					</li>
 					<li>
 						<a href="/autores/">
+							<span class="numeral" aria-hidden="true">II</span>
 							<h3 class="titulo-explorar">Autores</h3>
-							<p class="descripcion-explorar">Clásicos y colaboradores actuales.</p>
+							<p class="descripcion-explorar">Clásicos y colaboradores.</p>
 						</a>
 					</li>
 					<li>
 						<button type="button" class="explorar-trigger" data-buscador-trigger>
-							<h3 class="titulo-explorar">Buscar</h3>
-							<p class="descripcion-explorar">Encuentra una fábula o un autor por nombre.</p>
+							<span class="numeral" aria-hidden="true">III</span>
+							<h3 class="titulo-explorar">Búsqueda</h3>
+							<p class="descripcion-explorar">Por título o autor.</p>
 						</button>
 					</li>
 					<li>
 						<a href="/colaborar/">
+							<span class="numeral" aria-hidden="true">IV</span>
 							<h3 class="titulo-explorar">Colaborar</h3>
-							<p class="descripcion-explorar">¿Escribes fábulas o conoces alguna olvidada?</p>
+							<p class="descripcion-explorar">¿Escribes fábulas?</p>
 						</a>
 					</li>
 				</ul>
@@ -155,8 +159,8 @@ const autoresPorId = new Map(autoresLista.map((a) => [a.id, a.data.nombre]));
 		margin: 0;
 		max-width: none;
 		display: grid;
-		grid-template-columns: repeat(2, minmax(0, 1fr));
-		column-gap: var(--space-2xl);
+		grid-template-columns: repeat(4, minmax(0, 1fr));
+		column-gap: var(--space-xl);
 		row-gap: var(--space-lg);
 	}
 	ul.exploracion a,
@@ -172,15 +176,24 @@ const autoresPorId = new Map(autoresLista.map((a) => [a.id, a.data.nombre]));
 		text-align: inherit;
 		cursor: pointer;
 	}
+	.numeral {
+		display: block;
+		font-family: var(--font-display);
+		font-size: var(--fs-3xs);
+		font-weight: var(--fw-bold);
+		letter-spacing: var(--ls-wide);
+		color: var(--color-oro-texto);
+		margin: 0 0 var(--space-2xs);
+	}
 	.titulo-explorar {
 		font-family: var(--font-display);
-		font-size: var(--fs-lg);
+		font-size: var(--fs-sm);
 		font-weight: var(--fw-bold);
 		letter-spacing: var(--ls-wide);
 		line-height: var(--lh-snug);
 		margin: 0 0 var(--space-2xs);
 		color: var(--color-text);
-		text-transform: none;
+		text-transform: uppercase;
 	}
 	ul.exploracion a:hover .titulo-explorar,
 	ul.exploracion a:focus-visible .titulo-explorar,
@@ -197,11 +210,20 @@ const autoresPorId = new Map(autoresLista.map((a) => [a.id, a.data.nombre]));
 	}
 
 	/* ---------- RESPONSIVE ---------- */
-	@media (max-width: 720px) {
-		ul.fabulas,
+	@media (max-width: 900px) {
 		ul.exploracion {
+			grid-template-columns: repeat(2, minmax(0, 1fr));
+			column-gap: var(--space-2xl);
+		}
+	}
+	@media (max-width: 720px) {
+		ul.fabulas {
 			grid-template-columns: 1fr;
 			gap: var(--space-xl);
+		}
+		ul.exploracion {
+			grid-template-columns: 1fr;
+			row-gap: var(--space-xl);
 		}
 	}
 </style>
