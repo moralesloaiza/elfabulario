@@ -25,3 +25,9 @@
 # redirigimos la URL antigua para no perder enlaces externos.
 /fabulas/la-codorniz-2/  /fabulas/la-codorniz/  301
 /fabulas/la-codorniz-2   /fabulas/la-codorniz/  301
+
+# Cambio de slug: el nombre canónico lleva la preposición "de"
+# (Félix María de Samaniego). La URL antigua quedó indexada en
+# GSC; la redirigimos a la forma canónica para no perder tráfico.
+/autores/felix-maria-samaniego/  /autores/felix-maria-de-samaniego/  301
+/autores/felix-maria-samaniego   /autores/felix-maria-de-samaniego/  301
