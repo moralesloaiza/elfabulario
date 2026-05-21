@@ -12,13 +12,15 @@ export default defineConfig({
 		remarkPlugins: [remarkBreaks],
 	},
 	integrations: [
-		mdx(),
 		sitemap({
+			// /buscar/ es una SERP (resultados de búsqueda), no contenido
+			// indexable. Se excluye del sitemap para evitar que Google la
+			// rastree como página de contenido.
+			filter: (page) => !page.endsWith('/buscar/'),
 			i18n: {
 				defaultLocale: 'es',
 				locales: { es: 'es-ES' },
 			},
-		}),
-		pagefind(),
+		}),		pagefind(),
 	],
 });
