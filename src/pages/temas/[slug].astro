@@ -2,13 +2,14 @@
 import { getCollection } from 'astro:content';
 import BaseHead from '../../components/BaseHead.astro';
 import Footer from '../../components/Footer.astro';
-import FormattedDate from '../../components/FormattedDate.astro';
 import Header from '../../components/Header.astro';
-import Sol from '../../components/ornaments/Sol.astro';
+import ListadoFabulasTaxonomia from '../../components/ListadoFabulasTaxonomia.astro';
 import { TEMAS_DISPLAY, type Tema } from '../../utils/taxonomia';
 
 export async function getStaticPaths() {
 	const fabulas = await getCollection('fabulas', ({ data }) => !data.borrador);
+	const autores = await getCollection('autores');
+	const autorMap = new Map(autores.map((a) => [a.id, a.data.nombre]));
 
 	const porSlug = new Map<string, typeof fabulas>();
 	for (const f of fabulas) {
@@ -23,12 +24,17 @@ export async function getStaticPaths() {
 		props: {
 			slug: slug as Tema,
 			fabulas: fs.sort((a, b) => b.data.fecha.valueOf() - a.data.fecha.valueOf()),
+			autorMap,
 		},
 	}));
 }
 
-const { slug, fabulas } = Astro.props;
+const { slug, fabulas, autorMap } = Astro.props;
 const display = TEMAS_DISPLAY[slug];
+const contadorTexto =
+	fabulas.length === 1
+		? '1 fábula sobre este tema'
+		: `${fabulas.length} fábulas sobre este tema`;
 ---
 
 <!doctype html>
@@ -41,114 +47,14 @@ const display = TEMAS_DISPLAY[slug];
 	</head>
 	<body>
 		<Header />
-		<main class="page taxonomia-page">
-			<header class="title">
-				<Sol width="80px" />
-				<p class="rotulo">Tema</p>
-				<h1>{display}</h1>
-			</header>
-
-			<hr class="ornate" />
-
-			<section aria-labelledby="lista-titulo">
-				<h2 id="lista-titulo">
-					{fabulas.length === 1
-						? '1 fábula sobre este tema'
-						: `${fabulas.length} fábulas sobre este tema`}
-				</h2>
-
-				<ul class="lista">
-					{fabulas.map((f) => (
-						<li class="item">
-							<a href={`/fabulas/${f.id}/`} class="item-link">
-								<h3 class="item-titulo">{f.data.titulo}</h3>
-								<p class="item-fecha">
-									<FormattedDate date={f.data.fecha} />
-								</p>
-							</a>
-						</li>
-					))}
-				</ul>
-			</section>
-		</main>
+		<ListadoFabulasTaxonomia
+			rotulo="Tema"
+			display={display}
+			fabulas={fabulas}
+			autorMap={autorMap}
+			contadorTexto={contadorTexto}
+			vacioTexto="Aún no hay fábulas publicadas sobre este tema."
+		/>
 		<Footer />
 	</body>
 </html>
-
-<style>
-	.taxonomia-page {
-		max-width: var(--measure);
-		margin-inline: auto;
-		padding-block: var(--space-2xl);
-	}
-	.title {
-		text-align: center;
-		margin-bottom: var(--space-lg);
-	}
-	.rotulo {
-		font-family: var(--font-display);
-		font-size: var(--fs-3xs);
-		letter-spacing: var(--ls-widest);
-		color: var(--color-oro-texto);
-		text-transform: uppercase;
-		margin: var(--space-sm) 0 var(--space-2xs);
-	}
-	.title h1 {
-		margin: 0;
-		font-size: var(--fs-3xl);
-		text-wrap: balance;
-	}
-	section h2 {
-		text-align: center;
-		font-family: var(--font-display);
-		font-size: var(--fs-md);
-		letter-spacing: var(--ls-wide);
-		color: var(--color-oro-texto);
-		margin: var(--space-xl) 0 var(--space-lg);
-	}
-	.lista {
-		list-style: none;
-		padding: 0;
-		margin: 0;
-		display: grid;
-		grid-template-columns: repeat(2, minmax(0, 1fr));
-		gap: var(--space-lg);
-	}
-	.item-link {
-		display: block;
-		text-decoration: none;
-		color: inherit;
-		padding: var(--space-md);
-		border: var(--rule-hairline) solid var(--color-oro);
-		transition: background-color var(--dur-fast) var(--ease-standard);
-	}
-	.item-link:hover,
-	.item-link:focus-visible {
-		background-color: rgba(0, 0, 0, 0.03);
-	}
-	.item-titulo {
-		font-family: var(--font-display);
-		font-size: var(--fs-md);
-		font-weight: var(--fw-bold);
-		letter-spacing: var(--ls-wide);
-		line-height: var(--lh-snug);
-		margin: 0 0 var(--space-2xs);
-		color: var(--color-text);
-	}
-	.item-link:hover .item-titulo {
-		color: var(--color-oro-texto);
-	}
-	.item-fecha {
-		font-family: var(--font-display);
-		font-size: var(--fs-3xs);
-		letter-spacing: var(--ls-widest);
-		color: var(--color-esmeralda);
-		margin: 0;
-	}
-	@media (max-width: 720px) {
-		.lista {
-			grid-template-columns: 1fr;
-			gap: var(--space-md);
-		}
-	}
-</style>
