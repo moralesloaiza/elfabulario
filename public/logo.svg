@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="512" height="512" viewBox="0 0 200 200">
+  <title>El Fabulario</title>
+  <polygon points="100,10 190,100 100,190 10,100" fill="#C9A14A" />
+  <polygon points="100,16 184,100 100,184 16,100" fill="#0F1B3D" />
+  <polygon points="100,24 176,100 100,176 24,100" fill="#C9A14A" />
+  <polygon points="100,27 173,100 100,173 27,100" fill="#0F1B3D" />
+  <path d="M 80 58 L 122 58 L 122 73 L 95 73 L 95 92 L 113 92 L 113 106 L 95 106 L 95 144 L 80 144 Z" fill="#C9A14A" />
+</svg>
