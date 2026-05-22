@@ -3,7 +3,9 @@ import { getCollection } from 'astro:content';
 import BaseHead from '../../components/BaseHead.astro';
 import Footer from '../../components/Footer.astro';
 import Header from '../../components/Header.astro';
+import JsonLd from '../../components/JsonLd.astro';
 import ListadoFabulasTaxonomia from '../../components/ListadoFabulasTaxonomia.astro';
+import { buildBreadcrumbJsonLd } from '../../utils/jsonld';
 import { FORMAS_DISPLAY, type Forma } from '../../utils/taxonomia';
 
 export async function getStaticPaths() {
@@ -34,6 +36,14 @@ const contadorTexto =
 	fabulas.length === 1
 		? `1 fábula en ${display.toLowerCase()}`
 		: `${fabulas.length} fábulas en ${display.toLowerCase()}`;
+
+const breadcrumbLd = buildBreadcrumbJsonLd(
+	[
+		{ name: 'Inicio', path: '/' },
+		{ name: display, path: `/formas/${slug}/` },
+	],
+	Astro.site!,
+);
 ---
 
 <!doctype html>
@@ -43,6 +53,7 @@ const contadorTexto =
 			title={`Forma: ${display} · El Fabulario`}
 			description={`Fábulas en ${display.toLowerCase()} en El Fabulario.`}
 		/>
+		<JsonLd data={breadcrumbLd} />
 	</head>
 	<body>
 		<Header />
