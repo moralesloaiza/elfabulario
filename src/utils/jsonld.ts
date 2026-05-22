@@ -10,13 +10,15 @@ import {
 const SITE_ORIGIN = 'https://elfabulario.com';
 
 // Publisher entity. Emitted inline (not by reference) inside every
-// ShortStory so the JSON-LD block is self-contained. `logo` will be
-// added in PR #12 alongside the favicon redesign.
+// ShortStory and on the home WebSite so the JSON-LD block is
+// self-contained. Logo must live in /public/ (not /src/assets/) so
+// the URL is stable across builds — crawlers cache it.
 export const PUBLISHER = {
 	'@type': 'Organization',
 	'@id': `${SITE_ORIGIN}/#publisher`,
 	name: 'El Fabulario',
 	url: SITE_ORIGIN,
+	logo: `${SITE_ORIGIN}/logo.svg`,
 } as const;
 
 // Resolve an Astro asset path (which carries a build hash) to an
@@ -189,7 +191,7 @@ export function buildWebSiteJsonLd(): Record<string, unknown> {
 		url: SITE_ORIGIN,
 		description: 'Colección de fábulas en español.',
 		inLanguage: 'es',
-		publisher: { '@id': `${SITE_ORIGIN}/#publisher` },
+		publisher: PUBLISHER,
 		potentialAction: {
 			'@type': 'SearchAction',
 			target: {
