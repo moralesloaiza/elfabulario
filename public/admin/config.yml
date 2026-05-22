@@ -384,7 +384,7 @@ collections:
       # --- Bio / reseña ---
       - { name: "body", label: "Bio / reseña", widget: "markdown", hint: "Texto biográfico (para clásicos) o reseña personal (para colaboradores)." }
 
-- name: "destacado"
+  - name: "destacado"
     label: "Destacado de la home"
     description: "Singleton: el elemento curado que aparece destacado en la home. Solo uno activo a la vez. Polimórfico (fábula, entrada o autor)."
     files:
