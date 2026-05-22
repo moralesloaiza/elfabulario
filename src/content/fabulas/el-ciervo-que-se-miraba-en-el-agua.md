@@ -20,7 +20,7 @@ curador: Don Alejandro
 es_seudonimo: true
 nombre_real: Alejandro Morales Loaiza
 nota_curador: >-
-  Traducción de la versión francesa original de *Jean de la Fontaine* publicada
+  Traducción de la versión francesa original de *Jean de La Fontaine* publicada
   en *El tesoro de la juventud o Enciclopedia de conocimientos*, de Editorial
   Jackson (ca. 1920). La presente versión en español fue realizada en 2011 con
   ocasión de su publicación en *El fabulario*.
