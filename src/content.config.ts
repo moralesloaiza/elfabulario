@@ -24,7 +24,7 @@ const optionalString = z.preprocess(emptyToUndefined, z.string().optional());
 // `select` de public/admin/config.yml (panel editorial Decap).
 
 const fabulas = defineCollection({
-	loader: glob({ base: './src/content/fabulas', pattern: '**/*.{md,mdx}' }),
+	loader: glob({ base: './src/content/fabulas', pattern: '**/*.md' }),
 	schema: ({ image }) =>
 		z.object({
 			// --- Identidad de la fábula ---
