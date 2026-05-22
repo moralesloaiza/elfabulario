@@ -1,4 +1,6 @@
 ---
+import LogoMark from './LogoMark.astro';
+
 type FabulaVecina = {
   slug: string;
   titulo: string;
@@ -20,6 +22,7 @@ const { anterior, siguiente } = Astro.props;
       <span class="nav-fabulas-titulo">{anterior.titulo}</span>
     </span>
   </a>
+  <LogoMark width="56" class="nav-fabulas-logo" />
   <a class="nav-fabulas-enlace siguiente" href={`/fabulas/${siguiente.slug}/`} rel="next">
     <span class="nav-fabulas-meta">
       <span class="nav-fabulas-rotulo">Fábula siguiente</span>
@@ -32,12 +35,13 @@ const { anterior, siguiente } = Astro.props;
 <style>
   .nav-fabulas {
     max-width: var(--measure);
-    margin: var(--space-2xl) auto 0;
+    margin: var(--space-md) auto 0;
     padding-block: var(--space-lg);
     border-top: var(--rule-hairline) solid var(--color-oro);
     border-bottom: var(--rule-hairline) solid var(--color-oro);
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr auto 1fr;
+    align-items: center;
     gap: var(--space-md);
   }
   .nav-fabulas-enlace {
@@ -86,10 +90,16 @@ const { anterior, siguiente } = Astro.props;
     color: var(--color-text);
     text-wrap: balance;
   }
+  .nav-fabulas-logo {
+    flex-shrink: 0;
+  }
   @media (max-width: 640px) {
     .nav-fabulas {
       grid-template-columns: 1fr;
       gap: var(--space-sm);
+    }
+    .nav-fabulas-logo {
+      display: none;
     }
     .nav-fabulas-enlace.siguiente {
       justify-content: space-between;

@@ -149,14 +149,6 @@ const breadcrumbLd = buildBreadcrumbJsonLd(
 						<a href={autorHref}><span data-pagefind-meta="author">{autorNombre}</span></a>
 					</p>
 					{datosAutor && <p class="autor-meta">{datosAutor}</p>}
-					<p class="fecha">
-						<FormattedDate date={fecha} />
-						{fecha_actualizada && (
-							<span class="actualizada">
-								· actualizada el <FormattedDate date={fecha_actualizada} />
-							</span>
-						)}
-					</p>
 				</header>
 
 				<hr class="ornate" />
@@ -179,10 +171,27 @@ const breadcrumbLd = buildBreadcrumbJsonLd(
 			</aside>
 		)}
 
-		{curador && (
-			<p class="curaduria">
-				Esta fábula la trae al fabulario <strong>{curador}</strong>.
+		<div class="cierre">
+			{curador && (
+				<p class="curaduria">
+					Esta fábula la trae a El Fabulario <strong>{curador}</strong>.
+				</p>
+			)}
+			<p class="meta-fechas">
+				Publicada el <FormattedDate date={fecha} />
+				{fecha_actualizada && (
+					<span class="meta-fechas-actualizada">
+						{' · '}actualizada el <FormattedDate date={fecha_actualizada} />
+					</span>
+				)}
 			</p>
+		</div>
+
+		{total > 1 && (
+			<NavegacionFabulas
+				anterior={{ slug: fabulaAnterior.id, titulo: fabulaAnterior.data.titulo }}
+				siguiente={{ slug: fabulaSiguiente.id, titulo: fabulaSiguiente.data.titulo }}
+			/>
 		)}
 
 <footer class="taxonomia" aria-label="Clasificación de la fábula">
@@ -261,12 +270,6 @@ const breadcrumbLd = buildBreadcrumbJsonLd(
 					</div>
 				</footer>
 			</article>
-{total > 1 && (
-	<NavegacionFabulas
-		anterior={{ slug: fabulaAnterior.id, titulo: fabulaAnterior.data.titulo }}
-		siguiente={{ slug: fabulaSiguiente.id, titulo: fabulaSiguiente.data.titulo }}
-	/>
-)}
 		</main>
 		<Footer />
 		<IconoEditar slug={id} />
@@ -334,16 +337,6 @@ const breadcrumbLd = buildBreadcrumbJsonLd(
 		color: var(--color-text-soft);
 		margin: var(--space-3xs) 0 0;
 	}
-	.fecha {
-		font-family: var(--font-body);
-		font-style: italic;
-		font-size: var(--fs-sm);
-		color: var(--color-text-soft);
-		margin: var(--space-2xs) 0 0;
-	}
-	.actualizada {
-		font-style: italic;
-	}
 	.prose :global(p) {
 		font-size: var(--fs-md);
 		line-height: var(--lh-relaxed);
@@ -370,20 +363,35 @@ const breadcrumbLd = buildBreadcrumbJsonLd(
     		padding-inline-start: var(--space-md); /* 16px */
   	}
 	}
-	/* Pie discreto con la firma del curador */
-	.curaduria {
+	/* Bloque de cierre: firma del curador + fechas de publicación.
+	   Ambos párrafos quedan visualmente agrupados como una unidad
+	   de metadatos editoriales tras el cuerpo de la fábula. */
+	.cierre {
+		margin-top: var(--space-2xl);
+		padding-top: var(--space-md);
+		border-top: var(--rule-hairline) solid var(--color-oro);
 		text-align: center;
+	}
+	.curaduria {
 		font-family: var(--font-body);
 		font-style: italic;
 		font-size: var(--fs-sm);
 		color: var(--color-text-soft);
-		margin-top: var(--space-2xl);
-		padding-top: var(--space-md);
-		border-top: var(--rule-hairline) solid var(--color-oro);
+		margin: 0;
 	}
 	.curaduria strong {
 		font-style: normal;
 		color: var(--color-text);
+	}
+	.meta-fechas {
+		font-family: var(--font-body);
+		font-style: italic;
+		font-size: var(--fs-xs);
+		color: var(--color-text-soft);
+		margin: var(--space-2xs) 0 0;
+	}
+	.meta-fechas-actualizada {
+		font-style: italic;
 	}
 /* Nota editorial del curador, opcional, después del cuerpo */
 	.nota-curador {
@@ -419,7 +427,6 @@ const breadcrumbLd = buildBreadcrumbJsonLd(
 	.taxonomia {
 		margin-top: var(--space-xl);
 		padding-top: var(--space-md);
-		border-top: var(--rule-hairline) solid var(--color-oro);
 		display: flex;
 		flex-direction: column;
 		gap: var(--space-sm);
