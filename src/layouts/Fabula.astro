@@ -5,7 +5,6 @@ import BaseHead from '../components/BaseHead.astro';
 import Footer from '../components/Footer.astro';
 import FormattedDate from '../components/FormattedDate.astro';
 import Header from '../components/Header.astro';
-import Sol from '../components/ornaments/Sol.astro';
 import IconoEditar from '../components/IconoEditar.astro';
 import NavegacionFabulas from '../components/NavegacionFabulas.astro';
 import { slugify } from '../utils/slug';
@@ -141,7 +140,6 @@ const breadcrumbLd = buildBreadcrumbJsonLd(
 				)}
 
 				<header class="title">
-					<Sol width="80px" />
 					<h1>{titulo}</h1>
 					{resumen && <p class="resumen">{resumen}</p>}
 					<p class="autor">

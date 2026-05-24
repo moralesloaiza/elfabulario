@@ -4,7 +4,6 @@ import BaseHead from '../../components/BaseHead.astro';
 import FabulaCard from '../../components/FabulaCard.astro';
 import Footer from '../../components/Footer.astro';
 import Header from '../../components/Header.astro';
-import Sol from '../../components/ornaments/Sol.astro';
 import { SITE_DESCRIPTION, SITE_TITLE } from '../../consts';
 
 const fabulas = (await getCollection('fabulas', ({ data }) => !data.borrador)).sort(
@@ -27,7 +26,6 @@ const autoresPorId = new Map(autoresLista.map((a) => [a.id, a.data.nombre]));
 		<Header />
 		<main class="page indice">
 			<header class="title">
-				<Sol />
 				<h1>Fábulas</h1>
 				<p class="subtitulo">El catálogo completo, de la más reciente a la más antigua.</p>
 			</header>
