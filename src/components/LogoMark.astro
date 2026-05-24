@@ -15,16 +15,64 @@ const { width = 76, class: className } = Astro.props;
   class:list={['logo-mark', className]}
   width={width}
   height={width}
-  viewBox="0 0 200 200"
+  viewBox="0 0 1000 1000"
   xmlns="http://www.w3.org/2000/svg"
   aria-hidden="true"
   focusable="false"
 >
-  <polygon points="100,10 190,100 100,190 10,100" fill="var(--color-oro)" />
-  <polygon points="100,16 184,100 100,184 16,100" fill="#0F1B3D" />
-  <polygon points="100,24 176,100 100,176 24,100" fill="var(--color-oro)" />
-  <polygon points="100,27 173,100 100,173 27,100" fill="#0F1B3D" />
-  <path d="M 80 58 L 122 58 L 122 73 L 95 73 L 95 92 L 113 92 L 113 106 L 95 106 L 95 144 L 80 144 Z" fill="var(--color-oro)" />
+  <!-- Rombo: borde exterior, fondo navy y borde interno -->
+  <polygon fill="var(--color-oro)" points="500,33 925,501 500,970 74,501"/>
+  <polygon fill="#0F1B3D" points="500,57 904,501 500,946 95,501"/>
+  <polygon fill="none" stroke="var(--color-oro)" stroke-width="11.5"
+           points="500,76 885,501 500,924 113,501"/>
+
+  <!-- Sunburst: 24 rayos -->
+  <g fill="none" stroke="var(--color-oro)" stroke-width="6.5"
+     stroke-linecap="round" stroke-linejoin="round">
+    <line x1="256.5" y1="422.6" x2="368.6" y2="461.1"/>
+    <line x1="295.1" y1="358.2" x2="369.3" y2="414.8"/>
+    <line x1="344.8" y1="322.9" x2="368.2" y2="351.8"/>
+    <line x1="381.0" y1="264.6" x2="409.8" y2="318.8"/>
+    <line x1="439.3" y1="241.0" x2="456.5" y2="318.2"/>
+    <line x1="498.4" y1="152.8" x2="498.1" y2="318.1"/>
+    <line x1="557.7" y1="241.0" x2="539.3" y2="318.3"/>
+    <line x1="616.6" y1="264.2" x2="587.3" y2="318.9"/>
+    <line x1="652.2" y1="323.1" x2="633.7" y2="345.7"/>
+    <line x1="701.3" y1="358.2" x2="634.5" y2="407.7"/>
+    <line x1="740.2" y1="422.1" x2="628.1" y2="460.7"/>
+    <line x1="628.3" y1="500.0" x2="812.6" y2="500.0"/>
+    <line x1="627.2" y1="539.0" x2="740.2" y2="579.4"/>
+    <line x1="605.2" y1="571.0" x2="701.1" y2="643.7"/>
+    <line x1="564.0" y1="577.8" x2="653.0" y2="682.6"/>
+    <line x1="545.3" y1="602.9" x2="615.3" y2="738.0"/>
+    <line x1="522.3" y1="623.4" x2="557.8" y2="763.7"/>
+    <line x1="497.8" y1="694.5" x2="498.3" y2="847.3"/>
+    <line x1="454.5" y1="695.6" x2="440.0" y2="763.9"/>
+    <line x1="405.5" y1="694.9" x2="383.9" y2="737.6"/>
+    <line x1="368.7" y1="653.7" x2="344.4" y2="683.1"/>
+    <line x1="369.4" y1="587.0" x2="295.7" y2="644.1"/>
+    <line x1="368.7" y1="539.0" x2="256.6" y2="579.2"/>
+    <line x1="184.3" y1="500.2" x2="368.5" y2="500.0"/>
+  </g>
+
+  <!-- Letra F (silueta vectorial; sin fuente) -->
+  <path fill="var(--color-oro)" d="
+    M 612.6,343.3
+    L 393.7,343.3
+    L 401.6,362.2
+    L 401.6,650.4
+    L 392.1,672.4
+    L 480.3,672.4
+    L 472.4,659.8
+    L 474.0,533.9
+    L 562.2,532.3
+    L 584.3,538.6
+    L 585.8,474.0
+    L 474.0,472.4
+    L 472.4,406.3
+    L 596.9,404.7
+    L 612.6,414.2
+    Z"/>
 </svg>
 
 <style>
