@@ -7,7 +7,6 @@ import Footer from '../components/Footer.astro';
 import FormattedDate from '../components/FormattedDate.astro';
 import Header from '../components/Header.astro';
 import JsonLd from '../components/JsonLd.astro';
-import Sol from '../components/ornaments/Sol.astro';
 import { SITE_DESCRIPTION, SITE_TAGLINE, SITE_TITLE } from '../consts';
 import { buildWebSiteJsonLd } from '../utils/jsonld';
 
@@ -112,10 +111,8 @@ if (destacadoCfg && destacadoCfg.data.activo) {
 		<Header />
 		<main class="page home">
 			<section class="hero">
-				<Sol />
 				<h1>{SITE_TITLE}</h1>
 				<p class="subtitulo">{SITE_TAGLINE}</p>
-				<hr class="ornate hero-rule" />
 			</section>
 
 			{destacado && (
@@ -205,7 +202,7 @@ if (destacadoCfg && destacadoCfg.data.activo) {
 	/* ---------- HERO ---------- */
 	.hero {
 		text-align: center;
-		margin-bottom: var(--space-4xl);
+		margin-bottom: var(--space-2xl);
 	}
 	.hero h1 {
 		margin: 0 0 var(--space-md);
@@ -219,10 +216,7 @@ if (destacadoCfg && destacadoCfg.data.activo) {
 		line-height: var(--lh-snug);
 		color: var(--color-text-soft);
 		max-width: var(--measure-narrow);
-		margin: 0 auto var(--space-xl);
-	}
-	.hero-rule {
-		max-width: 240px;
+		margin: 0 auto;
 	}
 
 	/* ---------- ÍNDICE ---------- */
