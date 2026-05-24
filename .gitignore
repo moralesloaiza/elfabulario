@@ -12,7 +12,6 @@ yarn-debug.log*
 yarn-error.log*
 pnpm-debug.log*
 
-
 # environment variables
 .env
 .env.production
@@ -32,3 +31,12 @@ pnpm-debug.log*
 # Scripts y salidas locales de extraccion Samaniego (no versionar)
 salida-libro-*/
 scout-libro-*/
+
+# Bundles que el director genera para pasarle al asistente (no versionar)
+/bundle-*.txt
+/fabulario-bundle-*.txt
+/*-audit.txt
+/*-audit-*.txt
+
+# Copia local del Decap config desplegado, para diffs manuales
+/config.deployed.yml
