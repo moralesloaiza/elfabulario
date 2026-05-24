@@ -1,8 +1,6 @@
 ---
 import type { CollectionEntry } from 'astro:content';
 import FabulaCard from './FabulaCard.astro';
-import Sol from './ornaments/Sol.astro';
-
 interface Props {
 	rotulo: string;
 	display: string;
@@ -17,7 +15,6 @@ const { rotulo, display, fabulas, autorMap, contadorTexto, vacioTexto } = Astro.
 
 <main class="page taxonomia-page">
 	<header class="title">
-		<Sol width="80px" />
 		<p class="rotulo">{rotulo}</p>
 		<h1>{display}</h1>
 	</header>

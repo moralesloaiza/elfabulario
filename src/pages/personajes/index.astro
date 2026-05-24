@@ -3,7 +3,6 @@ import { getCollection } from 'astro:content';
 import BaseHead from '../../components/BaseHead.astro';
 import Footer from '../../components/Footer.astro';
 import Header from '../../components/Header.astro';
-import Sol from '../../components/ornaments/Sol.astro';
 import { SITE_TITLE } from '../../consts';
 import { PERSONAJES_DISPLAY, type Personaje } from '../../utils/taxonomia';
 
@@ -36,7 +35,6 @@ const items = Array.from(conteo.entries())
 		<Header />
 		<main class="page indice">
 			<header class="title">
-				<Sol />
 				<h1>Personajes</h1>
 				<p class="subtitulo">Animales, humanos y deidades que protagonizan las fábulas.</p>
 			</header>

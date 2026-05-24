@@ -6,7 +6,6 @@ import EntradasTabs from '../../components/EntradasTabs.astro';
 import Footer from '../../components/Footer.astro';
 import FormattedDate from '../../components/FormattedDate.astro';
 import Header from '../../components/Header.astro';
-import Sol from '../../components/ornaments/Sol.astro';
 import { SITE_TITLE } from '../../consts';
 
 const cartas = (await getCollection(
@@ -27,7 +26,6 @@ const cartas = (await getCollection(
 		<Header />
 		<main class="page bitacora">
 			<header class="title">
-				<Sol />
 				<h1>Cartas</h1>
 				<p class="subtitulo">
 					Correspondencia del público con el curador, publicada selectivamente.
