@@ -39,4 +39,4 @@ scout-libro-*/
 /*-audit-*.txt
 
 # Copia local del Decap config desplegado, para diffs manuales
-/config.deployed.yml
+/config.deployed.ymlsalida-iriarte/
