@@ -1,4 +1,4 @@
-# build output
+﻿# build output
 dist/
 # generated types
 .astro/
@@ -39,4 +39,15 @@ scout-libro-*/
 /*-audit-*.txt
 
 # Copia local del Decap config desplegado, para diffs manuales
-/config.deployed.ymlsalida-iriarte/
+/config.deployed.yml
+
+# Material de trabajo de curaduria Iriarte (no versionar)
+salida-iriarte/
+salida-iriarte-curada/
+datos-curaduria.json
+corpus-iriarte.md
+aplicar-curaduria.ps1
+publicar-iriarte.ps1
+scripts/bundle-estado.ps1
+fabulario-bitacora-bundle.txt
+fabulario-cartaheader.txt
