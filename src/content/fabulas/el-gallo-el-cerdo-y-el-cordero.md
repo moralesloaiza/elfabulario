@@ -1,0 +1,52 @@
+---
+titulo: El gallo, el cerdo y el cordero
+resumen: "Un cerdo y un gallo dan al cordero consejos opuestos sobre cómo vivir, y cada cual recomienda justo aquello a lo que él mismo se inclina."
+fecha: 2026-05-31   # MARCADOR: fijar la fecha real al publicar
+borrador: false
+personajes: [gallo, cerdo, cordero]
+temas: [critica-literaria, hipocresia]
+forma: verso
+tradicion: hispanica
+autor: tomas-de-iriarte
+curador: Don Alejandro
+es_seudonimo: true
+nombre_real: Alejandro Morales Loaiza
+# Procedencia:
+# Iriarte, Fabula LIV de "Fabulas literarias",
+# Biblioteca Virtual Miguel de Cervantes (texto de dominio publico).
+# Moraleja de la fuente incrustada como bloque final en *...* (revisar).
+---
+Había en un corral un gallinero;
+en este gallinero un gallo había;
+y detrás del corral, en un chiquero,
+un marrano grandísimo yacía.
+Ítem más, se criaba allí un cordero,
+todos ellos en buena compañía:
+¿y quién ignora que estos animales
+juntos suelen vivir en los corrales?
+Pues (con perdón de ustedes) el cochino
+dijo un día al cordero: «¡Qué agradable,
+qué feliz, qué pacífico destino
+es el poder dormir! ¡Qué saludable!
+Yo te aseguro, como soy gorrino,
+que no hay en esta vida miserable
+gusto como tenderse a la bartola,
+roncar bien, y dejar rodar la bola.»
+El gallo, por su parte, al tal cordero
+dijo en otra ocasión: «Mira, inocente,
+para estar sano, para andar ligero,
+es menester dormir muy parcamente.
+El madrugar en julio o en Febrero
+con estrellas, es método prudente,
+porque el sueño entorpece los sentidos,
+deja los cuerpos flojos y abatidos.»
+Confuso, ambos dictámenes coteja
+el simple corderillo, y no adivina
+que lo que cada uno le aconseja
+no es más que aquello mismo a que se inclina.
+Acá entre los autores ya es muy vieja
+la trampa de sentar como doctrina
+y gran regla, a la cual nos sujetamos,
+lo que en nuestros escritos practicamos.
+
+*Suelen ciertos autores sentar como principios infalibles del arte, aquello mismo que ellos practican.*

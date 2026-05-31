@@ -76,9 +76,13 @@ collections:
         hint: "Animales, roles humanos o entidades míticas que protagonizan la fábula. El humano genérico no se etiqueta."
         options:
           # Animales
+          - { label: "Abeja", value: "abeja" }
           - { label: "Águila", value: "aguila" }
+          - { label: "Araña", value: "arana" }
           - { label: "Ardilla", value: "ardilla" }
+          - { label: "Avestruz", value: "avestruz" }
           - { label: "Avispa", value: "avispa" }
+          - { label: "Avutarda", value: "avutarda" }
           - { label: "Buey", value: "buey" }
           - { label: "Búho", value: "buho" }
           - { label: "Burro", value: "burro" }
@@ -99,6 +103,7 @@ collections:
           - { label: "Comadreja", value: "comadreja" }
           - { label: "Conejo", value: "conejo" }
           - { label: "Cordero", value: "cordero" }
+          - { label: "Cuclillo", value: "cuclillo" }
           - { label: "Cuervo", value: "cuervo" }
           - { label: "Culebra", value: "culebra" }
           - { label: "Elefante", value: "elefante" }
@@ -109,25 +114,37 @@ collections:
           - { label: "Ganso", value: "ganso" }
           - { label: "Gato", value: "gato" }
           - { label: "Gorrión", value: "gorrion" }
+          - { label: "Grillo", value: "grillo" }
           - { label: "Grulla", value: "grulla" }
+          - { label: "Gusano", value: "gusano" }
           - { label: "Hormiga", value: "hormiga" }
+          - { label: "Hurón", value: "huron" }
           - { label: "Jabalí", value: "jabali" }
+          - { label: "Jilguero", value: "jilguero" }
+          - { label: "Lagarto", value: "lagarto" }
+          - { label: "Lechuza", value: "lechuza" }
           - { label: "León", value: "leon" }
           - { label: "Leopardo", value: "leopardo" }
           - { label: "Liebre", value: "liebre" }
           - { label: "Lobo", value: "lobo" }
           - { label: "Loro", value: "loro" }
           - { label: "Mariposa", value: "mariposa" }
+          - { label: "Marmota", value: "marmota" }
           - { label: "Milano", value: "milano" }
           - { label: "Mochuelo", value: "mochuelo" }
           - { label: "Mona", value: "mona" }
           - { label: "Mono", value: "mono" }
           - { label: "Mosca", value: "mosca" }
+          - { label: "Mosquito", value: "mosquito" }
+          - { label: "Mula", value: "mula" }
           - { label: "Murciélago", value: "murcielago" }
+          - { label: "Oruga", value: "oruga" }
           - { label: "Oso", value: "oso" }
           - { label: "Oveja", value: "oveja" }
           - { label: "Paloma", value: "paloma" }
+          - { label: "Pato", value: "pato" }
           - { label: "Pava", value: "pava" }
+          - { label: "Pavo", value: "pavo" }
           - { label: "Pelícano", value: "pelicano" }
           - { label: "Perdiz", value: "perdiz" }
           - { label: "Perro", value: "perro" }
@@ -135,12 +152,18 @@ collections:
           - { label: "Pulga", value: "pulga" }
           - { label: "Rana", value: "rana" }
           - { label: "Ratón", value: "raton" }
+          - { label: "Renacuajo", value: "renacuajo" }
           - { label: "Ruiseñor", value: "ruisenor" }
+          - { label: "Sanguijuela", value: "sanguijuela" }
+          - { label: "Sapo", value: "sapo" }
           - { label: "Serpiente", value: "serpiente" }
           - { label: "Tigre", value: "tigre" }
+          - { label: "Topo", value: "topo" }
           - { label: "Tordo", value: "tordo" }
           - { label: "Toro", value: "toro" }
           - { label: "Tortuga", value: "tortuga" }
+          - { label: "Urraca", value: "urraca" }
+          - { label: "Zángano", value: "zangano" }
           - { label: "Zarigüeya", value: "zarigueya" }
           - { label: "Zorro", value: "zorro" }
           # Roles humanos
@@ -151,16 +174,23 @@ collections:
           - { label: "Carretero", value: "carretero" }
           - { label: "Cazador", value: "cazador" }
           - { label: "Chalán", value: "chalan" }
+          - { label: "Ciego", value: "ciego" }
           - { label: "Cojo", value: "cojo" }
+          - { label: "Criada", value: "criada" }
           - { label: "Doctor", value: "doctor" }
           - { label: "Emperador", value: "emperador" }
           - { label: "Enfermo", value: "enfermo" }
+          - { label: "Erudito", value: "erudito" }
           - { label: "Filósofo", value: "filosofo" }
+          - { label: "Juez", value: "juez" }
           - { label: "Labrador", value: "labrador" }
           - { label: "Ladrón", value: "ladron" }
           - { label: "Lechera", value: "lechera" }
           - { label: "Mago", value: "mago" }
+          - { label: "Manco", value: "manco" }
           - { label: "Médico", value: "medico" }
+          - { label: "Mudo", value: "mudo" }
+          - { label: "Naturalista", value: "naturalista" }
           - { label: "Niño", value: "nino" }
           - { label: "Pastor", value: "pastor" }
           - { label: "Pícaro", value: "picaro" }
@@ -169,7 +199,9 @@ collections:
           - { label: "Príncipe", value: "principe" }
           - { label: "Rey", value: "rey" }
           - { label: "Rústico", value: "rustico" }
+          - { label: "Sordo", value: "sordo" }
           - { label: "Titiritero", value: "titiritero" }
+          - { label: "Trapero", value: "trapero" }
           - { label: "Zapatero", value: "zapatero" }
           # Entidades míticas
           - { label: "Amor", value: "amor" }
@@ -193,13 +225,14 @@ collections:
           - { label: "Astucia", value: "astucia" }
           - { label: "Cobardía", value: "cobardia" }
           - { label: "Codicia", value: "codicia" }
+          - { label: "Crítica literaria", value: "critica-literaria" }
           - { label: "Crítica social", value: "critica-social" }
           - { label: "Engaño", value: "engano" }
           - { label: "Envidia", value: "envidia" }
           - { label: "Esperanza", value: "esperanza" }
           - { label: "Generosidad", value: "generosidad" }
-          - { label: "Gula", value: "gula" }
           - { label: "Guerra", value: "guerra" }
+          - { label: "Gula", value: "gula" }
           - { label: "Hambre", value: "hambre" }
           - { label: "Hipocresía", value: "hipocresia" }
           - { label: "Humildad", value: "humildad" }
