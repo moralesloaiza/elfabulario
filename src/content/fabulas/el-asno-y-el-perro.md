@@ -1,9 +1,9 @@
----
+﻿---
 titulo: El Asno y el Perro
 resumen: >-
   El asno se niega a compartir su alforja con el perro hambriento; cuando aparece un lobo, el perro tampoco lo defiende.
 fecha: 2026-05-15
-borrador: true
+borrador: false
 personajes: 
   - burro
   - perro

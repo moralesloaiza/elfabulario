@@ -1,8 +1,8 @@
----
+﻿---
 titulo: Los dos Cazadores
 # resumen: pendiente de curaduría
 fecha: 2026-05-18   # MARCADOR — fijar la fecha real al publicar
-borrador: true
+borrador: false
 # --- Taxonomía: PENDIENTE DE CURADURÍA (rellenar antes de build) ---
 personajes: [cazador, lobo]
 temas: [prudencia, valentia, cobardia]

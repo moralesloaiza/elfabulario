@@ -1,8 +1,8 @@
----
+﻿---
 titulo: La Gallina de los huevos de oro
 # resumen: pendiente de curaduría
 fecha: 2026-05-16   # MARCADOR — fijar la fecha real al publicar
-borrador: true
+borrador: false
 # --- Taxonomía: PENDIENTE DE CURADURÍA (rellenar antes de build) ---
 personajes:
   - gallina

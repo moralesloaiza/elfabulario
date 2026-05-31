@@ -1,8 +1,8 @@
----
+﻿---
 titulo: El Pastor y el Filósofo
 # resumen: pendiente de curaduría
 fecha: 2026-05-16   # MARCADOR — fijar la fecha real al publicar
-borrador: true
+borrador: false
 personajes: [pastor, filosofo]
 temas: [sabiduria, naturaleza, humildad]
 forma: verso

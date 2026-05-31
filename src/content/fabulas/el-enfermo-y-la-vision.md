@@ -1,8 +1,8 @@
----
+﻿---
 titulo: El Enfermo y la Visión
 # resumen: pendiente de curaduría
 fecha: 2026-05-16   # MARCADOR — fijar la fecha real al publicar
-borrador: true
+borrador: false
 personajes: [enfermo, vision]
 temas: [codicia, muerte, piedad]
 forma: verso

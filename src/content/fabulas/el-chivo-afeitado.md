@@ -1,8 +1,8 @@
----
+﻿---
 titulo: El Chivo afeitado
 # resumen: pendiente de curaduría
 fecha: 2026-05-17   # MARCADOR — fijar la fecha real al publicar
-borrador: true
+borrador: false
 personajes: [chivo, mono]
 temas: [critica-social, necedad, vanidad]
 forma: verso

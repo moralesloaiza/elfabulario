@@ -1,8 +1,8 @@
----
+﻿---
 titulo: Los dos Titiriteros
 # resumen: pendiente de curaduría
 fecha: 2026-05-17   # MARCADOR — fijar la fecha real al publicar
-borrador: true
+borrador: false
 personajes: []
 temas: [engano, critica-social, ironia]
 forma: verso

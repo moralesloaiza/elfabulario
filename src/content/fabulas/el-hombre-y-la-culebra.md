@@ -1,9 +1,9 @@
----
+﻿---
 titulo: El Hombre y la Culebra
 resumen: >-
   Un labrador socorre a una culebra medio muerta de frío y la abriga en su seno; apenas revive, ella paga el favor matando a su bienhechor.
 fecha: 2026-05-15
-borrador: true
+borrador: false
 personajes: 
   - culebra
   - labrador

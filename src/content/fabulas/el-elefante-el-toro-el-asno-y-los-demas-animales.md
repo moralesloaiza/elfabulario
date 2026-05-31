@@ -1,8 +1,8 @@
----
+﻿---
 titulo: El Elefante, el Toro, el Asno y los demás Animales
 # resumen: pendiente de curaduría
 fecha: 2026-05-18   # MARCADOR — fijar la fecha real al publicar
-borrador: true
+borrador: false
 # --- Taxonomía: PENDIENTE DE CURADURÍA (rellenar antes de build) ---
 personajes: [elefante, toro, burro, leon]
 temas: [soberbia, vanidad]

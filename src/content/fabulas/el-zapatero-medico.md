@@ -1,8 +1,8 @@
----
+﻿---
 titulo: El Zapatero médico
 # resumen: pendiente de curaduría
 fecha: 2026-05-17   # MARCADOR — fijar la fecha real al publicar
-borrador: true
+borrador: false
 personajes: [zapatero, rey]
 temas: [engano, necedad, critica-social]
 forma: verso
