@@ -47,6 +47,10 @@ caso por caso. Justificación: versión hispana que reformula material
 esópico, no traducción directa. Aplica al corpus completo de 157 fábulas
 en cualquier extracción o normalización futura.
 
+Las fábulas de Iriarte también llevan `tradicion: hispanica` de forma fija,
+pero por una razón distinta: son originales en castellano, no reformulación
+de material esópico. Ver la entrada de `extraer_iriarte.py`.
+
 ## Sincronización con la taxonomía
 
 Si necesitas un slug nuevo (personaje, tema, tradición), hay que tocar tres
@@ -96,3 +100,50 @@ beautifulsoup4 lxml`.
    (`personajes` y `temas` validados contra `src/utils/taxonomia.ts`).
 5. Ejecutar el script de taxonomía.
 6. `npm run build` para verificar Zod.
+
+---
+
+### `extraer_iriarte.py`
+
+Extractor del corpus completo de las *Fábulas literarias* de Tomás de
+Iriarte (67 fábulas) desde la edición `fabulas-literarias--4` de la
+Biblioteca Virtual Miguel de Cervantes. Genera esqueletos `.md` con:
+
+- Estrofas separadas por línea en blanco, según las marca la fuente
+  (Cervantes Virtual rara vez divide estrofas: la mayoría de las fábulas
+  salen en un solo bloque). La estrofación fina queda a curaduría.
+- Moraleja de la fuente (cursiva tras los versos) incrustada como bloque
+  final en cursiva simple `*...*` (verificar a mano).
+- `tradicion: hispanica` por defecto. A diferencia de Samaniego, no por
+  reformulación esópica, sino porque las fábulas de Iriarte son originales
+  en castellano.
+- `autor: tomas-de-iriarte` fijo.
+- `personajes` y `temas` como líneas comentadas, pendientes de curaduría.
+- Notas al pie de la edición (solo las hay en las fábulas IV y XIV)
+  volcadas al campo `nota_curador` en borrador, para reescritura curatorial.
+
+**Obra única: no usa `--libro`.** Procesa las 67 fábulas en una pasada.
+El numeral XXI y XXII va fundido en una sola entrada, como en la fuente.
+
+**Uso:**
+
+```sh
+python extraer_iriarte.py --listar        # diagnóstico, no escribe nada
+python extraer_iriarte.py --out .\salida-iriarte
+```
+
+`--listar` imprime, por fábula: numeral, nº de estrofas, nº de versos, si
+tiene moraleja, qué notas referencia y el slug.
+
+**Dependencias:** `beautifulsoup4`, `lxml`. Instalar con `pip install
+beautifulsoup4 lxml`.
+
+**Flujo completo:**
+
+1. `python extraer_iriarte.py --out .\salida-iriarte`
+2. Comparar con `src\content\fabulas\` para descartar duplicados.
+3. Copiar los `.md` a `src\content\fabulas\`.
+4. Curar `personajes` y `temas` (validados contra `src/utils/taxonomia.ts`)
+   y revisar estrofación, moraleja y `nota_curador`. No hay script `.ps1`
+   de taxonomía para Iriarte: la obra no se divide en libros.
+5. `npm run build` para verificar Zod.
