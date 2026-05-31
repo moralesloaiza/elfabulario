@@ -1,9 +1,9 @@
----
+﻿---
 titulo: La Cierva y el León
 resumen: >-
   Una cierva, huyendo de un cazador, se refugia atropelladamente en una gruta que resulta ser la guarida del león, donde halla muerte segura.
 fecha: 2026-05-15
-borrador: true
+borrador: false
 personajes: 
   - ciervo
   - leon

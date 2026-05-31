@@ -1,8 +1,8 @@
----
+﻿---
 titulo: El Hombre y la Fantasma
 # resumen: pendiente de curaduría
 fecha: 2026-05-16   # MARCADOR — fijar la fecha real al publicar
-borrador: true
+borrador: false
 personajes: [fantasma]
 temas: [codicia, ironia, critica-social]
 forma: verso

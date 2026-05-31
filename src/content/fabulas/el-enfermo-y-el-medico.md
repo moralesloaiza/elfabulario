@@ -1,8 +1,8 @@
----
+﻿---
 titulo: El Enfermo y el Médico
 # resumen: pendiente de curaduría
 fecha: 2026-05-15   # MARCADOR — fijar la fecha real al publicar
-borrador: true
+borrador: false
 # --- Taxonomía: PENDIENTE DE CURADURÍA (rellenar antes de build) ---
 personajes: [doctor]
 temas: [necedad, ironia]

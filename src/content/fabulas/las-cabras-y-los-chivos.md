@@ -1,9 +1,9 @@
----
+﻿---
 titulo: Las Cabras y los Chivos
 resumen: >-
   Las cabras consiguen de Júpiter una barba larga; los chivos se indignan, y el dios les recuerda que el adorno aparente nada vale sin la virtud.
 fecha: 2026-05-15
-borrador: true
+borrador: false
 personajes: 
   - cabra
   - chivo

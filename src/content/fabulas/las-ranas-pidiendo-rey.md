@@ -1,9 +1,9 @@
----
+﻿---
 titulo: Las Ranas pidiendo Rey
 resumen: >-
   El pueblo libre de las ranas pide rey a Júpiter; descontentas con el rey de palo, reciben en su lugar una culebra que las devora.
 fecha: 2026-05-15
-borrador: true
+borrador: false
 personajes: 
   - rana
   - culebra

@@ -1,9 +1,9 @@
----
+﻿---
 titulo: El Milano enfermo
 resumen: >-
   Un milano que vivió de rapiñas pide a su madre, ya moribundo, que interceda por él ante los dioses; ella le responde que no hay clemencia para quien jamás respetó lo sagrado.
 fecha: 2026-05-15
-borrador: true
+borrador: false
 personajes: 
   - milano
 temas: 

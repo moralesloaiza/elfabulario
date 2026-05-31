@@ -1,9 +1,9 @@
----
+﻿---
 titulo: El Charlatán y el Rústico
 resumen: >-
   Un charlatán imita gruñidos de cerdo ante el aplauso del público; al día siguiente un rústico hace gruñir a un cerdo real escondido en la capa, y la multitud lo abuchea por falso.
 fecha: 2026-05-15
-borrador: true
+borrador: false
 personajes: 
   - cerdo
 temas: 
