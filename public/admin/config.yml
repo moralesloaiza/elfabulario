@@ -1,4 +1,4 @@
-# Panel editorial de El Fabulario (Decap CMS).
+﻿# Panel editorial de El Fabulario (Decap CMS).
 # Este archivo define cómo los colaboradores ven y editan fábulas,
 # entradas (bitácora y correspondencia) y autores.
 # Debe mantenerse sincronizado A MANO con src/content.config.ts y
@@ -464,7 +464,7 @@ collections:
             required: false
             hint: "Selecciona si Tipo = Autor. El autor debe tener retrato."
 
-- name: "paginas"
+  - name: "paginas"
     label: "Páginas"
     description: "Textos fijos de las páginas del sitio: títulos, subtítulos y, donde aplica, el contenido. Un archivo por página."
     files:
