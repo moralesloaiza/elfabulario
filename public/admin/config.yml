@@ -463,3 +463,52 @@ collections:
             display_fields: ["nombre"]
             required: false
             hint: "Selecciona si Tipo = Autor. El autor debe tener retrato."
+
+- name: "paginas"
+    label: "Páginas"
+    description: "Textos fijos de las páginas del sitio: títulos, subtítulos y, donde aplica, el contenido. Un archivo por página."
+    files:
+      - name: "home"
+        label: "Inicio"
+        file: "src/content/paginas/home.md"
+        fields:
+          - { name: "subtitulo", label: "Subtítulo del hero", widget: "string", hint: "Frase corta bajo el título en la portada." }
+      - name: "fabulas"
+        label: "Fábulas (listado)"
+        file: "src/content/paginas/fabulas.md"
+        fields:
+          - { name: "titulo", label: "Título", widget: "string" }
+          - { name: "subtitulo", label: "Subtítulo", widget: "string" }
+      - name: "bitacora"
+        label: "Bitácora (listado)"
+        file: "src/content/paginas/bitacora.md"
+        fields:
+          - { name: "titulo", label: "Título", widget: "string" }
+          - { name: "subtitulo", label: "Subtítulo", widget: "string" }
+      - name: "cartas"
+        label: "Cartas (listado)"
+        file: "src/content/paginas/cartas.md"
+        fields:
+          - { name: "titulo", label: "Título", widget: "string" }
+          - { name: "subtitulo", label: "Subtítulo", widget: "string", hint: "El enlace a Correspondencia se añade automáticamente al final." }
+      - name: "correspondencia"
+        label: "Correspondencia"
+        file: "src/content/paginas/correspondencia.md"
+        fields:
+          - { name: "titulo", label: "Título", widget: "string" }
+          - { name: "subtitulo", label: "Subtítulo", widget: "string", required: false }
+          - { name: "body", label: "Introducción (antes del formulario)", widget: "markdown", hint: "Párrafos que aparecen sobre el formulario." }
+      - name: "sobre"
+        label: "Acerca de"
+        file: "src/content/paginas/sobre.md"
+        fields:
+          - { name: "titulo", label: "Título", widget: "string" }
+          - { name: "subtitulo", label: "Subtítulo", widget: "string", required: false }
+          - { name: "body", label: "Contenido", widget: "markdown" }
+      - name: "colaborar"
+        label: "Colaborar"
+        file: "src/content/paginas/colaborar.md"
+        fields:
+          - { name: "titulo", label: "Título", widget: "string" }
+          - { name: "subtitulo", label: "Subtítulo", widget: "string", required: false }
+          - { name: "body", label: "Contenido", widget: "markdown" }

@@ -7,8 +7,11 @@ import Footer from '../components/Footer.astro';
 import FormattedDate from '../components/FormattedDate.astro';
 import Header from '../components/Header.astro';
 import JsonLd from '../components/JsonLd.astro';
-import { SITE_DESCRIPTION, SITE_TAGLINE, SITE_TITLE } from '../consts';
+import { SITE_DESCRIPTION, SITE_TITLE } from '../consts';
 import { buildWebSiteJsonLd } from '../utils/jsonld';
+
+const home = await getEntry('paginas', 'home');
+if (!home) throw new Error('[paginas] Falta src/content/paginas/home.md');
 
 const ultimas = (await getCollection('fabulas', ({ data }) => !data.borrador))
 	.sort((a, b) => b.data.fecha.valueOf() - a.data.fecha.valueOf())
@@ -112,7 +115,7 @@ if (destacadoCfg && destacadoCfg.data.activo) {
 		<main class="page home">
 			<section class="hero">
 				<h1>{SITE_TITLE}</h1>
-				<p class="subtitulo">{SITE_TAGLINE}</p>
+				<p class="subtitulo">{home.data.subtitulo}</p>
 			</section>
 
 			{destacado && (

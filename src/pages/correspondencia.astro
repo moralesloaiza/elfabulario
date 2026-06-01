@@ -3,6 +3,11 @@ import BaseHead from '../components/BaseHead.astro';
 import Footer from '../components/Footer.astro';
 import Header from '../components/Header.astro';
 import { SITE_TITLE } from '../consts';
+import { getEntry, render } from 'astro:content';
+
+const pagina = await getEntry('paginas', 'correspondencia');
+if (!pagina) throw new Error('[paginas] Falta src/content/paginas/correspondencia.md');
+const { Content } = await render(pagina);
 ---
 
 <!doctype html>
@@ -17,25 +22,14 @@ import { SITE_TITLE } from '../consts';
 		<Header />
 		<main class="page correspondencia">
 			<header class="title">
-				<h1>Correspondencia</h1>
+				<h1>{pagina.data.titulo}</h1>
+				{pagina.data.subtitulo && <p class="subtitulo">{pagina.data.subtitulo}</p>}
 			</header>
 
 			<hr class="ornate" />
 
 			<section class="prose">
-				<p>
-					<em>El Fabulario</em> recibe cartas de lectores: comentarios sobre
-					una fábula, interpretaciones, preguntas al curador, hallazgos sobre
-					autores. Las cartas seleccionadas se publican en la
-					<a href="/entradas/cartas/">sección de cartas de la bitácora</a> con
-					la réplica del curador.
-				</p>
-				<p>
-					Para escribir, completa el formulario y pulsa <em>Preparar carta</em>.
-					Te mostraremos el mensaje listo para enviar; podrás abrirlo en tu
-					cliente de correo o copiarlo y enviarlo a mano a
-					<a href="mailto:contacto@elfabulario.com">contacto@elfabulario.com</a>.
-				</p>
+				<Content />
 			</section>
 
 			<form id="carta-form" class="carta-form" novalidate>
