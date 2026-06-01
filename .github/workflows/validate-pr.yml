@@ -18,7 +18,10 @@ jobs:
 
       - name: Install dependencies
         run: npm ci
-
+      - name: Validate YAML files
+        run: |
+          npm install --no-save yaml@2
+          node .github/scripts/validate-yaml.mjs
       - name: Build
         run: npm run build
 
