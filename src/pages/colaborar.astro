@@ -3,6 +3,11 @@ import BaseHead from '../components/BaseHead.astro';
 import Footer from '../components/Footer.astro';
 import Header from '../components/Header.astro';
 import { SITE_TITLE } from '../consts';
+import { getEntry, render } from 'astro:content';
+
+const pagina = await getEntry('paginas', 'colaborar');
+if (!pagina) throw new Error('[paginas] Falta src/content/paginas/colaborar.md');
+const { Content } = await render(pagina);
 ---
 
 <!doctype html>
@@ -14,92 +19,14 @@ import { SITE_TITLE } from '../consts';
 		<Header />
 		<main class="page colaborar">
 			<header class="title">
-				<h1>Colaborar con El Fabulario</h1>
+				<h1>{pagina.data.titulo}</h1>
+				{pagina.data.subtitulo && <p class="subtitulo">{pagina.data.subtitulo}</p>}
 			</header>
 
 			<hr class="ornate" />
 
 			<section class="prose">
-				{/* TODO copy editorial: invitación general, qué tipo de fábulas buscamos, qué pedimos a un colaborador. Se redacta desde el proyecto editorial. */}
-				<p>
-					<em>El Fabulario</em> recibe colaboraciones de quienes quieren sumar fábulas
-					—clásicas o contemporáneas— a esta colección.
-				</p>
-
-				<h2>Antes de empezar</h2>
-				<p>
-					Para colaborar necesitas una cuenta de
-					<a href="https://github.com/" target="_blank" rel="noopener noreferrer">GitHub</a>.
-					Una vez que tengamos contacto, te añado como colaborador del repositorio
-					y creo tu ficha de autor con la firma que prefieras (real o seudónimo).
-				</p>
-
-				<h2>Acceso al panel editorial</h2>
-				<p>
-					Entra a <a href="/admin/">elfabulario.com/admin</a> y pulsa
-					<em>Login with GitHub</em>. La autenticación te redirige a GitHub, autorizas
-					la aplicación y vuelves al panel.
-				</p>
-
-				<h2>Cómo se publica una fábula</h2>
-				<p>
-					En el panel verás tres secciones: <strong>Fábulas</strong>,
-					<strong>Entradas</strong> y <strong>Autores</strong>. Para publicar, crea una
-					fábula nueva y completa los campos del formulario. El sistema guarda tu trabajo
-					como borrador hasta que decidas enviarlo a revisión.
-				</p>
-				<p>El recorrido de una fábula tiene cuatro estados:</p>
-				<ol>
-					<li><strong>Borrador</strong> — la estás escribiendo, solo tú la ves.</li>
-					<li><strong>En revisión</strong> — está lista para que yo la revise.</li>
-					<li><strong>Aprobada</strong> — la he revisado y aprobado.</li>
-					<li><strong>Publicada</strong> — al pulsar <em>Publicar</em>, la fábula se integra a la rama principal y aparece en el sitio en pocos minutos.</li>
-				</ol>
-
-				<h2>Convenciones</h2>
-
-				<h3>Títulos de fábulas clásicas</h3>
-				<p>
-					Si publicas una fábula clásica, conservamos el título tal como aparece en la
-					edición original, aunque tenga formas en desuso (por ejemplo,
-					<em>«La águila…»</em> de Samaniego). No modernizamos.
-				</p>
-
-				<h3>Versos</h3>
-				<p>
-					Si la fábula está en verso, escríbela tal como en el original. Un salto de
-					línea simple equivale a un nuevo verso; una línea en blanco, a una nueva
-					estrofa. No uses <code>&lt;br&gt;</code>.
-				</p>
-
-				<h3>Ilustración</h3>
-				<p>
-					Cada fábula lleva una ilustración con estética Art-Déco. Si la tienes,
-					súbela desde el campo <em>Ilustración</em>: proporción 3:2, resolución mínima
-					1200×800. Si no la tienes, publícala sin ella y la añadimos después.
-				</p>
-
-				<h3>Audio en Spotify</h3>
-				<p>
-					Si la fábula tiene declamación publicada en
-					<a href="https://open.spotify.com/show/0CFLmgPkPPG5VQ6nZOMSNA" target="_blank" rel="noopener noreferrer">nuestro pódcast</a>,
-					pega la URL del episodio en el campo <em>Enlace Spotify</em>. El sitio
-					la embebe automáticamente.
-				</p>
-
-				<h2>Lo que puedes editar</h2>
-				<p>
-					Solo puedes editar las fábulas que llevan tu firma como curador. El sistema
-					lo valida automáticamente al enviarlas a revisión: si modificas una fábula
-					que no es tuya, el envío queda bloqueado.
-				</p>
-
-				<h2>¿Dudas?</h2>
-				<p>
-					Escríbeme a <a href="mailto:alejandro@elfabulario.com">alejandro@elfabulario.com</a>.
-					Estoy del otro lado para ayudar con el formato, la elección del texto, la
-					ilustración o lo que necesites.
-				</p>
+				<Content />
 			</section>
 		</main>
 		<Footer />

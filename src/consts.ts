@@ -2,9 +2,6 @@
 
 export const SITE_TITLE = 'El Fabulario';
 
-// Tagline editorial corto, visible en pantalla (p.ej. subtítulo del hero).
-export const SITE_TAGLINE = 'Colección de fábulas en español.';
-
 // Descripción larga, solo para <meta name="description"> y og:description.
 // No aparece en pantalla. Mantener entre 120 y 160 caracteres.
 export const SITE_DESCRIPTION =

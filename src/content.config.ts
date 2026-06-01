@@ -189,4 +189,18 @@ const destacado = defineCollection({
 		),
 });
 
-export const collections = { fabulas, entradas, autores, destacado };
+// Colección `paginas`: textos fijos de las páginas del sitio (singletons).
+// Un archivo .md por página. `titulo` y `subtitulo` son opcionales porque no
+// todas las páginas usan ambos (la home solo tiene subtítulo; su título es
+// SITE_TITLE). El cuerpo Markdown se usa solo en las páginas con contenido
+// editable (correspondencia, sobre, colaborar). Files-collection equivalente
+// en public/admin/config.yml.
+const paginas = defineCollection({
+	loader: glob({ base: './src/content/paginas', pattern: '*.md' }),
+	schema: z.object({
+		titulo: optionalString,
+		subtitulo: optionalString,
+	}),
+});
+
+export const collections = { fabulas, entradas, autores, destacado, paginas };

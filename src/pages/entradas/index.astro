@@ -1,6 +1,6 @@
 ---
 import { Image } from 'astro:assets';
-import { getCollection } from 'astro:content';
+import { getCollection, getEntry } from 'astro:content';
 import BaseHead from '../../components/BaseHead.astro';
 import EntradasTabs from '../../components/EntradasTabs.astro';
 import Footer from '../../components/Footer.astro';
@@ -11,6 +11,9 @@ import { SITE_TITLE } from '../../consts';
 const entradas = (await getCollection('entradas', ({ data }) => !data.borrador)).sort(
 	(a, b) => b.data.fecha.valueOf() - a.data.fecha.valueOf(),
 );
+
+const pagina = await getEntry('paginas', 'bitacora');
+if (!pagina) throw new Error('[paginas] Falta src/content/paginas/bitacora.md');
 ---
 
 <!doctype html>
@@ -25,8 +28,8 @@ const entradas = (await getCollection('entradas', ({ data }) => !data.borrador))
 		<Header />
 		<main class="page bitacora">
 			<header class="title">
-				<h1>Bitácora</h1>
-				<p class="subtitulo">Anuncios, hitos, notas y correspondencia del Fabulario.</p>
+				<h1>{pagina.data.titulo}</h1>
+				{pagina.data.subtitulo && <p class="subtitulo">{pagina.data.subtitulo}</p>}
 			</header>
 
 			<hr class="ornate" />
