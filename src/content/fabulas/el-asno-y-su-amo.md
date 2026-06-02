@@ -1,20 +1,23 @@
 ---
 titulo: El asno y su amo
-resumen: "Un burro reprocha a su amo el pienso que le da, convencido de saber mejor que él lo que le conviene."
-fecha: 2026-05-31   # MARCADOR: fijar la fecha real al publicar
+resumen: Un burro reprocha a su amo el pienso que le da, convencido de saber
+  mejor que él lo que le conviene.
+fecha: 2026-05-31
+fecha_actualizada: 2026-06-02
+ilustracion: /src/assets/uploads/chatgpt-image-2-jun-2026-18_53_55.png
 borrador: false
-personajes: [burro, amo]
-temas: [critica-literaria, necedad]
+personajes:
+  - burro
+  - amo
+temas:
+  - critica-literaria
+  - necedad
 forma: verso
 tradicion: hispanica
 autor: tomas-de-iriarte
 curador: Don Alejandro
 es_seudonimo: true
 nombre_real: Alejandro Morales Loaiza
-# Procedencia:
-# Iriarte, Fabula XXVII de "Fabulas literarias",
-# Biblioteca Virtual Miguel de Cervantes (texto de dominio publico).
-# Moraleja de la fuente incrustada como bloque final en *...* (revisar).
 ---
 «Siempre acostumbra hacer el vulgo necio
 de lo bueno y lo malo igual aprecio:
