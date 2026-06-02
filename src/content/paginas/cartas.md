@@ -1,4 +1,4 @@
 ---
-titulo: "Cartas"
-subtitulo: "Correspondencia del público con el curador, publicada selectivamente."
+titulo: Cartas
+subtitulo: Correspondencia entre lectores y curadores, publicada a discreción
 ---
