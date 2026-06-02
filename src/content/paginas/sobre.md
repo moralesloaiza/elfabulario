@@ -1,6 +1,6 @@
 ---
 titulo: Acerca de
-subtitulo: "A nuestros más queridos visitantes:"
+subtitulo: ""
 ---
 El Fabulario nació el 8 de noviembre de 2011, casi sin darse cuenta, como nacen las cosas que importan: entre el entusiasmo de unos cuantos jóvenes que amábamos la literatura en español y queríamos compartirla. La idea era hacer una colección con fábulas de todos los tiempos, pero con un objetivo claro: que cualquiera pudiera encontrarlas, leerlas y llevarse algo de ellas.
 
