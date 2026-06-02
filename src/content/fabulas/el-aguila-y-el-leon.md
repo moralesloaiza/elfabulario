@@ -1,20 +1,25 @@
 ---
 titulo: El águila y el león
-resumen: "El águila y el león debaten sobre cuál de los dos reina con más nobleza, cada uno defendiendo su dominio."
-fecha: 2026-05-31   # MARCADOR: fijar la fecha real al publicar
+resumen: El águila y el león debaten sobre cuál de los dos reina con más
+  nobleza, cada uno defendiendo su dominio.
+fecha: 2026-05-31
+fecha_actualizada: 2026-06-02
+ilustracion: /src/assets/uploads/chatgpt-image-2-jun-2026-18_44_15.png
 borrador: false
-personajes: [aguila, leon, murcielago]
-temas: [critica-literaria, hipocresia, traicion]
+personajes:
+  - aguila
+  - leon
+  - murcielago
+temas:
+  - critica-literaria
+  - hipocresia
+  - traicion
 forma: verso
 tradicion: hispanica
 autor: tomas-de-iriarte
 curador: Don Alejandro
 es_seudonimo: true
 nombre_real: Alejandro Morales Loaiza
-# Procedencia:
-# Iriarte, Fabula XXV de "Fabulas literarias",
-# Biblioteca Virtual Miguel de Cervantes (texto de dominio publico).
-# Moraleja de la fuente incrustada como bloque final en *...* (revisar).
 ---
 El águila y el león
 gran conferencia tuvieron
