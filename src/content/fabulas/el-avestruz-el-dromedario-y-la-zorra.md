@@ -1,20 +1,24 @@
 ---
 titulo: El avestruz, el dromedario y la zorra
-resumen: "En una tertulia de animales, el avestruz y el dromedario se alaban mutuamente, hasta que la zorra repara en el motivo de tanto elogio."
-fecha: 2026-05-31   # MARCADOR: fijar la fecha real al publicar
+resumen: En una tertulia de animales, el avestruz y el dromedario se alaban
+  mutuamente, hasta que la zorra repara en el motivo de tanto elogio.
+fecha: 2026-05-31
+fecha_actualizada: 2026-06-02
+ilustracion: /src/assets/uploads/chatgpt-image-2-jun-2026-19_00_28.png
 borrador: false
-personajes: [avestruz, camello, zorro]
-temas: [critica-literaria, adulacion]
+personajes:
+  - avestruz
+  - camello
+  - zorro
+temas:
+  - critica-literaria
+  - adulacion
 forma: verso
 tradicion: hispanica
 autor: tomas-de-iriarte
 curador: Don Alejandro
 es_seudonimo: true
 nombre_real: Alejandro Morales Loaiza
-# Procedencia:
-# Iriarte, Fabula XXXIII de "Fabulas literarias",
-# Biblioteca Virtual Miguel de Cervantes (texto de dominio publico).
-# Moraleja de la fuente incrustada como bloque final en *...* (revisar).
 ---
 Para pasar el tiempo congregada
 una tertulia de animales varios
