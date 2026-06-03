@@ -22,6 +22,8 @@ jobs:
         run: |
           npm install --no-save yaml@2
           node .github/scripts/validate-yaml.mjs
+      - name: Validate fabula images
+        run: node .github/scripts/validate-images.mjs
       - name: Build
         run: npm run build
 
