@@ -1,20 +1,22 @@
 ---
 titulo: El burro del aceitero
-resumen: "Un borrico que acarrea cueros de aceite se lamenta de pasar las noches en una cuadra a oscuras pese a transportar tanto combustible."
-fecha: 2026-05-31   # MARCADOR: fijar la fecha real al publicar
+resumen: Un borrico que acarrea cueros de aceite se lamenta de pasar las noches
+  en una cuadra a oscuras pese a transportar tanto combustible.
+fecha: 2026-05-31
+fecha_actualizada: 2026-06-02
+ilustracion: /src/assets/uploads/chatgpt-image-2-jun-2026-21_20_31.png
 borrador: false
-personajes: [burro]
-temas: [critica-literaria, necedad]
+personajes:
+  - burro
+temas:
+  - critica-literaria
+  - necedad
 forma: verso
 tradicion: hispanica
 autor: tomas-de-iriarte
 curador: Don Alejandro
 es_seudonimo: true
 nombre_real: Alejandro Morales Loaiza
-# Procedencia:
-# Iriarte, Fabula LXIII de "Fabulas literarias",
-# Biblioteca Virtual Miguel de Cervantes (texto de dominio publico).
-# Moraleja de la fuente incrustada como bloque final en *...* (revisar).
 ---
 En cierta ocasión, un cuero
 lleno de aceite llevaba
