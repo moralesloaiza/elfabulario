@@ -4,7 +4,7 @@ resumen: El águila y el león debaten sobre cuál de los dos reina con más
   nobleza, cada uno defendiendo su dominio.
 fecha: 2026-05-31
 fecha_actualizada: 2026-06-02
-ilustracion: /src/assets/uploads/chatgpt-image-2-jun-2026-18_44_15.png
+ilustracion: /src/assets/uploads/chatgpt-image-2-jun-2026-18_50_20.png
 borrador: false
 personajes:
   - aguila
