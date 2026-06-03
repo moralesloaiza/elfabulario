@@ -1,20 +1,24 @@
 ---
 titulo: El buey y la cigarra
-resumen: "Mientras el buey ara, una cigarra le señala un surco torcido, y el buey le responde sobre el valor de un descuido entre muchos aciertos."
-fecha: 2026-05-31   # MARCADOR: fijar la fecha real al publicar
+resumen: Mientras el buey ara, una cigarra le señala un surco torcido, y el buey
+  le responde sobre el valor de un descuido entre muchos aciertos.
+fecha: 2026-05-31
+fecha_actualizada: 2026-06-02
+ilustracion: /src/assets/uploads/chatgpt-image-2-jun-2026-19_08_53.png
 borrador: false
-personajes: [buey, cigarra]
-temas: [critica-literaria, envidia, necedad]
+personajes:
+  - buey
+  - cigarra
+temas:
+  - critica-literaria
+  - envidia
+  - necedad
 forma: verso
 tradicion: hispanica
 autor: tomas-de-iriarte
 curador: Don Alejandro
 es_seudonimo: true
 nombre_real: Alejandro Morales Loaiza
-# Procedencia:
-# Iriarte, Fabula XXXVII de "Fabulas literarias",
-# Biblioteca Virtual Miguel de Cervantes (texto de dominio publico).
-# Moraleja de la fuente incrustada como bloque final en *...* (revisar).
 ---
 Arando estaba el buey, y a poco trecho
 la cigarra, cantando le decía:
