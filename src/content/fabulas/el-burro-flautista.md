@@ -1,20 +1,24 @@
 ---
 titulo: El burro flautista
-resumen: "Un burro pasa por casualidad junto a una flauta abandonada y, al soplar, logra arrancarle un sonido que lo lleva a sacar conclusiones sobre su propio talento."
-fecha: 2026-05-31   # MARCADOR: fijar la fecha real al publicar
+resumen: Un burro pasa por casualidad junto a una flauta abandonada y, al
+  soplar, logra arrancarle un sonido que lo lleva a sacar conclusiones sobre su
+  propio talento.
+fecha: 2026-05-31
+ilustracion: /src/assets/uploads/chatgpt-image-2-jun-2026-21_20_31.png
 borrador: false
-personajes: [burro]
-temas: [vanidad, necedad, soberbia, critica-literaria]
+personajes:
+  - burro
+temas:
+  - vanidad
+  - necedad
+  - soberbia
+  - critica-literaria
 forma: verso
 tradicion: hispanica
 autor: tomas-de-iriarte
 curador: Don Alejandro
 es_seudonimo: true
 nombre_real: Alejandro Morales Loaiza
-# Procedencia:
-# Iriarte, Fabula VIII de "Fabulas literarias",
-# Biblioteca Virtual Miguel de Cervantes (texto de dominio publico).
-# Moraleja de la fuente incrustada como bloque final en *...* (revisar).
 ---
 Esta fabulilla,
 salga bien o mal,
