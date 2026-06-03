@@ -1,20 +1,24 @@
 ---
 titulo: El caminante y la mula de alquiler
-resumen: "Una mula de alquiler se resiste a obedecer a su jinete y presume de bríos, hasta que el camino pone a prueba su jactancia."
-fecha: 2026-05-31   # MARCADOR: fijar la fecha real al publicar
+resumen: Una mula de alquiler se resiste a obedecer a su jinete y presume de
+  bríos, hasta que el camino pone a prueba su jactancia.
+fecha: 2026-05-31
+fecha_actualizada: 2026-06-02
+ilustracion: /src/assets/uploads/caminante-mula.png
 borrador: false
-personajes: [caminante, mula]
-temas: [vanidad, soberbia, critica-literaria]
+personajes:
+  - caminante
+  - mula
+temas:
+  - vanidad
+  - soberbia
+  - critica-literaria
 forma: verso
 tradicion: hispanica
 autor: tomas-de-iriarte
 curador: Don Alejandro
 es_seudonimo: true
 nombre_real: Alejandro Morales Loaiza
-# Procedencia:
-# Iriarte, Fabula XVII de "Fabulas literarias",
-# Biblioteca Virtual Miguel de Cervantes (texto de dominio publico).
-# Moraleja de la fuente incrustada como bloque final en *...* (revisar).
 ---
 Harta de paja y cebada
 una mula de alquiler
