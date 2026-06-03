@@ -4,7 +4,7 @@ resumen: Un burro pasa por casualidad junto a una flauta abandonada y, al
   soplar, logra arrancarle un sonido que lo lleva a sacar conclusiones sobre su
   propio talento.
 fecha: 2026-05-31
-ilustracion: /src/assets/uploads/chatgpt-image-2-jun-2026-21_20_31.png
+ilustracion: /src/assets/uploads/chatgpt-image-2-jun-2026-22_46_14.png
 borrador: false
 personajes:
   - burro
