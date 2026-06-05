@@ -1,20 +1,25 @@
 ---
 titulo: El elefante y otros animales
-resumen: "Reunidos los animales, el elefante reprende los vicios de cada cual sin señalar a nadie en particular, y la reacción de los presentes revela quién se da por aludido."
-fecha: 2026-05-31   # MARCADOR: fijar la fecha real al publicar
+resumen: Reunidos los animales, el elefante reprende los vicios de cada cual sin
+  señalar a nadie en particular, y la reacción de los presentes revela quién se
+  da por aludido.
+fecha: 2026-05-31
+fecha_actualizada: 2026-06-04
+ilustracion: /src/assets/uploads/elefante_animales.png
 borrador: false
-personajes: [elefante]
-temas: [critica-social, critica-literaria, vanidad, soberbia]
+personajes:
+  - elefante
+temas:
+  - critica-social
+  - critica-literaria
+  - vanidad
+  - soberbia
 forma: verso
 tradicion: hispanica
 autor: tomas-de-iriarte
 curador: Don Alejandro
 es_seudonimo: true
 nombre_real: Alejandro Morales Loaiza
-# Procedencia:
-# Iriarte, Fabula I de "Fabulas literarias",
-# Biblioteca Virtual Miguel de Cervantes (texto de dominio publico).
-# Moraleja de la fuente incrustada como bloque final en *...* (revisar).
 ---
 Allá en tiempo de entonces,
 y en tierras muy remotas,
