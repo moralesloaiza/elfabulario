@@ -1,20 +1,23 @@
 ---
 titulo: El cuervo y el pavo
-resumen: "Desafiados a volar el cuervo y el pavo, este se dedica a censurar el aspecto y los hábitos del otro en vez de atender a la prueba."
-fecha: 2026-05-31   # MARCADOR: fijar la fecha real al publicar
+resumen: Desafiados a volar el cuervo y el pavo, este se dedica a censurar el
+  aspecto y los hábitos del otro en vez de atender a la prueba.
+fecha: 2026-05-31
+fecha_actualizada: 2026-06-04
+ilustracion: /src/assets/uploads/cuervo_pavo.png
 borrador: false
-personajes: [cuervo, pavo]
-temas: [critica-literaria, envidia]
+personajes:
+  - cuervo
+  - pavo
+temas:
+  - critica-literaria
+  - envidia
 forma: verso
 tradicion: hispanica
 autor: tomas-de-iriarte
 curador: Don Alejandro
 es_seudonimo: true
 nombre_real: Alejandro Morales Loaiza
-# Procedencia:
-# Iriarte, Fabula XXXIV de "Fabulas literarias",
-# Biblioteca Virtual Miguel de Cervantes (texto de dominio publico).
-# Moraleja de la fuente incrustada como bloque final en *...* (revisar).
 ---
 Pues como digo, es el caso,
 y vaya de cuento,
