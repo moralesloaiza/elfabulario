@@ -5,6 +5,7 @@ resumen: Una avispa lleva de ira lidia con el mundo enardecida, hasta que pronto
 fecha: 2012-01-05
 fecha_actualizada: 2026-05-14
 ilustracion: /src/assets/uploads/chatgpt-image-14-may-2026-18_38_20.png
+spotify_url: https://open.spotify.com/episode/5XTCDUEMrYK3dzkfsOEHZo?si=Jc8ZvoTbRvWfplPVvOesHw
 borrador: false
 personajes:
   - avispa
@@ -107,7 +108,7 @@ pero emparamada,
 terminó la avispa
 por morir ahogada.
 
- ** * Tal como la avispa*
+*Tal como la avispa*
 *que cuenta esta fábula,*
 *el mundo está lleno*
 *de personas bravas,*
@@ -116,4 +117,4 @@ por morir ahogada.
 *que se hacen famosas*
 *debido a sus rabias*
 *y al final se ahogan*
-*en un vaso de agua.***
+*en un vaso de agua.*
