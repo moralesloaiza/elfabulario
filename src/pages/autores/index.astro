@@ -52,7 +52,7 @@ const autoresConConteo = autores
 						<a href={`/autores/${a.id}/`} class="item-link">
 							{a.data.imagen && (
 								<figure class="item-img">
-									<Image src={a.data.imagen} alt={`Retrato de ${a.data.nombre}`} width={360} height={240} />
+									<Image src={a.data.imagen} alt={`Retrato de ${a.data.nombre}`} width={720} height={480} />
 								</figure>
 							)}
 							<div class="item-meta">
@@ -92,14 +92,22 @@ const autoresConConteo = autores
 		max-width: var(--measure-narrow);
 		margin: 0 auto;
 	}
+
+	/* Grid de fichas: 1 columna en móvil, 2 desde 480px, 3 desde 720px. */
 	.lista {
 		list-style: none;
 		padding: 0;
 		margin: var(--space-2xl) 0 0;
 		max-width: none;
 		display: grid;
-		grid-template-columns: repeat(2, minmax(0, 1fr));
+		grid-template-columns: 1fr;
 		gap: var(--space-xl);
+	}
+
+	@media (min-width: 480px) {
+		.lista {
+			grid-template-columns: repeat(2, minmax(0, 1fr));
+		}
 	}
 
 	@media (min-width: 720px) {
@@ -107,26 +115,45 @@ const autoresConConteo = autores
 			grid-template-columns: repeat(3, minmax(0, 1fr));
 		}
 	}
+
 	.item-link {
 		display: block;
 		text-decoration: none;
 		color: inherit;
 		text-align: center;
-		padding: var(--space-md);
 	}
+
+	/* Marco doble dorado; la imagen llena la ficha en proporción 3:2. */
 	.item-img {
-		margin: 0 auto var(--space-sm);
-		max-width: 220px;
+		position: relative;
+		aspect-ratio: 3 / 2;
+		overflow: hidden;
+		margin: 0 0 var(--space-md);
+		border: var(--rule-medium) solid var(--color-oro);
+	}
+	.item-img::before {
+		content: '';
+		position: absolute;
+		inset: 6px;
+		border: var(--rule-hairline) solid var(--color-oro);
+		pointer-events: none;
+		z-index: 1;
 	}
 	.item-img :global(img) {
 		display: block;
 		width: 100%;
-		height: auto;
-		border: var(--rule-hairline) solid var(--color-oro);
+		height: 100%;
+		object-fit: cover;
+		transition: transform var(--dur-fast) var(--ease-standard);
 	}
+	.item-link:hover .item-img :global(img),
+	.item-link:focus-visible .item-img :global(img) {
+		transform: scale(1.02);
+	}
+
 	.item-nombre {
 		font-family: var(--font-display);
-		font-size: var(--fs-md);
+		font-size: var(--fs-lg);
 		font-weight: var(--fw-bold);
 		letter-spacing: var(--ls-wide);
 		line-height: var(--lh-snug);
@@ -138,6 +165,7 @@ const autoresConConteo = autores
 	.item-link:focus-visible .item-nombre {
 		color: var(--color-oro-texto);
 	}
+
 	.item-conteo {
 		font-family: var(--font-display);
 		font-size: var(--fs-3xs);
