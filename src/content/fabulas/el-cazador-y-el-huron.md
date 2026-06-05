@@ -1,20 +1,24 @@
 ---
 titulo: El cazador y el hurón
-resumen: "Un cazador presume de su jornada de caza ante un vecino, sin mencionar al hurón que, desde su jaula, reclama la parte que le toca."
-fecha: 2026-05-31   # MARCADOR: fijar la fecha real al publicar
+resumen: Un cazador presume de su jornada de caza ante un vecino, sin mencionar
+  al hurón que, desde su jaula, reclama la parte que le toca.
+fecha: 2026-05-31
+fecha_actualizada: 2026-06-04
+ilustracion: /src/assets/uploads/cazador_huron.png
 borrador: false
-personajes: [cazador, huron]
-temas: [critica-literaria, ingratitud, vanidad]
+personajes:
+  - cazador
+  - huron
+temas:
+  - critica-literaria
+  - ingratitud
+  - vanidad
 forma: verso
 tradicion: hispanica
 autor: tomas-de-iriarte
 curador: Don Alejandro
 es_seudonimo: true
 nombre_real: Alejandro Morales Loaiza
-# Procedencia:
-# Iriarte, Fabula LII de "Fabulas literarias",
-# Biblioteca Virtual Miguel de Cervantes (texto de dominio publico).
-# Moraleja de la fuente incrustada como bloque final en *...* (revisar).
 ---
 Cargado de conejos
 y muerto de calor,
