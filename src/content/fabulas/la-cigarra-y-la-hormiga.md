@@ -33,7 +33,7 @@ nota_curador: >-
   memorables del fabulario español.
 
 
-  ### **Glosario**
+  #### **Glosario**
 
 
   1. **Aposento:** habitación o cuarto donde se vive. La cigarra se refugia en su «estrecho aposento».
