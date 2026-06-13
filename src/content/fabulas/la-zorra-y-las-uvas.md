@@ -1,21 +1,58 @@
-﻿---
+---
 titulo: La Zorra y las Uvas
-# resumen: pendiente de curaduría
-fecha: 2026-05-15   # MARCADOR — fijar la fecha real al publicar
+resumen: Una zorra hambrienta no logra alcanzar las uvas y, para consolarse,
+  decide que están verdes.
+fecha: 2026-05-15
+fecha_actualizada: 2026-06-12
+ilustracion: /src/assets/uploads/chatgpt-image-12-jun-2026-22_01_54.png
+spotify_url: https://open.spotify.com/episode/1j3Rm2zctbFOj10aSBgeD8?si=JlTOxXeGSPWZsf-m2nagrQ
 borrador: false
-# --- Taxonomía: PENDIENTE DE CURADURÍA (rellenar antes de build) ---
-personajes: [zorro]
-temas: [envidia, soberbia]
+personajes:
+  - zorro
+temas:
+  - soberbia
 forma: verso
 tradicion: hispanica
 autor: felix-maria-de-samaniego
 curador: Don Alejandro
 es_seudonimo: true
 nombre_real: Alejandro Morales Loaiza
-# --- Procedencia ---
-# Libro IV, Fábula VI — ed. Emilio Palacios Fernández,
-# Biblioteca Virtual Miguel de Cervantes (texto de dominio público).
-# Última estrofa envuelta en ***...*** como hipótesis de moraleja; revisar.
+nota_curador: >-
+  De esta fábula viene una frase que aún usamos sin saberlo: decir que las uvas
+  «están verdes» cuando despreciamos lo que no podemos alcanzar. El origen es de
+  nuevo Esopo; el latino Fedro la fijó en pocos versos y La Fontaine la difundió
+  en Francia. Samaniego cierra dirigiéndose a un tal *Fabio* —no una persona
+  real, sino el destinatario ficticio al que los poetas del siglo XVIII solían
+  hablar para dar su consejo. La zorra no aprende humildad: aprende a disfrazar
+  su fracaso de desdén. Esa es, precisamente, la fina ironía de la pieza.
+
+
+  **Glosario**
+
+
+  1. **Es voz común:** se dice, todos lo saben; fórmula para introducir algo sabido.
+
+  2. **A más del mediodía:** pasado ya el mediodía.
+
+  3. **En ayunas:** sin haber comido nada todavía.
+
+  4. **Parra:** planta de la vid cuando se extiende sobre un soporte; de ella cuelgan las uvas.
+
+  5. **Vid:** la planta que da las uvas.
+
+  6. **Pender:** colgar. El fruto «pendía» de lo alto.
+
+  7. **Congojas:** angustias, aflicciones, desasosiego.
+
+  8. **Racimos:** conjuntos de uvas unidas por sus tallos.
+
+  9. **Andar en probaduras:** hacer intentos, ir probando una y otra vez.
+
+  10. **De fijo:** con seguridad, sin duda.
+
+  11. **Fabio:** nombre ficticio del oyente al que el fabulista dirige la moraleja.
+
+  12. **Frescamente:** aquí, con descaro o desfachatez; decirlo «tan fresco», sin inmutarse.
 ---
 Es voz común que, a más del mediodía,
 en ayunas la Zorra iba cazando.
