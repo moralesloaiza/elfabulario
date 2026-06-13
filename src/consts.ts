@@ -9,3 +9,7 @@ export const SITE_DESCRIPTION =
 
 export const SITE_URL = 'https://elfabulario.com';
 export const SITE_LANG = 'es';
+
+// Podcast del proyecto en Spotify (el show completo, no un episodio).
+export const SPOTIFY_SHOW_URL =
+	'https://open.spotify.com/show/0CFLmgPkPPG5VQ6nZOMSNA';

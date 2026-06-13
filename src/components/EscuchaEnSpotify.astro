@@ -1,0 +1,105 @@
+---
+// Card linking to the Spotify show. Intentionally a plain link (not an
+// embed): the Follow action only exists on Spotify's own surface, so a link
+// converts to followers better than an iframe and ships zero third-party JS.
+import { SPOTIFY_SHOW_URL } from '../consts';
+---
+
+<section class="seccion-spotify" aria-labelledby="spotify-titulo">
+	
+		class="spotify-card"
+		href={SPOTIFY_SHOW_URL}
+		target="_blank"
+		rel="noopener"
+		aria-label="Escúchalo en Spotify (se abre en una pestaña nueva)"
+	>
+		<span class="eyebrow" aria-hidden="true">— En audio —</span>
+		<span class="spotify-card__play" aria-hidden="true">
+			<svg viewBox="0 0 48 48" width="48" height="48" xmlns="http://www.w3.org/2000/svg">
+				<circle cx="24" cy="24" r="22" fill="none" stroke="currentColor" stroke-width="1.5" />
+				<circle cx="24" cy="24" r="18" fill="none" stroke="currentColor" stroke-width="0.75" />
+				<polygon points="20,16 20,32 34,24" fill="currentColor" />
+			</svg>
+		</span>
+		<h2 id="spotify-titulo" class="spotify-card__titulo">Escúchalo en Spotify</h2>
+		<p class="spotify-card__texto">
+			Cada fábula, narrada por Don Alejandro. Sigue el podcast para no perderte ningún episodio.
+		</p>
+	</a>
+</section>
+
+<style>
+	.seccion-spotify {
+		margin-bottom: var(--space-4xl);
+		display: flex;
+		justify-content: center;
+	}
+	.spotify-card {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		text-align: center;
+		gap: var(--space-2xs);
+		width: 100%;
+		max-width: var(--measure-narrow);
+		padding: var(--space-xl);
+		position: relative;
+		text-decoration: none;
+		color: var(--color-oro-texto);
+		border: var(--rule-medium) solid var(--color-oro);
+		transition: border-color var(--dur-fast) var(--ease-standard),
+			color var(--dur-fast) var(--ease-standard);
+	}
+	.spotify-card::before {
+		content: '';
+		position: absolute;
+		inset: 6px;
+		border: var(--rule-thin) solid var(--color-oro);
+		pointer-events: none;
+		transition: border-color var(--dur-fast) var(--ease-standard);
+	}
+	.spotify-card:hover,
+	.spotify-card:focus-visible {
+		border-color: var(--color-esmeralda);
+		color: var(--color-esmeralda);
+		outline: none;
+	}
+	.spotify-card:hover::before,
+	.spotify-card:focus-visible::before {
+		border-color: var(--color-esmeralda);
+	}
+	.spotify-card .eyebrow {
+		display: block;
+		font-family: var(--font-display);
+		font-size: var(--fs-3xs);
+		letter-spacing: var(--ls-widest);
+		color: var(--color-esmeralda);
+		margin: 0 0 var(--space-xs);
+	}
+	.spotify-card__play {
+		display: inline-flex;
+		line-height: 0;
+		margin-bottom: var(--space-2xs);
+	}
+	.spotify-card__play svg {
+		width: 44px;
+		height: 44px;
+	}
+	.spotify-card__titulo {
+		font-family: var(--font-display);
+		font-size: var(--fs-sm);
+		font-weight: var(--fw-bold);
+		letter-spacing: var(--ls-wide);
+		text-transform: uppercase;
+		margin: 0 0 var(--space-2xs);
+		color: inherit;
+	}
+	.spotify-card__texto {
+		font-family: var(--font-body);
+		font-style: italic;
+		font-size: var(--fs-sm);
+		color: var(--color-text-soft);
+		margin: 0;
+		max-width: none;
+	}
+</style>
