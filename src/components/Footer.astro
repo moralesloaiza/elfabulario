@@ -1,5 +1,6 @@
 ---
 import BotonCrear from './BotonCrear.astro';
+import { SPOTIFY_SHOW_URL } from '../consts';
 
 const today = new Date();
 const startYear = 2026;
@@ -19,6 +20,10 @@ const yearLabel =
 		</p>
 
 		<hr class="ornate" />
+
+		<p class="enlaces">
+			<a href={SPOTIFY_SHOW_URL} target="_blank" rel="noopener">Escúchalo en Spotify</a>
+		</p>
 
 		<p class="meta">© {yearLabel} El Fabulario · Una colección dirigida por don Alejandro de Morales y Loaiza</p>
 
@@ -60,7 +65,6 @@ const yearLabel =
 		font-family: var(--font-display);
 		font-size: var(--fs-xs);
 		letter-spacing: var(--ls-widest);
-		/*text-align: center;*/
 		/* uppercase eliminado: Cinzel ya es all-caps */
 		color: var(--color-oro-texto);
 		margin: 0 auto var(--space-xl);
@@ -73,6 +77,23 @@ const yearLabel =
 	footer hr.ornate {
 		margin-block: var(--space-xl);
 		max-width: 240px;
+	}
+	.enlaces {
+		font-family: var(--font-display);
+		font-size: var(--fs-xs);
+		letter-spacing: var(--ls-wide);
+		margin: 0 auto var(--space-md);
+	}
+	.enlaces a {
+		color: var(--color-oro-texto);
+		text-decoration: none;
+		border-bottom: var(--rule-hairline) solid currentColor;
+		padding-bottom: 1px;
+		transition: color var(--dur-fast) var(--ease-standard);
+	}
+	.enlaces a:hover,
+	.enlaces a:focus-visible {
+		color: var(--color-esmeralda);
 	}
 	.meta {
 		font-family: var(--font-body);
