@@ -406,10 +406,21 @@ const breadcrumbLd = buildBreadcrumbJsonLd(
 		text-align: center;
 		margin: 0 0 var(--space-md);
 	}
-	.nota-curador-cuerpo :global(p) {
-		font-size: var(--fs-sm);
+	.nota-curador-cuerpo :global(p),
+	.nota-curador-cuerpo :global(li) {
+		font-size: var(--fs-base);
 		line-height: var(--lh-relaxed);
+	}
+	.nota-curador-cuerpo :global(p) {
 		margin-bottom: var(--space-sm);
+	}
+	.nota-curador-cuerpo :global(ol),
+	.nota-curador-cuerpo :global(ul) {
+		margin: 0 0 var(--space-sm);
+		padding-left: var(--space-lg);
+	}
+	.nota-curador-cuerpo :global(li) {
+		margin-bottom: var(--space-xs);
 	}
 	.nota-curador-cuerpo :global(p:last-child) {
 		margin-bottom: 0;
