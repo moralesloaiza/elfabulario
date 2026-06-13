@@ -1,9 +1,9 @@
 ---
 titulo: La cigarra y la hormiga
-resumen: Una de las más famosas fábulas de todos los tiempos, que enseña sobre
-  la previsión.
+resumen: La cigarra cantó todo el verano y, llegado el frío, pide a la hormiga
+  lo que no supo guardar.
 fecha: 2025-02-14
-fecha_actualizada: 2026-05-11
+fecha_actualizada: 2026-06-12
 ilustracion: /src/assets/uploads/chatgpt-image-10-may-2026-11_15_47.png
 borrador: false
 personajes:
@@ -17,6 +17,43 @@ autor: felix-maria-de-samaniego
 curador: Don Alejandro
 es_seudonimo: true
 nombre_real: Alejandro Morales Loaiza
+nota_curador: >-
+  Pocas fábulas han viajado tanto. Nace con
+  [Esopo](https://elfabulario.com/autores/esopo/), en la Grecia antigua, donde
+  una cigarra que cantó todo el verano pide grano a las hormigas previsoras;
+  pasa al latín y, ya en el siglo XVII, [Jean de La
+  Fontaine](https://elfabulario.com/autores/jean-de-la-fontaine/) la vuelve
+  célebre en Francia con su «La Cigale et la Fourmi».
+  [Samaniego](https://elfabulario.com/autores/felix-maria-de-samaniego/), a
+  finales del XVIII, la trae al castellano con este ritmo de romance que todos
+  reconocemos. Conviene recordar que su lección no es contra el canto, sino a
+  favor de la previsión: la hormiga guarda no por avara, sino porque sabe que el
+  invierno llega. El cierre —«baila, pese a tu cuerpo»— es de los más secos y
+  memorables del fabulario español.
+
+
+  **Glosario**
+
+
+  1. **Aposento:** habitación o cuarto donde se vive. La cigarra se refugia en su «estrecho aposento».
+
+  2. **Desproveída:** forma antigua de *desprovista*; sin provisiones, sin lo necesario.
+
+  3. **Sustento:** el alimento, lo que sostiene la vida.
+
+  4. **Centeno:** cereal parecido al trigo, con el que se hace pan; aquí, ejemplo de grano que la cigarra no tiene.
+
+  5. **Granero:** lugar donde se guarda el grano recogido.
+
+  6. **Tabique en medio:** separadas solo por una pared delgada; vivían pared con pared.
+
+  7. **Denuedo:** brío, firmeza, sin titubear. La hormiga responde «con denuedo».
+
+  8. **Holgazana:** persona perezosa, que no quiere trabajar.
+
+  9. **Andar al remo:** trabajar duramente, sin descanso (como quien rema en una galera); aquí, la hormiga dice que ella se afanaba mientras la cigarra cantaba.
+
+  10. **Pese a tu cuerpo:** a tu pesar, te guste o no.
 ---
 
 Cantando la Cigarra
