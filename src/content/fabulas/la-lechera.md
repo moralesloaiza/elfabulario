@@ -5,6 +5,7 @@ resumen: La lechera camina al mercado tejiendo en su mente una cadena de
 fecha: 2011-11-08
 fecha_actualizada: 2026-05-01
 ilustracion: /src/assets/uploads/chatgpt-image-1-may-2026-20_49_54.png
+spotify_url: https://open.spotify.com/episode/4LFiMqDaEpyVzbmVTOhVj9?si=KUIVSAO6Qw6wADrFQwFHpQ
 borrador: false
 personajes:
   - cerdo
@@ -18,6 +19,47 @@ autor: felix-maria-de-samaniego
 curador: Don Alejandro
 es_seudonimo: true
 nombre_real: Alejandro Morales Loaiza
+nota_curador: >-
+  Esta es una de esas historias que viajaron de Oriente a nuestra lengua mucho
+  antes de llegar a Samaniego. Su antepasado castellano más ilustre está en *El
+  Conde Lucanor* de don Juan Manuel, allá por 1335: el cuento de doña Truhana,
+  una mujer pobre que, camino del mercado con una olla de miel, va imaginando
+  riquezas cada vez mayores hasta que la olla se rompe y con ella todo su sueño.
+  [La Fontaine](https://elfabulario.com/autores/jean-de-la-fontaine/) la contó
+  en Francia con su lechera y su cántaro de leche, y de esa versión bebe la de
+  [Samaniego](https://elfabulario.com/autores/felix-maria-de-samaniego/). Su
+  enseñanza es delicada: no condena soñar, sino confundir el sueño con lo ya
+  logrado. De aquí viene esa imagen tan nuestra de «hacer castillos en el aire».
+
+
+  ##### Glosario
+
+
+  1. **Cántaro:** vasija grande de barro, ancha de barriga y estrecha de boca, para llevar líquidos.
+
+  2. **Presteza:** rapidez, prontitud al andar o al hacer algo.
+
+  3. **Estío:** el verano.
+
+  4. **Mercar:** comprar. «Mercaré un cochino» = compraré un cerdo.
+
+  5. **Cochino:** cerdo.
+
+  6. **Bellota:** fruto de la encina y el roble, con el que se engorda a los cerdos.
+
+  7. **Salvado:** cáscara del grano molido, que se da como pienso a los animales.
+
+  8. **Berza:** col, una verdura de hoja; aquí, alimento del cerdo.
+
+  9. **Sin tino:** sin medida, sin moderación; engordar «sin tino» = muchísimo.
+
+  10. **Enajenada:** fuera de sí, tan absorta en su pensamiento que se olvida de todo lo demás.
+
+  11. **Lechón:** cerdo pequeño, todavía de leche.
+
+  12. **Fabricar palacios en el viento:** hacerse ilusiones sin fundamento; lo que hoy llamamos «castillos en el aire».
+
+  13. **Mudanza:** cambio, giro de la suerte o la fortuna.
 ---
 Llevaba en la cabeza
 Una lechera el cántaro al mercado
