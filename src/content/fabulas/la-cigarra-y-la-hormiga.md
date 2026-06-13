@@ -5,6 +5,7 @@ resumen: La cigarra cantó todo el verano y, llegado el frío, pide a la hormiga
 fecha: 2025-02-14
 fecha_actualizada: 2026-06-12
 ilustracion: /src/assets/uploads/chatgpt-image-10-may-2026-11_15_47.png
+spotify_url: https://open.spotify.com/episode/2V02B5vrT9PzeR1aPaDPll?si=oCrwQ0OhTTK7LFp_a0ubMQ
 borrador: false
 personajes:
   - cigarra
