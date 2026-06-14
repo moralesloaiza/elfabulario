@@ -18,6 +18,7 @@ autor: jean-de-la-fontaine
 curador: Don Alejandro
 es_seudonimo: true
 nombre_real: Alejandro Morales Loaiza
+traduccion: true
 nota_curador: >-
   Esta es nuestra versión en verso de «Le Lièvre et la Tortue», que [Jean de La
   Fontaine](https://elfabulario.com/autores/jean-de-la-fontaine/) publicara en
