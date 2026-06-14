@@ -56,6 +56,16 @@ const fabulas = defineCollection({
 			es_seudonimo: z.boolean().default(false),
 			nombre_real: z.string().optional(),
 
+			// --- Traducción (opcional) ---
+			// Cuando `traduccion: true`, la ficha se presenta como traducción:
+			// la nota y el crédito de cierre acreditan a un traductor en lugar
+			// del curador. `traductor` es una referencia opcional a `autores`
+			// (un colaborador con ficha y slug); si se omite, el crédito cae al
+			// string `curador`. Preprocesado emptyToUndefined: Decap escribe ""
+			// en relaciones vacías (mismo patrón que `fabula_referida`).
+			traduccion: z.boolean().default(false),
+			traductor: z.preprocess(emptyToUndefined, reference('autores').optional()),
+
 			// --- Extra ---
 			nota_curador: z.string().optional(),
 		}),
