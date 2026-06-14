@@ -91,11 +91,11 @@ function buildEditor(
 // the entry's `data` flattened, plus `id` injected by the page.
 type FabulaInput = CollectionEntry<'fabulas'>['data'] & { id: string };
 
-// Build a ShortStory JSON-LD object for a fábula page.
 export function buildFabulaJsonLd(
 	fabula: FabulaInput,
 	autor: CollectionEntry<'autores'>,
 	site: URL,
+	traductor?: CollectionEntry<'autores'>,
 ): Record<string, unknown> {
 	const canonical = absoluteUrl(`/fabulas/${fabula.id}/`, site);
 	const datePublished = fabula.fecha.toISOString();
@@ -114,9 +114,21 @@ export function buildFabulaJsonLd(
 		datePublished,
 		dateModified,
 		author: personReference(autor, site),
-		editor: buildEditor(fabula.curador, fabula.es_seudonimo, fabula.nombre_real),
 		publisher: PUBLISHER,
 	};
+
+	// Editor vs. translator. A translated fábula credits a translator
+	// instead of the curator: the schema.org role that matches the visible
+	// credit is `translator`, so we replace `editor` rather than emit both.
+	// With an `autores` entry we emit a resolvable Person reference; without
+	// one, a name-only Person matching the visible credit (`fabula.curador`).
+	if (fabula.traduccion) {
+		data.translator = traductor
+			? personReference(traductor, site)
+			: { '@type': 'Person', name: fabula.curador };
+	} else {
+		data.editor = buildEditor(fabula.curador, fabula.es_seudonimo, fabula.nombre_real);
+	}
 
 	if (fabula.resumen) data.description = fabula.resumen;
 	if (fabula.ilustracion) data.image = absoluteUrl(fabula.ilustracion.src, site);

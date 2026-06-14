@@ -303,6 +303,18 @@ collections:
       - { name: "es_seudonimo", label: "¿La firma del curador es un seudónimo?", widget: "boolean", default: false }
       - { name: "nombre_real", label: "Nombre real del curador (privado)", widget: "string", required: false, hint: "Solo para registros internos. No se publica." }
 
+      # --- Traducción ---
+      - { name: "traduccion", label: "¿Es una traducción?", widget: "boolean", default: false, hint: "Actívalo si la fábula es una traducción al español. Cambia la nota y el crédito de cierre, y la incluye en /traducciones/." }
+      - name: "traductor"
+        label: "Traductor (ficha de colaborador)"
+        widget: "relation"
+        collection: "autores"
+        value_field: "{{slug}}"
+        search_fields: ["nombre"]
+        display_fields: ["nombre"]
+        required: false
+        hint: "Opcional. Si el traductor tiene ficha en Autores, selecciónala para enlazar a su página. Si se deja vacío, se acredita con el nombre del curador."
+
       # --- Cuerpo y nota ---
       - { name: "body", label: "Cuerpo de la fábula", widget: "markdown" }
       - { name: "nota_curador", label: "Nota del curador", widget: "markdown", required: false, hint: "Comentarios adicionales del curador. Aparece como sección aparte tras la fábula." }

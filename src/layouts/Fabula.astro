@@ -41,6 +41,8 @@ const {
 	forma,
 	tradicion,
 	spotify_url,
+	traduccion,
+	traductor,
 } = Astro.props;
 
 // `autor` es una reference('autores') validada por Zod en build, así que el
@@ -51,6 +53,11 @@ if (!autorEntry) throw new Error(`Author entry not found for fábula "${id}"`);
 
 const autorNombre = autorEntry.data.nombre;
 const autorHref = `/autores/${autorEntry.id}/`;
+
+// Traductor: referencia opcional a `autores`. Solo se resuelve si la ficha
+// es traducción y hay traductor seleccionado. Si `traduccion` es true sin
+// ficha, el crédito cae al string `curador`.
+const traductorEntry = traduccion && traductor ? await getEntry(traductor) : undefined;
 
 // Línea secundaria con nacionalidad y época. Ej.: "español · 1745–1801".
 const { nacionalidad, nacimiento, muerte, siglo } = autorEntry.data;
@@ -98,7 +105,7 @@ const notaHtml = nota_curador
 	: null;
 
 // Structured data (JSON-LD ShortStory). Lives in <head>, near BaseHead.
-const jsonLd = buildFabulaJsonLd(Astro.props, autorEntry, Astro.site!);
+const jsonLd = buildFabulaJsonLd(Astro.props, autorEntry, Astro.site!, traductorEntry);
 const breadcrumbLd = buildBreadcrumbJsonLd(
 	[
 		{ name: 'Inicio', path: '/' },
@@ -163,17 +170,28 @@ const breadcrumbLd = buildBreadcrumbJsonLd(
 		</div>
 
 		{notaHtml && (
-			<aside class="nota-curador" aria-label="Nota del curador">
-				<h2 class="nota-curador-titulo">Nota del curador</h2>
+			<aside class="nota-curador" aria-label={traduccion ? 'Nota del traductor' : 'Nota del curador'}>
+				<h2 class="nota-curador-titulo">{traduccion ? 'Nota del traductor' : 'Nota del curador'}</h2>
 				<div class="nota-curador-cuerpo" set:html={notaHtml} />
 			</aside>
 		)}
 
 		<div class="cierre">
-			{curador && (
+			{traduccion ? (
 				<p class="curaduria">
-					Esta fábula la trae a El Fabulario <strong>{curador}</strong>.
+					Esta fábula ha sido traducida al español por{' '}
+					{traductorEntry ? (
+						<a href={`/autores/${traductorEntry.id}/`}><strong>{traductorEntry.data.nombre}</strong></a>
+					) : (
+						<strong>{curador}</strong>
+					)}.
 				</p>
+			) : (
+				curador && (
+					<p class="curaduria">
+						Esta fábula la trae a El Fabulario <strong>{curador}</strong>.
+					</p>
+				)
 			)}
 			<p class="meta-fechas">
 				Publicada el <FormattedDate date={fecha} />
@@ -257,6 +275,17 @@ const breadcrumbLd = buildBreadcrumbJsonLd(
 							</li>
 						</ul>
 					</div>
+
+					{traduccion && (
+						<div class="taxonomia-grupo">
+							<span class="taxonomia-rotulo">Traducción</span>
+							<ul class="taxonomia-lista">
+								<li>
+									<a href="/traducciones/">Ver todas las traducciones</a>
+								</li>
+							</ul>
+						</div>
+					)}
 
 					<div class="taxonomia-grupo">
 						<span class="taxonomia-rotulo">Ayuda</span>
