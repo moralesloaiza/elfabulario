@@ -1,5 +1,6 @@
 ﻿# build output
 dist/
+
 # generated types
 .astro/
 
@@ -15,6 +16,8 @@ pnpm-debug.log*
 # environment variables
 .env
 .env.production
+!.dev.vars.example
+!.env.example
 
 # macOS-specific files
 .DS_Store
@@ -25,29 +28,14 @@ pnpm-debug.log*
 # wrangler files
 .wrangler
 .dev.vars*
-!.dev.vars.example
-!.env.example
 
-# Scripts y salidas locales de extraccion Samaniego (no versionar)
+# Scratch local del director: bundles, configs de trabajo, materiales de
+# curaduria ya cumplidos, copias para diff. Nada aqui se versiona.
+_scratch/
+
+# Salidas locales de extraccion Samaniego (no versionar)
 salida-libro-*/
 scout-libro-*/
 
-# Bundles que el director genera para pasarle al asistente (no versionar)
-/bundle-*.txt
-/fabulario-bundle-*.txt
-/*-audit.txt
-/*-audit-*.txt
-
-# Copia local del Decap config desplegado, para diffs manuales
-/config.deployed.yml
-
-# Material de trabajo de curaduria Iriarte (no versionar)
-salida-iriarte/
-salida-iriarte-curada/
-datos-curaduria.json
-corpus-iriarte.md
-aplicar-curaduria.ps1
-publicar-iriarte.ps1
+# Script generador de bundles (vive en scripts/, no se versiona)
 scripts/bundle-estado.ps1
-fabulario-bitacora-bundle.txt
-fabulario-cartaheader.txt
