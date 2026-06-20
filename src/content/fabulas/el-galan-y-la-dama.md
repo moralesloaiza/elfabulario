@@ -1,20 +1,23 @@
 ---
 titulo: El galán y la dama
-resumen: "Un galán famoso estrena unas hebillas de estaño en lugar de plata para comprobar hasta dónde llega el crédito de su renombre."
-fecha: 2026-05-31   # MARCADOR: fijar la fecha real al publicar
+resumen: Un galán famoso estrena unas hebillas de estaño en lugar de plata para
+  comprobar hasta dónde llega el crédito de su renombre.
+fecha: 2026-05-31
+fecha_actualizada: 2026-06-20
+ilustracion: /src/assets/uploads/chatgpt-image-20-jun-2026-16_05_50.png
 borrador: false
 personajes: []
-temas: [critica-literaria, adulacion, vanidad]
+temas:
+  - critica-literaria
+  - adulacion
+  - vanidad
 forma: verso
 tradicion: hispanica
 autor: tomas-de-iriarte
 curador: Don Alejandro
 es_seudonimo: true
 nombre_real: Alejandro Morales Loaiza
-# Procedencia:
-# Iriarte, Fabula XXXII de "Fabulas literarias",
-# Biblioteca Virtual Miguel de Cervantes (texto de dominio publico).
-# Moraleja de la fuente incrustada como bloque final en *...* (revisar).
+traduccion: false
 ---
 Cierto galán, a quien París aclama
 petimetre del gusto más extraño,
@@ -31,4 +34,5 @@ Y ahora digo yo. «Llene un volumen
 de disparates un autor famoso,
 y si no le alabaren, que me emplumen.»
 
-*Cuando un autor ha llegado a ser famoso, todo se le aplaude.*
+*Cuando un autor ha llegado a*\
+*ser famoso, todo se le aplaude.*
