@@ -3,7 +3,7 @@ titulo: El zagal y las ovejas
 resumen: Un joven alerta a los aldeanos una y otra vez, en vano, hasta descubrir
   la suerte de quienes viven engañando.
 fecha: 2025-11-05
-fecha_actualizada: 2026-05-23
+fecha_actualizada: 2026-06-20
 ilustracion: /src/assets/uploads/chatgpt-image-17-may-2026-13_00_26.png
 spotify_url: https://open.spotify.com/episode/3ZptRHx6E07MBrJA2rwdTJ?si=KderPaA7Qv-RdhMAqyT8ng
 borrador: false
@@ -16,35 +16,31 @@ autor: felix-maria-de-samaniego
 curador: Don Alejandro
 es_seudonimo: true
 nombre_real: Alejandro Morales Loaiza
+traduccion: false
 nota_curador: >-
-  **Zagal**
-
-  Pastor joven o muchacho encargado de cuidar un rebaño. En esta fábula, el zagal es el joven que vigila las ovejas y engaña a los labradores anunciando falsamente la llegada del lobo. La palabra procede del árabe y hoy se emplea mucho menos que *pastor* o *muchacho*. 
-
-
-  **Apacentar**
-
-  Llevar el ganado a pastar y cuidarlo mientras se alimenta. Al comienzo de la fábula, el joven se encuentra apacentando sus ovejas.
-
-
-  **Collado**
-
-  Elevación suave del terreno, generalmente más baja que una montaña. Desde lo alto del collado, el zagal puede gritar para que los labradores del lugar lo oigan.
+  La historia del joven pastor que una y otra vez engaña a sus vecinos
+  anunciando un lobo que no llega se atribuye tradicionalmente a
+  [Esopo](https://elfabulario.com/autores/esopo/), y ha viajado durante siglos
+  por incontables lenguas, países y libros infantiles.
+  [Samaniego](https://elfabulario.com/autores/felix-maria-de-samaniego/) la
+  vertió al castellano en verso, y en su versión el desenlace es doblemente
+  amargo: el zagal no solo pierde la credibilidad de los labradores, sino que ve
+  cómo el lobo devora su manada. La mentira acaba volviéndose contra quien la
+  urde.
 
 
-  **Chanza**
-
-  Broma o burla. Samaniego emplea esta palabra para explicar que el primer aviso del zagal no era verdadero, sino un engaño hecho por diversión.
+  ##### Glosario
 
 
-  **Desgañitarse**
+  1. **Zagal:** pastor joven o muchacho encargado de cuidar un rebaño. Aquí, el que vigila las ovejas y engaña a los labradores anunciando en falso la llegada del lobo. La palabra procede del árabe y hoy se emplea mucho menos que *pastor* o *muchacho*.
 
-  Gritar con mucha fuerza, hasta lastimarse o cansarse la garganta. Cuando el lobo aparece de verdad, el zagal se desgañita pidiendo auxilio, pero ya nadie confía en su palabra.
+  2. **Apacentar:** llevar el ganado a pastar y cuidarlo mientras se alimenta. Al comienzo de la fábula, el joven se encuentra apacentando sus ovejas.
 
+  3. **Collado:** elevación suave del terreno, más baja que una montaña. Desde lo alto del collado, el zagal grita para que lo oigan los labradores.
 
-  **Una fábula de antigua tradición**
+  4. **Chanza:** broma o burla. Samaniego emplea la palabra para señalar que el primer aviso del zagal no era cierto, sino un engaño hecho por diversión.
 
-  La historia del joven pastor que engaña repetidamente a los vecinos anunciando la llegada de un lobo se atribuye tradicionalmente a Esopo. A lo largo de los siglos ha sido contada y adaptada en numerosos países, lenguas y libros infantiles. En la versión de Samaniego, el joven no solo pierde la credibilidad de los aldeanos: también ve cómo el lobo devora su manada, consecuencia directa de sus mentiras.
+  5. **Desgañitarse:** gritar con mucha fuerza, hasta lastimarse la garganta. Cuando el lobo aparece de verdad, el zagal se desgañita pidiendo auxilio, pero ya nadie cree en su palabra.
 ---
 Apacentando un joven su ganado,
 gritó desde la cima de un collado:
