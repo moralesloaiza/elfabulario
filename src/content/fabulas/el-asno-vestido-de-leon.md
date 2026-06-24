@@ -5,6 +5,7 @@ resumen: Un asno se pasea cubierto con una piel de león y atemoriza a todos,
 fecha: 2026-05-16
 fecha_actualizada: 2026-06-23
 ilustracion: /src/assets/uploads/chatgpt-image-13-jun-2026-08_43_08.png
+spotify_url: https://open.spotify.com/episode/3TXzfnxTWyYGOKvdL9qVW3?si=aZGTGLGATOW835gn6YdNMQ
 borrador: false
 personajes:
   - burro
