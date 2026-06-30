@@ -1,14 +1,16 @@
-﻿---
+---
 titulo: Las Ranas pidiendo Rey
-resumen: >-
-  El pueblo libre de las ranas pide rey a Júpiter; descontentas con el rey de palo, reciben en su lugar una culebra que las devora.
+resumen: El pueblo libre de las ranas pide rey a Júpiter; descontentas con el
+  rey de palo, reciben en su lugar una culebra que las devora.
 fecha: 2026-05-15
+fecha_actualizada: 2026-06-20
+spotify_url: https://open.spotify.com/episode/4G3Z4uZpUXG0TqGs9Wp4MH?si=iN-FAOZeQw2BMe-JnUjgYA
 borrador: false
-personajes: 
+personajes:
   - rana
   - culebra
   - zeus
-temas: 
+temas:
   - libertad
   - necedad
 forma: verso
@@ -17,6 +19,31 @@ autor: felix-maria-de-samaniego
 curador: Don Alejandro
 es_seudonimo: true
 nombre_real: Alejandro Morales Loaiza
+traduccion: false
+nota_curador: >-
+  Fábula de raíz esópica que
+  [Samaniego](https://elfabulario.com/autores/felix-maria-de-samaniego/) vertió
+  al verso castellano a partir del modelo de
+  [Esopo](https://elfabulario.com/autores/esopo/). Las ranas, que vivían libres
+  y felices, se cansan de su libertad y piden rey a Júpiter —el Zeus de los
+  griegos, padre de los dioses—. Primero reciben un rey de palo, al que
+  desprecian por inofensivo; luego, una culebra que las devora. La advertencia
+  es tan antigua como vigente: quien no mide lo que pide puede labrar su propia
+  ruina, y a veces se cambia la libertad por algo mucho peor.
+
+
+  ##### Glosario
+
+
+  1. **Importuna:** molesta, inoportuna, hecha fuera de lugar. La súplica de las ranas es «importuna» porque piden lo que no les conviene.
+
+  2. **Rey de palo:** rey hecho de madera; por extensión, gobernante inerte que ni manda ni sirve para nada. Júpiter arroja a la laguna un simple madero como primer rey.
+
+  3. **Zoquete:** trozo de madera corto y grueso; en sentido figurado, persona torpe o de poco entendimiento. Las ranas llaman así, con desprecio, a su rey de palo.
+
+  4. **Cieno:** barro blando que se acumula en el fondo de lagunas y ríos. Las ranas, ya sin respeto, ensucian al rey de palo con el cieno de la laguna.
+
+  5. **Grey:** conjunto de personas o animales bajo una misma guía; rebaño. Aquí, «la mísera grey» son las ranas, ya sometidas a la culebra.
 ---
 Sin rey vivía, libre, independiente,
 el pueblo de las Ranas, felizmente.
