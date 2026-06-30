@@ -1,20 +1,24 @@
 ---
 titulo: El guacamayo y la marmota
-resumen: "Un guacamayo se burla de la marmota, exhibida por dinero pese a ser fea, mientras él luce hermoso y gratis desde su balcón."
-fecha: 2026-05-31   # MARCADOR: fijar la fecha real al publicar
+resumen: Un guacamayo se burla de la marmota, exhibida por dinero pese a ser
+  fea, mientras él luce hermoso y gratis desde su balcón.
+fecha: 2026-05-31
+fecha_actualizada: 2026-06-23
+ilustracion: /src/assets/uploads/chatgpt-image-23-jun-2026-21_53_37.png
 borrador: false
-personajes: [loro, marmota]
-temas: [critica-literaria, codicia]
+personajes:
+  - loro
+  - marmota
+temas:
+  - critica-literaria
+  - codicia
 forma: verso
 tradicion: hispanica
 autor: tomas-de-iriarte
 curador: Don Alejandro
 es_seudonimo: true
 nombre_real: Alejandro Morales Loaiza
-# Procedencia:
-# Iriarte, Fabula XXXVIII de "Fabulas literarias",
-# Biblioteca Virtual Miguel de Cervantes (texto de dominio publico).
-# Moraleja de la fuente incrustada como bloque final en *...* (revisar).
+traduccion: false
 ---
 Un pintado guacamayo
 desde un mirador veía
@@ -41,4 +45,6 @@ se fue como avergonzado.
 —¿Por qué? —Porque un impresor
 le tenía asalariado.
 
-*Ordinariamente no es escritor de gran mérito el que hace venal el ingenio.*
+*Ordinariamente no es*\
+*escritor de gran mérito*\
+*el que hace venal el ingenio.*
