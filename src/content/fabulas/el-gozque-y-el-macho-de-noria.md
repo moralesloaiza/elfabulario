@@ -1,20 +1,25 @@
 ---
 titulo: El gozque y el macho de noria
-resumen: "Un perrillo se burla del macho que da vueltas a la noria por su trabajo monótono, sin reparar en para qué sirve."
-fecha: 2026-05-31   # MARCADOR: fijar la fecha real al publicar
+resumen: Un perrillo se burla del macho que da vueltas a la noria por su trabajo
+  monótono, sin reparar en para qué sirve.
+fecha: 2026-05-31
+fecha_actualizada: 2026-06-23
+ilustracion: /src/assets/uploads/chatgpt-image-23-jun-2026-21_34_57.png
 borrador: false
-personajes: [perro, mula]
-temas: [critica-literaria, soberbia, prudencia]
+personajes:
+  - perro
+  - mula
+temas:
+  - critica-literaria
+  - soberbia
+  - prudencia
 forma: verso
 tradicion: hispanica
 autor: tomas-de-iriarte
 curador: Don Alejandro
 es_seudonimo: true
 nombre_real: Alejandro Morales Loaiza
-# Procedencia:
-# Iriarte, Fabula XXVIII de "Fabulas literarias",
-# Biblioteca Virtual Miguel de Cervantes (texto de dominio publico).
-# Moraleja de la fuente incrustada como bloque final en *...* (revisar).
+traduccion: false
 ---
 Bien habrá visto el lector
 en hostería o convento
@@ -69,4 +74,5 @@ cargar con lo que después
 no podrá llevar; esto es,
 que no ande la noria el perro.
 
-*Nadie emprenda obra superior a sus fuerzas.*
+*Nadie emprenda obra*\
+*superior a sus fuerzas.*

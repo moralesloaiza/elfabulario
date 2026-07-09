@@ -1,20 +1,25 @@
 ---
 titulo: El gallo, el cerdo y el cordero
-resumen: "Un cerdo y un gallo dan al cordero consejos opuestos sobre cómo vivir, y cada cual recomienda justo aquello a lo que él mismo se inclina."
-fecha: 2026-05-31   # MARCADOR: fijar la fecha real al publicar
+resumen: Un cerdo y un gallo dan al cordero consejos opuestos sobre cómo vivir,
+  y cada cual recomienda justo aquello a lo que él mismo se inclina.
+fecha: 2026-05-31
+fecha_actualizada: 2026-06-20
+ilustracion: /src/assets/uploads/chatgpt-image-20-jun-2026-16_12_02.png
 borrador: false
-personajes: [gallo, cerdo, cordero]
-temas: [critica-literaria, hipocresia]
+personajes:
+  - gallo
+  - cerdo
+  - cordero
+temas:
+  - critica-literaria
+  - hipocresia
 forma: verso
 tradicion: hispanica
 autor: tomas-de-iriarte
 curador: Don Alejandro
 es_seudonimo: true
 nombre_real: Alejandro Morales Loaiza
-# Procedencia:
-# Iriarte, Fabula LIV de "Fabulas literarias",
-# Biblioteca Virtual Miguel de Cervantes (texto de dominio publico).
-# Moraleja de la fuente incrustada como bloque final en *...* (revisar).
+traduccion: false
 ---
 Había en un corral un gallinero;
 en este gallinero un gallo había;
@@ -49,4 +54,5 @@ la trampa de sentar como doctrina
 y gran regla, a la cual nos sujetamos,
 lo que en nuestros escritos practicamos.
 
-*Suelen ciertos autores sentar como principios infalibles del arte, aquello mismo que ellos practican.*
+*Suelen ciertos autores sentar como principios*\
+*infalibles del arte, aquello mismo que ellos practican.*
