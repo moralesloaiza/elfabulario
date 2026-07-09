@@ -1,7 +1,6 @@
 ---
 titulo: El potro sin freno
-resumen: Un caballo joven rechaza freno y jinete para correr libre, se desboca y cae
-  muerto: castigo de su soberbia desobediencia.
+resumen: "Un caballo joven rechaza freno y jinete para correr libre, se desboca y cae muerto: castigo de su soberbia desobediencia."
 fecha: 2026-07-09
 borrador: false
 personajes:

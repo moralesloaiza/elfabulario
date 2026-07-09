@@ -1,7 +1,6 @@
 ---
 titulo: La yegua y la faldera
-resumen: La perrita faldera, que viajó en el regazo de su ama, amanece molida; la
-  yegua, que cargó a todos, amanece fresca: solo el que trabaja descansa.
+resumen: "La perrita faldera, que viajó en el regazo de su ama, amanece molida; la yegua, que cargó a todos, amanece fresca: solo el que trabaja descansa."
 fecha: 2026-07-09
 borrador: false
 personajes:
