@@ -3,8 +3,9 @@ titulo: El águila y el león
 resumen: El águila y el león debaten sobre cuál de los dos reina con más
   nobleza, cada uno defendiendo su dominio.
 fecha: 2026-05-31
-fecha_actualizada: 2026-06-20
+fecha_actualizada: 2026-07-10
 ilustracion: /src/assets/uploads/chatgpt-image-2-jun-2026-18_50_20.png
+spotify_url: https://open.spotify.com/episode/0RkYGCmgSBYTJEhqjkIIdK?si=4NjnU1qERASX1ndVHYR1lA
 borrador: false
 personajes:
   - aguila
@@ -21,6 +22,27 @@ curador: Don Alejandro
 es_seudonimo: true
 nombre_real: Alejandro Morales Loaiza
 traduccion: false
+nota_curador: >-
+  El águila y el león, conocida en las ediciones antiguas como El león y el
+  águila (Fábula XXVI), pertenece a las Fábulas literarias (1782) de [Tomás de
+  Iriarte](https://elfabulario.com/autores/tomas-de-iriarte/), la colección con
+  la que el propio autor reclamó ser el primero en escribir fábulas enteramente
+  originales en lengua castellana. A diferencia de las fábulas morales al uso,
+  las de Iriarte tratan sobre el oficio literario: aquí, el águila y el león
+  acuerdan expulsar de sus reinos al murciélago, que se hacía pasar por ave
+  entre las aves y por cuadrúpedo entre los cuadrúpedos según le convenía, y la
+  pieza cierra con una moraleja dirigida explícitamente contra los "murciélagos
+  literarios" que buscan quedar bien con bandos opuestos.
+
+
+  ##### Glosario
+
+
+  1. **Avechucho:** ave de mal aspecto o de escasa reputación; aquí, apelativo despectivo que el águila aplica al murciélago.
+
+  2. **Vasallo:** súbdito sometido a la autoridad de un señor; en la fábula, metáfora de los animales sujetos al dominio del león o del águila.
+
+  3. **Murciélagos literarios:** expresión con que Iriarte, en la moraleja, moteja a los escritores que intentan agradar a dos bandos opuestos sin comprometerse con ninguno.
 ---
 El águila y el león
 gran conferencia tuvieron
