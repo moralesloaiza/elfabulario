@@ -44,6 +44,7 @@ collections:
       - { label: "En prosa", field: forma, pattern: "prosa" }
       - { label: "Tradición esópica", field: tradicion, pattern: "esopica" }
       - { label: "Tradición hispánica", field: tradicion, pattern: "hispanica" }
+      - { label: "Tradición italiana", field: tradicion, pattern: "italiana" }
       - { label: "Tradición popular", field: tradicion, pattern: "popular" }
       - { label: "Tradición oriental", field: tradicion, pattern: "oriental" }
       - { label: "Tradición budista", field: tradicion, pattern: "budista" }
@@ -117,6 +118,7 @@ collections:
           - { label: "Grillo", value: "grillo" }
           - { label: "Grulla", value: "grulla" }
           - { label: "Gusano", value: "gusano" }
+          - { label: "Halcón", value: "halcon" }
           - { label: "Hormiga", value: "hormiga" }
           - { label: "Hurón", value: "huron" }
           - { label: "Jabalí", value: "jabali" }
@@ -131,15 +133,18 @@ collections:
           - { label: "Mariposa", value: "mariposa" }
           - { label: "Marmota", value: "marmota" }
           - { label: "Milano", value: "milano" }
+          - { label: "Mirlo", value: "mirlo" }
           - { label: "Mochuelo", value: "mochuelo" }
           - { label: "Mona", value: "mona" }
           - { label: "Mono", value: "mono" }
           - { label: "Mosca", value: "mosca" }
+          - { label: "Moscardón", value: "moscardon" }
           - { label: "Mosquito", value: "mosquito" }
           - { label: "Mula", value: "mula" }
           - { label: "Murciélago", value: "murcielago" }
           - { label: "Oruga", value: "oruga" }
           - { label: "Oso", value: "oso" }
+          - { label: "Ostra", value: "ostra" }
           - { label: "Oveja", value: "oveja" }
           - { label: "Paloma", value: "paloma" }
           - { label: "Pato", value: "pato" }
@@ -151,6 +156,7 @@ collections:
           - { label: "Pez", value: "pez" }
           - { label: "Pulga", value: "pulga" }
           - { label: "Rana", value: "rana" }
+          - { label: "Rata", value: "rata" }
           - { label: "Ratón", value: "raton" }
           - { label: "Renacuajo", value: "renacuajo" }
           - { label: "Ruiseñor", value: "ruisenor" }
@@ -166,6 +172,26 @@ collections:
           - { label: "Zángano", value: "zangano" }
           - { label: "Zarigüeya", value: "zarigueya" }
           - { label: "Zorro", value: "zorro" }
+          # Plantas
+          - { label: "Aligustre", value: "aligustre" }
+          - { label: "Calabaza", value: "calabaza" }
+          - { label: "Castaño", value: "castano" }
+          - { label: "Cedro", value: "cedro" }
+          - { label: "Clemátide", value: "clematide" }
+          - { label: "Higuera", value: "higuera" }
+          - { label: "Lirio", value: "lirio" }
+          - { label: "Melocotonero", value: "melocotonero" }
+          - { label: "Nogal", value: "nogal" }
+          - { label: "Olmo", value: "olmo" }
+          - { label: "Peral", value: "peral" }
+          - { label: "Sauce", value: "sauce" }
+          - { label: "Vid", value: "vid" }
+          # Objetos
+          - { label: "Candela", value: "candela" }
+          - { label: "Navaja", value: "navaja" }
+          - { label: "Papel", value: "papel" }
+          - { label: "Red", value: "red" }
+          - { label: "Tinta", value: "tinta" }
           # Roles humanos
           - { label: "Abogado", value: "abogado" }
           - { label: "Amo", value: "amo" }
@@ -284,6 +310,7 @@ collections:
           - { label: "Budista", value: "budista" }
           - { label: "Esópica", value: "esopica" }
           - { label: "Hispánica", value: "hispanica" }
+          - { label: "Italiana", value: "italiana" }
           - { label: "Oriental", value: "oriental" }
           - { label: "Popular", value: "popular" }
           - { label: "Talmúdica", value: "talmudica" }
