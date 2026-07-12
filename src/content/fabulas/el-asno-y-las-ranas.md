@@ -1,14 +1,17 @@
 ---
 titulo: El asno y las ranas
-resumen: >-
-  Un burro cargado de leña cae en un pantano y maldice su suerte; las ranas, condenadas a vivir allí, le enseñan que la paciencia es preferible al lamento.
+resumen: Un burro cargado de leña cae en un pantano y maldice su suerte; las
+  ranas, condenadas a vivir allí, le enseñan que la paciencia es preferible al
+  lamento.
 fecha: 2026-05-15
+fecha_actualizada: 2026-07-12
+ilustracion: /src/assets/uploads/chatgpt-image-12-jul-2026-17_50_09.png
 borrador: false
-personajes: 
+personajes:
   - burro
   - rana
   - zeus
-temas: 
+temas:
   - prudencia
   - humildad
 forma: verso
@@ -17,6 +20,7 @@ autor: felix-maria-de-samaniego
 curador: Don Alejandro
 es_seudonimo: true
 nombre_real: Alejandro Morales Loaiza
+traduccion: false
 ---
 Muy cargado de leña un Burro viejo,
 triste armazón de huesos y pellejo,
@@ -55,7 +59,7 @@ y así nos premia Júpiter divino,
 repartiendo entre todas cada día
 la salud, el sustento y alegría.
 
-***Es de suma importancia
+*Es de suma importancia
 tener en los trabajos tolerancia,
 pues la impaciencia en la contraria suerte
-es un mal más amargo que la muerte.***
+es un mal más amargo que la muerte.*
