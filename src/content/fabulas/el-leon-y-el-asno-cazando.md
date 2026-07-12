@@ -1,4 +1,4 @@
-﻿---
+---
 titulo: El León y el Asno cazando
 resumen: >-
   El león usa al asno como reclamo en una cacería; cuando ve los despojos, el asno se atribuye la hazaña y el león sólo suelta una carcajada.

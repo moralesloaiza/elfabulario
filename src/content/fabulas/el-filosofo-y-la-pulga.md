@@ -1,4 +1,4 @@
-﻿---
+---
 titulo: El Filósofo y la Pulga
 # resumen: pendiente de curaduría
 fecha: 2026-05-17   # MARCADOR — fijar la fecha real al publicar

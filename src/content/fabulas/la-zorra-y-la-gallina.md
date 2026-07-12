@@ -1,4 +1,4 @@
-﻿---
+---
 titulo: La Zorra y la Gallina
 resumen: >-
   Una zorra se cuela en el gallinero y, con falsa cortesía, pregunta por la salud de una gallina enferma; ella la despide diciendo que estará mejor en cuanto se aparte.

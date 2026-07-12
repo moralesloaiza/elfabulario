@@ -1,4 +1,4 @@
-﻿---
+---
 titulo: El León, el Tigre y el Caminante
 # resumen: pendiente de curaduría
 fecha: 2026-05-16   # MARCADOR — fijar la fecha real al publicar

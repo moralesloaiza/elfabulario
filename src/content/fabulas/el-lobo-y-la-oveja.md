@@ -1,4 +1,4 @@
-﻿---
+---
 titulo: El Lobo y la Oveja
 resumen: >-
   Un lobo herido y hambriento pide a una oveja que le acerque agua; ella entiende el engaño y se aleja a tiempo.

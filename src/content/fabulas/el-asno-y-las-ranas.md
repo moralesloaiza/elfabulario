@@ -1,4 +1,4 @@
-﻿---
+---
 titulo: El Asno y las Ranas
 resumen: >-
   Un burro cargado de leña cae en un pantano y maldice su suerte; las ranas, condenadas a vivir allí, le enseñan que la paciencia es preferible al lamento.

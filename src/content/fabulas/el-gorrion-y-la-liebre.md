@@ -1,4 +1,4 @@
-﻿---
+---
 titulo: El Gorrión y la Liebre
 resumen: >-
   Un gorrión se burla de una liebre apresada por un águila; en mitad del insulto, un gavilán lo atrapa a él.
