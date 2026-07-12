@@ -1,5 +1,5 @@
 ---
-titulo: El labrador y la Providencia
+titulo: El labrador y la providencia
 resumen: La Providencia enseña a un labrador que cada cosa ocupa un lugar por una razón.
 fecha: 2012-05-19
 fecha_actualizada: 2026-05-12

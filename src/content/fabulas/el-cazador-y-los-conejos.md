@@ -1,5 +1,5 @@
 ---
-titulo: El Cazador y los Conejos
+titulo: El cazador y los conejos
 # resumen: pendiente de curaduría
 fecha: 2026-05-17   # MARCADOR — fijar la fecha real al publicar
 borrador: false

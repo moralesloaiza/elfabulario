@@ -1,5 +1,5 @@
 ---
-titulo: La Zorra y las Uvas
+titulo: La zorra y las uvas
 resumen: Una zorra hambrienta no logra alcanzar las uvas y, para consolarse,
   decide que están verdes.
 fecha: 2026-05-15

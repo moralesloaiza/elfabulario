@@ -1,5 +1,5 @@
 ---
-titulo: El parto de los Montes
+titulo: El parto de los montes
 resumen: Los montes anuncian con bramidos espantosos un parto portentoso; tras
   tanto estruendo, sólo nace un ratoncillo.
 fecha: 2026-05-15

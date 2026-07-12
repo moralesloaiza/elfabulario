@@ -1,5 +1,5 @@
 ---
-titulo: El León envejecido
+titulo: El león envejecido
 resumen: >-
   Un león en sus últimos días recibe coces y dentelladas de los mismos animales que antes le rendían vasallaje; muere lamentando, sobre todo, la injuria del burro.
 fecha: 2026-05-15

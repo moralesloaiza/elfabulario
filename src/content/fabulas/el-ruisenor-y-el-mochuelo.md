@@ -1,5 +1,5 @@
 ---
-titulo: El Ruiseñor y el Mochuelo
+titulo: El ruiseñor y el mochuelo
 # resumen: pendiente de curaduría
 fecha: 2026-05-18   # MARCADOR — fijar la fecha real al publicar
 borrador: false

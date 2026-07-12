@@ -1,5 +1,5 @@
 ---
-titulo: El Cordero y el Lobo
+titulo: El cordero y el lobo
 resumen: >-
   Un cordero, a salvo dentro de la cabaña, provoca y fanfarronea ante el lobo; éste se aleja observando que los cobardes sólo presumen desde lo seguro.
 fecha: 2026-05-15

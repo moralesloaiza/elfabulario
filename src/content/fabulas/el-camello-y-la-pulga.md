@@ -1,5 +1,5 @@
 ---
-titulo: El Camello y la Pulga
+titulo: El camello y la pulga
 # resumen: pendiente de curaduría
 fecha: 2026-05-16   # MARCADOR — fijar la fecha real al publicar
 borrador: false

@@ -1,5 +1,5 @@
 ---
-titulo: Batalla de las Comadrejas y los Ratones
+titulo: Batalla de las comadrejas y los ratones
 # resumen: pendiente de curaduría
 fecha: 2026-05-15   # MARCADOR — fijar la fecha real al publicar
 borrador: false

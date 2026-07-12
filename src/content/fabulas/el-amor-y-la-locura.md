@@ -1,5 +1,5 @@
 ---
-titulo: El Amor y la Locura
+titulo: El amor y la locura
 # resumen: pendiente de curaduría
 fecha: 2026-05-16   # MARCADOR — fijar la fecha real al publicar
 borrador: false

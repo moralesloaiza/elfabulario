@@ -1,5 +1,5 @@
 ---
-titulo: El Raposo, la Mujer y el Gallo
+titulo: El raposo, la mujer y el gallo
 # resumen: pendiente de curaduría
 fecha: 2026-05-16   # MARCADOR — fijar la fecha real al publicar
 borrador: false

@@ -1,5 +1,5 @@
 ---
-titulo: El Viejo y el Chalán
+titulo: El viejo y el chalán
 # resumen: pendiente de curaduría
 fecha: 2026-05-18   # MARCADOR — fijar la fecha real al publicar
 borrador: false

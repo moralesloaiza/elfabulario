@@ -1,5 +1,5 @@
 ---
-titulo: Congreso de los Ratones
+titulo: Congreso de los ratones
 resumen: Los ratones, perseguidos por los gatos, deciden en asamblea colgar un
   cascabel al gato; cuando llega el turno de ejecutar la idea, todos encuentran
   excusa para no hacerlo.

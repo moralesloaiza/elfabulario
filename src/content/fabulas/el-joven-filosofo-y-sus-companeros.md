@@ -1,5 +1,5 @@
 ---
-titulo: El joven Filósofo y sus compañeros
+titulo: El joven filósofo y sus compañeros
 # resumen: pendiente de curaduría
 fecha: 2026-05-18   # MARCADOR — fijar la fecha real al publicar
 borrador: false

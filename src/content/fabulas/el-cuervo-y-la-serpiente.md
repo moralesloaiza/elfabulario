@@ -1,5 +1,5 @@
 ---
-titulo: El Cuervo y la Serpiente
+titulo: El cuervo y la serpiente
 resumen: >-
   Un cuervo halla dormida a una serpiente y se lanza sobre ella; el bocado le devuelve un mordisco venenoso.
 fecha: 2026-05-15

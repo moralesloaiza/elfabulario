@@ -1,5 +1,5 @@
 ---
-titulo: El Raposo y el Perro
+titulo: El raposo y el perro
 # resumen: pendiente de curaduría
 fecha: 2026-05-17   # MARCADOR — fijar la fecha real al publicar
 borrador: false

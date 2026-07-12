@@ -1,5 +1,5 @@
 ---
-titulo: Las Liebres y las Ranas
+titulo: Las liebres y las ranas
 # resumen: pendiente de curaduría
 fecha: 2026-05-15   # MARCADOR — fijar la fecha real al publicar
 borrador: false

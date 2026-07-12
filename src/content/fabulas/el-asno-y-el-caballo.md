@@ -1,5 +1,5 @@
 ---
-titulo: El Asno y el Caballo
+titulo: El asno y el caballo
 resumen: Un asno envidia la vida regalada del caballo, hasta que lo ve partir a
   la guerra con jinete y armas y agradece su humilde suerte.
 fecha: 2026-05-15

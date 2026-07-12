@@ -1,5 +1,5 @@
 ---
-titulo: El León enamorado
+titulo: El león enamorado
 resumen: >-
   Un león enamorado de una zagala accede a que el padre, prudente, le lime los dientes y le corte las garras; desarmado, los perros del pastor lo matan.
 fecha: 2026-05-15
