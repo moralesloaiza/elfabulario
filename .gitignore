@@ -32,6 +32,7 @@ pnpm-debug.log*
 # Scratch local del director: bundles, configs de trabajo, materiales de
 # curaduria ya cumplidos, copias para diff. Nada aqui se versiona.
 _scratch/
+_bundles/
 
 # Salidas locales de extraccion Samaniego (no versionar)
 salida-libro-*/

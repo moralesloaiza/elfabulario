@@ -1,5 +1,5 @@
 ---
-titulo: La Gallina de los huevos de oro
+titulo: La gallina de los huevos de oro
 resumen: Un hombre posee una gallina que pone un huevo de oro cada día;
   impaciente por enriquecerse de golpe, la mata para hallar el tesoro de una
   vez, y se queda sin nada.

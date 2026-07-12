@@ -1,5 +1,5 @@
-﻿---
-titulo: La Oveja y el Ciervo
+---
+titulo: La oveja y el ciervo
 # resumen: pendiente de curaduría
 fecha: 2026-05-16   # MARCADOR — fijar la fecha real al publicar
 borrador: false

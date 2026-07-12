@@ -1,5 +1,5 @@
-﻿---
-titulo: Los dos Machos
+---
+titulo: Los dos machos
 # resumen: pendiente de curaduría
 fecha: 2026-05-15   # MARCADOR — fijar la fecha real al publicar
 borrador: false

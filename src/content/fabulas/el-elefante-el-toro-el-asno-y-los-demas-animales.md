@@ -1,5 +1,5 @@
-﻿---
-titulo: El Elefante, el Toro, el Asno y los demás Animales
+---
+titulo: El elefante, el toro, el asno y los demás animales
 # resumen: pendiente de curaduría
 fecha: 2026-05-18   # MARCADOR — fijar la fecha real al publicar
 borrador: false

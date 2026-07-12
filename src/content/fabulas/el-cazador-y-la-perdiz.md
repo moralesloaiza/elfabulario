@@ -1,5 +1,5 @@
-﻿---
-titulo: El Cazador y la Perdiz
+---
+titulo: El cazador y la perdiz
 # resumen: pendiente de curaduría
 fecha: 2026-05-15   # MARCADOR — fijar la fecha real al publicar
 borrador: false

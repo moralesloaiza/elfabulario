@@ -1,5 +1,5 @@
-﻿---
-titulo: La Onza y los Pastores
+---
+titulo: La onza y los pastores
 # resumen: pendiente de curaduría
 fecha: 2026-05-15   # MARCADOR — fijar la fecha real al publicar
 borrador: false

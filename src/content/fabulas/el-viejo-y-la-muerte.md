@@ -1,5 +1,5 @@
-﻿---
-titulo: El Viejo y la Muerte
+---
+titulo: El viejo y la muerte
 # resumen: pendiente de curaduría
 fecha: 2026-05-15   # MARCADOR — fijar la fecha real al publicar
 borrador: false

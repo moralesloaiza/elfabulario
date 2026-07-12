@@ -1,5 +1,5 @@
-﻿---
-titulo: Los Ratones y el Gato
+---
+titulo: Los ratones y el gato
 # resumen: pendiente de curaduría
 fecha: 2026-05-16   # MARCADOR — fijar la fecha real al publicar
 borrador: false

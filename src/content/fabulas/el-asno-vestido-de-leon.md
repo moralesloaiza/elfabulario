@@ -1,5 +1,5 @@
 ---
-titulo: El Asno vestido de León
+titulo: El asno vestido de león
 resumen: Un asno se pasea cubierto con una piel de león y atemoriza a todos,
   hasta que una oreja que asoma lo delata.
 fecha: 2026-05-16

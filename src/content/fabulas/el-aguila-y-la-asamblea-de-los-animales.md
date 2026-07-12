@@ -1,5 +1,5 @@
-﻿---
-titulo: El Águila y la asamblea de los Animales
+---
+titulo: El águila y la asamblea de los animales
 # resumen: pendiente de curaduría
 fecha: 2026-05-17   # MARCADOR — fijar la fecha real al publicar
 borrador: false

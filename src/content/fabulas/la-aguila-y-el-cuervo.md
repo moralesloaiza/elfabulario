@@ -1,5 +1,5 @@
-﻿---
-titulo: La Águila y el Cuervo
+---
+titulo: La águila y el cuervo
 resumen: >-
   Un cuervo intenta imitar al águila lanzándose sobre un carnero, pero queda atrapado en el vellón y los pastores se burlan de él.
 fecha: 2026-05-15

@@ -1,5 +1,5 @@
-﻿---
-titulo: La Hermosa y el Espejo
+---
+titulo: La hermosa y el espejo
 # resumen: pendiente de curaduría
 fecha: 2026-05-18   # MARCADOR — fijar la fecha real al publicar
 borrador: false

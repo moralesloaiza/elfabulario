@@ -1,4 +1,0 @@
-===== BUNDLE: Configuracion, esquemas, utilidades, estilos, layouts, CMS =====
-Generado: 2026-05-24 16:29
-Archivos: 0
-
