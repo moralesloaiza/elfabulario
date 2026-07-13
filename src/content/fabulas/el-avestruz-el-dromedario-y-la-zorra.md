@@ -21,28 +21,7 @@ curador: Don Alejandro
 es_seudonimo: true
 nombre_real: Alejandro Morales Loaiza
 traduccion: false
-nota_curador: >-
-  El asno y las ranas es la fábula duodécima del libro tercero de las Fábulas
-  morales (1781-1784) de [Félix María de
-  Samaniego](https://elfabulario.com/autores/felix-maria-de-samaniego/),
-  escritas por encargo del Real Seminario Patriótico Vascongado de Vergara. A
-  diferencia de otras piezas de la colección, en esta Samaniego se apoya más en
-  el modelo de Fedro que en el esópico, según ha señalado la crítica
-  especializada en sus fuentes clásicas. Un asno viejo, cargado de leña, queda
-  atrapado en una laguna y maldice a gritos su suerte, hasta que las ranas que
-  allí viven —condenadas, dicen, por Júpiter a vivir eternamente encenagadas— le
-  enseñan que la queja agrava el mal y que hay desgracias mayores que se
-  sobrellevan sin lamento.
-
-
-  ##### Glosario
-
-
-  1. **Jumento:** asno o burro de carga; nombre con que las ranas se dirigen al protagonista para reprenderlo.
-
-  2. **Encenagada:** cubierta o hundida en el cieno; así describen las ranas su propia condición permanente en la laguna.
-
-  3. **Anchuroso:** muy ancho o extenso; adjetivo con que las ranas describen el mar que nunca podrán cruzar.
+nota_curador: ""
 ---
 Para pasar el tiempo congregada
 una tertulia de animales varios
