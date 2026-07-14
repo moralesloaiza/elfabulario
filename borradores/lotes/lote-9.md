@@ -37,9 +37,9 @@ El buey y la cigarra: Fábula narrada de Tomás de Iriarte | El Fabulario
 
 Un buey ara la tierra con esfuerzo y deja, entre tantos surcos rectos, uno torcido. Basta ese único descuido para que una cigarra, sin haber movido un dedo en toda la faena, se sienta con derecho a criticarlo.
 
-Esta fábula es la trigésimo séptima de las Fábulas literarias (1782) de Tomás de Iriarte (https://elfabulario.com/autores/tomas-de-iriarte/), la colección con la que el fabulista tinerfeño reclamó ser el primer autor de fábulas enteramente originales en lengua castellana.
+Esta fábula es la trigésimo séptima de las Fábulas literarias (1782) de [Tomás de Iriarte](https://elfabulario.com/autores/tomas-de-iriarte/), la colección con la que el fabulista tinerfeño reclamó ser el primer autor de fábulas enteramente originales en lengua castellana.
 
-En este episodio de El Fabulario (https://elfabulario.com/), Don Alejandro narra El buey y la cigarra (https://elfabulario.com/fabulas/el-buey-y-la-cigarra/), la fábula de Iriarte sobre la necedad de quien censura un defecto leve en una obra grande.
+En este episodio de [El Fabulario](https://elfabulario.com/), Don Alejandro narra [El buey y la cigarra](https://elfabulario.com/fabulas/el-buey-y-la-cigarra/), la fábula de Iriarte sobre la necedad de quien censura un defecto leve en una obra grande.
 
 En El Fabulario, Don Alejandro narra los clásicos de la fábula con voz pausada, para escuchar en calma. Recibimos peticiones para narrar fábulas, dedicarlas o añadir nuevas a El Fabulario. Nuevos episodios regularmente.
 
@@ -77,9 +77,9 @@ El burro del aceitero: Fábula narrada de Tomás de Iriarte | El Fabulario
 
 Un burro que carga cueros de aceite para su amo tropieza de noche contra la puerta de su cuadra y se queja a gritos: ¿no es cosa dura acarrear tanto combustible y tener, aun así, el establo a oscuras?
 
-Esta fábula es la sexagésimo segunda de las Fábulas literarias (1782) de Tomás de Iriarte (https://elfabulario.com/autores/tomas-de-iriarte/), dedicada, según su propia moraleja, a quienes juntan muchos libros y ninguno leen.
+Esta fábula es la sexagésimo segunda de las Fábulas literarias (1782) de [Tomás de Iriarte](https://elfabulario.com/autores/tomas-de-iriarte/), dedicada, según su propia moraleja, a quienes juntan muchos libros y ninguno leen.
 
-En este episodio de El Fabulario (https://elfabulario.com/), Don Alejandro narra El burro del aceitero (https://elfabulario.com/fabulas/el-burro-del-aceitero/), la fábula con la que Iriarte, con un giro final dirigido al propio lector, se burla de quienes acumulan bibliotecas que jamás abren.
+En este episodio de [El Fabulario](https://elfabulario.com/), Don Alejandro narra [El burro del aceitero](https://elfabulario.com/fabulas/el-burro-del-aceitero/), la fábula con la que Iriarte, con un giro final dirigido al propio lector, se burla de quienes acumulan bibliotecas que jamás abren.
 
 En El Fabulario, Don Alejandro narra los clásicos de la fábula con voz pausada, para escuchar en calma. Recibimos peticiones para narrar fábulas, dedicarlas o añadir nuevas a El Fabulario. Nuevos episodios regularmente.
 
@@ -117,8 +117,8 @@ El caballo, el ciervo y el cazador: Fábula narrada de Félix María de Samanieg
 
 Un caballo, herido en su orgullo por la leve ofensa de un ciervo, jura vengarse. Como no logra alcanzarlo por su cuenta, pide ayuda al hombre, sin sospechar el precio que tendrá esa alianza.
 
-Esta fábula pertenece al libro segundo de las Fábulas morales (1781-1784) de Félix María de Samaniego (https://elfabulario.com/autores/felix-maria-de-samaniego/), quien la tomó de la tradición esópica del caballo, el ciervo y el cazador, retomada también por Jean de La Fontaine.
+Esta fábula pertenece al libro segundo de las Fábulas morales (1781-1784) de [Félix María de Samaniego](https://elfabulario.com/autores/felix-maria-de-samaniego/), quien la tomó de la tradición esópica del caballo, el ciervo y el cazador, retomada también por Jean de La Fontaine.
 
-En este episodio de El Fabulario (https://elfabulario.com/), Don Alejandro narra El caballo, el ciervo y el cazador (https://elfabulario.com/fabulas/el-caballo-el-ciervo-y-el-cazador/), la fábula de Samaniego sobre el alto precio que paga quien cambia su libertad por una venganza.
+En este episodio de [El Fabulario](https://elfabulario.com/), Don Alejandro narra [El caballo, el ciervo y el cazador](https://elfabulario.com/fabulas/el-caballo-el-ciervo-y-el-cazador/), la fábula de Samaniego sobre el alto precio que paga quien cambia su libertad por una venganza.
 
-En El Fabulario, Don Alejandro narra los clásicos de la fábula con voz pausada, para escuchar en calma. Recibimos peticiones para narrar fábulas, dedicarlas o añadir nuevas a El Fabulario. Nuevos episodios regularmente.
+En El Fabulario, Don Alejandro narra los clásicos de la fábula con voz pausada, para escuchar en calma. Recibimos peticiones para narrar fábulas, dedicarlas o añadir nuevas a El Fabulario. Nuevos episodios regul
