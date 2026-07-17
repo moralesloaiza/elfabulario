@@ -1,15 +1,17 @@
 ---
 nombre: Rafael Pombo
 tipo: clasico
+imagen: /src/assets/uploads/chatgpt-image-17-jul-2026-19_16_42.png
 nacionalidad: Colombiano
-nacimiento: 1833
 muerte: 1912
-siglo: XIX
-descripcion: Poeta, fabulista y traductor colombiano, autor de las fábulas y de los célebres cuentos pintados que fundan la literatura infantil en Colombia.
 lugar_nacimiento: Bogotá
+descripcion: Poeta, fabulista y traductor colombiano, autor de las fábulas y de
+  los célebres cuentos pintados que fundan la literatura infantil en Colombia.
+siglo: XIX
 lugar_muerte: Bogotá
 sameAs:
   - https://es.wikipedia.org/wiki/Rafael_Pombo
+nacimiento: 1833
 ---
 Nació en Bogotá en 1833, en el seno de una familia patricia, y se formó entre las aulas del Colegio del Rosario y del Colegio Militar, donde se graduó de ingeniero. Pero el cálculo y la topografía nunca pudieron con la poesía: desde muy joven versificaba con una facilidad que asombraba a sus mayores, y firmaba sus primeros poemas con el seudónimo de «Edda».
 
