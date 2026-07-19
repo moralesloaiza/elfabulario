@@ -5,6 +5,7 @@ resumen: Una mula de alquiler se resiste a obedecer a su jinete y presume de
 fecha: 2026-05-31
 fecha_actualizada: 2026-06-02
 ilustracion: /src/assets/uploads/caminante-mula.png
+spotify_url: https://open.spotify.com/episode/3HUv8qvEchJjtmjtF3wFTp?si=_X6fMlbXQB2zlL0B2bz8wQ
 borrador: false
 personajes:
   - caminante
@@ -19,6 +20,27 @@ autor: tomas-de-iriarte
 curador: Don Alejandro
 es_seudonimo: true
 nombre_real: Alejandro Morales Loaiza
+traduccion: false
+nota_curador: >-
+  El caminante y la mula de alquiler es la fábula XVIII de las Fábulas
+  literarias (1782) de [Tomás de
+  Iriarte](https://elfabulario.com/autores/tomas-de-iriarte/), colección con la
+  que el fabulista tinerfeño reclamó ser el primero en escribir fábulas
+  enteramente originales en lengua castellana, en el marco de la polémica que lo
+  enfrentó con Samaniego. Como el resto de la colección, la pieza es una
+  alegoría sobre el oficio de escribir: una mula de alquiler que arranca con
+  brío excesivo y termina agotada y rebelde retrata al autor que empieza una
+  obra con un estilo demasiado elevado y se ve obligado, después, a humillarlo.
+
+
+  ##### Glosario
+
+
+  1. **Corcovo:** salto brusco que da una caballería encorvando el lomo, con el que intenta derribar al jinete.
+
+  2. **Envión:** empujón o impulso violento y repentino.
+
+  3. **Muermo:** enfermedad infecciosa grave de las caballerías; en la fábula se usa como maldición contra la mula.
 ---
 Harta de paja y cebada
 una mula de alquiler
@@ -58,4 +80,5 @@ Tente, hombre, que te has de ver
 en el vergonzoso estado
 de la mula de alquiler!»
 
-*Los que empiezan elevando el estilo, se ven tal vez precisados a humillarle después demasiado.*
+*Los que empiezan elevando el estilo, se ven*\
+*tal vez precisados a humillarle después demasiado.*
