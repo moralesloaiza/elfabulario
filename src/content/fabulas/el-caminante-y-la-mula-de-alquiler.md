@@ -5,6 +5,7 @@ resumen: Una mula de alquiler se resiste a obedecer a su jinete y presume de
 fecha: 2026-05-31
 fecha_actualizada: 2026-06-02
 ilustracion: /src/assets/uploads/caminante-mula.png
+spotify_url: https://open.spotify.com/episode/3HUv8qvEchJjtmjtF3wFTp?si=_X6fMlbXQB2zlL0B2bz8wQ
 borrador: false
 personajes:
   - caminante
