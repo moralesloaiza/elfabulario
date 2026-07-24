@@ -2,6 +2,7 @@
 titulo: La gallina y el diamante
 resumen: "En tiempo de gran hambruna, una gallina escarba y halla un diamante, pero lo vuelve a enterrar: de nada sirve la joya a quien solo buscaba un grano de cebada."
 fecha: 2026-07-09
+ilustracion: /src/assets/uploads/la-gallina-y-el-diamante.png
 borrador: false
 personajes:
   - gallina

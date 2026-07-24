@@ -3,6 +3,7 @@ titulo: El gato guardián
 resumen: Un campesino pone al gato a cuidar el queso de los ratones, y el gato despacha
   a un tiempo ratón y queso.
 fecha: 2026-07-09
+ilustracion: /src/assets/uploads/el-gato-guardian.png
 borrador: false
 personajes:
   - gato

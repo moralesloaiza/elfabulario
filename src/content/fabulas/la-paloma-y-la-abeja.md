@@ -3,6 +3,7 @@ titulo: La paloma y la abeja
 resumen: La paloma salva a una abeja de ahogarse; poco después la abeja le devuelve
   el favor picando al cazador que apuntaba contra ella.
 fecha: 2026-07-09
+ilustracion: /src/assets/uploads/la-paloma-y-la-abeja.png
 borrador: false
 personajes:
   - paloma

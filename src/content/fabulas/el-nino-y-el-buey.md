@@ -2,6 +2,7 @@
 titulo: El niño y el buey
 resumen: "Un buey le explica a un niño que no basta con tragar la ciencia: hay que rumiarla y digerirla, o se aprende como un loro."
 fecha: 2026-07-09
+ilustracion: /src/assets/uploads/el-nino-y-el-buey.png
 borrador: false
 personajes:
   - buey

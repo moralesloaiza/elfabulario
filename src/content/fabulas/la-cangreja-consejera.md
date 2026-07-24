@@ -3,6 +3,7 @@ titulo: La cangreja consejera
 resumen: Mamá cangreja ordena a su hija andar derecha; la hija, dócil, le pide solo
   que vaya delante y le dé el ejemplo.
 fecha: 2026-07-09
+ilustracion: /src/assets/uploads/la-cangreja-consejera.png
 borrador: false
 personajes:
   - cangrejo
