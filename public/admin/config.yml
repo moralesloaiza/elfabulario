@@ -97,6 +97,7 @@ collections:
           - { label: "Chivo", value: "chivo" }
           - { label: "Ciervo", value: "ciervo" }
           - { label: "Cigarra", value: "cigarra" }
+          - { label: "Cigarrón", value: "cigarron" }
           - { label: "Cigüeña", value: "ciguena" }
           - { label: "Cisne", value: "cisne" }
           - { label: "Cocodrilo", value: "cocodrilo" }
@@ -188,6 +189,9 @@ collections:
           - { label: "Vid", value: "vid" }
           # Objetos
           - { label: "Candela", value: "candela" }
+          - { label: "Esquilón", value: "esquilon" }
+          - { label: "Espada", value: "espada" }
+          - { label: "Lengua", value: "lengua" }
           - { label: "Navaja", value: "navaja" }
           - { label: "Papel", value: "papel" }
           - { label: "Red", value: "red" }
