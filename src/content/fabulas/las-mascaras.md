@@ -3,6 +3,7 @@ titulo: Las máscaras
 resumen: Una rosa y un jazmín envidian el color ajeno y logran cambiarlo; el sol las
   descubre y las deja arrugadas como tumbas blanqueadas.
 fecha: 2026-07-09
+ilustracion: /src/assets/uploads/las-mascaras.png
 borrador: false
 personajes: []
 temas:

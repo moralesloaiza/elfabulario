@@ -3,6 +3,7 @@ titulo: La revista
 resumen: Ante el desfile militar, el poeta manda honrar al viejo veterano mutilado
   por la patria y reservar la pólvora para el invasor, nunca para la sangre hermana.
 fecha: 2026-07-09
+ilustracion: /src/assets/uploads/la-revista.png
 borrador: false
 personajes: []
 temas:

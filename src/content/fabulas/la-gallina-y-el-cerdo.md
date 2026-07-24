@@ -3,6 +3,7 @@ titulo: La gallina y el cerdo
 resumen: Una gallina alza la vista al cielo para dar gracias a cada trago; un puerco
   se burla, sin entender que solo el alma noble sabe agradecer.
 fecha: 2026-07-09
+ilustracion: /src/assets/uploads/la-gallina-y-el-cerdo.png
 borrador: false
 personajes:
   - gallina

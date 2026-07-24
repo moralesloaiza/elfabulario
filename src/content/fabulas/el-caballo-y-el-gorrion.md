@@ -4,7 +4,7 @@ resumen: El caballo comparte su ración con un gorrión hambriento; llegado el
   verano, el pájaro le paga librándolo de las moscas.
 fecha: 2026-07-09
 fecha_actualizada: 2026-07-19
-ilustracion: /src/assets/uploads/chatgpt-image-19-jul-2026-13_05_35.png
+ilustracion: /src/assets/uploads/el-caballo-y-el-gorrion.png
 spotify_url: https://open.spotify.com/episode/00cCz9BRPIfNfrCWUvdKdp?si=TsyKezZmSLqAungY4_-npQ
 borrador: false
 personajes:

@@ -3,6 +3,7 @@ titulo: La nariz y los ojos
 resumen: La nariz, harta de cargar los anteojos, tira a los ojos a la calle; y en
   el primer tropezón es ella la que se aplasta.
 fecha: 2026-07-09
+ilustracion: /src/assets/uploads/la-nariz-y-los-ojos.png
 borrador: false
 personajes: []
 temas:

@@ -3,6 +3,7 @@ titulo: El jorobado
 resumen: Dos hermanos bellos y mimados se malogran en la pereza, mientras el hermano
   jorobado y despreciado se hace sabio y próspero en la escuela del quebranto.
 fecha: 2026-07-09
+ilustracion: /src/assets/uploads/el-jorobado.png
 borrador: false
 personajes: []
 temas:

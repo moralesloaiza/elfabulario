@@ -3,6 +3,7 @@ titulo: Dientes y confites
 resumen: Los dientes de una niña libran batalla contra nueces y confites; vencen,
   pero al triunfo le sigue el dolor de muelas y un largo ayuno.
 fecha: 2026-07-09
+ilustracion: /src/assets/uploads/dientes-y-confites.png
 borrador: false
 personajes: []
 temas:
