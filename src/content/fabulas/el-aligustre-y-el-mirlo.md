@@ -1,8 +1,12 @@
 ---
 titulo: El aligustre y el mirlo
-resumen: El aligustre ruega en vano al mirlo que le deje al menos las hojas; el mirlo lo desprecia, y luego el propio aligustre sirve de mimbre a la jaula donde el mirlo queda preso.
+resumen: El aligustre ruega en vano al mirlo que le deje al menos las hojas; el
+  mirlo lo desprecia, y luego el propio aligustre sirve de mimbre a la jaula
+  donde el mirlo queda preso.
 fecha: 2026-07-11
-borrador: true
+fecha_actualizada: 2026-07-25
+ilustracion: /src/assets/uploads/chatgpt-image-25-jul-2026-00_31_20.png
+borrador: false
 personajes:
   - aligustre
   - mirlo
@@ -19,7 +23,10 @@ nombre_real: Alejandro Morales Loaiza
 traduccion: true
 traductor: alejandro-de-morales-y-loaiza
 nota_curador: >-
-  Fábula de [Leonardo da Vinci](https://elfabulario.com/autores/leonardo-da-vinci/) recogida en los códices vincianos y editada por Edmondo Solmi (*Frammenti letterari e filosofici*, 1908); traducción propia desde el italiano.
+  Fábula de [Leonardo da
+  Vinci](https://elfabulario.com/autores/leonardo-da-vinci/) recogida en los
+  códices vincianos y editada por Edmondo Solmi (*Frammenti letterari e
+  filosofici*, 1908); traducción propia desde el italiano.
 
 
   El mirlo, soberbio, amenaza al arbusto que lo alimenta con verlo arder en el fuego; pero es el aligustre quien acaba tejiendo la jaula de su cautiverio. La ingratitud del fuerte se vuelve contra él por mano del débil que humilló.
