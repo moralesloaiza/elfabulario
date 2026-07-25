@@ -1,8 +1,11 @@
 ---
 titulo: El cedro y las demás plantas
-resumen: El cedro, ensoberbecido por su belleza, hace apartar las plantas que lo rodeaban, y sin nada que lo detenga el viento lo derriba desarraigado.
+resumen: El cedro, ensoberbecido por su belleza, hace apartar las plantas que lo
+  rodeaban, y sin nada que lo detenga el viento lo derriba desarraigado.
 fecha: 2026-07-11
-borrador: true
+fecha_actualizada: 2026-07-25
+ilustracion: /src/assets/uploads/el-cedro-y-las-demás-plantas.png
+borrador: false
 personajes:
   - cedro
 temas:
@@ -17,7 +20,10 @@ nombre_real: Alejandro Morales Loaiza
 traduccion: true
 traductor: alejandro-de-morales-y-loaiza
 nota_curador: >-
-  Fábula de [Leonardo da Vinci](https://elfabulario.com/autores/leonardo-da-vinci/) recogida en los códices vincianos y editada por Edmondo Solmi (*Frammenti letterari e filosofici*, 1908); traducción propia desde el italiano.
+  Fábula de [Leonardo da
+  Vinci](https://elfabulario.com/autores/leonardo-da-vinci/) recogida en los
+  códices vincianos y editada por Edmondo Solmi (*Frammenti letterari e
+  filosofici*, 1908); traducción propia desde el italiano.
 
 
   Las plantas que el cedro despreció eran su reparo contra el viento: la soberbia que aparta a los demás se queda sin defensa y perece por su propio aislamiento.
