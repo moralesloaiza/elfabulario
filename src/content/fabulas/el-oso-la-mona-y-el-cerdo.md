@@ -2,6 +2,7 @@
 titulo: El oso, la mona y el cerdo
 resumen: "Un oso amaestrado baila convencido de su destreza y busca la opinión de la mona y luego del cerdo sobre su actuación."
 fecha: 2026-05-31   # MARCADOR: fijar la fecha real al publicar
+ilustracion: /src/assets/uploads/el-oso-la-mona-y-el-cerdo.png
 borrador: false
 personajes: [oso, mona, cerdo]
 temas: [adulacion, necedad, vanidad, critica-literaria]

@@ -2,6 +2,7 @@
 titulo: El manguito, el abanico y el quitasol
 resumen: "Sobre una mesa, un quitasol conversa con un manguito y un abanico y presume de servir en toda estación, no como ellos."
 fecha: 2026-05-31   # MARCADOR: fijar la fecha real al publicar
+ilustracion: /src/assets/uploads/el-manguito-el-abanico-y-el-quitasol.png
 borrador: false
 personajes: []
 temas: [vanidad]

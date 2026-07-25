@@ -2,6 +2,7 @@
 titulo: El papagayo, el tordo y la marica
 resumen: "Un papagayo enseña a hablar a un tordo, y este a una urraca, en una cadena de imitadores que repiten lo aprendido."
 fecha: 2026-05-31   # MARCADOR: fijar la fecha real al publicar
+ilustracion: /src/assets/uploads/el-papagayo-el-tordo-y-la-marica.png
 borrador: false
 personajes: [loro, tordo, urraca]
 temas: [critica-literaria, necedad]

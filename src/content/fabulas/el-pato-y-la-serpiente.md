@@ -2,6 +2,7 @@
 titulo: El pato y la serpiente
 resumen: "Un pato se ufana de dominar tres elementos —andar, nadar y volar— hasta que una serpiente examina con qué destreza hace cada cosa."
 fecha: 2026-05-31   # MARCADOR: fijar la fecha real al publicar
+ilustracion: /src/assets/uploads/el-pato-y-la-serpiente.png
 borrador: false
 personajes: [pato, serpiente]
 temas: [vanidad, soberbia, astucia]
