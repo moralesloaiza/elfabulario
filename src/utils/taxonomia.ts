@@ -15,7 +15,7 @@ export const PERSONAJES = [
 	// Animales
 	'abeja', 'aguila', 'arana', 'ardilla', 'avestruz', 'avispa', 'avutarda',
 	'buey', 'buho', 'burro', 'caballo', 'cabra', 'camello', 'cangrejo',
-	'caracol', 'carnero', 'cerdo', 'chivo', 'ciervo', 'cigarra', 'ciguena',
+	'caracol', 'carnero', 'cerdo', 'chivo', 'ciervo', 'cigarra', 'cigarron', 'ciguena',
 	'cisne', 'cocodrilo', 'codorniz', 'comadreja', 'conejo', 'cordero', 'cuclillo',
 	'cuervo', 'culebra', 'elefante', 'escarabajo', 'faisan', 'gallina', 'gallo',
 	'ganso', 'gato', 'gorrion', 'grillo', 'grulla', 'gusano', 'halcon', 'hormiga',
@@ -30,7 +30,7 @@ export const PERSONAJES = [
 	'aligustre', 'calabaza', 'castano', 'cedro', 'clematide', 'higuera', 'lirio',
 	'melocotonero', 'nogal', 'olmo', 'peral', 'sauce', 'vid',
 	// Objetos
-	'candela', 'navaja', 'papel', 'red', 'tinta',
+	'candela', 'esquilon', 'espada', 'lengua', 'navaja', 'papel', 'red', 'tinta',
 	// Roles humanos
 	'abogado', 'amo', 'anciano', 'caminante', 'carretero', 'cazador', 'chalan',
 	'ciego', 'cojo', 'criada', 'doctor', 'emperador', 'enfermo', 'erudito',
@@ -90,6 +90,7 @@ export const PERSONAJES_DISPLAY: Record<Personaje, string> = {
 	chivo: 'Chivo',
 	ciervo: 'Ciervo',
 	cigarra: 'Cigarra',
+	cigarron: 'Cigarrón',
 	ciguena: 'Cigüeña',
 	cisne: 'Cisne',
 	cocodrilo: 'Cocodrilo',
@@ -181,6 +182,9 @@ export const PERSONAJES_DISPLAY: Record<Personaje, string> = {
 	vid: 'Vid',
 	// Objetos
 	candela: 'Candela',
+	esquilon: 'Esquilón',
+	espada: 'Espada',
+	lengua: 'Lengua',
 	navaja: 'Navaja',
 	papel: 'Papel',
 	red: 'Red',
