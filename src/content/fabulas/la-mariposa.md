@@ -3,8 +3,8 @@ titulo: La mariposa
 resumen: Una mariposa, deslumbrada por la llama de una vela, decide aproximarse
   y volar encima de ella.
 fecha: 2011-11-27
-fecha_actualizada: 2026-05-16
-ilustracion: /src/assets/uploads/chatgpt-image-15-may-2026-23_15_58.png
+fecha_actualizada: 2026-07-25
+ilustracion: /src/assets/uploads/chatgpt-image-25-jul-2026-11_11_59.png
 borrador: false
 personajes:
   - mariposa
@@ -13,11 +13,13 @@ temas:
   - necedad
   - vanidad
 forma: prosa
-tradicion: null
+tradicion: italiana
 autor: leonardo-da-vinci
 curador: Don Alejandro
 es_seudonimo: true
 nombre_real: Alejandro Morales Loaiza
+traduccion: true
+traductor: anonimo
 nota_curador: Version en español de *El tesoro de la juventud o Enciclopedia de
   conocimientos*, publicada en 1920 por W. M. Jackson.
 ---
