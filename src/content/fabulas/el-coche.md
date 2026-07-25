@@ -3,6 +3,7 @@ titulo: El coche
 resumen: Un coche cruza el pueblo entre estrépito y polvareda, y cuando al fin se
   detiene y todos acuden, lo hallan vacío por dentro.
 fecha: 2026-07-09
+ilustracion: /src/assets/uploads/el-coche.png
 borrador: false
 personajes: []
 temas:

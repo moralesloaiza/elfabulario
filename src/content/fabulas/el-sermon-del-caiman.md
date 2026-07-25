@@ -3,6 +3,7 @@ titulo: El sermón del caimán
 resumen: Un caimán que no logra alcanzar a su presa le predica que corra derecho, sin
   zigzag; el hombre replica que, según esa moral, primero se arranque los dientes.
 fecha: 2026-07-09
+ilustracion: /src/assets/uploads/el-sermon-del-caiman.png
 borrador: false
 personajes:
   - cocodrilo

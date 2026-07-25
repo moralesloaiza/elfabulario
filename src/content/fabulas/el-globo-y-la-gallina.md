@@ -3,6 +3,7 @@ titulo: El globo y la gallina
 resumen: Un globo invita a la gallina a un viaje por el cielo comiendo estrellas;
   ella, prudente, prefiere su maíz a embarcarse en algo lleno de aire y humo.
 fecha: 2026-07-09
+ilustracion: /src/assets/uploads/el-globo-y-la-gallina.png
 borrador: false
 personajes:
   - gallina

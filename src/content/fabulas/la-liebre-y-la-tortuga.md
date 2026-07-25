@@ -4,7 +4,7 @@ resumen: La veloz liebre se confía y se duerme en plena carrera; la tortuga,
   lenta pero constante, llega antes a la meta.
 fecha: 2026-06-13
 fecha_actualizada: 2026-06-13
-ilustracion: /src/assets/uploads/chatgpt-image-13-jun-2026-22_54_37.png
+ilustracion: /src/assets/uploads/la-liebre-y-la-tortuga.png
 spotify_url: https://open.spotify.com/episode/5e44EcXvM8AuWDUWg6CxRR?si=adTiA5fnSLCn57eb_z47ag
 borrador: false
 personajes:
