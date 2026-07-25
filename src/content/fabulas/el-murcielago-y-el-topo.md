@@ -3,6 +3,7 @@ titulo: El murciélago y el topo
 resumen: Atormentado por su horror a la luz, el murciélago pide consejo al topo,
   que solo lo confirma en su ceguera; el ciego que se deja guiar por otro ciego.
 fecha: 2026-07-24
+ilustracion: /src/assets/uploads/el-murcielago-y-el-topo.png
 borrador: false
 personajes:
   - murcielago

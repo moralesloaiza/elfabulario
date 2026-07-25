@@ -3,6 +3,7 @@ titulo: La lengua y la espada
 resumen: Presas en la misma cárcel, una espada y una lengua comparan sus
   crímenes; y la lengua resulta, con mucho, la más temible de las dos.
 fecha: 2026-07-24
+ilustracion: /src/assets/uploads/la-lengua-y-la-espada.png
 borrador: false
 personajes:
   - lengua

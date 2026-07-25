@@ -3,6 +3,7 @@ titulo: El olmo y la vid
 resumen: La vid se duele de su condición rastrera hasta que el olmo la invita a
   trepar por su tronco, y solo a costa de esfuerzo llega a lo alto y da fruto.
 fecha: 2026-07-24
+ilustracion: /src/assets/uploads/el-olmo-y-la-vid.png
 borrador: false
 personajes:
   - olmo

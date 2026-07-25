@@ -3,6 +3,7 @@ titulo: El niño llorón
 resumen: Una niñera descubre que la música suave calma al niño que llora y la
   estridente lo enfurece; lección viva sobre el poder de las palabras dulces.
 fecha: 2026-07-24
+ilustracion: /src/assets/uploads/el-nino-lloron.png
 borrador: false
 personajes:
   - criada

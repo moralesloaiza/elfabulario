@@ -3,6 +3,7 @@ titulo: Los canarios filarmónicos
 resumen: Un viejo maestro se empeña en enseñar solfeo por principios a unos
   canarios, que acaban aprendiendo de oído la tonada de un organillo callejero.
 fecha: 2026-07-24
+ilustracion: /src/assets/uploads/los-canarios-filarmonicos.png
 borrador: false
 personajes:
   - anciano

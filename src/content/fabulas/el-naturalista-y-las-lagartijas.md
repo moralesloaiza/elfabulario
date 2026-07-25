@@ -2,6 +2,7 @@
 titulo: El naturalista y las lagartijas
 resumen: "Un naturalista disecciona una lagartija ante su tertulia, y la que escapa con vida cuenta a las suyas la importancia que cree haber despertado."
 fecha: 2026-05-31   # MARCADOR: fijar la fecha real al publicar
+ilustracion: /src/assets/uploads/el-naturalista-y-las-lagartijas.png
 borrador: false
 personajes: [naturalista, lagarto]
 temas: [critica-literaria, vanidad, necedad]
