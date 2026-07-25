@@ -1,8 +1,12 @@
 ---
 titulo: El castaño y la higuera
-resumen: El castaño se ufana ante la higuera de la coraza espinosa con que la naturaleza guarda sus frutos; la higuera le muestra cómo el hombre, a golpes de vara y piedra, igual la despoja.
+resumen: El castaño se ufana ante la higuera de la coraza espinosa con que la
+  naturaleza guarda sus frutos; la higuera le muestra cómo el hombre, a golpes
+  de vara y piedra, igual la despoja.
 fecha: 2026-07-11
-borrador: true
+fecha_actualizada: 2026-07-25
+ilustracion: /src/assets/uploads/el-castaño-y-la-higuera.png
+borrador: false
 personajes:
   - castano
   - higuera
@@ -18,7 +22,10 @@ nombre_real: Alejandro Morales Loaiza
 traduccion: true
 traductor: alejandro-de-morales-y-loaiza
 nota_curador: >-
-  Fábula de [Leonardo da Vinci](https://elfabulario.com/autores/leonardo-da-vinci/) recogida en los códices vincianos y editada por Edmondo Solmi (*Frammenti letterari e filosofici*, 1908); traducción propia desde el italiano.
+  Fábula de [Leonardo da
+  Vinci](https://elfabulario.com/autores/leonardo-da-vinci/) recogida en los
+  códices vincianos y editada por Edmondo Solmi (*Frammenti letterari e
+  filosofici*, 1908); traducción propia desde el italiano.
 
 
   El castaño presume de su armadura de espinas, pero la higuera le recuerda que el ingenio del hombre vence toda defensa: a ella la tocan con cuidado las manos; a él lo abaten a varazos. La vanagloria de la coraza esconde su propio castigo.
