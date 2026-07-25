@@ -16,7 +16,7 @@ temas:
   - necedad
 forma: verso
 tradicion: hispanica
-autor: cayetano-fernandez
+autor: cayetano-fernández-cabello
 curador: Don Alejandro
 es_seudonimo: true
 nombre_real: Alejandro Morales Loaiza
