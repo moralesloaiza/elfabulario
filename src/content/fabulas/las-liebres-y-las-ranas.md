@@ -2,6 +2,7 @@
 titulo: Las liebres y las ranas
 # resumen: pendiente de curaduría
 fecha: 2026-05-15   # MARCADOR — fijar la fecha real al publicar
+ilustracion: /src/assets/uploads/las-liebres-y-las-ranas.png
 borrador: false
 # --- Taxonomía: PENDIENTE DE CURADURÍA (rellenar antes de build) ---
 personajes: [liebre, rana]

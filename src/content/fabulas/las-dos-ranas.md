@@ -3,6 +3,7 @@ titulo: Las dos ranas
 resumen: >-
   Una rana avisa a su amiga del peligro de vivir junto al camino; la otra, aferrada a la costumbre, desoye el consejo hasta que una carreta la aplasta.
 fecha: 2026-05-15
+ilustracion: /src/assets/uploads/las-dos-ranas.png
 borrador: false
 personajes: 
   - rana
