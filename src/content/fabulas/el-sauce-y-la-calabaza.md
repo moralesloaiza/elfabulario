@@ -6,7 +6,7 @@ resumen: Harto de que la vid lo tenga siempre podado, el sauce busca compañía 
 fecha: 2026-07-11
 fecha_actualizada: 2026-07-25
 ilustracion: /src/assets/uploads/el-sauce-y-la-calabaza.png
-borrador: true
+borrador: false
 personajes:
   - sauce
   - calabaza
