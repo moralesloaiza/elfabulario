@@ -1,8 +1,12 @@
 ---
 titulo: La nuez y el campanario
-resumen: Una nuez suplica al muro del campanario que la acoja en una grieta, y una vez dentro echa raíces que resquebrajan las piedras y derriban gran parte del edificio que la amparó.
+resumen: Una nuez suplica al muro del campanario que la acoja en una grieta, y
+  una vez dentro echa raíces que resquebrajan las piedras y derriban gran parte
+  del edificio que la amparó.
 fecha: 2026-07-11
-borrador: true
+fecha_actualizada: 2026-07-26
+ilustracion: /src/assets/uploads/chatgpt-image-26-jul-2026-10_47_52.png
+borrador: false
 personajes:
   - nogal
 temas:
@@ -17,7 +21,10 @@ nombre_real: Alejandro Morales Loaiza
 traduccion: true
 traductor: alejandro-de-morales-y-loaiza
 nota_curador: >-
-  Fábula de [Leonardo da Vinci](https://elfabulario.com/autores/leonardo-da-vinci/) recogida en los códices vincianos y editada por Edmondo Solmi (*Frammenti letterari e filosofici*, 1908); traducción propia desde el italiano.
+  Fábula de [Leonardo da
+  Vinci](https://elfabulario.com/autores/leonardo-da-vinci/) recogida en los
+  códices vincianos y editada por Edmondo Solmi (*Frammenti letterari e
+  filosofici*, 1908); traducción propia desde el italiano.
 
 
   La nuez conmueve al muro con humildes ruegos y luego lo destruye desde dentro: la ingratitud del socorrido, que paga el amparo recibido con la ruina de quien lo dio.
