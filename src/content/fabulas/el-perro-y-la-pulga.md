@@ -1,8 +1,12 @@
 ---
 titulo: El perro y la pulga
-resumen: Una pulga abandona al perro atraída por la lana grasienta de un carnero, pero no halla dónde picar entre el espeso vellón ni cómo volver, y muere de hambre.
+resumen: Una pulga abandona al perro atraída por la lana grasienta de un
+  carnero, pero no halla dónde picar entre el espeso vellón ni cómo volver, y
+  muere de hambre.
 fecha: 2026-07-11
-borrador: true
+fecha_actualizada: 2026-07-25
+ilustracion: /src/assets/uploads/chatgpt-image-25-jul-2026-23_29_38.png
+borrador: false
 personajes:
   - perro
   - pulga
@@ -18,7 +22,10 @@ nombre_real: Alejandro Morales Loaiza
 traduccion: true
 traductor: alejandro-de-morales-y-loaiza
 nota_curador: >-
-  Fábula de [Leonardo da Vinci](https://elfabulario.com/autores/leonardo-da-vinci/) recogida en los códices vincianos y editada por Edmondo Solmi (*Frammenti letterari e filosofici*, 1908); traducción propia desde el italiano.
+  Fábula de [Leonardo da
+  Vinci](https://elfabulario.com/autores/leonardo-da-vinci/) recogida en los
+  códices vincianos y editada por Edmondo Solmi (*Frammenti letterari e
+  filosofici*, 1908); traducción propia desde el italiano.
 
 
   La pulga cambia el sustento seguro por la promesa de una vida mejor y lo pierde todo: ni encuentra alimento en la lana ni recupera a su perro. La codicia que desprecia lo que tiene se queda sin nada.
