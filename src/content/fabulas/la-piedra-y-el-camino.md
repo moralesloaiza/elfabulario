@@ -1,7 +1,11 @@
 ---
 titulo: La piedra y el camino
-resumen: Una piedra deja su tranquila altura entre flores para bajar al camino con las demás piedras, donde acaba pisoteada por ruedas y cascos y añora en vano la paz perdida.
+resumen: Una piedra deja su tranquila altura entre flores para bajar al camino
+  con las demás piedras, donde acaba pisoteada por ruedas y cascos y añora en
+  vano la paz perdida.
 fecha: 2026-07-11
+fecha_actualizada: 2026-07-26
+ilustracion: /src/assets/uploads/chatgpt-image-26-jul-2026-10_44_33.png
 borrador: true
 personajes: []
 temas:
@@ -16,7 +20,10 @@ nombre_real: Alejandro Morales Loaiza
 traduccion: true
 traductor: alejandro-de-morales-y-loaiza
 nota_curador: >-
-  Fábula de [Leonardo da Vinci](https://elfabulario.com/autores/leonardo-da-vinci/) recogida en los cuadernos vincianos y editada por Edmondo Solmi (*Frammenti letterari e filosofici*, 1908); traducción propia desde el italiano.
+  Fábula de [Leonardo da
+  Vinci](https://elfabulario.com/autores/leonardo-da-vinci/) recogida en los
+  cuadernos vincianos y editada por Edmondo Solmi (*Frammenti letterari e
+  filosofici*, 1908); traducción propia desde el italiano.
 
 
   La piedra que cambia el sosiego de la altura por la compañía del camino descubre demasiado tarde el tormento del bullicio: retrato de quien deja la vida solitaria y contemplativa por la ciudad llena de males.
