@@ -1,7 +1,11 @@
 ---
 titulo: La mona y el pajarillo
-resumen: La mona atrapa a un pajarillo y, por su desmedido cariño, tanto lo besa y lo aprieta que le quita la vida; dicho por quienes, por no corregir a sus hijos, acaban mal.
+resumen: La mona atrapa a un pajarillo y, por su desmedido cariño, tanto lo besa
+  y lo aprieta que le quita la vida; dicho por quienes, por no corregir a sus
+  hijos, acaban mal.
 fecha: 2026-07-11
+fecha_actualizada: 2026-07-26
+ilustracion: /src/assets/uploads/chatgpt-image-26-jul-2026-11_41_17.png
 borrador: true
 personajes:
   - mona
@@ -17,7 +21,10 @@ nombre_real: Alejandro Morales Loaiza
 traduccion: true
 traductor: alejandro-de-morales-y-loaiza
 nota_curador: >-
-  Fábula de [Leonardo da Vinci](https://elfabulario.com/autores/leonardo-da-vinci/) recogida en los códices vincianos y editada por Edmondo Solmi (*Frammenti letterari e filosofici*, 1908); traducción propia desde el italiano.
+  Fábula de [Leonardo da
+  Vinci](https://elfabulario.com/autores/leonardo-da-vinci/) recogida en los
+  códices vincianos y editada por Edmondo Solmi (*Frammenti letterari e
+  filosofici*, 1908); traducción propia desde el italiano.
 
 
   El cariño sin medida mata lo que quiere proteger. Leonardo cierra con la aplicación: así les ocurre a quienes, por no corregir a sus hijos, acaban dañándolos. La ternura que no sabe ponerse límite se vuelve ruina.
