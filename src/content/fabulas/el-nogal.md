@@ -1,8 +1,11 @@
 ---
 titulo: El nogal
-resumen: El nogal que muestra a los caminantes la riqueza de sus frutos junto al camino es apedreado por todos.
+resumen: El nogal que muestra a los caminantes la riqueza de sus frutos junto al
+  camino es apedreado por todos.
 fecha: 2026-07-11
-borrador: true
+fecha_actualizada: 2026-07-25
+ilustracion: /src/assets/uploads/chatgpt-image-25-jul-2026-23_54_10.png
+borrador: false
 personajes:
   - nogal
 temas:
@@ -17,7 +20,10 @@ nombre_real: Alejandro Morales Loaiza
 traduccion: true
 traductor: alejandro-de-morales-y-loaiza
 nota_curador: >-
-  Breve apunte de [Leonardo da Vinci](https://elfabulario.com/autores/leonardo-da-vinci/) recogido en los códices vincianos y editado por Edmondo Solmi (*Frammenti letterari e filosofici*, 1908); traducción propia desde el italiano.
+  Breve apunte de [Leonardo da
+  Vinci](https://elfabulario.com/autores/leonardo-da-vinci/) recogido en los
+  códices vincianos y editado por Edmondo Solmi (*Frammenti letterari e
+  filosofici*, 1908); traducción propia desde el italiano.
 
 
   La riqueza exhibida a la vista de todos atrae la pedrada: el nogal padece por mostrar lo que tiene junto al camino.
