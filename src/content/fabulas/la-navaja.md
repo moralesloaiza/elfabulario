@@ -1,8 +1,12 @@
 ---
 titulo: La navaja
-resumen: Una navaja, deslumbrada por su propio brillo, se esconde para no rebajarse al oficio de afeitar, y en el ocio se cubre de herrumbre que arruina su filo.
+resumen: Una navaja, deslumbrada por su propio brillo, se esconde para no
+  rebajarse al oficio de afeitar, y en el ocio se cubre de herrumbre que arruina
+  su filo.
 fecha: 2026-07-11
-borrador: true
+fecha_actualizada: 2026-07-26
+ilustracion: /src/assets/uploads/chatgpt-image-26-jul-2026-11_15_07.png
+borrador: false
 personajes:
   - navaja
 temas:
@@ -18,7 +22,10 @@ nombre_real: Alejandro Morales Loaiza
 traduccion: true
 traductor: alejandro-de-morales-y-loaiza
 nota_curador: >-
-  Fábula de [Leonardo da Vinci](https://elfabulario.com/autores/leonardo-da-vinci/) recogida en los códices vincianos y editada por Edmondo Solmi (*Frammenti letterari e filosofici*, 1908); traducción propia desde el italiano.
+  Fábula de [Leonardo da
+  Vinci](https://elfabulario.com/autores/leonardo-da-vinci/) recogida en los
+  códices vincianos y editada por Edmondo Solmi (*Frammenti letterari e
+  filosofici*, 1908); traducción propia desde el italiano.
 
 
   El propio Leonardo aplica la imagen a los ingenios que, en vez de ejercitarse, se entregan al ocio: como la navaja abandonada, pierden su sutileza cortante y la herrumbre de la ignorancia les estropea la forma.
