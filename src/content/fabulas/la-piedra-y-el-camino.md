@@ -6,7 +6,7 @@ resumen: Una piedra deja su tranquila altura entre flores para bajar al camino
 fecha: 2026-07-11
 fecha_actualizada: 2026-07-26
 ilustracion: /src/assets/uploads/chatgpt-image-26-jul-2026-10_44_33.png
-borrador: true
+borrador: false
 personajes: []
 temas:
   - necedad
