@@ -2,6 +2,7 @@
 titulo: El pedernal y el eslabón
 resumen: "El pedernal reprocha al eslabón los golpes que recibe, y en la disputa se mide qué vale cada uno por separado."
 fecha: 2026-05-31   # MARCADOR: fijar la fecha real al publicar
+ilustracion: /src/assets/uploads/el-pedernal-y-el-eslabon.png
 borrador: false
 personajes: []
 temas: [critica-literaria, sabiduria]

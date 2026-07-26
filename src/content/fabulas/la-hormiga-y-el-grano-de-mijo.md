@@ -1,8 +1,11 @@
 ---
 titulo: La hormiga y el grano de mijo
-resumen: El grano de mijo, apresado por la hormiga, le pide que lo deje nacer y le promete devolverse multiplicado por ciento; y así se cumple.
+resumen: El grano de mijo, apresado por la hormiga, le pide que lo deje nacer y
+  le promete devolverse multiplicado por ciento; y así se cumple.
 fecha: 2026-07-11
-borrador: true
+fecha_actualizada: 2026-07-26
+ilustracion: /src/assets/uploads/chatgpt-image-26-jul-2026-11_20_46.png
+borrador: false
 personajes:
   - hormiga
 temas:
@@ -17,7 +20,10 @@ nombre_real: Alejandro Morales Loaiza
 traduccion: true
 traductor: alejandro-de-morales-y-loaiza
 nota_curador: >-
-  Breve apunte de [Leonardo da Vinci](https://elfabulario.com/autores/leonardo-da-vinci/) recogido en los códices vincianos y editado por Edmondo Solmi (*Frammenti letterari e filosofici*, 1908); traducción propia desde el italiano.
+  Breve apunte de [Leonardo da
+  Vinci](https://elfabulario.com/autores/leonardo-da-vinci/) recogido en los
+  códices vincianos y editado por Edmondo Solmi (*Frammenti letterari e
+  filosofici*, 1908); traducción propia desde el italiano.
 
 
   Rara fábula de desenlace feliz en el corpus: la hormiga que concede al grano el don de nacer recibe a cambio cien granos. La generosidad que respeta la vida se ve recompensada con creces.

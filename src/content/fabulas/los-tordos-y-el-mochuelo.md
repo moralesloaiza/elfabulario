@@ -1,8 +1,12 @@
 ---
 titulo: Los tordos y el mochuelo
-resumen: Los tordos se alegran de ver cautivo y atado al mochuelo, y ese mismo mochuelo, con el visco, es luego causa de que pierdan no solo la libertad sino la vida.
+resumen: Los tordos se alegran de ver cautivo y atado al mochuelo, y ese mismo
+  mochuelo, con el visco, es luego causa de que pierdan no solo la libertad sino
+  la vida.
 fecha: 2026-07-11
-borrador: true
+fecha_actualizada: 2026-07-26
+ilustracion: /src/assets/uploads/chatgpt-image-26-jul-2026-11_38_34.png
+borrador: false
 personajes:
   - tordo
   - mochuelo
@@ -19,7 +23,12 @@ nombre_real: Alejandro Morales Loaiza
 traduccion: true
 traductor: alejandro-de-morales-y-loaiza
 nota_curador: >-
-  Fábula de [Leonardo da Vinci](https://elfabulario.com/autores/leonardo-da-vinci/) recogida en los códices vincianos y editada por Edmondo Solmi (*Frammenti letterari e filosofici*, 1908); traducción propia desde el italiano. Leonardo la glosa como aviso político a los pueblos que celebran ver caer a sus mayores, por cuyo amparo perdido acaban ellos mismos sometidos al enemigo.
+  Fábula de [Leonardo da
+  Vinci](https://elfabulario.com/autores/leonardo-da-vinci/) recogida en los
+  códices vincianos y editada por Edmondo Solmi (*Frammenti letterari e
+  filosofici*, 1908); traducción propia desde el italiano. Leonardo la glosa
+  como aviso político a los pueblos que celebran ver caer a sus mayores, por
+  cuyo amparo perdido acaban ellos mismos sometidos al enemigo.
 
 
   Conviene una nota de caza para entender la imagen: el mochuelo cautivo se empleaba como reclamo, atado y rodeado de varetas enligadas con visco, para que los tordos que acudían a hostigarlo quedaran pegados y fuesen capturados. El «vischio» del original es esa liga con que el cautivo se vuelve trampa mortal para quienes se burlaron de su cautiverio.

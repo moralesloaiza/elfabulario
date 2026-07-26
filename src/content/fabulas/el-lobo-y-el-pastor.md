@@ -2,6 +2,7 @@
 titulo: El lobo y el pastor
 resumen: "Un lobo finge buenas intenciones ante un pastor para ganarse su confianza y acercarse al rebaño."
 fecha: 2026-05-31   # MARCADOR: fijar la fecha real al publicar
+ilustracion: /src/assets/uploads/el-lobo-y-el-pastor.png
 borrador: false
 personajes: [lobo, pastor]
 temas: [critica-literaria, maldad]

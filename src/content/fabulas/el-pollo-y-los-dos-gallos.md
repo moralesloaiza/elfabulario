@@ -2,6 +2,7 @@
 titulo: El pollo y los dos gallos
 resumen: "Un gallo presumido pierde una pelea contra un pollo joven y otra contra un gallo viejo, y a cada derrota encuentra una excusa distinta."
 fecha: 2026-05-31   # MARCADOR: fijar la fecha real al publicar
+ilustracion: /src/assets/uploads/el-pollo-y-los-dos-gallos.png
 borrador: false
 personajes: [gallo]
 temas: [critica-literaria, soberbia, vejez]

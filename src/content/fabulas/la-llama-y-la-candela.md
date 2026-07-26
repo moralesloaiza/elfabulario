@@ -1,8 +1,11 @@
 ---
 titulo: La llama y la candela
-resumen: Una llama abandona por gula el horno de los vidrieros para devorar una vela, y se ve obligada a morir con ella mientras sus hermanas siguen ardiendo.
+resumen: Una llama abandona por gula el horno de los vidrieros para devorar una
+  vela, y se ve obligada a morir con ella mientras sus hermanas siguen ardiendo.
 fecha: 2026-07-11
-borrador: true
+fecha_actualizada: 2026-07-26
+ilustracion: /src/assets/uploads/chatgpt-image-26-jul-2026-00_18_23.png
+borrador: false
 personajes:
   - candela
 temas:
@@ -18,7 +21,10 @@ nombre_real: Alejandro Morales Loaiza
 traduccion: true
 traductor: alejandro-de-morales-y-loaiza
 nota_curador: >-
-  Fábula de [Leonardo da Vinci](https://elfabulario.com/autores/leonardo-da-vinci/) recogida en el Códice Atlántico y editada por Edmondo Solmi (*Frammenti letterari e filosofici*, 1908); traducción propia desde el italiano.
+  Fábula de [Leonardo da
+  Vinci](https://elfabulario.com/autores/leonardo-da-vinci/) recogida en el
+  Códice Atlántico y editada por Edmondo Solmi (*Frammenti letterari e
+  filosofici*, 1908); traducción propia desde el italiano.
 
 
   La llama que se sale de su medida por golosina se consume con aquello que codició, mientras las que se atienen a su curso natural conservan larga vida. La codicia apresura la muerte.

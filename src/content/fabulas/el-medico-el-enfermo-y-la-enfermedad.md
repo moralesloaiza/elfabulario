@@ -2,6 +2,7 @@
 titulo: El médico, el enfermo y la enfermedad
 resumen: "Mientras el enfermo y la enfermedad luchan por vencerse, un médico corto de vista intenta poner paz a garrotazos, sin ver bien a quién golpea."
 fecha: 2026-05-31   # MARCADOR: fijar la fecha real al publicar
+ilustracion: /src/assets/uploads/el-medico-el-enfermo-y-la-enfermedad.png
 borrador: false
 personajes: [medico, enfermo, ciego]
 temas: [critica-literaria, prudencia, miedo]

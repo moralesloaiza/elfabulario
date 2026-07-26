@@ -3,6 +3,7 @@ titulo: Júpiter y varios animales
 resumen: Cuatro animales piden a Júpiter cambiar de naturaleza; el dios los
   reprende por querer abandonar a la ligera el puesto que a cada cual le tocó.
 fecha: 2026-07-24
+ilustracion: /src/assets/uploads/jupiter-y-varios-animales.png
 borrador: false
 personajes:
   - zeus

@@ -1,8 +1,12 @@
 ---
 titulo: La ostra, la rata y la gata
-resumen: La ostra pide a la rata que la lleve al mar; la rata, que trama comérsela, la hace abrirse, pero al morderla la ostra le atrapa la cabeza y la retiene hasta que llega la gata y la mata.
+resumen: La ostra pide a la rata que la lleve al mar; la rata, que trama
+  comérsela, la hace abrirse, pero al morderla la ostra le atrapa la cabeza y la
+  retiene hasta que llega la gata y la mata.
 fecha: 2026-07-11
-borrador: true
+fecha_actualizada: 2026-07-26
+ilustracion: /src/assets/uploads/chatgpt-image-26-jul-2026-11_26_21.png
+borrador: false
 personajes:
   - ostra
   - rata
@@ -20,7 +24,10 @@ nombre_real: Alejandro Morales Loaiza
 traduccion: true
 traductor: alejandro-de-morales-y-loaiza
 nota_curador: >-
-  Fábula de [Leonardo da Vinci](https://elfabulario.com/autores/leonardo-da-vinci/) recogida en los códices vincianos y editada por Edmondo Solmi (*Frammenti letterari e filosofici*, 1908); traducción propia desde el italiano.
+  Fábula de [Leonardo da
+  Vinci](https://elfabulario.com/autores/leonardo-da-vinci/) recogida en los
+  códices vincianos y editada por Edmondo Solmi (*Frammenti letterari e
+  filosofici*, 1908); traducción propia desde el italiano.
 
 
   El engaño de la rata se enreda en su propia víctima: al fingir socorro para devorar, queda atrapada por la ostra y expuesta a la gata. La astucia que traiciona la confianza cae en su propia trampa.

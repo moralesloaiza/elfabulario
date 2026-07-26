@@ -3,6 +3,7 @@ titulo: El caracol y el cigarrón
 resumen: Un cigarrón se burla del paso lento del caracol y presume de sus saltos;
   el caracol defiende la ventaja de avanzar despacio, pero seguro.
 fecha: 2026-07-24
+ilustracion: /src/assets/uploads/el-caracol-y-el-cigarron.png
 borrador: false
 personajes:
   - caracol

@@ -1,8 +1,12 @@
 ---
 titulo: La araña ladrona
-resumen: La araña arma su emboscada en un racimo dulce muy visitado por abejas y moscas, y asalta como un ladrón a los incautos; pero el vendimiador la pisa con las uvas, y el racimo es lazo del engañador y de los engañados.
+resumen: La araña arma su emboscada en un racimo dulce muy visitado por abejas y
+  moscas, y asalta como un ladrón a los incautos; pero el vendimiador la pisa
+  con las uvas, y el racimo es lazo del engañador y de los engañados.
 fecha: 2026-07-11
-borrador: true
+fecha_actualizada: 2026-07-26
+ilustracion: /src/assets/uploads/chatgpt-image-26-jul-2026-00_03_55.png
+borrador: false
 personajes:
   - arana
 temas:
@@ -18,7 +22,11 @@ nombre_real: Alejandro Morales Loaiza
 traduccion: true
 traductor: alejandro-de-morales-y-loaiza
 nota_curador: >-
-  Fábula de [Leonardo da Vinci](https://elfabulario.com/autores/leonardo-da-vinci/) recogida en los códices vincianos y editada por Edmondo Solmi (*Frammenti letterari e filosofici*, 1908); traducción propia desde el italiano. Es una segunda versión, más desarrollada, del mismo asunto de *La araña y el racimo de uvas*.
+  Fábula de [Leonardo da
+  Vinci](https://elfabulario.com/autores/leonardo-da-vinci/) recogida en los
+  códices vincianos y editada por Edmondo Solmi (*Frammenti letterari e
+  filosofici*, 1908); traducción propia desde el italiano. Es una segunda
+  versión, más desarrollada, del mismo asunto de *La araña y el racimo de uvas*.
 
 
   El racimo dulce que la araña elige para su engaño acaba siendo lazo tanto de las moscas engañadas como de la propia engañadora: en el lagar, cazador y presa comparten un mismo fin.

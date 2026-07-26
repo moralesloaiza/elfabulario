@@ -2,6 +2,7 @@
 titulo: El jardinero y su amo
 resumen: "Un jardinero riega con tal exceso para salvar los peces del estanque que descuida las flores, sin acertar con el equilibrio que le pide su amo."
 fecha: 2026-05-31   # MARCADOR: fijar la fecha real al publicar
+ilustracion: /src/assets/uploads/el-jardinero-y-su-amo.png
 borrador: false
 personajes: [pez, amo]
 temas: [critica-literaria, prudencia]

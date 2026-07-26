@@ -3,6 +3,7 @@ titulo: El esquilón y el gato
 resumen: Un esquilón llama a todos a misa con gran celo, pero él nunca baja al
   templo; un gato le reprocha que su palabra vale poco sin el ejemplo.
 fecha: 2026-07-24
+ilustracion: /src/assets/uploads/el-esquilon-y-el-gato.png
 borrador: false
 personajes:
   - esquilon

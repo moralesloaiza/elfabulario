@@ -1,8 +1,12 @@
 ---
 titulo: El ratón, la comadreja y el gato
-resumen: El ratón, asediado por la comadreja, la ve devorada por la gata y da gracias a Júpiter; pero al salir a gozar de la libertad recobrada, la misma gata le quita la vida.
+resumen: El ratón, asediado por la comadreja, la ve devorada por la gata y da
+  gracias a Júpiter; pero al salir a gozar de la libertad recobrada, la misma
+  gata le quita la vida.
 fecha: 2026-07-11
-borrador: true
+fecha_actualizada: 2026-07-25
+ilustracion: /src/assets/uploads/chatgpt-image-25-jul-2026-23_24_52.png
+borrador: false
 personajes:
   - raton
   - comadreja
@@ -20,7 +24,10 @@ nombre_real: Alejandro Morales Loaiza
 traduccion: true
 traductor: alejandro-de-morales-y-loaiza
 nota_curador: >-
-  Fábula de [Leonardo da Vinci](https://elfabulario.com/autores/leonardo-da-vinci/) recogida en los códices vincianos y editada por Edmondo Solmi (*Frammenti letterari e filosofici*, 1908); traducción propia desde el italiano.
+  Fábula de [Leonardo da
+  Vinci](https://elfabulario.com/autores/leonardo-da-vinci/) recogida en los
+  códices vincianos y editada por Edmondo Solmi (*Frammenti letterari e
+  filosofici*, 1908); traducción propia desde el italiano.
 
 
   El peligro del que se libra el ratón es solo el primero de una cadena: la gata que lo salva de la comadreja es su verdadero fin. La liberación celebrada demasiado pronto se vuelve trampa.
