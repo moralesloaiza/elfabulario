@@ -1,8 +1,12 @@
 ---
 titulo: Los que se humillan son exaltados
-resumen: Una pizca de nieve, temiendo parecer soberbia en la cima, se deja caer buscando lugar más bajo, y al descender crece tanto que es la última en deshacerse aquel verano.
+resumen: Una pizca de nieve, temiendo parecer soberbia en la cima, se deja caer
+  buscando lugar más bajo, y al descender crece tanto que es la última en
+  deshacerse aquel verano.
 fecha: 2026-07-11
-borrador: true
+fecha_actualizada: 2026-07-26
+ilustracion: /src/assets/uploads/chatgpt-image-26-jul-2026-00_35_14.png
+borrador: false
 personajes: []
 temas:
   - humildad
@@ -16,7 +20,12 @@ nombre_real: Alejandro Morales Loaiza
 traduccion: true
 traductor: alejandro-de-morales-y-loaiza
 nota_curador: >-
-  Fábula de [Leonardo da Vinci](https://elfabulario.com/autores/leonardo-da-vinci/) recogida en los códices vincianos y editada por Edmondo Solmi (*Frammenti letterari e filosofici*, 1908); traducción propia desde el italiano. El propio Leonardo cierra el texto con su moraleja evangélica: «los que se humillan son exaltados».
+  Fábula de [Leonardo da
+  Vinci](https://elfabulario.com/autores/leonardo-da-vinci/) recogida en los
+  códices vincianos y editada por Edmondo Solmi (*Frammenti letterari e
+  filosofici*, 1908); traducción propia desde el italiano. El propio Leonardo
+  cierra el texto con su moraleja evangélica: «los que se humillan son
+  exaltados».
 
 
   La nieve que renuncia a la altura y busca lo bajo crece y perdura más que las que se quedaron en lo alto, deshechas por el sol. Quien se abaja voluntariamente se salva del castigo que la soberbia atrae.
