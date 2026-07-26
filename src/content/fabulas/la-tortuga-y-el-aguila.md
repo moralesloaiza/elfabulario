@@ -2,6 +2,7 @@
 titulo: La tortuga y el águila
 # resumen: pendiente de curaduría
 fecha: 2026-05-15   # MARCADOR — fijar la fecha real al publicar
+ilustracion: /src/assets/uploads/la-tortuga-y-el-aguila.png
 borrador: false
 # --- Taxonomía: PENDIENTE DE CURADURÍA (rellenar antes de build) ---
 personajes: [tortuga, aguila]
