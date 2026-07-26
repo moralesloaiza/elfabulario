@@ -1,8 +1,12 @@
 ---
 titulo: Las plantas y el peral
-resumen: El laurel y el mirto se burlan del peral que cortan, y este responde que el escultor lo hará estatua del dios Júpiter mientras a ellos los pelarán para honrarlo a su alrededor.
+resumen: El laurel y el mirto se burlan del peral que cortan, y este responde
+  que el escultor lo hará estatua del dios Júpiter mientras a ellos los pelarán
+  para honrarlo a su alrededor.
 fecha: 2026-07-11
-borrador: true
+fecha_actualizada: 2026-07-26
+ilustracion: /src/assets/uploads/chatgpt-image-26-jul-2026-11_05_44.png
+borrador: false
 personajes:
   - peral
 temas:
@@ -17,7 +21,12 @@ nombre_real: Alejandro Morales Loaiza
 traduccion: true
 traductor: alejandro-de-morales-y-loaiza
 nota_curador: >-
-  Fábula de [Leonardo da Vinci](https://elfabulario.com/autores/leonardo-da-vinci/) recogida en los códices vincianos y editada por Edmondo Solmi (*Frammenti letterari e filosofici*, 1908); traducción propia desde el italiano. El laurel y el mirto, árboles emblemáticos de la Antigüedad, quedan aquí como figuras sin etiqueta de personaje.
+  Fábula de [Leonardo da
+  Vinci](https://elfabulario.com/autores/leonardo-da-vinci/) recogida en los
+  códices vincianos y editada por Edmondo Solmi (*Frammenti letterari e
+  filosofici*, 1908); traducción propia desde el italiano. El laurel y el mirto,
+  árboles emblemáticos de la Antigüedad, quedan aquí como figuras sin etiqueta
+  de personaje.
 
 
   Frente a la burla, el peral convierte su tala en promesa de gloria: cortado, será imagen de dios y objeto de adoración. La soberbia se disfraza de consuelo ante la propia muerte.
