@@ -1,8 +1,12 @@
 ---
 titulo: El olmo y la higuera
-resumen: La higuera se jacta ante el olmo estéril de los hijos que dará; cargada de higos, una cuadrilla de soldados la desgarra, y el olmo le recuerda que mejor le hubiera sido no tenerlos.
+resumen: La higuera se jacta ante el olmo estéril de los hijos que dará; cargada
+  de higos, una cuadrilla de soldados la desgarra, y el olmo le recuerda que
+  mejor le hubiera sido no tenerlos.
 fecha: 2026-07-11
-borrador: true
+fecha_actualizada: 2026-07-25
+ilustracion: /src/assets/uploads/chatgpt-image-25-jul-2026-23_51_08.png
+borrador: false
 personajes:
   - olmo
   - higuera
@@ -19,7 +23,10 @@ nombre_real: Alejandro Morales Loaiza
 traduccion: true
 traductor: alejandro-de-morales-y-loaiza
 nota_curador: >-
-  Fábula de [Leonardo da Vinci](https://elfabulario.com/autores/leonardo-da-vinci/) recogida en los códices vincianos y editada por Edmondo Solmi (*Frammenti letterari e filosofici*, 1908); traducción propia desde el italiano.
+  Fábula de [Leonardo da
+  Vinci](https://elfabulario.com/autores/leonardo-da-vinci/) recogida en los
+  códices vincianos y editada por Edmondo Solmi (*Frammenti letterari e
+  filosofici*, 1908); traducción propia desde el italiano.
 
 
   La higuera desprecia al olmo por estéril y presume de su descendencia, pero son precisamente sus frutos los que la arruinan. El olmo, sereno, formula la moraleja: cuánto mejor le habría valido no cargar con lo que la destroza.
