@@ -5,7 +5,7 @@ resumen: Un cuervo halla dormida a una serpiente y se lanza sobre ella; el
 fecha: 2026-05-15
 fecha_actualizada: 2026-07-31
 ilustracion: /src/assets/uploads/chatgpt-image-29-jul-2026-22_36_50.png
-spotify_url: https://open.spotify.com/episode/1R9MFjft6sCUkp6w5vohOa?si=5V5oSAjCS-unWugM2ES37Q
+spotify_url: https://open.spotify.com/episode/1yjVyrgbTnD7X530CLhnMN?si=2I78ljwSTxiAxcYwfTfUUQ
 borrador: false
 personajes:
   - cuervo
