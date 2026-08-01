@@ -3,8 +3,9 @@ titulo: El emperador y los higos
 resumen: Un anciano es recompensado tras honrar a su emperador con una cesta de
   higos. Una vecina avara convence a su marido de hacer lo mismo.
 fecha: 2012-04-14
-fecha_actualizada: 2026-05-11
-ilustracion: /src/assets/uploads/chatgpt-image-11-may-2026-21_04_51.png
+fecha_actualizada: 2026-08-01
+ilustracion: /src/assets/uploads/chatgpt-image-31-jul-2026-23_56_56.png
+spotify_url: https://open.spotify.com/episode/6Rr72HRBVK3jEK9PzjYp5q?si=NbWbUWk4R0uNs2C2KSqy2w
 borrador: false
 personajes:
   - anciano
@@ -17,7 +18,17 @@ autor: anonimo
 curador: Don Alejandro
 es_seudonimo: true
 nombre_real: Alejandro Morales Loaiza
-nota_curador: ""
+traduccion: false
+nota_curador: >2
+    El emperador y los higos pertenece, como El diamante del hombre rico, al corpus de relatos [anónimos](https://elfabulario.com/autores/anonimo/) de tradición talmúdica difundidos en antologías populares de cuentos del Talmud; no fue posible confirmar en las fuentes consultadas el tratado o pasaje preciso del que procede, por lo que se presenta sin atribución de autor individual verificable. En la fábula, un anciano planta una higuera sin saber si vivirá para comer de sus frutos, y cuando finalmente los recoge y se los ofrece al emperador, recibe a cambio una cesta llena de oro; una vecina codiciosa, al ver la recompensa, convence a su marido de repetir el gesto esperando la misma suerte, con resultado muy distinto.
+
+    ##### Glosario
+
+    1. **Higuera:** árbol frutal que da higos; la que planta el anciano sin certeza de llegar a probar sus frutos.
+
+    2. **Codiciosa:** que desea con ansia excesiva riquezas o bienes ajenos; así describe el relato a la vecina que imita al anciano esperando la misma recompensa.
+
+    3. **Apedrear:** arrojar piedras contra alguien como castigo o escarmiento; la suerte que corre el marido codicioso ante el emperador.
 ---
 Un emperador, viendo a un viejo plantar una higuera, le preguntó por lo que hacía. El labrador le contestó que si le alcanzaba la vida comería de la fruta; pero si no, su hijo disfrutaría de los higos.
 
