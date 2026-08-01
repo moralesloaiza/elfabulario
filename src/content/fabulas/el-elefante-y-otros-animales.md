@@ -4,8 +4,9 @@ resumen: Reunidos los animales, el elefante reprende los vicios de cada cual sin
   señalar a nadie en particular, y la reacción de los presentes revela quién se
   da por aludido.
 fecha: 2026-05-31
-fecha_actualizada: 2026-06-04
-ilustracion: /src/assets/uploads/elefante_animales.png
+fecha_actualizada: 2026-07-31
+ilustracion: /src/assets/uploads/chatgpt-image-31-jul-2026-23_26_47.png
+spotify_url: https://open.spotify.com/episode/1gxBLuSXAgVjXYpc50HQQD?si=eb5ZoMa2TXeakDp27NzdTQ
 borrador: false
 personajes:
   - elefante
@@ -20,6 +21,17 @@ autor: tomas-de-iriarte
 curador: Don Alejandro
 es_seudonimo: true
 nombre_real: Alejandro Morales Loaiza
+traduccion: false
+nota_curador: >2
+    El elefante y otros animales abre las Fábulas literarias (1782) de [Tomás de Iriarte](https://elfabulario.com/autores/tomas-de-iriarte/) y funciona como fábula-prólogo de toda la colección: un elefante convoca a los demás animales para reprender sus vicios sin señalar a nadie en particular, y la reacción de cada uno —desde la incomodidad de los ofendidos hasta la indiferencia de los inocentes— revela quién se da por aludido. La pieza cierra con la moraleja explícita de que las fábulas de Iriarte "hablan a mil naciones" sin señalar "personas" concretas, declaración de intenciones que el autor antepuso a toda su obra al reclamar, en el prólogo de 1782, el honor de haber escrito la primera colección de fábulas enteramente originales en castellano, reclamación que también hizo casi al mismo tiempo [Félix María de Samaniego](https://elfabulario.com/autores/felix-maria-de-samaniego/), lo que dio origen a la conocida rivalidad entre ambos fabulistas.
+
+    ##### Glosario
+
+    1. **Jerigonza:** lenguaje difícil de entender, jerga oscura o enredada; así describe el poema el habla que tenían los animales en el tiempo de la fábula.
+
+    2. **Bambolla:** ostentación vana, boato sin sustancia; una de las faltas que el elefante reprende ante la asamblea.
+
+    3. **Pachorra:** calma o flema excesiva; la actitud con que el elefante observa, sin inmutarse, las reacciones de unos y otros.
 ---
 Allá en tiempo de entonces,
 y en tierras muy remotas,
