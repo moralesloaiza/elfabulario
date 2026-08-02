@@ -62,7 +62,12 @@
   --fs-3xl:  clamp(2.25rem,  1.75rem + 2.5vw, 3.5rem);      /* 36–56 */
   --fs-4xl:  clamp(2.75rem,  2.00rem + 4.0vw, 4.75rem);     /* 44–76 · hero */
 
+  /* Cinzel se autoaloja en 400/500/600 (NO 700: el sistema Art-Déco nunca lo
+     usa; el rediseño pide títulos 600, secciones 500 y todo lo pequeño 400).
+     --fw-bold se conserva por compatibilidad, pero en Cinzel el navegador lo
+     topa en 600 al no existir el 700 cargado. */
   --fw-regular:  400;
+  --fw-medium:   500;
   --fw-semibold: 600;
   --fw-bold:     700;
 
