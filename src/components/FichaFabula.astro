@@ -1,0 +1,118 @@
+---
+// Ficha de fábula para la rejilla «cartelera» de la portada (dirección
+// Cartelera). Tarjeta encuadrada con filete oro; toda la ficha es enlazable.
+// Imagen 3:2 nativa recortada con `foco`. Metadatos en clave de lectura.
+import { Image } from 'astro:assets';
+import type { CollectionEntry } from 'astro:content';
+import { FORMAS_DISPLAY, TRADICIONES_DISPLAY } from '../utils/taxonomia';
+
+interface Props {
+	fabula: CollectionEntry<'fabulas'>;
+	autorNombre: string;
+	minutos: number;
+}
+
+const { fabula, autorNombre, minutos } = Astro.props;
+const { titulo, resumen, ilustracion, foco, forma, tradicion } = fabula.data;
+const focoResuelto = foco ?? 8;
+
+const meta = [
+	tradicion ? TRADICIONES_DISPLAY[tradicion] : null,
+	FORMAS_DISPLAY[forma],
+	`${minutos} min`,
+].filter(Boolean).join(' · ');
+---
+
+<a class="ficha" href={`/fabulas/${fabula.id}/`}>
+	{ilustracion && (
+		<figure class="ficha-img">
+			<Image
+				src={ilustracion}
+				alt=""
+				width={600}
+				height={400}
+				loading="lazy"
+				style={`object-position: 50% ${focoResuelto}%`}
+			/>
+		</figure>
+	)}
+	<p class="ficha-meta">{meta}</p>
+	<h3 class="ficha-titulo">{titulo}</h3>
+	{autorNombre && <p class="ficha-autor">{autorNombre}</p>}
+	{resumen && <p class="ficha-resumen">{resumen}</p>}
+</a>
+
+<style>
+	.ficha {
+		display: flex;
+		flex-direction: column;
+		gap: var(--space-sm);
+		padding: var(--space-sm);
+		border: var(--rule-thin) solid var(--color-oro);
+		background: var(--color-bg);
+		text-decoration: none;
+		color: inherit;
+		transition: background-color var(--dur-fast) var(--ease-standard);
+	}
+	.ficha:hover,
+	.ficha:focus-visible {
+		background: var(--color-marfil-alt);
+		outline: none;
+	}
+	.ficha:focus-visible {
+		outline: var(--rule-thin) solid var(--color-zafiro);
+		outline-offset: 2px;
+	}
+
+	.ficha-img {
+		margin: 0;
+		aspect-ratio: 3 / 2;
+		overflow: hidden;
+		background: var(--color-negro);
+	}
+	.ficha-img :global(img) {
+		display: block;
+		width: 100%;
+		height: 100%;
+		object-fit: cover;
+	}
+
+	.ficha-meta {
+		font-family: var(--font-display);
+		font-size: var(--fs-3xs);
+		letter-spacing: var(--ls-widest);
+		text-transform: uppercase;
+		color: var(--color-oro-texto);
+		margin: 0;
+	}
+	.ficha-titulo {
+		font-family: var(--font-display);
+		font-size: var(--fs-lg);
+		font-weight: var(--fw-semibold);
+		letter-spacing: var(--ls-wide);
+		line-height: var(--lh-snug);
+		text-transform: uppercase;
+		text-wrap: balance;
+		margin: 0;
+		color: var(--color-text);
+	}
+	.ficha:hover .ficha-titulo,
+	.ficha:focus-visible .ficha-titulo {
+		color: var(--color-oro-texto);
+	}
+	.ficha-autor {
+		font-family: var(--font-body);
+		font-style: italic;
+		font-size: var(--fs-md);
+		color: var(--color-esmeralda);
+		margin: 0;
+	}
+	.ficha-resumen {
+		font-family: var(--font-body);
+		font-size: var(--fs-md);
+		line-height: var(--lh-normal);
+		color: var(--color-text-soft);
+		text-wrap: pretty;
+		margin: 0;
+	}
+</style>

@@ -1,21 +1,16 @@
 ---
-// Bloque promocional del pódcast en la portada. Enlace (no embed): la acción
-// de seguir solo existe en la superficie de Spotify, y un enlace convierte a
-// seguidores mejor que un iframe y no embarca JS de terceros. El embed real de
-// Spotify vive en la ficha de fábula (Fase 3). Estilo handoff: banda negra con
-// filete oro, eyebrow + frase a la izquierda, CTA coral a la derecha.
+// Banda del pódcast en la portada (dirección Cartelera): franja negra a sangre,
+// compacta, con la frase a la izquierda y el CTA coral a la derecha. Enlace, no
+// embed (el embed real vive en la ficha de fábula, Fase 3): cero JS de terceros.
+// Nota WCAG: el rótulo sobre coral va en NEGRO (4.58:1 AA); en marfil no cumple.
 import { SPOTIFY_SHOW_URL } from '../consts';
 ---
 
 <section class="seccion-spotify" aria-labelledby="spotify-titulo">
-	<div class="spotify-bloque">
-		<div class="spotify-texto">
-			<p class="eyebrow" aria-hidden="true">Pódcast · Spotify</p>
-			<p id="spotify-titulo" class="spotify-frase">
-				Cada fábula, también narrada en voz alta por Don Alejandro. Sigue el
-				pódcast para no perderte ningún episodio.
-			</p>
-		</div>
+	<div class="page spotify-inner">
+		<p id="spotify-titulo" class="spotify-frase">
+			Cada fábula, también narrada en voz alta.
+		</p>
 		<a
 			class="spotify-cta"
 			href={SPOTIFY_SHOW_URL}
@@ -30,70 +25,47 @@ import { SPOTIFY_SHOW_URL } from '../consts';
 
 <style>
 	.seccion-spotify {
-		margin-bottom: var(--space-4xl);
-	}
-	.spotify-bloque {
 		background: var(--color-negro);
-		border: var(--rule-thin) solid var(--color-oro);
-		padding: clamp(1.625rem, 3.2vw, 2.75rem) clamp(1.5rem, 3.2vw, 3rem);
+		border-block: var(--rule-thin) solid var(--color-oro);
+	}
+	.spotify-inner {
 		display: flex;
 		flex-wrap: wrap;
 		align-items: center;
 		justify-content: space-between;
-		gap: clamp(var(--space-lg), 3vw, var(--space-2xl));
-	}
-	.spotify-texto {
-		flex: 1 1 360px;
-	}
-	.eyebrow {
-		font-family: var(--font-display);
-		font-size: var(--fs-3xs);
-		letter-spacing: var(--ls-eyebrow);
-		text-transform: uppercase;
-		color: var(--color-oro);
-		margin: 0 0 var(--space-sm);
+		gap: var(--space-md);
+		padding-block: var(--space-sm);
 	}
 	.spotify-frase {
 		font-family: var(--font-body);
-		font-size: clamp(1.3125rem, 2.2vw, 1.75rem);
+		font-style: italic;
+		font-size: var(--fs-lg);
 		line-height: var(--lh-snug);
 		color: var(--color-marfil);
 		margin: 0;
-		max-width: 46ch;
 	}
 
-	/* CTA coral: único uso de coral como fondo de botón. Hover invierte a negro
-	   con texto y borde coral (handoff). Radio 0. */
+	/* CTA coral: único uso de coral como fondo. Rótulo NEGRO (AA). Radio 0. */
 	.spotify-cta {
 		flex: 0 0 auto;
-		align-self: center;
 		font-family: var(--font-display);
-		font-size: var(--fs-sm);
+		font-size: var(--fs-3xs);
 		font-weight: var(--fw-regular);
 		letter-spacing: var(--ls-widest);
 		text-transform: uppercase;
 		text-decoration: none;
-		color: var(--color-marfil);
+		color: var(--color-negro);
 		background: var(--color-coral);
-		border: var(--rule-thin) solid var(--color-coral);
-		padding: var(--space-md) var(--space-xl);
-		transition:
-			background-color var(--dur-fast) var(--ease-standard),
-			color var(--dur-fast) var(--ease-standard),
-			border-color var(--dur-fast) var(--ease-standard);
+		padding: var(--space-xs) var(--space-lg);
+		transition: filter var(--dur-fast) var(--ease-standard);
 	}
 	.spotify-cta:hover,
 	.spotify-cta:focus-visible {
-		background: var(--color-negro);
-		color: var(--color-coral);
-		border-color: var(--color-coral);
+		filter: brightness(0.93);
 		outline: none;
 	}
-
-	@media (max-width: 620px) {
-		.spotify-cta {
-			align-self: stretch;
-			text-align: center;
-		}
+	.spotify-cta:focus-visible {
+		outline: var(--rule-thin) solid var(--color-marfil);
+		outline-offset: 2px;
 	}
 </style>
