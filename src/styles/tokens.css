@@ -11,6 +11,7 @@
   --color-coral:      #D45B3C;   /* CTAs, énfasis ≥24px o sobre negro */
   --color-zafiro:     #1C3A7A;   /* enlaces primarios, citas, énfasis */
   --color-marfil:     #F0E5CE;   /* fondo primario */
+  --color-marfil-alt: #EBDDBF;   /* marfil un punto más cálido · hover de fichas */
   --color-negro:      #1A1714;   /* texto primario, fondo invertido */
 
   /* ---------- COLOR · alias semánticos ---------- */

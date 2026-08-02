@@ -20,26 +20,25 @@
   - *Pendiente opcional:* el layout `Base.astro` no existe aún (la home compone `Header`/`BaseHead`/`Footer` sueltos). Sigue siendo un buen paso previo de des-duplicación.
 - Componentes vigentes: `Header`, `Footer`, `BaseHead`, `Buscador`, `Destacado`, `EntradasTabs`, `FabulaCard`, `ListadoFabulasTaxonomia`, `NavegacionFabulas`, `SpotifyEmbed`, `EscuchaEnSpotify`, `CartaHeader`, `LogoMark`. Un único layout: `Fabula.astro`.
 - Páginas ya existentes: `/`, `/fabulas`, `/autores`, `/entradas`, `/buscar`, `/personajes`, `/temas`, `/formas`, `/tradiciones`, `/traducciones`, `/colaborar`, `/correspondencia`, `/sobre`.
-- **Nav:** hoy el header muestra *Inicio · Fábulas · Bitácora · Correspondencia · Acerca de*. Nav definitivo acordado: **Inicio · Fábulas · Autores · Bitácora · Contacto · Acerca de** (añade `/autores`, renombra "Correspondencia"→"Contacto"). Ver Fase A.6.
+- **Nav — YA aplicado (2026-08-02):** el header muestra **Inicio · Fábulas · Autores · Bitácora · Contacto · Acerca de** + lupa de búsqueda. (Ver Fase A.6.)
 
 ---
 
-## Fase A · Cimientos de sistema visual (transversal, nuevo)
-El handoff aporta tokens y tipografía **definitivos**; conviene fijarlos como base antes de tocar vistas, para que todas las fases consuman las mismas variables y no se acumule deuda.
+## Fase A · Cimientos de sistema visual (transversal) — **HECHA (2026-08-02)**
+Al revisar el codebase se comprobó que el sistema visual **ya existía** de trabajo previo (los tokens llevan la nota "Fase 2 · v1") y **ya coincide con los valores definitivos del handoff**. Solo faltaban dos remates, ya aplicados. Detalle:
 
-1. **Tokens de color** como variables CSS (una sola fuente):
-   `--marfil #F0E5CE` · `--negro #1A1714` · `--oro-decorativo #C9A14A` · `--oro-legible #7A5F1F` · `--esmeralda #0A5F3E` · `--coral #D45B3C` · `--zafiro #1C3A7A` · `--texto-aux #4A413A` · `--hover-ficha #EBDDBF`.
-2. **Tipografía**: Cinzel (400–700) + Cormorant Garamond (300–600 + itálicas reales). **Autoalojar** (evita FOUT en un sitio tan dependiente de la voz tipográfica; el handoff lo recomienda explícitamente). Cinzel siempre en mayúsculas con `letter-spacing` 0.09em→0.30em (más pequeño = más abierto).
-3. **Primitivas de filete** reutilizables (mixins/parciales): filete simple `1px solid var(--oro-decorativo)`, filete atenuado `rgba(201,161,74,0.55)`, filete doble bajo hero, doble encuadre de cartela (`border` + `outline` con `outline-offset`).
-4. **Enlaces** globales: `a { color: var(--zafiro) }` · `a:hover { color: var(--esmeralda); text-decoration: underline; text-underline-offset: 0.25em }`. Definir ambos estados desde el principio.
-5. **Anillo de foco de teclado** (accesibilidad, hueco marcado en el handoff): `outline: 2px solid var(--zafiro); outline-offset: 3px`, coherente con el sistema (sin radios ni sombras).
-6. **Nav del header** → nav definitivo (decisión de producto, usuario 2026-08-02): **Inicio · Fábulas · Autores · Bitácora · Contacto · Acerca de**, en Cinzel 12px `0.20em` zafiro con puntos medios en oro.
-   - **Añadir el enlace a `/autores`** (hoy no existe en el header).
-   - **"Contacto"** sustituye la etiqueta "Correspondencia" (la ruta sigue siendo `/correspondencia` salvo que se decida renombrarla).
-   - Diseñar el **estado activo** de la sección (sugerencia del handoff: subrayado en filete dorado bajo el enlace activo).
-   - *Nota:* el handoff maquetaba *Buscar* en la nav; en este nav no va como enlace de texto. Si se quiere acceso a `/buscar`, mejor como **icono de lupa** aparte, no ocupando un hueco de la nav editorial.
+1. **Tokens de color** — YA en [`src/styles/tokens.css`](../src/styles/tokens.css), idénticos al handoff: `--color-marfil #F0E5CE` · `--color-negro #1A1714` · `--color-oro #C9A14A` · `--color-oro-texto #7A5F1F` · `--color-esmeralda #0A5F3E` · `--color-coral #D45B3C` · `--color-zafiro #1C3A7A` · `--color-text-soft #4A413A`. **Añadido ahora:** `--color-marfil-alt #EBDDBF` (hover de fichas de autor, Fase 4). Las reglas de uso WCAG ya están documentadas en el propio archivo.
+2. **Tipografía** — YA autoalojada vía `@fontsource` en [`BaseHead.astro`](../src/components/BaseHead.astro) (Cinzel 400/700, Cormorant Garamond 400/400-italic/600). Familias y escala fluida (`--fs-*`, `--ls-*`) en `tokens.css`.
+3. **Primitivas de filete** — YA en [`global.css`](../src/styles/global.css): `.frame` (doble encuadre `border` + `::before inset`), grosores `--rule-hairline/thin/medium/thick`, `.invert` (reverso oscuro con sus enlaces oro→coral).
+4. **Enlaces globales** — YA: `--color-link` zafiro / `--color-link-hover` esmeralda.
+5. **Anillo de foco de teclado** — YA: `:focus-visible { outline: 2px solid var(--color-zafiro); outline-offset: 3px }` en `global.css` (exactamente la sugerencia del handoff).
+6. **Nav del header** — APLICADO ahora en [`Header.astro`](../src/components/Header.astro): **Inicio · Fábulas · Autores · Bitácora · Contacto · Acerca de** + lupa de búsqueda.
+   - Añadido el enlace a `/autores` (antes no estaba).
+   - Etiqueta "Correspondencia" → **"Contacto"** (ruta sigue siendo `/correspondencia`).
+   - El estado activo (subrayado dorado) ya lo resolvía `HeaderLink.astro` con la clase `.active`.
+   - La búsqueda es la **lupa** (`Buscador.astro`), no un enlace de texto — confirmado por el usuario.
 
-*Riesgo:* bajo. Es refactor de fundamentos + una decisión de nav.
+*Pendiente menor (no bloquea):* verificar en Fase 6 que la escala de tracking en mayúsculas de Cinzel llega hasta `0.30em` donde el handoff lo pide (hoy el token máximo es `--ls-widest: 0.2em`; puede necesitar un `--ls-hero`/eyebrow más abierto).
 
 *Referencia handoff:* §Design Tokens, §0 (cabecera/pie), §Interactions (foco de teclado, nav activa).
 
@@ -121,4 +120,4 @@ El handoff no pide un motor de facetas: el listado ya filtra por Tema + Autor (F
 - Metadatos siempre en clave de lectura: "Lectura · N min", nunca "Audio".
 
 ## Orden recomendado de ejecución
-**A** (cimientos de sistema visual) → **1** (portada, máximo impacto) → **3** (fábula individual, corazón del sitio) → **2** (índice de fábulas) → **4** (autores) → **5** (taxonomías) → **6** (pulido/WCAG). Cada fase es un PR independiente y desplegable. El trabajo de assets/retratos puede correr en paralelo desde ya.
+~~**A** (cimientos)~~ hecha → **1** (portada, máximo impacto) → **3** (fábula individual, corazón del sitio) → **2** (índice de fábulas) → **4** (autores) → **5** (taxonomías) → **6** (pulido/WCAG). Cada fase es un PR independiente y desplegable. El trabajo de assets/retratos puede correr en paralelo desde ya.
