@@ -2,20 +2,24 @@
 import { getCollection, getEntry } from 'astro:content';
 import BaseHead from '../components/BaseHead.astro';
 import EscuchaEnSpotify from '../components/EscuchaEnSpotify.astro';
-import FabulaCard from '../components/FabulaCard.astro';
+import FilaFabula from '../components/FilaFabula.astro';
 import Footer from '../components/Footer.astro';
 import Header from '../components/Header.astro';
 import HeroInmersivo from '../components/HeroInmersivo.astro';
 import JsonLd from '../components/JsonLd.astro';
 import { SITE_DESCRIPTION, SITE_TITLE } from '../consts';
 import { buildWebSiteJsonLd } from '../utils/jsonld';
+import { tiempoLecturaMin } from '../utils/lectura';
 
 const home = await getEntry('paginas', 'home');
 if (!home) throw new Error('[paginas] Falta src/content/paginas/home.md');
 
+// Cuatro filas ilustradas (handoff). Se calcula el tiempo de lectura desde el
+// cuerpo Markdown para el metadato "Lectura · N min".
 const ultimas = (await getCollection('fabulas', ({ data }) => !data.borrador))
 	.sort((a, b) => b.data.fecha.valueOf() - a.data.fecha.valueOf())
-	.slice(0, 6);
+	.slice(0, 4)
+	.map((fabula) => ({ fabula, minutos: tiempoLecturaMin(fabula.body) }));
 
 // Author names live in the `autores` collection now (the `autor` field on a
 // fable is a reference, not a string). Build an id→name map once so the
@@ -142,11 +146,13 @@ if (destacadoCfg && destacadoCfg.data.activo) {
 				<section class="seccion-fabulas" aria-labelledby="ultimas-titulo">
 					<h2 id="ultimas-titulo" class="seccion-titulo">Últimas fábulas</h2>
 					<ul class="fabulas">
-						{ultimas.map((fabula) => (
+						{ultimas.map(({ fabula, minutos }, i) => (
 							<li>
-								<FabulaCard
+								<FilaFabula
 									fabula={fabula}
 									autorNombre={autoresPorId.get(fabula.data.autor.id) ?? ''}
+									minutos={minutos}
+									invertir={i % 2 === 1}
 								/>
 							</li>
 						))}
@@ -223,7 +229,7 @@ if (destacadoCfg && destacadoCfg.data.activo) {
 		margin: 0 auto;
 	}
 
-	/* ---------- ÍNDICE ---------- */
+	/* ---------- ÚLTIMAS FÁBULAS (filas alternas) ---------- */
 	.seccion-fabulas {
 		margin-bottom: var(--space-4xl);
 	}
@@ -236,10 +242,18 @@ if (destacadoCfg && destacadoCfg.data.activo) {
 		list-style: none;
 		padding: 0;
 		margin: 0;
-		display: grid;
-		grid-template-columns: repeat(2, minmax(0, 1fr));
-		gap: var(--space-2xl);
 		max-width: none;
+	}
+	ul.fabulas li {
+		padding-block: clamp(var(--space-lg), 3vw, var(--space-2xl));
+		border-top: var(--rule-thin) solid rgba(201, 161, 74, 0.55);
+	}
+	ul.fabulas li:first-child {
+		padding-top: 0;
+		border-top: 0;
+	}
+	ul.fabulas li:last-child {
+		padding-bottom: 0;
 	}
 
 	/* ---------- EXPLORAR ---------- */
@@ -321,10 +335,6 @@ if (destacadoCfg && destacadoCfg.data.activo) {
 		}
 	}
 	@media (max-width: 720px) {
-		ul.fabulas {
-			grid-template-columns: 1fr;
-			gap: var(--space-xl);
-		}
 		ul.exploracion {
 			grid-template-columns: 1fr;
 			row-gap: var(--space-xl);
