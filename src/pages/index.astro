@@ -1,12 +1,11 @@
 ---
 import { getCollection, getEntry } from 'astro:content';
 import BaseHead from '../components/BaseHead.astro';
-import Destacado from '../components/Destacado.astro';
 import EscuchaEnSpotify from '../components/EscuchaEnSpotify.astro';
 import FabulaCard from '../components/FabulaCard.astro';
 import Footer from '../components/Footer.astro';
-import FormattedDate from '../components/FormattedDate.astro';
 import Header from '../components/Header.astro';
+import HeroInmersivo from '../components/HeroInmersivo.astro';
 import JsonLd from '../components/JsonLd.astro';
 import { SITE_DESCRIPTION, SITE_TITLE } from '../consts';
 import { buildWebSiteJsonLd } from '../utils/jsonld';
@@ -39,10 +38,10 @@ type DestacadoRender = {
 	alt: string;
 	titulo: string;
 	href: string;
-	autorNombre?: string;
-	fecha?: Date;
-	siglo?: string;
-	nacionalidad?: string;
+	foco?: number;
+	esRetrato?: boolean;
+	byline?: string;
+	lede?: string;
 };
 
 let destacado: DestacadoRender | null = null;
@@ -65,8 +64,9 @@ if (destacadoCfg && destacadoCfg.data.activo) {
 			alt: '',
 			titulo: fabula.data.titulo,
 			href: `/fabulas/${fabula.id}/`,
-			autorNombre: autor.data.nombre,
-			fecha: fabula.data.fecha,
+			foco: fabula.data.foco,
+			byline: `por ${autor.data.nombre}`,
+			lede: fabula.data.resumen,
 		};
 	} else if (tipo === 'entrada' && destacadoCfg.data.entrada_referida) {
 		const entrada = await getEntry(destacadoCfg.data.entrada_referida);
@@ -82,7 +82,8 @@ if (destacadoCfg && destacadoCfg.data.activo) {
 			alt: '',
 			titulo: entrada.data.titulo,
 			href: `/entradas/${entrada.id}/`,
-			fecha: entrada.data.fecha,
+			foco: entrada.data.foco,
+			lede: entrada.data.resumen,
 		};
 	} else if (tipo === 'autor' && destacadoCfg.data.autor_referido) {
 		const autor = await getEntry(destacadoCfg.data.autor_referido);
@@ -98,8 +99,9 @@ if (destacadoCfg && destacadoCfg.data.activo) {
 			alt: `Retrato de ${autor.data.nombre}`,
 			titulo: autor.data.nombre,
 			href: `/autores/${autor.id}/`,
-			siglo: autor.data.siglo,
-			nacionalidad: autor.data.nacionalidad,
+			foco: autor.data.foco,
+			esRetrato: true,
+			lede: [autor.data.nacionalidad, autor.data.siglo].filter(Boolean).join(' · ') || undefined,
 		};
 	}
 }
@@ -113,36 +115,27 @@ if (destacadoCfg && destacadoCfg.data.activo) {
 	</head>
 	<body>
 		<Header />
-		<main class="page home">
-			<section class="hero">
-				<h1>{SITE_TITLE}</h1>
-				<p class="subtitulo">{home.data.subtitulo}</p>
-			</section>
-
-			{destacado && (
-				<Destacado
-					cintillo={destacado.cintillo}
+		<main class="home">
+			{destacado ? (
+				<HeroInmersivo
 					imagen={destacado.imagen}
 					alt={destacado.alt}
+					foco={destacado.foco}
+					esRetrato={destacado.esRetrato}
+					eyebrow={destacado.cintillo}
 					titulo={destacado.titulo}
 					href={destacado.href}
-				>
-					<Fragment slot="submeta">
-						{destacado.autorNombre && destacado.fecha && (
-							<p>por {destacado.autorNombre} · <FormattedDate date={destacado.fecha} /></p>
-						)}
-						{!destacado.autorNombre && destacado.fecha && (
-							<p><FormattedDate date={destacado.fecha} /></p>
-						)}
-						{(destacado.nacionalidad || destacado.siglo) && (
-							<p>
-								{[destacado.nacionalidad, destacado.siglo].filter(Boolean).join(' · ')}
-							</p>
-						)}
-					</Fragment>
-				</Destacado>
+					byline={destacado.byline}
+					lede={destacado.lede}
+				/>
+			) : (
+				<section class="hero-texto">
+					<h1>{SITE_TITLE}</h1>
+					<p class="subtitulo">{home.data.subtitulo}</p>
+				</section>
 			)}
 
+			<div class="page contenido">
 			<EscuchaEnSpotify />
 
 			{ultimas.length > 0 && (
@@ -195,6 +188,7 @@ if (destacadoCfg && destacadoCfg.data.activo) {
 					</li>
 				</ul>
 			</section>
+			</div>
 		</main>
 		<Footer />
 	</body>
@@ -202,15 +196,19 @@ if (destacadoCfg && destacadoCfg.data.activo) {
 
 <style>
 	.home {
-		padding-block: var(--space-2xl) var(--space-lg);
+		padding-block: 0 var(--space-lg);
+	}
+	/* El hero va a sangre; el resto del contenido recupera el contenedor. */
+	.contenido {
+		padding-block: var(--space-3xl) 0;
 	}
 
-	/* ---------- HERO ---------- */
-	.hero {
+	/* ---------- HERO de texto (fallback sin destacado) ---------- */
+	.hero-texto {
 		text-align: center;
-		margin-bottom: var(--space-2xl);
+		margin-block: var(--space-3xl) var(--space-2xl);
 	}
-	.hero h1 {
+	.hero-texto h1 {
 		margin: 0 0 var(--space-md);
 		font-size: var(--fs-4xl);
 		text-wrap: balance;

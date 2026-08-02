@@ -76,6 +76,7 @@
   --ls-wide:     0.05em;
   --ls-wider:    0.1em;
   --ls-widest:   0.2em;
+  --ls-eyebrow:  0.28em;   /* eyebrows/cintillos Cinzel pequeños · handoff pide 0.26–0.30em */
 
   /* ---------- ESPACIADO · base 4 ---------- */
   --space-3xs:  0.125rem;  /*  2px */
