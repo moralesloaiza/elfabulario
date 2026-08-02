@@ -13,3 +13,12 @@ export const SITE_LANG = 'es';
 // Podcast del proyecto en Spotify (el show completo, no un episodio).
 export const SPOTIFY_SHOW_URL =
 	'https://open.spotify.com/show/0CFLmgPkPPG5VQ6nZOMSNA';
+
+// Foco vertical por defecto de los RETRATOS de autor cuando hacen de hero, en %
+// desde el borde superior. Distinto del default del componente (8, pensado para
+// las ilustraciones de fábula y entrada): en un retrato la cabeza está más
+// centrada y admite recortar algo más por arriba. Vive aquí porque habrá dos
+// sitios que rendericen un retrato a toda sangre —la ficha del autor y la
+// portada, cuando el destacado es un autor— y deben coincidir. (Lo consume
+// HeroInmersivo en la Fase 1.)
+export const FOCO_RETRATO = 15;

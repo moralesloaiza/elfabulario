@@ -60,6 +60,7 @@ collections:
       - { name: "fecha", label: "Fecha de publicación", widget: "datetime", format: "YYYY-MM-DD", date_format: "YYYY-MM-DD", time_format: false }
       - { name: "fecha_actualizada", label: "Fecha de última actualización", widget: "datetime", required: false, format: "YYYY-MM-DD", date_format: "YYYY-MM-DD", time_format: false }
       - { name: "ilustracion", label: "Ilustración", widget: "image", required: false, hint: "Proporción recomendada 3:2, mínimo 1200×800." }
+      - { name: "foco", label: "Foco de la ilustración (%)", widget: "number", value_type: int, min: 0, max: 100, step: 1, required: false, hint: "Qué franja horizontal de la ilustración se ve en la cabecera. 0 = borde superior, 50 = centro, 100 = borde inferior. Vacío = 8. Súbelo si la cabecera deja demasiado aire arriba; bájalo si corta lo importante." }
       - { name: "spotify_url", label: "Enlace Spotify", widget: "string", required: false, hint: "URL de la narración/declamación en Spotify (track o episodio de podcast)." }
       - { name: "borrador", label: "Borrador (no se publica todavía)", widget: "boolean", default: false }
 
@@ -376,6 +377,7 @@ collections:
       - { name: "fecha", label: "Fecha de publicación", widget: "datetime", format: "YYYY-MM-DD", date_format: "YYYY-MM-DD", time_format: false }
       - { name: "resumen", label: "Resumen", widget: "text", required: false }
       - { name: "ilustracion", label: "Ilustración", widget: "image", required: false }
+      - { name: "foco", label: "Foco de la ilustración (%)", widget: "number", value_type: int, min: 0, max: 100, step: 1, required: false, hint: "Qué franja horizontal de la ilustración se ve en la cabecera. 0 = borde superior, 50 = centro, 100 = borde inferior. Vacío = 8. Súbelo si la cabecera deja demasiado aire arriba; bájalo si corta lo importante." }
       - { name: "borrador", label: "Borrador", widget: "boolean", default: false }
 
       # --- Firma del curador ---
@@ -438,6 +440,7 @@ collections:
           - { label: "Clásico", value: "clasico" }
           - { label: "Colaborador", value: "colaborador" }
       - { name: "imagen", label: "Retrato / ilustración", widget: "image", required: false, hint: "Imagen del autor. Proporción 1:1 preferida; 3:2 también funciona." }
+      - { name: "foco", label: "Foco del retrato (%)", widget: "number", value_type: int, min: 0, max: 100, step: 1, required: false, hint: "Qué franja horizontal del retrato se ve en la cabecera de su ficha (y en la portada, si es el destacado). 0 = borde superior, 50 = centro, 100 = borde inferior. Vacío = 15." }
 
       # --- Datos biográficos ---
       - { name: "nacionalidad", label: "Nacionalidad", widget: "string", required: false }
