@@ -42,8 +42,15 @@ Al revisar el codebase se comprobó que el sistema visual **ya existía** de tra
 
 *Referencia handoff:* §Design Tokens, §0 (cabecera/pie), §Interactions (foco de teclado, nav activa).
 
-## Fase 1 · Portada inmersiva
+## Fase 1 · Portada inmersiva — **HECHA (2026-08-02)**
 Reemplaza el bloque `Destacado` + rejilla `FabulaCard` de la home. Orden de la vista: **cabecera → hero → filete doble → banda de título → bloque Spotify → Últimas fábulas → Explorar → pie.**
+
+> **Estado:** implementada en tres commits sobre la rama del rediseño.
+> - `HeroInmersivo.astro` (hero 8:3 a sangre con `foco` + filete doble + banda de título) reemplaza el hero de texto y `Destacado.astro` (eliminado).
+> - `FilaFabula.astro` + `utils/lectura.ts` → "Últimas fábulas" son cuatro filas ilustradas alternas (4:3, foco, "Tradición · Forma · N min").
+> - `EscuchaEnSpotify.astro` reestilizado como bloque negro con CTA coral.
+> - Añadido token `--ls-eyebrow: 0.28em`.
+> - **"Explorar" ya existía** con el patrón del handoff (numerales I–IV, títulos, glosas, `grid auto-fit`); se dejó como está — hoy enlaza Catálogo/Autores/Búsqueda/Colaborar, una curaduría de producto ya en marcha, en vez de los cuatro ejes de taxonomía. Reconsiderar destinos si se quiere alinear con el handoff literal.
 
 7. **Hero** a sangre `aspect-ratio: 8/3`, `min-height: 520px`, `object-fit: cover`, con `object-position: 50% <foco>%` del destacado. Fondo de respaldo (radial + linear gradient) mientras carga. **La cabecera nunca se superpone a la ilustración** (decisión explícita del handoff).
 8. **Banda de título** bajo el filete doble (no velo sobre la imagen — de los tres tratamientos evaluados se eligió la **banda inferior**, que mantiene la ilustración intacta y garantiza AA): eyebrow "FÁBULA DEL MES", H1 Cinzel, byline en cursiva esmeralda, y lede a la derecha con `border-left` dorado.
@@ -120,4 +127,4 @@ El handoff no pide un motor de facetas: el listado ya filtra por Tema + Autor (F
 - Metadatos siempre en clave de lectura: "Lectura · N min", nunca "Audio".
 
 ## Orden recomendado de ejecución
-~~**A** (cimientos)~~ hecha → **1** (portada, máximo impacto) → **3** (fábula individual, corazón del sitio) → **2** (índice de fábulas) → **4** (autores) → **5** (taxonomías) → **6** (pulido/WCAG). Cada fase es un PR independiente y desplegable. El trabajo de assets/retratos puede correr en paralelo desde ya.
+~~**A** (cimientos)~~ hecha → ~~**1** (portada)~~ hecha → **3** (fábula individual, corazón del sitio) → **2** (índice de fábulas) → **4** (autores) → **5** (taxonomías) → **6** (pulido/WCAG). Cada fase es un PR independiente y desplegable. El trabajo de assets/retratos puede correr en paralelo desde ya.
