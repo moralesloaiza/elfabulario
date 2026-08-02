@@ -196,7 +196,12 @@ const heroVars = altura
 			flex-direction: column;
 			align-items: stretch;
 		}
+		/* En columna, `flex: 1 1 420px` se interpreta como ALTURA y deja un
+		   hueco enorme; se resetea para que cada bloque mida su contenido. */
+		.hero-col-titulo,
 		.hero-col-lede {
+			flex: 0 0 auto;
+			min-width: 0;
 			max-width: none;
 		}
 	}
