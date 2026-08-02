@@ -1,99 +1,71 @@
 ---
-// Card linking to the Spotify show. Intentionally a plain link (not an
-// embed): the Follow action only exists on Spotify's own surface, so a link
-// converts to followers better than an iframe and ships zero third-party JS.
+// Banda del pódcast en la portada (dirección Cartelera): franja negra a sangre,
+// compacta, con la frase a la izquierda y el CTA coral a la derecha. Enlace, no
+// embed (el embed real vive en la ficha de fábula, Fase 3): cero JS de terceros.
+// Nota WCAG: el rótulo sobre coral va en NEGRO (4.58:1 AA); en marfil no cumple.
 import { SPOTIFY_SHOW_URL } from '../consts';
 ---
 
 <section class="seccion-spotify" aria-labelledby="spotify-titulo">
-	<a class="spotify-card" href={SPOTIFY_SHOW_URL} target="_blank" rel="noopener" aria-label="Escúchalo en Spotify (se abre en una pestaña nueva)">
-		<span class="eyebrow" aria-hidden="true">— En audio —</span>
-		<span class="spotify-card__play" aria-hidden="true">
-			<svg viewBox="0 0 48 48" width="48" height="48" xmlns="http://www.w3.org/2000/svg">
-				<circle cx="24" cy="24" r="22" fill="none" stroke="currentColor" stroke-width="1.5" />
-				<circle cx="24" cy="24" r="18" fill="none" stroke="currentColor" stroke-width="0.75" />
-				<polygon points="20,16 20,32 34,24" fill="currentColor" />
-			</svg>
-		</span>
-		<h2 id="spotify-titulo" class="spotify-card__titulo">Escúchalo en Spotify</h2>
-		<p class="spotify-card__texto">
-			Cada fábula, narrada por Don Alejandro. Sigue el podcast para no perderte ningún episodio.
+	<div class="page spotify-inner">
+		<p id="spotify-titulo" class="spotify-frase">
+			Cada fábula, también narrada en voz alta.
 		</p>
-	</a>
+		<a
+			class="spotify-cta"
+			href={SPOTIFY_SHOW_URL}
+			target="_blank"
+			rel="noopener"
+			aria-label="Escuchar en Spotify (se abre en una pestaña nueva)"
+		>
+			Escuchar en Spotify
+		</a>
+	</div>
 </section>
 
 <style>
 	.seccion-spotify {
-		margin-bottom: var(--space-4xl);
-		display: flex;
-		justify-content: center;
+		background: var(--color-negro);
+		border-block: var(--rule-thin) solid var(--color-oro);
 	}
-	.spotify-card {
+	.spotify-inner {
 		display: flex;
-		flex-direction: column;
+		flex-wrap: wrap;
 		align-items: center;
-		text-align: center;
-		gap: var(--space-2xs);
-		width: 100%;
-		max-width: var(--measure-narrow);
-		padding: var(--space-xl);
-		position: relative;
-		text-decoration: none;
-		color: var(--color-oro-texto);
-		border: var(--rule-medium) solid var(--color-oro);
-		transition: border-color var(--dur-fast) var(--ease-standard),
-			color var(--dur-fast) var(--ease-standard);
+		justify-content: space-between;
+		gap: var(--space-md);
+		padding-block: var(--space-sm);
 	}
-	.spotify-card::before {
-		content: '';
-		position: absolute;
-		inset: 6px;
-		border: var(--rule-thin) solid var(--color-oro);
-		pointer-events: none;
-		transition: border-color var(--dur-fast) var(--ease-standard);
-	}
-	.spotify-card:hover,
-	.spotify-card:focus-visible {
-		border-color: var(--color-esmeralda);
-		color: var(--color-esmeralda);
-		outline: none;
-	}
-	.spotify-card:hover::before,
-	.spotify-card:focus-visible::before {
-		border-color: var(--color-esmeralda);
-	}
-	.spotify-card .eyebrow {
-		display: block;
-		font-family: var(--font-display);
-		font-size: var(--fs-3xs);
-		letter-spacing: var(--ls-widest);
-		color: var(--color-esmeralda);
-		margin: 0 0 var(--space-xs);
-	}
-	.spotify-card__play {
-		display: inline-flex;
-		line-height: 0;
-		margin-bottom: var(--space-2xs);
-	}
-	.spotify-card__play svg {
-		width: 44px;
-		height: 44px;
-	}
-	.spotify-card__titulo {
-		font-family: var(--font-display);
-		font-size: var(--fs-sm);
-		font-weight: var(--fw-bold);
-		letter-spacing: var(--ls-wide);
-		text-transform: uppercase;
-		margin: 0 0 var(--space-2xs);
-		color: inherit;
-	}
-	.spotify-card__texto {
+	.spotify-frase {
 		font-family: var(--font-body);
 		font-style: italic;
-		font-size: var(--fs-sm);
-		color: var(--color-text-soft);
+		font-size: var(--fs-lg);
+		line-height: var(--lh-snug);
+		color: var(--color-marfil);
 		margin: 0;
-		max-width: none;
+	}
+
+	/* CTA coral: único uso de coral como fondo. Rótulo NEGRO (AA). Radio 0. */
+	.spotify-cta {
+		flex: 0 0 auto;
+		font-family: var(--font-display);
+		font-size: var(--fs-3xs);
+		font-weight: var(--fw-regular);
+		letter-spacing: var(--ls-widest);
+		text-transform: uppercase;
+		text-decoration: none;
+		color: var(--color-negro);
+		background: var(--color-coral);
+		padding: var(--space-xs) var(--space-lg);
+		transition: filter var(--dur-fast) var(--ease-standard);
+	}
+	.spotify-cta:hover,
+	.spotify-cta:focus-visible {
+		filter: brightness(0.93);
+		outline: none;
+	}
+	.spotify-cta:focus-visible {
+		outline: var(--rule-thin) solid var(--color-marfil);
+		outline-offset: 2px;
 	}
 </style>

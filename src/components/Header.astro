@@ -13,8 +13,9 @@ import LogoMark from './LogoMark.astro';
 		<nav class="internal-links" aria-label="Navegación principal">
 			<HeaderLink href="/">Inicio</HeaderLink>
 			<HeaderLink href="/fabulas">Fábulas</HeaderLink>
+			<HeaderLink href="/autores">Autores</HeaderLink>
 			<HeaderLink href="/entradas">Bitácora</HeaderLink>
-			<HeaderLink href="/correspondencia">Correspondencia</HeaderLink>
+			<HeaderLink href="/correspondencia">Contacto</HeaderLink>
 			<HeaderLink href="/sobre">Acerca de</HeaderLink>
 			<Buscador />
 		</nav>
@@ -85,7 +86,6 @@ import LogoMark from './LogoMark.astro';
 		color: var(--color-oro-texto);
 	}
 	.internal-links :global(a.active) {
-		font-weight: var(--fw-bold);
 		border-bottom-color: var(--color-oro);
 		text-decoration: none;
 	}
