@@ -8,7 +8,8 @@ import LogoMark from './LogoMark.astro';
 <header>
 	<div class="page header-inner">
 		<a href="/" class="logo" aria-label={`${SITE_TITLE} · inicio`}>
-		<LogoMark />
+			<LogoMark />
+			<span class="wordmark">{SITE_TITLE}</span>
 		</a>
 		<nav class="internal-links" aria-label="Navegación principal">
 			<HeaderLink href="/">Inicio</HeaderLink>
@@ -49,8 +50,26 @@ import LogoMark from './LogoMark.astro';
 	.logo {
 		text-decoration: none;
 		color: var(--color-text);
-		display: inline-block;
-		line-height: 0;
+		display: inline-flex;
+		flex-direction: column;
+		align-items: center;
+		gap: var(--space-xs);
+	}
+	.wordmark {
+		font-family: var(--font-display);
+		font-size: clamp(1rem, 1.5vw, 1.1875rem);
+		font-weight: var(--fw-semibold);
+		letter-spacing: 0.3em;
+		text-transform: uppercase;
+		line-height: 1;
+		/* Compensa el espacio de tracking a la derecha para centrar óptico. */
+		padding-left: 0.3em;
+		color: var(--color-text);
+		transition: color var(--dur-base) var(--ease-standard);
+	}
+	.logo:hover .wordmark,
+	.logo:focus-visible .wordmark {
+		color: var(--color-oro-texto);
 	}
 	.logo-mark {
 		display: block;
