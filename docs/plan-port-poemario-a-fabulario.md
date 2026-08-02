@@ -45,12 +45,13 @@ Al revisar el codebase se comprobó que el sistema visual **ya existía** de tra
 ## Fase 1 · Portada inmersiva — **HECHA (2026-08-02)**
 Reemplaza el bloque `Destacado` + rejilla `FabulaCard` de la home. Orden de la vista: **cabecera → hero → filete doble → banda de título → bloque Spotify → Últimas fábulas → Explorar → pie.**
 
-> **Estado:** implementada en tres commits sobre la rama del rediseño.
-> - `HeroInmersivo.astro` (hero 8:3 a sangre con `foco` + filete doble + banda de título) reemplaza el hero de texto y `Destacado.astro` (eliminado).
-> - `FilaFabula.astro` + `utils/lectura.ts` → "Últimas fábulas" son cuatro filas ilustradas alternas (4:3, foco, "Tradición · Forma · N min").
-> - `EscuchaEnSpotify.astro` reestilizado como bloque negro con CTA coral.
-> - Añadido token `--ls-eyebrow: 0.28em`.
-> - **"Explorar" ya existía** con el patrón del handoff (numerales I–IV, títulos, glosas, `grid auto-fit`); se dejó como está — hoy enlaza Catálogo/Autores/Búsqueda/Colaborar, una curaduría de producto ya en marcha, en vez de los cuatro ejes de taxonomía. Reconsiderar destinos si se quiere alinear con el handoff literal.
+> **Estado:** implementada y luego **rehecha a la dirección «Cartelera»** (segundo handoff, [`spec-portada-cartelera.md`](rediseno/spec-portada-cartelera.md)), que resuelve el exceso de aire y la monotonía de la lista.
+> - `HeroInmersivo.astro`: hero a sangre con `foco` + filete doble + banda de título. **Altura parametrizable** — la portada usa **300px fijos** (recorte bajo que densifica); queda 8:3 disponible para la ficha de fábula (Fase 3). Reemplazó el hero de texto y `Destacado.astro` (eliminado).
+> - `FichaFabula.astro` + `utils/lectura.ts` → "Últimas fábulas" es una **rejilla de 5 fichas encuadradas (3:2) + cartela de archivo** con el total en letra (`utils/numeroEnLetras.ts`). *(La primera versión eran filas alternas `FilaFabula.astro`, ya eliminado.)*
+> - `EscuchaEnSpotify.astro`: banda pódcast a sangre compacta; **CTA con texto negro sobre coral** (corrige contraste — marfil sobre coral no cumple AA).
+> - **Explorar** en banda `marfil-alt` con numerales de 26px en oro y cuatro ejes: tradición / autor / forma / moraleja. *(Resuelve la antigua duda de destinos: se adoptan los ejes del handoff Cartelera.)*
+> - Tokens añadidos: `--ls-eyebrow: 0.28em`, `--fw-medium: 500`, `--color-marfil-alt: #EBDDBF`.
+> - **Tipografía**: corregida la escala de pesos de Cinzel (400/500/600, sin 700) en todo el sitio (commits `86288c2`, `e3d07d6`).
 
 7. **Hero** a sangre `aspect-ratio: 8/3`, `min-height: 520px`, `object-fit: cover`, con `object-position: 50% <foco>%` del destacado. Fondo de respaldo (radial + linear gradient) mientras carga. **La cabecera nunca se superpone a la ilustración** (decisión explícita del handoff).
 8. **Banda de título** bajo el filete doble (no velo sobre la imagen — de los tres tratamientos evaluados se eligió la **banda inferior**, que mantiene la ilustración intacta y garantiza AA): eyebrow "FÁBULA DEL MES", H1 Cinzel, byline en cursiva esmeralda, y lede a la derecha con `border-left` dorado.
