@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600;700&family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400;1,500&display=swap" rel="stylesheet">
+<style>
+  body { margin:0; background:#F0E5CE; }
+  a { color:#1C3A7A; text-decoration:none; }
+  a:hover { color:#0A5F3E; }
+</style>
+</helmet>
+
+<div data-screen-label="Portada" style="font-family:'Cormorant Garamond',Georgia,serif">
+<div style="background:#F0E5CE;color:#1A1714;min-height:100vh">
+  <div style="display:flex;align-items:center;justify-content:space-between;gap:24px;padding:16px clamp(20px,3vw,40px);border-bottom:1px solid rgba(201,161,74,0.55)">
+    <div style="display:flex;align-items:center;gap:14px">
+      <img src="img/logo-rombo.png" alt="El Fabulario" style="width:38px;height:38px;object-fit:contain">
+      <span style="font-family:Cinzel,serif;font-size:16px;letter-spacing:.26em">EL FABULARIO</span>
+    </div>
+    <div style="display:flex;flex-wrap:wrap;gap:clamp(16px,2vw,30px);font-family:Cinzel,serif;font-size:11px;letter-spacing:.2em">
+      <span>FÁBULAS</span><span>AUTORES</span><span>TRADICIONES</span><span style="color:#7A5F1F">BUSCAR</span>
+    </div>
+  </div>
+
+  <div style="width:100%;height:300px;overflow:hidden;border-bottom:1.5px solid #C9A14A;background:#1A1714">
+    <img src="img/amor-locura.png" alt="El Amor y la Locura ante el consejo de los dioses" style="width:100%;height:100%;object-fit:cover;object-position:50% 34%">
+  </div>
+  <div style="height:0;border-top:0.5px solid rgba(201,161,74,0.55);margin-top:4px"></div>
+
+  <div style="max-width:1200px;margin:0 auto;padding:clamp(20px,2.4vw,28px) clamp(20px,3vw,40px);display:flex;flex-wrap:wrap;gap:clamp(24px,3vw,44px);align-items:flex-start">
+    <div style="flex:1 1 420px;display:flex;flex-direction:column;gap:8px">
+      <div style="font-family:Cinzel,serif;font-size:11px;letter-spacing:.28em;color:#7A5F1F">FÁBULA DE LA SEMANA · CLÁSICA · VERSO · 3 MIN</div>
+      <h1 style="margin:0;font-family:Cinzel,serif;font-weight:600;font-size:clamp(28px,3vw,40px);line-height:1.1;letter-spacing:.05em">El Amor y la Locura</h1>
+      <div style="font-family:'Cormorant Garamond',serif;font-style:italic;font-size:20px;color:#0A5F3E">Jean de La Fontaine</div>
+    </div>
+    <div style="flex:1 1 300px;border-left:1px solid #C9A14A;padding-left:clamp(16px,2vw,24px)">
+      <p style="margin:0;font-size:19px;line-height:1.5;color:#4A413A;text-wrap:pretty">La Locura deja ciego al Amor en una disputa de juego, y los dioses la condenan a servirle de guía para siempre.</p>
+    </div>
+  </div>
+
+  <div style="background:#1A1714;border-top:1px solid #C9A14A;border-bottom:1px solid #C9A14A">
+    <div style="max-width:1200px;margin:0 auto;padding:14px clamp(20px,3vw,40px);display:flex;flex-wrap:wrap;gap:18px;align-items:center;justify-content:space-between">
+      <div style="font-family:'Cormorant Garamond',serif;font-style:italic;font-size:21px;color:#F0E5CE">Cada fábula, también narrada en voz alta.</div>
+      <div style="background:#D45B3C;color:#1A1714;font-family:Cinzel,serif;font-size:11px;letter-spacing:.2em;padding:10px 20px">ESCUCHAR EN SPOTIFY</div>
+    </div>
+  </div>
+
+  <div style="max-width:1200px;margin:0 auto;padding:clamp(26px,3vw,38px) clamp(20px,3vw,40px)">
+    <div style="display:flex;align-items:baseline;justify-content:space-between;gap:20px;border-bottom:1px solid #C9A14A;padding-bottom:10px;margin-bottom:24px">
+      <h2 style="margin:0;font-family:Cinzel,serif;font-weight:500;font-size:clamp(17px,1.7vw,22px);letter-spacing:.2em">ÚLTIMAS FÁBULAS</h2>
+      <span style="font-family:Cinzel,serif;font-size:10px;letter-spacing:.2em;color:#7A5F1F">VER TODAS</span>
+    </div>
+    <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:clamp(20px,2.4vw,30px)">
+      <div style="border:1px solid #C9A14A;padding:14px;display:flex;flex-direction:column;gap:10px" style-hover="background:#EBDDBF">
+        <div style="aspect-ratio:3/2;overflow:hidden;background:#1A1714"><img src="img/comadrejas-ratones.png" alt="Las comadrejas y los ratones" style="width:100%;height:100%;object-fit:cover;object-position:50% 42%"></div>
+        <div style="font-family:Cinzel,serif;font-size:9px;letter-spacing:.2em;color:#7A5F1F">CLÁSICA · PROSA · 3 MIN</div>
+        <h3 style="margin:0;font-family:Cinzel,serif;font-weight:600;font-size:21px;letter-spacing:.05em;line-height:1.18">Las comadrejas y los ratones</h3>
+        <div style="font-family:'Cormorant Garamond',serif;font-style:italic;font-size:18px;color:#0A5F3E">Esopo</div>
+        <p style="margin:0;font-size:18px;line-height:1.45;color:#4A413A;text-wrap:pretty">La tropa cabe por el agujero; los jefes, con sus insignias, no.</p>
+      </div>
+      <div style="border:1px solid #C9A14A;padding:14px;display:flex;flex-direction:column;gap:10px" style-hover="background:#EBDDBF">
+        <div style="aspect-ratio:3/2;overflow:hidden;background:#1A1714"><img src="img/higos.png" alt="El viejo y los higos" style="width:100%;height:100%;object-fit:cover;object-position:50% 40%"></div>
+        <div style="font-family:Cinzel,serif;font-size:9px;letter-spacing:.2em;color:#7A5F1F">CLÁSICA · PROSA · 2 MIN</div>
+        <h3 style="margin:0;font-family:Cinzel,serif;font-weight:600;font-size:21px;letter-spacing:.05em;line-height:1.18">El viejo y los higos</h3>
+        <div style="font-family:'Cormorant Garamond',serif;font-style:italic;font-size:18px;color:#0A5F3E">Leonardo da Vinci</div>
+        <p style="margin:0;font-size:18px;line-height:1.45;color:#4A413A;text-wrap:pretty">El árbol que presume de su fruto atrae primero las piedras.</p>
+      </div>
+      <div style="border:1px solid #C9A14A;padding:14px;display:flex;flex-direction:column;gap:10px" style-hover="background:#EBDDBF">
+        <div style="aspect-ratio:3/2;overflow:hidden;background:#1A1714"><img src="img/bufon.png" alt="El bufón y el aldeano" style="width:100%;height:100%;object-fit:cover;object-position:50% 36%"></div>
+        <div style="font-family:Cinzel,serif;font-size:9px;letter-spacing:.2em;color:#7A5F1F">CLÁSICA · PROSA · 3 MIN</div>
+        <h3 style="margin:0;font-family:Cinzel,serif;font-weight:600;font-size:21px;letter-spacing:.05em;line-height:1.18">El bufón y el aldeano</h3>
+        <div style="font-family:'Cormorant Garamond',serif;font-style:italic;font-size:18px;color:#0A5F3E">Esopo</div>
+        <p style="margin:0;font-size:18px;line-height:1.45;color:#4A413A;text-wrap:pretty">El público aplaude la imitación y abuchea al cerdo verdadero.</p>
+      </div>
+      <div style="border:1px solid #C9A14A;padding:14px;display:flex;flex-direction:column;gap:10px" style-hover="background:#EBDDBF">
+        <div style="aspect-ratio:3/2;overflow:hidden;background:#1A1714"><img src="img/comadreja.png" alt="El hombre y la comadreja" style="width:100%;height:100%;object-fit:cover;object-position:50% 34%"></div>
+        <div style="font-family:Cinzel,serif;font-size:9px;letter-spacing:.2em;color:#7A5F1F">CLÁSICA · PROSA · 2 MIN</div>
+        <h3 style="margin:0;font-family:Cinzel,serif;font-weight:600;font-size:21px;letter-spacing:.05em;line-height:1.18">El hombre y la comadreja</h3>
+        <div style="font-family:'Cormorant Garamond',serif;font-style:italic;font-size:18px;color:#0A5F3E">Esopo</div>
+        <p style="margin:0;font-size:18px;line-height:1.45;color:#4A413A;text-wrap:pretty">Alega servicios prestados quien solo servía a su propio apetito.</p>
+      </div>
+      <div style="border:1px solid #C9A14A;padding:14px;display:flex;flex-direction:column;gap:10px" style-hover="background:#EBDDBF">
+        <div style="aspect-ratio:3/2;overflow:hidden;background:#1A1714"><img src="img/amor-locura.png" alt="El Amor y la Locura" style="width:100%;height:100%;object-fit:cover;object-position:22% 52%"></div>
+        <div style="font-family:Cinzel,serif;font-size:9px;letter-spacing:.2em;color:#7A5F1F">CLÁSICA · VERSO · 3 MIN</div>
+        <h3 style="margin:0;font-family:Cinzel,serif;font-weight:600;font-size:21px;letter-spacing:.05em;line-height:1.18">El Amor y la Locura</h3>
+        <div style="font-family:'Cormorant Garamond',serif;font-style:italic;font-size:18px;color:#0A5F3E">Jean de La Fontaine</div>
+        <p style="margin:0;font-size:18px;line-height:1.45;color:#4A413A;text-wrap:pretty">Desde aquel juicio, la Locura va siempre delante del Amor.</p>
+      </div>
+      <div style="border:1px solid #C9A14A;outline:1px solid rgba(201,161,74,0.45);outline-offset:-9px;padding:clamp(22px,2.4vw,30px);display:flex;flex-direction:column;justify-content:center;gap:14px;background:#EBDDBF">
+        <div style="font-family:Cinzel,serif;font-size:10px;letter-spacing:.26em;color:#7A5F1F">ARCHIVO COMPLETO</div>
+        <div style="font-family:Cinzel,serif;font-size:clamp(24px,2.4vw,30px);letter-spacing:.06em;line-height:1.2">Doscientas doce fábulas</div>
+        <p style="margin:0;font-size:18px;line-height:1.5;color:#4A413A;text-wrap:pretty">De Esopo a los fabulistas contemporáneos, ordenadas por tradición, autor y moraleja.</p>
+        <div style="font-family:Cinzel,serif;font-size:11px;letter-spacing:.2em;color:#1C3A7A;border-top:1px solid #C9A14A;padding-top:12px">ENTRAR AL ÍNDICE</div>
+      </div>
+    </div>
+  </div>
+
+  <div style="border-top:1.5px solid #C9A14A;background:#EBDDBF">
+    <div style="max-width:1200px;margin:0 auto;padding:clamp(20px,2.4vw,28px) clamp(20px,3vw,40px);display:grid;grid-template-columns:repeat(auto-fit,minmax(210px,1fr));gap:clamp(16px,2vw,26px)">
+      <div style="display:flex;gap:14px;align-items:baseline"><span style="font-family:Cinzel,serif;font-size:26px;color:#C9A14A">I</span><div><div style="font-family:Cinzel,serif;font-size:13px;letter-spacing:.16em">POR TRADICIÓN</div><div style="font-size:17px;color:#4A413A">Clásica, hispánica, oriental</div></div></div>
+      <div style="display:flex;gap:14px;align-items:baseline"><span style="font-family:Cinzel,serif;font-size:26px;color:#C9A14A">II</span><div><div style="font-family:Cinzel,serif;font-size:13px;letter-spacing:.16em">POR AUTOR</div><div style="font-size:17px;color:#4A413A">Diez fabulistas</div></div></div>
+      <div style="display:flex;gap:14px;align-items:baseline"><span style="font-family:Cinzel,serif;font-size:26px;color:#C9A14A">III</span><div><div style="font-family:Cinzel,serif;font-size:13px;letter-spacing:.16em">POR FORMA</div><div style="font-size:17px;color:#4A413A">Verso o prosa</div></div></div>
+      <div style="display:flex;gap:14px;align-items:baseline"><span style="font-family:Cinzel,serif;font-size:26px;color:#C9A14A">IV</span><div><div style="font-family:Cinzel,serif;font-size:13px;letter-spacing:.16em">POR MORALEJA</div><div style="font-size:17px;color:#4A413A">Índice temático</div></div></div>
+    </div>
+  </div>
+
+  <div style="border-top:1px solid #C9A14A;padding:18px clamp(20px,3vw,40px);display:flex;flex-wrap:wrap;gap:16px;justify-content:space-between;font-family:Cinzel,serif;font-size:10px;letter-spacing:.2em;color:#7A5F1F">
+    <span>EL FABULARIO · ANTOLOGÍA DIGITAL</span><span>MMXXVI</span>
+  </div>
+</div>
+</x-dc>
+<script data-dc-script type="text/plain"></script>
+</body>
+</html>
