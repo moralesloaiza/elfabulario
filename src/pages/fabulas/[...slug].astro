@@ -1,6 +1,7 @@
 ---
 import { type CollectionEntry, getCollection, render } from 'astro:content';
 import Fabula from '../../layouts/Fabula.astro';
+import { tiempoLecturaMin } from '../../utils/lectura';
 
 export async function getStaticPaths() {
 	const fabulas = await getCollection('fabulas', ({ data }) => !data.borrador);
@@ -13,8 +14,12 @@ type Props = CollectionEntry<'fabulas'>;
 
 const fabula = Astro.props;
 const { Content } = await render(fabula);
+
+// El tiempo de lectura se calcula sobre el cuerpo Markdown crudo (no accesible
+// desde el layout, que solo recibe `data`), así que se pasa ya resuelto.
+const minutosLectura = tiempoLecturaMin(fabula.body);
 ---
 
-<Fabula {...fabula.data} id={fabula.id}>
+<Fabula {...fabula.data} id={fabula.id} minutosLectura={minutosLectura}>
 	<Content />
 </Fabula>

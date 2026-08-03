@@ -20,10 +20,13 @@ interface Props {
 	esRetrato?: boolean;
 	/** Altura fija del hero (p. ej. "300px"). Sin valor: franja 8:3 (mín. 520px). */
 	altura?: string;
-	/** Cintillo pequeño sobre el título (p. ej. "FÁBULA DE LA SEMANA · VERSO · 3 MIN"). */
-	eyebrow: string;
-	titulo: string;
-	href: string;
+	/** Alto mínimo de la franja 8:3 (p. ej. "420px"). Ignorado si se pasa `altura`. */
+	minAltura?: string;
+	/** Cintillo sobre el título. Sin título no se pinta banda: hero solo-imagen. */
+	eyebrow?: string;
+	/** Título de la banda. Si se omite, el hero es solo la ilustración + filete. */
+	titulo?: string;
+	href?: string;
 	/** Autoría en cursiva esmeralda ("por Jean de La Fontaine"). */
 	byline?: string;
 	/** Entradilla de la columna derecha (normalmente el resumen). */
@@ -36,6 +39,7 @@ const {
 	foco,
 	esRetrato = false,
 	altura,
+	minAltura,
 	eyebrow,
 	titulo,
 	href,
@@ -45,43 +49,71 @@ const {
 
 const focoResuelto = foco ?? (esRetrato ? FOCO_RETRATO : 8);
 // Altura fija → anula el aspect-ratio 8:3 y el min-height por defecto.
+// Si no hay altura fija pero sí un min-height a medida (ficha de fábula: 420px),
+// se ajusta solo el mínimo y se conserva el aspecto 8:3.
 const heroVars = altura
 	? `--hero-alto:${altura};--hero-aspecto:auto;--hero-min:0`
-	: undefined;
+	: minAltura
+		? `--hero-min:${minAltura}`
+		: undefined;
 ---
 
-<section class="hero" aria-label={`Destacado: ${titulo}`} style={heroVars}>
-	{/* Imagen a sangre. Enlace solo para ratón: el enlace accesible es el título. */}
-	<a class="hero-img" href={href} tabindex="-1" aria-hidden="true">
-		<Image
-			src={imagen}
-			alt={alt}
-			width={1600}
-			height={1067}
-			loading="eager"
-			fetchpriority="high"
-			style={`object-position: 50% ${focoResuelto}%`}
-		/>
-	</a>
+<section
+	class="hero"
+	aria-label={titulo ? `Destacado: ${titulo}` : alt || undefined}
+	style={heroVars}
+>
+	{/* Imagen a sangre. Con `href` (portada) el enlace es solo para ratón: el
+	    enlace accesible es el título. Sin banda (ficha de fábula) la imagen
+	    lleva su propio `alt` descriptivo y no hay enlace. */}
+	{href ? (
+		<a class="hero-img" href={href} tabindex="-1" aria-hidden="true">
+			<Image
+				src={imagen}
+				alt={alt}
+				width={1600}
+				height={1067}
+				loading="eager"
+				fetchpriority="high"
+				style={`object-position: 50% ${focoResuelto}%`}
+			/>
+		</a>
+	) : (
+		<div class="hero-img">
+			<Image
+				src={imagen}
+				alt={alt}
+				width={1600}
+				height={1067}
+				loading="eager"
+				fetchpriority="high"
+				style={`object-position: 50% ${focoResuelto}%`}
+			/>
+		</div>
+	)}
 
 	{/* Filete doble Art-Déco bajo el hero. */}
 	<div class="hero-rule" aria-hidden="true"></div>
 
-	{/* Banda de título: fondo marfil, contenido a ancho de página. */}
-	<div class="hero-banda">
-		<div class="hero-banda-inner page">
-			<div class="hero-col-titulo">
-				<p class="eyebrow">{eyebrow}</p>
-				<h1 class="hero-titulo"><a href={href}>{titulo}</a></h1>
-				{byline && <p class="hero-byline">{byline}</p>}
-			</div>
-			{lede && (
-				<div class="hero-col-lede">
-					<p>{lede}</p>
+	{/* Banda de título: fondo marfil, contenido a ancho de página.
+	    Solo cuando hay título (portada); la ficha de fábula pone su propio
+	    encabezado —migas, H1, metadatos— en una sección aparte. */}
+	{titulo && (
+		<div class="hero-banda">
+			<div class="hero-banda-inner page">
+				<div class="hero-col-titulo">
+					{eyebrow && <p class="eyebrow">{eyebrow}</p>}
+					<h1 class="hero-titulo">{href ? <a href={href}>{titulo}</a> : titulo}</h1>
+					{byline && <p class="hero-byline">{byline}</p>}
 				</div>
-			)}
+				{lede && (
+					<div class="hero-col-lede">
+						<p>{lede}</p>
+					</div>
+				)}
+			</div>
 		</div>
-	</div>
+	)}
 </section>
 
 <style>
