@@ -7,11 +7,31 @@ import LogoMark from './LogoMark.astro';
 
 <header>
 	<div class="page header-inner">
-		<a href="/" class="logo" aria-label={`${SITE_TITLE} · inicio`}>
-			<LogoMark />
-			<span class="wordmark">{SITE_TITLE}</span>
-		</a>
-		<nav class="internal-links" aria-label="Navegación principal">
+		<div class="header-bar">
+			<a href="/" class="logo" aria-label={`${SITE_TITLE} · inicio`}>
+				<LogoMark />
+				<span class="wordmark">{SITE_TITLE}</span>
+			</a>
+			<button
+				type="button"
+				class="nav-toggle"
+				aria-label="Abrir menú"
+				aria-expanded="false"
+				aria-controls="site-nav"
+				data-nav-toggle
+			>
+				<svg class="nav-toggle-icon icon-menu" viewBox="0 0 24 24" aria-hidden="true">
+					<line x1="3" y1="6" x2="21" y2="6"></line>
+					<line x1="3" y1="12" x2="21" y2="12"></line>
+					<line x1="3" y1="18" x2="21" y2="18"></line>
+				</svg>
+				<svg class="nav-toggle-icon icon-close" viewBox="0 0 24 24" aria-hidden="true">
+					<line x1="5" y1="5" x2="19" y2="19"></line>
+					<line x1="19" y1="5" x2="5" y2="19"></line>
+				</svg>
+			</button>
+		</div>
+		<nav class="internal-links" id="site-nav" aria-label="Navegación principal" data-nav>
 			<HeaderLink href="/">Inicio</HeaderLink>
 			<HeaderLink href="/fabulas">Fábulas</HeaderLink>
 			<HeaderLink href="/autores">Autores</HeaderLink>
@@ -47,6 +67,13 @@ import LogoMark from './LogoMark.astro';
 		padding-block: var(--space-lg);
 		text-align: center;
 	}
+	/* Barra superior: en escritorio solo contiene el logo (centrado, el toggle
+	   está oculto); en móvil pasa a fila logo | hamburguesa. */
+	.header-bar {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+	}
 	.logo {
 		text-decoration: none;
 		color: var(--color-text);
@@ -81,6 +108,44 @@ import LogoMark from './LogoMark.astro';
 	.logo:focus-visible .logo-mark {
 		transform: scale(1.04);
 	}
+
+	/* ---------- Botón hamburguesa (solo móvil) ---------- */
+	.nav-toggle {
+		display: none; /* oculto en escritorio */
+		align-items: center;
+		justify-content: center;
+		width: 44px;
+		height: 44px;
+		color: var(--color-text);
+		border: var(--rule-thin) solid var(--color-oro);
+		background: transparent;
+		flex: 0 0 auto;
+		transition: color var(--dur-base) var(--ease-standard),
+		            background-color var(--dur-base) var(--ease-standard);
+	}
+	.nav-toggle:hover,
+	.nav-toggle:focus-visible {
+		color: var(--color-oro-texto);
+		background: var(--color-marfil-alt);
+	}
+	.nav-toggle-icon {
+		width: 22px;
+		height: 22px;
+		fill: none;
+		stroke: currentColor;
+		stroke-width: 1.75;
+		stroke-linecap: round;
+	}
+	.nav-toggle .icon-close {
+		display: none;
+	}
+	.nav-toggle[aria-expanded="true"] .icon-menu {
+		display: none;
+	}
+	.nav-toggle[aria-expanded="true"] .icon-close {
+		display: block;
+	}
+
 	.internal-links {
 		display: flex;
 		gap: var(--space-lg);
@@ -108,13 +173,123 @@ import LogoMark from './LogoMark.astro';
 		border-bottom-color: var(--color-oro);
 		text-decoration: none;
 	}
-	@media (max-width: 540px) {
-		.logo-mark {
-			width: 64px;
-			height: 64px;
+
+	/* ============================================================
+	   Móvil: patrón hamburguesa por debajo de 640px.
+	   El rombo + wordmark quedan en la barra a la izquierda; el nav
+	   se colapsa en un panel desplegable a ancho completo.
+	   ============================================================ */
+	@media (max-width: 640px) {
+		.header-inner {
+			align-items: stretch;
+			gap: 0;
+			padding-block: var(--space-md);
+			text-align: left;
 		}
-		.internal-links {
+		.header-bar {
+			justify-content: space-between;
 			gap: var(--space-md);
+		}
+		/* Logo compacto en fila: rombo + wordmark uno al lado del otro. */
+		.logo {
+			flex-direction: row;
+			align-items: center;
+			gap: var(--space-sm);
+		}
+		.logo-mark {
+			width: 40px;
+			height: 40px;
+		}
+		.wordmark {
+			padding-left: 0;
+			font-size: 1rem;
+			letter-spacing: 0.22em;
+		}
+		.nav-toggle {
+			display: inline-flex;
+		}
+
+		/* Panel colapsable: oculto por defecto, vertical al abrirse. */
+		.internal-links {
+			display: none;
+			flex-direction: column;
+			flex-wrap: nowrap;
+			align-items: stretch;
+			justify-content: flex-start;
+			gap: 0;
+			margin-top: var(--space-md);
+			border-top: var(--rule-thin) solid var(--color-oro);
+		}
+		.internal-links[data-open] {
+			display: flex;
+		}
+		/* Cada elemento a ancho completo, con filete separador dorado atenuado. */
+		.internal-links :global(a) {
+			padding-block: var(--space-sm);
+			border-bottom: var(--rule-hairline) solid rgba(201, 161, 74, 0.4);
+		}
+		.internal-links :global(a.active) {
+			border-bottom-color: rgba(201, 161, 74, 0.4);
+			color: var(--color-oro-texto);
+		}
+		/* El disparador del buscador (lupa) como última fila del panel. */
+		.internal-links :global(.buscador-trigger) {
+			align-self: flex-start;
+			padding: var(--space-sm) 0;
+			border-bottom: 0;
 		}
 	}
 </style>
+
+<script>
+	const toggle = document.querySelector<HTMLButtonElement>('[data-nav-toggle]');
+	const nav = document.getElementById('site-nav');
+
+	if (toggle && nav) {
+		const isOpen = () => toggle.getAttribute('aria-expanded') === 'true';
+
+		const open = () => {
+			nav.setAttribute('data-open', '');
+			toggle.setAttribute('aria-expanded', 'true');
+			toggle.setAttribute('aria-label', 'Cerrar menú');
+		};
+
+		const close = () => {
+			nav.removeAttribute('data-open');
+			toggle.setAttribute('aria-expanded', 'false');
+			toggle.setAttribute('aria-label', 'Abrir menú');
+		};
+
+		toggle.addEventListener('click', () => {
+			isOpen() ? close() : open();
+		});
+
+		// Escape cierra y devuelve el foco al disparador.
+		document.addEventListener('keydown', (e) => {
+			if (e.key === 'Escape' && isOpen()) {
+				close();
+				toggle.focus();
+			}
+		});
+
+		// Clic fuera del nav (y fuera del botón) cierra el panel.
+		document.addEventListener('click', (e) => {
+			if (!isOpen()) return;
+			const target = e.target as Node;
+			if (nav.contains(target) || toggle.contains(target)) return;
+			close();
+		});
+
+		// Al pulsar un enlace o abrir el buscador, cierra el panel.
+		nav.addEventListener('click', (e) => {
+			const el = (e.target as HTMLElement).closest('a, [data-buscador-trigger]');
+			if (el) close();
+		});
+
+		// Si la ventana crece a escritorio, resetea el estado del panel.
+		const mq = window.matchMedia('(min-width: 641px)');
+		mq.addEventListener('change', (e) => {
+			if (e.matches) close();
+		});
+	}
+</script>
