@@ -156,6 +156,11 @@ const autores = defineCollection({
 			imagen: z.optional(image()),
 			foco: optionalFoco,
 
+			// Glosa: síntesis de una sola frase que se muestra bajo el nombre en
+			// la rejilla de /autores (Fase 4). Opcional: si falta, la ficha del
+			// listado simplemente no la pinta (degradación elegante).
+			glosa: optionalString,
+
 			nacionalidad: optionalString,
 			nacimiento: optionalInt,
 			muerte: optionalInt,

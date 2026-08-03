@@ -1,6 +1,7 @@
 ---
 nombre: Félix María de Samaniego
 tipo: clasico
+glosa: "Escribió para el seminario de Vergara las fábulas que todo español recita de niño."
 imagen: /src/assets/uploads/chatgpt-image-12-may-2026-22_06_50.png
 nacionalidad: Español
 nacimiento: 1745

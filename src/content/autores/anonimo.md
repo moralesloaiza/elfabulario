@@ -1,6 +1,7 @@
 ---
 nombre: Anónimo
 tipo: clasico
+glosa: "Del Panchatantra al Calila e Dimna: las fábulas que viajaron sin firma."
 imagen: /src/assets/uploads/chatgpt-image-12-may-2026-22_17_02.png
 nacionalidad: La Tierra
 siglo: ""
