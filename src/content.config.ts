@@ -45,8 +45,18 @@ const fabulas = defineCollection({
 			fecha_actualizada: optionalDate,
 			ilustracion: z.optional(image()),
 			foco: optionalFoco,
+			// Crédito de autoría de la ilustración. Opcional: solo aparece en la
+			// línea de metadatos de la ficha cuando se rellena. Las ilustraciones
+			// propias del proyecto suelen ir sin crédito externo.
+			credito_ilustracion: optionalString,
 			spotify_url: z.string().url().optional(),
 			borrador: z.boolean().default(false),
+
+			// Moraleja destacada (opcional). Cuando se rellena, la ficha la
+			// presenta en una caja con filete oro tras el cuerpo. Si se omite, la
+			// moraleja vive dentro del cuerpo Markdown como hasta ahora (no hay
+			// regresión: la caja simplemente no se pinta).
+			moraleja: optionalString,
 
 			// --- Taxonomía ---
 			// personajes: opcional. Lista cerrada. Humano genérico = implícito.

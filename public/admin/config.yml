@@ -61,6 +61,7 @@ collections:
       - { name: "fecha_actualizada", label: "Fecha de última actualización", widget: "datetime", required: false, format: "YYYY-MM-DD", date_format: "YYYY-MM-DD", time_format: false }
       - { name: "ilustracion", label: "Ilustración", widget: "image", required: false, hint: "Proporción recomendada 3:2, mínimo 1200×800." }
       - { name: "foco", label: "Foco de la ilustración (%)", widget: "number", value_type: int, min: 0, max: 100, step: 1, required: false, hint: "Qué franja horizontal de la ilustración se ve en la cabecera. 0 = borde superior, 50 = centro, 100 = borde inferior. Vacío = 8. Súbelo si la cabecera deja demasiado aire arriba; bájalo si corta lo importante." }
+      - { name: "credito_ilustracion", label: "Crédito de la ilustración", widget: "string", required: false, hint: "Autoría de la ilustración, si procede. Aparece en la línea de metadatos de la ficha (\"Ilustración de …\"). Déjalo vacío si es una ilustración propia sin crédito externo." }
       - { name: "spotify_url", label: "Enlace Spotify", widget: "string", required: false, hint: "URL de la narración/declamación en Spotify (track o episodio de podcast)." }
       - { name: "borrador", label: "Borrador (no se publica todavía)", widget: "boolean", default: false }
 
@@ -347,8 +348,9 @@ collections:
         required: false
         hint: "Opcional. Si el traductor tiene ficha en Autores, selecciónala para enlazar a su página. Si se deja vacío, se acredita con el nombre del curador."
 
-      # --- Cuerpo y nota ---
+      # --- Cuerpo, moraleja y nota ---
       - { name: "body", label: "Cuerpo de la fábula", widget: "markdown" }
+      - { name: "moraleja", label: "Moraleja destacada", widget: "text", required: false, hint: "Opcional. Si la rellenas, se muestra en una caja aparte con filete oro tras el cuerpo. Déjala vacía si la moraleja ya está dentro del cuerpo." }
       - { name: "nota_curador", label: "Nota del curador", widget: "markdown", required: false, hint: "Comentarios adicionales del curador. Aparece como sección aparte tras la fábula." }
 
   - name: "entradas"
