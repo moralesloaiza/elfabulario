@@ -443,6 +443,7 @@ collections:
           - { label: "Colaborador", value: "colaborador" }
       - { name: "imagen", label: "Retrato / ilustración", widget: "image", required: false, hint: "Imagen del autor. Proporción 1:1 preferida; 3:2 también funciona." }
       - { name: "foco", label: "Foco del retrato (%)", widget: "number", value_type: int, min: 0, max: 100, step: 1, required: false, hint: "Qué franja horizontal del retrato se ve en la cabecera de su ficha (y en la portada, si es el destacado). 0 = borde superior, 50 = centro, 100 = borde inferior. Vacío = 15." }
+      - { name: "glosa", label: "Glosa (una línea)", widget: "string", required: false, hint: "Síntesis de una sola frase que aparece bajo el nombre en el índice de autores. Ej.: 'El esclavo frigio a quien la tradición atribuye el origen del género.'" }
 
       # --- Datos biográficos ---
       - { name: "nacionalidad", label: "Nacionalidad", widget: "string", required: false }
