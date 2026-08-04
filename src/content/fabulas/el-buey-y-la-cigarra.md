@@ -4,7 +4,7 @@ resumen: Mientras el buey ara, una cigarra le señala un surco torcido, y el bue
   le responde sobre el valor de un descuido entre muchos aciertos.
 fecha: 2026-05-31
 fecha_actualizada: 2026-07-19
-ilustracion: /src/assets/uploads/chatgpt-image-2-jun-2026-19_08_53.png
+ilustracion: /src/assets/uploads/el-buey-y-la-cigarra.png
 spotify_url: https://open.spotify.com/episode/3WTXWtyuNvSmlIv8p0pAzk?si=lT7xkEFHQx6li9oFfICbGA
 borrador: false
 personajes:

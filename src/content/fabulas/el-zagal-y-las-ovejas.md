@@ -4,7 +4,7 @@ resumen: Un joven alerta a los aldeanos una y otra vez, en vano, hasta descubrir
   la suerte de quienes viven engañando.
 fecha: 2025-11-05
 fecha_actualizada: 2026-06-20
-ilustracion: /src/assets/uploads/chatgpt-image-17-may-2026-13_00_26.png
+ilustracion: /src/assets/uploads/el-zagal-y-las-ovejas.png
 spotify_url: https://open.spotify.com/episode/3ZptRHx6E07MBrJA2rwdTJ?si=KderPaA7Qv-RdhMAqyT8ng
 borrador: false
 personajes: []

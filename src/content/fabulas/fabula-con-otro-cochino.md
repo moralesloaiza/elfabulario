@@ -4,7 +4,7 @@ resumen: Un perro con sordera hace un intercambio conveniente con el cochino,
   hasta que el destino lo encuentra.
 fecha: 2012-01-03
 fecha_actualizada: 2026-05-15
-ilustracion: /src/assets/uploads/chatgpt-image-15-may-2026-19_13_10.png
+ilustracion: /src/assets/uploads/fabula-con-otro-cochino.png
 spotify_url: https://open.spotify.com/episode/6DNZjPsK8mrBMxPUidXwj6?si=ShUsI2VoT_yf6daYopgOHA
 borrador: false
 personajes:

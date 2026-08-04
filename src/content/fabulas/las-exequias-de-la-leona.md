@@ -4,7 +4,7 @@ resumen: Un ciervo muestra el peligro de los poderosos en medio del duelo, pero
   cuan débiles pueden ser ante la servil adulación.
 fecha: 2012-05-05
 fecha_actualizada: 2026-05-12
-ilustracion: /src/assets/uploads/chatgpt-image-11-may-2026-20_43_15.png
+ilustracion: /src/assets/uploads/las-exequias-de-la-leona.png
 borrador: false
 personajes:
   - ciervo

@@ -4,7 +4,7 @@ resumen: Un cerdo y un gallo dan al cordero consejos opuestos sobre cómo vivir,
   y cada cual recomienda justo aquello a lo que él mismo se inclina.
 fecha: 2026-05-31
 fecha_actualizada: 2026-06-20
-ilustracion: /src/assets/uploads/chatgpt-image-20-jun-2026-16_12_02.png
+ilustracion: /src/assets/uploads/el-gallo-el-cerdo-y-el-cordero.png
 borrador: false
 personajes:
   - gallo

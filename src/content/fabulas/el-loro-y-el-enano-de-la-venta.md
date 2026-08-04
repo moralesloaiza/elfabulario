@@ -4,7 +4,7 @@ resumen: "Dos fábulas que juntas dan el mismo mensaje: una con un lorito y otra
   con un enano."
 fecha: 2011-11-26
 fecha_actualizada: 2026-05-16
-ilustracion: /src/assets/uploads/chatgpt-image-15-may-2026-23_19_50.png
+ilustracion: /src/assets/uploads/el-loro-y-el-enano-de-la-venta.png
 borrador: false
 personajes:
   - loro

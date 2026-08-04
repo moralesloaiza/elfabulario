@@ -5,7 +5,7 @@ resumen: Una piedra deja su tranquila altura entre flores para bajar al camino
   vano la paz perdida.
 fecha: 2026-07-11
 fecha_actualizada: 2026-07-26
-ilustracion: /src/assets/uploads/chatgpt-image-26-jul-2026-10_44_33.png
+ilustracion: /src/assets/uploads/la-piedra-y-el-camino.png
 borrador: false
 personajes: []
 temas:

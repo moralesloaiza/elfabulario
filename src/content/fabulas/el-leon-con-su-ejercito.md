@@ -4,7 +4,7 @@ resumen: Un sabio león organiza su ejército y demuestra a todos que cada uno
   tiene lugar y oficio dentro del mismo.
 fecha: 2025-07-20
 fecha_actualizada: 2026-05-03
-ilustracion: /src/assets/uploads/chatgpt-image-17-may-2026-13_11_36.png
+ilustracion: /src/assets/uploads/el-leon-con-su-ejercito.png
 borrador: false
 personajes:
   - burro

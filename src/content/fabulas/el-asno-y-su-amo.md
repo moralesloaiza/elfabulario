@@ -4,7 +4,7 @@ resumen: Un burro reprocha a su amo el pienso que le da, convencido de saber
   mejor que él lo que le conviene.
 fecha: 2026-05-31
 fecha_actualizada: 2026-07-12
-ilustracion: /src/assets/uploads/chatgpt-image-2-jun-2026-18_53_55.png
+ilustracion: /src/assets/uploads/el-asno-y-su-amo.png
 spotify_url: https://open.spotify.com/episode/1w1pEtT1RAEH3cT32cycXk?si=CqlwrPHtRUW9svAw28XjYg
 borrador: false
 personajes:

@@ -4,7 +4,7 @@ resumen: En una tertulia de animales, el avestruz y el dromedario se alaban
   mutuamente, hasta que la zorra repara en el motivo de tanto elogio.
 fecha: 2026-05-31
 fecha_actualizada: 2026-07-12
-ilustracion: /src/assets/uploads/chatgpt-image-2-jun-2026-19_00_28.png
+ilustracion: /src/assets/uploads/el-avestruz-el-dromedario-y-la-zorra.png
 spotify_url: https://open.spotify.com/episode/0F9PaWwfSSti7bW2CzUtBr?si=gF_zBR9RRw6LOoPFCSaCwA
 borrador: false
 personajes:

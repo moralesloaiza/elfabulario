@@ -4,7 +4,7 @@ resumen: Un perro y un asno comparten camino y en medio de su marcha, los
   sorprende el hambre.
 fecha: 2011-11-08
 fecha_actualizada: 2026-05-16
-ilustracion: /src/assets/uploads/chatgpt-image-16-may-2026-14_38_18.png
+ilustracion: /src/assets/uploads/el-perro-y-el-asno.png
 borrador: false
 personajes:
   - burro

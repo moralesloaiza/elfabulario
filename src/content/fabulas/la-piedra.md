@@ -4,7 +4,7 @@ resumen: Una piedra, cansada de su vida contemplativa, decide irse a vivir con
   otras piedras.
 fecha: 2011-12-04
 fecha_actualizada: 2026-05-16
-ilustracion: /src/assets/uploads/chatgpt-image-15-may-2026-23_05_25.png
+ilustracion: /src/assets/uploads/la-piedra.png
 borrador: false
 personajes: []
 temas:

@@ -3,7 +3,7 @@ titulo: La águila y el escarabajo
 resumen: Un escarabajo demuestra cómo no hay enemigo pequeño ante el poderoso.
 fecha: 2025-06-10
 fecha_actualizada: 2026-07-09
-ilustracion: /src/assets/uploads/chatgpt-image-10-may-2026-10_48_59.png
+ilustracion: /src/assets/uploads/el-aguila-y-el-escarabajo.png
 spotify_url: https://open.spotify.com/episode/105Jws5bdIDylxZIwufNnO?si=Za0SCssHQWCafqkolTiX1g
 borrador: false
 personajes:

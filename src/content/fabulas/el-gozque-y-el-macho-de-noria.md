@@ -4,7 +4,7 @@ resumen: Un perrillo se burla del macho que da vueltas a la noria por su trabajo
   monótono, sin reparar en para qué sirve.
 fecha: 2026-05-31
 fecha_actualizada: 2026-06-23
-ilustracion: /src/assets/uploads/chatgpt-image-23-jun-2026-21_34_57.png
+ilustracion: /src/assets/uploads/el-gozque-y-el-macho-de-noria.png
 borrador: false
 personajes:
   - perro

@@ -3,7 +3,7 @@ titulo: Fábula del rabipelado
 resumen: Esta fábula demuestra el precio que puede tener algunas veces la vanidad.
 fecha: 2012-01-04
 fecha_actualizada: 2026-05-14
-ilustracion: /src/assets/uploads/chatgpt-image-14-may-2026-18_55_37.png
+ilustracion: /src/assets/uploads/fabula-del-rabipelado.png
 borrador: false
 personajes:
   - ardilla

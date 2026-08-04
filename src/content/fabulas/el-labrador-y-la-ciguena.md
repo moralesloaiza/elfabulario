@@ -3,7 +3,7 @@ titulo: El labrador y la cigüeña
 resumen: Una cigüeña aprende sobre las consecuencias de las malas cercanías.
 fecha: 2025-06-19
 fecha_actualizada: 2026-05-08
-ilustracion: /src/assets/uploads/ciguena_labrador.png
+ilustracion: /src/assets/uploads/el-labrador-y-la-ciguena.png
 borrador: false
 personajes:
   - ciguena

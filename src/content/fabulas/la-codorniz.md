@@ -4,7 +4,7 @@ resumen: Una codorniz descubre el cruel destino que aguarda a quienes sin
   prudencia se entregan a sus apetitos.
 fecha: 2025-06-11
 fecha_actualizada: 2026-05-11
-ilustracion: /src/assets/uploads/chatgpt-image-10-may-2026-10_46_54.png
+ilustracion: /src/assets/uploads/la-codorniz.png
 borrador: false
 personajes:
   - codorniz

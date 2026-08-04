@@ -4,7 +4,7 @@ resumen: Desafiados a volar el cuervo y el pavo, este se dedica a censurar el
   aspecto y los hábitos del otro en vez de atender a la prueba.
 fecha: 2026-05-31
 fecha_actualizada: 2026-07-31
-ilustracion: /src/assets/uploads/chatgpt-image-29-jul-2026-22_32_24.png
+ilustracion: /src/assets/uploads/el-cuervo-y-el-pavo.png
 spotify_url: https://open.spotify.com/episode/1R9MFjft6sCUkp6w5vohOa?si=5V5oSAjCS-unWugM2ES37Q
 borrador: false
 personajes:

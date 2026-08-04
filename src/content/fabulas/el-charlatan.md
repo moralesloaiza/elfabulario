@@ -3,7 +3,7 @@ titulo: El charlatán
 resumen: Un hombre promete a un rey hacer hablar a un burro en diez años.
 fecha: 2011-11-08
 fecha_actualizada: 2026-07-31
-ilustracion: /src/assets/uploads/chatgpt-image-31-jul-2026-11_29_05.png
+ilustracion: /src/assets/uploads/el-charlatan.png
 spotify_url: https://open.spotify.com/episode/01ESDgS9hG0a2meHMyCAzm?si=Iwp9oR22S4KkILItrQzEdw
 borrador: false
 personajes:

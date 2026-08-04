@@ -5,7 +5,7 @@ resumen: Una pizca de nieve, temiendo parecer soberbia en la cima, se deja caer
   deshacerse aquel verano.
 fecha: 2026-07-11
 fecha_actualizada: 2026-07-26
-ilustracion: /src/assets/uploads/chatgpt-image-26-jul-2026-00_35_14.png
+ilustracion: /src/assets/uploads/la-nieve-y-la-montana.png
 borrador: false
 personajes: []
 temas:

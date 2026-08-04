@@ -4,7 +4,7 @@ resumen: Con su último aliento, un ave reflexiona sobre las crueles ironías de
   los hombres que hacen la guerra.
 fecha: 2025-11-09
 fecha_actualizada: 2026-05-02
-ilustracion: /src/assets/uploads/chatgpt-image-17-may-2026-12_34_03.png
+ilustracion: /src/assets/uploads/el-pajaro-herido-de-una-flecha.png
 spotify_url: https://open.spotify.com/episode/42fVIaxNodaLgw1QtIhYVP?si=LSqnltV1TUShkkShHcsagg
 borrador: false
 personajes:

@@ -5,7 +5,7 @@ resumen: Una nuez suplica al muro del campanario que la acoja en una grieta, y
   del edificio que la amparó.
 fecha: 2026-07-11
 fecha_actualizada: 2026-07-26
-ilustracion: /src/assets/uploads/chatgpt-image-26-jul-2026-10_47_52.png
+ilustracion: /src/assets/uploads/la-nuez-y-el-campanario.png
 borrador: false
 personajes:
   - nogal

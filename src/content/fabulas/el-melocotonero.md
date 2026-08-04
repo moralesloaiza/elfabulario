@@ -4,7 +4,7 @@ resumen: El melocotonero, envidiando los frutos del nogal vecino, se carga tanto
   de los suyos que el peso lo derriba desarraigado y quebrado.
 fecha: 2026-07-11
 fecha_actualizada: 2026-07-25
-ilustracion: /src/assets/uploads/chatgpt-image-25-jul-2026-23_56_48.png
+ilustracion: /src/assets/uploads/el-melocotonero.png
 borrador: false
 personajes:
   - melocotonero

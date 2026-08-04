@@ -4,7 +4,7 @@ resumen: Una llama abandona por gula el horno de los vidrieros para devorar una
   vela, y se ve obligada a morir con ella mientras sus hermanas siguen ardiendo.
 fecha: 2026-07-11
 fecha_actualizada: 2026-07-26
-ilustracion: /src/assets/uploads/chatgpt-image-26-jul-2026-00_18_23.png
+ilustracion: /src/assets/uploads/la-llama-y-la-candela.png
 borrador: false
 personajes:
   - candela

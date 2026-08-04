@@ -4,7 +4,7 @@ resumen: Un cordero, a salvo dentro de la cabaña, provoca y fanfarronea ante el
   lobo; éste se aleja observando que los cobardes sólo presumen desde lo seguro.
 fecha: 2026-05-15
 fecha_actualizada: 2026-07-31
-ilustracion: /src/assets/uploads/chatgpt-image-29-jul-2026-22_25_28.png
+ilustracion: /src/assets/uploads/el-cordero-y-el-lobo.png
 spotify_url: https://open.spotify.com/episode/3wv8viQJ0lMbs31qKhhue6?si=a-R-_O9XQjaxR5YMovFvRA
 borrador: false
 personajes:

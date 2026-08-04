@@ -4,7 +4,7 @@ resumen: Un erudito guarda sus libros y papeles con celo mientras un ratón los
   roe, en un duelo entre el saber acumulado y quien lo aprovecha a su modo.
 fecha: 2026-05-31
 fecha_actualizada: 2026-06-04
-ilustracion: /src/assets/uploads/erudito_raton.png
+ilustracion: /src/assets/uploads/el-erudito-y-el-raton.png
 borrador: false
 personajes:
   - erudito

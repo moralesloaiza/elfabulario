@@ -4,7 +4,7 @@ resumen: Un carnero enseña a un fiero jabalí, cómo los malvados forjan su rui
   en su propia maldad.
 fecha: 2012-04-22
 fecha_actualizada: 2026-05-12
-ilustracion: /src/assets/uploads/chatgpt-image-11-may-2026-20_59_52.png
+ilustracion: /src/assets/uploads/el-jabali-y-el-carnero.png
 borrador: false
 personajes:
   - carnero

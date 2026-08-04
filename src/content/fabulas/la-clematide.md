@@ -4,7 +4,7 @@ resumen: La clemátide, no contenta con su seto, cruza con sus ramas el camino
   para prenderse del seto de enfrente, y los caminantes la rompen.
 fecha: 2026-07-11
 fecha_actualizada: 2026-07-26
-ilustracion: /src/assets/uploads/chatgpt-image-26-jul-2026-00_00_23.png
+ilustracion: /src/assets/uploads/la-clematide.png
 borrador: false
 personajes:
   - clematide

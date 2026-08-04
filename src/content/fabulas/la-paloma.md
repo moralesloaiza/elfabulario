@@ -4,7 +4,7 @@ resumen: Algunas veces la desesperación nos aleja del juicio y nos lleva a
   terribles consecuencias.
 fecha: 2025-02-13
 fecha_actualizada: 2026-05-11
-ilustracion: /src/assets/uploads/chatgpt-image-10-may-2026-11_17_23.png
+ilustracion: /src/assets/uploads/la-paloma.png
 borrador: false
 personajes:
   - paloma

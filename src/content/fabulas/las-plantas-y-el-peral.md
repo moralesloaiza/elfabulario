@@ -5,7 +5,7 @@ resumen: El laurel y el mirto se burlan del peral que cortan, y este responde
   para honrarlo a su alrededor.
 fecha: 2026-07-11
 fecha_actualizada: 2026-07-26
-ilustracion: /src/assets/uploads/chatgpt-image-26-jul-2026-11_05_44.png
+ilustracion: /src/assets/uploads/las-plantas-y-el-peral.png
 borrador: false
 personajes:
   - peral

@@ -3,7 +3,7 @@ titulo: El león vencido por el hombre
 resumen: Un sabio león observa la conveniencia de quien pinta una escena de lucha.
 fecha: 2025-06-12
 fecha_actualizada: 2026-05-11
-ilustracion: /src/assets/uploads/chatgpt-image-10-may-2026-10_44_49.png
+ilustracion: /src/assets/uploads/el-leon-vencido-por-el-hombre.png
 borrador: false
 personajes:
   - leon

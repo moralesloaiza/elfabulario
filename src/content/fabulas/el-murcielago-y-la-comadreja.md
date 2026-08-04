@@ -4,7 +4,7 @@ resumen: Con ingenio y astucia un murciélago se salva de ser devorado dos veces
   por la misma comadreja.
 fecha: 2012-04-28
 fecha_actualizada: 2026-05-12
-ilustracion: /src/assets/uploads/chatgpt-image-11-may-2026-20_46_52.png
+ilustracion: /src/assets/uploads/el-murcielago-y-la-comadreja.png
 borrador: false
 personajes:
   - comadreja

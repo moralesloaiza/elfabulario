@@ -4,7 +4,7 @@ resumen: La tortuga, tras llegar tarde a la boda de Júpiter, da una excusa por
   la cual es castigada severamente.
 fecha: 2025-11-11
 fecha_actualizada: 2026-05-02
-ilustracion: /src/assets/uploads/chatgpt-image-2-may-2026-10_25_56.png
+ilustracion: /src/assets/uploads/jupiter-y-la-tortuga.png
 spotify_url: https://open.spotify.com/episode/36K2q2si2RiVRxGy1dK7wL?si=ZS7zpEqIQUWCd-rfTpQywA
 borrador: false
 personajes:

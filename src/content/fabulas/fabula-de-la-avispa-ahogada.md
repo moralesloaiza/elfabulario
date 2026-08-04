@@ -4,7 +4,7 @@ resumen: Una avispa lleva de ira lidia con el mundo enardecida, hasta que pronto
   descubre su final.
 fecha: 2012-01-05
 fecha_actualizada: 2026-05-14
-ilustracion: /src/assets/uploads/chatgpt-image-14-may-2026-18_38_20.png
+ilustracion: /src/assets/uploads/fabula-de-la-avispa-ahogada.png
 spotify_url: https://open.spotify.com/episode/5XTCDUEMrYK3dzkfsOEHZo?si=Jc8ZvoTbRvWfplPVvOesHw
 borrador: false
 personajes:

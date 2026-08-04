@@ -4,7 +4,7 @@ resumen: Las moscas en su insaciable voracidad encuentran el destino de aquellos
   dominados por sus vicios.
 fecha: 2025-06-16
 fecha_actualizada: 2026-05-09
-ilustracion: /src/assets/uploads/chatgpt-image-8-may-2026-22_56_53-2-.png
+ilustracion: /src/assets/uploads/las-moscas.png
 borrador: false
 personajes:
   - mosca

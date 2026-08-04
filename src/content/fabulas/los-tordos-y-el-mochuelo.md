@@ -5,7 +5,7 @@ resumen: Los tordos se alegran de ver cautivo y atado al mochuelo, y ese mismo
   la vida.
 fecha: 2026-07-11
 fecha_actualizada: 2026-07-26
-ilustracion: /src/assets/uploads/chatgpt-image-26-jul-2026-11_38_34.png
+ilustracion: /src/assets/uploads/los-tordos-y-el-mochuelo.png
 borrador: false
 personajes:
   - tordo

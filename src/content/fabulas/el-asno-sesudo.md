@@ -4,7 +4,7 @@ resumen: Un sabio asno reflexiona, ante el asombro de su amo, sobre el destino
   que le aguarda en la cercanía de la guerra.
 fecha: 2025-11-01
 fecha_actualizada: 2026-05-03
-ilustracion: /src/assets/uploads/chatgpt-image-17-may-2026-13_04_44.png
+ilustracion: /src/assets/uploads/el-asno-sesudo.png
 spotify_url: https://open.spotify.com/episode/2qeaRQL9RPMexCek9px8Xh?si=VchaWyr8TDmFABUKVuqMhQ
 borrador: false
 personajes:

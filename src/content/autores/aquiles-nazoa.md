@@ -2,7 +2,7 @@
 nombre: Aquiles Nazoa
 tipo: clasico
 glosa: "Trajo al humor venezolano la ternura de los animales y de la gente humilde."
-imagen: /src/assets/uploads/chatgpt-image-12-may-2026-21_25_27.png
+imagen: /src/assets/uploads/aquiles-nazoa.png
 nacionalidad: Venezolano
 nacimiento: 1920
 muerte: 1976

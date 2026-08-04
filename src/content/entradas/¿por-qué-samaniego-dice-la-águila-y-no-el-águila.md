@@ -2,7 +2,7 @@
 titulo: ¿Por qué Samaniego dice "la águila" y no "el águila"?
 fecha: 2026-05-18
 resumen: Un detalle que llama la atención en las fábulas de este autor español.
-ilustracion: /src/assets/uploads/chatgpt-image-12-may-2026-22_06_50.png
+ilustracion: /src/assets/uploads/felix-maria-de-samaniego.png
 borrador: false
 curador: Don Alejandro
 es_seudonimo: false

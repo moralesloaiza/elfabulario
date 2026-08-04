@@ -4,7 +4,7 @@ resumen: El asno se niega a compartir su alforja con el perro hambriento; cuando
   aparece un lobo, el perro tampoco lo defiende.
 fecha: 2026-05-15
 fecha_actualizada: 2026-07-11
-ilustracion: /src/assets/uploads/chatgpt-image-11-jul-2026-23_59_42.png
+ilustracion: /src/assets/uploads/el-asno-y-el-perro.png
 spotify_url: https://open.spotify.com/episode/7tizyLZ4wQP4TglDDBRkbh?si=Swp-bJx0TkWcCGRUVdcTpg
 borrador: false
 personajes:

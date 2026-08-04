@@ -4,7 +4,7 @@ resumen: Un caballo egoísta se rehúsa a ayudar a su compañero el asno con la
   pesada carga que lleva.
 fecha: 2011-12-04
 fecha_actualizada: 2026-05-15
-ilustracion: /src/assets/uploads/chatgpt-image-15-may-2026-18_50_04.png
+ilustracion: /src/assets/uploads/el-caballo-y-el-asno.png
 borrador: false
 personajes:
   - burro

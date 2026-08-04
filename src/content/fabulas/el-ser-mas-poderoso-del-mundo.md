@@ -4,7 +4,7 @@ resumen: Un nigromante indio regala a un pobre ratoncito el destino de
   convertirse en el ser más poderoso del mundo.
 fecha: 2011-11-10
 fecha_actualizada: 2026-05-16
-ilustracion: /src/assets/uploads/chatgpt-image-15-may-2026-23_29_08.png
+ilustracion: /src/assets/uploads/el-ser-mas-poderoso-del-mundo.png
 borrador: false
 personajes:
   - buho

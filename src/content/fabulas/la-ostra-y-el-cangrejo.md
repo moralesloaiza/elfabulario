@@ -5,7 +5,7 @@ resumen: La ostra se abre del todo a la luna llena, y el cangrejo, al verla, le
   revela su secreto.
 fecha: 2026-07-11
 fecha_actualizada: 2026-07-26
-ilustracion: /src/assets/uploads/chatgpt-image-26-jul-2026-11_35_20.png
+ilustracion: /src/assets/uploads/la-ostra-y-el-cangrejo.png
 borrador: false
 personajes:
   - ostra

@@ -4,7 +4,7 @@ resumen: La abundancia de un ratón cortesano viene a un alto precio, según
   observa su compañero campesino.
 fecha: 2025-06-14
 fecha_actualizada: 2026-05-11
-ilustracion: /src/assets/uploads/raton_cortesano.png
+ilustracion: /src/assets/uploads/el-raton-de-la-corte-y-el-del-campo.png
 borrador: false
 personajes:
   - raton

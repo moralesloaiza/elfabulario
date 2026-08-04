@@ -4,7 +4,7 @@ resumen: Un asno envidia la vida regalada del caballo, hasta que lo ve partir a
   la guerra con jinete y armas y agradece su humilde suerte.
 fecha: 2026-05-15
 fecha_actualizada: 2026-07-11
-ilustracion: /src/assets/uploads/chatgpt-image-11-jul-2026-23_56_58.png
+ilustracion: /src/assets/uploads/el-asno-y-el-caballo.png
 spotify_url: https://open.spotify.com/episode/0eupIt1UeHi6RKZHZvSFdz?si=YO88qK3vRrmxN_iTBE0Iyw
 borrador: false
 personajes:

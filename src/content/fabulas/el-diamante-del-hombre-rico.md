@@ -4,7 +4,7 @@ resumen: Un judío rico vende toda su riqueza para comprar un diamante y lo
   esconde en su turbante.
 fecha: 2012-04-08
 fecha_actualizada: 2026-07-31
-ilustracion: /src/assets/uploads/chatgpt-image-31-jul-2026-23_21_29.png
+ilustracion: /src/assets/uploads/el-diamante-del-hombre-rico.png
 spotify_url: https://open.spotify.com/episode/13PAdKxSGwd7CeDrxG5bxz?si=ETl70qAGRuCHtcPqKR2V-A
 borrador: false
 personajes:

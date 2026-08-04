@@ -4,7 +4,7 @@ resumen: La fortuna advierte a un joven incauto acerca de cómo la adversidad es
   muchas veces causa del propio proceder.
 fecha: 2025-02-22
 fecha_actualizada: 2026-05-11
-ilustracion: /src/assets/uploads/chatgpt-image-10-may-2026-11_11_31.png
+ilustracion: /src/assets/uploads/el-muchacho-y-la-fortuna.png
 borrador: false
 personajes:
   - nino

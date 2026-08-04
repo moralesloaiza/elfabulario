@@ -4,7 +4,7 @@ resumen: Un cazador presume de su jornada de caza ante un vecino, sin mencionar
   al hurón que, desde su jaula, reclama la parte que le toca.
 fecha: 2026-05-31
 fecha_actualizada: 2026-07-31
-ilustracion: /src/assets/uploads/chatgpt-image-31-jul-2026-11_25_12.png
+ilustracion: /src/assets/uploads/el-cazador-y-el-huron.png
 spotify_url: https://open.spotify.com/episode/6wyMaJaCUWMl9l7WjoL0Tc?si=9oFQpn2XQhyMv2HRLLvk5w
 borrador: false
 personajes:

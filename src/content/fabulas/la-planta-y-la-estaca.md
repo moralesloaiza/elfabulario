@@ -4,7 +4,7 @@ resumen: La planta se lamenta de las estacas secas que la rodean, sin advertir
   que una la mantiene erguida y otra la protege de la mala compañía.
 fecha: 2026-07-11
 fecha_actualizada: 2026-07-26
-ilustracion: /src/assets/uploads/chatgpt-image-26-jul-2026-11_09_57.png
+ilustracion: /src/assets/uploads/la-planta-y-la-estaca.png
 borrador: false
 personajes: []
 temas:

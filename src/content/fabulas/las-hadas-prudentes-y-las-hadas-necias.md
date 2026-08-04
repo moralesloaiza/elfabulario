@@ -4,7 +4,7 @@ resumen: Ante la llegada inminente de una tempestad, unas hadas deciden dónde
   refugiarse y se separan.
 fecha: 2011-11-10
 fecha_actualizada: 2026-05-16
-ilustracion: /src/assets/uploads/chatgpt-image-16-may-2026-14_29_59.png
+ilustracion: /src/assets/uploads/las-hadas-prudentes-y-las-hadas-necias.png
 borrador: false
 personajes:
   - hada

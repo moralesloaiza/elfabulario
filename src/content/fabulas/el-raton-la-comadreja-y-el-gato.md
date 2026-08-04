@@ -5,7 +5,7 @@ resumen: El ratón, asediado por la comadreja, la ve devorada por la gata y da
   gata le quita la vida.
 fecha: 2026-07-11
 fecha_actualizada: 2026-07-25
-ilustracion: /src/assets/uploads/chatgpt-image-25-jul-2026-23_24_52.png
+ilustracion: /src/assets/uploads/el-raton-la-comadreja-y-el-gato.png
 borrador: false
 personajes:
   - raton

@@ -4,7 +4,7 @@ resumen: Una poderosa y malvada águila se guía del consejo de una corneja para
   lidiar con una tortuga.
 fecha: 2025-11-06
 fecha_actualizada: 2026-05-18
-ilustracion: /src/assets/uploads/chatgpt-image-17-may-2026-12_57_20.png
+ilustracion: /src/assets/uploads/la-aguila-la-corneja-y-la-tortuga.png
 spotify_url: https://open.spotify.com/episode/5AC9E0oGSTaNaqm6mJZJfM?si=97RgFpkXRf6Lv7bvWaFRpQ
 borrador: false
 personajes:
