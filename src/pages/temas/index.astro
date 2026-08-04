@@ -5,6 +5,7 @@ import Footer from '../../components/Footer.astro';
 import Header from '../../components/Header.astro';
 import { SITE_TITLE } from '../../consts';
 import { TEMAS_DISPLAY, type Tema } from '../../utils/taxonomia';
+import { aRomano } from '../../utils/romano';
 
 const fabulas = await getCollection('fabulas', ({ data }) => !data.borrador);
 
@@ -30,90 +31,126 @@ const items = Array.from(conteo.entries())
 	</head>
 	<body>
 		<Header />
-		<main class="page indice">
-			<header class="title">
+		<main class="page indice-taxonomia">
+			<header class="cabecera">
+				<p class="eyebrow">Explorar</p>
 				<h1>Temas</h1>
-				<p class="subtitulo">Las moralejas y motivos que recorren las fábulas.</p>
+				<p class="intro">Las moralejas y motivos que recorren las fábulas.</p>
 			</header>
 
-			<hr class="ornate" />
-
-			<ul class="lista">
-				{items.map((item) => (
-					<li class="item">
-						<a href={`/temas/${item.slug}/`} class="item-link">
-							<h2 class="item-nombre">{item.display}</h2>
-							<p class="item-conteo">
-								{item.conteo === 1 ? '1 fábula' : `${item.conteo} fábulas`}
-							</p>
+			<ol class="rejilla">
+				{items.map((item, i) => (
+					<li class="termino">
+						<a href={`/temas/${item.slug}/`} class="termino-link">
+							<span class="termino-num" aria-hidden="true">{aRomano(i + 1)}</span>
+							<span class="termino-cuerpo">
+								<span class="termino-nombre">{item.display}</span>
+								<span class="termino-conteo">
+									{item.conteo === 1 ? '1 fábula' : `${item.conteo} fábulas`}
+								</span>
+							</span>
 						</a>
 					</li>
 				))}
-			</ul>
+			</ol>
 		</main>
 		<Footer />
 	</body>
 </html>
 
 <style>
-	.indice {
-		padding-block: var(--space-2xl);
+	.indice-taxonomia {
+		padding-block: clamp(2.5rem, 5vw, 4.5rem) clamp(3.5rem, 7vw, 6.25rem);
 	}
-	.title {
-		text-align: center;
-		margin-bottom: var(--space-md);
+
+	/* ── Cabecera (handoff §2, patrón Fase 2): eyebrow → H1 → intro ────────── */
+	.cabecera {
+		margin-bottom: clamp(1.75rem, 3.5vw, 2.75rem);
 	}
-	.title h1 {
-		margin: 0 0 var(--space-sm);
+	.eyebrow {
+		font-family: var(--font-display);
+		font-size: var(--fs-3xs);
+		letter-spacing: var(--ls-eyebrow);
+		text-transform: uppercase;
+		color: var(--color-oro-texto);
+		margin: 0;
+	}
+	.cabecera h1 {
+		margin: var(--space-md) 0 0;
 		font-size: var(--fs-3xl);
+		letter-spacing: var(--ls-wider);
+		text-transform: uppercase;
+		text-wrap: balance;
 	}
-	.subtitulo {
+	.intro {
+		margin: var(--space-md) 0 0;
+		max-width: 41rem;
 		font-family: var(--font-body);
 		font-style: italic;
-		font-size: var(--fs-md);
+		font-size: var(--fs-lg);
+		line-height: var(--lh-normal);
 		color: var(--color-text-soft);
-		max-width: var(--measure-narrow);
-		margin: 0 auto;
 	}
-	.lista {
+
+	/* ── Catálogo de términos: fichas con numeral romano (patrón Fase 4) ───── */
+	.rejilla {
 		list-style: none;
 		padding: 0;
-		margin: var(--space-2xl) 0 0;
+		margin: 0;
+		border-top: var(--rule-thin) solid var(--color-oro);
+		padding-top: var(--space-lg);
 		display: grid;
-		grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
-		gap: var(--space-md);
+		grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+		gap: clamp(12px, 1.5vw, 20px);
 	}
-	.item-link {
-		display: block;
+	.termino-link {
+		display: flex;
+		align-items: baseline;
+		gap: var(--space-sm);
+		height: 100%;
 		text-decoration: none;
 		color: inherit;
-		text-align: center;
 		padding: var(--space-md);
-		border: var(--rule-hairline) solid var(--color-oro);
-		transition: background-color var(--dur-fast) var(--ease-standard);
+		border: var(--rule-thin) solid rgba(201, 161, 74, 0.7);
+		transition:
+			background-color var(--dur-fast) var(--ease-standard),
+			border-color var(--dur-fast) var(--ease-standard);
 	}
-	.item-link:hover,
-	.item-link:focus-visible {
-		background-color: rgba(0, 0, 0, 0.03);
+	.termino-link:hover,
+	.termino-link:focus-visible {
+		background-color: rgba(201, 161, 74, 0.12);
+		border-color: var(--color-oro);
 	}
-	.item-nombre {
+	.termino-num {
+		flex: none;
+		font-family: var(--font-display);
+		font-size: var(--fs-sm);
+		letter-spacing: var(--ls-wide);
+		color: var(--color-oro-texto);
+		line-height: 1;
+	}
+	.termino-cuerpo {
+		display: flex;
+		flex-direction: column;
+		gap: var(--space-2xs);
+	}
+	.termino-nombre {
 		font-family: var(--font-display);
 		font-size: var(--fs-md);
 		font-weight: var(--fw-semibold);
 		letter-spacing: var(--ls-wide);
 		line-height: var(--lh-snug);
-		margin: 0 0 var(--space-2xs);
 		color: var(--color-text);
-		text-transform: none;
 	}
-	.item-link:hover .item-nombre {
+	.termino-link:hover .termino-nombre,
+	.termino-link:focus-visible .termino-nombre {
 		color: var(--color-oro-texto);
 	}
-	.item-conteo {
+	.termino-conteo {
 		font-family: var(--font-display);
 		font-size: var(--fs-3xs);
 		letter-spacing: var(--ls-widest);
-		color: var(--color-esmeralda);
-		margin: 0;
+		text-transform: uppercase;
+		color: var(--color-oro-texto);
 	}
 </style>
