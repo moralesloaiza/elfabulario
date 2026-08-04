@@ -1,0 +1,601 @@
+---
+// Ficha individual de autor (rediseño Fase 4 · handoff §5). Cabecera invertida
+// (retrato 3:2 con doble encuadre sobre negro) → semblanza + ficha lateral →
+// «Sus fábulas» en filas con numeral romano. El cuerpo Markdown del autor (la
+// semblanza) entra por el <slot>. La página resuelve las fábulas y sus minutos
+// de lectura y los pasa como prop, porque el layout no ve sus cuerpos.
+import { Image } from 'astro:assets';
+import type { CollectionEntry } from 'astro:content';
+import BaseHead from '../components/BaseHead.astro';
+import Footer from '../components/Footer.astro';
+import Header from '../components/Header.astro';
+import JsonLd from '../components/JsonLd.astro';
+import OrnamentoTarjeta from '../components/ornaments/OrnamentoTarjeta.astro';
+import { buildAutorJsonLd, buildBreadcrumbJsonLd } from '../utils/jsonld';
+import { aRomano } from '../utils/romano';
+
+export interface FabulaFila {
+	id: string;
+	titulo: string;
+	formaDisplay: string;
+	minutos: number;
+}
+
+interface Props {
+	autor: CollectionEntry<'autores'>;
+	/** Fábulas del autor, ya ordenadas y con minutos calculados en la página. */
+	fabulas: FabulaFila[];
+}
+
+const { autor, fabulas } = Astro.props;
+const {
+	nombre,
+	tipo,
+	imagen,
+	foco,
+	nacionalidad,
+	nacimiento,
+	muerte,
+	siglo,
+	lugar_nacimiento,
+	lugar_muerte,
+	enlaces,
+} = autor.data;
+
+const conteo = fabulas.length;
+
+// Rol para el eyebrow invertido: los clásicos son «Fabulista»; los demás,
+// «Colaborador». Se acompaña del país cuando se conoce.
+const rol = tipo === 'clasico' ? 'Fabulista' : 'Colaborador';
+const eyebrow = [rol, nacionalidad].filter(Boolean).join(' · ');
+
+// Línea de vida (cursiva, bajo el H1): lugares + años si se conocen; si no, el
+// siglo; si no, nada. Ej.: «Château-Thierry, 1621 — París, 1695».
+const nac = [lugar_nacimiento, nacimiento].filter(Boolean).join(', ');
+const mur = [lugar_muerte, muerte].filter(Boolean).join(', ');
+const lineaVida =
+	nac && mur ? `${nac} — ${mur}` : nac || mur || (siglo ? `Siglo ${siglo}` : null);
+
+// Época para la ficha lateral (solo años/siglo).
+const epoca =
+	nacimiento && muerte ? `${nacimiento} — ${muerte}` : siglo ? `Siglo ${siglo}` : null;
+
+// Resumen de forma a partir de las fábulas del autor.
+const formasPresentes = new Set(fabulas.map((f) => f.formaDisplay));
+const formaResumen =
+	formasPresentes.size === 1
+		? [...formasPresentes][0]
+		: formasPresentes.size > 1
+			? 'Verso y prosa'
+			: null;
+
+// Pares etiqueta/valor de la ficha lateral (solo los que tienen dato).
+const fichaPares = [
+	nacionalidad && { etiqueta: 'Nacionalidad', valor: nacionalidad },
+	epoca && { etiqueta: 'Época', valor: epoca },
+	formaResumen && { etiqueta: 'Forma', valor: formaResumen },
+].filter(Boolean) as { etiqueta: string; valor: string }[];
+
+// Fila de datos de la cabecera (dinámica).
+const datos = [
+	`${conteo} ${conteo === 1 ? 'fábula' : 'fábulas'} en la antología`,
+].filter(Boolean);
+
+// La ficha lateral solo se pinta si tiene algo dentro: evita una caja con
+// filete vacía en colaboradores sin datos biográficos, enlaces ni fábulas.
+const hayEnlaces = Boolean(enlaces && enlaces.length > 0);
+const mostrarFicha = fichaPares.length > 0 || hayEnlaces || conteo > 0;
+
+const focoResuelto = foco ?? 15;
+
+// Structured data (JSON-LD Person + breadcrumb).
+const jsonLd = buildAutorJsonLd(autor, Astro.site!);
+const breadcrumbLd = buildBreadcrumbJsonLd(
+	[
+		{ name: 'Inicio', path: '/' },
+		{ name: 'Autores', path: '/autores/' },
+		{ name: nombre, path: `/autores/${autor.id}/` },
+	],
+	Astro.site!,
+);
+---
+
+<!doctype html>
+<html lang="es">
+	<head>
+		<BaseHead
+			title={`${nombre} · El Fabulario`}
+			description={`Semblanza y fábulas de ${nombre} en El Fabulario.`}
+			image={imagen}
+			imageAlt={imagen ? `Retrato de ${nombre}` : undefined}
+			author={nombre}
+		/>
+		<JsonLd data={jsonLd} />
+		<JsonLd data={breadcrumbLd} />
+	</head>
+	<body>
+		<Header />
+		<main class="autor" data-pagefind-body>
+			{/* 1 · Cabecera invertida: retrato 3:2 con doble encuadre + identidad. */}
+			<section class="cabecera">
+				<div class="cabecera-inner page">
+					<figure class:list={['retrato', { 'con-ornamento': !imagen }]}>
+						{imagen ? (
+							<Image
+								src={imagen}
+								alt={`Retrato de ${nombre}`}
+								width={1040}
+								height={693}
+								style={`object-position: 50% ${focoResuelto}%`}
+							/>
+						) : (
+							<OrnamentoTarjeta />
+						)}
+					</figure>
+					<div class="identidad">
+						<p class="eyebrow eyebrow--oro">{eyebrow}</p>
+						<h1>{nombre}</h1>
+						{lineaVida && <p class="linea-vida">{lineaVida}</p>}
+						{datos.length > 0 && (
+							<p class="datos">
+								{datos.map((d, i) => (
+									<>
+										{i > 0 && <span class="datos-sep" aria-hidden="true">·</span>}
+										<span>{d}</span>
+									</>
+								))}
+							</p>
+						)}
+					</div>
+				</div>
+			</section>
+
+			{/* 2 · Semblanza + ficha lateral. */}
+			<div class="cuerpo page">
+				<article class="semblanza">
+					<p class="eyebrow">Semblanza</p>
+					<div class="prose">
+						<slot />
+					</div>
+				</article>
+
+				{mostrarFicha && (
+					<aside class="ficha-aside">
+						<div class="ficha">
+							<p class="eyebrow">Ficha</p>
+							{fichaPares.length > 0 && (
+								<dl class="ficha-pares">
+									{fichaPares.map((p, i) => (
+										<div class:list={['ficha-par', { 'ultimo': i === fichaPares.length - 1 && !hayEnlaces }]}>
+											<dt>{p.etiqueta}</dt>
+											<dd>{p.valor}</dd>
+										</div>
+									))}
+								</dl>
+							)}
+							{hayEnlaces && (
+								<ul class="ficha-enlaces">
+									{enlaces!.map((e) => (
+										<li><a href={e.url} rel="noopener noreferrer" target="_blank">{e.etiqueta}</a></li>
+									))}
+								</ul>
+							)}
+							{conteo > 0 && (
+								<a class="ficha-cta" href="#sus-fabulas">Leer sus fábulas</a>
+							)}
+						</div>
+					</aside>
+				)}
+			</div>
+
+			{/* 3 · Sus fábulas: filas con numeral romano. */}
+			<section class="sus-fabulas page" id="sus-fabulas" aria-labelledby="sus-fabulas-titulo">
+				<div class="sus-fabulas-cabecera">
+					<h2 id="sus-fabulas-titulo">Sus fábulas</h2>
+					{conteo > 0 && (
+						<span class="sus-fabulas-conteo">{conteo === 1 ? '1 en total' : `${conteo} en total`}</span>
+					)}
+				</div>
+
+				{conteo === 0 ? (
+					<p class="vacio">Aún no hay fábulas suyas en la antología.</p>
+				) : (
+					<ol class="lista-fabulas">
+						{fabulas.map((f, i) => (
+							<li class="fila" hidden={i >= 24}>
+								<a href={`/fabulas/${f.id}/`}>
+									<span class="fila-num" aria-hidden="true">{aRomano(i + 1)}</span>
+									<span class="fila-cuerpo">
+										<span class="fila-titulo">{f.titulo}</span>
+										<span class="fila-meta">{[f.formaDisplay, `${f.minutos} min`].filter(Boolean).join(' · ')}</span>
+									</span>
+								</a>
+							</li>
+						))}
+					</ol>
+				)}
+
+				{conteo > 24 && (
+					<button type="button" class="cargar-mas" data-cargar-mas>
+						Mostrar más fábulas
+					</button>
+				)}
+			</section>
+		</main>
+		<Footer />
+	</body>
+</html>
+
+<script>
+	const PASO = 24;
+	const boton = document.querySelector<HTMLButtonElement>('[data-cargar-mas]');
+	const lista = document.querySelector<HTMLOListElement>('.lista-fabulas');
+
+	if (boton && lista) {
+		const items = Array.from(lista.children) as HTMLElement[];
+
+		boton.addEventListener('click', () => {
+			const ocultos = items.filter((el) => el.hasAttribute('hidden'));
+			const lote = ocultos.slice(0, PASO);
+			lote.forEach((el) => el.removeAttribute('hidden'));
+
+			// Foco a la primera fila revelada, por accesibilidad.
+			const primera = lote[0]?.querySelector<HTMLElement>('a');
+			if (primera) {
+				primera.setAttribute('tabindex', '-1');
+				primera.focus();
+			}
+
+			if (ocultos.length <= PASO) {
+				boton.setAttribute('hidden', '');
+			}
+		});
+	}
+</script>
+
+<style>
+	.autor {
+		padding-bottom: clamp(3.5rem, 7vw, 6.25rem);
+	}
+
+	/* ── Eyebrow compartido ───────────────────────────────────────────────── */
+	.eyebrow {
+		font-family: var(--font-display);
+		font-size: var(--fs-3xs);
+		letter-spacing: var(--ls-eyebrow);
+		text-transform: uppercase;
+		color: var(--color-oro-texto);
+		margin: 0;
+	}
+	/* Variante para fondo invertido: oro pleno (AA sobre negro). */
+	.eyebrow--oro {
+		color: var(--color-oro);
+	}
+
+	/* ── 1 · Cabecera invertida ───────────────────────────────────────────── */
+	.cabecera {
+		background: var(--color-bg-invert);
+		color: var(--color-text-invert);
+	}
+	.cabecera-inner {
+		display: flex;
+		flex-wrap: wrap;
+		align-items: center;
+		gap: clamp(1.75rem, 4vw, 4rem);
+		padding-block: clamp(2.5rem, 5vw, 4.75rem);
+	}
+	/* Retrato 3:2 con doble encuadre: borde oro + outline con offset. El margin
+	   deja aire para que el outline no se recorte contra el borde de la sección. */
+	.retrato {
+		flex: 1 1 340px;
+		max-width: 520px;
+		margin: 8px;
+		aspect-ratio: 3 / 2;
+		overflow: hidden;
+		background: var(--color-negro);
+		border: var(--rule-thin) solid var(--color-oro);
+		outline: var(--rule-thin) solid rgba(201, 161, 74, 0.35);
+		outline-offset: 8px;
+	}
+	.retrato :global(img) {
+		display: block;
+		width: 100%;
+		height: 100%;
+		object-fit: cover;
+	}
+	.retrato.con-ornamento {
+		display: grid;
+		place-items: center;
+	}
+	.retrato.con-ornamento :global(svg.ornamento) {
+		width: 55%;
+		height: auto;
+	}
+
+	.identidad {
+		flex: 1 1 380px;
+	}
+	.identidad h1 {
+		margin: var(--space-lg) 0 0;
+		font-family: var(--font-display);
+		font-weight: var(--fw-semibold);
+		font-size: clamp(2.125rem, 4.2vw, 3.625rem);
+		line-height: 1.06;
+		letter-spacing: var(--ls-wide);
+		text-transform: uppercase;
+		text-wrap: balance;
+		color: var(--color-text-invert);
+	}
+	.linea-vida {
+		margin: var(--space-md) 0 0;
+		font-family: var(--font-body);
+		font-style: italic;
+		font-size: var(--fs-lg);
+		color: var(--color-text-invert);
+	}
+	.datos {
+		margin: var(--space-lg) 0 0;
+		display: flex;
+		flex-wrap: wrap;
+		align-items: baseline;
+		gap: var(--space-sm) var(--space-lg);
+		font-family: var(--font-display);
+		font-size: var(--fs-3xs);
+		letter-spacing: var(--ls-wider);
+		text-transform: uppercase;
+		color: var(--color-oro);
+	}
+	.datos-sep {
+		color: var(--color-oro);
+	}
+
+	/* ── 2 · Semblanza + ficha lateral ────────────────────────────────────── */
+	.cuerpo {
+		display: flex;
+		flex-wrap: wrap;
+		gap: clamp(2rem, 5vw, 4.5rem);
+		padding-top: clamp(2.5rem, 5vw, 4.5rem);
+	}
+	.semblanza {
+		flex: 1 1 520px;
+		max-width: 720px;
+		min-width: 0;
+	}
+	.semblanza .eyebrow {
+		margin-bottom: var(--space-lg);
+	}
+	.semblanza .prose {
+		max-width: none;
+	}
+	.semblanza .prose :global(p) {
+		font-size: 1.25rem;
+		line-height: var(--lh-relaxed);
+		margin-bottom: var(--space-md);
+		hyphens: auto;
+	}
+	.semblanza .prose :global(em) {
+		font-style: italic;
+	}
+	/* Cita del autor (blockquote del Markdown): mismo tratamiento que en la
+	   fábula — filetes oro, cursiva zafiro. */
+	.semblanza :global(blockquote) {
+		max-width: none;
+		margin: clamp(1.75rem, 3vw, 2.125rem) 0;
+		padding: clamp(1.375rem, 3vw, 1.625rem) clamp(1.375rem, 3vw, 2.25rem);
+		border-top: var(--rule-thin) solid var(--color-oro);
+		border-bottom: var(--rule-thin) solid var(--color-oro);
+		font-family: var(--font-body);
+		font-style: italic;
+		font-size: var(--fs-xl);
+		line-height: var(--lh-snug);
+		color: var(--color-zafiro);
+	}
+	.semblanza :global(blockquote p) {
+		margin: 0;
+		font-size: inherit;
+		line-height: inherit;
+	}
+
+	/* Ficha lateral: caja con filete, pares etiqueta/valor y CTA coral. */
+	.ficha-aside {
+		flex: 1 1 260px;
+		max-width: 330px;
+		min-width: 0;
+		align-self: flex-start;
+	}
+	.ficha {
+		border: var(--rule-thin) solid var(--color-oro);
+		padding: clamp(1.375rem, 2.6vw, 1.875rem);
+	}
+	.ficha .eyebrow {
+		margin-bottom: var(--space-md);
+	}
+	.ficha-pares {
+		margin: 0;
+		display: flex;
+		flex-direction: column;
+	}
+	.ficha-par {
+		display: flex;
+		justify-content: space-between;
+		gap: var(--space-md);
+		padding-bottom: var(--space-sm);
+		margin-bottom: var(--space-sm);
+		border-bottom: var(--rule-thin) solid rgba(201, 161, 74, 0.55);
+		font-family: var(--font-body);
+		font-size: var(--fs-md);
+	}
+	.ficha-par.ultimo {
+		border-bottom: none;
+		padding-bottom: 0;
+		margin-bottom: 0;
+	}
+	.ficha-par dt {
+		color: var(--color-text-soft);
+	}
+	.ficha-par dd {
+		margin: 0;
+		text-align: right;
+		color: var(--color-text);
+	}
+	.ficha-enlaces {
+		list-style: none;
+		padding: 0;
+		margin: var(--space-md) 0 0;
+		display: flex;
+		flex-wrap: wrap;
+		gap: var(--space-xs) var(--space-md);
+	}
+	.ficha-enlaces a {
+		font-family: var(--font-display);
+		font-size: var(--fs-3xs);
+		letter-spacing: var(--ls-wide);
+		text-transform: uppercase;
+		color: var(--color-esmeralda);
+		text-decoration: none;
+		border-bottom: var(--rule-hairline) solid var(--color-esmeralda);
+		padding-bottom: 2px;
+	}
+	.ficha-cta {
+		display: block;
+		margin-top: var(--space-lg);
+		text-align: center;
+		font-family: var(--font-display);
+		font-size: var(--fs-xs);
+		letter-spacing: var(--ls-widest);
+		text-transform: uppercase;
+		color: var(--color-text-invert);
+		background: var(--color-coral);
+		border: var(--rule-thin) solid var(--color-coral);
+		padding: var(--space-md) var(--space-md);
+		text-decoration: none;
+		transition:
+			background-color var(--dur-fast) var(--ease-standard),
+			color var(--dur-fast) var(--ease-standard);
+	}
+	.ficha-cta:hover,
+	.ficha-cta:focus-visible {
+		background: var(--color-negro);
+		color: var(--color-coral);
+	}
+
+	/* ── 3 · Sus fábulas ──────────────────────────────────────────────────── */
+	.sus-fabulas {
+		padding-top: clamp(2.75rem, 5vw, 4.5rem);
+		scroll-margin-top: var(--space-xl);
+	}
+	.sus-fabulas-cabecera {
+		display: flex;
+		flex-wrap: wrap;
+		align-items: baseline;
+		justify-content: space-between;
+		gap: var(--space-md) var(--space-xl);
+		margin-bottom: clamp(var(--space-lg), 2.5vw, var(--space-xl));
+	}
+	.sus-fabulas-cabecera h2 {
+		margin: 0;
+		font-family: var(--font-display);
+		font-weight: var(--fw-semibold);
+		font-size: var(--fs-2xl);
+		letter-spacing: var(--ls-wider);
+		text-transform: uppercase;
+		color: var(--color-text);
+	}
+	.sus-fabulas-conteo {
+		font-family: var(--font-display);
+		font-size: var(--fs-3xs);
+		letter-spacing: var(--ls-widest);
+		text-transform: uppercase;
+		color: var(--color-oro-texto);
+	}
+	.vacio {
+		font-family: var(--font-body);
+		font-style: italic;
+		font-size: var(--fs-md);
+		color: var(--color-text-soft);
+		margin: 0;
+	}
+	.lista-fabulas {
+		list-style: none;
+		padding: 0;
+		margin: 0;
+		border-top: var(--rule-thin) solid var(--color-oro);
+		display: grid;
+		grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+		gap: 0 clamp(1.75rem, 4vw, 3.5rem);
+	}
+	.fila[hidden] {
+		display: none !important;
+	}
+	.fila a {
+		display: flex;
+		gap: var(--space-md);
+		align-items: baseline;
+		padding: var(--space-lg) 0;
+		border-bottom: var(--rule-thin) solid rgba(201, 161, 74, 0.55);
+		text-decoration: none;
+		color: inherit;
+	}
+	.fila-num {
+		font-family: var(--font-display);
+		font-size: var(--fs-2xs);
+		color: var(--color-oro);
+		min-width: 34px;
+	}
+	.fila-cuerpo {
+		flex: 1 1 auto;
+		min-width: 0;
+	}
+	.fila-titulo {
+		display: block;
+		font-family: var(--font-display);
+		font-size: var(--fs-sm);
+		letter-spacing: var(--ls-wide);
+		text-transform: uppercase;
+		color: var(--color-text);
+		transition: color var(--dur-fast) var(--ease-standard);
+	}
+	.fila-meta {
+		display: block;
+		margin-top: var(--space-3xs);
+		font-family: var(--font-body);
+		font-style: italic;
+		font-size: var(--fs-sm);
+		color: var(--color-text-soft);
+	}
+	.fila a:hover .fila-titulo,
+	.fila a:focus-visible .fila-titulo,
+	.fila a:hover .fila-meta,
+	.fila a:focus-visible .fila-meta {
+		color: var(--color-zafiro);
+	}
+
+	.cargar-mas {
+		display: block;
+		margin: var(--space-xl) auto 0;
+		padding: var(--space-2xs) var(--space-md);
+		font-family: var(--font-display);
+		font-size: var(--fs-3xs);
+		letter-spacing: var(--ls-wide);
+		text-transform: uppercase;
+		color: var(--color-esmeralda);
+		background: transparent;
+		border: var(--rule-hairline) solid var(--color-oro);
+		cursor: pointer;
+		transition: background-color var(--dur-fast) var(--ease-standard);
+	}
+	.cargar-mas:hover,
+	.cargar-mas:focus-visible {
+		background-color: rgba(0, 0, 0, 0.03);
+	}
+
+	/* ── Móvil ────────────────────────────────────────────────────────────── */
+	@media (max-width: 45rem) {
+		.semblanza .prose :global(p) {
+			font-size: var(--fs-md);
+		}
+		.ficha-aside {
+			max-width: none;
+		}
+	}
+</style>

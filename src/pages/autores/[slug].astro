@@ -1,21 +1,26 @@
 ---
-import { Image } from 'astro:assets';
 import { getCollection, render } from 'astro:content';
-import BaseHead from '../../components/BaseHead.astro';
-import FabulaCard from '../../components/FabulaCard.astro';
-import Footer from '../../components/Footer.astro';
-import Header from '../../components/Header.astro';
-import JsonLd from '../../components/JsonLd.astro';
-import { buildAutorJsonLd, buildBreadcrumbJsonLd } from '../../utils/jsonld';
+import Autor, { type FabulaFila } from '../../layouts/Autor.astro';
+import { tiempoLecturaMin } from '../../utils/lectura';
+import { FORMAS_DISPLAY } from '../../utils/taxonomia';
 
 export async function getStaticPaths() {
 	const autores = await getCollection('autores');
 	const fabulas = await getCollection('fabulas', ({ data }) => !data.borrador);
 
 	return autores.map((autor) => {
-		const fabulasDelAutor = fabulas
+		// Fábulas del autor, más recientes primero. Los minutos de lectura se
+		// calculan aquí (getStaticPaths ve el body de cada fábula) y se pasan al
+		// layout ya resueltos.
+		const fabulasDelAutor: FabulaFila[] = fabulas
 			.filter((f) => f.data.autor.id === autor.id)
-			.sort((a, b) => b.data.fecha.valueOf() - a.data.fecha.valueOf());
+			.sort((a, b) => b.data.fecha.valueOf() - a.data.fecha.valueOf())
+			.map((f) => ({
+				id: f.id,
+				titulo: f.data.titulo,
+				formaDisplay: FORMAS_DISPLAY[f.data.forma],
+				minutos: tiempoLecturaMin(f.body),
+			}));
 
 		return {
 			params: { slug: autor.id },
@@ -26,250 +31,8 @@ export async function getStaticPaths() {
 
 const { autor, fabulas } = Astro.props;
 const { Content } = await render(autor);
-
-const {
-	nombre,
-	tipo,
-	imagen,
-	nacionalidad,
-	nacimiento,
-	muerte,
-	siglo,
-	enlaces,
-} = autor.data;
-
-// Línea biográfica para autores clásicos: "español · 1745–1801".
-const epoca =
-	nacimiento && muerte
-		? `${nacimiento}–${muerte}`
-		: siglo
-			? `siglo ${siglo}`
-			: null;
-const datos = [nacionalidad, epoca].filter(Boolean).join(' · ');
-
-// Structured data (JSON-LD Person). Lives in <head>, near BaseHead.
-const jsonLd = buildAutorJsonLd(autor, Astro.site!);
-const breadcrumbLd = buildBreadcrumbJsonLd(
-	[
-		{ name: 'Inicio', path: '/' },
-		{ name: 'Autores', path: '/autores/' },
-		{ name: nombre, path: `/autores/${autor.id}/` },
-	],
-	Astro.site!,
-);
-
 ---
 
-<!doctype html>
-<html lang="es">
-	<head>
-<BaseHead
-	title={`${nombre} · El Fabulario`}
-	description={`Fábulas de ${nombre} en El Fabulario.`}
-	image={imagen}
-	imageAlt={imagen ? `Retrato de ${nombre}` : undefined}
-	author={nombre}
-/>
-<JsonLd data={jsonLd} />
-<JsonLd data={breadcrumbLd} />
-	</head>
-	<body>
-		<Header />
-		<main class="page autor-page">
-			<header class="title">
-				<h1>{nombre}</h1>
-				{tipo === 'clasico' && datos && <p class="datos">{datos}</p>}
-			</header>
-
-			{imagen && (
-				<figure class="retrato">
-					<Image src={imagen} alt={`Retrato de ${nombre}`} width={900} height={600} />
-				</figure>
-			)}
-
-			<div class="bio prose">
-				<Content />
-			</div>
-
-			{tipo === 'colaborador' && enlaces && enlaces.length > 0 && (
-				<ul class="enlaces">
-					{enlaces.map((e) => (
-						<li><a href={e.url} rel="noopener noreferrer" target="_blank">{e.etiqueta}</a></li>
-					))}
-				</ul>
-			)}
-
-			<hr class="ornate" />
-
-			<section class="fabulas-del-autor" aria-labelledby="lista-titulo">
-				<h2 id="lista-titulo">
-					{fabulas.length === 1
-						? '1 fábula en el Fabulario'
-						: `${fabulas.length} fábulas en el Fabulario`}
-				</h2>
-
-				{fabulas.length === 0 && (
-					<p class="vacio">Aún no hay fábulas publicadas de este autor.</p>
-				)}
-
-				{fabulas.length > 0 && (
-					<ul class="lista">
-						{fabulas.map((f, i) => (
-							<li class="item" hidden={i >= 18}>
-								<FabulaCard fabula={f} autorNombre={nombre} mostrarAutor={false} />
-							</li>
-						))}
-					</ul>
-				)}
-
-				{fabulas.length > 18 && (
-					<button type="button" class="cargar-mas" data-cargar-mas>
-						Mostrar más fábulas
-					</button>
-				)}
-			</section>
-		</main>
-		<Footer />
-	</body>
-</html>
-
-<script>
-	const PASO = 18;
-	const boton = document.querySelector<HTMLButtonElement>('[data-cargar-mas]');
-	const lista = document.querySelector<HTMLUListElement>('.lista');
-
-	if (boton && lista) {
-		const items = Array.from(lista.children) as HTMLElement[];
-
-		boton.addEventListener('click', () => {
-			const ocultos = items.filter((el) => el.hasAttribute('hidden'));
-			const lote = ocultos.slice(0, PASO);
-
-			lote.forEach((el) => el.removeAttribute('hidden'));
-
-			// Move focus to the first card of the just-revealed batch.
-			const primera = lote[0]?.querySelector<HTMLElement>('.card');
-			if (primera) {
-				primera.setAttribute('tabindex', '-1');
-				primera.focus();
-			}
-
-			// Hide the button once no hidden cards remain.
-			if (ocultos.length <= PASO) {
-				boton.setAttribute('hidden', '');
-			}
-		});
-	}
-</script>
-
-<style>
-	.autor-page {
-		max-width: var(--measure);
-		margin-inline: auto;
-		padding-block: var(--space-2xl);
-	}
-	.title {
-		text-align: center;
-		margin-bottom: var(--space-lg);
-	}
-	.title h1 {
-		margin: 0 0 var(--space-2xs);
-		font-size: var(--fs-3xl);
-		text-wrap: balance;
-	}
-	.datos {
-		font-family: var(--font-body);
-		font-style: italic;
-		font-size: var(--fs-md);
-		color: var(--color-text-soft);
-		margin: 0;
-	}
-	.retrato {
-		margin: 0 auto var(--space-xl);
-		max-width: var(--measure-narrow);
-	}
-	.retrato :global(img) {
-		display: block;
-		width: 100%;
-		height: auto;
-		border: var(--rule-hairline) solid var(--color-oro);
-	}
-	.bio {
-		max-width: var(--measure-narrow);
-		margin: 0 auto var(--space-xl);
-	}
-	.bio :global(p) {
-		font-size: var(--fs-md);
-		line-height: var(--lh-relaxed);
-		margin-bottom: var(--space-md);
-		hyphens: auto;
-	}
-	.enlaces {
-		list-style: none;
-		padding: 0;
-		margin: 0 auto var(--space-xl);
-		display: flex;
-		flex-wrap: wrap;
-		justify-content: center;
-		gap: var(--space-md);
-		max-width: var(--measure-narrow);
-	}
-	.enlaces a {
-		font-family: var(--font-display);
-		font-size: var(--fs-3xs);
-		letter-spacing: var(--ls-wide);
-		color: var(--color-esmeralda);
-		text-decoration: none;
-		border-bottom: var(--rule-hairline) solid var(--color-esmeralda);
-		padding-bottom: 2px;
-	}
-	.fabulas-del-autor h2 {
-		text-align: center;
-		font-family: var(--font-display);
-		font-size: var(--fs-md);
-		letter-spacing: var(--ls-wide);
-		color: var(--color-oro-texto);
-		margin: var(--space-xl) 0 var(--space-lg);
-	}
-	.vacio {
-		text-align: center;
-		font-style: italic;
-		color: var(--color-text-soft);
-	}
-	.lista {
-		list-style: none;
-		padding: 0;
-		margin: 0;
-		display: grid;
-		grid-template-columns: repeat(2, minmax(0, 1fr));
-		gap: var(--space-lg);
-	}
-	/* Hidden batches for "cargar mas": overrides the grid's implicit display. */
-	[hidden] {
-		display: none !important;
-	}
-	.cargar-mas {
-		display: block;
-		margin: var(--space-xl) auto 0;
-		padding: var(--space-2xs) var(--space-md);
-		font-family: var(--font-display);
-		font-size: var(--fs-3xs);
-		letter-spacing: var(--ls-wide);
-		text-transform: uppercase;
-		color: var(--color-esmeralda);
-		background: transparent;
-		border: var(--rule-hairline) solid var(--color-oro);
-		cursor: pointer;
-		transition: background-color var(--dur-fast) var(--ease-standard);
-	}
-	.cargar-mas:hover,
-	.cargar-mas:focus-visible {
-		background-color: rgba(0, 0, 0, 0.03);
-	}
-	@media (max-width: 720px) {
-		.lista {
-			grid-template-columns: 1fr;
-			gap: var(--space-md);
-		}
-	}
-</style>
+<Autor autor={autor} fabulas={fabulas}>
+	<Content />
+</Autor>
