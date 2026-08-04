@@ -4,99 +4,397 @@ import BaseHead from '../../components/BaseHead.astro';
 import FabulaCard from '../../components/FabulaCard.astro';
 import Footer from '../../components/Footer.astro';
 import Header from '../../components/Header.astro';
-import { SITE_DESCRIPTION, SITE_TITLE } from '../../consts';
+import { SITE_TITLE } from '../../consts';
+import { TEMAS_DISPLAY, URL_TEMAS, type Tema } from '../../utils/taxonomia';
 
 const fabulas = (await getCollection('fabulas', ({ data }) => !data.borrador)).sort(
 	(a, b) => b.data.fecha.valueOf() - a.data.fecha.valueOf(),
 );
+const total = fabulas.length;
 
-// Author names live in the `autores` collection now (the `autor` field on a
-// fable is a reference, not a string). Build an id→name map once so the
-// template can render the author without awaiting per row.
+// El nombre del autor vive en la colección `autores` (el campo `autor` de una
+// fábula es una reference). Mapa id→nombre para renderizar sin await por fila.
 const autoresLista = await getCollection('autores');
 const autoresPorId = new Map(autoresLista.map((a) => [a.id, a.data.nombre]));
 
+// Recuentos por tema (para las pastillas de tema, con número) y por autor
+// (para saber qué autores tienen fábulas y ordenarlos por presencia).
+const conteoTema = new Map<Tema, number>();
+const conteoAutor = new Map<string, number>();
+for (const f of fabulas) {
+	for (const t of f.data.temas) conteoTema.set(t, (conteoTema.get(t) ?? 0) + 1);
+	const a = f.data.autor.id;
+	conteoAutor.set(a, (conteoAutor.get(a) ?? 0) + 1);
+}
+
+// Barra de filtros — SOLO dos criterios (handoff §2). Los temas llevan
+// recuento; los autores no. Con ~45 temas la barra sería inabarcable, así que
+// se muestran los más frecuentes como acceso rápido y el resto queda en la
+// página propia /temas (las taxonomías son páginas propias, no facetas aquí).
+const TEMAS_VISIBLES = 12;
+const pastillasTema = Array.from(conteoTema.entries())
+	.map(([slug, n]) => ({ slug, conteo: n, display: TEMAS_DISPLAY[slug] }))
+	.sort((a, b) => b.conteo - a.conteo || a.display.localeCompare(b.display, 'es'))
+	.slice(0, TEMAS_VISIBLES);
+const hayMasTemas = conteoTema.size > TEMAS_VISIBLES;
+
+// Autores con al menos una fábula, ordenados por presencia y luego por nombre.
+const pastillasAutor = autoresLista
+	.map((a) => ({ id: a.id, nombre: a.data.nombre, conteo: conteoAutor.get(a.id) ?? 0 }))
+	.filter((a) => a.conteo > 0)
+	.sort((a, b) => b.conteo - a.conteo || a.nombre.localeCompare(b.nombre, 'es'));
+const totalAutores = pastillasAutor.length;
+
+// El título sigue siendo editable desde el CMS (colección `paginas`); la intro
+// se arma aquí para poder citar el recuento real de fichas.
 const pagina = await getEntry('paginas', 'fabulas');
-if (!pagina) throw new Error('[paginas] Falta src/content/paginas/fabulas.md');
+const titulo = pagina?.data.titulo ?? 'Fábulas';
 ---
 
 <!doctype html>
 <html lang="es">
 	<head>
-		<BaseHead title={`Fábulas · ${SITE_TITLE}`} description={SITE_DESCRIPTION} />
+		<BaseHead
+			title={`Fábulas · ${SITE_TITLE}`}
+			description="El catálogo completo de fábulas de El Fabulario, de la tradición clásica a sus versiones en castellano."
+		/>
 	</head>
 	<body>
 		<Header />
-		<main class="page indice">
-			<header class="title">
-				<h1>{pagina.data.titulo}</h1>
-				{pagina.data.subtitulo && <p class="subtitulo">{pagina.data.subtitulo}</p>}
+		<main class="page indice-fabulas">
+			{/* Cabecera a la izquierda (handoff §2): eyebrow → H1 → intro. */}
+			<header class="cabecera">
+				<p class="eyebrow">Índice</p>
+				<h1>{titulo}</h1>
+				<p class="intro">
+					{total} fábulas de la tradición clásica y sus versiones al castellano,
+					ordenadas de la más reciente a la más antigua y cada una con su ilustración.
+				</p>
 			</header>
 
-			<hr class="ornate" />
+			{/* Barra de filtros: dos criterios (Tema, Autor) + orden a la derecha. */}
+			<div class="filtros">
+				<div class="filtros-criterios">
+					<div class="filtro-fila">
+						<span class="filtro-label" id="filtro-tema">Tema</span>
+						<a class="filtro-pill is-activa" data-group="tema" data-value="" href="/fabulas/">
+							Todas · {total}
+						</a>
+						{pastillasTema.map((t) => (
+							<a
+								class="filtro-pill"
+								data-group="tema"
+								data-value={t.slug}
+								href={`/fabulas/?tema=${t.slug}`}
+							>
+								{t.display} · {t.conteo}
+							</a>
+						))}
+						{hayMasTemas && (
+							<a class="filtro-mas" href={`${URL_TEMAS}/`}>Ver todos los temas →</a>
+						)}
+					</div>
+					<div class="filtro-fila">
+						<span class="filtro-label" id="filtro-autor">Autor</span>
+						<a class="filtro-pill is-activa" data-group="autor" data-value="" href="/fabulas/">
+							Todos · {totalAutores}
+						</a>
+						{pastillasAutor.map((a) => (
+							<a
+								class="filtro-pill"
+								data-group="autor"
+								data-value={a.id}
+								href={`/fabulas/?autor=${a.id}`}
+							>
+								{a.nombre}
+							</a>
+						))}
+					</div>
+				</div>
+				<p class="filtros-orden">Ordenadas por publicación</p>
+			</div>
 
-			{fabulas.length === 0 ? (
+			{total === 0 ? (
 				<p class="vacio">Aún no hay fábulas publicadas.</p>
 			) : (
-				<ul class="lista">
-					{fabulas.map((fabula) => (
-						<li>
-							<FabulaCard
-								fabula={fabula}
-								autorNombre={autoresPorId.get(fabula.data.autor.id) ?? ''}
-							/>
-						</li>
-					))}
-				</ul>
+				<>
+					<ul class="rejilla" data-lista>
+						{fabulas.map((fabula) => (
+							<li
+								class="rejilla-item"
+								data-fabula
+								data-autor={fabula.data.autor.id}
+								data-temas={fabula.data.temas.join(' ')}
+							>
+								<FabulaCard
+									fabula={fabula}
+									autorNombre={autoresPorId.get(fabula.data.autor.id) ?? ''}
+								/>
+							</li>
+						))}
+					</ul>
+					<p class="vacio vacio-filtro" data-vacio hidden>
+						Ninguna fábula combina ese tema y ese autor. Prueba a soltar uno de los dos.
+					</p>
+				</>
 			)}
+
+			{/* Cierre editorial (patrón Fase 4). */}
+			<div class="cierre">
+				<p class="cierre-texto">
+					¿Conoces una fábula que debería estar aquí? Propón el texto y la edición que deberíamos seguir.
+				</p>
+				<a class="cierre-cta" href="/colaborar/">Proponer una fábula</a>
+			</div>
 		</main>
 		<Footer />
 	</body>
 </html>
 
-<style>
-	.indice {
-		padding-block: var(--space-2xl);
+<script>
+	type Grupo = 'tema' | 'autor';
+
+	const pills = Array.from(document.querySelectorAll<HTMLAnchorElement>('.filtro-pill'));
+	const cards = Array.from(document.querySelectorAll<HTMLElement>('[data-fabula]'));
+	const vacio = document.querySelector<HTMLElement>('[data-vacio]');
+	const estado: Record<Grupo, string> = { tema: '', autor: '' };
+
+	function leerUrl() {
+		const p = new URLSearchParams(location.search);
+		estado.tema = p.get('tema') ?? '';
+		estado.autor = p.get('autor') ?? '';
 	}
 
-	.title {
-		text-align: center;
-		margin-bottom: var(--space-md);
+	function escribirUrl() {
+		const p = new URLSearchParams();
+		if (estado.tema) p.set('tema', estado.tema);
+		if (estado.autor) p.set('autor', estado.autor);
+		const qs = p.toString();
+		history.replaceState(null, '', qs ? `${location.pathname}?${qs}` : location.pathname);
 	}
-	.title h1 {
-		margin: 0 0 var(--space-sm);
+
+	function aplicar() {
+		for (const el of pills) {
+			const g = el.dataset.group as Grupo;
+			const activa = estado[g] === (el.dataset.value ?? '');
+			el.classList.toggle('is-activa', activa);
+			if (activa) el.setAttribute('aria-current', 'true');
+			else el.removeAttribute('aria-current');
+		}
+
+		let visibles = 0;
+		for (const c of cards) {
+			const okAutor = !estado.autor || c.dataset.autor === estado.autor;
+			const okTema = !estado.tema || (c.dataset.temas ?? '').split(' ').includes(estado.tema);
+			const ok = okAutor && okTema;
+			c.hidden = !ok;
+			if (ok) visibles++;
+		}
+		if (vacio) vacio.hidden = visibles !== 0;
+	}
+
+	for (const el of pills) {
+		el.addEventListener('click', (e) => {
+			e.preventDefault();
+			const g = el.dataset.group as Grupo;
+			const v = el.dataset.value ?? '';
+			// Un clic en la pastilla ya activa la suelta (vuelve a «Todas»).
+			estado[g] = estado[g] === v ? '' : v;
+			escribirUrl();
+			aplicar();
+		});
+	}
+
+	leerUrl();
+	aplicar();
+</script>
+
+<style>
+	.indice-fabulas {
+		padding-block: clamp(2.5rem, 5vw, 4.5rem) clamp(3.5rem, 7vw, 6.25rem);
+	}
+
+	/* ── Cabecera (handoff §2): eyebrow → H1 → intro ──────────────────────── */
+	.cabecera {
+		margin-bottom: clamp(1.75rem, 3.5vw, 2.75rem);
+	}
+	.eyebrow {
+		font-family: var(--font-display);
+		font-size: var(--fs-3xs);
+		letter-spacing: var(--ls-eyebrow);
+		text-transform: uppercase;
+		color: var(--color-oro-texto);
+		margin: 0;
+	}
+	.cabecera h1 {
+		margin: var(--space-md) 0 0;
 		font-size: var(--fs-3xl);
+		letter-spacing: var(--ls-wider);
+		text-transform: uppercase;
+		text-wrap: balance;
 	}
-	.subtitulo {
+	.intro {
+		margin: var(--space-md) 0 0;
+		max-width: 41rem;
+		font-family: var(--font-body);
+		font-style: italic;
+		font-size: var(--fs-lg);
+		line-height: var(--lh-normal);
+		color: var(--color-text-soft);
+	}
+
+	/* ── Barra de filtros ─────────────────────────────────────────────────── */
+	.filtros {
+		margin-bottom: clamp(2rem, 4vw, 3.25rem);
+		padding: var(--space-lg) 0;
+		border-top: var(--rule-thin) solid var(--color-oro);
+		border-bottom: var(--rule-thin) solid rgba(201, 161, 74, 0.55);
+		display: flex;
+		flex-wrap: wrap;
+		align-items: flex-end;
+		justify-content: space-between;
+		gap: var(--space-lg) var(--space-2xl);
+	}
+	.filtros-criterios {
+		display: flex;
+		flex-direction: column;
+		gap: var(--space-md);
+	}
+	.filtro-fila {
+		display: flex;
+		flex-wrap: wrap;
+		align-items: center;
+		gap: var(--space-sm) var(--space-md);
+	}
+	.filtro-label {
+		font-family: var(--font-display);
+		font-size: var(--fs-3xs);
+		letter-spacing: 0.22em;
+		text-transform: uppercase;
+		color: var(--color-oro-texto);
+		min-width: 64px;
+	}
+
+	/* Pastilla: radio 0, Cinzel 11px. Inactiva = filete oro atenuado + zafiro;
+	   activa = fondo negro + marfil. El borde transparente en la activa evita
+	   el salto de tamaño al alternar estados. */
+	.filtro-pill {
+		font-family: var(--font-display);
+		font-size: var(--fs-3xs);
+		letter-spacing: 0.16em;
+		text-transform: uppercase;
+		color: var(--color-zafiro);
+		background: transparent;
+		border: var(--rule-thin) solid rgba(201, 161, 74, 0.7);
+		padding: var(--space-xs) 15px;
+		text-decoration: none;
+		cursor: pointer;
+		transition:
+			background-color var(--dur-fast) var(--ease-standard),
+			color var(--dur-fast) var(--ease-standard),
+			border-color var(--dur-fast) var(--ease-standard);
+	}
+	.filtro-pill:hover,
+	.filtro-pill:focus-visible {
+		background: rgba(201, 161, 74, 0.12);
+		color: var(--color-esmeralda);
+	}
+	.filtro-pill.is-activa {
+		background: var(--color-negro);
+		color: var(--color-marfil);
+		border-color: var(--color-negro);
+	}
+	.filtro-pill.is-activa:hover,
+	.filtro-pill.is-activa:focus-visible {
+		color: var(--color-marfil);
+	}
+
+	/* Enlace a la página completa de temas (no es una pastilla-filtro). */
+	.filtro-mas {
+		font-family: var(--font-body);
+		font-style: italic;
+		font-size: var(--fs-sm);
+		color: var(--color-zafiro);
+		text-decoration: none;
+		white-space: nowrap;
+	}
+	.filtro-mas:hover,
+	.filtro-mas:focus-visible {
+		color: var(--color-esmeralda);
+		text-decoration: underline;
+		text-underline-offset: 0.25em;
+	}
+
+	.filtros-orden {
+		margin: 0;
 		font-family: var(--font-body);
 		font-style: italic;
 		font-size: var(--fs-md);
 		color: var(--color-text-soft);
-		max-width: var(--measure-narrow);
-		margin: 0 auto;
+	}
+
+	/* ── Rejilla de fichas (patrón Fase 4, con gap real) ──────────────────── */
+	.rejilla {
+		list-style: none;
+		padding: 0;
+		margin: 0;
+		display: grid;
+		grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+		gap: clamp(24px, 3vw, 40px);
+	}
+	.rejilla-item {
+		display: flex;
+	}
+	.rejilla-item[hidden] {
+		display: none !important;
 	}
 
 	.vacio {
-		text-align: center;
+		font-family: var(--font-body);
 		font-style: italic;
 		color: var(--color-text-soft);
-		margin-top: var(--space-2xl);
-	}
-
-	.lista {
-		list-style: none;
-		padding: 0;
 		margin: var(--space-2xl) 0 0;
-		display: grid;
-		grid-template-columns: repeat(2, minmax(0, 1fr));
-		gap: var(--space-2xl);
-		max-width: none;
+	}
+	.vacio-filtro {
+		margin-top: var(--space-xl);
 	}
 
-	@media (max-width: 720px) {
-		.lista {
-			grid-template-columns: 1fr;
-			gap: var(--space-xl);
-		}
+	/* ── Cierre editorial (patrón Fase 4) ─────────────────────────────────── */
+	.cierre {
+		margin-top: clamp(2.5rem, 5vw, 4rem);
+		border-top: var(--rule-thin) solid var(--color-oro);
+		padding-top: clamp(1.5rem, 3vw, 2.25rem);
+		display: flex;
+		flex-wrap: wrap;
+		align-items: baseline;
+		justify-content: space-between;
+		gap: var(--space-lg) var(--space-2xl);
+	}
+	.cierre-texto {
+		margin: 0;
+		max-width: 35rem;
+		font-family: var(--font-body);
+		font-style: italic;
+		font-size: var(--fs-md);
+		color: var(--color-text-soft);
+	}
+	.cierre-cta {
+		font-family: var(--font-display);
+		font-size: var(--fs-xs);
+		letter-spacing: var(--ls-widest);
+		text-transform: uppercase;
+		color: var(--color-text-invert);
+		background: var(--color-coral);
+		border: var(--rule-thin) solid var(--color-coral);
+		padding: var(--space-md) var(--space-lg);
+		text-decoration: none;
+		transition:
+			background-color var(--dur-fast) var(--ease-standard),
+			color var(--dur-fast) var(--ease-standard);
+	}
+	.cierre-cta:hover,
+	.cierre-cta:focus-visible {
+		background: var(--color-negro);
+		color: var(--color-coral);
 	}
 </style>
