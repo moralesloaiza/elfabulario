@@ -4,7 +4,7 @@ resumen: Una vieja grulla concibe un plan para devorar uno a uno a los
   habitantes de un estanque, pero el cangrejo le enseña una lección.
 fecha: 2011-11-10
 fecha_actualizada: 2026-05-16
-ilustracion: /src/assets/uploads/chatgpt-image-16-may-2026-14_16_01.png
+ilustracion: /src/assets/uploads/la-grulla-y-el-cangrejo.png
 borrador: false
 personajes:
   - cangrejo

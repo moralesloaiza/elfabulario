@@ -4,7 +4,7 @@ resumen: Un perro, convencido de que su estilo de vida era compartido por todos
   los de su especie, descubre la realidad tras ver a sus vecinos.
 fecha: 2025-06-15
 fecha_actualizada: 2026-05-09
-ilustracion: /src/assets/uploads/chatgpt-image-8-may-2026-22_59_34.png
+ilustracion: /src/assets/uploads/el-herrero-y-el-perro.png
 borrador: false
 personajes:
   - perro

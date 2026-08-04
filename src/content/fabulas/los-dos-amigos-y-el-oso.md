@@ -4,7 +4,7 @@ resumen: Dos amigos se encuentran ante el peligro de un gran oso; el final da
   una importante lección.
 fecha: 2025-07-13
 fecha_actualizada: 2026-05-06
-ilustracion: /src/assets/uploads/amigos_oso.png
+ilustracion: /src/assets/uploads/los-dos-amigos-y-el-oso.png
 borrador: false
 personajes:
   - oso

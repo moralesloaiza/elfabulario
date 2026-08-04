@@ -4,7 +4,7 @@ resumen: Un zorro ofrece amistad a un gallo quien, sabio y aún astuto, le
   propone sellarla en presencia de dos perros.
 fecha: 2012-05-05
 fecha_actualizada: 2026-05-12
-ilustracion: /src/assets/uploads/chatgpt-image-11-may-2026-20_40_18.png
+ilustracion: /src/assets/uploads/el-zorro-el-gallo-y-los-perros.png
 borrador: false
 personajes:
   - gallo

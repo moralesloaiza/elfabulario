@@ -4,7 +4,7 @@ resumen: El pueblo libre de las ranas pide rey a Júpiter; descontentas con el
   rey de palo, reciben en su lugar una culebra que las devora.
 fecha: 2026-05-15
 fecha_actualizada: 2026-06-20
-ilustracion: /src/assets/uploads/chatgpt-image-13-jun-2026-08_39_42.png
+ilustracion: /src/assets/uploads/las-ranas-pidiendo-rey.png
 spotify_url: https://open.spotify.com/episode/4G3Z4uZpUXG0TqGs9Wp4MH?si=iN-FAOZeQw2BMe-JnUjgYA
 borrador: false
 personajes:

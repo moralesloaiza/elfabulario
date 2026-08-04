@@ -4,7 +4,7 @@ resumen: Un asno envidia a un cerdo que parece bien atendido... Hasta que conoce
   su suerte.
 fecha: 2025-02-14
 fecha_actualizada: 2026-05-11
-ilustracion: /src/assets/uploads/chatgpt-image-10-may-2026-11_14_03.png
+ilustracion: /src/assets/uploads/el-asno-y-el-cochino.png
 spotify_url: https://open.spotify.com/episode/3bT8wuDz9k3JUk195SHJWq?si=-DcRGxNkSS6PlPX8yRkDUg
 borrador: false
 personajes:

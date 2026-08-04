@@ -5,7 +5,7 @@ resumen: Un cuervo sostiene un queso en el pico; un zorro astuto lo colma de
   bocado.
 fecha: 2026-05-16
 fecha_actualizada: 2026-06-12
-ilustracion: /src/assets/uploads/chatgpt-image-12-jun-2026-23_07_02.png
+ilustracion: /src/assets/uploads/el-cuervo-y-el-zorro.png
 spotify_url: https://open.spotify.com/episode/0U0PophFanoJzp1EYB2CoF?si=EI6HPBqTQaez6ONkt4oEyw
 borrador: false
 personajes:

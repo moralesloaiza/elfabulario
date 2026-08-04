@@ -4,7 +4,7 @@ resumen: Un abogado es invitado a una boda y en el camino, encuentra una cestita
   llena de jugosas peras.
 fecha: 2011-11-08
 fecha_actualizada: 2026-05-16
-ilustracion: /src/assets/uploads/chatgpt-image-16-may-2026-14_02_25.png
+ilustracion: /src/assets/uploads/el-abogado-y-las-peras.png
 borrador: false
 personajes:
   - abogado

@@ -4,7 +4,7 @@ resumen: Los montes anuncian con bramidos espantosos un parto portentoso; tras
   tanto estruendo, sólo nace un ratoncillo.
 fecha: 2026-05-15
 fecha_actualizada: 2026-06-23
-ilustracion: /src/assets/uploads/chatgpt-image-23-jun-2026-13_04_46.png
+ilustracion: /src/assets/uploads/el-parto-de-los-montes.png
 spotify_url: https://open.spotify.com/episode/564tUMdD8gd44q87jaHcAz?si=UMGyPwg5Q3SCsvHkKjLLWQ
 borrador: false
 personajes:

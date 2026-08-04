@@ -5,7 +5,7 @@ resumen: La higuera se jacta ante el olmo estéril de los hijos que dará; carga
   mejor le hubiera sido no tenerlos.
 fecha: 2026-07-11
 fecha_actualizada: 2026-07-25
-ilustracion: /src/assets/uploads/chatgpt-image-25-jul-2026-23_51_08.png
+ilustracion: /src/assets/uploads/el-olmo-y-la-higuera.png
 borrador: false
 personajes:
   - olmo

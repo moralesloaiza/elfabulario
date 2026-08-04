@@ -5,7 +5,7 @@ resumen: Reunidos los animales, el elefante reprende los vicios de cada cual sin
   da por aludido.
 fecha: 2026-05-31
 fecha_actualizada: 2026-07-31
-ilustracion: /src/assets/uploads/chatgpt-image-31-jul-2026-23_26_47.png
+ilustracion: /src/assets/uploads/el-elefante-y-otros-animales.png
 spotify_url: https://open.spotify.com/episode/1gxBLuSXAgVjXYpc50HQQD?si=eb5ZoMa2TXeakDp27NzdTQ
 borrador: false
 personajes:

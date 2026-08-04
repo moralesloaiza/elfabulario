@@ -5,7 +5,7 @@ resumen: El castaño se ufana ante la higuera de la coraza espinosa con que la
   de vara y piedra, igual la despoja.
 fecha: 2026-07-11
 fecha_actualizada: 2026-07-25
-ilustracion: /src/assets/uploads/el-castaño-y-la-higuera.png
+ilustracion: /src/assets/uploads/el-castano-y-la-higuera.png
 borrador: false
 personajes:
   - castano

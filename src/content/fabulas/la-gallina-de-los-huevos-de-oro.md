@@ -5,7 +5,7 @@ resumen: Un hombre posee una gallina que pone un huevo de oro cada día;
   vez, y se queda sin nada.
 fecha: 2026-05-16
 fecha_actualizada: 2026-06-12
-ilustracion: /src/assets/uploads/chatgpt-image-12-jun-2026-22_53_43.png
+ilustracion: /src/assets/uploads/la-gallina-de-los-huevos-de-oro.png
 spotify_url: https://open.spotify.com/episode/6mRqFfAC2KruE0uNGRY3MW?si=uu1I34rXSDSnhJACgrZGHw
 borrador: false
 personajes:

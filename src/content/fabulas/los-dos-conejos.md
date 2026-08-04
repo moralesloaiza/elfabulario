@@ -4,7 +4,7 @@ resumen: Dos conejos se quedan discutiendo por algo menor, mientras el peligro
   los acecha.
 fecha: 2012-11-29
 fecha_actualizada: 2026-05-11
-ilustracion: /src/assets/uploads/chatgpt-image-10-may-2026-11_18_42.png
+ilustracion: /src/assets/uploads/los-dos-conejos.png
 spotify_url: https://open.spotify.com/episode/6EfgYCNite6gi2Rvq5g9QR?si=93F2aWAwTcClv54xE_V0zA
 borrador: false
 personajes:

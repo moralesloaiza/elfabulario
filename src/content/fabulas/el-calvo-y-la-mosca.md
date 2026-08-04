@@ -4,7 +4,7 @@ resumen: Un calvo y una mosca que lo atormenta discuten sobre la proporción del
   castigo ante la ofensa.
 fecha: 2025-06-21
 fecha_actualizada: 2026-07-19
-ilustracion: /src/assets/uploads/calvo_mosca.png
+ilustracion: /src/assets/uploads/el-calvo-y-la-mosca.png
 spotify_url: https://open.spotify.com/episode/6rzWNJDt7JdXUcr2AzSHH2?si=kqwamoCpRe-G1f1_c-SKdA
 borrador: false
 personajes:

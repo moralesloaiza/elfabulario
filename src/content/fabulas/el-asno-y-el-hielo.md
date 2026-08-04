@@ -4,7 +4,7 @@ resumen: El asno se duerme sobre el hielo de un lago profundo; su propio calor
   derrite el hielo, y despierta bajo el agua para ahogarse al instante.
 fecha: 2026-07-11
 fecha_actualizada: 2026-07-25
-ilustracion: /src/assets/uploads/chatgpt-image-25-jul-2026-00_35_17.png
+ilustracion: /src/assets/uploads/el-asno-y-el-hielo.png
 borrador: false
 personajes:
   - burro

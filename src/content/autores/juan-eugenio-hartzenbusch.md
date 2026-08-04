@@ -2,7 +2,7 @@
 nombre: Juan Eugenio Hartzenbusch
 tipo: clasico
 glosa: "Dramaturgo y erudito romántico; sus versiones fijaron el canon escolar español."
-imagen: /src/assets/uploads/chatgpt-image-12-may-2026-22_01_03.png
+imagen: /src/assets/uploads/juan-eugenio-hartzenbusch.png
 nacionalidad: Español
 nacimiento: 1806
 muerte: 1880

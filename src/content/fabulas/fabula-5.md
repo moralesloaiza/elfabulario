@@ -3,7 +3,7 @@ titulo: Fábula 5
 resumen: Un cochino se dedica a ayunar para evitar el final trágico de sus hermanos.
 fecha: 2012-01-04
 fecha_actualizada: 2026-05-14
-ilustracion: /src/assets/uploads/chatgpt-image-14-may-2026-18_39_45.png
+ilustracion: /src/assets/uploads/fabula-5.png
 borrador: false
 personajes:
   - cerdo

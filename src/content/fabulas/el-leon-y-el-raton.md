@@ -4,7 +4,7 @@ resumen: El león perdona la vida a un ratón; tiempo después, ese mismo ratón
   libra de la red del cazador.
 fecha: 2012-04-08
 fecha_actualizada: 2026-06-12
-ilustracion: /src/assets/uploads/chatgpt-image-14-may-2026-18_26_43.png
+ilustracion: /src/assets/uploads/el-leon-y-el-raton.png
 spotify_url: https://open.spotify.com/episode/0MRA0rOaZowQbI4ZPr2FlV?si=meduKzEVTgaTElXx_PwlHg
 borrador: false
 personajes:

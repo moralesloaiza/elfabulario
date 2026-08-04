@@ -4,7 +4,7 @@ resumen: El cedro se empeña en dar un fruto grande y hermoso en su cima, y el
   peso del fruto acaba doblando la elevada y recta copa.
 fecha: 2026-07-11
 fecha_actualizada: 2026-07-25
-ilustracion: /src/assets/uploads/el-cedro.png
+ilustracion: /src/assets/uploads/el-cedro-y-su-fruto.png
 borrador: false
 personajes:
   - cedro

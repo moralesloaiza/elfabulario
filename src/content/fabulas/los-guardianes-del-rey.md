@@ -4,7 +4,7 @@ resumen: Un rey sospecha de sus dos guardianes que, cada uno con su
   discapacidad, juran no ser culpables del robo de sus mejores higos.
 fecha: 2012-04-14
 fecha_actualizada: 2026-05-14
-ilustracion: /src/assets/uploads/chatgpt-image-14-may-2026-18_14_19.png
+ilustracion: /src/assets/uploads/los-guardianes-del-rey.png
 borrador: false
 personajes:
   - rey

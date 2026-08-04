@@ -5,7 +5,7 @@ resumen: La araña arma su emboscada en un racimo dulce muy visitado por abejas 
   con las uvas, y el racimo es lazo del engañador y de los engañados.
 fecha: 2026-07-11
 fecha_actualizada: 2026-07-26
-ilustracion: /src/assets/uploads/chatgpt-image-26-jul-2026-00_03_55.png
+ilustracion: /src/assets/uploads/la-arana-y-las-uvas-dulces.png
 borrador: false
 personajes:
   - arana

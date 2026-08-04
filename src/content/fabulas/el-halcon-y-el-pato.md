@@ -5,7 +5,7 @@ resumen: El halcón, incapaz de tolerar que el pato se le escape bajo el agua, l
   desde el aire.
 fecha: 2026-07-11
 fecha_actualizada: 2026-07-25
-ilustracion: /src/assets/uploads/el-pato-y-el-halcón.png
+ilustracion: /src/assets/uploads/el-halcon-y-el-pato.png
 borrador: false
 personajes:
   - halcon

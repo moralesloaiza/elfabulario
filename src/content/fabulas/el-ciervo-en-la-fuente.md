@@ -4,7 +4,7 @@ resumen: Un ciervo al contemplarse en una fuente nos enseña cuán equivocados
   podemos estar al evaluar nuestros dones.
 fecha: 2025-06-17
 fecha_actualizada: 2026-05-08
-ilustracion: /src/assets/uploads/ciervo_fuente.png
+ilustracion: /src/assets/uploads/el-ciervo-en-la-fuente.png
 borrador: false
 personajes:
   - ciervo

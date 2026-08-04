@@ -5,7 +5,7 @@ resumen: Un charlatán imita gruñidos de cerdo ante el aplauso del público; al
   la multitud lo abuchea por falso.
 fecha: 2026-05-15
 fecha_actualizada: 2026-07-31
-ilustracion: /src/assets/uploads/chatgpt-image-31-jul-2026-11_28_02.png
+ilustracion: /src/assets/uploads/el-charlatan-y-el-rustico.png
 spotify_url: https://open.spotify.com/episode/5ILKm65OpqyJCrXVy2jTNZ?si=hX26eBViTtSRHRfbICy5kg
 borrador: false
 personajes:

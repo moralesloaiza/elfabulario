@@ -3,7 +3,7 @@ titulo: El abogado y la ostra
 resumen: Esta fábula enseña cómo a veces un mal acuerdo es mejor que un buen pleito.
 fecha: 2012-04-22
 fecha_actualizada: 2026-05-12
-ilustracion: /src/assets/uploads/chatgpt-image-11-may-2026-20_55_29.png
+ilustracion: /src/assets/uploads/el-abogado-y-la-ostra.png
 spotify_url: https://open.spotify.com/episode/710YU3VoyVSQF6KdnkzCE7?si=fzNGVbqASJOaD4R2WncksA
 borrador: false
 personajes:

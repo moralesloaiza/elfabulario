@@ -4,7 +4,7 @@ resumen: El autor propone como héroe de fábula a un escarabajo que, comiendo
   cualquier inmundicia, nunca toca las hojas de la rosa.
 fecha: 2026-05-31
 fecha_actualizada: 2026-06-05
-ilustracion: /src/assets/uploads/chatgpt-image-5-jun-2026-20_42_34.png
+ilustracion: /src/assets/uploads/el-escarabajo.png
 borrador: false
 personajes:
   - escarabajo

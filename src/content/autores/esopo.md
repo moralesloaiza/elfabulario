@@ -2,7 +2,7 @@
 nombre: Esopo
 tipo: clasico
 glosa: "El esclavo frigio a quien la tradición atribuye el origen de todo el género."
-imagen: /src/assets/uploads/chatgpt-image-12-may-2026-21_44_04.png
+imagen: /src/assets/uploads/esopo.png
 nacionalidad: Griego
 nacimiento: ""
 siglo: VI a.C.

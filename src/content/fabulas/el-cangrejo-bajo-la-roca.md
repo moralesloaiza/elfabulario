@@ -4,7 +4,7 @@ resumen: El cangrejo, apostado bajo una roca para atrapar a los peces que se
   guarecen debajo, es aplastado por el desprendimiento de piedras de la crecida.
 fecha: 2026-07-11
 fecha_actualizada: 2026-07-25
-ilustracion: /src/assets/uploads/el-cangrejo.png
+ilustracion: /src/assets/uploads/el-cangrejo-bajo-la-roca.png
 borrador: false
 personajes:
   - cangrejo

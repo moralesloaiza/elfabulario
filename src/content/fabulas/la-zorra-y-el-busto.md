@@ -4,7 +4,7 @@ resumen: Una zorra mira una escultura y dictamina una verdad universal sobre las
   apariencias.
 fecha: 2025-06-13
 fecha_actualizada: 2026-05-11
-ilustracion: /src/assets/uploads/chatgpt-image-10-may-2026-10_42_21.png
+ilustracion: /src/assets/uploads/la-zorra-y-el-busto.png
 borrador: false
 personajes:
   - zorro

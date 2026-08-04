@@ -3,7 +3,7 @@ titulo: El leopardo y las monas
 resumen: Un leopardo astuto se finge muerto entre un grupo de monas, que le acosan.
 fecha: 2025-06-17
 fecha_actualizada: 2026-05-23
-ilustracion: /src/assets/uploads/chatgpt-image-8-may-2026-22_51_57.png
+ilustracion: /src/assets/uploads/el-leopardo-y-las-monas.png
 spotify_url: https://open.spotify.com/episode/1VaHLd5ZIJibJ1DwvQWD3g?si=65gcRtNCTa6Pdi7iXFKSDw
 borrador: false
 personajes:

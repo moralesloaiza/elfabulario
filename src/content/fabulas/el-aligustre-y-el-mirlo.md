@@ -5,7 +5,7 @@ resumen: El aligustre ruega en vano al mirlo que le deje al menos las hojas; el
   donde el mirlo queda preso.
 fecha: 2026-07-11
 fecha_actualizada: 2026-07-25
-ilustracion: /src/assets/uploads/chatgpt-image-25-jul-2026-00_31_20.png
+ilustracion: /src/assets/uploads/el-aligustre-y-el-mirlo.png
 borrador: false
 personajes:
   - aligustre

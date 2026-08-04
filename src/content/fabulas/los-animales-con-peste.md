@@ -4,7 +4,7 @@ resumen: Esta fábula cuenta las ironías del poder y las injusticias que trae
   muchas veces su ejercicio.
 fecha: 2012-04-22
 fecha_actualizada: 2026-05-12
-ilustracion: /src/assets/uploads/chatgpt-image-11-may-2026-21_01_42.png
+ilustracion: /src/assets/uploads/los-animales-con-peste.png
 borrador: false
 personajes:
   - burro

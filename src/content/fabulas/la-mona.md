@@ -3,7 +3,7 @@ titulo: La mona
 resumen: Una mona abandona toda intención de comer tras hallar un primer obstáculo.
 fecha: 2012-04-28
 fecha_actualizada: 2026-05-12
-ilustracion: /src/assets/uploads/chatgpt-image-11-may-2026-20_51_32.png
+ilustracion: /src/assets/uploads/la-mona.png
 borrador: false
 personajes:
   - mona

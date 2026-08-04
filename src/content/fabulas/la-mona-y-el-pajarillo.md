@@ -5,7 +5,7 @@ resumen: La mona atrapa a un pajarillo y, por su desmedido cariño, tanto lo bes
   hijos, acaban mal.
 fecha: 2026-07-11
 fecha_actualizada: 2026-07-26
-ilustracion: /src/assets/uploads/chatgpt-image-26-jul-2026-11_41_17.png
+ilustracion: /src/assets/uploads/la-mona-y-el-pajarillo.png
 borrador: false
 personajes:
   - mona

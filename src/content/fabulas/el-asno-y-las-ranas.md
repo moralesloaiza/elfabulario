@@ -5,7 +5,7 @@ resumen: Un burro cargado de leña cae en un pantano y maldice su suerte; las
   lamento.
 fecha: 2026-05-15
 fecha_actualizada: 2026-07-12
-ilustracion: /src/assets/uploads/chatgpt-image-12-jul-2026-17_50_09.png
+ilustracion: /src/assets/uploads/el-asno-y-las-ranas.png
 spotify_url: https://open.spotify.com/episode/1PDNij5TuouCW86XlJYu1a?si=bHmt8ZwhSliitw8Kk17uXw
 borrador: false
 personajes:

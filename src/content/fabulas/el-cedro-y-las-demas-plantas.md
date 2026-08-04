@@ -4,7 +4,7 @@ resumen: El cedro, ensoberbecido por su belleza, hace apartar las plantas que lo
   rodeaban, y sin nada que lo detenga el viento lo derriba desarraigado.
 fecha: 2026-07-11
 fecha_actualizada: 2026-07-25
-ilustracion: /src/assets/uploads/el-cedro-y-las-demás-plantas.png
+ilustracion: /src/assets/uploads/el-cedro-y-las-demas-plantas.png
 borrador: false
 personajes:
   - cedro

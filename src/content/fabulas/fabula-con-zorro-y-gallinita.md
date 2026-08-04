@@ -4,7 +4,7 @@ resumen: Una gallinita cuida a un zorro enfermo y termina pagando un precio muy
   alto por su compasión.
 fecha: 2012-01-04
 fecha_actualizada: 2026-05-14
-ilustracion: /src/assets/uploads/chatgpt-image-14-may-2026-18_51_52.png
+ilustracion: /src/assets/uploads/fabula-con-zorro-y-gallinita.png
 borrador: false
 personajes:
   - gallina

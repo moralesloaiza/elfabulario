@@ -4,7 +4,7 @@ resumen: Un zorro expresa un aparente arrepentimiento de sus antiguas fechorías
   ahora que se encuentra en el lecho de la enfermedad.
 fecha: 2011-11-09
 fecha_actualizada: 2026-05-16
-ilustracion: /src/assets/uploads/chatgpt-image-15-may-2026-23_38_01.png
+ilustracion: /src/assets/uploads/el-raposo-enfermo.png
 borrador: false
 personajes:
   - gallina

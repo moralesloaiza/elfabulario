@@ -5,7 +5,7 @@ resumen: Una pulga abandona al perro atraída por la lana grasienta de un
   muere de hambre.
 fecha: 2026-07-11
 fecha_actualizada: 2026-07-25
-ilustracion: /src/assets/uploads/chatgpt-image-25-jul-2026-23_29_38.png
+ilustracion: /src/assets/uploads/el-perro-y-la-pulga.png
 borrador: false
 personajes:
   - perro

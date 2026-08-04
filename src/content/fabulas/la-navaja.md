@@ -5,7 +5,7 @@ resumen: Una navaja, deslumbrada por su propio brillo, se esconde para no
   su filo.
 fecha: 2026-07-11
 fecha_actualizada: 2026-07-26
-ilustracion: /src/assets/uploads/chatgpt-image-26-jul-2026-11_15_07.png
+ilustracion: /src/assets/uploads/la-navaja.png
 borrador: false
 personajes:
   - navaja

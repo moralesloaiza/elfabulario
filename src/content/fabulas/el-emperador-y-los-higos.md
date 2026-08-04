@@ -4,7 +4,7 @@ resumen: Un anciano es recompensado tras honrar a su emperador con una cesta de
   higos. Una vecina avara convence a su marido de hacer lo mismo.
 fecha: 2012-04-14
 fecha_actualizada: 2026-08-01
-ilustracion: /src/assets/uploads/chatgpt-image-31-jul-2026-23_56_56.png
+ilustracion: /src/assets/uploads/el-emperador-y-los-higos.png
 spotify_url: https://open.spotify.com/episode/6Rr72HRBVK3jEK9PzjYp5q?si=NbWbUWk4R0uNs2C2KSqy2w
 borrador: false
 personajes:

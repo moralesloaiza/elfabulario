@@ -4,7 +4,7 @@ resumen: Una gallina en su deseo de hablar como el loro, encuentra una cruel
   recompensa a su hazaña.
 fecha: 2012-01-04
 fecha_actualizada: 2026-05-15
-ilustracion: /src/assets/uploads/chatgpt-image-15-may-2026-07_53_49.png
+ilustracion: /src/assets/uploads/la-gallina-parlante.png
 borrador: false
 personajes:
   - anciano

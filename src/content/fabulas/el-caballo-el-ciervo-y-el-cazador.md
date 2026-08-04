@@ -4,7 +4,7 @@ resumen: Un caballo pide ayuda al hombre para vengar una ofensa menor que le
   hiciera un ciervo. Pronto descubre el precio de su venganza.
 fecha: 2012-05-19
 fecha_actualizada: 2026-07-19
-ilustracion: /src/assets/uploads/chatgpt-image-11-may-2026-20_32_44.png
+ilustracion: /src/assets/uploads/el-caballo-el-ciervo-y-el-cazador.png
 spotify_url: https://open.spotify.com/episode/4NdB09rML3fY2Itnse9UMb?si=0TldoSh2QO2zHQXi3ai72Q
 borrador: false
 personajes:

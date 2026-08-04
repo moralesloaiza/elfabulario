@@ -5,7 +5,7 @@ resumen: Los ratones, perseguidos por los gatos, deciden en asamblea colgar un
   excusa para no hacerlo.
 fecha: 2026-05-15
 fecha_actualizada: 2026-07-09
-ilustracion: /src/assets/uploads/chatgpt-image-10-jul-2026-20_52_41.png
+ilustracion: /src/assets/uploads/congreso-de-los-ratones.png
 spotify_url: https://open.spotify.com/episode/3lMQnVSEQnDYOPyhLSjBXW?si=ntRyIOpQSdyJAXFnUZCyhg
 borrador: false
 personajes:

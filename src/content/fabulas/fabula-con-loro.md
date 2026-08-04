@@ -4,7 +4,7 @@ resumen: Un loro, convencido de que la razón puede más que la fuerza, se
   enfrenta a un toro.
 fecha: 2012-01-03
 fecha_actualizada: 2026-05-15
-ilustracion: /src/assets/uploads/chatgpt-image-15-may-2026-22_50_33.png
+ilustracion: /src/assets/uploads/fabula-con-loro.png
 borrador: false
 personajes:
   - loro

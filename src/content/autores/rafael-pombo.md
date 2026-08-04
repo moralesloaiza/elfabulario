@@ -1,7 +1,7 @@
 ---
 nombre: Rafael Pombo
 tipo: clasico
-imagen: /src/assets/uploads/chatgpt-image-17-jul-2026-19_16_42.png
+imagen: /src/assets/uploads/rafael-pombo.png
 nacionalidad: Colombiano
 muerte: 1912
 lugar_nacimiento: Bogotá

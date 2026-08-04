@@ -5,7 +5,7 @@ resumen: La ostra pide a la rata que la lleve al mar; la rata, que trama
   retiene hasta que llega la gata y la mata.
 fecha: 2026-07-11
 fecha_actualizada: 2026-07-26
-ilustracion: /src/assets/uploads/chatgpt-image-26-jul-2026-11_26_21.png
+ilustracion: /src/assets/uploads/la-ostra-la-rata-y-la-gata.png
 borrador: false
 personajes:
   - ostra

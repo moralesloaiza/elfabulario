@@ -4,7 +4,7 @@ resumen: El nogal que muestra a los caminantes la riqueza de sus frutos junto al
   camino es apedreado por todos.
 fecha: 2026-07-11
 fecha_actualizada: 2026-07-25
-ilustracion: /src/assets/uploads/chatgpt-image-25-jul-2026-23_54_10.png
+ilustracion: /src/assets/uploads/el-nogal.png
 borrador: false
 personajes:
   - nogal

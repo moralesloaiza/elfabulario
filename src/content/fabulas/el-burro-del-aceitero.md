@@ -4,7 +4,7 @@ resumen: Un borrico que acarrea cueros de aceite se lamenta de pasar las noches
   en una cuadra a oscuras pese a transportar tanto combustible.
 fecha: 2026-05-31
 fecha_actualizada: 2026-07-19
-ilustracion: /src/assets/uploads/chatgpt-image-2-jun-2026-21_20_31.png
+ilustracion: /src/assets/uploads/el-burro-del-aceitero.png
 spotify_url: https://open.spotify.com/episode/3GgUS1y10DFPcDOwPV2BLh?si=wxyK1ZcrRJGadj6TQWQZEA
 borrador: false
 personajes:

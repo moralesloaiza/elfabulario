@@ -4,7 +4,7 @@ resumen: Una mariposa, deslumbrada por la llama de una vela, decide aproximarse
   y volar encima de ella.
 fecha: 2011-11-27
 fecha_actualizada: 2026-07-25
-ilustracion: /src/assets/uploads/chatgpt-image-25-jul-2026-11_11_59.png
+ilustracion: /src/assets/uploads/la-mariposa.png
 borrador: false
 personajes:
   - mariposa

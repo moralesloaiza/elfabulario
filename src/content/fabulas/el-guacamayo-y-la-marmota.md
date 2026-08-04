@@ -4,7 +4,7 @@ resumen: Un guacamayo se burla de la marmota, exhibida por dinero pese a ser
   fea, mientras él luce hermoso y gratis desde su balcón.
 fecha: 2026-05-31
 fecha_actualizada: 2026-06-23
-ilustracion: /src/assets/uploads/chatgpt-image-23-jun-2026-21_53_37.png
+ilustracion: /src/assets/uploads/el-guacamayo-y-la-marmota.png
 borrador: false
 personajes:
   - loro

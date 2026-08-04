@@ -3,7 +3,7 @@ titulo: El labrador y la providencia
 resumen: La Providencia enseña a un labrador que cada cosa ocupa un lugar por una razón.
 fecha: 2012-05-19
 fecha_actualizada: 2026-05-12
-ilustracion: /src/assets/uploads/chatgpt-image-11-may-2026-20_37_32.png
+ilustracion: /src/assets/uploads/el-labrador-y-la-providencia.png
 borrador: false
 personajes:
   - labrador

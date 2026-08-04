@@ -4,7 +4,7 @@ resumen: El grano de mijo, apresado por la hormiga, le pide que lo deje nacer y
   le promete devolverse multiplicado por ciento; y así se cumple.
 fecha: 2026-07-11
 fecha_actualizada: 2026-07-26
-ilustracion: /src/assets/uploads/chatgpt-image-26-jul-2026-11_20_46.png
+ilustracion: /src/assets/uploads/la-hormiga-y-el-grano-de-mijo.png
 borrador: false
 personajes:
   - hormiga
