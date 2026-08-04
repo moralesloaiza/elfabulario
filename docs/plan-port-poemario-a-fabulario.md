@@ -100,14 +100,16 @@ El handoff no pide un motor de facetas: el listado ya filtra por Tema + Autor (F
 22. Dar a las páginas de taxonomía existentes (`/personajes`, `/temas`, `/formas`, `/tradiciones`, `/traducciones`) y a sus términos el mismo lenguaje visual (eyebrows, filetes, numerales romanos, filas 3:2). Reutiliza `ListadoFabulasTaxonomia.astro` ya rediseñado en Fase 2.
 23. ~~Motor de facetas multi-eje tipo `ChipsFacetas` + `GrillaTerminos` de Poemario~~ · **descartado/pospuesto**: el handoff resuelve el descubrimiento con listado Tema+Autor + "Explorar" + páginas de taxonomía. Si el volumen crece, se reconsidera.
 
-## Fase 6 · Pulido y accesibilidad
-24. **Fundido de ilustraciones al fondo marfil** (adaptación del método de Poemario #558/#559) — más simple aquí: un solo fondo, sin "línea de noche".
-25. **Auditoría de contraste WCAG AA** con criterios ya fijados por el handoff como reglas duras:
+## Fase 6 · Pulido y accesibilidad — **HECHA (2026-08-04, verificación)**
+24. ~~**Fundido de ilustraciones al fondo marfil**~~ · **descartado**: contradice la fuente de verdad. El handoff eligió mantener la ilustración **intacta** (banda de título inferior, no velo/degradado — spec-handoff §hero) y no existe layout de ilustración «flotando» sobre marfil al que aplicar el difuminado de Poemario. Todas las ilustraciones son a sangre (hero) o con orla dorada (`FabulaCard`).
+25. **Auditoría de contraste WCAG AA** — HECHA. El sistema ya cumplía AA (ver reglas documentadas en `tokens.css`). Barrido de todos los usos de oro/coral: los usos como texto son sobre negro (oro 7.6:1, coral 4.6:1) o como filete/ornamento. Único arreglo: `.fila-num` de la ficha de autor usaba `--color-oro` a 13px sobre marfil (1.9:1) → cambiado a `--color-oro-texto` (4.8:1), consistente con los numerales de taxonomía (Fase 5). Reglas duras (referencia):
     - Sobre marfil, el cuerpo va en negro.
     - `--oro-decorativo #C9A14A` **solo** como línea/ornamento o texto ≥24px.
     - `--coral` **solo** como fondo de CTA o texto ≥24px (nunca texto pequeño).
-    - Metadatos pequeños en mayúsculas → `--oro-legible #7A5F1F`.
-26. Verificar responsive **sin media queries** (todo por `clamp()` + `flex-wrap`/`grid auto-fill`): hero mantiene 8:3 hasta su `min-height`; filas a una columna bajo 300px; rejilla de autores 3→2→1; "Explorar" 4→2→1.
+    - Metadatos pequeños en mayúsculas → `--oro-legible #7A5F1F` (= `--color-oro-texto`).
+26. **Responsive sin media queries** — VERIFICADO. Las rejillas de contenido (Fases 2/4/5) colapsan por `auto-fill`/`clamp` sin media queries: autores 3→2→1, "Explorar" 4→3→1, taxonomías 4→1 (comprobado a 1280/768/375 sin scroll horizontal). Las media queries que quedan son de nav/layout legítimos (menú hamburguesa, dos columnas de autor/fábula, suelo de altura del hero 8:3) y están documentadas en su sitio.
+
+*Nota de Fase A (tracking Cinzel 0.30em):* satisfecha — `--ls-eyebrow: 0.28em` cae en el rango 0.26–0.30em del handoff; no hace falta token nuevo.
 
 ---
 

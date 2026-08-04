@@ -536,10 +536,13 @@ const breadcrumbLd = buildBreadcrumbJsonLd(
 		text-decoration: none;
 		color: inherit;
 	}
+	/* Numeral romano decorativo: oro-texto (4.8:1 AA sobre marfil). El oro pleno
+	   a 13px falla contraste (regla dura del handoff: oro solo ≥24px o trazo).
+	   Mismo criterio que los catálogos de taxonomía (Fase 5). */
 	.fila-num {
 		font-family: var(--font-display);
 		font-size: var(--fs-2xs);
-		color: var(--color-oro);
+		color: var(--color-oro-texto);
 		min-width: 34px;
 	}
 	.fila-cuerpo {
