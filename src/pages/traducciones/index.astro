@@ -9,6 +9,7 @@ import { SITE_TITLE } from '../../consts';
 const fabulas = (
 	await getCollection('fabulas', ({ data }) => !data.borrador && data.traduccion)
 ).sort((a, b) => b.data.fecha.valueOf() - a.data.fecha.valueOf());
+const total = fabulas.length;
 
 // id→nombre del autor original (el campo `autor` es una referencia).
 const autoresLista = await getCollection('autores');
@@ -26,72 +27,97 @@ const SUBTITULO =
 	</head>
 	<body>
 		<Header />
-		<main class="page indice">
-			<header class="title">
+		<main class="page indice-traducciones">
+			<header class="cabecera">
+				<p class="eyebrow">Explorar</p>
 				<h1>{TITULO}</h1>
-				<p class="subtitulo">{SUBTITULO}</p>
+				<p class="intro">{SUBTITULO}</p>
 			</header>
 
-			<hr class="ornate" />
+			<section class="listado" aria-labelledby="lista-titulo">
+				<p class="conteo" id="lista-titulo">
+					{total === 0
+						? 'Aún no hay traducciones publicadas.'
+						: total === 1
+							? '1 fábula traducida al español.'
+							: `${total} fábulas traducidas al español.`}
+				</p>
 
-			{fabulas.length === 0 ? (
-				<p class="vacio">Aún no hay traducciones publicadas.</p>
-			) : (
-				<ul class="lista">
-					{fabulas.map((fabula) => (
-						<li>
-							<FabulaCard
-								fabula={fabula}
-								autorNombre={autoresPorId.get(fabula.data.autor.id) ?? ''}
-							/>
-						</li>
-					))}
-				</ul>
-			)}
+				{total > 0 && (
+					<ul class="rejilla">
+						{fabulas.map((fabula) => (
+							<li class="rejilla-item">
+								<FabulaCard
+									fabula={fabula}
+									autorNombre={autoresPorId.get(fabula.data.autor.id) ?? ''}
+								/>
+							</li>
+						))}
+					</ul>
+				)}
+			</section>
 		</main>
 		<Footer />
 	</body>
 </html>
 
 <style>
-	.indice {
-		padding-block: var(--space-2xl);
+	.indice-traducciones {
+		padding-block: clamp(2.5rem, 5vw, 4.5rem) clamp(3.5rem, 7vw, 6.25rem);
 	}
-	.title {
-		text-align: center;
-		margin-bottom: var(--space-md);
+
+	/* ── Cabecera (handoff §2, patrón Fase 2): eyebrow → H1 → intro ────────── */
+	.cabecera {
+		margin-bottom: clamp(1.75rem, 3.5vw, 2.75rem);
 	}
-	.title h1 {
-		margin: 0 0 var(--space-sm);
+	.eyebrow {
+		font-family: var(--font-display);
+		font-size: var(--fs-3xs);
+		letter-spacing: var(--ls-eyebrow);
+		text-transform: uppercase;
+		color: var(--color-oro-texto);
+		margin: 0;
+	}
+	.cabecera h1 {
+		margin: var(--space-md) 0 0;
 		font-size: var(--fs-3xl);
+		letter-spacing: var(--ls-wider);
+		text-transform: uppercase;
+		text-wrap: balance;
 	}
-	.subtitulo {
+	.intro {
+		margin: var(--space-md) 0 0;
+		max-width: 41rem;
+		font-family: var(--font-body);
+		font-style: italic;
+		font-size: var(--fs-lg);
+		line-height: var(--lh-normal);
+		color: var(--color-text-soft);
+	}
+
+	/* ── Conteo sobre filete oro (eco de la barra de Fase 2) ──────────────── */
+	.listado {
+		border-top: var(--rule-thin) solid var(--color-oro);
+		padding-top: var(--space-lg);
+	}
+	.conteo {
+		margin: 0 0 clamp(1.5rem, 3vw, 2.5rem);
 		font-family: var(--font-body);
 		font-style: italic;
 		font-size: var(--fs-md);
 		color: var(--color-text-soft);
-		max-width: var(--measure-narrow);
-		margin: 0 auto;
 	}
-	.vacio {
-		text-align: center;
-		font-style: italic;
-		color: var(--color-text-soft);
-		margin-top: var(--space-2xl);
-	}
-	.lista {
+
+	/* ── Rejilla de fichas (patrón Fase 2, filas 3:2 de FabulaCard) ───────── */
+	.rejilla {
 		list-style: none;
 		padding: 0;
-		margin: var(--space-2xl) 0 0;
+		margin: 0;
 		display: grid;
-		grid-template-columns: repeat(2, minmax(0, 1fr));
-		gap: var(--space-2xl);
-		max-width: none;
+		grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+		gap: clamp(24px, 3vw, 40px);
 	}
-	@media (max-width: 720px) {
-		.lista {
-			grid-template-columns: 1fr;
-			gap: var(--space-xl);
-		}
+	.rejilla-item {
+		display: flex;
 	}
 </style>
