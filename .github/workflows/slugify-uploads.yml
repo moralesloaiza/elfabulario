@@ -1,0 +1,49 @@
+name: Slugificar ilustraciones
+
+# Tras cada subida de ilustraciones a main (típicamente un commit de Decap, que
+# ocurre server-side y no dispara hooks locales), normaliza los nombres de
+# `src/assets/uploads/` al slug del contenido que las referencia y commitea el
+# resultado. El push lo hace GITHUB_TOKEN, que NO vuelve a disparar workflows:
+# sin bucle. `workflow_dispatch` permite correrlo a mano.
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - 'src/assets/uploads/**'
+      - 'src/content/**'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: slugify-uploads
+  cancel-in-progress: false
+
+jobs:
+  slugify:
+    name: Slugificar y commitear
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+
+      # El script solo usa APIs nativas de Node + git; no hacen falta deps.
+      - name: Slugificar ilustraciones
+        run: node scripts/slugify-uploads.mjs
+
+      - name: Commitear si hubo renombres
+        run: |
+          if [ -z "$(git status --porcelain)" ]; then
+            echo "Nada que renombrar: todas las ilustraciones ya están slugificadas."
+            exit 0
+          fi
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add -A
+          git commit -m "chore(uploads): slugificar ilustraciones [skip ci]"
+          git push
