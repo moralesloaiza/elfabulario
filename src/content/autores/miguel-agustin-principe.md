@@ -1,7 +1,8 @@
 ---
 nombre: Miguel Agustín Príncipe
 tipo: clasico
-imagen: /src/assets/uploads/chatgpt-image-12-may-2026-21_28_19.png
+glosa: "Periodista aragonés de pluma satírica, fabulista en verso castellano."
+imagen: /src/assets/uploads/miguel-agustin-principe.png
 nacionalidad: Español
 nacimiento: 1811
 muerte: 1863

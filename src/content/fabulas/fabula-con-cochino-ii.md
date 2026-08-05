@@ -4,7 +4,7 @@ resumen: Un hombre salva a un cochino de morir en un pantano, para llevarlo
   luego hacia el final acostumbrado.
 fecha: 2012-01-04
 fecha_actualizada: 2026-05-14
-ilustracion: /src/assets/uploads/chatgpt-image-14-may-2026-18_42_11.png
+ilustracion: /src/assets/uploads/fabula-con-cochino-ii.png
 borrador: false
 personajes:
   - cerdo

@@ -1,12 +1,16 @@
-﻿---
-titulo: El Charlatán y el Rústico
-resumen: >-
-  Un charlatán imita gruñidos de cerdo ante el aplauso del público; al día siguiente un rústico hace gruñir a un cerdo real escondido en la capa, y la multitud lo abuchea por falso.
+---
+titulo: El charlatán y el rústico
+resumen: Un charlatán imita gruñidos de cerdo ante el aplauso del público; al
+  día siguiente un rústico hace gruñir a un cerdo real escondido en la capa, y
+  la multitud lo abuchea por falso.
 fecha: 2026-05-15
+fecha_actualizada: 2026-07-31
+ilustracion: /src/assets/uploads/el-charlatan-y-el-rustico.png
+spotify_url: https://open.spotify.com/episode/5ILKm65OpqyJCrXVy2jTNZ?si=hX26eBViTtSRHRfbICy5kg
 borrador: false
-personajes: 
+personajes:
   - cerdo
-temas: 
+temas:
   - necedad
   - vanidad
   - critica-social
@@ -16,6 +20,27 @@ autor: felix-maria-de-samaniego
 curador: Don Alejandro
 es_seudonimo: true
 nombre_real: Alejandro Morales Loaiza
+traduccion: false
+nota_curador: >-
+  El charlatán y el rústico es una fábula de [Félix María de
+  Samaniego](https://elfabulario.com/autores/felix-maria-de-samaniego/) que
+  adapta al castellano la fábula V.5 (Libro V, fábula 5) de Fedro, el fabulista
+  latino del siglo I que versificó en yambos buena parte del corpus esópico.
+  Samaniego abrevia el original y simplifica los personajes —de rico, actor,
+  turba y rústico en Fedro pasa a charlatán, rústico y público en su versión—
+  pero conserva el núcleo de la anécdota: la burla a un público que aplaude la
+  imitación fingida y silba la cosa real, por no saber distinguir entre
+  apariencia y verdad.
+
+
+  ##### Glosario
+
+
+  1. **Patán:** hombre rústico, tosco y de modales groseros.
+
+  2. **Atumultuado:** alborotado, agitado como en un tumulto.
+
+  3. **Embozado:** que lleva cubierta la parte inferior del rostro con la capa u otra prenda.
 ---
 —Lo que jamás se ha visto ni se ha
 oído

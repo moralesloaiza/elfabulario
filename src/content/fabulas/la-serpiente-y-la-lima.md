@@ -3,7 +3,7 @@ titulo: La serpiente y la lima
 resumen: Una serpiente intenta inútilmente dañar algo más fuerte que ella.
 fecha: 2025-06-20
 fecha_actualizada: 2026-05-07
-ilustracion: /src/assets/uploads/chatgpt-image-7-may-2026-22_00_50.png
+ilustracion: /src/assets/uploads/la-serpiente-y-la-lima.png
 borrador: false
 personajes:
   - culebra

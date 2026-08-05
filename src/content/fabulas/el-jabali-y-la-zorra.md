@@ -1,5 +1,5 @@
-﻿---
-titulo: El Jabalí y la Zorra
+---
+titulo: El jabalí y la zorra
 # resumen: pendiente de curaduría
 fecha: 2026-05-16   # MARCADOR — fijar la fecha real al publicar
 borrador: false

@@ -4,7 +4,8 @@ resumen: Un sabio asno reflexiona, ante el asombro de su amo, sobre el destino
   que le aguarda en la cercanía de la guerra.
 fecha: 2025-11-01
 fecha_actualizada: 2026-05-03
-ilustracion: /src/assets/uploads/chatgpt-image-17-may-2026-13_04_44.png
+ilustracion: /src/assets/uploads/el-asno-sesudo.png
+spotify_url: https://open.spotify.com/episode/2qeaRQL9RPMexCek9px8Xh?si=VchaWyr8TDmFABUKVuqMhQ
 borrador: false
 personajes:
   - burro
@@ -16,6 +17,28 @@ autor: felix-maria-de-samaniego
 curador: Don Alejandro
 es_seudonimo: true
 nombre_real: Alejandro Morales Loaiza
+traduccion: true
+nota_curador: >-
+  El asno sesudo adapta una fábula clásica de Fedro (Asinus ad senem pastorem,
+  Fábulas I, 15), en la que un asno, advertido de la llegada del enemigo en
+  tiempos de guerra, se niega a huir con el argumento de que cambiar de amo no
+  cambiará su carga. Félix María de Samaniego la incluyó en sus Fábulas morales
+  (1781-1784) siguiendo de cerca el modelo latino, a diferencia de Jean de La
+  Fontaine, y añadió la alusión a Amiclas, el pobre barquero que Lucano describe
+  en la Farsalia (libro V) durmiendo sin temor mientras Julio César cruza el
+  Adriático en plena guerra civil, porque nada tiene que perder.
+
+
+  ##### Glosario
+
+
+  1. **Sesudo:** juicioso, de mucho seso o entendimiento.
+
+  2. **Centinela:** persona que vigila o hace guardia, especialmente en tiempo de guerra.
+
+  3. **Albarda:** aparejo de cuero o tela que se pone sobre el lomo de las bestias de carga.
+
+  4. **Amiclas:** barquero pobre de la Farsalia de Lucano que, por no tener nada que perder, no teme a la guerra ni siquiera cuando Julio César llama a su puerta.
 ---
 Cierto burro pacía
 en la fresca y hermosa pradería,
@@ -56,4 +79,4 @@ de la guerra enemiga?
 No hay sino la pobreza que consiga
 esta gran exención, de aquí le viene:
 
-***Nada teme perder quien nada tiene.***
+*Nada teme perder quien nada tiene.*

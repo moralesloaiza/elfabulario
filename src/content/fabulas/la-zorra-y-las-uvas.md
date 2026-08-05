@@ -1,10 +1,10 @@
 ---
-titulo: La Zorra y las Uvas
+titulo: La zorra y las uvas
 resumen: Una zorra hambrienta no logra alcanzar las uvas y, para consolarse,
   decide que están verdes.
 fecha: 2026-05-15
 fecha_actualizada: 2026-06-12
-ilustracion: /src/assets/uploads/chatgpt-image-12-jun-2026-22_01_54.png
+ilustracion: /src/assets/uploads/la-zorra-y-las-uvas.png
 spotify_url: https://open.spotify.com/episode/1j3Rm2zctbFOj10aSBgeD8?si=JlTOxXeGSPWZsf-m2nagrQ
 borrador: false
 personajes:

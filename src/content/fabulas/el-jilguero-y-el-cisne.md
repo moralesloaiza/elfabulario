@@ -2,6 +2,7 @@
 titulo: El jilguero y el cisne
 resumen: "Un jilguero y un cisne discuten sobre cuál de los dos canta mejor, midiendo la voz del uno contra la fama del otro."
 fecha: 2026-05-31   # MARCADOR: fijar la fecha real al publicar
+ilustracion: /src/assets/uploads/el-jilguero-y-el-cisne.png
 borrador: false
 personajes: [jilguero, cisne]
 temas: [vanidad, soberbia, critica-literaria]

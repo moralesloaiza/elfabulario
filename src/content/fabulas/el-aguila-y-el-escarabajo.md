@@ -1,9 +1,10 @@
 ---
-titulo: El águila y el escarabajo
+titulo: La águila y el escarabajo
 resumen: Un escarabajo demuestra cómo no hay enemigo pequeño ante el poderoso.
 fecha: 2025-06-10
-fecha_actualizada: 2026-05-11
-ilustracion: /src/assets/uploads/chatgpt-image-10-may-2026-10_48_59.png
+fecha_actualizada: 2026-07-09
+ilustracion: /src/assets/uploads/el-aguila-y-el-escarabajo.png
+spotify_url: https://open.spotify.com/episode/105Jws5bdIDylxZIwufNnO?si=Za0SCssHQWCafqkolTiX1g
 borrador: false
 personajes:
   - aguila
@@ -17,11 +18,29 @@ autor: felix-maria-de-samaniego
 curador: Don Alejandro
 es_seudonimo: true
 nombre_real: Alejandro Morales Loaiza
+traduccion: false
+nota_curador: >-
+  El águila y el escarabajo es una fábula de origen esópico —el propio texto lo
+  declara: "según Esopo cuenta"— que Félix María de Samaniego (1745-1801)
+  versificó en sus Fábulas morales, dando nueva vida a esta historia sobre el
+  poder de la venganza del más pequeño frente al más fuerte.
+
+
+  ##### Glosario
+
+
+  1. **Cuitada:** desdichada, afligida por una pena o desgracia.
+
+  2. **Corvo:** curvo, encorvado; aplicado aquí al pico del águila.
+
+  3. **Júpiter:** en la mitología romana, dios supremo del cielo y del rayo, equivalente al Zeus griego.
+
+  4. **Incienso:** resina aromática que se quema en ofrenda a los dioses; aquí, metáfora irónica de la bola de estiércol que fabrica el escarabajo.
 ---
 —¡Que me matan, favor! Así clamaba
 una liebre infeliz, que se miraba
 en las garras de una águila sangrienta.
-A las voces, según esopo cuenta,
+A las voces, según Esopo cuenta,
 acudió un compasivo escarabajo;
 y viendo a la cuitada en tal trabajo,
 por libertarla de tan cruda muerte,
@@ -76,8 +95,8 @@ Del trágico suceso noticiosa,
 arrepentida el águila y llorosa,
 aprendió esta lección a mucho precio:
 
-***A nadie se le trate con desprecio,
+*A nadie se le trate con desprecio,
 como al escarabajo,
 porque al más miserable, vil y bajo,
 para tomar venganza, si se irrita,
-¿le faltará siquiera una bolita?***
+¿le faltará siquiera una bolita?*

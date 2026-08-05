@@ -5,7 +5,7 @@ resumen: Un burro pasa por casualidad junto a una flauta abandonada y, al
   propio talento.
 fecha: 2026-05-31
 fecha_actualizada: 2026-06-20
-ilustracion: /src/assets/uploads/chatgpt-image-2-jun-2026-22_46_14.png
+ilustracion: /src/assets/uploads/el-burro-flautista.png
 spotify_url: https://open.spotify.com/episode/2et4uROfoT2jU7snNbKdXx?si=JqKglMuTTTi2q0l2-NDb5w
 borrador: false
 personajes:

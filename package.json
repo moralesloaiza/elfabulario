@@ -9,7 +9,9 @@
     "dev": "astro dev",
     "build": "astro build && pagefind --site dist",
     "preview": "astro preview",
-    "astro": "astro"
+    "astro": "astro",
+    "slugify:uploads": "node scripts/slugify-uploads.mjs",
+    "slugify:check": "node scripts/slugify-uploads.mjs --check"
   },
   "dependencies": {
     "@astrojs/rss": "^4.0.18",

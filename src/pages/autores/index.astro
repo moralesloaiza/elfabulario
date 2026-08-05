@@ -1,6 +1,6 @@
 ---
-import { Image } from 'astro:assets';
 import { getCollection } from 'astro:content';
+import AutorCard from '../../components/AutorCard.astro';
 import BaseHead from '../../components/BaseHead.astro';
 import Footer from '../../components/Footer.astro';
 import Header from '../../components/Header.astro';
@@ -18,151 +18,151 @@ for (const f of fabulas) {
 	conteoPorId.set(k, (conteoPorId.get(k) ?? 0) + 1);
 }
 
-// Enriquecemos los autores con su conteo y los ordenamos:
-// primero por número de fábulas (descendente), luego por nombre.
+// Enriquecemos y ordenamos: primero por número de fábulas (desc), luego por
+// nombre. Surface a los autores más presentes al principio de la rejilla.
 const autoresConConteo = autores
-	.map((a) => ({
-		...a,
-		conteo: conteoPorId.get(a.id) ?? 0,
-	}))
+	.map((a) => ({ autor: a, conteo: conteoPorId.get(a.id) ?? 0 }))
 	.sort((a, b) => {
 		if (b.conteo !== a.conteo) return b.conteo - a.conteo;
-		return a.data.nombre.localeCompare(b.data.nombre, 'es');
+		return a.autor.data.nombre.localeCompare(b.autor.data.nombre, 'es');
 	});
+
+// El párrafo introductorio debe citar el número real de fichas (plan Fase 4).
+// El índice está pensado para <30 autores, así que basta cubrir 0–30 en
+// palabras; por encima de eso, el numeral.
+const total = autoresConConteo.length;
+const NUMEROS = [
+	'cero', 'uno', 'dos', 'tres', 'cuatro', 'cinco', 'seis', 'siete', 'ocho',
+	'nueve', 'diez', 'once', 'doce', 'trece', 'catorce', 'quince', 'dieciséis',
+	'diecisiete', 'dieciocho', 'diecinueve', 'veinte', 'veintiuno', 'veintidós',
+	'veintitrés', 'veinticuatro', 'veinticinco', 'veintiséis', 'veintisiete',
+	'veintiocho', 'veintinueve', 'treinta',
+];
+const totalPalabra = NUMEROS[total] ?? String(total);
+const totalCap = totalPalabra.charAt(0).toUpperCase() + totalPalabra.slice(1);
 ---
 
 <!doctype html>
 <html lang="es">
 	<head>
-		<BaseHead title={`Autores · ${SITE_TITLE}`} description="Autores del Fabulario." />
+		<BaseHead title={`Autores · ${SITE_TITLE}`} description="Los fabulistas y traductores reunidos en El Fabulario." />
 	</head>
 	<body>
 		<Header />
-		<main class="page indice">
-			<header class="title">
+		<main class="page indice-autores">
+			<header class="cabecera">
+				<p class="eyebrow">Índice</p>
 				<h1>Autores</h1>
-				<p class="subtitulo">Las plumas que han dado vida a las fábulas de este sitio.</p>
+				<p class="intro">
+					{totalCap} nombres sostienen la antología: los fabulistas de la Antigüedad,
+					sus continuadores europeos y quienes los trajeron al castellano.
+				</p>
 			</header>
 
-			<hr class="ornate" />
-
-			<ul class="lista">
-				{autoresConConteo.map((a) => (
-					<li class="item">
-						<a href={`/autores/${a.id}/`} class="item-link">
-							{a.data.imagen && (
-								<figure class="item-img">
-									<Image src={a.data.imagen} alt={`Retrato de ${a.data.nombre}`} width={720} height={480} />
-								</figure>
-							)}
-							<div class="item-meta">
-								<h2 class="item-nombre">{a.data.nombre}</h2>
-								<p class="item-conteo">
-									{a.conteo === 0 && '—'}
-									{a.conteo === 1 && '1 fábula'}
-									{a.conteo > 1 && `${a.conteo} fábulas`}
-								</p>
-							</div>
-						</a>
+			<ul class="rejilla">
+				{autoresConConteo.map(({ autor, conteo }) => (
+					<li>
+						<AutorCard autor={autor} conteo={conteo} />
 					</li>
 				))}
 			</ul>
+
+			<div class="cierre">
+				<p class="cierre-texto">
+					¿Falta un fabulista? Propón un autor y las ediciones que deberíamos consultar.
+				</p>
+				<a class="cierre-cta" href="/colaborar/">Proponer un autor</a>
+			</div>
 		</main>
 		<Footer />
 	</body>
 </html>
 
 <style>
-	.indice {
-		padding-block: var(--space-2xl);
+	.indice-autores {
+		padding-block: clamp(2.5rem, 5vw, 4.5rem) clamp(3.5rem, 7vw, 6.25rem);
 	}
-	.title {
-		text-align: center;
-		margin-bottom: var(--space-md);
+
+	/* Cabecera alineada a la izquierda (handoff §4): eyebrow → H1 → intro. */
+	.cabecera {
+		margin-bottom: clamp(2.25rem, 4.5vw, 3.75rem);
 	}
-	.title h1 {
-		margin: 0 0 var(--space-sm);
+	.eyebrow {
+		font-family: var(--font-display);
+		font-size: var(--fs-3xs);
+		letter-spacing: var(--ls-eyebrow);
+		text-transform: uppercase;
+		color: var(--color-oro-texto);
+		margin: 0;
+	}
+	.cabecera h1 {
+		margin: var(--space-md) 0 0;
 		font-size: var(--fs-3xl);
+		letter-spacing: var(--ls-wider);
+		text-transform: uppercase;
+		text-wrap: balance;
 	}
-	.subtitulo {
+	.intro {
+		margin: var(--space-md) 0 0;
+		max-width: 41rem;
+		font-family: var(--font-body);
+		font-style: italic;
+		font-size: var(--fs-lg);
+		line-height: var(--lh-normal);
+		color: var(--color-text-soft);
+	}
+
+	/* Rejilla plana: sin paginación ni filtros (diseñada para <30 autores).
+	   Gap real (no el truco de fondo dorado) para que una fila incompleta no
+	   deje celdas rellenas a la vista. */
+	.rejilla {
+		list-style: none;
+		padding: 0;
+		margin: 0;
+		display: grid;
+		grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+		gap: clamp(22px, 2.6vw, 34px);
+	}
+	.rejilla > li {
+		display: flex;
+	}
+
+	/* Cierre: filete oro + frase en cursiva y CTA coral. */
+	.cierre {
+		margin-top: clamp(2.5rem, 5vw, 4rem);
+		border-top: var(--rule-thin) solid var(--color-oro);
+		padding-top: clamp(1.5rem, 3vw, 2.25rem);
+		display: flex;
+		flex-wrap: wrap;
+		align-items: baseline;
+		justify-content: space-between;
+		gap: var(--space-lg) var(--space-2xl);
+	}
+	.cierre-texto {
+		margin: 0;
+		max-width: 35rem;
 		font-family: var(--font-body);
 		font-style: italic;
 		font-size: var(--fs-md);
 		color: var(--color-text-soft);
-		max-width: var(--measure-narrow);
-		margin: 0 auto;
 	}
-
-	/* Grid de fichas: 1 columna en móvil, 2 desde 480px, 3 desde 720px. */
-	.lista {
-		list-style: none;
-		padding: 0;
-		margin: var(--space-2xl) 0 0;
-		max-width: none;
-		display: grid;
-		grid-template-columns: 1fr;
-		gap: var(--space-xl);
-	}
-
-	@media (min-width: 480px) {
-		.lista {
-			grid-template-columns: repeat(2, minmax(0, 1fr));
-		}
-	}
-
-	@media (min-width: 720px) {
-		.lista {
-			grid-template-columns: repeat(3, minmax(0, 1fr));
-		}
-	}
-
-	.item-link {
-		display: block;
-		text-decoration: none;
-		color: inherit;
-		text-align: center;
-	}
-
-	/* Marco doble dorado; la imagen llena la ficha en proporción 3:2. */
-	.item-img {
-		position: relative;
-		aspect-ratio: 3 / 2;
-		overflow: hidden;
-		margin: 0 0 var(--space-md);
-	}
-
-	.item-img :global(img) {
-		display: block;
-		width: 100%;
-		height: 100%;
-		object-fit: cover;
-		transition: transform var(--dur-fast) var(--ease-standard);
-	}
-	.item-link:hover .item-img :global(img),
-	.item-link:focus-visible .item-img :global(img) {
-		transform: scale(1.02);
-	}
-
-	.item-nombre {
+	.cierre-cta {
 		font-family: var(--font-display);
-		font-size: var(--fs-lg);
-		font-weight: var(--fw-bold);
-		letter-spacing: var(--ls-wide);
-		line-height: var(--lh-snug);
-		margin: 0 0 var(--space-2xs);
-		color: var(--color-text);
-		text-transform: none;
-	}
-	.item-link:hover .item-nombre,
-	.item-link:focus-visible .item-nombre {
-		color: var(--color-oro-texto);
-	}
-
-	.item-conteo {
-		font-family: var(--font-display);
-		font-size: var(--fs-3xs);
+		font-size: var(--fs-xs);
 		letter-spacing: var(--ls-widest);
-		color: var(--color-esmeralda);
-		margin: 0;
+		text-transform: uppercase;
+		color: var(--color-text-invert);
+		background: var(--color-coral);
+		border: var(--rule-thin) solid var(--color-coral);
+		padding: var(--space-md) var(--space-lg);
+		text-decoration: none;
+		transition:
+			background-color var(--dur-fast) var(--ease-standard),
+			color var(--dur-fast) var(--ease-standard);
+	}
+	.cierre-cta:hover,
+	.cierre-cta:focus-visible {
+		background: var(--color-negro);
+		color: var(--color-coral);
 	}
 </style>

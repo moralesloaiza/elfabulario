@@ -1,5 +1,5 @@
-﻿---
-titulo: Esopo y un Ateniense
+---
+titulo: Esopo y un ateniense
 # resumen: pendiente de curaduría
 fecha: 2026-05-17   # MARCADOR — fijar la fecha real al publicar
 borrador: false

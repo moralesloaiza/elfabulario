@@ -1,5 +1,5 @@
-﻿---
-titulo: El Perro y el Cocodrilo
+---
+titulo: El perro y el cocodrilo
 # resumen: pendiente de curaduría
 fecha: 2026-05-16   # MARCADOR — fijar la fecha real al publicar
 borrador: false

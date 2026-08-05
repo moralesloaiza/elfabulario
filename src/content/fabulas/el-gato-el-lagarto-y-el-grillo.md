@@ -4,7 +4,7 @@ resumen: Un gato sabihondo recita términos botánicos en un estilo enrevesado
   ante un lagarto, mientras un grillo escucha y juzga el discurso.
 fecha: 2026-05-31
 fecha_actualizada: 2026-06-21
-ilustracion: /src/assets/uploads/chatgpt-image-21-jun-2026-22_31_32.png
+ilustracion: /src/assets/uploads/el-gato-el-lagarto-y-el-grillo.png
 spotify_url: https://open.spotify.com/episode/29YYpbJ8g1TNShbWmwbnNm?si=t6Wz5DABRHSnFOmSSdp9PQ
 borrador: false
 personajes:

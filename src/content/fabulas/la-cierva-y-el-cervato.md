@@ -4,7 +4,7 @@ resumen: Una cierva reflexiona con su cervatillo sobre cuánto dura para algunos
   la inicial valentía.
 fecha: 2025-06-18
 fecha_actualizada: 2026-05-08
-ilustracion: /src/assets/uploads/cierva_cervatillo.png
+ilustracion: /src/assets/uploads/la-cierva-y-el-cervato.png
 borrador: false
 personajes:
   - ciervo

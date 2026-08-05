@@ -1,5 +1,5 @@
-﻿---
-titulo: El Hombre y la Pulga
+---
+titulo: El hombre y la pulga
 resumen: >-
   Un hombre clama a Júpiter pidiéndole rayos y a Hércules para que acaben con una pulga que le picó en la cama; Samaniego censura el abuso de molestar a los dioses con antojos.
 fecha: 2026-05-15

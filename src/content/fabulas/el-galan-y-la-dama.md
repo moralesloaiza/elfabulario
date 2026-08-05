@@ -4,7 +4,7 @@ resumen: Un galán famoso estrena unas hebillas de estaño en lugar de plata par
   comprobar hasta dónde llega el crédito de su renombre.
 fecha: 2026-05-31
 fecha_actualizada: 2026-06-20
-ilustracion: /src/assets/uploads/chatgpt-image-20-jun-2026-16_05_50.png
+ilustracion: /src/assets/uploads/el-galan-y-la-dama.png
 borrador: false
 personajes: []
 temas:

@@ -4,7 +4,7 @@ resumen: Un perro y un cochino intercambian lugares y el destino muestra a cada
   uno su final.
 fecha: 2012-01-05
 fecha_actualizada: 2026-05-14
-ilustracion: /src/assets/uploads/chatgpt-image-14-may-2026-18_35_33.png
+ilustracion: /src/assets/uploads/fabula-con-perro-y-cochino.png
 borrador: false
 personajes:
   - cerdo

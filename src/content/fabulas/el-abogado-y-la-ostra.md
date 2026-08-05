@@ -3,7 +3,8 @@ titulo: El abogado y la ostra
 resumen: Esta fábula enseña cómo a veces un mal acuerdo es mejor que un buen pleito.
 fecha: 2012-04-22
 fecha_actualizada: 2026-05-12
-ilustracion: /src/assets/uploads/chatgpt-image-11-may-2026-20_55_29.png
+ilustracion: /src/assets/uploads/el-abogado-y-la-ostra.png
+spotify_url: https://open.spotify.com/episode/710YU3VoyVSQF6KdnkzCE7?si=fzNGVbqASJOaD4R2WncksA
 borrador: false
 personajes:
   - abogado
@@ -15,7 +16,29 @@ autor: anonimo
 curador: Don Alejandro
 es_seudonimo: true
 nombre_real: Alejandro Morales Loaiza
-nota_curador: ""
+traduccion: false
+nota_curador: >-
+  El abogado y la ostra pertenece a una tradición fabulística muy antigua y
+  extendida en Occidente: la misma historia —dos hombres se disputan una ostra y
+  un juez la devora, repartiendo entre ellos las conchas vacías como
+  "sentencia"— aparece documentada en el fabulario esópico bajo el título Los
+  dos viajeros y la ostra, y fue versificada por Jean de La Fontaine como
+  L'Huître et les Plaideurs. Este sitio la clasifica dentro de la tradición
+  talmúdica, pero esa atribución no pudo confirmarse en las fuentes consultadas:
+  no se localizó una versión talmúdica o midráshica de esta historia concreta,
+  por lo que aquí se recoge, con cautela, en la versión que recordamos de El
+  tesoro de la juventud o Enciclopedia de conocimientos.
+
+
+  ##### Glosario
+
+
+
+  1. **Fallar:** dictar sentencia un juez o árbitro sobre un litigio.
+
+  2. **Pleitear:** litigar, sostener un pleito o disputa ante la justicia.
+
+  3. **Remuneración:** pago o retribución por un trabajo o servicio prestado.
 ---
 Paseándose dos hombres por la orilla del mar, encontraron una ostra y empezaron a disputársela.
 

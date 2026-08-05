@@ -2,6 +2,7 @@
 titulo: El ratón y el gato
 resumen: "Un ratón observa cómo el gato halaga y ronronea a quienes le dan de comer, y saca sus propias conclusiones sobre esas muestras de cariño."
 fecha: 2026-05-31   # MARCADOR: fijar la fecha real al publicar
+ilustracion: /src/assets/uploads/el-raton-y-el-gato.png
 borrador: false
 personajes: [raton, gato, perro]
 temas: [envidia, lealtad, critica-literaria]

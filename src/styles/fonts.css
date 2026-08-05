@@ -1,6 +1,6 @@
 /* ============================================================
    El Fabulario · Tipografía global
-   Requiere: @fontsource/cinzel (400, 700)
+   Requiere: @fontsource/cinzel (400, 500, 600)
              @fontsource/cormorant-garamond (400, 400-italic, 600)
    Importar los CSS de fontsource desde Layout.astro ANTES
    de este archivo para que las reglas @font-face estén disponibles.
@@ -26,7 +26,7 @@ body {
 
 h1, h2, h3, h4, h5, h6 {
   font-family: var(--font-display);
-  font-weight: var(--fw-bold);
+  font-weight: var(--fw-semibold);  /* 600 · tope del sistema (Cinzel no usa 700) */
   line-height: var(--lh-tight);
   letter-spacing: var(--ls-wide);
   margin: 0 0 var(--space-md);
@@ -42,6 +42,7 @@ h1 {
 
 h2 {
   font-size: var(--fs-2xl);
+  font-weight: var(--fw-medium);    /* 500 · secciones, un paso bajo los títulos */
   letter-spacing: var(--ls-wide);
   text-transform: uppercase;
 }
@@ -185,7 +186,7 @@ hr.ornate {
   text-transform: uppercase;
   letter-spacing: var(--ls-widest);
   font-size: var(--fs-xs);
-  font-weight: var(--fw-bold);
+  font-weight: var(--fw-regular);   /* 400 · eyebrows/metadatos van ligeros */
 }
 
 .italic { font-style: italic; }

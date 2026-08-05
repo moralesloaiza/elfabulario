@@ -2,6 +2,7 @@
 titulo: El juez y el bandolero
 resumen: "Ante el juez, un bandolero alega los muchos años que lleva robando como si la costumbre bastara para disculpar su delito."
 fecha: 2026-05-31   # MARCADOR: fijar la fecha real al publicar
+ilustracion: /src/assets/uploads/el-juez-y-el-bandolero.png
 borrador: false
 personajes: [juez, ladron, caminante]
 temas: [critica-literaria, maldad, necedad]

@@ -4,7 +4,7 @@ resumen: El caballo pide al antiguo dios unas mejoras en su creación. El dios l
   da una lección.
 fecha: 2011-11-27
 fecha_actualizada: 2026-05-16
-ilustracion: /src/assets/uploads/chatgpt-image-16-may-2026-10_27_38.png
+ilustracion: /src/assets/uploads/jupiter-y-el-caballo.png
 borrador: false
 personajes:
   - caballo

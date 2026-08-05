@@ -2,6 +2,7 @@
 titulo: El mono y el titiritero
 resumen: "Un mono criado entre titiriteros se jacta de su habilidad para imitar y representar, seguro de valer tanto como su amo."
 fecha: 2026-05-31   # MARCADOR: fijar la fecha real al publicar
+ilustracion: /src/assets/uploads/el-mono-y-el-titiritero.png
 borrador: false
 personajes: [mono, titiritero]
 temas: [vanidad, necedad, critica-literaria]

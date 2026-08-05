@@ -4,7 +4,7 @@ resumen: Un fabricante de galones de oro se asombra de que el encaje de lino de
   su vecina valga más que su mercancía, y ella le explica por qué.
 fecha: 2026-05-31
 fecha_actualizada: 2026-06-20
-ilustracion: /src/assets/uploads/chatgpt-image-20-jun-2026-15_44_55.png
+ilustracion: /src/assets/uploads/el-fabricante-de-galones-y-la-encajera.png
 borrador: false
 personajes: []
 temas:

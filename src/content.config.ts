@@ -18,6 +18,17 @@ const optionalDate = z.preprocess(emptyToUndefined, z.coerce.date().optional());
 const optionalInt = z.preprocess(emptyToUndefined, z.coerce.number().int().optional());
 const optionalString = z.preprocess(emptyToUndefined, z.string().optional());
 
+// Punto focal vertical de la ilustración/retrato en el hero inmersivo, en %
+// desde el borde superior. El hero recortará la imagen a una franja ~8:3
+// (ver HeroInmersivo.astro, Fase 1): de una ilustración 3:2 solo se ve algo
+// más de la mitad de su alto, y este campo decide QUÉ franja. 0 = pegado
+// arriba, 100 = pegado abajo. Sin valor: el componente aplica 8 para
+// ilustraciones de fábula/entrada y FOCO_RETRATO (15) para retratos de autor.
+const optionalFoco = z.preprocess(
+	emptyToUndefined,
+	z.coerce.number().min(0).max(100).optional(),
+);
+
 // Los slugs válidos de la taxonomía viven en src/utils/taxonomia.ts.
 // Ese módulo es la fuente única de verdad: arrays de slugs + mapas de
 // display + bases de URL. DEBE mantenerse sincronizado a mano con los
@@ -33,8 +44,19 @@ const fabulas = defineCollection({
 			fecha: z.coerce.date(),
 			fecha_actualizada: optionalDate,
 			ilustracion: z.optional(image()),
+			foco: optionalFoco,
+			// Crédito de autoría de la ilustración. Opcional: solo aparece en la
+			// línea de metadatos de la ficha cuando se rellena. Las ilustraciones
+			// propias del proyecto suelen ir sin crédito externo.
+			credito_ilustracion: optionalString,
 			spotify_url: z.string().url().optional(),
 			borrador: z.boolean().default(false),
+
+			// Moraleja destacada (opcional). Cuando se rellena, la ficha la
+			// presenta en una caja con filete oro tras el cuerpo. Si se omite, la
+			// moraleja vive dentro del cuerpo Markdown como hasta ahora (no hay
+			// regresión: la caja simplemente no se pinta).
+			moraleja: optionalString,
 
 			// --- Taxonomía ---
 			// personajes: opcional. Lista cerrada. Humano genérico = implícito.
@@ -84,6 +106,7 @@ const entradas = defineCollection({
 			fecha: z.coerce.date(),
 			resumen: z.string().optional(),
 			ilustracion: z.optional(image()),
+			foco: optionalFoco,
 			borrador: z.boolean().default(false),
 
 			curador: z.string(),
@@ -131,6 +154,12 @@ const autores = defineCollection({
 			nombre: z.string(),
 			tipo: z.enum(['clasico', 'colaborador']),
 			imagen: z.optional(image()),
+			foco: optionalFoco,
+
+			// Glosa: síntesis de una sola frase que se muestra bajo el nombre en
+			// la rejilla de /autores (Fase 4). Opcional: si falta, la ficha del
+			// listado simplemente no la pinta (degradación elegante).
+			glosa: optionalString,
 
 			nacionalidad: optionalString,
 			nacimiento: optionalInt,

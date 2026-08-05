@@ -2,6 +2,7 @@
 titulo: El gusano de seda y la araña
 resumen: "El gusano de seda trabaja despacio su capullo mientras la araña, veloz, teje su tela en una noche y se compara con él."
 fecha: 2026-05-31   # MARCADOR: fijar la fecha real al publicar
+ilustracion: /src/assets/uploads/el-gusano-de-seda-y-la-arana.png
 borrador: false
 personajes: [gusano, arana]
 temas: [trabajo, soberbia, vanidad, critica-literaria]

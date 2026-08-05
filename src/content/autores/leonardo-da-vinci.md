@@ -1,7 +1,8 @@
 ---
 nombre: Leonardo da Vinci
 tipo: clasico
-imagen: /src/assets/uploads/chatgpt-image-16-may-2026-11_22_04.png
+glosa: "Entre sus cuadernos dejó fábulas breves y secas sobre piedras, ríos y árboles."
+imagen: /src/assets/uploads/leonardo-da-vinci.png
 nacionalidad: Italiano
 nacimiento: 1452
 muerte: 1519

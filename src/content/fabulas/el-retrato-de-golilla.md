@@ -1,7 +1,8 @@
 ---
-titulo: El retrato de Golilla
+titulo: El retrato de golilla
 resumen: "Un pintor retrata a un hombre con vestiduras anticuadas para dar aire venerable al cuadro, y el retratado encuentra el modo de responderle."
 fecha: 2026-05-31   # MARCADOR: fijar la fecha real al publicar
+ilustracion: /src/assets/uploads/el-retrato-de-golilla.png
 borrador: false
 personajes: []
 temas: [critica-literaria, vanidad, necedad]

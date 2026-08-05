@@ -1,51 +1,53 @@
 ---
 import { getCollection, getEntry } from 'astro:content';
 import BaseHead from '../components/BaseHead.astro';
-import Destacado from '../components/Destacado.astro';
 import EscuchaEnSpotify from '../components/EscuchaEnSpotify.astro';
-import FabulaCard from '../components/FabulaCard.astro';
+import FichaFabula from '../components/FichaFabula.astro';
 import Footer from '../components/Footer.astro';
-import FormattedDate from '../components/FormattedDate.astro';
 import Header from '../components/Header.astro';
+import HeroInmersivo from '../components/HeroInmersivo.astro';
 import JsonLd from '../components/JsonLd.astro';
 import { SITE_DESCRIPTION, SITE_TITLE } from '../consts';
 import { buildWebSiteJsonLd } from '../utils/jsonld';
+import { tiempoLecturaMin } from '../utils/lectura';
+import { numeroEnLetrasFemCap } from '../utils/numeroEnLetras';
+import { FORMAS_DISPLAY, TRADICIONES_DISPLAY } from '../utils/taxonomia';
 
 const home = await getEntry('paginas', 'home');
 if (!home) throw new Error('[paginas] Falta src/content/paginas/home.md');
 
-const ultimas = (await getCollection('fabulas', ({ data }) => !data.borrador))
-	.sort((a, b) => b.data.fecha.valueOf() - a.data.fecha.valueOf())
-	.slice(0, 6);
-
-// Author names live in the `autores` collection now (the `autor` field on a
-// fable is a reference, not a string). Build an id→name map once so the
-// template can render the author without awaiting per row.
+// Nombres de autor: el campo `autor` de una fábula es una referencia, no un
+// string. Mapa id→nombre para no await por fila.
 const autoresLista = await getCollection('autores');
 const autoresPorId = new Map(autoresLista.map((a) => [a.id, a.data.nombre]));
 
-// --- Cargar el destacado (singleton curatorial) ---
-// La colección `destacado` es polimórfica: el elemento referido puede ser una
-// fábula, una entrada (bitácora o correspondencia) o un autor. Resolvemos la
-// referencia aquí y validamos que el target tenga imagen — Zod no puede hacer
-// cross-collection lookups, así que la validación vive en build-time aquí.
+// Todas las fábulas publicadas, recientes primero. Sirve para el recuento del
+// archivo y para la rejilla de últimas.
+const fabulasPublicadas = (await getCollection('fabulas', ({ data }) => !data.borrador))
+	.sort((a, b) => b.data.fecha.valueOf() - a.data.fecha.valueOf());
+const totalFabulas = fabulasPublicadas.length;
 
+// --- Cargar el destacado (singleton curatorial) ---
+// La colección `destacado` es polimórfica: fábula, entrada o autor. Se resuelve
+// la referencia aquí y se valida que el target tenga imagen (Zod no hace
+// cross-collection lookups). El eyebrow del hero lleva metadatos de lectura.
 const destacadoEntries = await getCollection('destacado');
 const destacadoCfg = destacadoEntries[0]; // singleton
 
 type DestacadoRender = {
-	cintillo: string;
+	eyebrow: string;
 	imagen: import('astro').ImageMetadata;
 	alt: string;
 	titulo: string;
 	href: string;
-	autorNombre?: string;
-	fecha?: Date;
-	siglo?: string;
-	nacionalidad?: string;
+	foco?: number;
+	esRetrato?: boolean;
+	byline?: string;
+	lede?: string;
 };
 
 let destacado: DestacadoRender | null = null;
+let destacadaFabulaId: string | null = null;
 
 if (destacadoCfg && destacadoCfg.data.activo) {
 	const { tipo, cintillo } = destacadoCfg.data;
@@ -58,15 +60,24 @@ if (destacadoCfg && destacadoCfg.data.activo) {
 					`El destacado activo requiere imagen. Añade una ilustración o cambia el destacado.`,
 			);
 		}
+		destacadaFabulaId = fabula.id;
 		const autor = await getEntry(fabula.data.autor);
-		destacado = {
+		const min = tiempoLecturaMin(fabula.body);
+		const eyebrow = [
 			cintillo,
+			fabula.data.tradicion ? TRADICIONES_DISPLAY[fabula.data.tradicion] : null,
+			FORMAS_DISPLAY[fabula.data.forma],
+			`${min} min`,
+		].filter(Boolean).join(' · ');
+		destacado = {
+			eyebrow,
 			imagen: fabula.data.ilustracion,
 			alt: '',
 			titulo: fabula.data.titulo,
 			href: `/fabulas/${fabula.id}/`,
-			autorNombre: autor.data.nombre,
-			fecha: fabula.data.fecha,
+			foco: fabula.data.foco,
+			byline: autor.data.nombre,
+			lede: fabula.data.resumen,
 		};
 	} else if (tipo === 'entrada' && destacadoCfg.data.entrada_referida) {
 		const entrada = await getEntry(destacadoCfg.data.entrada_referida);
@@ -77,12 +88,13 @@ if (destacadoCfg && destacadoCfg.data.activo) {
 			);
 		}
 		destacado = {
-			cintillo,
+			eyebrow: cintillo,
 			imagen: entrada.data.ilustracion,
 			alt: '',
 			titulo: entrada.data.titulo,
 			href: `/entradas/${entrada.id}/`,
-			fecha: entrada.data.fecha,
+			foco: entrada.data.foco,
+			lede: entrada.data.resumen,
 		};
 	} else if (tipo === 'autor' && destacadoCfg.data.autor_referido) {
 		const autor = await getEntry(destacadoCfg.data.autor_referido);
@@ -93,16 +105,32 @@ if (destacadoCfg && destacadoCfg.data.activo) {
 			);
 		}
 		destacado = {
-			cintillo,
+			eyebrow: cintillo,
 			imagen: autor.data.imagen,
 			alt: `Retrato de ${autor.data.nombre}`,
 			titulo: autor.data.nombre,
 			href: `/autores/${autor.id}/`,
-			siglo: autor.data.siglo,
-			nacionalidad: autor.data.nacionalidad,
+			foco: autor.data.foco,
+			esRetrato: true,
+			lede: [autor.data.nacionalidad, autor.data.siglo].filter(Boolean).join(' · ') || undefined,
 		};
 	}
 }
+
+// Cartelera: cinco fichas ilustradas (excluyendo la destacada, para no
+// duplicarla) + una cartela de acceso al archivo como sexta celda.
+const ultimas = fabulasPublicadas
+	.filter((f) => f.data.ilustracion && f.id !== destacadaFabulaId)
+	.slice(0, 5)
+	.map((fabula) => ({ fabula, minutos: tiempoLecturaMin(fabula.body) }));
+
+// Ejes de exploración (dirección Cartelera).
+const ejes = [
+	{ num: 'I', titulo: 'Por tradición', glosa: 'Clásica, hispánica, oriental.', href: '/tradiciones/' },
+	{ num: 'II', titulo: 'Por autor', glosa: 'Clásicos y colaboradores.', href: '/autores/' },
+	{ num: 'III', titulo: 'Por forma', glosa: 'Verso o prosa.', href: '/formas/' },
+	{ num: 'IV', titulo: 'Por moraleja', glosa: 'Índice temático.', href: '/temas/' },
+];
 ---
 
 <!doctype html>
@@ -113,87 +141,74 @@ if (destacadoCfg && destacadoCfg.data.activo) {
 	</head>
 	<body>
 		<Header />
-		<main class="page home">
-			<section class="hero">
-				<h1>{SITE_TITLE}</h1>
-				<p class="subtitulo">{home.data.subtitulo}</p>
-			</section>
-
-			{destacado && (
-				<Destacado
-					cintillo={destacado.cintillo}
+		<main class="home">
+			{destacado ? (
+				<HeroInmersivo
 					imagen={destacado.imagen}
 					alt={destacado.alt}
+					foco={destacado.foco}
+					esRetrato={destacado.esRetrato}
+					altura="clamp(400px, 52vw, 750px)"
+					eyebrow={destacado.eyebrow}
 					titulo={destacado.titulo}
 					href={destacado.href}
-				>
-					<Fragment slot="submeta">
-						{destacado.autorNombre && destacado.fecha && (
-							<p>por {destacado.autorNombre} · <FormattedDate date={destacado.fecha} /></p>
-						)}
-						{!destacado.autorNombre && destacado.fecha && (
-							<p><FormattedDate date={destacado.fecha} /></p>
-						)}
-						{(destacado.nacionalidad || destacado.siglo) && (
-							<p>
-								{[destacado.nacionalidad, destacado.siglo].filter(Boolean).join(' · ')}
-							</p>
-						)}
-					</Fragment>
-				</Destacado>
+					byline={destacado.byline}
+					lede={destacado.lede}
+				/>
+			) : (
+				<section class="hero-texto">
+					<h1>{SITE_TITLE}</h1>
+					<p class="subtitulo">{home.data.subtitulo}</p>
+				</section>
 			)}
 
 			<EscuchaEnSpotify />
 
 			{ultimas.length > 0 && (
-				<section class="seccion-fabulas" aria-labelledby="ultimas-titulo">
-					<h2 id="ultimas-titulo" class="seccion-titulo">Últimas fábulas</h2>
-					<ul class="fabulas">
-						{ultimas.map((fabula) => (
+				<section class="page seccion-fabulas" aria-labelledby="ultimas-titulo">
+					<div class="seccion-encabezado">
+						<h2 id="ultimas-titulo" class="seccion-titulo">Últimas fábulas</h2>
+						<a class="ver-todas" href="/fabulas/">Ver todas</a>
+					</div>
+					<ul class="cartelera">
+						{ultimas.map(({ fabula, minutos }) => (
 							<li>
-								<FabulaCard
+								<FichaFabula
 									fabula={fabula}
 									autorNombre={autoresPorId.get(fabula.data.autor.id) ?? ''}
+									minutos={minutos}
 								/>
 							</li>
 						))}
+						<li>
+							<a class="cartela" href="/fabulas/">
+								<span class="cartela-eyebrow">Archivo completo</span>
+								<span class="cartela-cifra">{numeroEnLetrasFemCap(totalFabulas)} fábulas</span>
+								<span class="cartela-glosa">De Esopo a los fabulistas de hoy, reunidas y leídas con calma.</span>
+								<span class="cartela-enlace">Entrar al índice →</span>
+							</a>
+						</li>
 					</ul>
 				</section>
 			)}
 
 			<section class="seccion-explorar" aria-labelledby="explorar-titulo">
-				<p class="eyebrow">— Explorar —</p>
-				<h2 id="explorar-titulo" class="seccion-titulo">Sigue leyendo</h2>
-				<ul class="exploracion">
-					<li>
-						<a href="/fabulas/">
-							<span class="numeral" aria-hidden="true">I</span>
-							<h3 class="titulo-explorar">Catálogo</h3>
-							<p class="descripcion-explorar">Todas las fábulas.</p>
-						</a>
-					</li>
-					<li>
-						<a href="/autores/">
-							<span class="numeral" aria-hidden="true">II</span>
-							<h3 class="titulo-explorar">Autores</h3>
-							<p class="descripcion-explorar">Clásicos y colaboradores.</p>
-						</a>
-					</li>
-					<li>
-						<button type="button" class="explorar-trigger" data-buscador-trigger>
-							<span class="numeral" aria-hidden="true">III</span>
-							<h3 class="titulo-explorar">Búsqueda</h3>
-							<p class="descripcion-explorar">Por título o autor.</p>
-						</button>
-					</li>
-					<li>
-						<a href="/colaborar/">
-							<span class="numeral" aria-hidden="true">IV</span>
-							<h3 class="titulo-explorar">Colaborar</h3>
-							<p class="descripcion-explorar">¿Escribes fábulas?</p>
-						</a>
-					</li>
-				</ul>
+				<div class="page explorar-inner">
+					<h2 id="explorar-titulo" class="sr-only">Explorar el archivo</h2>
+					<ul class="ejes">
+						{ejes.map((eje) => (
+							<li>
+								<a class="eje" href={eje.href}>
+									<span class="eje-num" aria-hidden="true">{eje.num}</span>
+									<span class="eje-texto">
+										<span class="eje-titulo">{eje.titulo}</span>
+										<span class="eje-glosa">{eje.glosa}</span>
+									</span>
+								</a>
+							</li>
+						))}
+					</ul>
+				</div>
 			</section>
 		</main>
 		<Footer />
@@ -202,15 +217,15 @@ if (destacadoCfg && destacadoCfg.data.activo) {
 
 <style>
 	.home {
-		padding-block: var(--space-2xl) var(--space-lg);
+		padding-block: 0;
 	}
 
-	/* ---------- HERO ---------- */
-	.hero {
+	/* ---------- HERO de texto (fallback sin destacado) ---------- */
+	.hero-texto {
 		text-align: center;
-		margin-bottom: var(--space-2xl);
+		margin-block: var(--space-3xl) var(--space-2xl);
 	}
-	.hero h1 {
+	.hero-texto h1 {
 		margin: 0 0 var(--space-md);
 		font-size: var(--fs-4xl);
 		text-wrap: balance;
@@ -225,111 +240,154 @@ if (destacadoCfg && destacadoCfg.data.activo) {
 		margin: 0 auto;
 	}
 
-	/* ---------- ÍNDICE ---------- */
+	/* ---------- ÚLTIMAS FÁBULAS · cartelera ---------- */
 	.seccion-fabulas {
-		margin-bottom: var(--space-4xl);
+		padding-block: clamp(var(--space-xl), 3vw, var(--space-2xl));
+	}
+	.seccion-encabezado {
+		display: flex;
+		align-items: baseline;
+		justify-content: space-between;
+		gap: var(--space-md);
+		border-bottom: var(--rule-thin) solid var(--color-oro);
+		padding-bottom: var(--space-sm);
+		margin-bottom: var(--space-lg);
 	}
 	.seccion-titulo {
-		text-align: center;
-		font-size: var(--fs-xl);
-		margin: 0 0 var(--space-xl);
+		font-family: var(--font-display);
+		font-size: var(--fs-lg);
+		font-weight: var(--fw-medium);
+		letter-spacing: var(--ls-widest);
+		text-transform: uppercase;
+		margin: 0;
 	}
-	ul.fabulas {
+	.ver-todas {
+		font-family: var(--font-display);
+		font-size: var(--fs-3xs);
+		letter-spacing: var(--ls-widest);
+		text-transform: uppercase;
+		color: var(--color-oro-texto);
+		text-decoration: none;
+		white-space: nowrap;
+	}
+	.ver-todas:hover,
+	.ver-todas:focus-visible {
+		color: var(--color-esmeralda);
+		text-decoration: underline;
+		text-underline-offset: 0.25em;
+	}
+	ul.cartelera {
 		list-style: none;
 		padding: 0;
 		margin: 0;
-		display: grid;
-		grid-template-columns: repeat(2, minmax(0, 1fr));
-		gap: var(--space-2xl);
 		max-width: none;
+		display: grid;
+		grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+		gap: clamp(var(--space-lg), 2.4vw, 1.875rem);
+	}
+
+	/* Cartela de archivo (6ª celda) · doble encuadre de cartela */
+	.cartela {
+		position: relative;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		gap: var(--space-sm);
+		height: 100%;
+		padding: clamp(var(--space-lg), 2.4vw, 1.875rem);
+		background: var(--color-marfil-alt);
+		border: var(--rule-thin) solid var(--color-oro);
+		outline: var(--rule-thin) solid rgba(201, 161, 74, 0.45);
+		outline-offset: -9px;
+		text-decoration: none;
+		color: inherit;
+	}
+	.cartela-eyebrow {
+		font-family: var(--font-display);
+		font-size: var(--fs-3xs);
+		letter-spacing: var(--ls-eyebrow);
+		text-transform: uppercase;
+		color: var(--color-oro-texto);
+	}
+	.cartela-cifra {
+		font-family: var(--font-display);
+		font-size: var(--fs-xl);
+		font-weight: var(--fw-regular);
+		letter-spacing: var(--ls-wide);
+		line-height: var(--lh-snug);
+		color: var(--color-text);
+	}
+	.cartela-glosa {
+		font-family: var(--font-body);
+		font-size: var(--fs-md);
+		line-height: var(--lh-normal);
+		color: var(--color-text-soft);
+	}
+	.cartela-enlace {
+		font-family: var(--font-display);
+		font-size: var(--fs-3xs);
+		letter-spacing: var(--ls-widest);
+		text-transform: uppercase;
+		color: var(--color-zafiro);
+		border-top: var(--rule-thin) solid var(--color-oro);
+		padding-top: var(--space-sm);
+		margin-top: var(--space-2xs);
+	}
+	.cartela:hover .cartela-enlace,
+	.cartela:focus-visible .cartela-enlace {
+		color: var(--color-esmeralda);
 	}
 
 	/* ---------- EXPLORAR ---------- */
 	.seccion-explorar {
-		text-align: center;
+		background: var(--color-marfil-alt);
+		border-top: var(--rule-medium) solid var(--color-oro);
 	}
-	.eyebrow {
-		font-family: var(--font-display);
-		font-size: var(--fs-3xs);
-		letter-spacing: var(--ls-widest);
-		color: var(--color-esmeralda);
-		max-width: none;
-		margin: 0 0 var(--space-2xs);
+	.explorar-inner {
+		padding-block: clamp(var(--space-lg), 2.4vw, var(--space-xl));
 	}
-	.seccion-explorar .seccion-titulo {
-		margin: 0 0 var(--space-xl);
-	}
-	ul.exploracion {
+	ul.ejes {
 		list-style: none;
 		padding: 0;
 		margin: 0;
 		max-width: none;
 		display: grid;
-		grid-template-columns: repeat(4, minmax(0, 1fr));
-		column-gap: var(--space-xl);
-		row-gap: var(--space-lg);
+		grid-template-columns: repeat(auto-fit, minmax(210px, 1fr));
+		gap: clamp(var(--space-md), 2vw, 1.625rem);
 	}
-	ul.exploracion a,
-	ul.exploracion .explorar-trigger {
-		display: block;
-		width: 100%;
+	.eje {
+		display: flex;
+		gap: var(--space-sm);
+		align-items: baseline;
 		text-decoration: none;
 		color: inherit;
-		padding: var(--space-md) 0;
-		background: transparent;
-		border: 0;
-		font: inherit;
-		text-align: inherit;
-		cursor: pointer;
 	}
-	.numeral {
-		display: block;
+	.eje-num {
 		font-family: var(--font-display);
-		font-size: var(--fs-3xs);
-		font-weight: var(--fw-bold);
-		letter-spacing: var(--ls-wide);
-		color: var(--color-oro-texto);
-		margin: 0 0 var(--space-2xs);
+		font-size: 1.625rem; /* 26px · ≥24px permite oro decorativo */
+		line-height: 1;
+		color: var(--color-oro);
 	}
-	.titulo-explorar {
+	.eje-texto {
+		display: flex;
+		flex-direction: column;
+		gap: var(--space-3xs);
+	}
+	.eje-titulo {
 		font-family: var(--font-display);
-		font-size: var(--fs-sm);
-		font-weight: var(--fw-bold);
-		letter-spacing: var(--ls-wide);
-		line-height: var(--lh-snug);
-		margin: 0 0 var(--space-2xs);
-		color: var(--color-text);
+		font-size: var(--fs-2xs);
+		letter-spacing: var(--ls-wider);
 		text-transform: uppercase;
+		color: var(--color-text);
 	}
-	ul.exploracion a:hover .titulo-explorar,
-	ul.exploracion a:focus-visible .titulo-explorar,
-	ul.exploracion .explorar-trigger:hover .titulo-explorar,
-	ul.exploracion .explorar-trigger:focus-visible .titulo-explorar {
+	.eje:hover .eje-titulo,
+	.eje:focus-visible .eje-titulo {
 		color: var(--color-oro-texto);
 	}
-	.descripcion-explorar {
+	.eje-glosa {
 		font-family: var(--font-body);
 		font-style: italic;
 		font-size: var(--fs-sm);
 		color: var(--color-text-soft);
-		margin: 0;
-	}
-
-	/* ---------- RESPONSIVE ---------- */
-	@media (max-width: 900px) {
-		ul.exploracion {
-			grid-template-columns: repeat(2, minmax(0, 1fr));
-			column-gap: var(--space-2xl);
-		}
-	}
-	@media (max-width: 720px) {
-		ul.fabulas {
-			grid-template-columns: 1fr;
-			gap: var(--space-xl);
-		}
-		ul.exploracion {
-			grid-template-columns: 1fr;
-			row-gap: var(--space-xl);
-		}
 	}
 </style>

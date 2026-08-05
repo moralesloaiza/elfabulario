@@ -4,7 +4,7 @@ resumen: Un viejo león intenta con astucia hacer que una zorra entre en su
   madriguera. La zorra demuestra ser más taimada.
 fecha: 2025-06-18
 fecha_actualizada: 2026-05-08
-ilustracion: /src/assets/uploads/leon_zorra.png
+ilustracion: /src/assets/uploads/el-leon-y-la-zorra.png
 borrador: false
 personajes:
   - leon

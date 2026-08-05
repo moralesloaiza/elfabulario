@@ -1,7 +1,8 @@
 ---
 nombre: Jean de La Fontaine
 tipo: clasico
-imagen: /src/assets/uploads/chatgpt-image-12-may-2026-22_13_30.png
+glosa: "Dio a la fábula una ironía cortesana y un verso libre que nadie ha igualado."
+imagen: /src/assets/uploads/jean-de-la-fontaine.png
 nacionalidad: Francés
 nacimiento: 1621
 muerte: 1695

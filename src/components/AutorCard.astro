@@ -1,0 +1,128 @@
+---
+import { Image } from 'astro:assets';
+import type { CollectionEntry } from 'astro:content';
+import OrnamentoTarjeta from './ornaments/OrnamentoTarjeta.astro';
+
+interface Props {
+	autor: CollectionEntry<'autores'>;
+	/** Número de fábulas publicadas del autor (lo calcula la página). */
+	conteo: number;
+}
+
+const { autor, conteo } = Astro.props;
+const { nombre, imagen, glosa, nacimiento, muerte, siglo } = autor.data;
+
+// Época: los años si se conocen; si no, el siglo; si no, nada. La línea final
+// combina época + recuento real de fábulas ("1621 — 1695 · 38 fábulas",
+// "s. VI a.C. · 64 fábulas" o, sin datos biográficos, solo "21 fábulas").
+const epoca =
+	nacimiento && muerte
+		? `${nacimiento} — ${muerte}`
+		: nacimiento
+			? `n. ${nacimiento}`
+			: siglo
+				? `s. ${siglo}`
+				: null;
+
+const conteoTexto =
+	conteo === 0 ? 'sin fábulas aún' : conteo === 1 ? '1 fábula' : `${conteo} fábulas`;
+
+const meta = [epoca, conteoTexto].filter(Boolean).join(' · ');
+---
+
+<a href={`/autores/${autor.id}/`} class="autor-card">
+	<figure class:list={['autor-card-img', { 'con-ornamento': !imagen }]}>
+		{imagen ? (
+			<Image
+				src={imagen}
+				alt={`Retrato de ${nombre}`}
+				width={720}
+				height={480}
+				loading="lazy"
+			/>
+		) : (
+			<OrnamentoTarjeta />
+		)}
+	</figure>
+	<div class="autor-card-body">
+		<h2 class="autor-card-nombre">{nombre}</h2>
+		<p class="autor-card-meta">{meta}</p>
+		{glosa && <p class="autor-card-glosa">{glosa}</p>}
+	</div>
+</a>
+
+<style>
+	/* Ficha de autor (handoff §4). Columna: retrato 3:2 sobre negro + cuerpo
+	   marfil. Todo el bloque es enlace; el hover solo entibia el fondo. */
+	.autor-card {
+		display: flex;
+		flex-direction: column;
+		height: 100%;
+		border: var(--rule-thin) solid var(--color-oro);
+		background: var(--color-marfil);
+		text-decoration: none;
+		color: inherit;
+		transition: background-color var(--dur-fast) var(--ease-standard);
+	}
+	.autor-card:hover,
+	.autor-card:focus-visible {
+		background: var(--color-marfil-alt);
+	}
+
+	.autor-card-img {
+		aspect-ratio: 3 / 2;
+		overflow: hidden;
+		margin: 0;
+		background: var(--color-negro);
+		border-bottom: var(--rule-thin) solid var(--color-oro);
+	}
+	.autor-card-img :global(img) {
+		display: block;
+		width: 100%;
+		height: 100%;
+		object-fit: cover;
+	}
+	/* Variante sin retrato: el sol Art-Déco centrado sobre el fondo negro. */
+	.autor-card-img.con-ornamento {
+		display: grid;
+		place-items: center;
+	}
+	.autor-card-img.con-ornamento :global(svg.ornamento) {
+		width: 60%;
+		height: auto;
+	}
+
+	.autor-card-body {
+		padding: clamp(20px, 2.4vw, 28px);
+	}
+
+	/* Nombre: Cinzel 500, 19px, 0.10em, versalitas (handoff §4). */
+	.autor-card-nombre {
+		font-family: var(--font-display);
+		font-weight: var(--fw-medium);
+		font-size: 1.1875rem;
+		letter-spacing: var(--ls-wider);
+		line-height: var(--lh-snug);
+		text-transform: uppercase;
+		color: var(--color-text);
+		margin: 0;
+	}
+
+	/* Línea "época · N fábulas": Cinzel 11px, oro legible. */
+	.autor-card-meta {
+		font-family: var(--font-display);
+		font-size: 0.6875rem;
+		letter-spacing: 0.16em;
+		color: var(--color-oro-texto);
+		margin: var(--space-xs) 0 0;
+	}
+
+	.autor-card-glosa {
+		font-family: var(--font-body);
+		font-style: italic;
+		font-size: var(--fs-md);
+		line-height: 1.5;
+		color: var(--color-text-soft);
+		margin: var(--space-sm) 0 0;
+	}
+</style>

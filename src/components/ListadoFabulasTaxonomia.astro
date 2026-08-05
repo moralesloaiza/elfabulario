@@ -13,25 +13,22 @@ interface Props {
 const { rotulo, display, fabulas, autorMap, contadorTexto, vacioTexto } = Astro.props;
 ---
 
-<main class="page taxonomia-page">
-	<header class="title">
-		<p class="rotulo">{rotulo}</p>
+<main class="page listado-taxonomia">
+	{/* Cabecera a la izquierda (handoff §2, patrón Fase 2): eyebrow → H1 → conteo. */}
+	<header class="cabecera">
+		<p class="eyebrow">{rotulo}</p>
 		<h1>{display}</h1>
 	</header>
 
-	<hr class="ornate" />
+	<section class="listado" aria-labelledby="lista-titulo">
+		<p class="conteo" id="lista-titulo">{contadorTexto}</p>
 
-	<section class="fabulas-de-taxonomia" aria-labelledby="lista-titulo">
-		<h2 id="lista-titulo">{contadorTexto}</h2>
-
-		{fabulas.length === 0 && (
-			<p class="vacio">{vacioTexto}</p>
-		)}
+		{fabulas.length === 0 && <p class="vacio">{vacioTexto}</p>}
 
 		{fabulas.length > 0 && (
-			<ul class="lista">
+			<ul class="rejilla" data-lista>
 				{fabulas.map((f, i) => (
-					<li class="item" hidden={i >= 18}>
+					<li class="rejilla-item" hidden={i >= 18}>
 						<FabulaCard
 							fabula={f}
 							autorNombre={autorMap.get(f.data.autor.id) ?? 'Desconocido'}
@@ -53,7 +50,7 @@ const { rotulo, display, fabulas, autorMap, contadorTexto, vacioTexto } = Astro.
 <script>
 	const PASO = 18;
 	const boton = document.querySelector<HTMLButtonElement>('[data-cargar-mas]');
-	const lista = document.querySelector<HTMLUListElement>('.lista');
+	const lista = document.querySelector<HTMLUListElement>('[data-lista]');
 
 	if (boton && lista) {
 		const items = Array.from(lista.children) as HTMLElement[];
@@ -64,14 +61,14 @@ const { rotulo, display, fabulas, autorMap, contadorTexto, vacioTexto } = Astro.
 
 			lote.forEach((el) => el.removeAttribute('hidden'));
 
-			// Move focus to the first card of the just-revealed batch.
+			// Foco a la primera ficha del lote recién revelado, por accesibilidad.
 			const primera = lote[0]?.querySelector<HTMLElement>('.card');
 			if (primera) {
 				primera.setAttribute('tabindex', '-1');
 				primera.focus();
 			}
 
-			// Hide the button once no hidden cards remain.
+			// Oculta el botón cuando ya no quedan fichas por revelar.
 			if (ocultos.length <= PASO) {
 				boton.setAttribute('hidden', '');
 			}
@@ -80,75 +77,85 @@ const { rotulo, display, fabulas, autorMap, contadorTexto, vacioTexto } = Astro.
 </script>
 
 <style>
-	.taxonomia-page {
-		max-width: var(--measure);
-		margin-inline: auto;
-		padding-block: var(--space-2xl);
+	.listado-taxonomia {
+		padding-block: clamp(2.5rem, 5vw, 4.5rem) clamp(3.5rem, 7vw, 6.25rem);
 	}
-	.title {
-		text-align: center;
-		margin-bottom: var(--space-lg);
+
+	/* ── Cabecera (handoff §2): eyebrow(rótulo) → H1(término) ──────────────── */
+	.cabecera {
+		margin-bottom: clamp(1.75rem, 3.5vw, 2.75rem);
 	}
-	.rotulo {
+	.eyebrow {
 		font-family: var(--font-display);
 		font-size: var(--fs-3xs);
-		letter-spacing: var(--ls-widest);
-		color: var(--color-oro-texto);
+		letter-spacing: var(--ls-eyebrow);
 		text-transform: uppercase;
-		margin: var(--space-sm) 0 var(--space-2xs);
-	}
-	.title h1 {
+		color: var(--color-oro-texto);
 		margin: 0;
+	}
+	.cabecera h1 {
+		margin: var(--space-md) 0 0;
 		font-size: var(--fs-3xl);
+		letter-spacing: var(--ls-wider);
+		text-transform: uppercase;
 		text-wrap: balance;
 	}
-	.fabulas-de-taxonomia h2 {
-		text-align: center;
-		font-family: var(--font-display);
-		font-size: var(--fs-md);
-		letter-spacing: var(--ls-wide);
-		color: var(--color-oro-texto);
-		margin: var(--space-xl) 0 var(--space-lg);
+
+	/* ── Conteo sobre filete oro (eco de la barra de Fase 2) ──────────────── */
+	.listado {
+		border-top: var(--rule-thin) solid var(--color-oro);
+		padding-top: var(--space-lg);
 	}
-	.vacio {
-		text-align: center;
+	.conteo {
+		margin: 0 0 clamp(1.5rem, 3vw, 2.5rem);
+		font-family: var(--font-body);
 		font-style: italic;
+		font-size: var(--fs-md);
 		color: var(--color-text-soft);
 	}
-	.lista {
+	.vacio {
+		font-family: var(--font-body);
+		font-style: italic;
+		color: var(--color-text-soft);
+		margin: 0;
+	}
+
+	/* ── Rejilla de fichas (patrón Fase 2, filas 3:2 de FabulaCard) ───────── */
+	.rejilla {
 		list-style: none;
 		padding: 0;
 		margin: 0;
 		display: grid;
-		grid-template-columns: repeat(2, minmax(0, 1fr));
-		gap: var(--space-lg);
+		grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+		gap: clamp(24px, 3vw, 40px);
 	}
-	/* Hidden batches for "cargar mas": overrides the grid's implicit display. */
-	[hidden] {
+	.rejilla-item {
+		display: flex;
+	}
+	.rejilla-item[hidden] {
 		display: none !important;
 	}
+
+	/* ── «Cargar más» (filete oro + Cinzel, patrón Fase 2/4) ──────────────── */
 	.cargar-mas {
 		display: block;
-		margin: var(--space-xl) auto 0;
-		padding: var(--space-2xs) var(--space-md);
+		margin: clamp(2rem, 4vw, 3rem) auto 0;
+		padding: var(--space-xs) var(--space-lg);
 		font-family: var(--font-display);
 		font-size: var(--fs-3xs);
-		letter-spacing: var(--ls-wide);
+		letter-spacing: var(--ls-widest);
 		text-transform: uppercase;
 		color: var(--color-esmeralda);
 		background: transparent;
-		border: var(--rule-hairline) solid var(--color-oro);
+		border: var(--rule-thin) solid var(--color-oro);
 		cursor: pointer;
 		transition: background-color var(--dur-fast) var(--ease-standard);
 	}
 	.cargar-mas:hover,
 	.cargar-mas:focus-visible {
-		background-color: rgba(0, 0, 0, 0.03);
+		background-color: rgba(201, 161, 74, 0.12);
 	}
-	@media (max-width: 720px) {
-		.lista {
-			grid-template-columns: 1fr;
-			gap: var(--space-md);
-		}
+	.cargar-mas[hidden] {
+		display: none !important;
 	}
 </style>

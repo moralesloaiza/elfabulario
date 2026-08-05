@@ -4,7 +4,7 @@ resumen: Un ciervo admira sus astas en el reflejo del agua, al tiempo que
   desprecia sus patas largas y delgadas.
 fecha: 2011-12-04
 fecha_actualizada: 2026-05-15
-ilustracion: /src/assets/uploads/chatgpt-image-15-may-2026-18_50_36.png
+ilustracion: /src/assets/uploads/el-ciervo-que-se-miraba-en-el-agua.png
 borrador: false
 personajes:
   - cazador

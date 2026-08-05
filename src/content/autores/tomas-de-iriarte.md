@@ -1,7 +1,8 @@
 ---
 nombre: Tomás de Iriarte
 tipo: clasico
-imagen: /src/assets/uploads/chatgpt-image-12-may-2026-21_21_46.png
+glosa: "Sus fábulas literarias se burlan de los malos escritores con metro impecable."
+imagen: /src/assets/uploads/tomas-de-iriarte.png
 nacionalidad: Español
 nacimiento: 1750
 muerte: 1791

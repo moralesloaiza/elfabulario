@@ -4,7 +4,7 @@ resumen: Un oso y una zorra se alían para conseguir comida. El oso descubre que
   su alianza es desigual.
 fecha: 2012-04-14
 fecha_actualizada: 2026-05-14
-ilustracion: /src/assets/uploads/chatgpt-image-14-may-2026-18_11_40.png
+ilustracion: /src/assets/uploads/el-oso-en-el-pozo.png
 borrador: false
 personajes:
   - oso

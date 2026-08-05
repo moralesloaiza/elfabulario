@@ -1,5 +1,5 @@
-﻿---
-titulo: El Naufragio de Simónides
+---
+titulo: El naufragio de Simónides
 # resumen: pendiente de curaduría
 fecha: 2026-05-17   # MARCADOR — fijar la fecha real al publicar
 borrador: false

@@ -1,5 +1,5 @@
-﻿---
-titulo: El Pastor y el Filósofo
+---
+titulo: El pastor y el filósofo
 # resumen: pendiente de curaduría
 fecha: 2026-05-16   # MARCADOR — fijar la fecha real al publicar
 borrador: false

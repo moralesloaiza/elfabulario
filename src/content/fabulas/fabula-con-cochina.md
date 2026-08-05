@@ -3,7 +3,7 @@ titulo: Fábula con cochina
 resumen: Una cochina se viste de plumas para hacerse pasar por gallina.
 fecha: 2012-01-03
 fecha_actualizada: 2026-05-15
-ilustracion: /src/assets/uploads/chatgpt-image-15-may-2026-08_00_06.png
+ilustracion: /src/assets/uploads/fabula-con-cochina.png
 borrador: false
 personajes:
   - anciano
