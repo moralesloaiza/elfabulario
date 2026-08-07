@@ -3,8 +3,9 @@ titulo: El gozque y el macho de noria
 resumen: Un perrillo se burla del macho que da vueltas a la noria por su trabajo
   monótono, sin reparar en para qué sirve.
 fecha: 2026-05-31
-fecha_actualizada: 2026-06-23
+fecha_actualizada: 2026-08-07
 ilustracion: /src/assets/uploads/el-gozque-y-el-macho-de-noria.png
+spotify_url: https://open.spotify.com/episode/4pLV7fUk7wEjyRUOErka6k?si=vW0zjo2SQTWHvgU3CwT39A
 borrador: false
 personajes:
   - perro
@@ -20,6 +21,17 @@ curador: Don Alejandro
 es_seudonimo: true
 nombre_real: Alejandro Morales Loaiza
 traduccion: false
+moraleja: Nadie emprenda obra superior a sus fuerzas.
+nota_curador: >2
+    El gozque y el macho de noria pertenece a las Fábulas literarias (1782) de [Tomás de Iriarte](https://elfabulario.com/autores/tomas-de-iriarte/): un perrillo que da vueltas a un asador se queja de su trabajo y, tras escapar, encuentra en el campo a un mulo dando vueltas a una noria; cuando el gozque se ofrece a relevarlo pensando que la tarea es parecida a la suya, el macho le advierte que esa empresa excede las fuerzas de un perro tan pequeño. Iriarte cierra la fábula remitiendo la advertencia a un pasaje de Horacio sobre el error de cargar con lo que después no se puede llevar.
+
+    ##### Glosario
+
+    1. **Gozque:** perro pequeño y ladrador, de poca alzada; el protagonista de la fábula, encargado de dar vueltas al asador.
+
+    2. **Noria:** máquina para extraer agua de un pozo mediante la fuerza de un animal que gira en círculo; la tarea que realiza el macho o mulo del campo.
+
+    3. **Horacio Flaco:** Quinto Horacio Flaco, poeta latino del siglo I a. C., a quien Iriarte cita como fuente de la advertencia contra emprender obras superiores a las propias fuerzas.
 ---
 Bien habrá visto el lector
 en hostería o convento
@@ -73,6 +85,3 @@ que a un autor da por gran yerro
 cargar con lo que después
 no podrá llevar; esto es,
 que no ande la noria el perro.
-
-*Nadie emprenda obra*\
-*superior a sus fuerzas.*
