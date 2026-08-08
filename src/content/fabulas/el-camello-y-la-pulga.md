@@ -1,20 +1,23 @@
 ---
 titulo: El camello y la pulga
-# resumen: pendiente de curaduría
-fecha: 2026-05-16   # MARCADOR — fijar la fecha real al publicar
+fecha: 2026-05-16
+fecha_actualizada: 2026-08-08
+ilustracion: /src/assets/uploads/chatgpt-image-6-ago-2026-23_24_26.png
 borrador: false
-personajes: [camello, pulga]
-temas: [vanidad, soberbia, ironia]
+personajes:
+  - camello
+  - pulga
+temas:
+  - vanidad
+  - soberbia
+  - ironia
 forma: verso
 tradicion: hispanica
 autor: felix-maria-de-samaniego
 curador: Don Alejandro
 es_seudonimo: true
 nombre_real: Alejandro Morales Loaiza
-# --- Procedencia ---
-# Libro VI, Fábula VIII — ed. Emilio Palacios Fernández,
-# Biblioteca Virtual Miguel de Cervantes (texto de dominio público).
-# Última estrofa envuelta en ***...*** como hipótesis de moraleja; revisar.
+traduccion: false
 ---
 Al que ostenta valimiento,
 cuando su poder es tal
