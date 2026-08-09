@@ -1,20 +1,25 @@
 ---
 titulo: Los dos tordos
-resumen: "Un tordo viejo lleva a su nieto a una viña a probar las uvas, pero el joven prefiere una fruta mayor que ha visto en otra huerta."
-fecha: 2026-05-31   # MARCADOR: fijar la fecha real al publicar
+resumen: Un tordo viejo lleva a su nieto a una viña a probar las uvas, pero el
+  joven prefiere una fruta mayor que ha visto en otra huerta.
+fecha: 2026-05-31
+fecha_actualizada: 2026-08-09
+ilustracion: /src/assets/uploads/los-dos-tordos.png
 borrador: false
-personajes: [tordo]
-temas: [critica-literaria, necedad, vejez]
+personajes:
+  - tordo
+temas:
+  - critica-literaria
+  - necedad
+  - vejez
 forma: verso
 tradicion: hispanica
 autor: tomas-de-iriarte
 curador: Don Alejandro
 es_seudonimo: true
 nombre_real: Alejandro Morales Loaiza
-# Procedencia:
-# Iriarte, Fabula XLVI de "Fabulas literarias",
-# Biblioteca Virtual Miguel de Cervantes (texto de dominio publico).
-# Moraleja de la fuente incrustada como bloque final en *...* (revisar).
+traduccion: false
+moraleja: No se han de apreciar los libros por su bulto ni por su tamaño.
 ---
 Persuadía un tordo abuelo,
 lleno de años y prudencia,
@@ -56,5 +61,3 @@ aprecie por el tamaño
 los libros, y por el bulto.
 Grande es, si es buena, una obra.
 Si es mala, toda ella sobra.
-
-*No se han de apreciar los libros por su bulto ni por su tamaño.*
