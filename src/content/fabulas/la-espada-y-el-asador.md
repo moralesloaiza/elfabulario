@@ -2,6 +2,7 @@
 titulo: La espada y el asador
 resumen: "Una espada toledana acaba de asador en una posada mientras un asador se vende como espada en la corte, según las manos por las que pasan."
 fecha: 2026-05-31   # MARCADOR: fijar la fecha real al publicar
+ilustracion: /src/assets/uploads/la-espada-y-el-asador.png
 borrador: false
 personajes: [criada, amo]
 temas: [critica-literaria, necedad, engano]

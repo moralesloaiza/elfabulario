@@ -2,6 +2,7 @@
 titulo: La víbora y la sanguijuela
 resumen: "La víbora y la sanguijuela reparan en que ambas pican, pero el hombre se fía de una y recela de la otra, y discuten a qué se debe."
 fecha: 2026-05-31   # MARCADOR: fijar la fecha real al publicar
+ilustracion: /src/assets/uploads/la-vibora-y-la-sanguijuela.png
 borrador: false
 personajes: [serpiente, sanguijuela]
 temas: [critica-literaria, maldad, verdad]

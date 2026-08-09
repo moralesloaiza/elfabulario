@@ -2,6 +2,7 @@
 titulo: La contienda de los mosquitos
 resumen: "En una bodega, los mosquitos disputan si eran mejores los vinos de antes o los de ahora, hasta que un viejo catador zanja la pelea."
 fecha: 2026-05-31   # MARCADOR: fijar la fecha real al publicar
+ilustracion: /src/assets/uploads/la-contienda-de-los-mosquitos.png
 borrador: false
 personajes: [mosquito]
 temas: [critica-literaria, verdad, necedad]

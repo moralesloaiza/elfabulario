@@ -2,6 +2,7 @@
 titulo: La urraca y la mona
 resumen: "Una urraca enseña a la mona su escondrijo de objetos robados y presume de su tesoro, hasta que la mona compara aquel montón con lo que ella guarda."
 fecha: 2026-05-31   # MARCADOR: fijar la fecha real al publicar
+ilustracion: /src/assets/uploads/la-urraca-y-la-mona.png
 borrador: false
 personajes: [urraca, mona]
 temas: [critica-literaria, sabiduria, vanidad]

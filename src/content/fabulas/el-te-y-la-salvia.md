@@ -2,6 +2,7 @@
 titulo: El té y la salvia
 resumen: "El té, camino de Europa, y la salvia, camino de China, se cruzan y comparan el aprecio que cada planta recibe lejos de su tierra."
 fecha: 2026-05-31   # MARCADOR: fijar la fecha real al publicar
+ilustracion: /src/assets/uploads/el-te-y-la-salvia.png
 borrador: false
 personajes: []
 temas: [critica-literaria, necedad]

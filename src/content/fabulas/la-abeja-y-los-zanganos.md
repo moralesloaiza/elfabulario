@@ -2,6 +2,7 @@
 titulo: La abeja y los zánganos
 resumen: "Muertas las abejas de una colmena, los zánganos disputan la herencia de los panales y proponen un certamen para decidir quién merece heredarlos."
 fecha: 2026-05-31   # MARCADOR: fijar la fecha real al publicar
+ilustracion: /src/assets/uploads/la-abeja-y-los-zanganos.png
 borrador: false
 personajes: [abeja, zangano]
 temas: [pereza, trabajo, vanidad, hipocresia, critica-literaria]

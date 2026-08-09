@@ -2,6 +2,7 @@
 titulo: El amo y el perro
 # resumen: pendiente de curaduría
 fecha: 2026-05-18   # MARCADOR — fijar la fecha real al publicar
+ilustracion: /src/assets/uploads/el-amo-y-el-perro.png
 borrador: false
 # --- Taxonomía: PENDIENTE DE CURADURÍA (rellenar antes de build) ---
 personajes: [amo, perro, gato]

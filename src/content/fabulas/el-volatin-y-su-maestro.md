@@ -2,6 +2,7 @@
 titulo: El volatín y su maestro
 resumen: "Un aprendiz de volatín se queja del contrapeso que le estorba en la maroma y decide soltarlo para moverse con más soltura."
 fecha: 2026-05-31   # MARCADOR: fijar la fecha real al publicar
+ilustracion: /src/assets/uploads/el-volatin-y-su-maestro.png
 borrador: false
 personajes: []
 temas: [critica-literaria, soberbia, necedad]

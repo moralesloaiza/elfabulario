@@ -2,6 +2,7 @@
 titulo: El águila y la asamblea de los animales
 # resumen: pendiente de curaduría
 fecha: 2026-05-17   # MARCADOR — fijar la fecha real al publicar
+ilustracion: /src/assets/uploads/el-aguila-y-la-asamblea-de-los-animales.png
 borrador: false
 personajes: [aguila, gallo, leon, paloma, perro, pez, zeus, zorro]
 temas: [critica-social, envidia, necedad]

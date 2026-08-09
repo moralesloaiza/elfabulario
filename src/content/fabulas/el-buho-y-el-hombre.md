@@ -2,6 +2,7 @@
 titulo: El búho y el hombre
 # resumen: pendiente de curaduría
 fecha: 2026-05-17   # MARCADOR — fijar la fecha real al publicar
+ilustracion: /src/assets/uploads/el-buho-y-el-hombre.png
 borrador: false
 personajes: [buho]
 temas: [critica-social, soberbia, vanidad]
