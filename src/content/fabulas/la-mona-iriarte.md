@@ -2,6 +2,7 @@
 titulo: La mona
 resumen: "Una mona se viste y adorna con galas para parecer otra cosa de la que es, confiada en que el atavío bastará."
 fecha: 2026-05-31   # MARCADOR: fijar la fecha real al publicar
+ilustracion: /src/assets/uploads/la-mona-iriarte.png
 borrador: false
 personajes: [mona]
 temas: [critica-literaria, vanidad, necedad]
