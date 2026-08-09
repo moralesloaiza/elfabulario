@@ -2,6 +2,7 @@
 titulo: El cazador y los conejos
 # resumen: pendiente de curaduría
 fecha: 2026-05-17   # MARCADOR — fijar la fecha real al publicar
+ilustracion: /src/assets/uploads/el-cazador-y-los-conejos.png
 borrador: false
 personajes: [cazador, conejo]
 temas: [necedad, miedo, critica-social]

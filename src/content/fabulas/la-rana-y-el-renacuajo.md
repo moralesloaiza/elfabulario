@@ -2,6 +2,7 @@
 titulo: La rana y el renacuajo
 resumen: "Una rana escucha croar a un renacuajo y juzga su voz, en una disputa sobre el ruido y la sustancia."
 fecha: 2026-05-31   # MARCADOR: fijar la fecha real al publicar
+ilustracion: /src/assets/uploads/la-rana-y-el-renacuajo.png
 borrador: false
 personajes: [rana, renacuajo]
 temas: [critica-literaria, vanidad]

@@ -2,6 +2,7 @@
 titulo: El cazador y la perdiz
 # resumen: pendiente de curaduría
 fecha: 2026-05-15   # MARCADOR — fijar la fecha real al publicar
+ilustracion: /src/assets/uploads/el-cazador-y-la-perdiz.png
 borrador: false
 # --- Taxonomía: PENDIENTE DE CURADURÍA (rellenar antes de build) ---
 personajes: [cazador, perdiz]

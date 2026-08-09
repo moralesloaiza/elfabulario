@@ -2,6 +2,7 @@
 titulo: El ruiseñor y el gorrión
 resumen: "Un gorrión se extraña de ver al diestro ruiseñor tomando lecciones de un organillo, y el ruiseñor le explica qué entiende él por aprender."
 fecha: 2026-05-31   # MARCADOR: fijar la fecha real al publicar
+ilustracion: /src/assets/uploads/el-ruisenor-y-el-gorrion.png
 borrador: false
 personajes: [ruisenor, gorrion]
 temas: [critica-literaria, humildad, sabiduria]

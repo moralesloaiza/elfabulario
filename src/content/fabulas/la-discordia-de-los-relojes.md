@@ -2,6 +2,7 @@
 titulo: La discordia de los relojes
 resumen: "Un convidado tardío se excusa con su reloj, y al sacar los demás los suyos resulta que no hay dos que marquen la misma hora."
 fecha: 2026-05-31   # MARCADOR: fijar la fecha real al publicar
+ilustracion: /src/assets/uploads/la-discordia-de-los-relojes.png
 borrador: false
 personajes: []
 temas: [critica-literaria, verdad, necedad]

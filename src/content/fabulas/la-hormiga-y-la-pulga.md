@@ -2,6 +2,7 @@
 titulo: La hormiga y la pulga
 resumen: "Una pulga presume de la importancia de su trato con personas y animales nobles, frente a la laboriosa y humilde hormiga."
 fecha: 2026-05-31   # MARCADOR: fijar la fecha real al publicar
+ilustracion: /src/assets/uploads/la-hormiga-y-la-pulga.png
 borrador: false
 personajes: [hormiga, pulga]
 temas: [vanidad, pereza, trabajo, envidia, critica-literaria]

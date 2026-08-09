@@ -2,6 +2,7 @@
 titulo: El cazador y el perro
 # resumen: pendiente de curaduría
 fecha: 2026-05-15   # MARCADOR — fijar la fecha real al publicar
+ilustracion: /src/assets/uploads/el-cazador-y-el-perro.png
 borrador: false
 # --- Taxonomía: PENDIENTE DE CURADURÍA (rellenar antes de build) ---
 personajes: [perro, cazador]

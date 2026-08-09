@@ -2,6 +2,7 @@
 titulo: La parietaria y el tomillo
 resumen: "Una parietaria crecida al pie de un muro se compara con el humilde tomillo y presume de su altura y posición."
 fecha: 2026-05-31   # MARCADOR: fijar la fecha real al publicar
+ilustracion: /src/assets/uploads/la-parietaria-y-el-tomillo.png
 borrador: false
 personajes: []
 temas: [vanidad, critica-literaria]

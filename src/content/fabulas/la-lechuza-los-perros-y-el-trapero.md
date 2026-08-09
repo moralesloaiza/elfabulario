@@ -2,6 +2,7 @@
 titulo: La lechuza, los perros y el trapero
 resumen: "Una lechuza roba el aceite de las lámparas de una ermita, y su costumbre se compara con la de cierto oficio que vive de lo ajeno."
 fecha: 2026-05-31   # MARCADOR: fijar la fecha real al publicar
+ilustracion: /src/assets/uploads/la-lechuza-los-perros-y-el-trapero.png
 borrador: false
 personajes: [lechuza, perro, trapero]
 temas: [cobardia, traicion, critica-literaria]

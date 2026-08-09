@@ -2,6 +2,7 @@
 titulo: La abeja y el cuclillo
 resumen: "El cuclillo defiende ante la abeja el valor de su canto monótono apelando a su constancia, y ella le responde sobre lo que de verdad importa en una obra."
 fecha: 2026-05-31   # MARCADOR: fijar la fecha real al publicar
+ilustracion: /src/assets/uploads/la-abeja-y-el-cuclillo.png
 borrador: false
 personajes: [abeja, cuclillo]
 temas: [critica-literaria]

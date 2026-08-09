@@ -2,6 +2,7 @@
 titulo: La oruga y la zorra
 resumen: "En la misma tertulia de animales, la oruga critica con desdén el celebrado capullo del gusano de seda, y la zorra descubre la razón de su inquina."
 fecha: 2026-05-31   # MARCADOR: fijar la fecha real al publicar
+ilustracion: /src/assets/uploads/la-oruga-y-la-zorra.png
 borrador: false
 personajes: [oruga, zorro, topo, gusano]
 temas: [critica-literaria, envidia]

@@ -2,6 +2,7 @@
 titulo: La avutarda
 resumen: "Una avutarda se adorna con plumas ajenas de aves más vistosas para lucir ante las demás, hasta que llega el momento de devolverlas."
 fecha: 2026-05-31   # MARCADOR: fijar la fecha real al publicar
+ilustracion: /src/assets/uploads/la-avutarda.png
 borrador: false
 personajes: [avutarda, jilguero, paloma, perdiz]
 temas: [engano, vanidad, critica-literaria]

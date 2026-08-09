@@ -2,6 +2,7 @@
 titulo: El sapo y el mochuelo
 resumen: "Un sapo reta a un mochuelo escondido a mostrarse para juzgar si es feo o hermoso, y el mochuelo le devuelve la observación."
 fecha: 2026-05-31   # MARCADOR: fijar la fecha real al publicar
+ilustracion: /src/assets/uploads/el-sapo-y-el-mochuelo.png
 borrador: false
 personajes: [sapo, mochuelo]
 temas: [critica-literaria, vanidad, humildad]

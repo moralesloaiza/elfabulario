@@ -2,6 +2,7 @@
 titulo: La cabra y el caballo
 resumen: "Una cabra desprecia el galope del caballo y presume de su propia agilidad por los riscos, comparando sus méritos."
 fecha: 2026-05-31   # MARCADOR: fijar la fecha real al publicar
+ilustracion: /src/assets/uploads/la-cabra-y-el-caballo.png
 borrador: false
 personajes: [cabra, caballo]
 temas: [vanidad, critica-literaria, muerte]

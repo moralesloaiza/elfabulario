@@ -2,6 +2,7 @@
 titulo: La criada y la escoba
 resumen: "Una criada barre con una escoba tan vieja y sucia que reniega de ella, pues más ensucia que limpia por donde pasa."
 fecha: 2026-05-31   # MARCADOR: fijar la fecha real al publicar
+ilustracion: /src/assets/uploads/la-criada-y-la-escoba.png
 borrador: false
 personajes: [criada]
 temas: [critica-literaria]

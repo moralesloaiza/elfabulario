@@ -2,6 +2,7 @@
 titulo: El amor y la locura
 # resumen: pendiente de curaduría
 fecha: 2026-05-16   # MARCADOR — fijar la fecha real al publicar
+ilustracion: /src/assets/uploads/el-amor-y-la-locura.png
 borrador: false
 personajes: [amor, locura, zeus]
 temas: [venganza, justicia, ironia]

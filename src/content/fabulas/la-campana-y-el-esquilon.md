@@ -2,6 +2,7 @@
 titulo: La campana y el esquilón
 resumen: "Una campana grande y un esquilón pequeño discuten sobre cuál de los dos suena con más autoridad y mérito."
 fecha: 2026-05-31   # MARCADOR: fijar la fecha real al publicar
+ilustracion: /src/assets/uploads/la-campana-y-el-esquilon.png
 borrador: false
 personajes: []
 temas: [vanidad, hipocresia, necedad, critica-literaria]

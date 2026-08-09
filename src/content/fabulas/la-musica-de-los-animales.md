@@ -2,6 +2,7 @@
 titulo: La música de los animales
 resumen: "Para festejar al león, varios animales montan una academia de música, y cada músico anticipa el aplauso antes de que suene la primera nota."
 fecha: 2026-05-31   # MARCADOR: fijar la fecha real al publicar
+ilustracion: /src/assets/uploads/la-musica-de-los-animales.png
 borrador: false
 personajes: [leon, grillo, rana, cigarra, cerdo, burro]
 temas: [critica-literaria, soberbia, necedad]

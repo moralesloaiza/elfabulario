@@ -2,6 +2,7 @@
 titulo: La compra del asno
 resumen: "Un hombre compra a un chalán un borrico ricamente enjaezado, hasta que un vecino le propone mirar lo que esconden tantos adornos."
 fecha: 2026-05-31   # MARCADOR: fijar la fecha real al publicar
+ilustracion: /src/assets/uploads/la-compra-del-asno.png
 borrador: false
 personajes: [burro, chalan]
 temas: [critica-literaria, necedad, engano]

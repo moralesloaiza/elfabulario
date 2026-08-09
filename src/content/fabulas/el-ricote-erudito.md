@@ -2,6 +2,7 @@
 titulo: El ricote erudito
 resumen: "Un rico decide montar una biblioteca para adornar su casa y, ante el gasto y el trabajo de reunir tantos tomos, da con un atajo singular."
 fecha: 2026-05-31   # MARCADOR: fijar la fecha real al publicar
+ilustracion: /src/assets/uploads/el-ricote-erudito.png
 borrador: false
 personajes: [erudito]
 temas: [critica-literaria, necedad, vanidad]

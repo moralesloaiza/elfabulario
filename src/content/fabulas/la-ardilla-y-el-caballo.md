@@ -2,6 +2,7 @@
 titulo: La ardilla y el caballo
 resumen: "Una ardilla, siempre en movimiento, presume de actividad ante un caballo y compara su incesante trajín con el paso del otro."
 fecha: 2026-05-31   # MARCADOR: fijar la fecha real al publicar
+ilustracion: /src/assets/uploads/la-ardilla-y-el-caballo.png
 borrador: false
 personajes: [ardilla, caballo]
 temas: [critica-literaria, trabajo, vanidad]

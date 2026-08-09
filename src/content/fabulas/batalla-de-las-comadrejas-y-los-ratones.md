@@ -2,6 +2,7 @@
 titulo: Batalla de las comadrejas y los ratones
 # resumen: pendiente de curaduría
 fecha: 2026-05-15   # MARCADOR — fijar la fecha real al publicar
+ilustracion: /src/assets/uploads/batalla-de-las-comadrejas-y-los-ratones.png
 borrador: false
 # --- Taxonomía: PENDIENTE DE CURADURÍA (rellenar antes de build) ---
 personajes: [comadreja, raton]

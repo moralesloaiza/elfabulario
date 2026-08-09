@@ -2,6 +2,7 @@
 titulo: El topo y otros animales
 resumen: "Varios animales juegan a la gallina ciega y el topo, ciego de natural, pide entrar en la rueda disimulando su condición."
 fecha: 2026-05-31   # MARCADOR: fijar la fecha real al publicar
+ilustracion: /src/assets/uploads/el-topo-y-otros-animales.png
 borrador: false
 personajes: [topo, perro, zorro, raton, ardilla, liebre, mono]
 temas: [critica-literaria, soberbia, necedad]

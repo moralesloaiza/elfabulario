@@ -2,6 +2,7 @@
 titulo: La rana y la gallina
 resumen: "Desde su charco, una rana parlanchina se burla del alboroto de la gallina, que cacarea para anunciar que ha puesto un huevo."
 fecha: 2026-05-31   # MARCADOR: fijar la fecha real al publicar
+ilustracion: /src/assets/uploads/la-rana-y-la-gallina.png
 borrador: false
 personajes: [rana, gallina]
 temas: [critica-literaria, vanidad, trabajo]
