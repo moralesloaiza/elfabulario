@@ -1,21 +1,31 @@
 ---
 titulo: Los dos loros y la cotorra
-resumen: "Dos loros llegados de una isla mitad francesa y mitad española mezclan ambas lenguas hasta enredarlas, ante la mirada de una cotorra vecina."
-fecha: 2026-05-31   # MARCADOR: fijar la fecha real al publicar
+resumen: Dos loros llegados de una isla mitad francesa y mitad española mezclan
+  ambas lenguas hasta enredarlas, ante la mirada de una cotorra vecina.
+fecha: 2026-05-31
+fecha_actualizada: 2026-08-09
+ilustracion: /src/assets/uploads/los-dos-loros-y-la-cotorra.png
 borrador: false
-personajes: [loro]
-temas: [critica-literaria, vanidad, necedad]
+personajes:
+  - loro
+temas:
+  - critica-literaria
+  - vanidad
+  - necedad
 forma: verso
 tradicion: hispanica
 autor: tomas-de-iriarte
 curador: Don Alejandro
 es_seudonimo: true
 nombre_real: Alejandro Morales Loaiza
-nota_curador: "En su nota al pie [1], el propio Iriarte aclara que «purista» era la voz con que los corruptores del idioma ridiculizaban a quienes hablaban con pureza, volviendo insulto lo que era virtud. Conviene recordarlo: en boca del que estropea la lengua, llamarte purista es, todavía hoy, una manera torcida de elogiarte."
-# Procedencia:
-# Iriarte, Fabula IV de "Fabulas literarias",
-# Biblioteca Virtual Miguel de Cervantes (texto de dominio publico).
-# Moraleja de la fuente incrustada como bloque final en *...* (revisar).
+traduccion: false
+moraleja: Los que corrompen su idioma no tienen otro desquite que llamar
+  puristas a los que le hablan con propiedad, como si el serlo fuera tacha.
+nota_curador: "En su nota al pie [1], el propio Iriarte aclara que «purista» era
+  la voz con que los corruptores del idioma ridiculizaban a quienes hablaban con
+  pureza, volviendo insulto lo que era virtud. Conviene recordarlo: en boca del
+  que estropea la lengua, llamarte purista es, todavía hoy, una manera torcida
+  de elogiarte."
 ---
 De Santo Domingo trajo
 dos loros una señora:
@@ -53,5 +63,3 @@ Vos no sois una PURISTA;
 y ella dijo: A mucha honra.
 ¡Vaya, que los loros son
 lo mismo que las personas!
-
-*Los que corrompen su idioma no tienen otro desquite que llamar puristas a los que le hablan con propiedad, como si el serlo fuera tacha.*
