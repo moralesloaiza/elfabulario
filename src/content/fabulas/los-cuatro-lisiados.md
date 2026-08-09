@@ -1,20 +1,29 @@
 ---
 titulo: Los cuatro lisiados
-resumen: "Un mudo, un ciego, un manco y un cojo se reúnen para resolver un asunto, y cada cual aporta lo que puede para sacarlo adelante entre todos."
-fecha: 2026-05-31   # MARCADOR: fijar la fecha real al publicar
+resumen: Un mudo, un ciego, un manco y un cojo se reúnen para resolver un
+  asunto, y cada cual aporta lo que puede para sacarlo adelante entre todos.
+fecha: 2026-05-31
+fecha_actualizada: 2026-08-09
+ilustracion: /src/assets/uploads/los-cuatro-lisiados.png
 borrador: false
-personajes: [mudo, sordo, ciego, manco, cojo]
-temas: [critica-literaria, necedad]
+personajes:
+  - mudo
+  - sordo
+  - ciego
+  - manco
+  - cojo
+temas:
+  - critica-literaria
+  - necedad
 forma: verso
 tradicion: hispanica
 autor: tomas-de-iriarte
 curador: Don Alejandro
 es_seudonimo: true
 nombre_real: Alejandro Morales Loaiza
-# Procedencia:
-# Iriarte, Fabula XLIV de "Fabulas literarias",
-# Biblioteca Virtual Miguel de Cervantes (texto de dominio publico).
-# Moraleja de la fuente incrustada como bloque final en *...* (revisar).
+traduccion: false
+moraleja: Las obras que un particular puede desempeñar por sí solo, no merecen
+  se emplee en ellas el trabajo de muchos hombres.
 ---
 Un mudo a nativitate,
 y más sordo que una tapia,
@@ -64,5 +73,3 @@ cuando juntándose muchos
 en pandilla literaria,
 tienen que trabajar todos
 para una gran patarata.
-
-*Las obras que un particular puede desempeñar por sí solo, no merecen se emplee en ellas el trabajo de muchos hombres.*
