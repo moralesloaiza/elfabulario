@@ -1,20 +1,24 @@
 ---
 titulo: Los dos huéspedes
-resumen: "Dos amigos se hospedan en casas distintas, una de fachada palaciega y otra modesta, y cada cual comprueba qué había de verdad tras la apariencia."
-fecha: 2026-05-31   # MARCADOR: fijar la fecha real al publicar
+resumen: Dos amigos se hospedan en casas distintas, una de fachada palaciega y
+  otra modesta, y cada cual comprueba qué había de verdad tras la apariencia.
+fecha: 2026-05-31
+fecha_actualizada: 2026-08-09
+ilustracion: /src/assets/uploads/los-dos-huéspedes.png
 borrador: false
 personajes: []
-temas: [critica-literaria, engano, vanidad]
+temas:
+  - critica-literaria
+  - engano
+  - vanidad
 forma: verso
 tradicion: hispanica
 autor: tomas-de-iriarte
 curador: Don Alejandro
 es_seudonimo: true
 nombre_real: Alejandro Morales Loaiza
-# Procedencia:
-# Iriarte, Fabula XXXIX de "Fabulas literarias",
-# Biblioteca Virtual Miguel de Cervantes (texto de dominio publico).
-# Moraleja de la fuente incrustada como bloque final en *...* (revisar).
+traduccion: false
+moraleja: Las portadas ostentosas de los libros engañan mucho.
 ---
 Pasando por un pueblo
 de la montaña
@@ -58,5 +62,3 @@ el fuerte chasco;
 pero él te dijo:
 «Otros chascos como ese
 dan muchos libros.»
-
-*Las portadas ostentosas de los libros engañan mucho.*
