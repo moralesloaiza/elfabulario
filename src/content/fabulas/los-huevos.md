@@ -1,20 +1,29 @@
 ---
 titulo: Los huevos
-resumen: "En una isla lejana, un caminante descubre el origen de las gallinas y los huevos, y un anciano del lugar le explica de dónde vinieron."
-fecha: 2026-05-31   # MARCADOR: fijar la fecha real al publicar
+resumen: En una isla lejana, un caminante descubre el origen de las gallinas y
+  los huevos, y un anciano del lugar le explica de dónde vinieron.
+fecha: 2026-05-31
+fecha_actualizada: 2026-08-09
+ilustracion: /src/assets/uploads/los-huevos.png
 borrador: false
-personajes: [caminante, anciano, gallina]
-temas: [vanidad, critica-literaria, prudencia, necedad]
+personajes:
+  - caminante
+  - anciano
+  - gallina
+temas:
+  - vanidad
+  - critica-literaria
+  - prudencia
+  - necedad
 forma: verso
 tradicion: hispanica
 autor: tomas-de-iriarte
 curador: Don Alejandro
 es_seudonimo: true
 nombre_real: Alejandro Morales Loaiza
-# Procedencia:
-# Iriarte, Fabula XII de "Fabulas literarias",
-# Biblioteca Virtual Miguel de Cervantes (texto de dominio publico).
-# Moraleja de la fuente incrustada como bloque final en *...* (revisar).
+traduccion: false
+moraleja: No falta quien quiera pasar por autor original cuando no hace más que
+  repetir, con corta diferencia, lo que otros muchos han dicho.
 ---
 Más allá de las islas Filipinas
 hay una, que ni sé cómo se llama,
@@ -59,5 +68,3 @@ de esas composiciones peregrinas.
 Tantos autores nuevos
 ¿no se pudieran ir a guisar huevos
 más allá de las islas Filipinas?
-
-*No falta quien quiera pasar por autor original cuando no hace más que repetir, con corta diferencia, lo que otros muchos han dicho.*
