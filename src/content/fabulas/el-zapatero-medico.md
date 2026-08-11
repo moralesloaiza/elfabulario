@@ -2,6 +2,7 @@
 titulo: El zapatero médico
 # resumen: pendiente de curaduría
 fecha: 2026-05-17   # MARCADOR — fijar la fecha real al publicar
+ilustracion: /src/assets/uploads/el-zapatero-medico.png
 borrador: false
 personajes: [zapatero, rey]
 temas: [engano, necedad, critica-social]

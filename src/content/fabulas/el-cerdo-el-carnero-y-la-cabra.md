@@ -2,6 +2,7 @@
 titulo: El cerdo, el carnero y la cabra
 # resumen: pendiente de curaduría
 fecha: 2026-05-16   # MARCADOR — fijar la fecha real al publicar
+ilustracion: /src/assets/uploads/el-cerdo-el-carnero-y-la-cabra.png
 borrador: false
 personajes: [cerdo, carnero, cabra, carretero]
 temas: [muerte, inocencia, miedo]

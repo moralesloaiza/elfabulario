@@ -2,6 +2,7 @@
 titulo: La mariposa y el caracol
 # resumen: pendiente de curaduría
 fecha: 2026-05-17   # MARCADOR — fijar la fecha real al publicar
+ilustracion: /src/assets/uploads/la-mariposa-y-el-caracol.png
 borrador: false
 personajes: [mariposa, caracol]
 temas: [vanidad, soberbia, humildad]

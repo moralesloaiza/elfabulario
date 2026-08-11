@@ -2,6 +2,7 @@
 titulo: El filósofo y el faisán
 # resumen: pendiente de curaduría
 fecha: 2026-05-17   # MARCADOR — fijar la fecha real al publicar
+ilustracion: /src/assets/uploads/el-filosofo-y-el-faisan.png
 borrador: false
 personajes: [filosofo, faisan]
 temas: [ingratitud, critica-social, ironia]

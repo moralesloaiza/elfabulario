@@ -2,6 +2,7 @@
 titulo: El león, el tigre y el caminante
 # resumen: pendiente de curaduría
 fecha: 2026-05-16   # MARCADOR — fijar la fecha real al publicar
+ilustracion: /src/assets/uploads/el-leon-el-tigre-y-el-caminante.png
 borrador: false
 personajes: [leon, tigre, caminante]
 temas: [poder, adulacion, piedad]

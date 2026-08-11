@@ -2,6 +2,7 @@
 titulo: El raposo y el perro
 # resumen: pendiente de curaduría
 fecha: 2026-05-17   # MARCADOR — fijar la fecha real al publicar
+ilustracion: /src/assets/uploads/el-raposo-y-el-perro.png
 borrador: false
 personajes: [zorro, perro]
 temas: [engano, mentira, verdad]

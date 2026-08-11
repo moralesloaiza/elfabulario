@@ -2,6 +2,7 @@
 titulo: El filósofo y la pulga
 # resumen: pendiente de curaduría
 fecha: 2026-05-17   # MARCADOR — fijar la fecha real al publicar
+ilustracion: /src/assets/uploads/el-filosofo-y-la-pulga.png
 borrador: false
 personajes: [filosofo, pulga]
 temas: [vanidad, soberbia, ironia]
