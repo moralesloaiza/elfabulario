@@ -2,6 +2,7 @@
 titulo: El raposo y el lobo
 # resumen: pendiente de curaduría
 fecha: 2026-05-18   # MARCADOR — fijar la fecha real al publicar
+ilustracion: /src/assets/uploads/el-raposo-y-el-lobo.png
 borrador: false
 # --- Taxonomía: PENDIENTE DE CURADURÍA (rellenar antes de build) ---
 personajes: [zorro, lobo]

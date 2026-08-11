@@ -3,6 +3,7 @@ titulo: El lobo y la oveja
 resumen: >-
   Un lobo herido y hambriento pide a una oveja que le acerque agua; ella entiende el engaño y se aleja a tiempo.
 fecha: 2026-05-15
+ilustracion: /src/assets/uploads/el-lobo-y-la-oveja.png
 borrador: false
 personajes: 
   - lobo
