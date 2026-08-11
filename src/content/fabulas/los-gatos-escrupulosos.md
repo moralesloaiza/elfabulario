@@ -2,6 +2,7 @@
 titulo: Los gatos escrupulosos
 # resumen: pendiente de curaduría
 fecha: 2026-05-17   # MARCADOR — fijar la fecha real al publicar
+ilustracion: /src/assets/uploads/los-gatos-escrupulosos.png
 borrador: false
 personajes: [gato]
 temas: [critica-social, gula, ironia]

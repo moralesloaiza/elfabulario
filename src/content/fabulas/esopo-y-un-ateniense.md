@@ -2,6 +2,7 @@
 titulo: Esopo y un ateniense
 # resumen: pendiente de curaduría
 fecha: 2026-05-17   # MARCADOR — fijar la fecha real al publicar
+ilustracion: /src/assets/uploads/esopo-y-un-ateniense.png
 borrador: false
 personajes: [anciano, nino]
 temas: [prudencia, sabiduria, vejez]

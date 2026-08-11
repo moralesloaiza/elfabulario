@@ -2,6 +2,7 @@
 titulo: El naufragio de Simónides
 # resumen: pendiente de curaduría
 fecha: 2026-05-17   # MARCADOR — fijar la fecha real al publicar
+ilustracion: /src/assets/uploads/el-naufragio-de-simonides.png
 borrador: false
 personajes: [poeta]
 temas: [sabiduria, riqueza, prudencia, mar]

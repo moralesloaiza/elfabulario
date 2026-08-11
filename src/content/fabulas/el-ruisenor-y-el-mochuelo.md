@@ -2,6 +2,7 @@
 titulo: El ruiseñor y el mochuelo
 # resumen: pendiente de curaduría
 fecha: 2026-05-18   # MARCADOR — fijar la fecha real al publicar
+ilustracion: /src/assets/uploads/el-ruisenor-y-el-mochuelo.png
 borrador: false
 # --- Taxonomía: PENDIENTE DE CURADURÍA (rellenar antes de build) ---
 personajes: [ruisenor, mochuelo]

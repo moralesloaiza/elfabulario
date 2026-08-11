@@ -2,6 +2,7 @@
 titulo: El poeta y la rosa
 # resumen: pendiente de curaduría
 fecha: 2026-05-17   # MARCADOR — fijar la fecha real al publicar
+ilustracion: /src/assets/uploads/el-poeta-y-la-rosa.png
 borrador: false
 personajes: [poeta]
 temas: [adulacion, vanidad, verdad]
