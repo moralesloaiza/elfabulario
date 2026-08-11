@@ -2,6 +2,7 @@
 titulo: Los dos perros
 # resumen: pendiente de curaduría
 fecha: 2026-05-18   # MARCADOR — fijar la fecha real al publicar
+ilustracion: /src/assets/uploads/los-dos-perros.png
 borrador: false
 # --- Taxonomía: PENDIENTE DE CURADURÍA (rellenar antes de build) ---
 personajes: [perro]
