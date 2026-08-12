@@ -18,7 +18,14 @@ autor: anonimo
 curador: Don Alejandro
 es_seudonimo: true
 nombre_real: Alejandro Morales Loaiza
-nota_curador: ""
+nota_curador: >-
+  El ser más poderoso del mundo circula como relato [anónimo](https://elfabulario.com/autores/anonimo/) de origen indio, difundido en distintas antologías bajo etiquetas tan diversas como cuento hindú y fábula búdica; no fue posible confirmar en las fuentes consultadas una referencia textual precisa (ni un Jataka concreto ni un pasaje identificable del Panchatantra), por lo que aquí se presenta, siguiendo el criterio habitual de estas fichas, sin atribución de autor individual verificable ni precisión de escuela religiosa exacta. En el relato, un nigromante indio rescata de las garras de un búho a un ratoncito magullado y lo transforma en una joven que solo quiere casarse con el ser más poderoso del universo; el mago va probando al sol, la nube, el viento y la montaña, hasta descubrir que el más poderoso de todos es, en realidad, el ratón que horada la montaña sin que nada pueda impedírselo.
+
+  ##### Glosario
+
+  1. **Nigromante:** en el uso tradicional de estos relatos, mago o hechicero capaz de transformar la naturaleza de los seres, sin relación con el sentido moderno más restringido de adivinación por los muertos.
+  2. **Ganges:** río sagrado del norte de la India, escenario donde el nigromante encuentra al ratoncito.
+  3. **Sobrepujar:** superar o exceder en fuerza o en cualidad a otra cosa; así describe el relato la relación de poder entre el sol, la nube, el viento y la montaña.
 ---
 Pasaba cierto día un nigromante indio por la orilla del Ganges, cuando acertó a volar sobre su cabeza un búho que llevaba un ratoncito en su corvo y agudo pico.
 

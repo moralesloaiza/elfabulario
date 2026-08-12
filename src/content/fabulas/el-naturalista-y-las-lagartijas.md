@@ -16,6 +16,20 @@ nombre_real: Alejandro Morales Loaiza
 # Iriarte, Fabula LVII de "Fabulas literarias",
 # Biblioteca Virtual Miguel de Cervantes (texto de dominio publico).
 # Moraleja de la fuente incrustada como bloque final en *...* (revisar).
+nota_curador: >-
+  El naturalista y las lagartijas es la fábula LVII de las Fábulas literarias (1782) de [Tomás de Iriarte](https://elfabulario.com/autores/tomas-de-iriarte/), la colección con la que el propio autor reclamó —no sin polémica con Samaniego, que le había precedido apenas un año antes— el título de primer fabulista en escribir en castellano fábulas enteramente originales sobre el oficio literario. A diferencia de la fábula moral al uso, estas piezas no ilustran un vicio humano genérico sino un vicio de escritor o de crítico, disfrazado de animal.
+
+  En la fábula, un naturalista disecciona minuciosamente una lagartija ante su tertulia mientras la otra, más afortunada, escapa con vida y cuenta a sus vecinas cuánto interés ha despertado su especie, sin sospechar que el sabio, ya cansado del examen, apenas reparó en ella. Iriarte cierra con una moraleja dirigida a los críticos literarios: hacer excesivo caso de una obra menor, por mucho que se la censure, es concederle una importancia que no merece.
+
+  ##### Glosario
+
+  1. **Mamotretos:** libros o legajos grandes, gruesos y desordenados.
+
+  2. **Sabandija:** animal pequeño y despreciado, usado aquí en sentido despectivo.
+
+  3. **Rolliza:** robusta, de carnes abundantes.
+
+  4. **Engreírse:** envanecerse, volverse presumido por algo.
 ---
 Vio en una huerta
 dos lagartijas

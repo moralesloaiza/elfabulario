@@ -16,6 +16,16 @@ nombre_real: Alejandro Morales Loaiza
 # Iriarte, Fabula LV de "Fabulas literarias",
 # Biblioteca Virtual Miguel de Cervantes (texto de dominio publico).
 # Moraleja de la fuente incrustada como bloque final en *...* (revisar).
+nota_curador: >-
+  El juez y el bandolero pertenece también a las Fábulas literarias (1782) de [Tomás de Iriarte](https://elfabulario.com/autores/tomas-de-iriarte/), fábula LV de la colección: un bandolero apresado por robar y matar a un caminante se defiende ante el juez alegando que lleva cuarenta años ejerciendo el oficio, como si la larga costumbre bastara para disculpar el delito. Como el resto de las Fábulas literarias, el relato traslada la anécdota moral al terreno de la crítica literaria: Iriarte apunta contra quienes justifican los defectos de una obra o de un estilo apelando a que «siempre se ha hecho así», sin que la costumbre envejecida baste para autorizar lo que la razón condena.
+
+  ##### Glosario
+
+  1. **Vueseñoría:** forma antigua y respetuosa de tratamiento, equivalente a «su señoría»; así se dirige el bandolero al juez que lo interroga.
+
+  2. **Raterías:** hurtos pequeños y de poca importancia; el bandolero los menciona como el origen modesto de su carrera delictiva.
+
+  3. **Costumbre inveterada:** hábito arraigado por el paso de los años, hasta parecer natural o legítimo; es precisamente lo que la fábula denuncia como excusa insuficiente.
 ---
 Prendieron por fortuna a un bandolero
 a tiempo cabalmente

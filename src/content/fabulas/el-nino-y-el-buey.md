@@ -15,6 +15,20 @@ autor: rafael-pombo
 curador: Don Alejandro
 es_seudonimo: true
 nombre_real: Alejandro Morales Loaiza
+nota_curador: >-
+  El niño y el buey es una fábula de [Rafael Pombo](https://elfabulario.com/autores/rafael-pombo/), poeta y fabulista colombiano que, además de sus célebres Cuentos pintados para niños escritos durante su exilio en Nueva York, dejó un cuerpo breve de fábulas de moraleja limpia. La pieza está confirmada en la Biblioteca Virtual Miguel de Cervantes y en antologías dedicadas a su obra bajo el título El niño y el buey.
+
+  En clave de diálogo, un niño le pregunta a un buey en qué piensa tumbado sobre la hierba, y el buey responde que la ciencia no es lo que a él lo alimenta, sino el rumiar bien cada bocado; de ahí extrae una lección sobre el aprendizaje: no basta con tragar el conocimiento, hay que digerirlo, o se aprende como un loro.
+
+  ##### Glosario
+
+  1. **Rumiar:** masticar despacio y por segunda vez el alimento ya tragado; en sentido figurado, reflexionar detenidamente sobre algo.
+
+  2. **Embelesado:** absorto, cautivado por algo que atrae profundamente la atención.
+
+  3. **Surcos:** líneas paralelas que abre el arado en la tierra al labrarla.
+
+  4. **Engullir:** tragar la comida con rapidez y sin masticarla bien.
 ---
 
 El niño.-¿En qué piensas todo el día

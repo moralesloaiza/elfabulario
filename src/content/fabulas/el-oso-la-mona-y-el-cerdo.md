@@ -16,6 +16,14 @@ nombre_real: Alejandro Morales Loaiza
 # Iriarte, Fabula II de "Fabulas literarias",
 # Biblioteca Virtual Miguel de Cervantes (texto de dominio publico).
 # Moraleja de la fuente incrustada como bloque final en *...* (revisar).
+nota_curador: >-
+  El oso, la mona y el cerdo es la fábula II de las Fábulas literarias (1782) de [Tomás de Iriarte](https://elfabulario.com/autores/tomas-de-iriarte/), la colección con la que el propio autor reclamó —no sin polémica con Samaniego, que le había precedido apenas un año antes— el título de primer fabulista en escribir en castellano fábulas enteramente originales sobre el oficio literario. Esta pieza, una de las más citadas de la colección, traslada esa crítica literaria a un terreno más general: la diferencia entre la opinión honesta del entendido y el aplauso interesado del necio. En la fábula, un oso amaestrado baila ante su amo piamontés y pide la opinión de una mona, que lo juzga con dureza, y luego la de un cerdo, que lo colma de elogios; el oso, lejos de alegrarse, concluye que si el necio aplaude es porque en realidad baila mal.
+
+  ##### Glosario
+
+  1. **Piamontés:** natural del Piamonte, región del norte de Italia; en la fábula, el amo que exhibe al oso amaestrado por dinero.
+
+  2. **Garboso:** que tiene garbo, gracia y donaire en el movimiento.
 ---
 Un oso, con que la vida
 ganaba un piamontés,

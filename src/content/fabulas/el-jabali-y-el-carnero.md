@@ -19,6 +19,16 @@ autor: felix-maria-de-samaniego
 curador: Don Alejandro
 es_seudonimo: true
 nombre_real: Alejandro Morales Loaiza
+nota_curador: >-
+  El jabalí y el carnero pertenece al libro sexto de las Fábulas morales (1781-1784) de [Félix María de Samaniego](https://elfabulario.com/autores/felix-maria-de-samaniego/): mientras un carnicero degüella a un carnero ante la mirada muda y atemorizada del rebaño, un jabalí increpa a las ovejas por su cobardía y las anima a vengarse; un carnero le responde que el castigo ya está en marcha, porque la piel que les arrancan sirve para hacer pergaminos y tambores, es decir, para alimentar los pleitos y la guerra, las dos mayores plagas que afligen a los hombres. No ha sido posible confirmar una fuente clásica específica para esta fábula; las fuentes consultadas la sitúan dentro de las Fábulas morales sin remitirla a un antecedente esópico o fedriano concreto.
+
+  ##### Glosario
+
+  1. **Degollar:** cortar el cuello o la garganta de un animal; la acción del carnicero que el rebaño observa en silencio al comienzo de la fábula.
+
+  2. **Pergamino:** lámina de piel de animal curtida y preparada para escribir sobre ella, de uso habitual en la Antigüedad y la Edad Media; uno de los destinos que Samaniego da a la piel del carnero degollado.
+
+  3. **Remangado:** con las mangas subidas, listo para trabajar sin que la ropa estorbe; así describe la fábula al carnicero mientras degüella al carnero.
 ---
 De la rama de un árbol un carnero
 Degollado pendía:

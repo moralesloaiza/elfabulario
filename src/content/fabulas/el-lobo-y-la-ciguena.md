@@ -21,6 +21,20 @@ autor: felix-maria-de-samaniego
 curador: Don Alejandro
 es_seudonimo: true
 nombre_real: Alejandro Morales Loaiza
+nota_curador: >-
+  El lobo y la cigüeña combina en un solo poema dos fábulas de raíz esópica que Samaniego unió por compartir una misma moraleja sobre la prudencia al hacer el bien: la primera, catalogada como la fábula 156 del índice Perry, cuenta el conocido episodio del lobo que se atraganta con un hueso y de la cigüeña que, con su pico largo, se lo extrae, para verse luego despachada sin pago alguno por quien le debe la vida; la segunda, «El hombre y la culebra», corresponde a la fábula 176 del mismo índice —conocida en la tradición inglesa como The Farmer and the Viper— y narra al labrador que recoge una culebra medio muerta de frío, la abriga en su pecho, y muere a manos de la misma criatura que acaba de salvar. [Félix María de Samaniego](https://elfabulario.com/autores/felix-maria-de-samaniego/) incluyó ambos relatos, con esa moraleja compartida, en el libro segundo de sus Fábulas morales (1781-1784).
+
+  El propio Samaniego advierte, al cerrar la primera historia, que el refrán castellano «haz bien y no sepas a quién» no basta por sí solo, y remite al lector a la segunda fábula para reforzarlo: no alcanza con hacer el bien, hay que saber a quién y cómo se hace.
+
+  ##### Glosario
+
+  1. **Ejecutiva:** que actúa con prontitud y decisión, sin demora.
+
+  2. **Susodicha:** la mencionada o citada anteriormente en el texto.
+
+  3. **Yerta:** rígida y sin movimiento, entumecida por el frío.
+
+  4. **Incautamente:** de forma ingenua o descuidada, sin advertir el riesgo.
 ---
 Sin duda alguna que se hubiera ahogado
 un lobo con un hueso atragantado,

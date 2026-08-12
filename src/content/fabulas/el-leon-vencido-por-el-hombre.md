@@ -19,6 +19,16 @@ autor: felix-maria-de-samaniego
 curador: Don Alejandro
 es_seudonimo: true
 nombre_real: Alejandro Morales Loaiza
+nota_curador: >-
+  El león vencido por el hombre figura entre las Fábulas morales de [Félix María de Samaniego](https://elfabulario.com/autores/felix-maria-de-samaniego/) y recrea un motivo de raíz esópica muy conocido, el de «El hombre y el león»: un artífice pinta un cuadro donde un hombre vence en solitario a un león, y otro león que lo contempla responde, con desdén, que el pintor no era león, porque si los leones supieran pintar el resultado sería bien distinto. No ha sido posible confirmar en qué libro y con qué numeración exacta ubica Samaniego esta pieza dentro de la colección completa de las Fábulas morales, más allá de que pertenece a su primer libro.
+
+  ##### Glosario
+
+  1. **Artífice:** autor o creador de una obra, aquí el pintor del cuadro que da pie a la fábula.
+
+  2. **Despreciador:** que muestra desprecio o desdén; así describe el poema el tono con que el segundo león juzga la pintura.
+
+  3. **«Pintar como querer»:** expresión con que Samaniego resume la idea de que quien narra o representa una historia puede acomodarla a su propia conveniencia.
 ---
 
 Cierto artífice pintó

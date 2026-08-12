@@ -16,6 +16,20 @@ nombre_real: Alejandro Morales Loaiza
 # Iriarte, Fabula VI de "Fabulas literarias",
 # Biblioteca Virtual Miguel de Cervantes (texto de dominio publico).
 # Moraleja de la fuente incrustada como bloque final en *...* (revisar).
+nota_curador: >-
+  El mono y el titiritero es la fábula VI de las Fábulas literarias (1782) de [Tomás de Iriarte](https://elfabulario.com/autores/tomas-de-iriarte/), una composición original suya y no una adaptación de una fuente esópica o clásica anterior: la colección entera responde al propósito declarado por Iriarte de escribir la primera serie de fábulas plenamente originales en lengua castellana, cada una convertida en una alegoría sobre algún vicio de la escritura o de la crítica literaria. En esta, un mono diestro en imitar a su amo titiritero organiza, en su ausencia, una función para otros animales, y remata el espectáculo con una supuesta proyección de linterna mágica que narra con gran labia... pero sin haberla encendido.
+
+  Cuando el titiritero regresa y descubre el engaño, la reprimenda resume el sentido de toda la pieza: de nada sirve la elocuencia si no hay claridad en lo que se quiere decir, una crítica que Iriarte dirigía contra la prosa oscura y grandilocuente de ciertos autores de su tiempo.
+
+  ##### Glosario
+
+  1. **Mortecina:** hacerse el muerto, fingir estar sin vida.
+
+  2. **Exordio:** introducción o preámbulo de un discurso.
+
+  3. **Parola:** charla insistente y vacía de contenido.
+
+  4. **Majadero:** necio, pesado, torpe en su juicio.
 ---
 El fidedigno padre Valdecebro,
 que en discurrir historias de animales

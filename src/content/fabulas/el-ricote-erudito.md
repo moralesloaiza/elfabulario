@@ -16,6 +16,14 @@ nombre_real: Alejandro Morales Loaiza
 # Iriarte, Fabula LXVI de "Fabulas literarias",
 # Biblioteca Virtual Miguel de Cervantes (texto de dominio publico).
 # Moraleja de la fuente incrustada como bloque final en *...* (revisar).
+nota_curador: >-
+  El ricote erudito es la fábula LXVI de las Fábulas literarias (1782) de [Tomás de Iriarte](https://elfabulario.com/autores/tomas-de-iriarte/), en la que un hombre rico de Madrid, más necio que rico según el propio narrador, decide montar una biblioteca para adornar su casa; ante el gasto y el trabajo que supone reunir doce mil tomos de verdad, encarga en su lugar libros de cartón pintado, con lomos y títulos falsos, y termina, de tanto repasarlos, creyéndose erudito solo por conocer los títulos.
+
+  ##### Glosario
+
+  1. **Ebanista:** artesano que trabaja maderas finas y fabrica muebles de calidad; el rico de la fábula lo llama para que le haga los estantes de la biblioteca.
+  2. **Perder la chaveta:** locución que significa perder el juicio o la paciencia; el rico la usa para justificar por qué renuncia a comprar libros de verdad.
+  3. **Postizo:** falso, que imita a lo genuino sin serlo; así son los tomos de cartón pintado con los que el rico llena sus estantes.
 ---
 Hubo un rico en Madrid (y aun dicen que era
 más necio que rico),

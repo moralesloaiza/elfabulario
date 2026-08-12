@@ -17,6 +17,18 @@ autor: juan-eugenio-hartzenbusch
 curador: Don Alejandro
 es_seudonimo: true
 nombre_real: Alejandro Morales Loaiza
+nota_curador: >-
+  El loro y el enano de la venta reúne dos historias breves y de tono costumbrista, sin que hayamos podido confirmar una fuente esópica o clásica anterior para ninguna de las dos: todo apunta a que se trata de una composición original de [Juan Eugenio Hartzenbusch](https://elfabulario.com/autores/juan-eugenio-hartzenbusch/), incluida en sus Fábulas (1843). La primera cuenta la historia de un loro adiestrado en el Perú que escapa a una cueva y, ya libre, asusta con las mismas frases aprendidas a un viajero español que busca refugio de una tormenta; la segunda traslada la misma idea a una venta española, donde un enano de vozarrón impresionante resulta, al bajar por fin de su escondite, mucho menos temible de lo que su voz hacía suponer. Ambas fábulas comparten una sola moraleja, formulada al cierre: quien habla fuerte y poco desde la oscuridad suele infundir un miedo que no corresponde a lo que en realidad es.
+
+  ##### Glosario
+
+  1. **Peruviano:** forma antigua de «peruano», natural del Perú.
+
+  2. **Alavés:** natural o propio de la provincia de Álava, en el País Vasco.
+
+  3. **Bisojo:** bizco, que tiene los ojos torcidos o desviados.
+
+  4. **Mantear:** lanzar a alguien repetidamente al aire con una manta sostenida entre varios, como burla o castigo.
 ---
 
 **EL LORO**

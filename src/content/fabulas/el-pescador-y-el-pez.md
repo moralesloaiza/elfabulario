@@ -19,6 +19,13 @@ autor: felix-maria-de-samaniego
 curador: Don Alejandro
 es_seudonimo: true
 nombre_real: Alejandro Morales Loaiza
+nota_curador: >-
+  El pescador y el pez pertenece a las Fábulas morales (1781-1784) de [Félix María de Samaniego](https://elfabulario.com/autores/felix-maria-de-samaniego/), escritas por encargo para los alumnos del Real Seminario Patriótico Vascongado de Vergara; no ha sido posible confirmar el número exacto que ocupa dentro de la colección, por lo que se deja constancia de esa reserva en lugar de asignarle una cifra sin verificar. En la fábula, un pececillo recién capturado suplica su libertad prometiendo al pescador una recompensa mayor si lo devuelve al agua y espera a que crezca; el pescador, prudente, prefiere la certeza del presente a la promesa de un futuro incierto.
+
+  ##### Glosario
+
+  1. **Prisionero:** en la fábula, el pececillo que suplica su libertad, apresado en la red del pescador.
+  2. **"Más vale pájaro en mano...":** refrán castellano citado por el pescador, que completo dice "que ciento volando", y que resume la prudencia de preferir lo cierto a lo incierto.
 ---
 
 Recoge un pescador su red tendida,

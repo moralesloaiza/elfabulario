@@ -16,6 +16,20 @@ autor: felix-maria-de-samaniego
 curador: Don Alejandro
 es_seudonimo: true
 nombre_real: Alejandro Morales Loaiza
+nota_curador: >-
+  El milano enfermo recrea una fábula esópica catalogada como la fábula 324 del índice Perry —conocida en las fuentes griegas más antiguas como la del cuervo enfermo, con el cuervo sustituido por el milano en las versiones latinas medievales— que cuenta el caso de un ave rapaz moribunda que pide a su madre interceder por ella ante los dioses, y recibe por respuesta que no hay clemencia posible para quien nunca respetó lo sagrado: haber vivido del saqueo de los templos y sus ofrendas no se redime en el lecho de muerte. [Félix María de Samaniego](https://elfabulario.com/autores/felix-maria-de-samaniego/) tomó el asunto, como buena parte de su repertorio, de Esopo y sus sucesores, y lo incluyó en sus Fábulas morales (1781-1784).
+
+  La pieza ilustra una idea que atravesó también la tradición emblemática renacentista —lo mal habido de nada sirve a la hora final—, y Samaniego la resuelve con su economía característica: apenas dieciocho versos y una respuesta materna que no deja resquicio a la súplica.
+
+  ##### Glosario
+
+  1. **Forajido:** bandido o delincuente que vive fuera de la ley, huido de la justicia.
+
+  2. **Propicios:** favorables, bien dispuestos a conceder algo.
+
+  3. **Aras:** altares donde se ofrecían sacrificios o dones a una divinidad.
+
+  4. **Inmolada:** sacrificada como ofrenda religiosa.
 ---
 Un Milano, después de haber vivido
 con la conciencia peor que un forajido,

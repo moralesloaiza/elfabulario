@@ -20,6 +20,16 @@ autor: felix-maria-de-samaniego
 curador: Don Alejandro
 es_seudonimo: true
 nombre_real: Alejandro Morales Loaiza
+nota_curador: >-
+  El pájaro herido de una flecha es la fábula VIII del libro II de las Fábulas morales (1781-1784) de [Félix María de Samaniego](https://elfabulario.com/autores/felix-maria-de-samaniego/), y recrea la vieja fábula esópica del águila herida por una flecha emplumada con sus propias plumas, tema que después retomaron Fedro y La Fontaine. En la fábula, un ave malherida por una flecha guarnecida de acero y de plumas ligeras reprocha a los hombres que las aves inocentes suministren, sin saberlo, el material de su propia destrucción.
+
+  ##### Glosario
+
+  1. **Guarnecida:** adornada o provista de un aditamento; en la fábula, la flecha guarnecida de acero y de plumas ligeras.
+
+  2. **Querella:** queja, lamento; en la fábula, las «amargas querellas» del ave herida.
+
+  3. **Fábula esópica:** relato de la tradición atribuida a Esopo, fabulista griego del siglo VI a. C., cuyo motivo del águila herida por una flecha con sus propias plumas fue retomado después por Fedro, La Fontaine y Samaniego, entre otros.
 ---
 Un pájaro inocente,
 herido de una flecha

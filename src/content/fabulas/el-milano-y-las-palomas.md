@@ -18,6 +18,20 @@ autor: felix-maria-de-samaniego
 curador: Don Alejandro
 es_seudonimo: true
 nombre_real: Alejandro Morales Loaiza
+nota_curador: >-
+  El milano y las palomas adapta una fábula esópica de honda tradición política, catalogada como la fábula 486 del índice Perry y documentada por primera vez en la colección de Fedro (Libro I, fábula 31): unas palomas, acosadas por un milano, aceptan nombrarlo rey a cambio de protección, y descubren demasiado tarde que el nuevo soberano las devora una a una en cuanto ocupa el trono. [Félix María de Samaniego](https://elfabulario.com/autores/felix-maria-de-samaniego/) recogió el asunto —de raíz clásica, transmitido también por La Fontaine y otros fabulistas posteriores— en sus Fábulas morales (1781-1784).
+
+  La fábula es, ante todo, una advertencia política: ceder el propio poder de defensa a quien ya se ha mostrado hostil, con la esperanza de comprar su benevolencia, rara vez termina bien para quien lo cede.
+
+  ##### Glosario
+
+  1. **Lacayo:** criado o servidor sumiso, que atiende con excesiva deferencia.
+
+  2. **Sosiego:** tranquilidad, calma, quietud.
+
+  3. **Vasallo:** súbdito sometido a la autoridad de un señor o soberano.
+
+  4. **Tirano:** gobernante que ejerce el poder de forma arbitraria y opresiva.
 ---
 A las tristes Palomas un Milano,
 sin poderlas pillar, seguía en vano;

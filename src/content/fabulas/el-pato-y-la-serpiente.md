@@ -16,6 +16,14 @@ nombre_real: Alejandro Morales Loaiza
 # Iriarte, Fabula XIII de "Fabulas literarias",
 # Biblioteca Virtual Miguel de Cervantes (texto de dominio publico).
 # Moraleja de la fuente incrustada como bloque final en *...* (revisar).
+nota_curador: >-
+  El pato y la serpiente es la fábula XIII de las Fábulas literarias (1782) de [Tomás de Iriarte](https://elfabulario.com/autores/tomas-de-iriarte/). En la fábula, un pato se jacta a orillas de un estanque de dominar tres elementos —el agua, la tierra y el aire—, hasta que una serpiente astuta le hace notar que no anda como el gamo, ni vuela como el sacre, ni nada como el barbo, y que lo importante no es entender de todo, sino ser diestro en algo.
+
+  ##### Glosario
+
+  1. **Sacre:** ave rapaz de la familia de los halcones, apreciada antiguamente en cetrería por la velocidad de su vuelo.
+
+  2. **Barbo:** pez de agua dulce común en los ríos españoles, citado en la fábula como ejemplo de destreza al nadar.
 ---
 A orillas de un estanque
 diciendo estaba un pato:

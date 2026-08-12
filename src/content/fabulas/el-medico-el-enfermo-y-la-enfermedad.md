@@ -16,6 +16,18 @@ nombre_real: Alejandro Morales Loaiza
 # Iriarte, Fabula LXVII de "Fabulas literarias",
 # Biblioteca Virtual Miguel de Cervantes (texto de dominio publico).
 # Moraleja de la fuente incrustada como bloque final en *...* (revisar).
+nota_curador: >-
+  El médico, el enfermo y la enfermedad pertenece a las Fábulas literarias (1782) de [Tomás de Iriarte](https://elfabulario.com/autores/tomas-de-iriarte/), la colección en la que cada relato ilustra, más que una moral general, un vicio propio del oficio literario —en este caso, el de quien opina o interviene sobre una materia que no domina bien—. Las fuentes consultadas no coinciden en el número que le corresponde dentro de la colección (aparece citada como LXVII, LXIX o LXX según la edición, y como la fábula 76 en al menos una edición digitalizada), así que evitamos aquí precisar un número de orden. La fábula presenta a un enfermo que lucha por no morir y a la enfermedad que lucha por matarlo, mientras un médico corto de vista intenta separarlos a garrotazos sin distinguir bien a cuál de los dos golpea, una imagen que Iriarte usa como advertencia sobre la peligrosa costumbre de intervenir en asuntos graves sin el criterio necesario para hacerlo bien.
+
+  ##### Glosario
+
+  1. **Corto de vista:** que ve mal de lejos, miope.
+
+  2. **Lince:** por extensión, persona de vista o percepción muy aguda, de ahí la expresión «acreditarse de lince».
+
+  3. **Topo:** por extensión, persona de vista muy corta o torpe para percibir las cosas.
+
+  4. **Purgar:** en la medicina antigua, administrar un remedio para provocar evacuaciones intestinales, práctica común en la terapéutica de la época.
 ---
 Batalla el enfermo
 con la enfermedad,

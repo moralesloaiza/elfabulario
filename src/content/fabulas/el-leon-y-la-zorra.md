@@ -18,6 +18,18 @@ autor: felix-maria-de-samaniego
 curador: Don Alejandro
 es_seudonimo: true
 nombre_real: Alejandro Morales Loaiza
+nota_curador: >-
+  El león y la zorra recrea uno de los relatos más antiguos del corpus esópico, catalogado como la fábula 142 del índice Perry: un león ya viejo y sin fuerzas para cazar finge estar enfermo y hace correr la voz de que desea recibir visitas en su cueva, donde devora a quien se acerca, hasta que una zorra, más cauta que el resto, se detiene en la entrada y advierte que las huellas solo van hacia dentro y ninguna sale. [Félix María de Samaniego](https://elfabulario.com/autores/felix-maria-de-samaniego/) trasladó este relato al castellano en sus Fábulas morales (1781-1784), fiel a su costumbre de tomar materiales de Esopo, Fedro y La Fontaine y darles una voz propia, clara y memorable.
+
+  ##### Glosario
+
+  1. **Achacoso:** que padece achaques o indisposiciones frecuentes, propio de una salud debilitada por la vejez.
+
+  2. **Discurrir:** idear, pensar o trazar un plan con ingenio.
+
+  3. **Engullir:** tragar con rapidez y avidez, devorar sin apenas masticar.
+
+  4. **Cóncavo:** hueco y curvado hacia dentro, como el interior de una cueva o gruta.
 ---
 Un León en otro tiempo poderoso,
 ya viejo y achacoso,

@@ -18,6 +18,20 @@ autor: cayetano-fernández-cabello
 curador: Don Alejandro
 es_seudonimo: true
 nombre_real: Alejandro Morales Loaiza
+nota_curador: >-
+  El murciélago y el topo pertenece a las Fábulas ascéticas en verso castellano y en variedad de metros (1864) de [Cayetano Fernández Cabello](https://elfabulario.com/autores/cayetano-fernández-cabello/), escritas para la formación religiosa y moral del futuro Alfonso XII. No hemos podido confirmar una fuente esópica o clásica anterior que esta pieza adapte: todo indica que se trata de una composición original de Fernández Cabello, construida a partir de la cita evangélica que la encabeza —«Caecus autem si caeco ducatum praestet, ambo in foveam cadunt» (Mateo 15, 14), si un ciego guía a otro ciego, ambos caen en el hoyo— y no de un asunto tomado de Esopo, Fedro o algún fabulista posterior.
+
+  En la fábula, un murciélago atormentado por su aversión a la luz busca consejo en el topo, animal tan ciego como él, que solo confirma su error; la pieza encaja con el propósito devoto de la colección, donde la moraleja apunta menos a la prudencia mundana que a la advertencia religiosa contra el mal consejero que halaga en vez de corregir.
+
+  ##### Glosario
+
+  1. **Apócrifos:** de autenticidad dudosa o no reconocida.
+
+  2. **Estólido:** necio, falto de razón o entendimiento.
+
+  3. **Lucífugo:** que huye de la luz.
+
+  4. **Noctívago:** que anda o vive de noche.
 ---
 > *Caecus autem si caeco ducatum praestet, ambo in foveam cadunt.* — Mateo 15, 14
 
