@@ -1,5 +1,5 @@
 ---
-import { getCollection, getEntry } from 'astro:content';
+import { getCollection, getEntry, type CollectionEntry } from 'astro:content';
 import BaseHead from '../components/BaseHead.astro';
 import EscuchaEnSpotify from '../components/EscuchaEnSpotify.astro';
 import FichaFabula from '../components/FichaFabula.astro';
@@ -11,6 +11,7 @@ import { SITE_DESCRIPTION, SITE_TITLE } from '../consts';
 import { buildWebSiteJsonLd } from '../utils/jsonld';
 import { tiempoLecturaMin } from '../utils/lectura';
 import { numeroEnLetrasFemCap } from '../utils/numeroEnLetras';
+import { fabulaDeLaSemana } from '../utils/fabulaSemanal';
 import { FORMAS_DISPLAY, TRADICIONES_DISPLAY } from '../utils/taxonomia';
 
 const home = await getEntry('paginas', 'home');
@@ -46,39 +47,59 @@ type DestacadoRender = {
 	lede?: string;
 };
 
+// Construye el render de un destacado a partir de una fábula. Compartido por el
+// destacado curado a mano (tipo='fabula') y por la rotación semanal automática.
+async function construirDestacadoFabula(
+	fabula: CollectionEntry<'fabulas'>,
+	cintillo: string,
+): Promise<DestacadoRender> {
+	if (!fabula.data.ilustracion) {
+		throw new Error(
+			`[destacado] La fábula "${fabula.data.titulo}" no tiene ilustración. ` +
+				`El destacado activo requiere imagen. Añade una ilustración o cambia el destacado.`,
+		);
+	}
+	const autor = await getEntry(fabula.data.autor);
+	const min = tiempoLecturaMin(fabula.body);
+	const eyebrow = [
+		cintillo,
+		fabula.data.tradicion ? TRADICIONES_DISPLAY[fabula.data.tradicion] : null,
+		FORMAS_DISPLAY[fabula.data.forma],
+		`${min} min`,
+	].filter(Boolean).join(' · ');
+	return {
+		eyebrow,
+		imagen: fabula.data.ilustracion,
+		alt: '',
+		titulo: fabula.data.titulo,
+		href: `/fabulas/${fabula.id}/`,
+		foco: fabula.data.foco,
+		byline: autor.data.nombre,
+		lede: fabula.data.resumen,
+	};
+}
+
 let destacado: DestacadoRender | null = null;
 let destacadaFabulaId: string | null = null;
 
-if (destacadoCfg && destacadoCfg.data.activo) {
+if (destacadoCfg && destacadoCfg.data.activo && destacadoCfg.data.rotacion_semanal) {
+	// --- Modo "La fábula de la semana" (automático) ---
+	// Se elige de forma determinista entre las fábulas publicadas con
+	// ilustración, según la semana en curso. El cambio efectivo lo dispara el
+	// rebuild semanal (.github/workflows/fabula-semanal.yml).
+	const pozo = fabulasPublicadas.filter((f) => f.data.ilustracion);
+	const fabula = fabulaDeLaSemana(pozo, new Date());
+	if (fabula) {
+		destacadaFabulaId = fabula.id;
+		destacado = await construirDestacadoFabula(fabula, destacadoCfg.data.cintillo);
+	}
+} else if (destacadoCfg && destacadoCfg.data.activo) {
 	const { tipo, cintillo } = destacadoCfg.data;
 
 	if (tipo === 'fabula' && destacadoCfg.data.fabula_referida) {
 		const fabula = await getEntry(destacadoCfg.data.fabula_referida);
-		if (!fabula.data.ilustracion) {
-			throw new Error(
-				`[destacado] La fábula "${fabula.data.titulo}" no tiene ilustración. ` +
-					`El destacado activo requiere imagen. Añade una ilustración o cambia el destacado.`,
-			);
-		}
 		destacadaFabulaId = fabula.id;
-		const autor = await getEntry(fabula.data.autor);
-		const min = tiempoLecturaMin(fabula.body);
-		const eyebrow = [
-			cintillo,
-			fabula.data.tradicion ? TRADICIONES_DISPLAY[fabula.data.tradicion] : null,
-			FORMAS_DISPLAY[fabula.data.forma],
-			`${min} min`,
-		].filter(Boolean).join(' · ');
-		destacado = {
-			eyebrow,
-			imagen: fabula.data.ilustracion,
-			alt: '',
-			titulo: fabula.data.titulo,
-			href: `/fabulas/${fabula.id}/`,
-			foco: fabula.data.foco,
-			byline: autor.data.nombre,
-			lede: fabula.data.resumen,
-		};
+		destacado = await construirDestacadoFabula(fabula, cintillo);
 	} else if (tipo === 'entrada' && destacadoCfg.data.entrada_referida) {
 		const entrada = await getEntry(destacadoCfg.data.entrada_referida);
 		if (!entrada.data.ilustracion) {

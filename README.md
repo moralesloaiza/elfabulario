@@ -184,6 +184,44 @@ Si prefieres publicación directa sin revisión, cambia `publish_mode` a `simple
 
 ---
 
+## Rotación semanal del destacado ("La fábula de la semana")
+
+La portada puede mostrar una **fábula distinta cada semana**, elegida sola de
+entre las fábulas publicadas con ilustración. Se activa desde el panel editorial
+(**Destacado de la home → Rotación semanal automática**) o poniendo
+`rotacion_semanal: true` en `src/content/destacado/actual.md`. En ese modo se
+ignoran los campos Tipo/Fábula/Entrada/Autor: la elige el código.
+
+Cómo funciona:
+
+- **Selección** — `src/utils/fabulaSemanal.ts` elige de forma *determinista* la
+  fábula según la semana en curso. Todos ven la misma durante los siete días, y
+  se recorre todo el archivo antes de repetir (~300 ilustradas = ~6 años).
+- **Disparador** — como el sitio es estático, la portada solo cambia al
+  recompilar. La GitHub Action `.github/workflows/fabula-semanal.yml` fuerza un
+  rebuild de Cloudflare Pages **cada lunes 06:00 UTC**.
+
+### Paso manual (una sola vez): crear el Deploy Hook
+
+El workflow necesita un secreto con la URL del Deploy Hook de Cloudflare Pages:
+
+1. **Cloudflare** → Workers & Pages → proyecto `elfabulario` → **Settings** →
+   **Builds & deployments** → **Deploy hooks** → **Add deploy hook**.
+   - Nombre: `fabula-semanal`
+   - Rama: `main`
+   - Copia la URL que genera (algo como `https://api.cloudflare.com/client/v4/pages/webhooks/deploy_hooks/…`).
+2. **GitHub** → repo `elfabulario` → **Settings** → **Secrets and variables** →
+   **Actions** → **New repository secret**.
+   - Nombre: `CF_DEPLOY_HOOK`
+   - Valor: la URL copiada.
+3. (Opcional) Prueba: **Actions** → *Fábula de la semana* → **Run workflow**.
+   En ~2 min Cloudflare habrá recompilado con la fábula de esa semana.
+
+Para volver a un destacado fijo (un autor, una entrada, una fábula concreta),
+desactiva la rotación semanal y elige el elemento a mano.
+
+---
+
 ## Mantener sincronizados los esquemas
 
 Hay **dos archivos** que describen el esquema de una fábula:
