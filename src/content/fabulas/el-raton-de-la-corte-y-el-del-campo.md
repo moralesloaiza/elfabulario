@@ -18,6 +18,14 @@ autor: felix-maria-de-samaniego
 curador: Don Alejandro
 es_seudonimo: true
 nombre_real: Alejandro Morales Loaiza
+nota_curador: >-
+  El ratón de la corte y el del campo es la fábula VIII del libro primero de las Fábulas morales (1781-1784) de [Félix María de Samaniego](https://elfabulario.com/autores/felix-maria-de-samaniego/), quien tomó buena parte de sus asuntos de Esopo, Fedro, La Fontaine y John Gay sin ocultarlo, y en esta pieza recrea el motivo clásico del ratón cortesano y el ratón campesino que se remonta al propio Esopo y que La Fontaine había popularizado en francés un siglo antes. Un ratón de la corte agasaja a su primo campesino con quesos de Holanda y salchichones de una despensa señorial, pero basta el sobresalto de la despensera para que el visitante prefiera, sin zozobras ni pesadumbres, la pobreza tranquila de su casita de tierra.
+
+  ##### Glosario
+
+  1. **Ratópolis:** ciudad imaginaria de los ratones, inventada por Samaniego en tono irónico para ponderar, por comparación, el lujo del aposento que se le ofrece al ratón campesino.
+  2. **Despensera:** mujer encargada de administrar la despensa de una casa; su llegada sobresalta a los dos ratones y precipita el desenlace de la fábula.
+  3. **Lisonjera:** halagüeña, que produce una satisfacción engañosa o pasajera; así describe el narrador la situación de abundancia antes del sobresalto.
 ---
 Un ratón cortesano
 convidó con un modo muy urbano

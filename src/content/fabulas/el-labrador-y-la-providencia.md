@@ -15,6 +15,16 @@ autor: felix-maria-de-samaniego
 curador: Don Alejandro
 es_seudonimo: true
 nombre_real: Alejandro Morales Loaiza
+nota_curador: >-
+  El labrador y la providencia pertenece a las Fábulas morales de [Félix María de Samaniego](https://elfabulario.com/autores/felix-maria-de-samaniego/), libro quinto de la colección, fábula IV: un labrador descansa a la sombra de una encina y se pregunta por qué la Providencia coloca la humilde bellota en lo alto del árbol mientras deja calabazas y melones, mucho más pesados, esparcidos por el suelo; la respuesta le llega de inmediato cuando una bellota cae y le golpea la nariz, y el labrador comprende que si en su lugar hubiera caído un melón la lección habría sido bastante más dolorosa. El asunto recuerda de cerca a «Le Gland et la Citrouille» de La Fontaine, aunque no hay consenso documental sobre si Samaniego trabajó directamente sobre ese texto o sobre la misma tradición de cuento popular que también inspiró al fabulista francés.
+
+  ##### Glosario
+
+  1. **Estío:** verano, la estación en la que el labrador reposa bajo la encina al comienzo de la fábula.
+
+  2. **Preeminente:** que sobresale o destaca por encima de lo demás; así describe el labrador el lugar donde crece la bellota, en contraste con el suelo donde ruedan los melones.
+
+  3. **Desnarigado:** que ha perdido la nariz o ha sido herido gravemente en ella; es el destino que el labrador imagina para sí si en vez de una bellota le hubiera caído encima un melón.
 ---
 Un labrador cansado
 En el ardiente estío

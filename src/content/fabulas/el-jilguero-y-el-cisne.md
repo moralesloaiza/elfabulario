@@ -16,6 +16,16 @@ nombre_real: Alejandro Morales Loaiza
 # Iriarte, Fabula XVI de "Fabulas literarias",
 # Biblioteca Virtual Miguel de Cervantes (texto de dominio publico).
 # Moraleja de la fuente incrustada como bloque final en *...* (revisar).
+nota_curador: >-
+  El jilguero y el cisne pertenece a las Fábulas literarias (1782) de [Tomás de Iriarte](https://elfabulario.com/autores/tomas-de-iriarte/), concretamente a la fábula XVII de la colección: un cisne humilla al jilguero por su canto ruidoso y presume de poseer la voz más dulce entre las aves, sin que nadie la haya oído jamás; el jilguero, lejos de ofenderse, le anima a demostrarlo, y cuando el cisne por fin intenta cantar solo logra un graznido que desmiente de golpe toda su fama. Como el resto de las Fábulas literarias, la pieza no habla en realidad de pájaros sino del oficio de escribir: bajo la anécdota se esconde una censura a quienes ganan crédito y reputación sin obra que los respalde, y los pierden en cuanto se someten a la prueba de la experiencia.
+
+  ##### Glosario
+
+  1. **Vocinglero:** que habla o canta demasiado alto y sin mesura; así llama el cisne al jilguero al comienzo de la fábula.
+
+  2. **Graznido:** sonido áspero y desagradable, propio de aves como el cuervo o el ganso; lo que produce el cisne cuando por fin intenta cantar, en contraste con la dulzura que había prometido.
+
+  3. **Cadencias:** inflexiones y modulaciones melódicas del canto; el jilguero se las atribuye al cisne por su fama, aunque nadie las haya escuchado en realidad.
 ---
 «Calla tú, pajarillo vocinglero,
 (dijo el cisne al jilguero).

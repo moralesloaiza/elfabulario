@@ -20,6 +20,14 @@ autor: felix-maria-de-samaniego
 curador: Don Alejandro
 es_seudonimo: true
 nombre_real: Alejandro Morales Loaiza
+nota_curador: >-
+  El raposo enfermo es la fábula I del libro VII de las Fábulas morales (1781-1784) de [Félix María de Samaniego](https://elfabulario.com/autores/felix-maria-de-samaniego/), escritas por encargo para los alumnos del Real Seminario Patriótico Vascongado de Vergara. Un zorro que se siente ya en el lecho de muerte reúne a sus parientes y pronuncia un sermón de arrepentimiento por sus fechorías pasadas, lamentando en voz trémula la sangre de gansos y pavos que tiene sobre la conciencia; pero el propio enfermo se delata al final, cuando confiesa que, pese a toda su prédica, no le haría ningún daño despachar un pollito que se le pusiera a mano.
+
+  ##### Glosario
+
+  1. **Raposo:** sinónimo antiguo y todavía vivo de "zorro", usado aquí como protagonista y título de la fábula.
+  2. **Gazapo:** cría del conejo, mencionada entre las víctimas habituales de las correrías del raposo.
+  3. **Trémula:** temblorosa; adjetivo con que se describe la voz del zorro moribundo en su falso arrepentimiento.
 ---
 
 El tiempo, que consume de hora en hora

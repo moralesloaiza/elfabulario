@@ -19,6 +19,20 @@ autor: felix-maria-de-samaniego
 curador: Don Alejandro
 es_seudonimo: true
 nombre_real: Alejandro Morales Loaiza
+nota_curador: >-
+  El murciélago y la comadreja recrea la fábula esópica catalogada como la fábula 172 del índice Perry, conocida en las fuentes latinas como Vespertilio et Mustelae Duae: un murciélago cae dos veces en manos de una comadreja y en ambas ocasiones se salva alegando ser justo lo contrario de lo que ella detesta —ratón la primera vez, ave la segunda—. [Félix María de Samaniego](https://elfabulario.com/autores/felix-maria-de-samaniego/) tomó el asunto de Esopo, como él mismo reconoce en la moraleja final, y lo incluyó en sus Fábulas morales (1781-1784).
+
+  La pieza es una de las más difundidas de la tradición esópica, recogida también por Fedro y por La Fontaine bajo el título La Chauve-souris et les deux Belettes; Samaniego cierra su versión con una alusión a los barcos que izan bandera neutral según convenga para evitar el ataque enemigo.
+
+  ##### Glosario
+
+  1. **Avechucho:** ave de aspecto desagradable, usado aquí en tono despectivo y afectuoso a la vez.
+
+  2. **Treta:** ardid o artimaña ingeniosa para lograr un fin.
+
+  3. **Pasaporte:** aquí, salvoconducto o identificación que permite pasar sin riesgo.
+
+  4. **Bandera:** enseña o pabellón que identifica el origen o la afiliación de una nave.
 ---
 Cayó sin saber cómo
 Un murciélago a tierra;

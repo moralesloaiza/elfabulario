@@ -16,6 +16,14 @@ nombre_real: Alejandro Morales Loaiza
 # Iriarte, Fabula LXII de "Fabulas literarias",
 # Biblioteca Virtual Miguel de Cervantes (texto de dominio publico).
 # Moraleja de la fuente incrustada como bloque final en *...* (revisar).
+nota_curador: >-
+  El sapo y el mochuelo es la fábula LXI de las Fábulas literarias (1782) de [Tomás de Iriarte](https://elfabulario.com/autores/tomas-de-iriarte/), en la que un sapo, escondido no lejos de un mochuelo que apenas asoma medio cuerpo por el tronco de un árbol, lo reta a mostrarse entero para juzgar si es feo o hermoso; el mochuelo le devuelve la pregunta con ironía, sugiriéndole que estaría mejor agazapado en otro agujero, en una fábula sobre la vanidad de publicar sin recato lo que convendría, más bien, guardar en el cajón.
+
+  ##### Glosario
+
+  1. **Escuerzo:** nombre antiguo y despectivo del sapo, usado por el mochuelo para dirigirse a quien lo interpela.
+  2. **Garbo:** gracia y donaire en el porte o en la manera de presentarse; lo que el mochuelo, irónicamente, atribuye al sapo.
+  3. **Dar a luz:** publicar o dar a conocer una obra; expresión con la que la fábula describe a los autores que se apresuran a imprimir sin la debida desconfianza.
 ---
 Escondido en el tronco de un árbol
 estaba un mochuelo,

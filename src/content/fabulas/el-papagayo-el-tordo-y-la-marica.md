@@ -16,6 +16,14 @@ nombre_real: Alejandro Morales Loaiza
 # Iriarte, Fabula XXIX de "Fabulas literarias",
 # Biblioteca Virtual Miguel de Cervantes (texto de dominio publico).
 # Moraleja de la fuente incrustada como bloque final en *...* (revisar).
+nota_curador: >-
+  El papagayo, el tordo y la marica pertenece a las Fábulas literarias (1782) de [Tomás de Iriarte](https://elfabulario.com/autores/tomas-de-iriarte/); las fuentes digitales consultadas no coinciden en el número de orden exacto que ocupa dentro de la colección —unas la sitúan como fábula XXIV, otras como XXIX—, por lo que aquí se deja constancia de la discrepancia en lugar de asignarle un número sin confirmar. En la fábula, un tordo aprende a hablar escuchando a un papagayo y, tras un único ensayo, se cree ya maestro y da lecciones a una urraca, que sale tan diestra como quien estudia por copias y malas traducciones en vez de acudir a los autores originales.
+
+  ##### Glosario
+
+  1. **Marica:** nombre antiguo de la urraca, ave de plumaje negro y blanco conocida por imitar sonidos.
+
+  2. **Diestra:** hábil, experta en algo; en la fábula, la urraca que imita con soltura lo aprendido de segunda mano.
 ---
 Oyendo un tordo hablar a un papagayo,
 quiso que él, y no el hombre, le enseñara;

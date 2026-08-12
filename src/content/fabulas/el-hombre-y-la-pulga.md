@@ -17,6 +17,16 @@ autor: felix-maria-de-samaniego
 curador: Don Alejandro
 es_seudonimo: true
 nombre_real: Alejandro Morales Loaiza
+nota_curador: >-
+  El hombre y la pulga pertenece a las Fábulas morales (1781-1784) de [Félix María de Samaniego](https://elfabulario.com/autores/felix-maria-de-samaniego/): un hombre picado por una pulga en la cama clama a Júpiter pidiéndole rayos, y a Hércules, para que acaben con el insecto, al que llama plaga fatal del género humano; Samaniego cierra con una moraleja sobre el abuso de invocar recursos extraordinarios —el cielo, en este caso— para resolver antojos y molestias sin importancia. No ha sido posible confirmar una fuente clásica concreta para esta fábula en particular; se sabe, en general, que Samaniego tomó buena parte de sus asuntos de Esopo, Fedro y La Fontaine, pero esta pieza bien puede ser de invención propia sobre un motivo cómico tradicional.
+
+  ##### Glosario
+
+  1. **Júpiter:** en la mitología romana, el dios supremo del cielo y del rayo, equivalente al Zeus griego; a él clama el hombre de la fábula pidiendo que fulmine a la pulga.
+
+  2. **Hércules:** héroe de la mitología grecorromana famoso por su fuerza descomunal, al que el hombre invoca como segundo recurso para acabar con el insecto.
+
+  3. **Querella:** queja o lamento formulado con tono grave y solemne; así llama Samaniego, con ironía, al reclamo del hombre por una simple picadura.
 ---
 —Oye, Júpiter sumo, mis querellas;
 y haz, disparando rayos y centellas,

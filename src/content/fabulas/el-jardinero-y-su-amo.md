@@ -16,6 +16,16 @@ nombre_real: Alejandro Morales Loaiza
 # Iriarte, Fabula L de "Fabulas literarias",
 # Biblioteca Virtual Miguel de Cervantes (texto de dominio publico).
 # Moraleja de la fuente incrustada como bloque final en *...* (revisar).
+nota_curador: >-
+  El jardinero y su amo pertenece a las Fábulas literarias (1782) de [Tomás de Iriarte](https://elfabulario.com/autores/tomas-de-iriarte/), concretamente a la fábula XLIX de la colección: un jardinero riega con tanto celo el jardín que descuida el estanque donde viven los peces de su amo; reprendido por ello, corrige el error de forma tan literal que deja de regar las flores para no mermar el agua del pilón, y termina por perderlo todo al no saber hallar el término medio. Como el resto de las Fábulas literarias, la pieza no trata de moral cotidiana sino del oficio de escribir: la lección final —unir lo útil con lo agradable— recoge el principio horaciano del utile dulci, expuesto en la Epístola a los Pisones, que Iriarte aplicaba a la literatura y que aquí traslada a la imagen del jardín.
+
+  ##### Glosario
+
+  1. **Pilón:** receptáculo de piedra que recoge el agua de una fuente; en la fábula, el estanque donde viven los peces del amo.
+
+  2. **Tencas:** peces de agua dulce, de cuerpo alargado y escamas pequeñas, mencionados junto a las carpas como habitantes del estanque.
+
+  3. **Utile dulci:** expresión latina de origen horaciano («lo útil con lo dulce») que resume la idea de que una obra debe unir provecho y placer; principio que Iriarte convierte aquí en moraleja.
 ---
 En un jardín de flores
 había una gran fuente,

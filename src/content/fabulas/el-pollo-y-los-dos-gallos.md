@@ -16,6 +16,14 @@ nombre_real: Alejandro Morales Loaiza
 # Iriarte, Fabula XLVII de "Fabulas literarias",
 # Biblioteca Virtual Miguel de Cervantes (texto de dominio publico).
 # Moraleja de la fuente incrustada como bloque final en *...* (revisar).
+nota_curador: >-
+  El pollo y los dos gallos es la fábula XLVII de las Fábulas literarias (1782) de [Tomás de Iriarte](https://elfabulario.com/autores/tomas-de-iriarte/), la colección con la que el propio Iriarte reclamó —no sin polémica con Samaniego, que lo había precedido un año antes— ser el primer fabulista en escribir fábulas enteramente originales en castellano. A diferencia de las fábulas morales al uso, las de Iriarte hablan casi siempre del oficio literario: aquí un gallo presumido pierde una pelea contra un pollo joven y, más tarde, otra contra un gallo ya viejo, y en ambos casos disculpa su derrota con la edad del contrario en lugar de reconocer su habilidad, hasta que la moraleja cierra la fábula: en un autor no ha de considerarse la edad, sino el talento.
+
+  ##### Glosario
+
+  1. **Serrallo:** en sentido recto, harén; aquí se usa en tono irónico y grandilocuente para referirse al corral o gallinero del gallo presumido.
+  2. **Pelotera:** riña o pelea ruidosa entre varias personas o animales.
+  3. **Chochear:** perder facultades por la vejez; lo que el gallo joven, con desdén fingido, atribuye al gallo anciano.
 ---
 Un gallo, presumido
 de luchador valiente,

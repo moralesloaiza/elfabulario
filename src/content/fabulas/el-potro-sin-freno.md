@@ -15,6 +15,14 @@ autor: rafael-pombo
 curador: Don Alejandro
 es_seudonimo: true
 nombre_real: Alejandro Morales Loaiza
+nota_curador: >-
+  El potro sin freno pertenece a Fábulas y verdades, la extensa colección de más de doscientas composiciones —graduadas, según su propio autor, desde la sencillez pensada para el niño hasta la reflexión sobre la religión, el matrimonio o la política— con la que [Rafael Pombo](https://elfabulario.com/autores/rafael-pombo/) firmó buena parte de su obra fabulística. En esta fábula, un potro joven rechaza freno y jinete y desafía a otro caballo, que sí corre con el suyo, a una carrera; la libertad que el potro reclama como fuerza termina siendo su ruina, y muere desbocado por su propia soberbia y desobediencia.
+
+  ##### Glosario
+
+  1. **Mozalbete:** muchacho joven y presuntuoso; aquí se aplica, en sentido figurado, al potro protagonista.
+  2. **Desbocarse:** dicho de una caballería, escapar sin control porque ha dejado de obedecer al freno.
+  3. **Freno:** en la fábula, tanto el bocado que gobierna al caballo como símbolo de la disciplina y el consejo que el potro rechaza.
 ---
 
 "¡Hoy no! ¡No aguanto freno ni jinete!

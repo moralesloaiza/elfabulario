@@ -19,6 +19,16 @@ autor: felix-maria-de-samaniego
 curador: Don Alejandro
 es_seudonimo: true
 nombre_real: Alejandro Morales Loaiza
+nota_curador: >-
+  El herrero y el perro pertenece a las Fábulas morales (1781-1784) de [Félix María de Samaniego](https://elfabulario.com/autores/felix-maria-de-samaniego/): un perro que solo come, duerme y halaga a su amo a la hora de comer, sin ocuparse jamás de vigilar la fragua, se defiende alegando que le basta con haber nacido perro y no asno para no trabajar; el herrero, cansado de mantenerlo ocioso "a lo conde", lo echa de casa, y el animal recorre varias casas donde debe hacer de centinela, de lazarillo, de animal de noria, hasta descubrir que el destino reparte obligaciones a todos por igual y que ningún perro escapa de ellas fuera del amparo de un amo indulgente.
+
+  ##### Glosario
+
+  1. **Fragua:** taller donde el herrero calienta y trabaja el metal; el lugar de cuyo cuidado el perro de la fábula nunca se ocupa.
+
+  2. **Pollino:** asno joven o burro; animal con el que el perro se compara para justificar su ociosidad, alegando haber nacido perro y no pollino.
+
+  3. **Lazarillo:** guía que conduce y auxilia a un ciego; una de las tareas que el perro debe desempeñar en su nueva casa tras ser echado de la del herrero.
 ---
 Un herrero tenía
 un perro que no hacía

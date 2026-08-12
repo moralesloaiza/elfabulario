@@ -16,6 +16,14 @@ nombre_real: Alejandro Morales Loaiza
 # Iriarte, Fabula XX de "Fabulas literarias",
 # Biblioteca Virtual Miguel de Cervantes (texto de dominio publico).
 # Moraleja de la fuente incrustada como bloque final en *...* (revisar).
+nota_curador: >-
+  El ratón y el gato es la fábula XXI de las Fábulas literarias (1782) de [Tomás de Iriarte](https://elfabulario.com/autores/tomas-de-iriarte/), y es una de las piezas más singulares de la colección porque el propio autor se sale del molde: anuncia que va a poner en castellano «una fábula suya» de Esopo sobre un ratón que alaba la fidelidad de un perro hasta que un gato reclama la misma virtud, y solo al final revela que la fábula no era de Esopo sino enteramente suya, en un giro dirigido contra quienes ensalzaban una obra sin saber de quién era y la censuraban en cuanto conocían al autor, un asunto no ajeno a la propia polémica de originalidad que Iriarte sostuvo con Samaniego tras la publicación de ambas colecciones de fábulas.
+
+  ##### Glosario
+
+  1. **Perdiguero:** perro de caza especializado en cobrar perdices, elogiado en la fábula como símbolo de la fidelidad.
+  2. **Fabulilla:** diminutivo con que el propio narrador se refiere, con falsa modestia, a la fábula que acaba de contar.
+  3. **Vituperar:** censurar con dureza algo que antes se había alabado; así resume la moraleja el cambio de opinión hacia una obra cuando se descubre quién es su autor.
 ---
 Tuvo Esopo famosas ocurrencias.
 ¡Qué invención tan sencilla! ¡Qué sentencias!...

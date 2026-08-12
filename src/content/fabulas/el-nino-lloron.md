@@ -16,6 +16,20 @@ autor: cayetano-fernández-cabello
 curador: Don Alejandro
 es_seudonimo: true
 nombre_real: Alejandro Morales Loaiza
+nota_curador: >-
+  El niño llorón se atribuye a [Cayetano Fernández Cabello](https://elfabulario.com/autores/cayetano-fernández-cabello/), autor de las Fábulas ascéticas en verso castellano y en variedad de metros (1864), escritas para la formación religiosa y moral del futuro Alfonso XII. No hemos podido confirmar en las fuentes digitales consultadas que esta pieza en concreto figure en el texto impreso de esa colección; lo verificable es el género y el tono, coherentes con su obra: la cita bíblica que encabeza el poema —«Responsio mollis frangit iram, sermo durus suscitat furorem» (Proverbios 15, 1)— encaja con el propósito devoto y sentencioso propio de sus fábulas ascéticas.
+
+  En la pieza, una niñera descubre por azar que el registro suave de un melodio calma al niño que llora, mientras el registro estridente del mismo instrumento lo enfurece; un maestro de música explica el fenómeno ante la familia alarmada y lo convierte en consejo moral: las palabras suaves aplacan la ira, las ásperas la avivan.
+
+  ##### Glosario
+
+  1. **Melodio:** instrumento musical de teclado y fuelle, antecesor del armonio.
+
+  2. **Flautado:** registro suave de un instrumento de teclado, de sonido semejante al de la flauta.
+
+  3. **Lengüetería:** conjunto de registros de lengüeta de un instrumento de teclado, de sonido más áspero y potente.
+
+  4. **Aperrearse:** irritarse, ponerse de mal humor.
 ---
 > *Responsio mollis frangit iram, sermo durus suscitat furorem.* — Proverbios 15, 1
 
