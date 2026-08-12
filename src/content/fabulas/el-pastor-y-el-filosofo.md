@@ -2,6 +2,7 @@
 titulo: El pastor y el filósofo
 # resumen: pendiente de curaduría
 fecha: 2026-05-16   # MARCADOR — fijar la fecha real al publicar
+ilustracion: /src/assets/uploads/el-pastor-y-el-filosofo.png
 borrador: false
 personajes: [pastor, filosofo]
 temas: [sabiduria, naturaleza, humildad]

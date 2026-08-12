@@ -2,6 +2,7 @@
 titulo: La pava y la hormiga
 # resumen: pendiente de curaduría
 fecha: 2026-05-16   # MARCADOR — fijar la fecha real al publicar
+ilustracion: /src/assets/uploads/la-pava-y-la-hormiga.png
 borrador: false
 personajes: [pava, hormiga]
 temas: [ironia, critica-social, necedad]

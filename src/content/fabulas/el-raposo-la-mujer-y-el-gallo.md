@@ -2,6 +2,7 @@
 titulo: El raposo, la mujer y el gallo
 # resumen: pendiente de curaduría
 fecha: 2026-05-16   # MARCADOR — fijar la fecha real al publicar
+ilustracion: /src/assets/uploads/el-raposo-la-mujer-y-el-gallo.png
 borrador: false
 personajes: [zorro, gallo]
 temas: [astucia, engano, prudencia]
