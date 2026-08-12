@@ -2,6 +2,7 @@
 titulo: La muerte
 # resumen: pendiente de curaduría
 fecha: 2026-05-16   # MARCADOR — fijar la fecha real al publicar
+ilustracion: /src/assets/uploads/la-muerte.png
 borrador: false
 personajes: [muerte]
 temas: [muerte, gula, ironia]
