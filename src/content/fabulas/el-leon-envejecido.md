@@ -1,18 +1,20 @@
 ---
 titulo: El león envejecido
-resumen: >-
-  Un león en sus últimos días recibe coces y dentelladas de los mismos animales que antes le rendían vasallaje; muere lamentando, sobre todo, la injuria del burro.
+resumen: Un león en sus últimos días recibe coces y dentelladas de los mismos
+  animales que antes le rendían vasallaje; muere lamentando, sobre todo, la
+  injuria del burro.
 fecha: 2026-05-15
 ilustracion: /src/assets/uploads/el-leon-envejecido.png
+foco: 50
 borrador: false
-personajes: 
+personajes:
   - leon
   - lobo
   - caballo
   - toro
   - jabali
   - burro
-temas: 
+temas:
   - vejez
   - ingratitud
 forma: verso
@@ -21,8 +23,20 @@ autor: felix-maria-de-samaniego
 curador: Don Alejandro
 es_seudonimo: true
 nombre_real: Alejandro Morales Loaiza
+traduccion: false
 nota_curador: >-
-  El león envejecido es la Fábula IV del libro tercero de las Fábulas morales de [Félix María de Samaniego](https://elfabulario.com/autores/felix-maria-de-samaniego/): un león en sus últimos días, reducido ya a un miserable estado, recibe coces y dentelladas de los mismos animales que antes le rendían vasallaje —el lobo, el caballo, el toro, el jabalí— y los soporta con entereza hasta que hasta el asno se suma al ultraje, momento en que el león muere lamentando que ese sea el insulto que más le duele. El asunto proviene de la tradición esópica y llegó a Samaniego a través de Fedro, la misma cadena de transmisión que también recibió Jean de La Fontaine para su «Le Lion devenu vieux»; la coz final del asno dio origen, de hecho, a la expresión francesa «le coup de pied de l'âne» para referirse al desaire de quien menos peso tiene.
+  El león envejecido es la Fábula IV del libro tercero de las Fábulas morales de
+  [Félix María de
+  Samaniego](https://elfabulario.com/autores/felix-maria-de-samaniego/): un león
+  en sus últimos días, reducido ya a un miserable estado, recibe coces y
+  dentelladas de los mismos animales que antes le rendían vasallaje —el lobo, el
+  caballo, el toro, el jabalí— y los soporta con entereza hasta que hasta el
+  asno se suma al ultraje, momento en que el león muere lamentando que ese sea
+  el insulto que más le duele. El asunto proviene de la tradición esópica y
+  llegó a Samaniego a través de Fedro, la misma cadena de transmisión que
+  también recibió Jean de La Fontaine para su «Le Lion devenu vieux»; la coz
+  final del asno dio origen, de hecho, a la expresión francesa «le coup de pied
+  de l'âne» para referirse al desaire de quien menos peso tiene.
 
   ##### Glosario
 
