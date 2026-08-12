@@ -198,6 +198,14 @@ const destacado = defineCollection({
 		.object({
 			activo: z.boolean().default(true),
 			cintillo: z.string(),
+			// Rotación semanal automática ("La fábula de la semana"). Cuando es
+			// true, la home ignora `tipo`/`*_referida` y elige de forma determinista
+			// una fábula ilustrada según la semana en curso (ver
+			// src/utils/fabulaSemanal.ts). El cambio efectivo lo dispara el rebuild
+			// semanal (.github/workflows/fabula-semanal.yml). Para fijar algo a mano
+			// (un autor, una entrada, una fábula concreta), ponlo en false y usa
+			// `tipo` + la referencia correspondiente.
+			rotacion_semanal: z.boolean().default(false),
 			tipo: z.enum(['fabula', 'entrada', 'autor']),
 			fabula_referida: z.preprocess(
 				emptyToUndefined,
@@ -215,6 +223,9 @@ const destacado = defineCollection({
 		.refine(
 			(data) => {
 				if (!data.activo) return true;
+				// En modo rotación semanal el elemento lo elige el código, no una
+				// referencia curada: no exigimos `*_referida`.
+				if (data.rotacion_semanal) return true;
 				if (data.tipo === 'fabula') return data.fabula_referida !== undefined;
 				if (data.tipo === 'entrada') return data.entrada_referida !== undefined;
 				if (data.tipo === 'autor') return data.autor_referido !== undefined;
