@@ -3,7 +3,9 @@ titulo: El esquilón y el gato
 resumen: Un esquilón llama a todos a misa con gran celo, pero él nunca baja al
   templo; un gato le reprocha que su palabra vale poco sin el ejemplo.
 fecha: 2026-07-24
+fecha_actualizada: 2026-08-18
 ilustracion: /src/assets/uploads/el-esquilon-y-el-gato.png
+spotify_url: https://open.spotify.com/episode/0wi3NdoXkq7gyJJTNHtBlH?si=sLdN1oaFSGWlYln1qDsQIQ
 borrador: false
 personajes:
   - esquilon
@@ -17,6 +19,8 @@ autor: cayetano-fernández-cabello
 curador: Don Alejandro
 es_seudonimo: true
 nombre_real: Alejandro Morales Loaiza
+traduccion: false
+moraleja: El consejo sin el ejemplo no edifica.
 nota_curador: >2
     El esquilón y el gato pertenece también a las Fábulas ascéticas en verso castellano y en variedad de metros (1864) de [Cayetano Fernández Cabello](https://elfabulario.com/autores/cayetano-fernández-cabello/): un esquilón —la campana pequeña que llama a los fieles a misa— repica con gran entusiasmo pidiendo a los feligreses que acudan al templo, pero él mismo nunca baja a la iglesia; un gato que lo escucha desde el tejado, al que la fábula bautiza como el rubio Marramaquí, le reprocha que su palabra vale poco si no va acompañada del ejemplo. El epígrafe latino que encabeza la pieza, tomado de Mateo 23, 3 («Dicunt, et non faciunt», «dicen, y no hacen»), remite directamente a la reprensión de Jesús contra los escribas y fariseos que predican sin practicar, y sitúa la fábula dentro del género de crítica a la hipocresía religiosa. No ha sido posible confirmar una fuente clásica o esópica concreta para esta fábula en particular; todo indica que es pieza original de Fernández Cabello, escrita con el mismo propósito devoto que el resto de la colección.
 
@@ -83,5 +87,3 @@ sin dar a la vez ejemplo,
 que no muy alto repique,
 no sea que se le aplique
 lo que al esquilón del templo.
-
-*El consejo sin el ejemplo no edifica.*
