@@ -3,8 +3,9 @@ titulo: El herrero y el perro
 resumen: Un perro, convencido de que su estilo de vida era compartido por todos
   los de su especie, descubre la realidad tras ver a sus vecinos.
 fecha: 2025-06-15
-fecha_actualizada: 2026-05-09
+fecha_actualizada: 2026-08-18
 ilustracion: /src/assets/uploads/el-herrero-y-el-perro.png
+spotify_url: https://open.spotify.com/episode/7GmKl7mVTZyHqFoPmIitNE?si=CCRSDPQES_W7VW4-q4VOhA
 borrador: false
 personajes:
   - perro
@@ -19,8 +20,18 @@ autor: felix-maria-de-samaniego
 curador: Don Alejandro
 es_seudonimo: true
 nombre_real: Alejandro Morales Loaiza
+traduccion: false
 nota_curador: >-
-  El herrero y el perro pertenece a las Fábulas morales (1781-1784) de [Félix María de Samaniego](https://elfabulario.com/autores/felix-maria-de-samaniego/): un perro que solo come, duerme y halaga a su amo a la hora de comer, sin ocuparse jamás de vigilar la fragua, se defiende alegando que le basta con haber nacido perro y no asno para no trabajar; el herrero, cansado de mantenerlo ocioso "a lo conde", lo echa de casa, y el animal recorre varias casas donde debe hacer de centinela, de lazarillo, de animal de noria, hasta descubrir que el destino reparte obligaciones a todos por igual y que ningún perro escapa de ellas fuera del amparo de un amo indulgente.
+  El herrero y el perro pertenece a las Fábulas morales (1781-1784) de [Félix
+  María de
+  Samaniego](https://elfabulario.com/autores/felix-maria-de-samaniego/): un
+  perro que solo come, duerme y halaga a su amo a la hora de comer, sin ocuparse
+  jamás de vigilar la fragua, se defiende alegando que le basta con haber nacido
+  perro y no asno para no trabajar; el herrero, cansado de mantenerlo ocioso "a
+  lo conde", lo echa de casa, y el animal recorre varias casas donde debe hacer
+  de centinela, de lazarillo, de animal de noria, hasta descubrir que el destino
+  reparte obligaciones a todos por igual y que ningún perro escapa de ellas
+  fuera del amparo de un amo indulgente.
 
   ##### Glosario
 
