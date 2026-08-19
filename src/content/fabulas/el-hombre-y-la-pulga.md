@@ -1,14 +1,17 @@
 ---
 titulo: El hombre y la pulga
-resumen: >-
-  Un hombre clama a Júpiter pidiéndole rayos y a Hércules para que acaben con una pulga que le picó en la cama; Samaniego censura el abuso de molestar a los dioses con antojos.
+resumen: Un hombre clama a Júpiter pidiéndole rayos y a Hércules para que acaben
+  con una pulga que le picó en la cama; Samaniego censura el abuso de molestar a
+  los dioses con antojos.
 fecha: 2026-05-15
+fecha_actualizada: 2026-08-18
 ilustracion: /src/assets/uploads/el-hombre-y-la-pulga.png
+spotify_url: https://open.spotify.com/episode/2Xm43TkVqBSGwASvIH0AoA?si=w1iOOp7YQmKhmC2zK3rTbg
 borrador: false
-personajes: 
+personajes:
   - pulga
   - zeus
-temas: 
+temas:
   - necedad
   - vanidad
 forma: verso
@@ -17,8 +20,19 @@ autor: felix-maria-de-samaniego
 curador: Don Alejandro
 es_seudonimo: true
 nombre_real: Alejandro Morales Loaiza
+traduccion: false
 nota_curador: >-
-  El hombre y la pulga pertenece a las Fábulas morales (1781-1784) de [Félix María de Samaniego](https://elfabulario.com/autores/felix-maria-de-samaniego/): un hombre picado por una pulga en la cama clama a Júpiter pidiéndole rayos, y a Hércules, para que acaben con el insecto, al que llama plaga fatal del género humano; Samaniego cierra con una moraleja sobre el abuso de invocar recursos extraordinarios —el cielo, en este caso— para resolver antojos y molestias sin importancia. No ha sido posible confirmar una fuente clásica concreta para esta fábula en particular; se sabe, en general, que Samaniego tomó buena parte de sus asuntos de Esopo, Fedro y La Fontaine, pero esta pieza bien puede ser de invención propia sobre un motivo cómico tradicional.
+  El hombre y la pulga pertenece a las Fábulas morales (1781-1784) de [Félix
+  María de
+  Samaniego](https://elfabulario.com/autores/felix-maria-de-samaniego/): un
+  hombre picado por una pulga en la cama clama a Júpiter pidiéndole rayos, y a
+  Hércules, para que acaben con el insecto, al que llama plaga fatal del género
+  humano; Samaniego cierra con una moraleja sobre el abuso de invocar recursos
+  extraordinarios —el cielo, en este caso— para resolver antojos y molestias sin
+  importancia. No ha sido posible confirmar una fuente clásica concreta para
+  esta fábula en particular; se sabe, en general, que Samaniego tomó buena parte
+  de sus asuntos de Esopo, Fedro y La Fontaine, pero esta pieza bien puede ser
+  de invención propia sobre un motivo cómico tradicional.
 
   ##### Glosario
 
