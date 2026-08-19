@@ -1,10 +1,12 @@
 ---
 titulo: El caracol y el cigarrón
-resumen: Un cigarrón se burla del paso lento del caracol y presume de sus saltos;
-  el caracol defiende la ventaja de avanzar despacio, pero seguro.
+resumen: Un cigarrón se burla del paso lento del caracol y presume de sus
+  saltos; el caracol defiende la ventaja de avanzar despacio, pero seguro.
 fecha: 2026-07-24
+fecha_actualizada: 2026-08-18
 ilustracion: /src/assets/uploads/el-caracol-y-el-cigarron.png
 foco: 30
+spotify_url: https://open.spotify.com/episode/6iYtQ2v3eigsQyRC3kag8Q?si=gP3rAqCXQle9y2maazLOMw
 borrador: false
 personajes:
   - caracol
@@ -18,6 +20,9 @@ autor: cayetano-fernández-cabello
 curador: Don Alejandro
 es_seudonimo: true
 nombre_real: Alejandro Morales Loaiza
+traduccion: false
+moraleja: El progreso en la virtud, para ser duradero, no ha de ser efecto de
+  fervores acelerados.
 nota_curador: >2
     El caracol y el cigarrón pertenece a las Fábulas ascéticas en verso castellano y en variedad de metros (1864) de [Cayetano Fernández Cabello](https://elfabulario.com/autores/cayetano-fernández-cabello/): un cigarrón se burla del paso lento del caracol y presume de la distancia que cubre de un salto, mientras el caracol replica que prefiere avanzar despacio pero con rumbo cierto, sin arriesgarse a caer «como de plomo» tras un salto imprudente; el epígrafe latino que abre la pieza, tomado del Salmo 83, 7 («Ibant de virtute in virtutem», «iban de virtud en virtud»), orienta la lectura hacia el terreno espiritual, pues así como el caracol crece poco a poco, la virtud cristiana no se adquiere de un arrebato sino con paciencia sostenida. No ha sido posible confirmar una fuente clásica o esópica concreta para esta fábula en particular; todo indica que es pieza original de Fernández Cabello, escrita con el propósito devoto de la colección que compuso para la educación religiosa del futuro Alfonso XII.
 
@@ -79,5 +84,3 @@ de una en otra subiendo,
 que, antojadizo y loco,
 querer hacerse santo en un minuto,
 y clavarse después sin otro fruto.
-
-*El progreso en la virtud, para ser duradero, no ha de ser efecto de fervores acelerados.*
