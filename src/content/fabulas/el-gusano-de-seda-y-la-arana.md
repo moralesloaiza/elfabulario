@@ -1,23 +1,38 @@
 ---
 titulo: El gusano de seda y la araña
-resumen: "El gusano de seda trabaja despacio su capullo mientras la araña, veloz, teje su tela en una noche y se compara con él."
-fecha: 2026-05-31   # MARCADOR: fijar la fecha real al publicar
+resumen: El gusano de seda trabaja despacio su capullo mientras la araña, veloz,
+  teje su tela en una noche y se compara con él.
+fecha: 2026-05-31
+fecha_actualizada: 2026-08-18
 ilustracion: /src/assets/uploads/el-gusano-de-seda-y-la-arana.png
+spotify_url: https://open.spotify.com/episode/2tH5wzSIsxmns7KyQJapER?si=NULAEr4kQbmgjsJgTwnCvA
 borrador: false
-personajes: [gusano, arana]
-temas: [trabajo, soberbia, vanidad, critica-literaria]
+personajes:
+  - gusano
+  - arana
+temas:
+  - trabajo
+  - soberbia
+  - vanidad
+  - critica-literaria
 forma: verso
 tradicion: hispanica
 autor: tomas-de-iriarte
 curador: Don Alejandro
 es_seudonimo: true
 nombre_real: Alejandro Morales Loaiza
-# Procedencia:
-# Iriarte, Fabula V de "Fabulas literarias",
-# Biblioteca Virtual Miguel de Cervantes (texto de dominio publico).
-# Moraleja de la fuente incrustada como bloque final en *...* (revisar).
+traduccion: false
+moraleja: Se ha de considerar la calidad de la obra y no el tiempo que se ha
+  tardado en hacerla.
 nota_curador: >-
-  El gusano de seda y la araña es la fábula V de las Fábulas literarias (1782) de [Tomás de Iriarte](https://elfabulario.com/autores/tomas-de-iriarte/): mientras el gusano trabaja despacio en su capullo, la araña teje su tela en una sola mañana y presume, con falsa risa, de lo rápido y bella que le ha quedado; el gusano, con sorna, se limita a responder que así le sale, dando a entender que la prisa se nota en el resultado. La fábula, como buena parte de la colección, traslada a los animales una discusión sobre el oficio literario: importa la calidad de lo escrito, no la velocidad con que se compone.
+  El gusano de seda y la araña es la fábula V de las Fábulas literarias (1782)
+  de [Tomás de Iriarte](https://elfabulario.com/autores/tomas-de-iriarte/):
+  mientras el gusano trabaja despacio en su capullo, la araña teje su tela en
+  una sola mañana y presume, con falsa risa, de lo rápido y bella que le ha
+  quedado; el gusano, con sorna, se limita a responder que así le sale, dando a
+  entender que la prisa se nota en el resultado. La fábula, como buena parte de
+  la colección, traslada a los animales una discusión sobre el oficio literario:
+  importa la calidad de lo escrito, no la velocidad con que se compone.
 
   ##### Glosario
 
@@ -37,5 +52,3 @@ y ya estará acabada al mediodía.
 ¡Mire qué sutil es, mire qué bella!...»
 El gusano con sorna respondía:
 «Usted tiene razón; así sale ella.»
-
-*Se ha de considerar la calidad de la obra y no el tiempo que se ha tardado en hacerla.*
