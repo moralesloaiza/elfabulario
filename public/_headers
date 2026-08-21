@@ -9,3 +9,13 @@
   Strict-Transport-Security: max-age=63072000; includeSubDomains; preload
   Permissions-Policy: camera=(), microphone=(), geolocation=(), payment=(), interest-cohort=()
   X-Frame-Options: SAMEORIGIN
+
+# PWA. El SW no debe quedar cacheado por el navegador/CDN: así los
+# despliegues nuevos toman efecto sin esperar a que expire una copia vieja.
+/sw.js
+  Cache-Control: no-cache
+  Content-Type: text/javascript; charset=utf-8
+
+# Sirve el manifest con el tipo MIME correcto en producción.
+/manifest.webmanifest
+  Content-Type: application/manifest+json; charset=utf-8
