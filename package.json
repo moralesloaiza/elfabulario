@@ -11,7 +11,8 @@
     "preview": "astro preview",
     "astro": "astro",
     "slugify:uploads": "node scripts/slugify-uploads.mjs",
-    "slugify:check": "node scripts/slugify-uploads.mjs --check"
+    "slugify:check": "node scripts/slugify-uploads.mjs --check",
+    "pwa:icons": "node scripts/pwa/generate-icons.mjs"
   },
   "dependencies": {
     "@astrojs/rss": "^4.0.18",
