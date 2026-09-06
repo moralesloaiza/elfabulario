@@ -1,10 +1,9 @@
 ---
 titulo: El asno cargado de reliquias
-# resumen: pendiente de curaduría
+resumen: Un asno que carga reliquias se envanece al ver las reverencias e inciensos que recibe a su paso, hasta que alguien le advierte que ese culto no se dirige a él sino a la carga sagrada que sostiene.
 fecha: 2026-05-15   # MARCADOR — fijar la fecha real al publicar
 ilustracion: /src/assets/uploads/el-asno-cargado-de-reliquias.png
 borrador: false
-# --- Taxonomía: PENDIENTE DE CURADURÍA (rellenar antes de build) ---
 personajes: [burro]
 temas: [vanidad, necedad]
 forma: verso

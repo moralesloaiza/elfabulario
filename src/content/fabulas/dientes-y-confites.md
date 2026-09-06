@@ -5,7 +5,7 @@ resumen: Los dientes de una niña libran batalla contra nueces y confites; vence
 fecha: 2026-07-09
 ilustracion: /src/assets/uploads/dientes-y-confites.png
 borrador: false
-personajes: []
+personajes: [nina, diente, dolor-de-muelas]
 temas:
   - gula
   - necedad

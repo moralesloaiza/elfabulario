@@ -1,10 +1,9 @@
 ---
 titulo: El asno y el lobo
-# resumen: pendiente de curaduría
+resumen: Un burro cojo engaña al lobo que lo acecha pidiéndole que le saque con los dientes una espina de la pata antes de devorarlo; cuando el lobo, disfrazado de cirujano, se acerca, el burro le propina una coz y escapa.
 fecha: 2026-05-16   # MARCADOR — fijar la fecha real al publicar
 ilustracion: /src/assets/uploads/el-asno-y-el-lobo.png
 borrador: false
-# --- Taxonomía: PENDIENTE DE CURADURÍA (rellenar antes de build) ---
 personajes:
   - burro
   - lobo

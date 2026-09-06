@@ -1,6 +1,6 @@
 ---
 titulo: Demetrio y Menandro
-# resumen: pendiente de curaduría
+resumen: Convertido en amo de Atenas, Demetrio el Faleriano desprecia a un cortesano de aspecto afectado hasta que le dicen que es el célebre autor Menandro, y al instante cambia su desdén por una deferente acogida.
 fecha: 2026-05-17   # MARCADOR — fijar la fecha real al publicar
 ilustracion: /src/assets/uploads/demetrio-y-menandro.png
 borrador: false

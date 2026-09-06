@@ -1,10 +1,9 @@
 ---
 titulo: El amo y el perro
-# resumen: pendiente de curaduría
+resumen: El Amo presume la fidelidad de su perro Palomo, que un día ahuyenta de la despensa a un gato ladrón; para probarlo de nuevo lo encierra varios días entre carnes sin vigilancia, y el pobre animal sale avergonzado, con el hocico ensangrentado, incapaz de resistir una tentación llevada al extremo.
 fecha: 2026-05-18   # MARCADOR — fijar la fecha real al publicar
 ilustracion: /src/assets/uploads/el-amo-y-el-perro.png
 borrador: false
-# --- Taxonomía: PENDIENTE DE CURADURÍA (rellenar antes de build) ---
 personajes: [amo, perro, gato]
 temas: [lealtad, engano]
 forma: verso

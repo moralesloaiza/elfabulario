@@ -1,10 +1,9 @@
 ---
 titulo: El asno infeliz
-# resumen: pendiente de curaduría
+resumen: Un jumento muere convencido de que con la muerte acaban sus desdichas, pero hasta su piel es aprovechada para hacer tambores que animan los bailes pastoriles; la mala estrella lo persigue incluso después de muerto.
 fecha: 2026-05-16   # MARCADOR — fijar la fecha real al publicar
 ilustracion: /src/assets/uploads/el-asno-infeliz.png
 borrador: false
-# --- Taxonomía: PENDIENTE DE CURADURÍA (rellenar antes de build) ---
 personajes:
   - burro
 temas:

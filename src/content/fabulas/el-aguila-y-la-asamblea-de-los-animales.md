@@ -1,6 +1,6 @@
 ---
 titulo: El águila y la asamblea de los animales
-# resumen: pendiente de curaduría
+resumen: Hartos de quejarse a Júpiter, los animales exponen ante el Águila sus envidias cruzadas —el león quiere la astucia del zorro, la paloma la ligereza del gallo, los peces anhelan los bosques—; el Águila les hace ver que nadie está conforme con su suerte, así que envidiar la ajena no tiene sentido.
 fecha: 2026-05-17   # MARCADOR — fijar la fecha real al publicar
 ilustracion: /src/assets/uploads/el-aguila-y-la-asamblea-de-los-animales.png
 borrador: false

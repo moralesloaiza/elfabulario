@@ -1,10 +1,9 @@
 ---
 titulo: Batalla de las comadrejas y los ratones
-# resumen: pendiente de curaduría
+resumen: Derrotados por las comadrejas, los ratones huyen en desbandada hacia sus cuevas; los soldados rasos logran refugiarse, pero los capitanes, que llevaban cuernos en la cabeza como insignia de mando, quedan atascados en las angostas entradas y son devorados.
 fecha: 2026-05-15   # MARCADOR — fijar la fecha real al publicar
 ilustracion: /src/assets/uploads/batalla-de-las-comadrejas-y-los-ratones.png
 borrador: false
-# --- Taxonomía: PENDIENTE DE CURADURÍA (rellenar antes de build) ---
 personajes: [comadreja, raton]
 temas: [guerra, soberbia]
 forma: verso

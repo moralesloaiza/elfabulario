@@ -1,6 +1,6 @@
 ---
 titulo: El amor y la locura
-# resumen: pendiente de curaduría
+resumen: Tras dejar ciego a Cupido de un golpe, la Locura es llevada ante Júpiter por la airada Venus; el dios falla que, como castigo, deberá servir para siempre de lazarillo al Amor ciego.
 fecha: 2026-05-16   # MARCADOR — fijar la fecha real al publicar
 ilustracion: /src/assets/uploads/el-amor-y-la-locura.png
 borrador: false

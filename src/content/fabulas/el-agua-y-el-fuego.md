@@ -7,7 +7,7 @@ fecha: 2026-07-11
 fecha_actualizada: 2026-07-25
 ilustracion: /src/assets/uploads/el-agua-y-el-fuego.png
 borrador: false
-personajes: []
+personajes: [agua, fuego]
 temas:
   - soberbia
   - necedad
