@@ -3,7 +3,7 @@ titulo: El camello y la pulga
 resumen: Un camello fatigado por la carga se queja del peso; la pulga que iba montada sobre él se apea creyendo aliviarlo, y el camello le responde con ironía, dejando claro lo insignificante de su ayuda.
 fecha: 2026-05-16
 fecha_actualizada: 2026-08-08
-ilustracion: /src/assets/uploads/chatgpt-image-6-ago-2026-23_24_26.png
+ilustracion: /src/assets/uploads/el-camello-y-la-pulga.png
 borrador: false
 personajes:
   - camello

@@ -4,7 +4,7 @@ resumen: Un gorrión se burla de una liebre apresada por un águila; en mitad de
   insulto, un gavilán lo atrapa a él.
 fecha: 2026-05-15
 fecha_actualizada: 2026-08-07
-ilustracion: /src/assets/uploads/chatgpt-image-7-ago-2026-00_05_32.png
+ilustracion: /src/assets/uploads/el-gorrion-y-la-liebre.png
 spotify_url: https://open.spotify.com/episode/43FKxxtAmqW384Xkon88tk?si=gTU62f2pSWi-CxSZbz6AwQ
 borrador: false
 personajes:

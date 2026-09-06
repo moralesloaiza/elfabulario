@@ -3,7 +3,7 @@ nacionalidad: Venezolano
 lugar_nacimiento: Maracaibo
 nombre: Alejandro de Morales y Loaiza
 tipo: colaborador
-imagen: /src/assets/uploads/chatgpt-image-4-ago-2026-09_21_20.png
+imagen: /src/assets/uploads/alejandro-de-morales-y-loaiza.png
 glosa: Director de El Fabulario y traductor de varias de sus fábulas.
 nacimiento: 1985
 siglo: XX
