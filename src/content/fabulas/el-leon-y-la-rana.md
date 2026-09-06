@@ -1,10 +1,9 @@
 ---
 titulo: El león y la rana
-# resumen: pendiente de curaduría
+resumen: Una noche oscura, un león recorre el bosque intentando localizar un ruido feroz y persistente, temiendo una fiera peligrosa; al amanecer descubre que la voz venía de una simple rana, toda boca y nada más.
 fecha: 2026-05-15   # MARCADOR — fijar la fecha real al publicar
 ilustracion: /src/assets/uploads/el-leon-y-la-rana.png
 borrador: false
-# --- Taxonomía: PENDIENTE DE CURADURÍA (rellenar antes de build) ---
 personajes: [leon, rana]
 temas: [vanidad, soberbia]
 forma: verso

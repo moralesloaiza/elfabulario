@@ -1,10 +1,9 @@
 ---
 titulo: El lobo y el perro
-# resumen: pendiente de curaduría
+resumen: Un lobo hambriento envidia la vida regalada de un perro y acepta su oferta de convertirse en guardián de una casa; pero al notar el pescuezo pelado del collar y enterarse de que vive encadenado, el lobo renuncia al trato y prefiere su libertad hambrienta a la abundancia cautiva.
 fecha: 2026-05-16   # MARCADOR — fijar la fecha real al publicar
 ilustracion: /src/assets/uploads/el-lobo-y-el-perro.png
 borrador: false
-# --- Taxonomía: PENDIENTE DE CURADURÍA (rellenar antes de build) ---
 personajes:
   - lobo
   - perro

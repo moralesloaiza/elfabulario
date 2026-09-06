@@ -1,10 +1,9 @@
 ---
 titulo: El lobo y el perro flaco
-# resumen: pendiente de curaduría
+resumen: Atrapado por un lobo, un perro flaco pide un plazo de quince días para engordar en la boda de la hija de su amo y así ofrecer mejor bocado; cuando el lobo vuelve, encuentra al perro acompañado de un fiero mastín y huye despavorido.
 fecha: 2026-05-16   # MARCADOR — fijar la fecha real al publicar
 ilustracion: /src/assets/uploads/el-lobo-y-el-perro-flaco.png
 borrador: false
-# --- Taxonomía: PENDIENTE DE CURADURÍA (rellenar antes de build) ---
 personajes:
   - lobo
   - perro

@@ -1,10 +1,9 @@
 ---
 titulo: El lobo, la zorra y el mono juez
-# resumen: pendiente de curaduría
+resumen: Un lobo acusa a una zorra de robo y ella lo niega; el mono juez, sin pruebas claras, falla igualmente que la zorra guarda lo robado, dejando ver que la mala fama condena al pícaro aunque alguna vez tenga razón.
 fecha: 2026-05-16   # MARCADOR — fijar la fecha real al publicar
 ilustracion: /src/assets/uploads/el-lobo-la-zorra-y-el-mono-juez.png
 borrador: false
-# --- Taxonomía: PENDIENTE DE CURADURÍA (rellenar antes de build) ---
 personajes:
   - lobo
   - zorro

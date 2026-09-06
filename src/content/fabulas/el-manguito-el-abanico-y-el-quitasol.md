@@ -4,7 +4,7 @@ resumen: "Sobre una mesa, un quitasol conversa con un manguito y un abanico y pr
 fecha: 2026-05-31   # MARCADOR: fijar la fecha real al publicar
 ilustracion: /src/assets/uploads/el-manguito-el-abanico-y-el-quitasol.png
 borrador: false
-personajes: []
+personajes: [quitasol, manguito, abanico]
 temas: [vanidad]
 forma: verso
 tradicion: hispanica

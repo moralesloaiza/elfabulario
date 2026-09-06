@@ -1,6 +1,6 @@
 ---
 titulo: El naufragio de Simónides
-# resumen: pendiente de curaduría
+resumen: En un naufragio, quienes cargan oro se hunden bajo su propio peso, mientras el sabio poeta Simónides, que solo llevaba consigo su saber, sobrevive y es acogido con generosidad al ser reconocido por sus versos; sus compañeros, en cambio, quedan mendigando con una tabla del naufragio.
 fecha: 2026-05-17   # MARCADOR — fijar la fecha real al publicar
 ilustracion: /src/assets/uploads/el-naufragio-de-simonides.png
 borrador: false

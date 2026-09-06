@@ -1,10 +1,9 @@
 ---
 titulo: El león y la cabra
-# resumen: pendiente de curaduría
+resumen: Hambriento y sin presa, un león ve a una cabra trepar a un risco y, con fingida ternura, la invita a bajar y pacer junto a él; la astuta cabra sospecha del súbito cariño real y se niega, dejando al león sin palabras.
 fecha: 2026-05-15   # MARCADOR — fijar la fecha real al publicar
 ilustracion: /src/assets/uploads/el-leon-y-la-cabra.png
 borrador: false
-# --- Taxonomía: PENDIENTE DE CURADURÍA (rellenar antes de build) ---
 personajes: [leon, cabra]
 temas: [astucia, prudencia]
 forma: verso

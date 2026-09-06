@@ -1,6 +1,6 @@
 ---
 titulo: El pastor y el filósofo
-# resumen: pendiente de curaduría
+resumen: Un pastor anciano, sabio sin haber pisado escuela, recibe la visita de un filósofo curioso por el origen de su fama; el pastor explica que aprendió todo observando la naturaleza —la laboriosidad de la abeja, la lealtad del mastín, la fidelidad de la paloma—, y el filósofo reconoce en él una ciencia más verdadera que la de los libros.
 fecha: 2026-05-16   # MARCADOR — fijar la fecha real al publicar
 ilustracion: /src/assets/uploads/el-pastor-y-el-filosofo.png
 borrador: false
