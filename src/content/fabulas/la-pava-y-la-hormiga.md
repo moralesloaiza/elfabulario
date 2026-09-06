@@ -1,6 +1,6 @@
 ---
 titulo: La pava y la hormiga
-# resumen: pendiente de curaduría
+resumen: Mientras devora hormigas sin reparo, una pava se queja de la crueldad de los hombres que comen pavos; una hormiga le replica señalando su hipocresía, y el cuento remata con unas hormigas que linchan a un gusano por roer un grano mientras ellas saquean el granero entero.
 fecha: 2026-05-16   # MARCADOR — fijar la fecha real al publicar
 ilustracion: /src/assets/uploads/la-pava-y-la-hormiga.png
 borrador: false
