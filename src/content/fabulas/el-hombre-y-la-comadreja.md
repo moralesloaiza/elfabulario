@@ -1,10 +1,9 @@
 ---
 titulo: El hombre y la comadreja
-# resumen: pendiente de curaduría
+resumen: Atrapada por un hombre, una comadreja alega que le hace un favor manteniendo la casa libre de ratones; el hombre le responde que su glotonería no perdona nada de la despensa, y la condena a muerte por su interesada excusa.
 fecha: 2026-05-15   # MARCADOR — fijar la fecha real al publicar
 ilustracion: /src/assets/uploads/el-hombre-y-la-comadreja.png
 borrador: false
-# --- Taxonomía: PENDIENTE DE CURADURÍA (rellenar antes de build) ---
 personajes: [comadreja]
 temas: [engano, mentira]
 forma: verso

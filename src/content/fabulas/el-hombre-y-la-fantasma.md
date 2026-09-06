@@ -1,6 +1,6 @@
 ---
 titulo: El hombre y la fantasma
-# resumen: pendiente de curaduría
+resumen: Un joven enfermo y descarriado es visitado por una Fantasma burlona que lo empuja de un extremo a otro —de la salud al matrimonio, de la avaricia a la ambición, del poder a la vida retirada—, mostrándole que el descontento lo persigue a cualquier parte donde huya.
 fecha: 2026-05-16   # MARCADOR — fijar la fecha real al publicar
 ilustracion: /src/assets/uploads/el-hombre-y-la-fantasma.png
 borrador: false

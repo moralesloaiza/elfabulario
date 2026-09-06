@@ -1,10 +1,9 @@
 ---
 titulo: El gato y las aves
-# resumen: pendiente de curaduría
+resumen: Fingiéndose un gato culto y bondadoso que ofrece enseñar música gratis, el astuto Mirrimiz convence a un grupo de aves inocentes de acercarse, y en cuanto las tiene cerca se merienda a la más gorda.
 fecha: 2026-05-18   # MARCADOR — fijar la fecha real al publicar
 ilustracion: /src/assets/uploads/el-gato-y-las-aves.png
 borrador: false
-# --- Taxonomía: PENDIENTE DE CURADURÍA (rellenar antes de build) ---
 personajes: [gato]
 temas: [engano, hipocresia]
 forma: verso

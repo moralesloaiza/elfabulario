@@ -1,10 +1,9 @@
 ---
 titulo: El león, el lobo y la zorra
-# resumen: pendiente de curaduría
+resumen: Ante un león viejo y enfermo, un lobo cortesano acusa a la zorra ausente de desleal; cuando la zorra llega, se defiende con astucia y receta que, para curar al rey, le arranquen la piel a un lobo vivo —el mismo delator—, quien muere víctima de su propia intriga.
 fecha: 2026-05-15   # MARCADOR — fijar la fecha real al publicar
 ilustracion: /src/assets/uploads/el-leon-el-lobo-y-la-zorra.png
 borrador: false
-# --- Taxonomía: PENDIENTE DE CURADURÍA (rellenar antes de build) ---
 personajes: [leon, lobo, zorro]
 temas: [adulacion, traicion, venganza]
 forma: verso

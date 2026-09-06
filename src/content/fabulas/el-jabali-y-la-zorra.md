@@ -1,10 +1,9 @@
 ---
 titulo: El jabalí y la zorra
-# resumen: pendiente de curaduría
+resumen: Un jabalí afila sus colmillos en un tronco sin que haya ningún peligro cerca; ante el extrañamiento de la zorra, responde que el buen guerrero se prepara precisamente en tiempos de paz.
 fecha: 2026-05-16   # MARCADOR — fijar la fecha real al publicar
 ilustracion: /src/assets/uploads/el-jabali-y-la-zorra.png
 borrador: false
-# --- Taxonomía: PENDIENTE DE CURADURÍA (rellenar antes de build) ---
 personajes:
   - jabali
   - zorro

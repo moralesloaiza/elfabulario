@@ -1,10 +1,9 @@
 ---
 titulo: El gato y el cazador
-# resumen: pendiente de curaduría
+resumen: Un gato deja la ciudad y se instala junto a un cotal de conejos, donde se da un festín; un cazador, siguiendo el rastro de plumas y huesos, lo atrapa y, pese a que el gato se defiende diciendo que solo hace lo mismo que el hombre en su plato, lo condena a muerte.
 fecha: 2026-05-18   # MARCADOR — fijar la fecha real al publicar
 ilustracion: /src/assets/uploads/el-gato-y-el-cazador.png
 borrador: false
-# --- Taxonomía: PENDIENTE DE CURADURÍA (rellenar antes de build) ---
 personajes: [gato, cazador, conejo]
 temas: [codicia, trampa]
 forma: verso

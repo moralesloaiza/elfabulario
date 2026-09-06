@@ -1,10 +1,9 @@
 ---
 titulo: El joven filósofo y sus compañeros
-# resumen: pendiente de curaduría
+resumen: Educado por un viejo filósofo, un joven se escandaliza al ver comer carne en un banquete, pero cede ante la insistencia y el aroma de un pajarillo; de bocado en bocado, termina devorando como los demás, mostrando cómo los vicios se insinúan poco a poco hasta dominarnos.
 fecha: 2026-05-18   # MARCADOR — fijar la fecha real al publicar
 ilustracion: /src/assets/uploads/el-joven-filosofo-y-sus-companeros.png
 borrador: false
-# --- Taxonomía: PENDIENTE DE CURADURÍA (rellenar antes de build) ---
 personajes: [filosofo]
 temas: [hipocresia, gula]
 forma: verso

@@ -1,10 +1,9 @@
 ---
 titulo: El ladrón
-# resumen: pendiente de curaduría
+resumen: Un ladrón goloso prueba la miel de una colmena y recibe a cambio el doloroso aguijón de las abejas, jurando no volver; la pena sigue de cerca al delito.
 fecha: 2026-05-18   # MARCADOR — fijar la fecha real al publicar
 ilustracion: /src/assets/uploads/el-ladron.png
 borrador: false
-# --- Taxonomía: PENDIENTE DE CURADURÍA (rellenar antes de build) ---
 personajes: [ladron]
 temas: [codicia, gula]
 forma: verso
