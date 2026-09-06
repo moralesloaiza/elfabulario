@@ -1,11 +1,10 @@
 ---
 titulo: La alforja
-# resumen: pendiente de curaduría
+resumen: Cada cual lleva una alforja con los vicios ajenos por delante y los propios a la espalda, viendo con facilidad las faltas de los demás mientras ignora las suyas.
 fecha: 2026-05-16   # MARCADOR — fijar la fecha real al publicar
 ilustracion: /src/assets/uploads/la-alforja.png
 borrador: false
-# --- Taxonomía: PENDIENTE DE CURADURÍA (rellenar antes de build) ---
-personajes: []
+personajes: [alforja]
 temas:
   - critica-social
   - vanidad

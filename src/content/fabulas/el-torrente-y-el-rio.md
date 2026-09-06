@@ -1,11 +1,10 @@
 ---
 titulo: El torrente y el río
-# resumen: pendiente de curaduría
+resumen: Huyendo de unos bandidos, un caminante cruza sin miedo un torrente estruendoso y logra escapar; poco después halla un río de aguas mansas y silenciosas y, confiado por su calma, se adentra en él sin recelo, para morir ahogado por la corriente traicionera.
 fecha: 2026-05-15   # MARCADOR — fijar la fecha real al publicar
 ilustracion: /src/assets/uploads/el-torrente-y-el-rio.png
 borrador: false
-# --- Taxonomía: PENDIENTE DE CURADURÍA (rellenar antes de build) ---
-personajes: []
+personajes: [caminante, bandolero]
 temas: [prudencia, miedo, engano]
 forma: verso
 tradicion: hispanica

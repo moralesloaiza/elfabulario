@@ -6,7 +6,7 @@ fecha: 2011-11-26
 fecha_actualizada: 2026-05-16
 ilustracion: /src/assets/uploads/la-alacena.png
 borrador: false
-personajes: []
+personajes: [relator, paje]
 temas:
   - critica-social
 forma: verso

@@ -4,7 +4,7 @@ resumen: "Un aprendiz de volatín se queja del contrapeso que le estorba en la m
 fecha: 2026-05-31   # MARCADOR: fijar la fecha real al publicar
 ilustracion: /src/assets/uploads/el-volatin-y-su-maestro.png
 borrador: false
-personajes: []
+personajes: [volatin, maestro]
 temas: [critica-literaria, soberbia, necedad]
 forma: verso
 tradicion: hispanica

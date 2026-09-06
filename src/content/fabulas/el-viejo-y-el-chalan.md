@@ -1,10 +1,9 @@
 ---
 titulo: El viejo y el chalán
-# resumen: pendiente de curaduría
+resumen: Un chalán intenta venderle a un viejo un perro guardián alabando todas sus virtudes, salvo un pequeño defecto —es algo goloso—; el viejo comprende que ese defecto basta para que el animal se deje sobornar por cualquier ladrón con un hueso.
 fecha: 2026-05-18   # MARCADOR — fijar la fecha real al publicar
 ilustracion: /src/assets/uploads/el-viejo-y-el-chalan.png
 borrador: false
-# --- Taxonomía: PENDIENTE DE CURADURÍA (rellenar antes de build) ---
 personajes: [anciano, chalan, perro]
 temas: [engano]
 forma: verso

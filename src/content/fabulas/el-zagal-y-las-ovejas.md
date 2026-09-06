@@ -7,7 +7,7 @@ fecha_actualizada: 2026-06-20
 ilustracion: /src/assets/uploads/el-zagal-y-las-ovejas.png
 spotify_url: https://open.spotify.com/episode/3ZptRHx6E07MBrJA2rwdTJ?si=KderPaA7Qv-RdhMAqyT8ng
 borrador: false
-personajes: []
+personajes: [zagal, lobo]
 temas:
   - engano
 forma: verso

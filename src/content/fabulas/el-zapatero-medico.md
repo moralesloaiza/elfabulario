@@ -1,6 +1,6 @@
 ---
 titulo: El zapatero médico
-# resumen: pendiente de curaduría
+resumen: Un zapatero inútil y hambriento se hace pasar por médico en la corte gracias a un supuesto antídoto; cuando el rey finge envenenarse para ponerlo a prueba, el impostor confiesa el engaño, y el rey reprende al pueblo por confiar su salud a quien ni siquiera le fiarían el calzado.
 fecha: 2026-05-17   # MARCADOR — fijar la fecha real al publicar
 ilustracion: /src/assets/uploads/el-zapatero-medico.png
 borrador: false

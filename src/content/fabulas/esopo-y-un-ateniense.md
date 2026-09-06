@@ -1,6 +1,6 @@
 ---
 titulo: Esopo y un ateniense
-# resumen: pendiente de curaduría
+resumen: Sorprendido jugando a las nueces con unos niños, el viejo Esopo es tachado de chocho por un ateniense; el sabio le muestra un arco destensado y, ante su desconcierto, le explica que la mente, como el arco, se rompe si siempre está en tensión, y rinde más si de vez en cuando descansa.
 fecha: 2026-05-17   # MARCADOR — fijar la fecha real al publicar
 ilustracion: /src/assets/uploads/esopo-y-un-ateniense.png
 borrador: false

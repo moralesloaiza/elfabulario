@@ -1,10 +1,9 @@
 ---
 titulo: El tordo flautista
-# resumen: pendiente de curaduría
+resumen: Un tordo virtuoso de la flauta, adiestrado durante un año por un zapatero, deja mudos de envidia a jilgueros y ruiseñores con su arte, y presume que solo el estudio, no el ocio, permite alcanzar tal maestría.
 fecha: 2026-05-18   # MARCADOR — fijar la fecha real al publicar
 ilustracion: /src/assets/uploads/el-tordo-flautista.png
 borrador: false
-# --- Taxonomía: PENDIENTE DE CURADURÍA (rellenar antes de build) ---
 personajes: [tordo]
 temas: [envidia, vanidad]
 forma: verso
