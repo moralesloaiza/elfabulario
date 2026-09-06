@@ -1,6 +1,6 @@
 ---
 titulo: El raposo, la mujer y el gallo
-# resumen: pendiente de curaduría
+resumen: Un raposo se lleva a un gallo robado mientras la dueña grita que es suyo; el gallo, astuto, le sugiere al raposo desmentirla en voz alta, y en cuanto este abre la boca para contestar, el gallo escapa volando a la copa de un árbol.
 fecha: 2026-05-16   # MARCADOR — fijar la fecha real al publicar
 ilustracion: /src/assets/uploads/el-raposo-la-mujer-y-el-gallo.png
 borrador: false

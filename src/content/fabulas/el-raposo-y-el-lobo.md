@@ -1,10 +1,9 @@
 ---
 titulo: El raposo y el lobo
-# resumen: pendiente de curaduría
+resumen: Un raposo cojo, mutilado por caer en trampas, se cruza con un lobo tuerto y desorejado por los mastines de un rebaño; ambos reconocen que su ciega glotonería los llevará, tarde o temprano, de nuevo a la trampa o al rebaño que los destruya.
 fecha: 2026-05-18   # MARCADOR — fijar la fecha real al publicar
 ilustracion: /src/assets/uploads/el-raposo-y-el-lobo.png
 borrador: false
-# --- Taxonomía: PENDIENTE DE CURADURÍA (rellenar antes de build) ---
 personajes: [zorro, lobo]
 temas: [astucia, engano]
 forma: verso

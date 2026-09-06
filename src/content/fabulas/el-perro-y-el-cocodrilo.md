@@ -1,10 +1,9 @@
 ---
 titulo: El perro y el cocodrilo
-# resumen: pendiente de curaduría
+resumen: Un perro bebe del Nilo sin dejar de correr, y un taimado cocodrilo lo invita a beber quieto; el perro, prudente, se niega, sabiendo que seguir el consejo del enemigo sería entregarle el cuello.
 fecha: 2026-05-16   # MARCADOR — fijar la fecha real al publicar
 ilustracion: /src/assets/uploads/el-perro-y-el-cocodrilo.png
 borrador: false
-# --- Taxonomía: PENDIENTE DE CURADURÍA (rellenar antes de build) ---
 personajes:
   - perro
   - cocodrilo

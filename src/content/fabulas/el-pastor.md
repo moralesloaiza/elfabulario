@@ -1,10 +1,9 @@
 ---
 titulo: El pastor
-# resumen: pendiente de curaduría
+resumen: Salicio toca la zampoña todo el día y el rebaño, embelesado, se olvida de pacer; mejor sería romperle el instrumento, pues la habilidad que perjudica deja de ser virtud para volverse vicio.
 fecha: 2026-05-18   # MARCADOR — fijar la fecha real al publicar
 ilustracion: /src/assets/uploads/el-pastor.png
 borrador: false
-# --- Taxonomía: PENDIENTE DE CURADURÍA (rellenar antes de build) ---
 personajes: [pastor]
 temas: [necedad, trabajo]
 forma: verso

@@ -4,7 +4,7 @@ resumen: "El té, camino de Europa, y la salvia, camino de China, se cruzan y co
 fecha: 2026-05-31   # MARCADOR: fijar la fecha real al publicar
 ilustracion: /src/assets/uploads/el-te-y-la-salvia.png
 borrador: false
-personajes: []
+personajes: [te, salvia]
 temas: [critica-literaria, necedad]
 forma: verso
 tradicion: hispanica

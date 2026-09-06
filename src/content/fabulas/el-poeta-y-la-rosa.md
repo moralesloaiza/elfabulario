@@ -1,6 +1,6 @@
 ---
 titulo: El poeta y la rosa
-# resumen: pendiente de curaduría
+resumen: Un poeta corta una rosa lozana para llevarla ante su amada Clori, advirtiéndole que junto a tanta hermosura quedará marchita y opacada; la rosa le replica, dolida, que para coronar a un héroe no hay que despojar de mérito a quien no lo tiene.
 fecha: 2026-05-17   # MARCADOR — fijar la fecha real al publicar
 ilustracion: /src/assets/uploads/el-poeta-y-la-rosa.png
 borrador: false

@@ -1,10 +1,9 @@
 ---
 titulo: El ruiseñor y el mochuelo
-# resumen: pendiente de curaduría
+resumen: Un ruiseñor canta sus penas en plena noche hasta que, distraído, cae en las garras de un mochuelo cazador; sus vecinos del bosque, hartos del canto nocturno, celebran su muerte en vez de lamentarla.
 fecha: 2026-05-18   # MARCADOR — fijar la fecha real al publicar
 ilustracion: /src/assets/uploads/el-ruisenor-y-el-mochuelo.png
 borrador: false
-# --- Taxonomía: PENDIENTE DE CURADURÍA (rellenar antes de build) ---
 personajes: [ruisenor, mochuelo]
 temas: [necedad, vanidad]
 forma: verso

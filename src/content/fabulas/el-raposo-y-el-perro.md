@@ -1,6 +1,6 @@
 ---
 titulo: El raposo y el perro
-# resumen: pendiente de curaduría
+resumen: Un mastín y un raposo, amigos ocasionales, conversan hasta que el raposo se pone nervioso al oír hablar de un robo de gallinas la noche anterior; sus propias evasivas lo delatan, y el perro, dándose cuenta de que es el ladrón, le da su merecido.
 fecha: 2026-05-17   # MARCADOR — fijar la fecha real al publicar
 ilustracion: /src/assets/uploads/el-raposo-y-el-perro.png
 borrador: false

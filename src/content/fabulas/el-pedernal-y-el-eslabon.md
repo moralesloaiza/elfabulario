@@ -4,7 +4,7 @@ resumen: "El pedernal reprocha al eslabón los golpes que recibe, y en la disput
 fecha: 2026-05-31   # MARCADOR: fijar la fecha real al publicar
 ilustracion: /src/assets/uploads/el-pedernal-y-el-eslabon.png
 borrador: false
-personajes: []
+personajes: [pedernal, eslabon]
 temas: [critica-literaria, sabiduria]
 forma: verso
 tradicion: hispanica

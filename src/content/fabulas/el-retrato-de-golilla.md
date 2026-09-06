@@ -4,7 +4,7 @@ resumen: "Un pintor retrata a un hombre con vestiduras anticuadas para dar aire 
 fecha: 2026-05-31   # MARCADOR: fijar la fecha real al publicar
 ilustracion: /src/assets/uploads/el-retrato-de-golilla.png
 borrador: false
-personajes: []
+personajes: [pintor, retratado]
 temas: [critica-literaria, vanidad, necedad]
 forma: verso
 tradicion: hispanica
