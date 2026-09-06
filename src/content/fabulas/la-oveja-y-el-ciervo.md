@@ -1,10 +1,9 @@
 ---
 titulo: La oveja y el ciervo
-# resumen: pendiente de curaduría
+resumen: Un ciervo pide trigo prestado a una oveja ofreciendo como fiador a un lobo; la oveja rechaza el trato al comprender que, si no le pagan, tendría que cobrárselo a un lobo armado de dientes y a un ciervo veloz para huir.
 fecha: 2026-05-16   # MARCADOR — fijar la fecha real al publicar
 ilustracion: /src/assets/uploads/la-oveja-y-el-ciervo.png
 borrador: false
-# --- Taxonomía: PENDIENTE DE CURADURÍA (rellenar antes de build) ---
 personajes:
   - oveja
   - ciervo

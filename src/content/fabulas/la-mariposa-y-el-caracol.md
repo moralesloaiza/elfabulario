@@ -1,6 +1,6 @@
 ---
 titulo: La mariposa y el caracol
-# resumen: pendiente de curaduría
+resumen: Una mariposa recién nacida desprecia a un humilde caracol y pide que lo maten por ensuciar el jardín; el caracol le recuerda que ella misma, hace apenas unos días, no era más que una oruga arrastrándose igual que él.
 fecha: 2026-05-17   # MARCADOR — fijar la fecha real al publicar
 ilustracion: /src/assets/uploads/la-mariposa-y-el-caracol.png
 borrador: false

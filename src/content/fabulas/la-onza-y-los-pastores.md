@@ -1,10 +1,9 @@
 ---
 titulo: La onza y los pastores
-# resumen: pendiente de curaduría
+resumen: Caída en una trampa, una onza es apaleada por los pastores vecinos, salvo uno que, compadecido, le da de comer; al recuperar las fuerzas, la fiera escapa y se venga sangrientamente de sus verdugos, pero perdona la vida al pastor que fue su bienhechor.
 fecha: 2026-05-15   # MARCADOR — fijar la fecha real al publicar
 ilustracion: /src/assets/uploads/la-onza-y-los-pastores.png
 borrador: false
-# --- Taxonomía: PENDIENTE DE CURADURÍA (rellenar antes de build) ---
 personajes: [leopardo, pastor]
 temas: [traicion, venganza, piedad]
 forma: verso

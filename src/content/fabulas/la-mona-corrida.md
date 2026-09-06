@@ -1,10 +1,9 @@
 ---
 titulo: La mona corrida
-# resumen: pendiente de curaduría
+resumen: En un concurso convocado por Júpiter para premiar a la cría más hermosa, una mona llega ufana presentando a su feo cachorro y provoca la risa general, incluida la del propio dios; corrida y humillada, la mona se marcha, enseñando cuánto nos engaña el amor propio.
 fecha: 2026-05-15   # MARCADOR — fijar la fecha real al publicar
 ilustracion: /src/assets/uploads/la-mona-corrida.png
 borrador: false
-# --- Taxonomía: PENDIENTE DE CURADURÍA (rellenar antes de build) ---
 personajes: [mona]
 temas: [vanidad, necedad]
 forma: verso

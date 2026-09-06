@@ -1,6 +1,6 @@
 ---
 titulo: La muerte
-# resumen: pendiente de curaduría
+resumen: La reina Muerte busca un ministro que haga prosperar su reinado y descarta la peste por innecesaria, habiendo ya tantos médicos en el mundo; tras considerar varios vicios candidatos, otorga el cargo a la intemperancia.
 fecha: 2026-05-16   # MARCADOR — fijar la fecha real al publicar
 ilustracion: /src/assets/uploads/la-muerte.png
 borrador: false

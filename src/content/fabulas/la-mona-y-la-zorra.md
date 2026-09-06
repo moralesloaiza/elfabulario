@@ -1,10 +1,9 @@
 ---
 titulo: La mona y la zorra
-# resumen: pendiente de curaduría
+resumen: Una mona alaba la belleza de la zorra pero le propone cortarle la cola por desproporcionada; la zorra rechaza indignada el consejo, prefiriendo arrastrarla por el suelo antes que perder lo que es suyo.
 fecha: 2026-05-16   # MARCADOR — fijar la fecha real al publicar
 ilustracion: /src/assets/uploads/la-mona-y-la-zorra.png
 borrador: false
-# --- Taxonomía: PENDIENTE DE CURADURÍA (rellenar antes de build) ---
 personajes:
   - mona
   - zorro

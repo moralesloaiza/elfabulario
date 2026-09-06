@@ -5,7 +5,7 @@ resumen: La nariz, harta de cargar los anteojos, tira a los ojos a la calle; y e
 fecha: 2026-07-09
 ilustracion: /src/assets/uploads/la-nariz-y-los-ojos.png
 borrador: false
-personajes: []
+personajes: [nariz, ojo]
 temas:
   - necedad
   - prudencia

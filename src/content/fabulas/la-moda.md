@@ -1,10 +1,9 @@
 ---
 titulo: La moda
-# resumen: pendiente de curaduría
+resumen: Un mono viajado regresa a África y, en vez de enseñar leyes o costumbres, contagia a los suyos la última moda de zapatos de cáscara de nuez; cuando un leopardo los ataca, el calzado les impide huir y mueren muchos, sin que eso baste para curarlos de imitar cualquier moda extranjera.
 fecha: 2026-05-18   # MARCADOR — fijar la fecha real al publicar
 ilustracion: /src/assets/uploads/la-moda.png
 borrador: false
-# --- Taxonomía: PENDIENTE DE CURADURÍA (rellenar antes de build) ---
 personajes: [mono]
 temas: [vanidad, necedad]
 forma: verso
