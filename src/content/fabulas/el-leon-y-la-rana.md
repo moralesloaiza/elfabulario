@@ -1,21 +1,25 @@
 ---
 titulo: El león y la rana
-resumen: Una noche oscura, un león recorre el bosque intentando localizar un ruido feroz y persistente, temiendo una fiera peligrosa; al amanecer descubre que la voz venía de una simple rana, toda boca y nada más.
-fecha: 2026-05-15   # MARCADOR — fijar la fecha real al publicar
-ilustracion: /src/assets/uploads/el-leon-y-la-rana.png
+resumen: Una noche oscura, un león recorre el bosque intentando localizar un
+  ruido feroz y persistente, temiendo una fiera peligrosa; al amanecer descubre
+  que la voz venía de una simple rana, toda boca y nada más.
+fecha: 2026-05-15
+fecha_actualizada: 2026-09-06
+ilustracion: /src/assets/uploads/chatgpt-image-6-sept-2026-08_17_26.png
 borrador: false
-personajes: [leon, rana]
-temas: [vanidad, soberbia]
+personajes:
+  - leon
+  - rana
+temas:
+  - vanidad
+  - soberbia
 forma: verso
 tradicion: hispanica
 autor: felix-maria-de-samaniego
 curador: Don Alejandro
 es_seudonimo: true
 nombre_real: Alejandro Morales Loaiza
-# --- Procedencia ---
-# Libro IV, Fábula XXI — ed. Emilio Palacios Fernández,
-# Biblioteca Virtual Miguel de Cervantes (texto de dominio público).
-# Última estrofa envuelta en ***...*** como hipótesis de moraleja; revisar.
+traduccion: false
 ---
 Una lóbrega noche silenciosa
 iba un León horroroso
