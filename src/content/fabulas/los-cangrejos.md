@@ -1,10 +1,9 @@
 ---
 titulo: Los cangrejos
-# resumen: pendiente de curaduría
+resumen: Una asamblea de cangrejos ordena que las madres enseñen a sus crías a caminar hacia adelante, pero ellas mismas siguen andando hacia atrás; los pequeños imitan el ejemplo, no la lección, y la reforma se abandona sin remedio.
 fecha: 2026-05-16   # MARCADOR — fijar la fecha real al publicar
 ilustracion: /src/assets/uploads/los-cangrejos.png
 borrador: false
-# --- Taxonomía: PENDIENTE DE CURADURÍA (rellenar antes de build) ---
 personajes:
   - cangrejo
 temas:

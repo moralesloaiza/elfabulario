@@ -1,10 +1,10 @@
 ---
 titulo: Los dos titiriteros
-# resumen: pendiente de curaduría
+resumen: En una plaza, un titiritero muestra trucos inocentes con monedas que aparecen de la nada; su rival, en cambio, pone objetos que revelan el vicio secreto de quien los toca —espadas para los violentos, cordeles para los ladrones, orejas de burro en un espejo—, y al preguntársele su nombre responde que no es el diablo, sino el vicio.
 fecha: 2026-05-17   # MARCADOR — fijar la fecha real al publicar
 ilustracion: /src/assets/uploads/los-dos-titiriteros.png
 borrador: false
-personajes: []
+personajes: [titiritero]
 temas: [engano, critica-social, ironia]
 forma: verso
 tradicion: hispanica

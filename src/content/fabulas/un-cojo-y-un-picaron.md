@@ -1,10 +1,9 @@
 ---
 titulo: Un cojo y un picarón
-# resumen: pendiente de curaduría
+resumen: Un insolente se burla repetidamente de la cojera de un hombre paciente, hasta que este, colérico, le arroja su muleta y se queda sobre un pie; lamenta solo no poder correr tras él para darle su merecido, pues lo que de verdad afrenta no es lo que se padece, sino lo que se merece.
 fecha: 2026-05-16   # MARCADOR — fijar la fecha real al publicar
 ilustracion: /src/assets/uploads/un-cojo-y-un-picaron.png
 borrador: false
-# --- Taxonomía: PENDIENTE DE CURADURÍA (rellenar antes de build) ---
 personajes:
   - cojo
   - picaro

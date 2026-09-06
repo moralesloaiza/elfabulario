@@ -6,7 +6,7 @@ fecha: 2026-05-31
 fecha_actualizada: 2026-08-09
 ilustracion: /src/assets/uploads/los-dos-huéspedes.png
 borrador: false
-personajes: []
+personajes: [huesped]
 temas:
   - critica-literaria
   - engano

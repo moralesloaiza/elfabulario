@@ -1,10 +1,9 @@
 ---
 titulo: Los dos gallos
-# resumen: pendiente de curaduría
+resumen: Tras vencer a su rival, un gallo proclama a gritos su victoria desde lo alto; un gavilán lo oye, lo atrapa y le da muerte, dejando al gallo derrotado como nuevo dueño del gallinero.
 fecha: 2026-05-16   # MARCADOR — fijar la fecha real al publicar
 ilustracion: /src/assets/uploads/los-dos-gallos.png
 borrador: false
-# --- Taxonomía: PENDIENTE DE CURADURÍA (rellenar antes de build) ---
 personajes:
   - gallo
   - aguila

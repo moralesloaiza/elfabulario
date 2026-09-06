@@ -1,10 +1,9 @@
 ---
 titulo: Los ratones y el gato
-# resumen: pendiente de curaduría
+resumen: El astuto gato Marramaquiz se instala en una casa infestada de ratones y los va cazando uno a uno con calma; los ratones, aconsejados por el prudente Don Roepán, dejan de bajar al piso donde vive, y cuando el hambriento gato finge estar muerto para atraerlos, Roepán no se deja engañar por segunda vez.
 fecha: 2026-05-16   # MARCADOR — fijar la fecha real al publicar
 ilustracion: /src/assets/uploads/los-ratones-y-el-gato.png
 borrador: false
-# --- Taxonomía: PENDIENTE DE CURADURÍA (rellenar antes de build) ---
 personajes:
   - raton
   - gato

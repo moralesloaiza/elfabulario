@@ -1,10 +1,9 @@
 ---
 titulo: Los dos machos
-# resumen: pendiente de curaduría
+resumen: Dos machos viajan juntos; uno, cargado de dinero y cascabeles, marcha ufano, y el otro, sin adornos, lleva solo costales de cebada; unos ladrones asaltan y maltratan al primero por su riqueza, dejando indemne al segundo, que renuncia a envidiar tesoros tan peligrosos.
 fecha: 2026-05-15   # MARCADOR — fijar la fecha real al publicar
 ilustracion: /src/assets/uploads/los-dos-machos.png
 borrador: false
-# --- Taxonomía: PENDIENTE DE CURADURÍA (rellenar antes de build) ---
 personajes: [burro]
 temas: [riqueza, codicia]
 forma: verso

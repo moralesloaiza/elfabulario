@@ -1,11 +1,10 @@
 ---
 titulo: Los navegantes
-# resumen: pendiente de curaduría
+resumen: En plena tormenta, los pasajeros de un barco lloran de terror; cuando el mar se calma, ríen aliviados, mientras el piloto se mantiene sereno en ambos momentos, sabiendo que la suerte, buena o mala, puede cambiar en un instante.
 fecha: 2026-05-15   # MARCADOR — fijar la fecha real al publicar
 ilustracion: /src/assets/uploads/los-navegantes.png
 borrador: false
-# --- Taxonomía: PENDIENTE DE CURADURÍA (rellenar antes de build) ---
-personajes: []
+personajes: [pasajero, piloto]
 temas: [prudencia, miedo]
 forma: verso
 tradicion: hispanica

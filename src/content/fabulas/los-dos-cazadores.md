@@ -1,10 +1,9 @@
 ---
 titulo: Los dos cazadores
-# resumen: pendiente de curaduría
+resumen: Ante un lobo temible, el valeroso Pedro Ponce se planta y muere, mientras el prudente Juan Carranza trepa a una encina y se salva; la fábula invita a imitar al segundo, no al primero.
 fecha: 2026-05-18   # MARCADOR — fijar la fecha real al publicar
 ilustracion: /src/assets/uploads/los-dos-cazadores.png
 borrador: false
-# --- Taxonomía: PENDIENTE DE CURADURÍA (rellenar antes de build) ---
 personajes: [cazador, lobo]
 temas: [prudencia, valentia, cobardia]
 forma: verso
