@@ -1,10 +1,9 @@
 ---
 titulo: El carretero y Hércules
-# resumen: pendiente de curaduría
+resumen: Con el carro atascado en el barro, un carretero se limita a maldecir y pide ayuda a Hércules; el dios le exige primero aligerar la carga y mover la piedra, y solo entonces, al arrear él mismo a las mulas, logra salir del atolladero.
 fecha: 2026-05-16   # MARCADOR — fijar la fecha real al publicar
 ilustracion: /src/assets/uploads/el-carretero-y-hercules.png
 borrador: false
-# --- Taxonomía: PENDIENTE DE CURADURÍA (rellenar antes de build) ---
 personajes:
   - carretero
 temas:

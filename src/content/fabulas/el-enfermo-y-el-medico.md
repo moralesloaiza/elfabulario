@@ -1,10 +1,9 @@
 ---
 titulo: El enfermo y el médico
-# resumen: pendiente de curaduría
+resumen: Un enfermo agonizante escucha al médico asegurar que se habría curado de haber acudido antes; el moribundo le responde con ironía que ese consejo, ahora, llega tan tarde como la cebada al asno ya muerto.
 fecha: 2026-05-15   # MARCADOR — fijar la fecha real al publicar
 ilustracion: /src/assets/uploads/el-enfermo-y-el-medico.png
 borrador: false
-# --- Taxonomía: PENDIENTE DE CURADURÍA (rellenar antes de build) ---
 personajes: [doctor]
 temas: [necedad, ironia]
 forma: verso

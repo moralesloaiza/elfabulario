@@ -1,10 +1,9 @@
 ---
 titulo: El ciervo y los bueyes
-# resumen: pendiente de curaduría
+resumen: Huyendo de una batida, un ciervo se esconde entre los bueyes en un establo; los mozos no lo notan, pero el dueño, más observador, repara en algo extraño y termina por descubrir su cornamenta entre las ramas, sellando su suerte.
 fecha: 2026-05-15   # MARCADOR — fijar la fecha real al publicar
 ilustracion: /src/assets/uploads/el-ciervo-y-los-bueyes.png
 borrador: false
-# --- Taxonomía: PENDIENTE DE CURADURÍA (rellenar antes de build) ---
 personajes: [ciervo, buey, pastor]
 temas: [prudencia]
 forma: verso

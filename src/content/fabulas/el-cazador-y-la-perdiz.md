@@ -1,10 +1,9 @@
 ---
 titulo: El cazador y la perdiz
-# resumen: pendiente de curaduría
+resumen: Atrapada en la red, una perdiz ofrece al cazador atraer a sus propias amigas a cambio de su libertad; el cazador, indignado por la traición que propone, la mata en vez de premiarla.
 fecha: 2026-05-15   # MARCADOR — fijar la fecha real al publicar
 ilustracion: /src/assets/uploads/el-cazador-y-la-perdiz.png
 borrador: false
-# --- Taxonomía: PENDIENTE DE CURADURÍA (rellenar antes de build) ---
 personajes: [cazador, perdiz]
 temas: [traicion, engano]
 forma: verso

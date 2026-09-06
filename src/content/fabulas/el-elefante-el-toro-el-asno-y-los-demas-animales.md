@@ -1,10 +1,9 @@
 ---
 titulo: El elefante, el toro, el asno y los demás animales
-# resumen: pendiente de curaduría
+resumen: En una asamblea de animales, el elefante y el toro proponen que los carniceros dejen de devorar a los débiles, y la concurrencia los aplaude; cuando el asno defiende la misma idea, todos lo abuchean por disparatado, dejando claro que se juzga el argumento por quien lo dice.
 fecha: 2026-05-18   # MARCADOR — fijar la fecha real al publicar
 ilustracion: /src/assets/uploads/el-elefante-el-toro-el-asno-y-los-demas-animales.png
 borrador: false
-# --- Taxonomía: PENDIENTE DE CURADURÍA (rellenar antes de build) ---
 personajes: [elefante, toro, burro, leon]
 temas: [soberbia, vanidad]
 forma: verso

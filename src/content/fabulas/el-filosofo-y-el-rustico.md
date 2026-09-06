@@ -1,6 +1,6 @@
 ---
 titulo: El filósofo y el rústico
-# resumen: pendiente de curaduría
+resumen: Un filósofo halla a un rústico clavando en la pared a un milano como escarmiento por robar gallinas, y le hace notar que el hombre, que devora inocentes sin parar, merecería peor castigo; el rústico, ofendido, rechaza la comparación.
 fecha: 2026-05-16   # MARCADOR — fijar la fecha real al publicar
 ilustracion: /src/assets/uploads/el-filosofo-y-el-rustico.png
 borrador: false

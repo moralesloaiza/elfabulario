@@ -1,10 +1,9 @@
 ---
 titulo: El cazador y el perro
-# resumen: pendiente de curaduría
+resumen: Un viejo perro de caza ya no logra alcanzar al jabalí y su amo lo maldice por ello; el perro le recuerda los trofeos que le procuró en su juventud, pero reconoce que reclamar gratitud a un ingrato es tan inútil como ladrarle a la luna.
 fecha: 2026-05-15   # MARCADOR — fijar la fecha real al publicar
 ilustracion: /src/assets/uploads/el-cazador-y-el-perro.png
 borrador: false
-# --- Taxonomía: PENDIENTE DE CURADURÍA (rellenar antes de build) ---
 personajes: [perro, cazador]
 temas: [ingratitud, vejez]
 forma: verso

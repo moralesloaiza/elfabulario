@@ -1,6 +1,6 @@
 ---
 titulo: El búho y el hombre
-# resumen: pendiente de curaduría
+resumen: Un búho que vive retirado presume que las demás aves lo rodean por admiración a su sabiduría; un hombre le hace ver que en realidad se acercan para burlarse de su pedantería.
 fecha: 2026-05-17   # MARCADOR — fijar la fecha real al publicar
 ilustracion: /src/assets/uploads/el-buho-y-el-hombre.png
 borrador: false

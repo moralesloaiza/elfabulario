@@ -1,10 +1,9 @@
 ---
 titulo: El ciudadano pastor
-# resumen: pendiente de curaduría
+resumen: Encandilado por los versos pastoriles, un joven de ciudad se disfraza de zagal y se va al campo en busca de la vida bucólica que imaginaba; un pastor tosco lo espanta y una pastora huye asustada de él, y termina volviendo desengañado a la ciudad.
 fecha: 2026-05-18   # MARCADOR — fijar la fecha real al publicar
 ilustracion: /src/assets/uploads/el-ciudadano-pastor.png
 borrador: false
-# --- Taxonomía: PENDIENTE DE CURADURÍA (rellenar antes de build) ---
 personajes: [pastor]
 temas: [necedad, naturaleza]
 forma: verso

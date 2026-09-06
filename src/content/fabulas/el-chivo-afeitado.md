@@ -1,6 +1,6 @@
 ---
 titulo: El chivo afeitado
-# resumen: pendiente de curaduría
+resumen: Envidioso de que ya no se estile la barba entre los jóvenes, un chivo vanidoso se hace afeitar por un mono barbero; al salir lampiño se convierte en la irrisión de perros, gatos y de los demás chivos.
 fecha: 2026-05-17   # MARCADOR — fijar la fecha real al publicar
 ilustracion: /src/assets/uploads/el-chivo-afeitado.png
 borrador: false

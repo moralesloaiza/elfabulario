@@ -1,6 +1,6 @@
 ---
 titulo: El cerdo, el carnero y la cabra
-# resumen: pendiente de curaduría
+resumen: Camino al mercado, un cerdo grita de terror presintiendo su muerte mientras la cabra y el carnero, destinados a dar leche y lana, van callados; el cerdo comprende que, al servir solo de alimento, su fin es inminente, aunque anticiparlo no le sirve de nada.
 fecha: 2026-05-16   # MARCADOR — fijar la fecha real al publicar
 ilustracion: /src/assets/uploads/el-cerdo-el-carnero-y-la-cabra.png
 borrador: false

@@ -6,7 +6,7 @@ fecha: 2026-05-31
 fecha_actualizada: 2026-06-20
 ilustracion: /src/assets/uploads/el-galan-y-la-dama.png
 borrador: false
-personajes: []
+personajes: [galan, dama]
 temas:
   - critica-literaria
   - adulacion

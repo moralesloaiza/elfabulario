@@ -1,10 +1,9 @@
 ---
 titulo: El asno y Júpiter
-# resumen: pendiente de curaduría
+resumen: Cansado de su suerte, un asno pide a Júpiter que le cambie de amo; cada nuevo dueño —un tejero, luego un curtidor— resulta peor que el anterior, hasta que el dios, harto de sus quejas, deja de escucharlo.
 fecha: 2026-05-15   # MARCADOR — fijar la fecha real al publicar
 ilustracion: /src/assets/uploads/el-asno-y-jupiter.png
 borrador: false
-# --- Taxonomía: PENDIENTE DE CURADURÍA (rellenar antes de build) ---
 personajes: [burro, zeus]
 temas: [necedad, pereza]
 forma: verso

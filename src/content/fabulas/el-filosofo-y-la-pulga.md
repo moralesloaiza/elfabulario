@@ -1,6 +1,6 @@
 ---
 titulo: El filósofo y la pulga
-# resumen: pendiente de curaduría
+resumen: Un filósofo se enorgullece de creer que el mundo entero fue creado para su servicio; una pulga posada en su nariz repite exactamente el mismo discurso de grandeza, dejando en ridículo su soberbia.
 fecha: 2026-05-17   # MARCADOR — fijar la fecha real al publicar
 ilustracion: /src/assets/uploads/el-filosofo-y-la-pulga.png
 borrador: false

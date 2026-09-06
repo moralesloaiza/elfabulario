@@ -1,6 +1,6 @@
 ---
 titulo: El cazador y los conejos
-# resumen: pendiente de curaduría
+resumen: Oculto entre las ramas, un cazador abate a uno de los conejos que pacían confiados cerca de él; espantada, la manada huye a sus madrigueras, pero poco después vuelve a salir al mismo prado como si nada hubiera pasado.
 fecha: 2026-05-17   # MARCADOR — fijar la fecha real al publicar
 ilustracion: /src/assets/uploads/el-cazador-y-los-conejos.png
 borrador: false

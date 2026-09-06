@@ -1,6 +1,6 @@
 ---
 titulo: El enfermo y la visión
-# resumen: pendiente de curaduría
+resumen: En su lecho de muerte, un usurero repasa satisfecho una vida de ganancias sin escrúpulos, confiando en que su testamento lo hará pasar por caritativo; cuando una visión le pide cien doblones ahora mismo para los pobres, el avaro se resiste incluso sabiendo su muerte cercana.
 fecha: 2026-05-16   # MARCADOR — fijar la fecha real al publicar
 ilustracion: /src/assets/uploads/el-enfermo-y-la-vision.png
 borrador: false
