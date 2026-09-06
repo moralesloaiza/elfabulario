@@ -1,10 +1,9 @@
 ---
 titulo: La gata mujer
-# resumen: pendiente de curaduría
+resumen: Convertida en mujer por Venus para poder casarse con su dueño, la gata Zapaquilda luce como una novia radiante hasta que, en plena boda, ve pasar un ratón y salta tras él dejando plantado al novio; la naturaleza vence a la costumbre.
 fecha: 2026-05-16   # MARCADOR — fijar la fecha real al publicar
 ilustracion: /src/assets/uploads/la-gata-mujer.png
 borrador: false
-# --- Taxonomía: PENDIENTE DE CURADURÍA (rellenar antes de build) ---
 personajes:
   - gato
   - raton

@@ -1,10 +1,9 @@
 ---
 titulo: La comadreja y los ratones
-# resumen: pendiente de curaduría
+resumen: Ya vieja y sin fuerzas para cazar, una comadreja se esconde entre la harina y espera inmóvil a que los ratones acerquen el hocico para atraparlos uno a uno, supliendo con astucia lo que ha perdido de vigor.
 fecha: 2026-05-16   # MARCADOR — fijar la fecha real al publicar
 ilustracion: /src/assets/uploads/la-comadreja-y-los-ratones.png
 borrador: false
-# --- Taxonomía: PENDIENTE DE CURADURÍA (rellenar antes de build) ---
 personajes:
   - comadreja
   - raton

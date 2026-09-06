@@ -4,7 +4,7 @@ resumen: "Un convidado tardío se excusa con su reloj, y al sacar los demás los
 fecha: 2026-05-31   # MARCADOR: fijar la fecha real al publicar
 ilustracion: /src/assets/uploads/la-discordia-de-los-relojes.png
 borrador: false
-personajes: []
+personajes: [convidado, anfitrion]
 temas: [critica-literaria, verdad, necedad]
 forma: verso
 tradicion: hispanica

@@ -1,11 +1,10 @@
 ---
 titulo: La hermosa y el espejo
-# resumen: pendiente de curaduría
+resumen: Anarda, hermosa y vanidosa, solo confía en amigos que halagan su apariencia; cuando pierde su belleza a causa de la viruela, el Espejo, su amigo más sincero, le dice la verdad, y ella, furiosa, no vuelve a consultarlo jamás.
 fecha: 2026-05-18   # MARCADOR — fijar la fecha real al publicar
 ilustracion: /src/assets/uploads/la-hermosa-y-el-espejo.png
 borrador: false
-# --- Taxonomía: PENDIENTE DE CURADURÍA (rellenar antes de build) ---
-personajes: []
+personajes: [dama, espejo]
 temas: [adulacion, vanidad, vejez]
 forma: verso
 tradicion: hispanica

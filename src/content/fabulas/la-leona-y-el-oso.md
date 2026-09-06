@@ -1,10 +1,9 @@
 ---
 titulo: La leona y el oso
-# resumen: pendiente de curaduría
+resumen: Una leona brama desconsolada toda la noche por el robo de su cachorro; un oso le replica con ironía que, si las madres de todas sus víctimas se lamentaran igual, no habría descanso posible, mostrando que el dolor ajeno siempre pesa menos que el propio.
 fecha: 2026-05-16   # MARCADOR — fijar la fecha real al publicar
 ilustracion: /src/assets/uploads/la-leona-y-el-oso.png
 borrador: false
-# --- Taxonomía: PENDIENTE DE CURADURÍA (rellenar antes de build) ---
 personajes:
   - leon
   - oso

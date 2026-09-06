@@ -1,10 +1,9 @@
 ---
 titulo: La cierva y la viña
-# resumen: pendiente de curaduría
+resumen: Huyendo de los cazadores, una cierva se esconde en una viña frondosa que le salva la vida; pero, ingrata, se come las hojas que la cubrían y queda al descubierto, pagando con la vida su falta de gratitud.
 fecha: 2026-05-15   # MARCADOR — fijar la fecha real al publicar
 ilustracion: /src/assets/uploads/la-cierva-y-la-vina.png
 borrador: false
-# --- Taxonomía: PENDIENTE DE CURADURÍA (rellenar antes de build) ---
 personajes: [ciervo, cazador]
 temas: [ingratitud]
 forma: verso

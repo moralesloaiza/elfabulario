@@ -1,10 +1,9 @@
 ---
 titulo: La gata con cascabeles
-# resumen: pendiente de curaduría
+resumen: Ataviada con un vistoso collar de cascabeles, la gata Zapaquilda enamora a todos los gatos del vecindario, que se pelean por desposarla; el prudente Garraf les advierte que el cascabel ahuyenta la caza y que su marido pasaría hambre mientras ella se pasea de tejado en tejado, y los pretendientes se retiran convencidos.
 fecha: 2026-05-18   # MARCADOR — fijar la fecha real al publicar
 ilustracion: /src/assets/uploads/la-gata-con-cascabeles.png
 borrador: false
-# --- Taxonomía: PENDIENTE DE CURADURÍA (rellenar antes de build) ---
 personajes: [gato]
 temas: [vanidad]
 forma: verso

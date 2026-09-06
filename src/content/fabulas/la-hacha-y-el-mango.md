@@ -1,11 +1,10 @@
 ---
 titulo: La hacha y el mango
-# resumen: pendiente de curaduría
+resumen: Un hombre sin mango para su hacha pide madera a los árboles, que se la dan de buena fe; una vez armado el instrumento, empieza a cortar las mejores ramas de todos ellos, y la encina le dice al fresno que es un desdichado quien ayuda a su propio enemigo.
 fecha: 2026-05-15   # MARCADOR — fijar la fecha real al publicar
 ilustracion: /src/assets/uploads/la-hacha-y-el-mango.png
 borrador: false
-# --- Taxonomía: PENDIENTE DE CURADURÍA (rellenar antes de build) ---
-personajes: []
+personajes: [hombre, encina, fresno]
 temas: [traicion, engano]
 forma: verso
 tradicion: hispanica

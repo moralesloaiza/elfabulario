@@ -1,10 +1,9 @@
 ---
 titulo: La danza pastoril
-# resumen: pendiente de curaduría
+resumen: Bajo una encina, el pastor Bato toca su albogue mientras zagales y zagalas bailan a su alrededor; un anciano corona con una guirnalda a la pastora más modesta y graciosa, premiando la virtud como rara vez se hace en la corte.
 fecha: 2026-05-18   # MARCADOR — fijar la fecha real al publicar
 ilustracion: /src/assets/uploads/la-danza-pastoril.png
 borrador: false
-# --- Taxonomía: PENDIENTE DE CURADURÍA (rellenar antes de build) ---
 personajes: [pastor]
 temas: [naturaleza, inocencia]
 forma: verso
