@@ -1,6 +1,6 @@
 ---
 titulo: Las hormigas
-# resumen: pendiente de curaduría
+resumen: Las hormigas fueron antaño hombres tan codiciosos de lo propio y lo ajeno que Júpiter, cansado de tolerarlos, los convirtió en el diminuto insecto; cambiaron de forma, pero jamás de costumbres.
 fecha: 2026-05-17   # MARCADOR — fijar la fecha real al publicar
 ilustracion: /src/assets/uploads/las-hormigas.png
 borrador: false

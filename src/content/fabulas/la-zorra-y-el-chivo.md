@@ -1,10 +1,9 @@
 ---
 titulo: La zorra y el chivo
-# resumen: pendiente de curaduría
+resumen: Caída en un pozo, una zorra engaña a un chivo sediento haciéndole creer que el agua es deliciosa; en cuanto él salta dentro, ella se encarama por sus cuernos para escapar, dejándolo atrapado en el fondo.
 fecha: 2026-05-16   # MARCADOR — fijar la fecha real al publicar
 ilustracion: /src/assets/uploads/la-zorra-y-el-chivo.png
 borrador: false
-# --- Taxonomía: PENDIENTE DE CURADURÍA (rellenar antes de build) ---
 personajes:
   - zorro
   - chivo

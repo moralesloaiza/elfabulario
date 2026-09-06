@@ -1,10 +1,9 @@
 ---
 titulo: La tortuga y el águila
-# resumen: pendiente de curaduría
+resumen: Una tortuga suplica al águila que le enseñe a volar, y esta, tras burlarse de tan disparatado deseo, cede a su insistencia, la eleva entre las nubes y la deja caer, haciéndola pedazos por no escuchar el consejo prudente.
 fecha: 2026-05-15   # MARCADOR — fijar la fecha real al publicar
 ilustracion: /src/assets/uploads/la-tortuga-y-el-aguila.png
 borrador: false
-# --- Taxonomía: PENDIENTE DE CURADURÍA (rellenar antes de build) ---
 personajes: [tortuga, aguila]
 temas: [necedad, soberbia]
 forma: verso

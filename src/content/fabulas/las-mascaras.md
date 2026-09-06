@@ -5,7 +5,7 @@ resumen: Una rosa y un jazmín envidian el color ajeno y logran cambiarlo; el so
 fecha: 2026-07-09
 ilustracion: /src/assets/uploads/las-mascaras.png
 borrador: false
-personajes: []
+personajes: [rosa, jazmin]
 temas:
   - vanidad
   - engano

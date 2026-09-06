@@ -6,7 +6,7 @@ fecha: 2026-07-11
 fecha_actualizada: 2026-07-26
 ilustracion: /src/assets/uploads/la-planta-y-la-estaca.png
 borrador: false
-personajes: []
+personajes: [planta, estaca]
 temas:
   - amistad
   - lealtad

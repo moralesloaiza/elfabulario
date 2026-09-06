@@ -7,7 +7,7 @@ fecha: 2026-07-11
 fecha_actualizada: 2026-07-26
 ilustracion: /src/assets/uploads/la-piedra-y-el-camino.png
 borrador: false
-personajes: []
+personajes: [piedra]
 temas:
   - necedad
   - prudencia

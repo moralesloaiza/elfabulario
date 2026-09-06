@@ -6,7 +6,7 @@ fecha: 2011-12-04
 fecha_actualizada: 2026-05-16
 ilustracion: /src/assets/uploads/la-piedra.png
 borrador: false
-personajes: []
+personajes: [piedra]
 temas:
   - naturaleza
   - prudencia

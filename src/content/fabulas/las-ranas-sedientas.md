@@ -1,10 +1,9 @@
 ---
 titulo: Las ranas sedientas
-# resumen: pendiente de curaduría
+resumen: Con su laguna seca por el calor del verano, dos ranas hallan un pozo con agua; mientras una quiere saltar de inmediato, la más prudente advierte que, si el agua sigue bajando, quedarán atrapadas sin poder salir.
 fecha: 2026-05-16   # MARCADOR — fijar la fecha real al publicar
 ilustracion: /src/assets/uploads/las-ranas-sedientas.png
 borrador: false
-# --- Taxonomía: PENDIENTE DE CURADURÍA (rellenar antes de build) ---
 personajes:
   - rana
 temas:

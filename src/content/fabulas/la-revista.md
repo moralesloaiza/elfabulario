@@ -5,7 +5,7 @@ resumen: Ante el desfile militar, el poeta manda honrar al viejo veterano mutila
 fecha: 2026-07-09
 ilustracion: /src/assets/uploads/la-revista.png
 borrador: false
-personajes: []
+personajes: [soldado]
 temas:
   - guerra
   - lealtad

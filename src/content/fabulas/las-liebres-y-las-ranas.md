@@ -1,10 +1,9 @@
 ---
 titulo: Las liebres y las ranas
-# resumen: pendiente de curaduría
+resumen: Espantadas por un ruido, unas liebres corren dispuestas a ahogarse en una laguna antes que seguir viviendo con tanto miedo; al llegar, ven a las ranas huir aterradas de ellas y comprenden que su desdicha es más llevadera comparada con la ajena.
 fecha: 2026-05-15   # MARCADOR — fijar la fecha real al publicar
 ilustracion: /src/assets/uploads/las-liebres-y-las-ranas.png
 borrador: false
-# --- Taxonomía: PENDIENTE DE CURADURÍA (rellenar antes de build) ---
 personajes: [liebre, rana]
 temas: [miedo, prudencia]
 forma: verso
