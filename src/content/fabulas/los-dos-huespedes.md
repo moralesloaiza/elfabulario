@@ -4,7 +4,7 @@ resumen: Dos amigos se hospedan en casas distintas, una de fachada palaciega y
   otra modesta, y cada cual comprueba qué había de verdad tras la apariencia.
 fecha: 2026-05-31
 fecha_actualizada: 2026-08-09
-ilustracion: /src/assets/uploads/los-dos-huéspedes.png
+ilustracion: /src/assets/uploads/los-dos-huespedes.png
 borrador: false
 personajes: [huesped]
 temas:

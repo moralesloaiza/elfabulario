@@ -4,7 +4,7 @@ resumen: Un erudito guarda sus libros y papeles con celo mientras un ratón los
   roe, en un duelo entre el saber acumulado y quien lo aprovecha a su modo.
 fecha: 2026-05-31
 fecha_actualizada: 2026-08-07
-ilustracion: /src/assets/uploads/chatgpt-image-6-ago-2026-23_31_17.png
+ilustracion: /src/assets/uploads/el-erudito-y-el-raton.png
 credito_ilustracion: ""
 spotify_url: https://open.spotify.com/episode/08y1TB0j0RUtf988jAOL6i?si=XomM6nMdQzqw9Wn4HG_2Nw
 borrador: false
