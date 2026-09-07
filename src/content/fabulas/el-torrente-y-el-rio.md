@@ -4,7 +4,7 @@ resumen: Huyendo de unos bandidos, un caminante cruza sin miedo un torrente estr
 fecha: 2026-05-15   # MARCADOR — fijar la fecha real al publicar
 ilustracion: /src/assets/uploads/el-torrente-y-el-rio.png
 borrador: false
-personajes: [caminante, bandolero]
+personajes: [caminante]
 temas: [prudencia, miedo, engano]
 forma: verso
 tradicion: hispanica

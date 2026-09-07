@@ -181,23 +181,50 @@ collections:
           - { label: "Castaño", value: "castano" }
           - { label: "Cedro", value: "cedro" }
           - { label: "Clemátide", value: "clematide" }
+          - { label: "Encina", value: "encina" }
+          - { label: "Estaca", value: "estaca" }
+          - { label: "Fresno", value: "fresno" }
           - { label: "Higuera", value: "higuera" }
+          - { label: "Jazmín", value: "jazmin" }
           - { label: "Lirio", value: "lirio" }
           - { label: "Melocotonero", value: "melocotonero" }
           - { label: "Nogal", value: "nogal" }
           - { label: "Olmo", value: "olmo" }
+          - { label: "Parietaria", value: "parietaria" }
           - { label: "Peral", value: "peral" }
+          - { label: "Planta", value: "planta" }
+          - { label: "Rosa", value: "rosa" }
+          - { label: "Salvia", value: "salvia" }
           - { label: "Sauce", value: "sauce" }
+          - { label: "Té", value: "te" }
+          - { label: "Tomillo", value: "tomillo" }
           - { label: "Vid", value: "vid" }
           # Objetos
+          - { label: "Abanico", value: "abanico" }
+          - { label: "Alforja", value: "alforja" }
+          - { label: "Campana", value: "campana" }
           - { label: "Candela", value: "candela" }
-          - { label: "Esquilón", value: "esquilon" }
+          - { label: "Coche", value: "coche" }
+          - { label: "Eslabón", value: "eslabon" }
           - { label: "Espada", value: "espada" }
+          - { label: "Espejo", value: "espejo" }
+          - { label: "Esquilón", value: "esquilon" }
           - { label: "Lengua", value: "lengua" }
+          - { label: "Manguito", value: "manguito" }
           - { label: "Navaja", value: "navaja" }
           - { label: "Papel", value: "papel" }
+          - { label: "Pedernal", value: "pedernal" }
+          - { label: "Piedra", value: "piedra" }
+          - { label: "Quitasol", value: "quitasol" }
           - { label: "Red", value: "red" }
           - { label: "Tinta", value: "tinta" }
+          # Elementos y partes del cuerpo
+          - { label: "Agua", value: "agua" }
+          - { label: "Diente", value: "diente" }
+          - { label: "Fuego", value: "fuego" }
+          - { label: "Nariz", value: "nariz" }
+          - { label: "Nieve", value: "nieve" }
+          - { label: "Ojo", value: "ojo" }
           # Roles humanos
           - { label: "Abogado", value: "abogado" }
           - { label: "Amo", value: "amo" }

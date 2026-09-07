@@ -5,7 +5,7 @@ resumen: Un coche cruza el pueblo entre estrépito y polvareda, y cuando al fin 
 fecha: 2026-07-09
 ilustracion: /src/assets/uploads/el-coche.png
 borrador: false
-personajes: [coche, cochero]
+personajes: [coche]
 temas:
   - vanidad
   - necedad

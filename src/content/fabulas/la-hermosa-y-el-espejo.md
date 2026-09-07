@@ -4,7 +4,7 @@ resumen: Anarda, hermosa y vanidosa, solo confía en amigos que halagan su apari
 fecha: 2026-05-18   # MARCADOR — fijar la fecha real al publicar
 ilustracion: /src/assets/uploads/la-hermosa-y-el-espejo.png
 borrador: false
-personajes: [dama, espejo]
+personajes: [espejo]
 temas: [adulacion, vanidad, vejez]
 forma: verso
 tradicion: hispanica

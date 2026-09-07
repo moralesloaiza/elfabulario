@@ -6,7 +6,7 @@ fecha: 2026-05-31
 fecha_actualizada: 2026-06-20
 ilustracion: /src/assets/uploads/el-fabricante-de-galones-y-la-encajera.png
 borrador: false
-personajes: [galonero, encajera]
+personajes: []
 temas:
   - critica-literaria
 forma: verso

@@ -4,7 +4,7 @@ resumen: Un hombre sin mango para su hacha pide madera a los árboles, que se la
 fecha: 2026-05-15   # MARCADOR — fijar la fecha real al publicar
 ilustracion: /src/assets/uploads/la-hacha-y-el-mango.png
 borrador: false
-personajes: [hombre, encina, fresno]
+personajes: [encina, fresno]
 temas: [traicion, engano]
 forma: verso
 tradicion: hispanica

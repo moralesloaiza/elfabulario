@@ -4,7 +4,7 @@ resumen: En plena tormenta, los pasajeros de un barco lloran de terror; cuando e
 fecha: 2026-05-15   # MARCADOR — fijar la fecha real al publicar
 ilustracion: /src/assets/uploads/los-navegantes.png
 borrador: false
-personajes: [pasajero, piloto]
+personajes: []
 temas: [prudencia, miedo]
 forma: verso
 tradicion: hispanica
