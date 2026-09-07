@@ -4,8 +4,9 @@ resumen: Una noche oscura, un león recorre el bosque intentando localizar un
   ruido feroz y persistente, temiendo una fiera peligrosa; al amanecer descubre
   que la voz venía de una simple rana, toda boca y nada más.
 fecha: 2026-05-15
-fecha_actualizada: 2026-09-06
+fecha_actualizada: 2026-09-07
 ilustracion: /src/assets/uploads/el-leon-y-la-rana.png
+foco: 50
 borrador: false
 personajes:
   - leon
