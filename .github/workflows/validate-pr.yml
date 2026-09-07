@@ -24,6 +24,8 @@ jobs:
           node .github/scripts/validate-yaml.mjs
       - name: Validate fabula images
         run: node .github/scripts/validate-images.mjs
+      - name: Validate taxonomia
+        run: node .github/scripts/validate-taxonomia.mjs
       - name: Build
         run: npm run build
 

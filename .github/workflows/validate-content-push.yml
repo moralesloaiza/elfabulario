@@ -1,0 +1,28 @@
+name: Validate content on push
+
+# Los commits directos a main (Decap CMS, lotes por script) NO pasan por
+# validate-pr.yml, que solo corre en pull_request. Este workflow valida la
+# taxonomia en cada push a main para que un slug fuera del enum salte aqui
+# como check fallido en el commit, en vez de romper el build de Cloudflare y
+# congelar el deploy en silencio (ver incidente del 6-sep-2026).
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - 'src/content/fabulas/**'
+      - 'src/utils/taxonomia.ts'
+
+jobs:
+  taxonomia:
+    name: Validate taxonomia
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+
+      - name: Validate taxonomia
+        run: node .github/scripts/validate-taxonomia.mjs
