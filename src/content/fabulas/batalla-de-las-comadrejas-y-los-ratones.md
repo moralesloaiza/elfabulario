@@ -1,21 +1,27 @@
 ---
 titulo: Batalla de las comadrejas y los ratones
-resumen: Derrotados por las comadrejas, los ratones huyen en desbandada hacia sus cuevas; los soldados rasos logran refugiarse, pero los capitanes, que llevaban cuernos en la cabeza como insignia de mando, quedan atascados en las angostas entradas y son devorados.
-fecha: 2026-05-15   # MARCADOR — fijar la fecha real al publicar
+resumen: Derrotados por las comadrejas, los ratones huyen en desbandada hacia
+  sus cuevas; los soldados rasos logran refugiarse, pero los capitanes, que
+  llevaban cuernos en la cabeza como insignia de mando, quedan atascados en las
+  angostas entradas y son devorados.
+fecha: 2026-05-15
+fecha_actualizada: 2026-09-07
 ilustracion: /src/assets/uploads/batalla-de-las-comadrejas-y-los-ratones.png
+foco: 50
 borrador: false
-personajes: [comadreja, raton]
-temas: [guerra, soberbia]
+personajes:
+  - comadreja
+  - raton
+temas:
+  - guerra
+  - soberbia
 forma: verso
 tradicion: hispanica
 autor: felix-maria-de-samaniego
 curador: Don Alejandro
 es_seudonimo: true
 nombre_real: Alejandro Morales Loaiza
-# --- Procedencia ---
-# Libro IV, Fábula XX — ed. Emilio Palacios Fernández,
-# Biblioteca Virtual Miguel de Cervantes (texto de dominio público).
-# Última estrofa envuelta en ***...*** como hipótesis de moraleja; revisar.
+traduccion: false
 ---
 Vencidos los Ratones,
 huían con presteza
