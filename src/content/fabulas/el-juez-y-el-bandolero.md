@@ -1,23 +1,39 @@
 ---
 titulo: El juez y el bandolero
-resumen: "Ante el juez, un bandolero alega los muchos años que lleva robando como si la costumbre bastara para disculpar su delito."
-fecha: 2026-05-31   # MARCADOR: fijar la fecha real al publicar
+resumen: Ante el juez, un bandolero alega los muchos años que lleva robando como
+  si la costumbre bastara para disculpar su delito.
+fecha: 2026-05-31
+fecha_actualizada: 2026-11-11
 ilustracion: /src/assets/uploads/el-juez-y-el-bandolero.png
+foco: 5
+spotify_url: https://open.spotify.com/episode/75KeqdekeZYLYnjYQMlOvM?si=JRIN8befQW6di9zCS8Dilw
 borrador: false
-personajes: [juez, ladron, caminante]
-temas: [critica-literaria, maldad, necedad]
+personajes:
+  - juez
+  - ladron
+  - caminante
+temas:
+  - critica-literaria
+  - maldad
+  - necedad
 forma: verso
 tradicion: hispanica
 autor: tomas-de-iriarte
 curador: Don Alejandro
 es_seudonimo: true
 nombre_real: Alejandro Morales Loaiza
-# Procedencia:
-# Iriarte, Fabula LV de "Fabulas literarias",
-# Biblioteca Virtual Miguel de Cervantes (texto de dominio publico).
-# Moraleja de la fuente incrustada como bloque final en *...* (revisar).
+traduccion: false
+moraleja: La costumbre inveterada no debe autorizar lo que la razón condena.
 nota_curador: >-
-  El juez y el bandolero pertenece también a las Fábulas literarias (1782) de [Tomás de Iriarte](https://elfabulario.com/autores/tomas-de-iriarte/), fábula LV de la colección: un bandolero apresado por robar y matar a un caminante se defiende ante el juez alegando que lleva cuarenta años ejerciendo el oficio, como si la larga costumbre bastara para disculpar el delito. Como el resto de las Fábulas literarias, el relato traslada la anécdota moral al terreno de la crítica literaria: Iriarte apunta contra quienes justifican los defectos de una obra o de un estilo apelando a que «siempre se ha hecho así», sin que la costumbre envejecida baste para autorizar lo que la razón condena.
+  El juez y el bandolero pertenece también a las Fábulas literarias (1782) de
+  [Tomás de Iriarte](https://elfabulario.com/autores/tomas-de-iriarte/), fábula
+  LV de la colección: un bandolero apresado por robar y matar a un caminante se
+  defiende ante el juez alegando que lleva cuarenta años ejerciendo el oficio,
+  como si la larga costumbre bastara para disculpar el delito. Como el resto de
+  las Fábulas literarias, el relato traslada la anécdota moral al terreno de la
+  crítica literaria: Iriarte apunta contra quienes justifican los defectos de
+  una obra o de un estilo apelando a que «siempre se ha hecho así», sin que la
+  costumbre envejecida baste para autorizar lo que la razón condena.
 
   ##### Glosario
 
@@ -49,5 +65,3 @@ los que cuando disculpan
 en las letras su error, o su mal gusto,
 alegan la costumbre envejecida
 contra el dictamen racional y justo?
-
-*La costumbre inveterada no debe autorizar lo que la razón condena.*
