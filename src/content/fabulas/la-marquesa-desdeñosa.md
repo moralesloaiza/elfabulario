@@ -7,6 +7,7 @@ resumen: Una marquesa hermosa y altiva desprecia a todos sus pretendientes y
 fecha: 2026-11-12
 fecha_actualizada: 2026-11-12
 ilustracion: /src/assets/uploads/la-marquesa-desdeñosa.png
+spotify_url: https://open.spotify.com/episode/3FfvtJi544eyS6Q6eqV5gw?si=xtB8fu7kTFu0vmqMQPq7uQ
 borrador: false
 personajes:
   - gato
