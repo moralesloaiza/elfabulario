@@ -1,11 +1,15 @@
 ---
 titulo: La nariz y los ojos
-resumen: La nariz, harta de cargar los anteojos, tira a los ojos a la calle; y en
-  el primer tropezón es ella la que se aplasta.
+resumen: La nariz, harta de cargar los anteojos, tira a los ojos a la calle; y
+  en el primer tropezón es ella la que se aplasta.
 fecha: 2026-07-09
+fecha_actualizada: 2026-11-11
 ilustracion: /src/assets/uploads/la-nariz-y-los-ojos.png
+foco: 50
 borrador: false
-personajes: [nariz, ojo]
+personajes:
+  - nariz
+  - ojo
 temas:
   - necedad
   - prudencia
@@ -15,6 +19,7 @@ autor: rafael-pombo
 curador: Don Alejandro
 es_seudonimo: true
 nombre_real: Alejandro Morales Loaiza
+traduccion: false
 ---
 
 Púsose la nariz mal humorada
