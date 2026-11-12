@@ -1,23 +1,38 @@
 ---
 titulo: El jilguero y el cisne
-resumen: "Un jilguero y un cisne discuten sobre cuál de los dos canta mejor, midiendo la voz del uno contra la fama del otro."
-fecha: 2026-05-31   # MARCADOR: fijar la fecha real al publicar
+resumen: Un jilguero y un cisne discuten sobre cuál de los dos canta mejor,
+  midiendo la voz del uno contra la fama del otro.
+fecha: 2026-05-31
+fecha_actualizada: 2026-11-11
 ilustracion: /src/assets/uploads/el-jilguero-y-el-cisne.png
+spotify_url: https://open.spotify.com/episode/3g49hpmZv7rCDcCaG1Lmzi?si=Xn7-_lW4SZW4DI-6wCK-Zg
 borrador: false
-personajes: [jilguero, cisne]
-temas: [vanidad, soberbia, critica-literaria]
+personajes:
+  - jilguero
+  - cisne
+temas:
+  - vanidad
+  - soberbia
+  - critica-literaria
 forma: verso
 tradicion: hispanica
 autor: tomas-de-iriarte
 curador: Don Alejandro
 es_seudonimo: true
 nombre_real: Alejandro Morales Loaiza
-# Procedencia:
-# Iriarte, Fabula XVI de "Fabulas literarias",
-# Biblioteca Virtual Miguel de Cervantes (texto de dominio publico).
-# Moraleja de la fuente incrustada como bloque final en *...* (revisar).
+traduccion: false
+moraleja: Nada sirve la fama, si no corresponden las obras.
 nota_curador: >-
-  El jilguero y el cisne pertenece a las Fábulas literarias (1782) de [Tomás de Iriarte](https://elfabulario.com/autores/tomas-de-iriarte/), concretamente a la fábula XVII de la colección: un cisne humilla al jilguero por su canto ruidoso y presume de poseer la voz más dulce entre las aves, sin que nadie la haya oído jamás; el jilguero, lejos de ofenderse, le anima a demostrarlo, y cuando el cisne por fin intenta cantar solo logra un graznido que desmiente de golpe toda su fama. Como el resto de las Fábulas literarias, la pieza no habla en realidad de pájaros sino del oficio de escribir: bajo la anécdota se esconde una censura a quienes ganan crédito y reputación sin obra que los respalde, y los pierden en cuanto se someten a la prueba de la experiencia.
+  El jilguero y el cisne pertenece a las Fábulas literarias (1782) de [Tomás de
+  Iriarte](https://elfabulario.com/autores/tomas-de-iriarte/), concretamente a
+  la fábula XVII de la colección: un cisne humilla al jilguero por su canto
+  ruidoso y presume de poseer la voz más dulce entre las aves, sin que nadie la
+  haya oído jamás; el jilguero, lejos de ofenderse, le anima a demostrarlo, y
+  cuando el cisne por fin intenta cantar solo logra un graznido que desmiente de
+  golpe toda su fama. Como el resto de las Fábulas literarias, la pieza no habla
+  en realidad de pájaros sino del oficio de escribir: bajo la anécdota se
+  esconde una censura a quienes ganan crédito y reputación sin obra que los
+  respalde, y los pierden en cuanto se someten a la prueba de la experiencia.
 
   ##### Glosario
 
@@ -46,5 +61,3 @@ aunque logran más fama que las mías!...»
 Quiso el cisne cantar, y dio un graznido.
 ¡Gran cosa! Ganar crédito sin ciencia,
 y perderle en llegando a la experiencia.
-
-*Nada sirve la fama, si no corresponden las obras.*
