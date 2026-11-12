@@ -2,8 +2,9 @@
 titulo: El labrador y la cigüeña
 resumen: Una cigüeña aprende sobre las consecuencias de las malas cercanías.
 fecha: 2025-06-19
-fecha_actualizada: 2026-05-08
-ilustracion: /src/assets/uploads/el-labrador-y-la-ciguena.png
+fecha_actualizada: 2026-11-11
+ilustracion: /src/assets/uploads/el-labrador-y-la-cigüeña.png
+spotify_url: https://open.spotify.com/episode/66Wezppv5ORLtLnCKqiJWt?si=t2KvMKNkS5yzPdXNJpgo8w
 borrador: false
 personajes:
   - ciguena
@@ -17,8 +18,19 @@ autor: felix-maria-de-samaniego
 curador: Don Alejandro
 es_seudonimo: true
 nombre_real: Alejandro Morales Loaiza
+traduccion: false
 nota_curador: >-
-  El labrador y la cigüeña pertenece a las Fábulas morales de [Félix María de Samaniego](https://elfabulario.com/autores/felix-maria-de-samaniego/), y recrea una fábula de raíz esópica: un labrador tiende trampas para atrapar a los gansos y grullas que devoran su trigo, y en ellas cae también una cigüeña que jura no haber tocado el sembrado y alega, en cambio, que limpia los campos de culebras y víboras; el labrador, sin embargo, la condena a morir junto con las demás capturas, por el solo hecho de haberla hallado en su compañía. Samaniego, que tomó buena parte de sus asuntos de Esopo, Fedro y La Fontaine sin ocultarlo, vertió aquí en octosílabos castellanos una historia ya presente en las colecciones esópicas bajo el mismo título de El labrador y la cigüeña, con idéntica moraleja sobre el peligro de las malas compañías.
+  El labrador y la cigüeña pertenece a las Fábulas morales de [Félix María de
+  Samaniego](https://elfabulario.com/autores/felix-maria-de-samaniego/), y
+  recrea una fábula de raíz esópica: un labrador tiende trampas para atrapar a
+  los gansos y grullas que devoran su trigo, y en ellas cae también una cigüeña
+  que jura no haber tocado el sembrado y alega, en cambio, que limpia los campos
+  de culebras y víboras; el labrador, sin embargo, la condena a morir junto con
+  las demás capturas, por el solo hecho de haberla hallado en su compañía.
+  Samaniego, que tomó buena parte de sus asuntos de Esopo, Fedro y La Fontaine
+  sin ocultarlo, vertió aquí en octosílabos castellanos una historia ya presente
+  en las colecciones esópicas bajo el mismo título de El labrador y la cigüeña,
+  con idéntica moraleja sobre el peligro de las malas compañías.
 
   ##### Glosario
 
@@ -51,4 +63,4 @@ con ellos morirás entre mis manos.
 ***La inocente cigüeña
 tuvo el fin desgraciado
 que pueden prometerse
-los buenos que se juntan con los* malos.**
+los buenos que se juntan con los* *malos.***
