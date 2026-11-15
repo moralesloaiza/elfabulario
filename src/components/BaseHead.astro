@@ -47,9 +47,17 @@ const canonicalURL = new URL(Astro.url.pathname, Astro.site);
 // La ilustración original pesa varios MB y WhatsApp descarta las imágenes de
 // tarjeta demasiado pesadas (límite práctico ~300 KB), así que para las
 // tarjetas sociales se genera una versión ligera: 1200 px de ancho, JPEG,
-// misma proporción (sin recorte).
+// proporción 1.91:1 (1200×630, recorte centrado) y calidad 60.
 const ogImagen = image
-	? await getImage({ src: image, width: 1200, format: 'jpeg', quality: 70 })
+	? await getImage({
+			src: image,
+			width: 1200,
+			height: 630,
+			fit: 'cover',
+			position: 'center',
+			format: 'jpeg',
+			quality: 60,
+		})
 	: undefined;
 const ogImageURL = ogImagen
 	? new URL(ogImagen.src, Astro.site)
