@@ -57,8 +57,11 @@ function parseScalar(fm, key) {
 }
 
 // ── Recorrido de fabulas versionadas ─────────────────────────────────────────
-const files = execSync('git ls-files "src/content/fabulas/*.md"', { encoding: 'utf8' })
-	.split('\n')
+// -z: rutas separadas por NUL y sin comillas, para no romperse con nombres
+// que contienen caracteres no ASCII (p. ej. 'la-marquesa-desdeñosa.md'), que
+// 'git ls-files' escaparia con comillas (core.quotepath) y romperia readFileSync.
+const files = execSync('git ls-files -z "src/content/fabulas/*.md"', { encoding: 'utf8' })
+	.split('\0')
 	.map((f) => f.trim())
 	.filter(Boolean);
 
