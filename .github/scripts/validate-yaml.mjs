@@ -7,8 +7,10 @@ import { execSync } from 'node:child_process';
 import { parse } from 'yaml';
 
 // Lista de archivos versionados con extension .yml/.yaml (respeta .gitignore).
-const files = execSync('git ls-files "*.yml" "*.yaml"', { encoding: 'utf8' })
-	.split('\n')
+// -z: rutas separadas por NUL y sin comillas, para no romperse con nombres
+// que contengan caracteres no ASCII (core.quotepath los escaparia con comillas).
+const files = execSync('git ls-files -z "*.yml" "*.yaml"', { encoding: 'utf8' })
+	.split('\0')
 	.map((f) => f.trim())
 	.filter(Boolean);
 
