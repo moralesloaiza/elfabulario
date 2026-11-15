@@ -19,6 +19,12 @@ autor: aquiles-nazoa
 curador: Don Alejandro
 es_seudonimo: true
 nombre_real: Alejandro Morales Loaiza
+nota_curador: >-
+  Otra pieza del mismo ciclo humorístico de [Aquiles Nazoa](https://elfabulario.com/autores/aquiles-nazoa/) (Caracas, 1920-1976) sobre cochinos; tampoco en este caso ha sido posible confirmar la publicación original del poema. Un perro sordo, culpando del problema a sus orejas ya viejas, se las corta y las cambia por las de un cochino, atadas con cabuyas; el remedio funciona hasta que una vieja, al verle esas orejas coloradas y gruesas, lo confunde con un cochino y lo mata, un final que Nazoa remata con la misma ironía macabra de toda la serie: el cambio que parecía una ganancia termina siendo la causa de la muerte.
+
+  ##### Glosario
+
+  1. **Cabuya:** cuerda hecha de fibra vegetal, usada tradicionalmente para atar.
 ---
 Pues señor, éste era
 un perro que sufría de sordera,

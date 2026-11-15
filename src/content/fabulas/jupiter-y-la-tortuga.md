@@ -19,6 +19,16 @@ autor: felix-maria-de-samaniego
 curador: Don Alejandro
 es_seudonimo: true
 nombre_real: Alejandro Morales Loaiza
+nota_curador: >-
+  Esta es la fábula XI del libro segundo de las Fábulas morales (1781-1784) de [Félix María de Samaniego](https://elfabulario.com/autores/felix-maria-de-samaniego/) (Laguardia, 1745-1801), escritas por encargo para el Real Seminario Patriótico Vascongado de Vergara. Como el propio Samaniego reconocía tomar sus asuntos de Esopo, de Fedro y de otros fabulistas anteriores, esta pieza retoma un motivo de raíz esópica: a la boda de Júpiter acuden todos los animales, menos la Tortuga, que llega tarde y a paso perezoso; cuando el dios airado le reprende la tardanza, ella se disculpa diciendo que no podía dejar tan pronto su casita, tan amada como retiro. Por esa excusa, Júpiter la condena a cargar la casa a cuestas para siempre, como el caracol. La moraleja final compara esa actitud con la de quienes presumen de amar su retiro en exceso pero llegan tarde a sus obligaciones.
+
+  ##### Glosario
+
+  1. **Tonante:** epíteto clásico de Júpiter, "el que truena", por su papel de dios del rayo y el trueno.
+
+  2. **Indulto:** perdón o gracia; aquí, la clemencia propia de un día de fiesta, que Júpiter olvida al castigar a la Tortuga.
+
+  3. **Machuchas:** dicho de una persona que ha llegado a la madurez y obra con prudencia y sensatez.
 ---
 A las bodas de Júpiter estaban
 todos los animales convidados.

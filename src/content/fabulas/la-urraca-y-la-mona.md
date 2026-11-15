@@ -16,6 +16,18 @@ nombre_real: Alejandro Morales Loaiza
 # Iriarte, Fabula XLVIII de "Fabulas literarias",
 # Biblioteca Virtual Miguel de Cervantes (texto de dominio publico).
 # Moraleja de la fuente incrustada como bloque final en *...* (revisar).
+nota_curador: >-
+  Esta fábula pertenece a las Fábulas literarias (1782) de [Tomás de Iriarte](https://elfabulario.com/autores/tomas-de-iriarte/), donde ocupa el número XLVII. En ella, la urraca colecciona objetos robados sin ningún criterio y presume de su montón ante la mona, que le opone su propia despensa de nueces y provisiones, útiles y necesarias frente al mero acopio vano. El propio Iriarte cierra extendiendo la comparación a los eruditos que acumulan noticias confusas sin criterio de selección.
+
+  ##### Glosario
+
+  1. **Taimada:** astuta, ladina, que disimula sus intenciones.
+
+  2. **Alhaja (uso irónico):** aquí, objeto de poco valor que la urraca trata como si fuera una joya.
+
+  3. **Redomada:** dicho de una persona, muy astuta y experimentada en su malicia.
+
+  4. **Erudición:** conocimiento amplio y profundo adquirido principalmente a través del estudio y la lectura.
 ---
 A una mona
 muy taimada

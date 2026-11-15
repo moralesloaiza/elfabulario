@@ -16,6 +16,20 @@ autor: rafael-pombo
 curador: Don Alejandro
 es_seudonimo: true
 nombre_real: Alejandro Morales Loaiza
+nota_curador: >-
+  Esta fábula extensa de [Rafael Pombo](https://elfabulario.com/autores/rafael-pombo/) retoma, en su segunda parte, el motivo clásico del ave que halla una piedra preciosa y la desprecia por no poder comérsela — un tema que se remonta a la fábula esópica del gallo y la piedra preciosa, recogida también por Fedro; Pombo no traduce ni versiona directamente ese texto breve, sino que compone una pieza propia, mucho más extensa, que antepone una larga primera parte sobre una hambruna general antes de narrar el hallazgo de la gallina. En tiempos de escasez extrema, una gallina famélica escarba entre la basura y encuentra un diamante; tras un instante de ilusión, comprende que la joya no le sirve de nada frente al hambre y vuelve a enterrarla, deseando en su lugar un simple grano de cebada, para cerrar con una reflexión sobre el valor relativo de las cosas según quien las necesite.
+
+  ##### Glosario
+
+  1. **Gazuza:** hambre, apetito, en registro coloquial.
+
+  2. **Carpanta:** hambre muy intensa y prolongada, con matiz jocular.
+
+  3. **Molondro:** persona torpe, boba o necia.
+
+  4. **Pampirolada:** dicho, ocurrencia o escrito insustancial, sin gracia ni sustancia.
+
+  5. **Osambre:** conjunto de huesos de un cuerpo, esqueleto; aquí, la gallina esquelética por el hambre.
 ---
 
 I

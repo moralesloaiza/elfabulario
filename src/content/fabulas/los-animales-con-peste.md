@@ -23,6 +23,16 @@ autor: felix-maria-de-samaniego
 curador: Don Alejandro
 es_seudonimo: true
 nombre_real: Alejandro Morales Loaiza
+nota_curador: >-
+  Esta fábula pertenece a las Fábulas morales (1781-1784) de [Félix María de Samaniego](https://elfabulario.com/autores/felix-maria-de-samaniego/) y traslada al castellano el argumento de «Les Animaux malades de la peste» de Jean de La Fontaine (libro VII, fábula 1, 1678): una corte animal que confiesa sus culpas ante una plaga que interpreta como castigo divino, y que termina condenando al más débil por la falta más leve; Samaniego no se limita a traducir, sino que añade detalle narrativo y plástico y suprime un detalle del original francés: en La Fontaine, el león confiesa haberse comido alguna vez también al pastor.
+
+  ##### Glosario
+
+  1. **Collados:** colinas o elevaciones de poca altura.
+
+  2. **Inficionar:** contagiar, corromper con una enfermedad o mal.
+
+  3. **Astrea:** en la mitología clásica, diosa de la justicia que, harta de la maldad de los hombres, fue la última divinidad en abandonar la tierra; su nombre se invoca aquí como símbolo de la justicia ausente.
 ---
 En los montes, los valles y collados
 De animales poblados,

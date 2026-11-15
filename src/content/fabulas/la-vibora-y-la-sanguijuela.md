@@ -16,6 +16,16 @@ nombre_real: Alejandro Morales Loaiza
 # Iriarte, Fabula LXVIII de "Fabulas literarias",
 # Biblioteca Virtual Miguel de Cervantes (texto de dominio publico).
 # Moraleja de la fuente incrustada como bloque final en *...* (revisar).
+nota_curador: >-
+  Esta fábula es la sexagésima séptima (LXVII) de las Fábulas literarias (1782) de [Tomás de Iriarte](https://elfabulario.com/autores/tomas-de-iriarte/) y plantea, bajo la forma de un diálogo entre dos animales que pican, la diferencia entre la crítica que hace bien y la que solo hace daño: la víbora reprocha a la sanguijuela que el hombre confíe en ella y recele de la propia víbora, pese a que ambas pican igual, y la sanguijuela responde que ella pica para dar salud al enfermo mientras la víbora pica para matar al sano. Iriarte cierra con la advertencia explícita de no confundir al censor útil con el censor maligno.
+
+  ##### Glosario
+
+  1. **Sanguijuela:** anélido acuático que se alimenta chupando sangre, usado históricamente en medicina para sangrías terapéuticas.
+
+  2. **Recelar:** desconfiar o sospechar de alguien o algo.
+
+  3. **Censor (uso clásico):** quien juzga y critica una obra u opinión ajena; el término no implica aquí censura oficial, sino crítica literaria.
 ---
 «Aunque las dos picamos (dijo un día
 la víbora a la simple sanguijuela),

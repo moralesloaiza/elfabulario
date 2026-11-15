@@ -18,6 +18,20 @@ autor: rafael-pombo
 curador: Don Alejandro
 es_seudonimo: true
 nombre_real: Alejandro Morales Loaiza
+nota_curador: >-
+  [Rafael Pombo](https://elfabulario.com/autores/rafael-pombo/) escribió esta fábula durante los años en que combinó la diplomacia con la escritura, dando forma en verso castellano a un bestiario propio que, además de sus célebres cuentos infantiles, incluye piezas de sátira más adulta como esta persecución a orillas del río Magdalena. Pombo (Bogotá, 1833-1912) fue poeta, fabulista y traductor colombiano, y aquí su humor se vuelve más afilado: un caimán que no logra alcanzar a su presa reviste su fracaso de discurso moral, exigiendo al hombre que huye "lealtad" en la fuga, cuando lo único que persigue es devorarlo; la réplica del fugitivo, que el caimán se arranque los dientes si de verdad quiere un duelo limpio, desnuda la hipocresía de quien predica virtud solo cuando le conviene.
+
+  ##### Glosario
+
+  1. **Gañán:** mozo de labranza o jornalero; así llama el narrador al hombre que huye del caimán.
+
+  2. **Zagal:** mozo joven; el texto lo usa para referirse al mismo fugitivo.
+
+  3. **Hidalgo:** miembro de la baja nobleza; el caimán se apropia irónicamente del término para reclamar un duelo "honorable".
+
+  4. **Malandrín:** bribón, persona ruin y sin honor.
+
+  5. **Cordel:** cuerda; en el cierre de la fábula, símbolo del lazo que atrapa al hombre honrado.
 ---
 
 Largo, ojiverde y más feo

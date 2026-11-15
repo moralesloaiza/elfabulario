@@ -17,6 +17,16 @@ autor: rafael-pombo
 curador: Don Alejandro
 es_seudonimo: true
 nombre_real: Alejandro Morales Loaiza
+nota_curador: >-
+  Esta fábula de [Rafael Pombo](https://elfabulario.com/autores/rafael-pombo/) recrea, con paloma y abeja en lugar de sus protagonistas originales, el motivo clásico de "La hormiga y la paloma" atribuido a Esopo: una hormiga a punto de ahogarse es salvada por una paloma, y más tarde, cuando un cazador apunta contra el ave, la hormiga lo distrae mordiéndolo y así le devuelve el favor. No ha sido posible confirmar en las fuentes consultadas que el propio Pombo declarase esta fábula como una adaptación deliberada de Esopo, pero el paralelismo estructural entre ambas —rescate del agua, devolución del favor frente al cazador— es evidente. Pombo, que adaptó y refundió numerosas fábulas y rimas extranjeras durante sus años en Nueva York, entrega aquí una versión breve y de rima ligera sobre la reciprocidad del bien recibido.
+
+  ##### Glosario
+
+  1. **Airosa:** con garbo, gracia y ligereza en el movimiento; se dice de quien realiza una acción con destreza.
+
+  2. **Loma:** elevación de terreno suave y alargada, menor que una colina.
+
+  3. **Atroz (uso adverbial):** aquí, con fiereza o violencia repentina, referido al modo en que la abeja pica al cazador.
 ---
 
 Viendo que estaba ahogándose

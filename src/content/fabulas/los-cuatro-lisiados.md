@@ -24,6 +24,16 @@ nombre_real: Alejandro Morales Loaiza
 traduccion: false
 moraleja: Las obras que un particular puede desempeñar por sí solo, no merecen
   se emplee en ellas el trabajo de muchos hombres.
+nota_curador: >-
+  Esta fábula es la número XLV de las Fábulas literarias (1782) de [Tomás de Iriarte](https://elfabulario.com/autores/tomas-de-iriarte/), y critica, bajo la anécdota de cuatro lisiados que se estorban entre sí para resolver un asunto que uno solo habría despachado mejor, a las obras colectivas donde sobran manos y falta criterio.
+
+  ##### Glosario
+
+  1. **Dómine:** maestro de gramática latina, o por extensión, persona docta o pedante.
+
+  2. **Alcarria:** comarca de la actual provincia de Guadalajara, en Castilla; su mención sitúa la anécdota en un lugar concreto, reforzando el tono de crónica verídica que Iriarte quiere dar a la fábula.
+
+  3. **Patarata:** cosa ridícula o de poco valor, hecha con aparato y pretensiones desmedidas.
 ---
 Un mudo a nativitate,
 y más sordo que una tapia,

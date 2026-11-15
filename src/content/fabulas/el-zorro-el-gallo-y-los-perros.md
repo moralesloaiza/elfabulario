@@ -21,6 +21,16 @@ autor: felix-maria-de-samaniego
 curador: Don Alejandro
 es_seudonimo: true
 nombre_real: Alejandro Morales Loaiza
+nota_curador: >-
+  [Félix María de Samaniego](https://elfabulario.com/autores/felix-maria-de-samaniego/) (Laguardia, 1745-1801) escribió esta fábula, como casi todas las suyas, para los alumnos del Real Seminario de Vergara, tomando el argumento de una historia mucho más vieja, la del zorro que ofrece falsa amistad al gallo y es descubierto por este, presente ya en Esopo y retomada después por La Fontaine, aunque Samaniego, fiel a su estilo, la vistió con una llaneza y una gracia que la hicieron suya. El gallo, "de edad provecta" y por tanto experimentado, escucha con cortesía la propuesta de paz del zorro hambriento, pero en vez de bajar del árbol anuncia la llegada de dos lebreles; el zorro, que sabe bien lo que le espera frente a esos perros, se despide con la misma cortesía con que llegó. La fábula cierra con una moraleja que Samaniego no oculta bajo ninguna alegoría: quien engaña termina, tarde o temprano, engañado por su propia trampa.
+
+  ##### Glosario
+
+  1. **Provecta:** de edad avanzada; aplicado aquí al gallo, indica experiencia y prudencia.
+
+  2. **Lebreles:** perros de caza, veloces, usados tradicionalmente para perseguir liebres y zorros.
+
+  3. **Tratado:** en el poema, acuerdo o pacto que el zorro promete cerrar con el gallo, y que nunca llega a sellar.
 ---
 Un gallo muy maduro,
 De edad provecta, duros espolones,

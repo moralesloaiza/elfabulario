@@ -16,6 +16,18 @@ nombre_real: Alejandro Morales Loaiza
 # Libro IV, Fábula VIII — ed. Emilio Palacios Fernández,
 # Biblioteca Virtual Miguel de Cervantes (texto de dominio público).
 # Última estrofa envuelta en ***...*** como hipótesis de moraleja; revisar.
+nota_curador: >-
+  Esta fábula es la octava del Libro Cuarto de las Fábulas morales (1781-1784) de [Félix María de Samaniego](https://elfabulario.com/autores/felix-maria-de-samaniego/), y recrea un motivo de raíz esópica —el asno que carga una imagen sagrada y confunde con homenaje propio las reverencias e inciensos que en realidad se dirigen a la carga que sostiene—, para advertir, con la conocida fórmula final, que si besan la peana es por el santo, no por quien la porta.
+
+  ##### Glosario
+
+  1. **Jumento:** asno, burro.
+
+  2. **Peana:** pedestal o base sobre la que se asienta una imagen sagrada.
+
+  3. **Engreírse:** envanecerse, volverse soberbio por una distinción que no corresponde al propio mérito.
+
+  4. **Tributar:** rendir homenaje u ofrecer respeto a alguien o algo.
 ---
 De Reliquias cargado,
 un Asno recibía adoraciones,

@@ -18,6 +18,16 @@ autor: felix-maria-de-samaniego
 curador: Don Alejandro
 es_seudonimo: true
 nombre_real: Alejandro Morales Loaiza
+nota_curador: >-
+  Esta fábula pertenece a las Fábulas morales (1781-1784) de [Félix María de Samaniego](https://elfabulario.com/autores/felix-maria-de-samaniego/), y comparte título y argumento con «Les obsèques de la lionne» de Jean de La Fontaine (Fábulas, libro VIII, 1678); según las fuentes consultadas, La Fontaine no tomó este asunto de Esopo sino del humanista italiano Lorenzo Astemio (Laurentius Abstemius), autor del Hecatomythium; no ha sido posible confirmar en las fuentes consultadas si Samaniego trabajó directamente sobre la versión de La Fontaine, aunque la coincidencia de título y argumento así lo sugiere.
+
+  ##### Glosario
+
+  1. **Exequias:** honras fúnebres, ceremonias que se celebran por un difunto.
+
+  2. **Patraña:** mentira o invención urdida con apariencia de verdad para engañar a alguien.
+
+  3. **Saña:** furor, ira ciega con que se ejecuta algo.
 ---
 En su regia caverna inconsolable
 El rey león yacía,

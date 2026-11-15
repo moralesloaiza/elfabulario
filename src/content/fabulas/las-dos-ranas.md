@@ -16,6 +16,14 @@ autor: felix-maria-de-samaniego
 curador: Don Alejandro
 es_seudonimo: true
 nombre_real: Alejandro Morales Loaiza
+nota_curador: >-
+  Esta fábula pertenece a las Fábulas morales (1781-1784) de [Félix María de Samaniego](https://elfabulario.com/autores/felix-maria-de-samaniego/) y se remonta a la fábula esópica de las dos ranas vecinas, una instalada en un estanque seguro y otra en un camino transitado, que rechaza el consejo de mudarse hasta que un vehículo acaba con ella; Samaniego conserva el argumento esópico y lo remata con una moraleja sobre quienes cierran los oídos a los consejos ajenos.
+
+  ##### Glosario
+
+  1. **Dictamen:** opinión o consejo que se da tras examinar un asunto.
+
+  2. **Desvarío:** disparate, dicho o hecho fuera de razón.
 ---
 Tenían dos Ranas
 sus pastos vecinos,

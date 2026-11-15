@@ -19,6 +19,16 @@ autor: aquiles-nazoa
 curador: Don Alejandro
 es_seudonimo: true
 nombre_real: Alejandro Morales Loaiza
+nota_curador: >-
+  Esta fábula de [Aquiles Nazoa](https://elfabulario.com/autores/aquiles-nazoa/) (Caracas, 1920-1976) fue publicada de forma independiente, con ilustraciones de Vicky Sempere, por Ediciones Ekaré / Variopinta (Caracas, ISBN 978-980-257-099-7). Una avispa que vive permanentemente enfurecida, ciega de rabia ante cualquier cosa que se cruce en su camino, se encuentra por accidente encerrada en una casa y, en vez de calmarse para buscar la salida —con puertas y ventanas abiertas de par en par—, se estrella una y otra vez contra los vidrios hasta caer, agotada y furiosa, en un vaso de agua tan pequeño que hasta un mosquito podría salvarse nadando en él; ciega también dentro del agua, muere ahogada por no dejar de embestir. Nazoa cierra los versos con una moraleja explícita: el mundo está lleno de gente que impone respeto por su mal carácter y se hace famosa por sus rabias, para terminar ahogándose, tarde o temprano, en un vaso de agua.
+
+  ##### Glosario
+
+  1. **Cuarta:** antigua medida de longitud equivalente a la distancia entre el pulgar y el meñique con la mano extendida, usada aquí para indicar un tamaño muy pequeño.
+
+  2. **Emparamada:** en el habla venezolana, aterida o empapada, como quien ha estado expuesta al frío húmedo de un páramo.
+
+  3. **Mentadas:** forma abreviada de "mentadas de madre", insultos groseros dirigidos a la familia de alguien.
 ---
 La avispa aquel día
 desde la mañana,

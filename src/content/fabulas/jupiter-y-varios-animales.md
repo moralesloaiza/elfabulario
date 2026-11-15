@@ -21,6 +21,16 @@ autor: cayetano-fernández-cabello
 curador: Don Alejandro
 es_seudonimo: true
 nombre_real: Alejandro Morales Loaiza
+nota_curador: >-
+  Esta fábula de [Cayetano Fernández Cabello](https://elfabulario.com/autores/cayetano-fernández-cabello/) (Cádiz, 1820-Sevilla, 1901) coincide en estilo y propósito con sus Fábulas ascéticas en verso castellano y en variedad de metros (1864), escritas para la educación religiosa del futuro Alfonso XII: como en otras piezas de esa colección, se abre con un epígrafe bíblico —aquí de 1 Corintios 7, 7, «cada uno tiene de Dios su propio don, uno de una manera y otro de otra»— que orienta la lectura hacia el terreno espiritual; no ha sido posible confirmar, sin embargo, en qué edición o página exacta de la colección apareció esta pieza en particular, por lo que su pertenencia a las Fábulas ascéticas se da aquí como muy probable y no como dato verificado. Cuatro animales piden a Júpiter cambiar su naturaleza —el lobo quiere guardar corderos, la cierva pide el encierro, el cerdo el ayuno, el toro serrarse los cuernos—, y el dios, airado, los despacha con la advertencia de que las vocaciones vienen del cielo y nadie debe abandonar a la ligera el puesto que le tocó.
+
+  ##### Glosario
+
+  1. **Tonante:** epíteto clásico de Júpiter, "el que truena", por su papel de dios del rayo y el trueno.
+
+  2. **Hato:** conjunto o grupo de personas o animales, aquí usado en tono despectivo ("hato de locos").
+
+  3. **Escarmiento:** castigo o lección correctiva que se impone para evitar que una falta se repita.
 ---
 > *Unusquisque proprium donum habet ex Deo; alius quidem sic, alius vero sic.* — 1 Corintios 7, 7
 

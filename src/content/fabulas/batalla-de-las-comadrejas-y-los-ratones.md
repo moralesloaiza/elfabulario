@@ -22,6 +22,16 @@ curador: Don Alejandro
 es_seudonimo: true
 nombre_real: Alejandro Morales Loaiza
 traduccion: false
+nota_curador: >-
+  Esta fábula es la número XX del Libro IV de las Fábulas morales (1781-1784) de [Félix María de Samaniego](https://elfabulario.com/autores/felix-maria-de-samaniego/), y recrea un relato de raigambre esópica muy antigua —la guerra entre los ratones y las comadrejas, Perry 165— que Fedro versificó en latín en el libro IV de sus fábulas y que siglos después La Fontaine retomó como «Le Combat des Rats et des Belettes»; en todas las versiones los soldados rasos logran escapar, pero los capitanes, adornados con alguna insignia para distinguirse en la batalla, quedan atrapados en la entrada de las cuevas y son devorados, y Samaniego usa la escena para advertir sobre los peligros de la vanidad y las distinciones ostentosas en quienes mandan.
+
+  ##### Glosario
+
+  1. **Comadreja:** pequeño mamífero carnívoro de la familia de los mustélidos, depredador tradicional de ratones y protagonista habitual de fábulas junto a ellos.
+
+  2. **Refriega:** combate o pelea, generalmente confusa y de corta duración.
+
+  3. **Cuernos (como insignia):** adorno que los capitanes llevan en la cabeza para que sus tropas los distingan en la batalla; es el mismo detalle que ya aparece en Fedro.
 ---
 Vencidos los Ratones,
 huían con presteza

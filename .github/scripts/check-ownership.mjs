@@ -16,7 +16,7 @@
 // Required env: PR_AUTHOR, BASE_SHA, HEAD_SHA.
 // Exits 0 on success, 1 on rule violation, 2 on misconfiguration.
 
-import { execSync } from 'node:child_process';
+import { execSync, execFileSync } from 'node:child_process';
 import { readFileSync, readdirSync, existsSync } from 'node:fs';
 import { join } from 'node:path';
 
@@ -38,15 +38,17 @@ const isAdmin = PR_AUTHOR === ADMIN;
 const errors = [];
 
 // 1. Parse the full diff once.
+// -z: NUL-separated, verbatim pathnames (git no las escapa con comillas via
+// core.quotepath). Sin esto, un archivo con nombre no ASCII (p. ej.
+// 'la-marquesa-desdeñosa.md') llegaria como '"src/content/fabulas/...\303\261..."'
+// y: (a) no coincidiria con CONTENT_PATTERN/AUTHOR_PATTERN, saltandose las reglas
+// de ownership en silencio; y (b) romperia readFileSync / git show con ENOENT.
 const diff = execSync(
-  `git diff --name-status ${BASE_SHA} ${HEAD_SHA}`,
+  `git diff --name-status -z ${BASE_SHA} ${HEAD_SHA}`,
   { encoding: 'utf8' }
-).trim();
+);
 
-const allChanges = diff
-  .split('\n')
-  .filter(Boolean)
-  .map(parseDiffLine);
+const allChanges = parseNameStatusZ(diff);
 
 // 2. CI hardening: non-admin cannot touch .github/**.
 if (!isAdmin) {
@@ -120,19 +122,26 @@ if (isAdmin) {
 
 // ---------- helpers ----------
 
-function parseDiffLine(line) {
-  // Format examples:
-  //   M\tpath/to/file
-  //   A\tpath/to/file
-  //   D\tpath/to/file
-  //   R100\told/path\tnew/path
-  //   C75\told/path\tnew/path
-  const parts = line.split('\t');
-  const status = parts[0][0]; // first letter only
-  if (status === 'R' || status === 'C') {
-    return { status, oldPath: parts[1], path: parts[2] };
+function parseNameStatusZ(output) {
+  // `git diff --name-status -z` emite tokens separados por NUL, verbatim:
+  //   <status>\0<path>\0                 para A/M/D/T/U
+  //   <status>\0<oldPath>\0<newPath>\0   para R.../C...
+  const tokens = output.split('\0');
+  const changes = [];
+  let i = 0;
+  while (i < tokens.length) {
+    const field = tokens[i];
+    if (!field) { i++; continue; } // salta el token vacio final
+    const status = field[0]; // solo la primera letra (R100 -> R)
+    if (status === 'R' || status === 'C') {
+      changes.push({ status, oldPath: tokens[i + 1], path: tokens[i + 2] });
+      i += 3;
+    } else {
+      changes.push({ status, path: tokens[i + 1] });
+      i += 2;
+    }
   }
-  return { status, path: parts[1] };
+  return changes;
 }
 
 function checkAuthorChange(change, errors) {
@@ -223,7 +232,7 @@ function checkCuradorOwnership(change, authorIndex, errors) {
   let content;
   try {
     if (status === 'D') {
-      content = execSync(`git show ${BASE_SHA}:${path}`, { encoding: 'utf8' });
+      content = execFileSync('git', ['show', `${BASE_SHA}:${path}`], { encoding: 'utf8' });
     } else {
       content = readFileSync(path, 'utf8');
     }
@@ -318,7 +327,7 @@ function readFrontmatterAt(ref, path) {
   try {
     const content = ref === 'HEAD'
       ? readFileSync(path, 'utf8')
-      : execSync(`git show ${ref}:${path}`, { encoding: 'utf8' });
+      : execFileSync('git', ['show', `${ref}:${path}`], { encoding: 'utf8' });
     return parseFrontmatter(content);
   } catch {
     return null;

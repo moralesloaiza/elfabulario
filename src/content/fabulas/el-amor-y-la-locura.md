@@ -16,6 +16,16 @@ nombre_real: Alejandro Morales Loaiza
 # Libro VI, Fábula XII — ed. Emilio Palacios Fernández,
 # Biblioteca Virtual Miguel de Cervantes (texto de dominio público).
 # Última estrofa envuelta en ***...*** como hipótesis de moraleja; revisar.
+nota_curador: >-
+  Esta fábula es la duodécima del Libro Sexto de las Fábulas morales de [Félix María de Samaniego](https://elfabulario.com/autores/felix-maria-de-samaniego/), y adapta al castellano «L'Amour et la Folie», la fábula que Jean de La Fontaine publicó en 1694 en el libro XII, el último de sus Fables; Samaniego conserva el argumento de su modelo francés: tras dejar ciego a Cupido en una riña, la Locura es llevada ante Júpiter por una airada Venus, y el dios falla que, como castigo, deberá servir para siempre de lazarillo al Amor ciego.
+
+  ##### Glosario
+
+  1. **Lazarillo:** guía de un ciego; el término proviene del Lazarillo de Tormes y se popularizó como sinónimo de acompañante o guía.
+
+  2. **Cirio:** vela de cera gruesa; aquí se refiere a la antorcha que tradicionalmente porta Cupido junto a su arco.
+
+  3. **Querellarse:** presentar una queja o demanda formal ante una autoridad.
 ---
 Habiendo la Locura
 con el Amor reñido,

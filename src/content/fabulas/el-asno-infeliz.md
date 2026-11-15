@@ -19,6 +19,18 @@ nombre_real: Alejandro Morales Loaiza
 # Libro V, Fábula XXI — ed. Emilio Palacios Fernández,
 # Biblioteca Virtual Miguel de Cervantes (texto de dominio público).
 # Última estrofa envuelta en ***...*** como hipótesis de moraleja; revisar.
+nota_curador: >-
+  Esta fábula es la vigésima primera del Libro Quinto de las Fábulas morales (1781-1784) de [Félix María de Samaniego](https://elfabulario.com/autores/felix-maria-de-samaniego/), quien la tomó de Fedro —a quien cita expresamente en el cierre, «Fedro lo dice»— y adaptó cambiando el detalle original de los sacerdotes de Cíbele por el de las zagalas que bailan al son del pellejo del asno convertido en tamboril.
+
+  ##### Glosario
+
+  1. **Jumento:** asno, burro.
+
+  2. **Tamboril:** instrumento de percusión pequeño, parecido al tambor, usado para acompañar bailes populares.
+
+  3. **Zagala:** muchacha joven, pastora.
+
+  4. **Baqueteado:** desgastado o curtido a fuerza de golpes, como el parche de un tambor.
 ---
 Yo conocí un Jumento
 que murió muy contento

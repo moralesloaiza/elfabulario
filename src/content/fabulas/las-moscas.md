@@ -20,6 +20,14 @@ autor: felix-maria-de-samaniego
 curador: Don Alejandro
 es_seudonimo: true
 nombre_real: Alejandro Morales Loaiza
+nota_curador: >-
+  Esta fábula pertenece a las Fábulas morales (1781-1784) de [Félix María de Samaniego](https://elfabulario.com/autores/felix-maria-de-samaniego/) y tiene origen esópico directo, en la fábula clásica de las moscas que, atraídas por la miel derramada de un panal, mueren presas de sus propias patas; Samaniego conserva el argumento en apenas diez versos y lo remata con una moraleja sobre los vicios que aprisionan al corazón humano.
+
+  ##### Glosario
+
+  1. **Panal:** conjunto de celdillas de cera que fabrican las abejas para depositar la miel.
+
+  2. **Golosina:** aquí, el dulce o manjar que atrae por su sabor y que, en la fábula, se convierte en causa de perdición.
 ---
 
 A un panal de rica miel
