@@ -15,6 +15,7 @@ import '../styles/fonts.css';
 import '../styles/global.css';
 
 import type { ImageMetadata } from 'astro';
+import { getImage } from 'astro:assets';
 import { SITE_TITLE } from '../consts';
 
 interface Props {
@@ -43,11 +44,18 @@ const canonicalURL = new URL(Astro.url.pathname, Astro.site);
 
 // Build the OG image URL: prefer the page-specific illustration,
 // fall back to the brand card in /public/og-default.png.
-const ogImageURL = image
-	? new URL(image.src, Astro.site)
+// La ilustración original pesa varios MB y WhatsApp descarta las imágenes de
+// tarjeta demasiado pesadas (límite práctico ~300 KB), así que para las
+// tarjetas sociales se genera una versión ligera: 1200 px de ancho, JPEG,
+// misma proporción (sin recorte).
+const ogImagen = image
+	? await getImage({ src: image, width: 1200, format: 'jpeg', quality: 70 })
+	: undefined;
+const ogImageURL = ogImagen
+	? new URL(ogImagen.src, Astro.site)
 	: new URL('/og-default.png', Astro.site);
-const ogImageWidth = image?.width ?? 1200;
-const ogImageHeight = image?.height ?? 630;
+const ogImageWidth = ogImagen?.attributes.width ?? 1200;
+const ogImageHeight = ogImagen?.attributes.height ?? 630;
 const ogImageAlt =
 	imageAlt ?? `${SITE_TITLE} · Colección de fábulas en español`;
 ---
