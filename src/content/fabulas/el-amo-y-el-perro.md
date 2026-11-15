@@ -16,6 +16,18 @@ nombre_real: Alejandro Morales Loaiza
 # Libro IX, Fábula X — ed. Emilio Palacios Fernández,
 # Biblioteca Virtual Miguel de Cervantes (texto de dominio público).
 # Última estrofa envuelta en ***...*** como hipótesis de moraleja; revisar.
+nota_curador: >-
+  Esta fábula pertenece al Libro Noveno de las Fábulas morales de [Félix María de Samaniego](https://elfabulario.com/autores/felix-maria-de-samaniego/) (las fuentes consultadas no coinciden en el número exacto dentro del libro, por lo que se omite aquí), y cuenta, con el humor mesurado que distingue al fabulista, la doble prueba a la que un amo somete a su perro Palomo para certificar su fidelidad: primero lo deja de guardia junto a una despensa abierta, donde se enfrenta a un gato ladrón y lo mata; después, para probarlo de nuevo, lo encierra días enteros rodeado de carne sin vigilancia, y el pobre animal termina cediendo a una tentación que ningún guardián, por fiel que sea, debería tener que resistir.
+
+  ##### Glosario
+
+  1. **Bizarría:** gallardía, valentía, gesto arrojado.
+
+  2. **Guarda-jamones:** término festivo acuñado por Samaniego para referirse, con ironía, al perro Palomo, guardián de la despensa que acaba comiéndose las aves que debía respetar.
+
+  3. **Manida (carne manida):** carne de caza dejada reposar unos días antes de cocinarla, práctica tradicional para ablandarla y realzar su sabor.
+
+  4. **Sebo:** grasa dura y compacta de los animales; aquí, "sebosos riñones" describe la carne grasienta que tienta al perro.
 ---
 —Callen todos los perros de este mundo
 donde está mi Palomo:

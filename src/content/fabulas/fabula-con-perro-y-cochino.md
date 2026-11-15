@@ -17,6 +17,18 @@ autor: aquiles-nazoa
 curador: Don Alejandro
 es_seudonimo: true
 nombre_real: Alejandro Morales Loaiza
+nota_curador: >-
+  Esta pieza pertenece al mismo ciclo humorístico sobre cochinos que cultivó [Aquiles Nazoa](https://elfabulario.com/autores/aquiles-nazoa/) (Caracas, 1920-1976); tampoco en este caso ha sido posible confirmar la publicación original del poema. Para escapar del palo cochinero, un cochino convence a un perro flaco de intercambiar sus lugares —él cuidará la casa, el perro comerá y engordará en el chiquero—, y ambos aprenden tan bien su nuevo papel que ni el dueño sospecha nada; pero el destino termina alcanzando a los dos igual, primero al perro, que el dueño mata a palos creyendo que es el cochino, y después, cuando el cochino ya se creía a salvo y celebraba su suerte, al propio cochino, que el hombre que envenena perros remata sin piedad creyendo que es un perro. Con este doble vuelco, Nazoa aplica la misma lógica implacable de toda la serie: cambiar de lugar no cambia el destino, solo la forma en que este llega.
+
+  ##### Glosario
+
+  1. **Chiquero:** corral o pocilga donde se cría a los cerdos.
+
+  2. **Palo cochinero:** golpe o instrumento con el que tradicionalmente se remata al cerdo en la matanza.
+
+  3. **Chingo:** en el habla popular venezolana, dicho de un animal, especialmente un perro, de cola corta o cortada.
+
+  4. **Raspar:** en sentido figurado y popular, matar o eliminar a alguien.
 ---
 
 Para eludir su trágico destino

@@ -16,6 +16,18 @@ nombre_real: Alejandro Morales Loaiza
 # Iriarte, Fabula XVIII de "Fabulas literarias",
 # Biblioteca Virtual Miguel de Cervantes (texto de dominio publico).
 # Moraleja de la fuente incrustada como bloque final en *...* (revisar).
+nota_curador: >-
+  Esta es la fábula XIX de las Fábulas literarias (1782) de [Tomás de Iriarte](https://elfabulario.com/autores/tomas-de-iriarte/); su blanco es el mal escritor que, sin aplauso en vida, se consuela soñando con la fama póstuma. Una cabra escucha embelesada el sonido de un violín y presume ante un caballo de que las cuerdas están hechas con las tripas de una cabra compañera suya, soñando con que algún día sus propios intestinos sonarán igual de dulce; el caballo le responde que el mérito de esas cuerdas está en las cerdas de su cola, arrancadas en vida, y que la cabra solo gozará esa dicha después de muerta.
+
+  ##### Glosario
+
+  1. **Jaco:** caballo de poca alzada o valor, aquí aludido con cierta familiaridad hacia el animal.
+
+  2. **Pienso:** ración de alimento seco que se da al ganado y a las caballerías.
+
+  3. **Cerdas:** pelos gruesos y ásperos, como los de la cola de un caballo.
+
+  4. **Rocín:** caballo de mal aspecto o de trabajo, usado aquí como sinónimo poético del caballo de la fábula.
 ---
 Estábase una cabra muy atenta
 largo rato escuchando

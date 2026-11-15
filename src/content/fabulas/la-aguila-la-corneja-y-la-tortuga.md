@@ -18,6 +18,16 @@ autor: felix-maria-de-samaniego
 curador: Don Alejandro
 es_seudonimo: true
 nombre_real: Alejandro Morales Loaiza
+nota_curador: >-
+  Esta fábula de [Félix María de Samaniego](https://elfabulario.com/autores/felix-maria-de-samaniego/) pertenece a sus Fábulas morales (1781-1784), escritas por encargo para el Real Seminario Patriótico Vascongado de Vergara, y sigue de cerca «El águila y la corneja» de Fedro (libro II), donde una corneja enseña al águila a dejar caer la tortuga desde lo alto para romperle el caparazón. Un águila atrapa a una tortuga y no consigue romper su caparazón a picotazos; una corneja le aconseja remontar el vuelo y dejarla caer sobre un peñasco, y ambas terminan compartiendo el festín.
+
+  ##### Glosario
+
+  1. **Corneja:** ave de la familia de los córvidos, de plumaje oscuro, asociada tradicionalmente con la astucia.
+
+  2. **Peñasco:** roca grande y elevada, prominencia rocosa.
+
+  3. **Hacer tortilla:** expresión coloquial que significa aplastar o destrozar algo por completo.
 ---
 A una tortuga una águila arrebata.
 La ladrona se apura y desbarata

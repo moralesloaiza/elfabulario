@@ -16,6 +16,18 @@ nombre_real: Alejandro Morales Loaiza
 # Iriarte, Fabula XLII de "Fabulas literarias",
 # Biblioteca Virtual Miguel de Cervantes (texto de dominio publico).
 # Moraleja de la fuente incrustada como bloque final en *...* (revisar).
+nota_curador: >-
+  Esta fábula es la cuadragésima tercera (XLIII) de las Fábulas literarias (1782) de [Tomás de Iriarte](https://elfabulario.com/autores/tomas-de-iriarte/). El blanco es la vanidad de autor que se cree con derecho a todo el aplauso cuando una obra colectiva sale bien, y a ninguna culpa cuando sale mal. En la fábula, para festejar el cumpleaños del león, varios animales organizan una academia de música con cantores tan poco dotados como decididos —grillos, rana, cigarra, tábanos, cerdo y burro—; cada uno se promete el éxito antes de cantar, pero el concierto es un desastre, los músicos se culpan unos a otros y el león, harto, los echa de su presencia.
+
+  ##### Glosario
+
+  1. **Bandurria:** instrumento de cuerda pulsada, de caja ovalada, semejante a una guitarra pequeña, usado tradicionalmente para acompañar coplas y jácaras.
+
+  2. **Sarao:** fiesta o reunión nocturna con baile y música, propia de la vida cortesana.
+
+  3. **Capilla (musical):** conjunto o grupo de músicos y cantores reunidos para interpretar una pieza.
+
+  4. **Trabajar a escote:** repartir entre varios el gasto o el esfuerzo de una tarea común, de modo que cada uno aporta su parte.
 ---
 Atención, noble auditorio,
 que la bandurria he templado,

@@ -16,6 +16,18 @@ nombre_real: Alejandro Morales Loaiza
 # Iriarte, Fabula XV de "Fabulas literarias",
 # Biblioteca Virtual Miguel de Cervantes (texto de dominio publico).
 # Moraleja de la fuente incrustada como bloque final en *...* (revisar).
+nota_curador: >-
+  Esta es la fábula XVI de las Fábulas literarias (1782) de [Tomás de Iriarte](https://elfabulario.com/autores/tomas-de-iriarte/), y apunta contra el plagio, tal como declara su moraleja final sobre los «plagiarios que escriben centones». Una avutarda incuba huevos robados a otras aves y presume ante todos de su cría numerosa y vistosa, hasta que, llegado el momento, cada ave reclama a su propio polluelo y la avutarda se queda con las manos vacías.
+
+  ##### Glosario
+
+  1. **Avutarda:** ave zancuda de gran tamaño, una de las aves voladoras más pesadas de Europa, de vuelo torpe y pausado.
+
+  2. **Alcotán:** ave rapaz diurna de tamaño mediano, emparentada con el halcón.
+
+  3. **Hueros:** dicho de un huevo, que no ha llegado a desarrollarse y está vacío por dentro.
+
+  4. **Centón:** obra literaria compuesta uniendo fragmentos ajenos, aquí usado como sinónimo de plagio.
 ---
 De sus hijos la torpe avutarda,
 el pesado volar conocía,

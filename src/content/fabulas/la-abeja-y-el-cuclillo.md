@@ -16,6 +16,14 @@ nombre_real: Alejandro Morales Loaiza
 # Iriarte, Fabula XIX de "Fabulas literarias",
 # Biblioteca Virtual Miguel de Cervantes (texto de dominio publico).
 # Moraleja de la fuente incrustada como bloque final en *...* (revisar).
+nota_curador: >-
+  Esta es la fábula XX de las Fábulas literarias (1782) de [Tomás de Iriarte](https://elfabulario.com/autores/tomas-de-iriarte/). Aquí la lección va dirigida a las obras de entretenimiento: el cuclillo defiende ante la abeja el valor de su canto monótono apelando a la constancia, y ella le responde que la falta de variedad perjudica poco a una obra útil, pero resulta fatal en una obra destinada solo al gusto y la diversión.
+
+  ##### Glosario
+
+  1. **Cuclillo:** ave conocida por su canto repetitivo ("cucú") y por depositar sus huevos en nidos ajenos.
+
+  2. **Colmenar:** lugar donde se agrupan las colmenas de abejas.
 ---
 Saliendo del colmenar,
 dijo al cuclillo la abeja:

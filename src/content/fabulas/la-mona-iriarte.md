@@ -16,6 +16,18 @@ nombre_real: Alejandro Morales Loaiza
 # Iriarte, Fabula XXVI de "Fabulas literarias",
 # Biblioteca Virtual Miguel de Cervantes (texto de dominio publico).
 # Moraleja de la fuente incrustada como bloque final en *...* (revisar).
+nota_curador: >-
+  Esta fábula es la vigésima séptima de las Fábulas literarias (1782) de [Tomás de Iriarte](https://elfabulario.com/autores/tomas-de-iriarte/), que satiriza a quienes aparentan el talento que no tienen con solo vestirse —o vestir su prosa— con las galas propias de una profesión literaria, de donde viene el refrán que la abre y que la fábula reelabora: "aunque se vista de seda la mona, mona se queda". En la fábula, una mona se pone un traje vistoso y, confiada en la sola apariencia, viaja hasta una lejana colonia de monas desnudas que, deslumbradas por el atuendo, la nombran capitana de una expedición que termina perdida, pues la ropa —concluye Iriarte— no da ciencia.
+
+  ##### Glosario
+
+  1. **Matachín:** personaje de comparsa o mascarada vestido con traje vistoso y colores llamativos.
+
+  2. **Petimetre:** persona que cuida en exceso su aspecto y presume de elegancia, generalmente sin fundamento real.
+
+  3. **Nemine discrepante:** expresión latina que significa "sin que nadie disintiera", es decir, por unanimidad.
+
+  4. **No dar palotada:** no lograr ni conseguir nada, quedarse sin resultado alguno.
 ---
 «Aunque se vista de seda
 la mona, mona se queda.»

@@ -17,6 +17,16 @@ autor: cayetano-fernández-cabello
 curador: Don Alejandro
 es_seudonimo: true
 nombre_real: Alejandro Morales Loaiza
+nota_curador: >-
+  Esta fábula se atribuye a [Cayetano Fernández Cabello](https://elfabulario.com/autores/cayetano-fernández-cabello/), sacerdote nacido en Cádiz y afincado en Sevilla, autor de las Fábulas ascéticas en verso castellano y en variedad de metros (1864), escritas para la formación religiosa y moral del futuro Alfonso XII; no ha sido posible confirmar en las fuentes digitales consultadas que esta pieza en concreto figure en el texto impreso de esa colección o de sus Nuevas fábulas ascéticas (1898), pero el tono, el metro y el epígrafe bíblico que la encabeza son coherentes con el resto de su obra. La cita latina inicial —«Aperiam in parabolis os meum», del Salmo 77, 2 según la numeración de la Vulgata (78, 2 en la numeración hebrea moderna), «abriré mi boca en parábolas»— es el mismo versículo que el Evangelio de Mateo (13, 35) aplica a la enseñanza por parábolas, y sitúa la pieza dentro de esa tradición: bajo la anécdota del maestro obcecado y los canarios que aprenden de oído se esconde una defensa de la fábula misma como forma de enseñar.
+
+  ##### Glosario
+
+  1. **Solfa:** conjunto de reglas para leer y entonar la música; aprenderla "por principios" es aprenderla desde la teoría, nota a nota.
+
+  2. **Mamotretos:** libros o legajos voluminosos y farragosos, usado aquí con sentido despectivo para los tratados del maestro.
+
+  3. **Apólogo:** relato breve, generalmente protagonizado por animales, del que se desprende una enseñanza moral; sinónimo culto de fábula.
 ---
 > *Aperiam in parabolis os meum.* — Salmo 77, 2
 

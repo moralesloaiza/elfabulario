@@ -16,6 +16,14 @@ nombre_real: Alejandro Morales Loaiza
 # Iriarte, Fabula III de "Fabulas literarias",
 # Biblioteca Virtual Miguel de Cervantes (texto de dominio publico).
 # Moraleja de la fuente incrustada como bloque final en *...* (revisar).
+nota_curador: >-
+  Esta es la fábula IV de las Fábulas literarias (1782) de [Tomás de Iriarte](https://elfabulario.com/autores/tomas-de-iriarte/). Cuenta cómo unos zánganos, avergonzados de su ocio, no logran hacer panales por sí mismos y optan por exhumar el cadáver de una abeja laboriosa para honrarla con grandes exequias y alabar su ingenio, hasta que una abeja viva les recuerda que citar y elogiar a los sabios antiguos no equivale a imitarlos.
+
+  ##### Glosario
+
+  1. **Zángano:** macho de la abeja, que no produce miel ni cera y vive del trabajo de las obreras.
+
+  2. **Exequias:** honras fúnebres, ceremonias solemnes en memoria de un difunto.
 ---
 A tratar de un gravísimo negocio
 se juntaron los zánganos un día.

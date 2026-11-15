@@ -16,6 +16,26 @@ nombre_real: Alejandro Morales Loaiza
 # Libro VII, Fábula IV — ed. Emilio Palacios Fernández,
 # Biblioteca Virtual Miguel de Cervantes (texto de dominio público).
 # Última estrofa envuelta en ***...*** como hipótesis de moraleja; revisar.
+nota_curador: >-
+  Esta fábula es la cuarta del Libro Séptimo de las Fábulas morales (1781-1784) de [Félix María de Samaniego](https://elfabulario.com/autores/felix-maria-de-samaniego/). La advertencia de la edición de 1796 declara que los asuntos de los libros sexto, séptimo y octavo pertenecen al fabulista inglés John Gay, de modo que el argumento procede en principio de él; no ha sido posible confirmar a qué fábula concreta de Gay corresponde. La sátira apunta al sabio de pura apariencia, que confunde la burla ajena con admiración.
+
+  ##### Glosario
+
+  1. **Reverendo:** digno de respeto; aquí, con ironía, solemne y grave.
+
+  2. **Gran Turco:** nombre que se daba en Europa al sultán otomano, conocido por dejarse ver muy poco en público.
+
+  3. **Taciturno:** callado, silencioso.
+
+  4. **Cara de pascua:** cara alegre y risueña; el hombre lo dice con burla, porque el búho tiene el gesto grave y serio.
+
+  5. **Visaje:** gesto o mueca del rostro.
+
+  6. **Turba canora:** multitud de aves cantoras.
+
+  7. **Calandria:** pájaro cantor parecido a la alondra.
+
+  8. **Motejar:** censurar a alguien poniéndole un mote o calificativo burlón.
 ---
 Vivía en un granero retirado
 un reverendo Búho, dedicado

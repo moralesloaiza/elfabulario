@@ -20,6 +20,18 @@ nombre_real: Alejandro Morales Loaiza
 # Libro V, Fábula II — ed. Emilio Palacios Fernández,
 # Biblioteca Virtual Miguel de Cervantes (texto de dominio público).
 # Última estrofa envuelta en ***...*** como hipótesis de moraleja; revisar.
+nota_curador: >-
+  Esta fábula es la segunda del Libro Quinto de las Fábulas morales (1781-1784) de [Félix María de Samaniego](https://elfabulario.com/autores/felix-maria-de-samaniego/), y recrea un apólogo de tradición esópica: el asno cojo que, perseguido por el lobo, le pide que le saque una espina del pie antes de comérselo y, cuando lo tiene cerca, lo despide de una coz. Samaniego cambia la espina por el clavo de una herradura y pone en boca del lobo escarmentado la lección final: no tiene juicio quien deja el propio oficio por el ajeno.
+
+  ##### Glosario
+
+  1. **Herrador:** persona que pone herraduras a las caballerías.
+
+  2. **Cirujano:** médico especializado en operaciones; aquí, disfraz irónico que adopta el lobo.
+
+  3. **Estuche molar:** los dientes del lobo, descritos con humor como instrumental quirúrgico.
+
+  4. **Coz:** golpe que da una bestia con las patas traseras.
 ---
 Un Burro cojo vio que le seguía
 un Lobo cazador y, no pudiendo

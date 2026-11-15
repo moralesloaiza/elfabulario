@@ -17,6 +17,16 @@ autor: felix-maria-de-samaniego
 curador: Don Alejandro
 es_seudonimo: true
 nombre_real: Alejandro Morales Loaiza
+nota_curador: >-
+  Esta fábula pertenece a las Fábulas morales (1781-1784) de [Félix María de Samaniego](https://elfabulario.com/autores/felix-maria-de-samaniego/) y traslada al castellano el argumento de «L'Ours et les deux Compagnons» de Jean de La Fontaine (libro V, fábula 20, 1668): dos amigos sorprendidos por un oso en el bosque, uno huye a un árbol y el otro finge estar muerto, y la bestia, que según la creencia popular no toca cadáveres, se marcha tras susurrarle al oído la lección que cierra la pieza. Samaniego sigue de cerca el argumento y el desenlace del original francés, que a su vez procede de una fábula esópica.
+
+  ##### Glosario
+
+  1. **Medroso:** miedoso, propenso a asustarse con facilidad.
+
+  2. **Recelo:** desconfianza o temor ante un riesgo o daño posible.
+
+  3. **Ventura:** suerte o azar; "abandonado a la ventura" es dejarse librado al resultado incierto de las cosas.
 ---
 A dos amigos se aparece un oso:
 El uno, muy medroso,

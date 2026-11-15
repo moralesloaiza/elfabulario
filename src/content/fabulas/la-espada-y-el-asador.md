@@ -16,6 +16,18 @@ nombre_real: Alejandro Morales Loaiza
 # Iriarte, Fabula XLIII de "Fabulas literarias",
 # Biblioteca Virtual Miguel de Cervantes (texto de dominio publico).
 # Moraleja de la fuente incrustada como bloque final en *...* (revisar).
+nota_curador: >-
+  Esta es la fábula XLIV de las Fábulas literarias (1782) de [Tomás de Iriarte](https://elfabulario.com/autores/tomas-de-iriarte/), que la dedica a dos clases de malos traductores: los que estropean las obras buenas y los que traducen con esmero las malas. Una espada toledana, forjada por un insigne fabricante, va pasando de dueño en dueño hasta terminar arrinconada en una posada, donde una criada, por orden de su amo, la convierte en asador de cocina; al mismo tiempo, en la corte, un espadero desbasta y afila un simple asador y lo vende como espada auténtica a un forastero incauto, atribuyéndosela al célebre espadero toledano Tomás de Ayala.
+
+  ##### Glosario
+
+  1. **Almoneda:** venta pública de bienes al mejor postor, subasta.
+
+  2. **Hostería:** posada o establecimiento donde se da alojamiento y comida a los viajeros.
+
+  3. **Espadero:** artesano que fabrica o vende espadas.
+
+  4. **Payo:** persona rústica o inculta, campesino sin refinamiento, aquí en contraste con la palabra «caballero».
 ---
 Sirvió en muchos combates una espada
 tersa, fina, cortante, bien templada,

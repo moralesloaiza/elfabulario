@@ -18,6 +18,16 @@ autor: felix-maria-de-samaniego
 curador: Don Alejandro
 es_seudonimo: true
 nombre_real: Alejandro Morales Loaiza
+nota_curador: >-
+  Esta fábula de [Félix María de Samaniego](https://elfabulario.com/autores/felix-maria-de-samaniego/) pertenece al libro tercero de sus Fábulas en verso castellano (1781-1784) y es una versificación de la fábula esópica conocida como «la cierva en la gruta del león», sobre el peligro de huir sin razón de un riesgo hacia otro mayor. Una cierva, huyendo de un cazador, se refugia atropelladamente en una gruta que resulta ser la guarida de un león, donde halla la muerte que creía haber esquivado.
+
+  ##### Glosario
+
+  1. **Cierva:** hembra del ciervo.
+
+  2. **Sañudo:** furioso, colérico, que actúa con violencia o crueldad.
+
+  3. **Res:** en sentido amplio y algo antiguo, cualquier animal de cuatro patas, aquí referido a la cierva como presa.
 ---
 Más ligera que el viento,
 precipitada huía

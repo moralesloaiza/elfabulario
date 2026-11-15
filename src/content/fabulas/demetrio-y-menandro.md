@@ -16,6 +16,16 @@ nombre_real: Alejandro Morales Loaiza
 # Libro VII, Fábula VII — ed. Emilio Palacios Fernández,
 # Biblioteca Virtual Miguel de Cervantes (texto de dominio público).
 # Última estrofa envuelta en ***...*** como hipótesis de moraleja; revisar.
+nota_curador: >-
+  Esta fábula es la séptima del Libro VII de las Fábulas morales de [Félix María de Samaniego](https://elfabulario.com/autores/felix-maria-de-samaniego/), y es una de las pocas piezas de sus libros VI a VIII —dedicados en su mayoría a adaptar al inglés John Gay— que Samaniego tomó directamente de Fedro; el relato recrea un episodio semihistórico protagonizado por Demetrio de Falero, gobernante ateniense de fines del siglo IV a. C., y el comediógrafo griego Menandro, y muestra cómo el desprecio hacia una apariencia amanerada se convierte al instante en deferencia en cuanto se revela el prestigio de quien la porta.
+
+  ##### Glosario
+
+  1. **Demetrio el Faleriano:** filósofo y político ateniense (c. 350-280 a. C.), gobernó Atenas bajo el patrocinio macedonio entre 317 y 307 a. C.
+
+  2. **Menandro:** comediógrafo griego (c. 342-291 a. C.), el máximo representante de la llamada Comedia Nueva ateniense.
+
+  3. **Arconte:** título de los principales magistrados de la antigua Atenas; en la fábula se usa como sinónimo del gobernante de la ciudad.
 ---
 Si te falta el buen nombre,
 Fabio, en vano presumes

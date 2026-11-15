@@ -16,6 +16,18 @@ nombre_real: Alejandro Morales Loaiza
 # Iriarte, Fabula XXXVI de "Fabulas literarias",
 # Biblioteca Virtual Miguel de Cervantes (texto de dominio publico).
 # Moraleja de la fuente incrustada como bloque final en *...* (revisar).
+nota_curador: >-
+  Esta es la fábula XXXVI de las Fábulas literarias (1782) de [Tomás de Iriarte](https://elfabulario.com/autores/tomas-de-iriarte/). Con ella, el autor apunta contra quienes valoran una obra por su presentación y no por su contenido, tal como declara su moraleja final sobre la necedad de «comprar libros sólo por la encuadernación». Un hombre compra a un chalán un borrico ricamente enjaezado y de aspecto espléndido, hasta que un vecino le propone quitarle los adornos y descubren que bajo ellos el animal esconde llagas, tumores y un lomo malherido.
+
+  ##### Glosario
+
+  1. **Chalán:** tratante de caballos y otras bestias, especialmente hábil o astuto en el regateo.
+
+  2. **Enjaezado:** adornado con jaeces, es decir, con los arreos y adornos que se ponen a las caballerías.
+
+  3. **Lobanillo:** tumor o bulto que se forma bajo la piel.
+
+  4. **Encuadernación:** cubierta y acabado con que se protege y presenta un libro, aquí usada para criticar el juicio por las apariencias.
 ---
 Ayer por mi calle
 pasaba un borrico,

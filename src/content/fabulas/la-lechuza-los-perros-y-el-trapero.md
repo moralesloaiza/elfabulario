@@ -16,6 +16,18 @@ nombre_real: Alejandro Morales Loaiza
 # Iriarte, Fabula XXI y XXII de "Fabulas literarias",
 # Biblioteca Virtual Miguel de Cervantes (texto de dominio publico).
 # Moraleja de la fuente incrustada como bloque final en *...* (revisar).
+nota_curador: >-
+  Esta pieza reúne dos fábulas independientes de las Fábulas literarias (1782) de [Tomás de Iriarte](https://elfabulario.com/autores/tomas-de-iriarte/) —La Lechuza (fábula XXII) y Los Perros y el Trapero (fábula XXIII)—, que en el original comparten una sola moraleja final sobre la cobardía de atacar a los autores ya muertos, incapaces de responder, y no a los vivos. En la primera, una lechuza confiesa su deseo de robar el aceite de una lámpara de iglesia en cuanto la encuentre apagada y sin nadie que se lo impida; en la segunda, un lebrel explica por qué un trapero, cobarde ante los perros vivos, no duda en despellejar a los que encuentra ya muertos.
+
+  ##### Glosario
+
+  1. **Lebrel:** perro de caza, de cuerpo esbelto y patas largas, empleado tradicionalmente para perseguir liebres.
+
+  2. **Trapero:** persona que se dedica a recoger y vender trapos u objetos de desecho.
+
+  3. **Atizada:** dicho de una lámpara o un fuego, avivada o mantenida encendida con cuidado.
+
+  4. **Perillán:** persona pícara, astuta y de poca formalidad, usado aquí con matiz despectivo.
 ---
 Cobardes son, y traidores,
 ciertos críticos que esperan,

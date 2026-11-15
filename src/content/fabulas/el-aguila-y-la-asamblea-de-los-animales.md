@@ -16,6 +16,20 @@ nombre_real: Alejandro Morales Loaiza
 # Libro VII, Fábula X — ed. Emilio Palacios Fernández,
 # Biblioteca Virtual Miguel de Cervantes (texto de dominio público).
 # Última estrofa envuelta en ***...*** como hipótesis de moraleja; revisar.
+nota_curador: >-
+  Esta fábula es la número X del Libro Séptimo de las Fábulas morales (1781-1784) de [Félix María de Samaniego](https://elfabulario.com/autores/felix-maria-de-samaniego/), y retoma el motivo esópico de la asamblea de animales que comparecen ante una autoridad superior para exponer sus quejas: hartos de reclamar a Júpiter, los animales terminan ante el Águila, enviada como su delegada, y allí se revela que todos envidian la suerte ajena —el león quiere la astucia del zorro, la paloma la ligereza del gallo, hasta los peces querrían poblar los bosques—, hasta que el Águila hace notar que nadie, en realidad, está conforme con su propio destino.
+
+  ##### Glosario
+
+  1. **Tonante:** epíteto de Júpiter, "el que hace tronar"; se aplica en la poesía clásica al dios que gobierna el rayo y el trueno.
+
+  2. **Amostazado:** enfadado, irritado.
+
+  3. **Rapante:** que arrebata o caza al vuelo; epíteto tradicional del águila como ave de rapiña.
+
+  4. **Raposo:** zorro.
+
+  5. **Caterva:** conjunto numeroso y desordenado de seres o personas, usado aquí en sentido despectivo.
 ---
 Todos los Animales cada instante
 se quejaban a Júpiter tonante

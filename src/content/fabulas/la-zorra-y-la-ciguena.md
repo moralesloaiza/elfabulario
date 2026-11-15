@@ -20,6 +20,18 @@ autor: felix-maria-de-samaniego
 curador: Don Alejandro
 es_seudonimo: true
 nombre_real: Alejandro Morales Loaiza
+nota_curador: >-
+  Esta fábula pertenece a las Fábulas morales (1781-1784) de [Félix María de Samaniego](https://elfabulario.com/autores/felix-maria-de-samaniego/) y es una de las más antiguas y difundidas de la tradición fabulística: se remonta a Esopo, la recogió Fedro en latín, la convirtió en poema Jean de La Fontaine bajo el título "Le Renard et la Cigogne", y Samaniego la vertió al castellano conservando la estructura de las dos invitaciones cruzadas y el desquite final. Cada autor remata la historia con una moraleja distinta: Esopo pide llevar con paciencia el trato que uno mismo ha dado, La Fontaine advierte que los tramposos deben esperar el engaño de vuelta, y Samaniego cierra con esa misma idea aplicada a los pícaros.
+
+  ##### Glosario
+
+  1. **Jigote:** guiso de carne picada muy menuda, aquí servido en caldo claro.
+
+  2. **Redoma:** vasija de vidrio ancha en la base y estrecha en el cuello.
+
+  3. **Hidrópica (uso figurado):** aplicado aquí a la redoma, de cuello angosto como si padeciera hidropesía, la hinchazón por exceso de líquido.
+
+  4. **Fregatriz:** mujer que friega o limpia, aquí en sentido irónico sobre la zorra que deja el plato reluciente a lametazos.
 ---
 Una zorra se empeña
 en dar una comida a la cigüeña.

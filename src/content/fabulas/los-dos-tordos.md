@@ -20,6 +20,16 @@ es_seudonimo: true
 nombre_real: Alejandro Morales Loaiza
 traduccion: false
 moraleja: No se han de apreciar los libros por su bulto ni por su tamaño.
+nota_curador: >-
+  Esta fábula es la número L de las Fábulas literarias (1782) de [Tomás de Iriarte](https://elfabulario.com/autores/tomas-de-iriarte/). Bajo la anécdota de un tordo joven que desprecia las uvas de su abuelo por parecerle pequeñas, y luego se deslumbra con una calabaza que resulta ser fruta sin valor, esconde una crítica a quienes juzgan los libros por su tamaño y no por su calidad.
+
+  ##### Glosario
+
+  1. **Rapaz:** muchacho joven, aquí con matiz de inexperiencia o precipitación.
+
+  2. **Desmedrada:** de aspecto pobre, escaso o de poco desarrollo.
+
+  3. **Ufano:** satisfecho de sí mismo, orgulloso hasta la vanidad.
 ---
 Persuadía un tordo abuelo,
 lleno de años y prudencia,
