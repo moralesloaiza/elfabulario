@@ -18,6 +18,14 @@ autor: felix-maria-de-samaniego
 curador: Don Alejandro
 es_seudonimo: true
 nombre_real: Alejandro Morales Loaiza
+nota_curador: >-
+  Esta fábula pertenece a las Fábulas morales (1781-1784) de [Félix María de Samaniego](https://elfabulario.com/autores/felix-maria-de-samaniego/), y a diferencia de otras piezas de la colección con antecedente directo en Esopo, Fedro o La Fontaine, no ha sido posible confirmar en las fuentes consultadas un origen clásico concreto para esta escena de la zorra que visita con falsa cortesía a la gallina enferma; hasta donde permite verificar la bibliografía disponible, se trata de una variación propia de Samaniego sobre el tema tradicional del enemigo que se disfraza de amigo.
+
+  ##### Glosario
+
+  1. **Pepita:** enfermedad de las aves de corral que endurece la punta de la lengua y les impide comer o cantar con normalidad; aquí, la dolencia por la que la gallina guarda cama.
+
+  2. **Escarmiento:** lección aprendida a partir de un error o un daño sufrido, que sirve de advertencia para el futuro.
 ---
 Una Zorra, cazando,
 de corral en corral iba saltando;

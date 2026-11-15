@@ -17,6 +17,14 @@ autor: rafael-pombo
 curador: Don Alejandro
 es_seudonimo: true
 nombre_real: Alejandro Morales Loaiza
+nota_curador: >-
+  Esta fábula pertenece a la obra de [Rafael Pombo](https://elfabulario.com/autores/rafael-pombo/), el poeta y fabulista bogotano que, durante su estancia en Nueva York, escribió por encargo de la casa Appleton buena parte de los cuentos y fábulas que fundan la literatura infantil colombiana. En pocos versos contrapone la actitud agradecida de una gallina, que da gracias al cielo por cada trago de agua que bebe, con la burla de un cerdo que no entiende ese gesto, para cerrar con una reflexión sobre la nobleza de saber agradecer hasta lo más pequeño.
+
+  ##### Glosario
+
+  1. **Arroyuelo:** diminutivo de arroyo; corriente de agua pequeña y de poco caudal.
+
+  2. **Cochino:** cerdo o puerco; se usa aquí, además, en su sentido coloquial y algo despectivo.
 ---
 
 Bebiendo una Gallina

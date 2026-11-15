@@ -18,6 +18,16 @@ autor: felix-maria-de-samaniego
 curador: Don Alejandro
 es_seudonimo: true
 nombre_real: Alejandro Morales Loaiza
+nota_curador: >-
+  Esta fábula pertenece a las Fábulas morales (1781-1784) de [Félix María de Samaniego](https://elfabulario.com/autores/felix-maria-de-samaniego/) y se remonta a la fábula esópica conocida como "Las cabras barbadas" (recogida en el índice Perry con el número 517), en la que Júpiter concede barba a las cabras a petición propia, para disgusto de los chivos, que reclaman ese privilegio como exclusivo; Samaniego traslada la anécdota al castellano y la remata con una moraleja sobre la diferencia entre el adorno aparente y el mérito verdadero.
+
+  ##### Glosario
+
+  1. **Lampiño:** que no tiene barba ni pelo en el rostro; aquí, aplicado a las cabras antes de recibir el favor de Júpiter.
+
+  2. **Ignominia:** afrenta pública, deshonra que humilla y envilece.
+
+  3. **Ornato:** adorno; aquí, en sentido figurado, aquello que da valor y realce verdadero a una persona.
 ---
 Desde antaño en el mundo
 reina el vano deseo

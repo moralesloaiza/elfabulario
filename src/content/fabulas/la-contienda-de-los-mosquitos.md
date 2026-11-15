@@ -16,6 +16,18 @@ nombre_real: Alejandro Morales Loaiza
 # Iriarte, Fabula LXIV de "Fabulas literarias",
 # Biblioteca Virtual Miguel de Cervantes (texto de dominio publico).
 # Moraleja de la fuente incrustada como bloque final en *...* (revisar).
+nota_curador: >-
+  Esta es la fábula LXIII de las Fábulas literarias (1782) de [Tomás de Iriarte](https://elfabulario.com/autores/tomas-de-iriarte/), y traslada a una bodega una querella literaria de su tiempo: la disputa estéril entre quienes solo aprecian la literatura antigua y quienes solo aprecian la moderna. En una bodega, un enjambre de mosquitos bebedores discute acaloradamente —pelea que, bromea el narrador, Villaviciosa olvidó cantar en su Mosquea— si los vinos de antes eran mejores que los de ahora, hasta que un viejo mosquito catador, invocando su pericia, zanja el litigio con una sentencia: el mal vino se condena sea antiguo o moderno, y quienes se empeñan en discutir solo por lo viejo o solo por lo nuevo pueden seguir su pleito eterno sin él.
+
+  ##### Glosario
+
+  1. **Mosquea:** poema épico-burlesco de José de Villaviciosa, publicado en 1615, que narra una batalla entre moscas y hormigas parodiando los grandes poemas épicos de la Antigüedad.
+
+  2. **Catador:** persona experta en probar y valorar por el gusto la calidad de un vino.
+
+  3. **Bota:** recipiente de cuero, generalmente forrado de pez, que se usa para contener y beber vino.
+
+  4. **Mosto:** zumo de la uva antes de fermentar del todo y convertirse en vino.
 ---
 Diabólica refriega
 dentro de una bodega

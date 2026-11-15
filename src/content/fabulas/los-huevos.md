@@ -24,6 +24,16 @@ nombre_real: Alejandro Morales Loaiza
 traduccion: false
 moraleja: No falta quien quiera pasar por autor original cuando no hace más que
   repetir, con corta diferencia, lo que otros muchos han dicho.
+nota_curador: >-
+  Esta fábula es la número XII de las Fábulas literarias (1782) de [Tomás de Iriarte](https://elfabulario.com/autores/tomas-de-iriarte/). Bajo la anécdota de un viajero que introduce por accidente las gallinas en una isla remota y de los sucesivos cocineros que se disputan el mérito de cada nueva receta de huevos, la pieza se burla de quienes se presentan como autores originales cuando apenas repiten, con pequeñas variaciones, lo que otros ya dijeron; así lo resume el lema que Iriarte puso al frente de la fábula: «No falta quien quiera pasar por autor original».
+
+  ##### Glosario
+
+  1. **Escalfados:** dicho de los huevos, cocidos sin cáscara en agua hirviendo; hoy se conocen más como huevos poché.
+
+  2. **A la Hugonota:** al estilo hugonote; guiso de huevos revueltos con hierbas, de moda en la cocina francesa del siglo XVIII.
+
+  3. **Petate:** en sentido coloquial antiguo, persona de poco valor o mérito; "sois unos petates" equivale a "no valéis nada".
 ---
 Más allá de las islas Filipinas
 hay una, que ni sé cómo se llama,

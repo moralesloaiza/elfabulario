@@ -16,6 +16,18 @@ autor: rafael-pombo
 curador: Don Alejandro
 es_seudonimo: true
 nombre_real: Alejandro Morales Loaiza
+nota_curador: >-
+  Este poema pertenece a Fábulas y verdades, colección de [Rafael Pombo](https://elfabulario.com/autores/rafael-pombo/); las fuentes consultadas no coinciden sobre la fecha de esa edición recopilatoria (unas señalan 1883, otras 1916, esta última ya póstuma), así que ese dato se deja aquí como no establecido. A diferencia de sus célebres Cuentos pintados para niños, escritos en Nueva York por encargo de la casa Appleton, no se ha podido confirmar que este poema traduzca o adapte una fuente clásica concreta: hasta donde permite verificar la bibliografía disponible, es una pieza de invención propia de Pombo sobre el contraste entre la yegua que trabaja y la perrita faldera que solo viaja cargada, construida sobre el tema tradicional de que el descanso verdadero se gana con el esfuerzo.
+
+  ##### Glosario
+
+  1. **Canónigo (uso figurado):** clérigo que vive con desahogo y comodidad; aquí, alusión irónica a quien vive sin esfuerzo.
+
+  2. **Faldera:** dicho de un perro pequeño y mimado que se lleva en el regazo o en las faldas.
+
+  3. **Zarandajas:** cosas menudas y de poca importancia; aquí, los arreos y aperos de montar.
+
+  4. **Mandria:** persona floja, apocada o de poco valor.
 ---
 
 Viajando doña Próspera

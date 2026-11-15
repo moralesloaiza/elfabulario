@@ -16,6 +16,14 @@ nombre_real: Alejandro Morales Loaiza
 # Iriarte, Fabula XXXI de "Fabulas literarias",
 # Biblioteca Virtual Miguel de Cervantes (texto de dominio publico).
 # Moraleja de la fuente incrustada como bloque final en *...* (revisar).
+nota_curador: >-
+  Esta es la fábula XXXI de las Fábulas literarias (1782) de [Tomás de Iriarte](https://elfabulario.com/autores/tomas-de-iriarte/), y apunta a los escritores que gastan en obras frívolas el mismo afán que otros dedican a las importantes: una ardilla presume ante un caballo de su incesante ir y venir, y el caballo le responde que el mérito no está en el movimiento constante, sino en que ese esfuerzo sirva para algo.
+
+  ##### Glosario
+
+  1. **Alazán:** caballo de pelaje rojizo o canela, aquí usado como sinónimo poético de caballo.
+
+  2. **Formal:** aquí, serio o sensato en su manera de responder.
 ---
 Mirando estaba una ardilla
 a un generoso alazán,

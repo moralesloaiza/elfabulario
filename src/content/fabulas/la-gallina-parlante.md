@@ -18,6 +18,16 @@ autor: aquiles-nazoa
 curador: Don Alejandro
 es_seudonimo: true
 nombre_real: Alejandro Morales Loaiza
+nota_curador: >-
+  Este poema se atribuye a [Aquiles Nazoa](https://elfabulario.com/autores/aquiles-nazoa/), el humorista y poeta venezolano que llevó a su obra la ternura por los animales y por la gente humilde; no ha sido posible confirmar con precisión en qué colección apareció por primera vez esta pieza concreta, aunque se inscribe en la línea de sus poemas protagonizados por animales, un terreno que Nazoa cultivó a lo largo de toda su obra infantil. Una gallina, envidiosa de que el loro reciba tanto cariño solo por saber hablar, aprende a imitarlo, y suelta su primera frase justo delante de una anciana devota, que interpreta el prodigio como anuncio del fin del mundo y, tras un rezo apresurado, le tuerce el pescuezo: un remate abrupto y de humor negro, marca de la casa en la poesía de Nazoa.
+
+  ##### Glosario
+
+  1. **Nuncio:** representante diplomático del Papa ante un país; en la expresión "¡Voto al Nuncio!" funciona como interjección de asombro o consternación.
+
+  2. **Lenguarada:** dicho o parrafada repentina e inesperada, salida de tono.
+
+  3. **Parloteo:** acción de hablar mucho y de forma insustancial o continuada; cháchara.
 ---
 
 Viendo lo bien que el loro la pasaba

@@ -16,6 +16,16 @@ nombre_real: Alejandro Morales Loaiza
 # Iriarte, Fabula LX de "Fabulas literarias",
 # Biblioteca Virtual Miguel de Cervantes (texto de dominio publico).
 # Moraleja de la fuente incrustada como bloque final en *...* (revisar).
+nota_curador: >-
+  Esta fábula es la sexagésima cuarta (LXIV) de las Fábulas literarias (1782) de [Tomás de Iriarte](https://elfabulario.com/autores/tomas-de-iriarte/) y cierra con una de las sentencias más citadas de la colección sobre la diferencia entre presumir y hacer. Desde su charco, una rana parlanchina censura el alboroto de una gallina que cacarea; cuando la rana pregunta con desdén qué hay de tan nuevo para tanto ruido, la gallina responde que anuncia haber puesto un huevo, y le devuelve la pregunta: si la propia rana no tiene nada que anunciar pese a graznar noche y día, ¿con qué derecho se queja del ruido ajeno?
+
+  ##### Glosario
+
+  1. **Parlera:** que habla mucho, charlatana.
+
+  2. **Cacarear:** emitir la gallina su voz característica, especialmente después de poner un huevo; en sentido figurado, jactarse ruidosamente de algo.
+
+  3. **Graznar:** emitir un sonido áspero y repetido; aquí se usa en sentido figurado para describir el croar constante de la rana.
 ---
 Desde su charco una parlera rana
 oyó cacarear a una gallina.

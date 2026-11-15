@@ -16,6 +16,16 @@ nombre_real: Alejandro Morales Loaiza
 # Iriarte, Fabula LIX de "Fabulas literarias",
 # Biblioteca Virtual Miguel de Cervantes (texto de dominio publico).
 # Moraleja de la fuente incrustada como bloque final en *...* (revisar).
+nota_curador: >-
+  Esta es la fábula LIX de las Fábulas literarias (1782) de [Tomás de Iriarte](https://elfabulario.com/autores/tomas-de-iriarte/) (Tenerife, 1750 – Madrid, 1791), la colección con la que el escritor canario reclamó, no sin polémica con Samaniego, que lo había precedido apenas un año antes, ser el primer fabulista genuinamente original en castellano; a diferencia de la fábula moral al uso, cada pieza de Iriarte satiriza un vicio propio del oficio literario, y aquí el vicio es la vanidad de quien finge saber lo que ignora. Un grupo de animales juega a la gallina ciega y el topo, ciego de nacimiento, se suma a la rueda disimulando su condición para no confesar una limitación que ya es evidente para todos; la fábula apunta menos a la ceguera del topo que a la soberbia de cualquiera que prefiere fingir antes que admitir su ignorancia.
+
+  ##### Glosario
+
+  1. **Gallina ciega:** juego infantil en que un jugador, con los ojos vendados, intenta atrapar a los demás guiándose por el oído y el tacto.
+
+  2. **Fábulas literarias:** colección de 1782 en que Iriarte usa el género de la fábula para criticar los defectos de escritores y críticos de su época, en vez de dar lecciones morales generales.
+
+  3. **Traspiés:** tropiezo, paso en falso; en el poema, los que da el topo al intentar moverse sin ver.
 ---
 Ciertos animalitos,
 todos de cuatro pies,

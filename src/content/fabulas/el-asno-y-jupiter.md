@@ -16,6 +16,24 @@ nombre_real: Alejandro Morales Loaiza
 # Libro IV, Fábula II — ed. Emilio Palacios Fernández,
 # Biblioteca Virtual Miguel de Cervantes (texto de dominio público).
 # Última estrofa envuelta en ***...*** como hipótesis de moraleja; revisar.
+nota_curador: >-
+  Esta fábula es la segunda del Libro Cuarto de las Fábulas morales (1781-1784) de [Félix María de Samaniego](https://elfabulario.com/autores/felix-maria-de-samaniego/), y recrea un apólogo de tradición esópica, conocido como «El asno y sus amos», en el que un asno pide a Zeus que le cambie de dueño y pasa sucesivamente por un hortelano, un alfarero o tejero y un curtidor, cada uno peor que el anterior; La Fontaine también lo versionó en sus Fábulas. Samaniego conserva la secuencia de amos y añade un cierre propio, más amplio, sobre el hombre que nunca llama bueno a su estado y siempre al ajeno.
+
+  ##### Glosario
+
+  1. **Adarme:** cantidad mínima de algo; aquí, una pizca de talento.
+
+  2. **Hortelano:** persona que cultiva y cuida una huerta.
+
+  3. **Tejero:** persona que fabrica tejas.
+
+  4. **Curtidor:** persona que curte pieles para convertirlas en cuero.
+
+  5. **Pollino:** asno joven; por extensión, burro.
+
+  6. **Esteva:** pieza curva del arado por donde lo empuña quien ara.
+
+  7. **Cayado:** bastón de pastor, con la parte superior curvada.
 ---
 —No sé cómo hay Jumento
 que, teniendo un adarme de talento,

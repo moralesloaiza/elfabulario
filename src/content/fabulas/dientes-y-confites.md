@@ -15,6 +15,16 @@ autor: rafael-pombo
 curador: Don Alejandro
 es_seudonimo: true
 nombre_real: Alejandro Morales Loaiza
+nota_curador: >-
+  Esta fábula pertenece a Fábulas y verdades, la colección de piezas morales que [Rafael Pombo](https://elfabulario.com/autores/rafael-pombo/) escribió junto a sus célebres cuentos infantiles, y con el tono risueño y el ritmo pegadizo que caracterizan su obra para niños narra la pequeña guerra que libran los dientes de una niña contra nueces y confites, victoria que se paga después con dolor de muelas y un largo ayuno.
+
+  ##### Glosario
+
+  1. **Confite:** dulce pequeño, por lo común una almendra o semilla recubierta de un baño de azúcar.
+
+  2. **Basilisco:** animal fabuloso al que la tradición atribuía una mirada capaz de matar; "de basiliscos" se usa aquí como comparación para describir una rabia feroz.
+
+  3. **Morriña:** en sentido coloquial antiguo, tristeza o decaimiento físico; aquí describe el malestar de la niña tras el empacho.
 ---
 
 Con nueces y confites

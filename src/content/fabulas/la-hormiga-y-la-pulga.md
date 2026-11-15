@@ -16,6 +16,16 @@ nombre_real: Alejandro Morales Loaiza
 # Iriarte, Fabula IX de "Fabulas literarias",
 # Biblioteca Virtual Miguel de Cervantes (texto de dominio publico).
 # Moraleja de la fuente incrustada como bloque final en *...* (revisar).
+nota_curador: >-
+  Esta fábula pertenece a las Fábulas literarias de [Tomás de Iriarte](https://elfabulario.com/autores/tomas-de-iriarte/), publicadas en 1782, donde ocupa el noveno lugar de la colección bajo el título original de La Hormiga y la Pulga; como en el resto de esas piezas, Iriarte no persigue una moraleja de conducta general, sino que dirige su ingenio contra un vicio propio del oficio literario, en este caso la costumbre de restar mérito a una obra ajena fingiendo que ya se sabía todo lo que en ella se dice. En la fábula, una hormiga le cuenta a una pulga, con detalle y orgullo, todo el trabajo que exige mantener el hormiguero, y la pulga responde a cada dato con frases vacías que dan a entender que nada de eso le sorprende, hasta que la hormiga, harta, la invita a demostrar en la práctica esa supuesta facilidad.
+
+  ##### Glosario
+
+  1. **Desuello:** desvergüenza o descaro; en la expresión "con grandísimo desuello" indica una respuesta insolente y sin pudor.
+
+  2. **Friolera:** cosa de poca importancia o valor; se usa aquí en sentido irónico, para minimizar algo que en realidad exige esfuerzo.
+
+  3. **Salir de sus casillas:** perder la paciencia o la calma ante una situación irritante.
 ---
 Tienen algunos un gracioso modo
 de aparentar que se lo saben todo:
