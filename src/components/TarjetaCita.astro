@@ -446,19 +446,17 @@ const cuerpoSelector = forma === 'verso' ? '.prose--verso' : '.articulo .prose';
       ctx.restore();
     }
 
-    function fitBlock(block, startPx, lh, gapRatio, maxW, maxH) {
-      var size = startPx;
-      for (var guard = 0; guard < 180; guard++) {
-        ctx.font = '400 ' + size + 'px "Cormorant Garamond", Georgia, serif';
-        var widest = 0, h = 0;
-        for (var i = 0; i < block.length; i++) {
-          if (block[i].t === 'v') { widest = Math.max(widest, ctx.measureText(block[i].s).width); h += size * lh; }
-          else { h += size * lh * gapRatio; }
-        }
-        if ((widest <= maxW && h <= maxH) || size <= 20) break;
-        size -= 1;
+    // Envuelve una línea de texto a varias para que quepa en maxW al tamaño dado.
+    function wrapText(s, maxW, size) {
+      ctx.font = '400 ' + size + 'px "Cormorant Garamond", Georgia, serif';
+      var words = s.split(' '), lines = [], cur = '';
+      for (var i = 0; i < words.length; i++) {
+        var test = cur ? cur + ' ' + words[i] : words[i];
+        if (ctx.measureText(test).width > maxW && cur) { lines.push(cur); cur = words[i]; }
+        else cur = test;
       }
-      return size;
+      if (cur) lines.push(cur);
+      return lines;
     }
 
     function draw() {
@@ -466,6 +464,7 @@ const cuerpoSelector = forma === 'verso' ? '.prose--verso' : '.articulo .prose';
       if (canvas.width !== W) canvas.width = W;
       if (canvas.height !== H) canvas.height = H;
       var sk = SKIN;
+      var story = state.fmt === 'story';
 
       ctx.fillStyle = sk.base; ctx.fillRect(0, 0, W, H);
       if (state.img) drawCover(state.img, W, H);
@@ -479,47 +478,78 @@ const cuerpoSelector = forma === 'verso' ? '.prose--verso' : '.articulo .prose';
       vg.addColorStop(0, 'rgba(0,0,0,0)'); vg.addColorStop(1, sk.vignette);
       ctx.fillStyle = vg; ctx.fillRect(0, 0, W, H);
 
-      var m = Math.round(W * 0.055);
+      // Zona segura: en Story (9:16) Instagram cubre la franja superior (usuario,
+      // seguir) y la inferior (pie, música, botones). El marco y el contenido se
+      // recogen ahí dentro para que nada quede tapado ni pegado al borde.
+      var mx = Math.round(W * 0.055);
+      var mtop = story ? Math.round(H * 0.125) : Math.round(W * 0.06);
+      var mbot = story ? Math.round(H * 0.145) : Math.round(W * 0.06);
+      var innerTop = mtop, innerBot = H - mbot;
+
       ctx.strokeStyle = sk.goldLine; ctx.lineWidth = Math.max(1.5, W / 520);
-      ctx.strokeRect(m, m, W - 2 * m, H - 2 * m);
+      ctx.strokeRect(mx, innerTop, W - 2 * mx, innerBot - innerTop);
 
       var cx = W / 2;
-      var contentW = W - 2 * (m + W * 0.045);
+      var contentW = W - 2 * (mx + W * 0.05);
 
       ctx.textAlign = 'center'; ctx.textBaseline = 'alphabetic';
       setLS(W * 0.014); ctx.fillStyle = sk.kicker;
       ctx.font = '600 ' + Math.round(W * 0.026) + 'px "Cinzel", Georgia, serif';
-      var topY = m + W * 0.085;
+      var topY = innerTop + W * 0.072;
       ctx.fillText('FRAGMENTO', cx, topY);
       setLS(0);
 
       var block = selectedBlock();
       if (block.length === 0) block = [{ t: 'v', s: esVerso ? 'Toca un verso…' : 'Toca una frase…' }];
 
-      var areaTop = topY + W * 0.025;
-      var authorBlock = W * 0.30;
-      var areaBot = H - m - authorBlock;
+      var areaTop = topY + W * 0.05;
+      var authorBlock = W * 0.26;
+      var areaBot = innerBot - authorBlock;
       var areaH = areaBot - areaTop;
 
-      var lh = 1.3, gapRatio = 0.6;
-      var fs = fitBlock(block, Math.round(W * 0.055), lh, gapRatio, contentW, areaH);
-      ctx.font = '400 ' + fs + 'px "Cormorant Garamond", Georgia, serif';
-      var lineH = fs * lh, gapH = lineH * gapRatio;
+      var lh = 1.34, gapRatio = 0.55;
+      // En prosa y en la moraleja se envuelven las frases (líneas largas); en
+      // verso se respetan las líneas tal cual (los saltos son deliberados).
+      var doWrap = state.preset ? true : !esVerso;
 
-      var widest = 0, blockH = 0;
-      block.forEach(function (it) {
-        if (it.t === 'v') { widest = Math.max(widest, ctx.measureText(it.s).width); blockH += lineH; }
-        else { blockH += gapH; }
-      });
+      // Maqueta a un tamaño: produce las líneas visuales y su altura total.
+      function layout(size) {
+        var lineH = size * lh, gapH = lineH * gapRatio;
+        var vlines = [], totalH = 0, widest = 0;
+        block.forEach(function (it) {
+          if (it.t === 'g') { vlines.push({ gap: true }); totalH += gapH; return; }
+          var parts = doWrap ? wrapText(it.s, contentW, size) : [it.s];
+          ctx.font = '400 ' + size + 'px "Cormorant Garamond", Georgia, serif';
+          parts.forEach(function (p) {
+            vlines.push({ text: p });
+            widest = Math.max(widest, ctx.measureText(p).width);
+            totalH += lineH;
+          });
+        });
+        return { vlines: vlines, totalH: totalH, widest: widest, lineH: lineH, gapH: gapH };
+      }
+
+      // Crece hasta llenar el área (alto; y ancho en verso), con un tope legible.
+      // Así una frase corta se ve grande y una larga envuelve y llena el espacio.
+      var maxFs = Math.round(W * (story ? 0.07 : 0.078));
+      var minFs = Math.round(W * 0.028);
+      var fs = minFs, L = layout(minFs);
+      for (var s = minFs + 1; s <= maxFs; s++) {
+        var LL = layout(s);
+        if (LL.totalH <= areaH && LL.widest <= contentW) { fs = s; L = LL; }
+        else break;
+      }
+      L = layout(fs);
+      var lineH = L.lineH, gapH = L.gapH, blockH = L.totalH;
 
       ctx.textAlign = state.align === 'center' ? 'center' : 'left';
-      var tx = state.align === 'center' ? cx : cx - widest / 2;
+      var tx = state.align === 'center' ? cx : cx - L.widest / 2;
       var yTop = areaTop + (areaH - blockH) / 2;
 
       // Banda de lectura: marfil casi sólido tras el fragmento, con bordes
       // difuminados arriba y abajo. Mantiene la ilustración visible pero asegura
       // que la tinta lea sobre cualquier zona de la foto.
-      var padY = fs * 0.85;
+      var padY = fs * 0.9;
       var bTop = yTop - padY, bBot = yTop + blockH + padY * 0.7;
       var band = ctx.createLinearGradient(0, bTop, 0, bBot);
       band.addColorStop(0, 'rgba(240,229,206,0)');
@@ -527,20 +557,21 @@ const cuerpoSelector = forma === 'verso' ? '.prose--verso' : '.articulo .prose';
       band.addColorStop(0.84, 'rgba(240,229,206,0.88)');
       band.addColorStop(1, 'rgba(240,229,206,0)');
       ctx.fillStyle = band;
-      ctx.fillRect(m + W * 0.015, bTop, W - 2 * (m + W * 0.015), bBot - bTop);
+      ctx.fillRect(mx + W * 0.012, bTop, W - 2 * (mx + W * 0.012), bBot - bTop);
 
+      ctx.font = '400 ' + fs + 'px "Cormorant Garamond", Georgia, serif';
       ctx.save();
       ctx.shadowColor = sk.halo; ctx.shadowBlur = fs * 0.22;
       ctx.fillStyle = sk.verse;
-      block.forEach(function (it) {
-        if (it.t === 'g') { yTop += gapH; return; }
-        ctx.fillText(it.s, tx, yTop + fs);
+      L.vlines.forEach(function (ln) {
+        if (ln.gap) { yTop += gapH; return; }
+        ctx.fillText(ln.text, tx, yTop + fs);
         yTop += lineH;
       });
       ctx.restore();
       ctx.textAlign = 'center';
 
-      var divY = areaBot + W * 0.03;
+      var divY = areaBot + authorBlock * 0.16;
       drawDiamond(cx, divY, W * 0.012, sk.gold, sk.goldLine, contentW);
 
       // Cita: título en itálica (prominente, zafiro) y autor debajo.
@@ -557,10 +588,10 @@ const cuerpoSelector = forma === 'verso' ? '.prose--verso' : '.articulo .prose';
       ctx.fillText(cita, cx, divY + W * 0.085);
       ctx.fillStyle = sk.author;
       ctx.font = '400 ' + Math.round(W * 0.03) + 'px "Cormorant Garamond", Georgia, serif';
-      ctx.fillText(D.autor, cx, divY + W * 0.145);
+      ctx.fillText(D.autor, cx, divY + W * 0.142);
       ctx.restore();
 
-      var markY = H - m - W * 0.055;
+      var markY = innerBot - W * 0.03;
       ctx.strokeStyle = sk.goldLine; ctx.lineWidth = Math.max(1, W / 900);
       ctx.beginPath(); ctx.moveTo(cx - W * 0.09, markY - W * 0.035); ctx.lineTo(cx + W * 0.09, markY - W * 0.035); ctx.stroke();
       setLS(W * 0.016); ctx.fillStyle = sk.mark;
