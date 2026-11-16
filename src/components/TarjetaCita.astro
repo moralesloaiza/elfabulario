@@ -1,0 +1,706 @@
+---
+// Generador de «imágenes-cita» para El Fabulario: un diálogo que convierte las
+// frases (prosa) o versos (verso) elegidos de la fábula en una tarjeta para
+// compartir (Instagram, TikTok, WhatsApp…). Dibuja en <canvas> en el cliente,
+// así que descargar y compartir (bandeja nativa del SO, con archivo) funcionan
+// de verdad sobre el hosting estático.
+//
+// · El texto NO se duplica: el motor lo lee de la fábula ya renderizada.
+//   — VERSO (`.prose--verso`): cada <p> es una estrofa y cada <br>, un verso;
+//     la sangría por NBSP inicial se conserva.
+//   — PROSA (`.prose`): cada <p> se parte en FRASES (unidad seleccionable), con
+//     un segmentador en español que respeta abreviaturas corrientes. El cambio
+//     de párrafo de origen inserta un salto en la tarjeta.
+// · MORALEJA: si la fábula la trae, se ofrece como preset de un toque al
+//   principio de la lista (llega por prop, no vive en el cuerpo del DOM).
+// · La ilustración llega como una imagen ligera emitida al build (mismo origen,
+//   así el canvas no se «contamina» y la exportación funciona).
+// · El disparador vive en <Compartir tarjeta>; aquí solo va el diálogo.
+//
+// El Fabulario es SIEMPRE día: una sola piel con la identidad del sitio
+// (marfil/oro/tinta/zafiro), sin conmutador de clima. El markup del diálogo y
+// de los controles está en el HTML; el JS solo rellena la lista y pinta el
+// canvas. Como esa lista la crea el JS, sus estilos van en un bloque `is:global`
+// (los estilos scopeados de Astro no llegan a los nodos creados por JS).
+
+interface Props {
+  /* URL (mismo origen) de la ilustración ya optimizada para la tarjeta. */
+  imagen: string;
+  titulo: string;
+  autor: string;
+  /* Sello de la tarjeta y comportamiento del clima: 'fabulario' (día fijo, por
+     defecto aquí) o 'poemario' (ofrecería noche/día). */
+  sitio?: 'poemario' | 'fabulario';
+  /* Forma de la fábula: elige el motor y el selector del cuerpo. */
+  forma?: 'prosa' | 'verso';
+  /* Moraleja (si existe): se ofrece como preset de un toque. */
+  moraleja?: string;
+}
+
+const {
+  imagen,
+  titulo,
+  autor,
+  sitio = 'fabulario',
+  forma = 'prosa',
+  moraleja = '',
+} = Astro.props;
+
+// Selector del cuerpo del que leer: en verso, el bloque centrado; en prosa, la
+// columna de lectura del artículo.
+const cuerpoSelector = forma === 'verso' ? '.prose--verso' : '.articulo .prose';
+---
+
+<dialog
+  class="tc-dialog"
+  id="tc-dialog"
+  data-img={imagen}
+  data-titulo={titulo}
+  data-autor={autor}
+  data-sitio={sitio}
+  data-forma={forma}
+  data-moraleja={moraleja}
+  data-sel={cuerpoSelector}
+>
+  <form method="dialog" class="tc-close-form">
+    <button class="tc-close" aria-label="Cerrar">&times;</button>
+  </form>
+
+  <div class="tc-head">
+    <p class="tc-eyebrow">Crear tarjeta</p>
+    <h2 class="tc-h2">{titulo}</h2>
+  </div>
+
+  <div class="tc-body">
+    <div class="tc-pick">
+      <p class="tc-step">{forma === 'verso' ? 'Toca los versos' : 'Toca las frases'}</p>
+      <p class="tc-hint">
+        {forma === 'verso'
+          ? 'Toca un verso y luego otro para elegir el fragmento. Si cruzas una estrofa, el salto se conserva en la tarjeta.'
+          : 'Toca una frase y luego otra para elegir el fragmento. Si cruzas un párrafo, el salto se conserva en la tarjeta.'}
+      </p>
+      <div class="tc-versos" id="tc-versos"></div>
+    </div>
+
+    <div class="tc-compose">
+      <div class="tc-canvas-wrap">
+        <canvas id="tc-canvas" width="1080" height="1080" aria-label="Previsualización de la tarjeta"></canvas>
+      </div>
+
+      <div class="tc-seg" id="tc-formato" role="group" aria-label="Formato">
+        <button type="button" data-fmt="post" aria-pressed="true">Post · 1:1</button>
+        <button type="button" data-fmt="story" aria-pressed="false">Story · 9:16</button>
+      </div>
+
+      <div class="tc-seg-row">
+        <div>
+          <p class="tc-cap">Alineación</p>
+          <div class="tc-seg" id="tc-align" role="group" aria-label="Alineación del texto">
+            <button type="button" data-align="left" aria-pressed="true">Izquierda</button>
+            <button type="button" data-align="center" aria-pressed="false">Centro</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="tc-actions">
+        <button type="button" class="tc-btn tc-btn--primario" id="tc-compartir">Compartir</button>
+        <button type="button" class="tc-btn" id="tc-descargar">Descargar</button>
+      </div>
+      <p class="tc-aviso" id="tc-aviso" role="status" aria-live="polite"></p>
+    </div>
+  </div>
+</dialog>
+
+<style is:global>
+  /* Variables locales: El Fabulario usa tokens `--color-*`; aquí se remapean a
+     nombres cortos para el chrome del diálogo. Una sola piel (día). */
+  .tc-dialog {
+    --tc-rule: rgba(201, 161, 74, 0.55);
+    --tc-rule-soft: rgba(201, 161, 74, 0.26);
+    --tc-surface: var(--color-marfil);
+    --tc-surface-2: var(--color-marfil-alt);
+    --tc-text: var(--color-negro);
+    --tc-text-muted: var(--color-text-soft);
+    --tc-oro: var(--color-oro);
+    --tc-oro-texto: var(--color-oro-texto);
+
+    width: min(960px, 94vw);
+    max-height: 92vh;
+    margin: auto;
+    padding: 0;
+    border: var(--rule-thin) solid var(--tc-rule);
+    border-radius: var(--radius-sm);
+    background: var(--tc-surface);
+    color: var(--tc-text);
+    overflow: hidden;
+  }
+  .tc-dialog::backdrop { background: rgba(26, 23, 20, 0.72); backdrop-filter: blur(2px); }
+  .tc-dialog[open] { display: flex; flex-direction: column; }
+
+  .tc-close-form { position: absolute; top: 0; right: 0; margin: 0; z-index: 2; }
+  .tc-close {
+    background: transparent; border: 0; cursor: pointer;
+    color: var(--tc-text-muted); font-size: 1.8rem; line-height: 1;
+    padding: 0.4em 0.6em;
+  }
+  .tc-close:hover { color: var(--tc-oro-texto); }
+
+  .tc-head {
+    padding: var(--space-lg) var(--space-lg) var(--space-sm);
+    border-bottom: var(--rule-thin) solid var(--tc-rule-soft);
+    text-align: center;
+  }
+  .tc-eyebrow {
+    font-family: var(--font-display); font-size: var(--fs-3xs); font-weight: var(--fw-semibold);
+    letter-spacing: var(--ls-widest); text-transform: uppercase; color: var(--tc-oro-texto); margin: 0 0 0.3rem;
+  }
+  .tc-h2 { font-family: var(--font-body); font-size: var(--fs-xl); margin: 0; color: var(--tc-text); font-weight: var(--fw-semibold); }
+
+  .tc-body {
+    display: grid; grid-template-columns: 1fr 360px; gap: var(--space-lg);
+    padding: var(--space-lg); overflow: auto;
+  }
+  @media (max-width: 720px) {
+    .tc-body { grid-template-columns: 1fr; }
+    .tc-compose { order: -1; }
+  }
+
+  .tc-step {
+    font-family: var(--font-display); font-size: var(--fs-3xs); font-weight: var(--fw-semibold);
+    letter-spacing: var(--ls-wide); text-transform: uppercase; color: var(--tc-text-muted); margin: 0 0 0.4rem;
+  }
+  .tc-hint { color: var(--tc-text-muted); font-size: var(--fs-sm); margin: 0 0 var(--space-sm); font-family: var(--font-body); }
+
+  .tc-versos { display: flex; flex-direction: column; max-height: 48vh; overflow: auto; }
+  .tc-verso {
+    text-align: left; width: 100%; cursor: pointer; background: transparent; border: 0;
+    border-radius: var(--radius-xs); color: var(--tc-text); font-family: var(--font-body); font-size: var(--fs-md);
+    line-height: 1.3; padding: 0.3em 0.55em; white-space: pre-wrap;
+    transition: background 0.14s ease, box-shadow 0.14s ease, color 0.14s ease;
+  }
+  .tc-verso:hover { background: var(--tc-rule-soft); }
+  .tc-verso.is-sel { background: rgba(201, 161, 74, 0.18); box-shadow: inset 2px 0 0 var(--tc-oro); color: var(--tc-text); }
+  .tc-verso.tc-estrofa { margin-top: 0.7rem; }
+
+  /* Preset de moraleja: destacado, al principio de la lista. */
+  .tc-preset {
+    text-align: left; width: 100%; cursor: pointer; margin: 0 0 0.5rem;
+    background: var(--tc-surface-2); border: var(--rule-thin) solid var(--tc-rule);
+    border-radius: var(--radius-sm); color: var(--tc-text); font-family: var(--font-body);
+    font-size: var(--fs-md); line-height: 1.3; padding: 0.5em 0.65em;
+    transition: background 0.14s ease, border-color 0.14s ease;
+  }
+  .tc-preset:hover { border-color: var(--tc-oro); }
+  .tc-preset.is-sel { background: rgba(201, 161, 74, 0.2); border-color: var(--tc-oro); box-shadow: inset 2px 0 0 var(--tc-oro); }
+  .tc-preset-rotulo {
+    display: block; font-family: var(--font-display); font-size: var(--fs-3xs);
+    font-weight: var(--fw-semibold); letter-spacing: var(--ls-wide); text-transform: uppercase;
+    color: var(--tc-oro-texto); margin: 0 0 0.25em;
+  }
+
+  .tc-canvas-wrap {
+    background:
+      repeating-linear-gradient(45deg, rgba(122, 95, 31, .06) 0 10px, rgba(122, 95, 31, .12) 10px 20px);
+    border: var(--rule-thin) solid var(--tc-rule); border-radius: var(--radius-sm); padding: var(--space-sm);
+    display: flex; justify-content: center; align-items: center;
+  }
+  #tc-canvas {
+    max-width: 100%; max-height: 46vh; width: auto; height: auto; border-radius: var(--radius-xs);
+    box-shadow: 0 14px 40px -16px rgba(26, 23, 20, .45);
+  }
+
+  .tc-seg {
+    display: grid; grid-auto-flow: column; gap: 3px; margin-top: var(--space-sm);
+    background: var(--tc-surface-2); border: var(--rule-thin) solid var(--tc-rule);
+    border-radius: var(--radius-sm); padding: 3px;
+  }
+  .tc-seg button {
+    font-family: var(--font-display); font-size: var(--fs-2xs); cursor: pointer; letter-spacing: var(--ls-wide);
+    background: transparent; color: var(--tc-text-muted); border: 0; border-radius: var(--radius-xs); padding: 0.55em 0.4em;
+    transition: background 0.18s ease, color 0.18s ease;
+  }
+  .tc-seg button[aria-pressed="true"] { background: var(--tc-oro); color: var(--color-negro); font-weight: var(--fw-semibold); }
+
+  .tc-seg-row { display: grid; grid-template-columns: 1fr; gap: var(--space-sm); }
+  .tc-cap {
+    font-family: var(--font-display); font-size: var(--fs-3xs); letter-spacing: var(--ls-wide);
+    text-transform: uppercase; color: var(--tc-text-muted); margin: var(--space-sm) 0 0;
+  }
+
+  .tc-actions { display: grid; grid-template-columns: 1fr 1fr; gap: var(--space-sm); margin-top: var(--space-md); }
+  .tc-btn {
+    font-family: var(--font-display); font-size: var(--fs-2xs); letter-spacing: var(--ls-wide);
+    text-transform: uppercase; cursor: pointer; padding: 0.7em 0.5em; border-radius: var(--radius-sm);
+    border: var(--rule-thin) solid var(--tc-oro); background: transparent; color: var(--tc-oro-texto);
+    transition: background 0.18s ease, color 0.18s ease;
+  }
+  .tc-btn:hover { background: var(--tc-surface-2); }
+  .tc-btn--primario { background: var(--tc-oro); color: var(--color-negro); }
+  .tc-btn--primario:hover { background: var(--tc-oro-texto); color: var(--color-marfil); }
+
+  .tc-aviso {
+    min-height: 1.2em; margin: var(--space-xs) 0 0; text-align: center;
+    font-family: var(--font-display); font-size: var(--fs-3xs); letter-spacing: var(--ls-wide);
+    text-transform: uppercase; color: var(--tc-oro-texto);
+  }
+
+  @media (prefers-reduced-motion: reduce) { .tc-dialog * { transition: none !important; } }
+</style>
+
+<script>
+  (function () {
+    var dlg = document.getElementById('tc-dialog');
+    if (!dlg) return;
+    var D = dlg.dataset;
+
+    // Piel única: identidad de El Fabulario (día). El texto se compone sobre la
+    // ilustración; un velo marfil cálido asegura la legibilidad de la tinta.
+    var SKIN = {
+      base: '#F0E5CE',                 // marfil (reserva si no carga la imagen)
+      scrim: 'rgba(240,229,206,.60)',  // velo parejo sobre la foto (legibilidad tinta)
+      veilBot: 'rgba(240,229,206,.94)',// refuerzo inferior (zona de autoría)
+      vignette: 'rgba(120,96,56,.22)', // viñeta cálida
+      halo: 'rgba(240,229,206,.95)',   // aura clara tras el texto oscuro
+      verse: '#1A1714',                // tinta
+      gold: '#C9A14A',                 // oro (ornamento)
+      goldLine: 'rgba(201,161,74,.70)',
+      kicker: '#7A5F1F',               // oro-texto (legible)
+      titulo: '#1C3A7A',               // zafiro (la cita «título»)
+      author: '#7A5F1F',               // oro-texto
+      mark: '#1A1714',                 // tinta (marca de agua)
+      domain: 'rgba(74,65,58,.88)'     // text-soft
+    };
+    var FORMATS = { post: { w: 1080, h: 1080 }, story: { w: 1080, h: 1920 } };
+
+    var canvas = document.getElementById('tc-canvas');
+    var ctx = canvas.getContext('2d');
+    var aviso = document.getElementById('tc-aviso');
+
+    var brand = D.sitio === 'poemario' ? 'EL POEMARIO' : 'EL FABULARIO';
+    var domain = D.sitio === 'poemario' ? 'elpoemario.com' : 'elfabulario.com';
+    var esVerso = D.forma === 'verso';
+
+    var state = {
+      flat: [],            // [{text, st}]
+      selected: new Set(),
+      anchor: null, rangeOpen: false,
+      preset: null,        // bloque fijo (moraleja); anula la selección del cuerpo
+      fmt: 'post',
+      align: 'left',
+      img: null
+    };
+
+    // ── Segmentador de frases (español) ────────────────────────────────
+    // Usa Intl.Segmenter cuando existe; si no, una reserva por puntuación que
+    // evita cortar en abreviaturas corrientes.
+    var ABBR = /(^|\s)(sr|sra|srta|dr|dra|d|dña|ud|uds|vd|vds|etc|p\.?\s?ej|ej|núm|num|pág|pag|art|cap|vol|fig|sta|sto|san|ap|apdo|av|avda|gral|lic|ing|prof|pts|vs|a\.?\s?c|d\.?\s?c)\.$/i;
+
+    function segmentarFrases(texto) {
+      texto = (texto || '').replace(/\s+/g, ' ').trim();
+      if (!texto) return [];
+      var out = [];
+      if (typeof Intl !== 'undefined' && Intl.Segmenter) {
+        try {
+          var seg = new Intl.Segmenter('es', { granularity: 'sentence' });
+          var it = seg.segment(texto);
+          var buf = '';
+          Array.from(it).forEach(function (s) {
+            buf += s.segment;
+            var t = buf.trim();
+            // Une si el corte cae tras una abreviatura corriente.
+            if (t && !ABBR.test(t)) { out.push(t); buf = ''; }
+          });
+          if (buf.trim()) out.push(buf.trim());
+          return out.filter(Boolean);
+        } catch (e) { /* cae a la reserva */ }
+      }
+      // Reserva: corta tras . ? ! … seguido de espacio, respetando abreviaturas.
+      var parts = texto.split(/([.!?…]+)(\s+)/);
+      var cur = '';
+      for (var i = 0; i < parts.length; i += 3) {
+        var frag = parts[i] || '';
+        var punct = parts[i + 1] || '';
+        cur += frag + punct;
+        var tc = cur.trim();
+        if (punct && tc && !ABBR.test(tc)) { out.push(tc); cur = ''; }
+      }
+      if (cur.trim()) out.push(cur.trim());
+      return out.filter(Boolean);
+    }
+
+    // ── Lee el cuerpo de la fábula ya renderizado ──────────────────────
+    function parseCuerpo() {
+      var cont = document.querySelector(D.sel);
+      var flat = [];
+      if (!cont) return flat;
+      var ps = cont.querySelectorAll('p');
+      ps.forEach(function (p, si) {
+        if (esVerso) {
+          // Verso: cada <br> es un verso; conserva el NBSP inicial (sangría).
+          var frags = p.innerHTML.split(/<br\s*\/?>/i);
+          frags.forEach(function (frag) {
+            var tmp = document.createElement('div');
+            tmp.innerHTML = frag;
+            var txt = (tmp.textContent || '').replace(/\s+$/, '');
+            if (txt.length) flat.push({ text: txt, st: si });
+          });
+        } else {
+          // Prosa: parte el párrafo en frases (unidad seleccionable).
+          var txtP = p.textContent || '';
+          segmentarFrases(txtP).forEach(function (fr) {
+            flat.push({ text: fr, st: si });
+          });
+        }
+      });
+      return flat;
+    }
+
+    function setRange(a, b) {
+      var lo = Math.min(a, b), hi = Math.max(a, b);
+      state.selected = new Set();
+      for (var i = lo; i <= hi; i++) state.selected.add(i);
+    }
+
+    // Bloque a pintar: ítems elegidos + un salto donde cambia de estrofa/párrafo.
+    function selectedBlock() {
+      if (state.preset) return state.preset;
+      var idx = Array.from(state.selected).sort(function (x, y) { return x - y; });
+      if (!idx.length) return [];
+      var out = [], prevSt = null;
+      idx.forEach(function (i) {
+        var it = state.flat[i];
+        if (prevSt !== null && it.st !== prevSt) out.push({ t: 'g' });
+        out.push({ t: 'v', s: it.text });
+        prevSt = it.st;
+      });
+      return out;
+    }
+
+    // ── Lista de ítems (nodos creados por JS → estilos globales) ───────
+    function renderVersos() {
+      var host = document.getElementById('tc-versos');
+      host.innerHTML = '';
+
+      // Preset de moraleja al principio, si la fábula la trae.
+      if (D.moraleja && D.moraleja.trim()) {
+        var pb = document.createElement('button');
+        pb.type = 'button';
+        pb.className = 'tc-preset' + (state.preset ? ' is-sel' : '');
+        var rot = document.createElement('span');
+        rot.className = 'tc-preset-rotulo';
+        rot.textContent = 'Moraleja';
+        var cuerpo = document.createElement('span');
+        cuerpo.textContent = D.moraleja.trim();
+        pb.appendChild(rot); pb.appendChild(cuerpo);
+        pb.addEventListener('click', function () { clickPreset(); });
+        host.appendChild(pb);
+      }
+
+      state.flat.forEach(function (it, i) {
+        var b = document.createElement('button');
+        b.type = 'button';
+        b.className = 'tc-verso' + (!state.preset && state.selected.has(i) ? ' is-sel' : '') +
+          (i > 0 && it.st !== state.flat[i - 1].st ? ' tc-estrofa' : '');
+        b.textContent = it.text;
+        b.addEventListener('click', function () { clickVerso(i); });
+        host.appendChild(b);
+      });
+    }
+
+    function clickPreset() {
+      // La moraleja se parte en frases para que envuelva bien en la tarjeta.
+      var lineas = segmentarFrases(D.moraleja);
+      if (!lineas.length) lineas = [D.moraleja.trim()];
+      state.preset = lineas.map(function (s) { return { t: 'v', s: s }; });
+      state.selected = new Set();
+      state.rangeOpen = false;
+      renderVersos(); draw();
+    }
+
+    function clickVerso(i) {
+      state.preset = null;
+      if (!state.rangeOpen) { state.anchor = i; setRange(i, i); state.rangeOpen = true; }
+      else { setRange(state.anchor, i); state.rangeOpen = false; }
+      renderVersos(); draw();
+    }
+
+    // ── Dibujo de la tarjeta ───────────────────────────────────────────
+    function setLS(px) { try { ctx.letterSpacing = px + 'px'; } catch (e) {} }
+
+    function drawCover(img, W, H) {
+      var ir = img.width / img.height, cr = W / H, dw, dh, dx, dy;
+      if (ir > cr) { dh = H; dw = H * ir; dx = (W - dw) / 2; dy = 0; }
+      else { dw = W; dh = W / ir; dx = 0; dy = (H - dh) / 2; }
+      ctx.drawImage(img, dx, dy, dw, dh);
+    }
+
+    function drawDiamond(x, y, r, fill, line, w) {
+      ctx.save();
+      ctx.strokeStyle = line; ctx.lineWidth = 1.2;
+      ctx.beginPath(); ctx.moveTo(x - w * 0.42, y); ctx.lineTo(x - r * 2.2, y); ctx.stroke();
+      ctx.beginPath(); ctx.moveTo(x + w * 0.42, y); ctx.lineTo(x + r * 2.2, y); ctx.stroke();
+      ctx.fillStyle = fill;
+      ctx.beginPath();
+      ctx.moveTo(x, y - r); ctx.lineTo(x + r, y); ctx.lineTo(x, y + r); ctx.lineTo(x - r, y);
+      ctx.closePath(); ctx.fill();
+      ctx.restore();
+    }
+
+    // Envuelve una línea de texto a varias para que quepa en maxW al tamaño dado.
+    function wrapText(s, maxW, size) {
+      ctx.font = '400 ' + size + 'px "Cormorant Garamond", Georgia, serif';
+      var words = s.split(' '), lines = [], cur = '';
+      for (var i = 0; i < words.length; i++) {
+        var test = cur ? cur + ' ' + words[i] : words[i];
+        if (ctx.measureText(test).width > maxW && cur) { lines.push(cur); cur = words[i]; }
+        else cur = test;
+      }
+      if (cur) lines.push(cur);
+      return lines;
+    }
+
+    function draw() {
+      var fmt = FORMATS[state.fmt], W = fmt.w, H = fmt.h;
+      if (canvas.width !== W) canvas.width = W;
+      if (canvas.height !== H) canvas.height = H;
+      var sk = SKIN;
+      var story = state.fmt === 'story';
+
+      ctx.fillStyle = sk.base; ctx.fillRect(0, 0, W, H);
+      if (state.img) drawCover(state.img, W, H);
+
+      // Velo marfil parejo + refuerzo inferior + viñeta → la tinta siempre lee.
+      ctx.fillStyle = sk.scrim; ctx.fillRect(0, 0, W, H);
+      var veil = ctx.createLinearGradient(0, 0, 0, H);
+      veil.addColorStop(0, 'rgba(240,229,206,0)'); veil.addColorStop(0.5, 'rgba(240,229,206,0)'); veil.addColorStop(1, sk.veilBot);
+      ctx.fillStyle = veil; ctx.fillRect(0, 0, W, H);
+      var vg = ctx.createRadialGradient(W * 0.5, H * 0.5, H * 0.3, W * 0.5, H * 0.5, H * 0.72);
+      vg.addColorStop(0, 'rgba(0,0,0,0)'); vg.addColorStop(1, sk.vignette);
+      ctx.fillStyle = vg; ctx.fillRect(0, 0, W, H);
+
+      // Zona segura: en Story (9:16) Instagram cubre la franja superior (usuario,
+      // seguir) y la inferior (pie, música, botones). El marco y el contenido se
+      // recogen ahí dentro para que nada quede tapado ni pegado al borde.
+      var mx = Math.round(W * 0.055);
+      var mtop = story ? Math.round(H * 0.125) : Math.round(W * 0.06);
+      var mbot = story ? Math.round(H * 0.145) : Math.round(W * 0.06);
+      var innerTop = mtop, innerBot = H - mbot;
+
+      ctx.strokeStyle = sk.goldLine; ctx.lineWidth = Math.max(1.5, W / 520);
+      ctx.strokeRect(mx, innerTop, W - 2 * mx, innerBot - innerTop);
+
+      var cx = W / 2;
+      var contentW = W - 2 * (mx + W * 0.05);
+
+      ctx.textAlign = 'center'; ctx.textBaseline = 'alphabetic';
+      setLS(W * 0.014); ctx.fillStyle = sk.kicker;
+      ctx.font = '600 ' + Math.round(W * 0.026) + 'px "Cinzel", Georgia, serif';
+      var topY = innerTop + W * 0.072;
+      ctx.fillText('FRAGMENTO', cx, topY);
+      setLS(0);
+
+      var block = selectedBlock();
+      if (block.length === 0) block = [{ t: 'v', s: esVerso ? 'Toca un verso…' : 'Toca una frase…' }];
+
+      var areaTop = topY + W * 0.05;
+      var authorBlock = W * 0.30;
+      var areaBot = innerBot - authorBlock;
+      var areaH = areaBot - areaTop;
+
+      var lh = 1.34, gapRatio = 0.55;
+      // En prosa y en la moraleja se envuelven las frases (líneas largas); en
+      // verso se respetan las líneas tal cual (los saltos son deliberados).
+      var doWrap = state.preset ? true : !esVerso;
+
+      // Maqueta a un tamaño: produce las líneas visuales y su altura total.
+      function layout(size) {
+        var lineH = size * lh, gapH = lineH * gapRatio;
+        var vlines = [], totalH = 0, widest = 0;
+        block.forEach(function (it) {
+          if (it.t === 'g') { vlines.push({ gap: true }); totalH += gapH; return; }
+          var parts = doWrap ? wrapText(it.s, contentW, size) : [it.s];
+          ctx.font = '400 ' + size + 'px "Cormorant Garamond", Georgia, serif';
+          parts.forEach(function (p) {
+            vlines.push({ text: p });
+            widest = Math.max(widest, ctx.measureText(p).width);
+            totalH += lineH;
+          });
+        });
+        return { vlines: vlines, totalH: totalH, widest: widest, lineH: lineH, gapH: gapH };
+      }
+
+      // Crece hasta llenar el área (alto; y ancho en verso), con un tope legible.
+      // Así una frase corta se ve grande y una larga envuelve y llena el espacio.
+      var maxFs = Math.round(W * (story ? 0.07 : 0.078));
+      var minFs = Math.round(W * 0.028);
+      var fs = minFs, L = layout(minFs);
+      for (var s = minFs + 1; s <= maxFs; s++) {
+        var LL = layout(s);
+        if (LL.totalH <= areaH && LL.widest <= contentW) { fs = s; L = LL; }
+        else break;
+      }
+      L = layout(fs);
+      var lineH = L.lineH, gapH = L.gapH, blockH = L.totalH;
+
+      ctx.textAlign = state.align === 'center' ? 'center' : 'left';
+      var tx = state.align === 'center' ? cx : cx - L.widest / 2;
+      var yTop = areaTop + (areaH - blockH) / 2;
+
+      // Banda de lectura: marfil casi sólido tras el fragmento, con bordes
+      // difuminados arriba y abajo. Mantiene la ilustración visible pero asegura
+      // que la tinta lea sobre cualquier zona de la foto.
+      var padY = fs * 0.9;
+      var bTop = yTop - padY, bBot = yTop + blockH + padY * 0.7;
+      var band = ctx.createLinearGradient(0, bTop, 0, bBot);
+      band.addColorStop(0, 'rgba(240,229,206,0)');
+      band.addColorStop(0.16, 'rgba(240,229,206,0.88)');
+      band.addColorStop(0.84, 'rgba(240,229,206,0.88)');
+      band.addColorStop(1, 'rgba(240,229,206,0)');
+      ctx.fillStyle = band;
+      ctx.fillRect(mx + W * 0.012, bTop, W - 2 * (mx + W * 0.012), bBot - bTop);
+
+      ctx.font = '400 ' + fs + 'px "Cormorant Garamond", Georgia, serif';
+      ctx.save();
+      ctx.shadowColor = sk.halo; ctx.shadowBlur = fs * 0.22;
+      ctx.fillStyle = sk.verse;
+      L.vlines.forEach(function (ln) {
+        if (ln.gap) { yTop += gapH; return; }
+        ctx.fillText(ln.text, tx, yTop + fs);
+        yTop += lineH;
+      });
+      ctx.restore();
+      ctx.textAlign = 'center';
+
+      // Autoría y marca, ancladas al pie con holgura respecto al filete inferior
+      // del marco: la dirección del sitio queda por encima de la línea, sin
+      // tocarla. Todo se apila hacia arriba desde ese anclaje.
+      var baseDomain = innerBot - W * 0.055;
+      var baseBrand = baseDomain - W * 0.028;
+      var wmLineY = baseBrand - W * 0.035;
+      var baseAuthor = wmLineY - W * 0.040;
+      var baseCita = baseAuthor - W * 0.057;
+      var divY = baseCita - W * 0.050;
+
+      drawDiamond(cx, divY, W * 0.012, sk.gold, sk.goldLine, contentW);
+
+      // Cita: título en itálica (prominente, zafiro) y autor debajo.
+      var cita = '«' + D.titulo + '»';
+      var tfs = Math.round(W * 0.044);
+      ctx.font = 'italic 400 ' + tfs + 'px "Cormorant Garamond", Georgia, serif';
+      for (var tg = 0; tg < 80 && ctx.measureText(cita).width > contentW && tfs > 18; tg++) {
+        tfs -= 1;
+        ctx.font = 'italic 400 ' + tfs + 'px "Cormorant Garamond", Georgia, serif';
+      }
+      ctx.save();
+      ctx.shadowColor = sk.halo; ctx.shadowBlur = tfs * 0.3;
+      ctx.fillStyle = sk.titulo;
+      ctx.fillText(cita, cx, baseCita);
+      ctx.fillStyle = sk.author;
+      ctx.font = '400 ' + Math.round(W * 0.03) + 'px "Cormorant Garamond", Georgia, serif';
+      ctx.fillText(D.autor, cx, baseAuthor);
+      ctx.restore();
+
+      ctx.strokeStyle = sk.goldLine; ctx.lineWidth = Math.max(1, W / 900);
+      ctx.beginPath(); ctx.moveTo(cx - W * 0.09, wmLineY); ctx.lineTo(cx + W * 0.09, wmLineY); ctx.stroke();
+      setLS(W * 0.016); ctx.fillStyle = sk.mark;
+      ctx.font = '600 ' + Math.round(W * 0.027) + 'px "Cinzel", Georgia, serif';
+      ctx.fillText(brand, cx, baseBrand);
+      setLS(W * 0.006); ctx.fillStyle = sk.domain;
+      ctx.font = '500 ' + Math.round(W * 0.016) + 'px "Cinzel", Georgia, serif';
+      ctx.fillText(domain, cx, baseDomain);
+      setLS(0);
+    }
+
+    // ── Exportación ────────────────────────────────────────────────────
+    function slug(s) {
+      return (s || 'fabula').toLowerCase().normalize('NFD').replace(/[̀-ͯ]/g, '')
+        .replace(/[^a-z0-9]+/g, '-').replace(/^-+|-+$/g, '').slice(0, 48) || 'fabula';
+    }
+    function fileName() { return 'tarjeta-' + slug(D.titulo) + '-' + state.fmt + '.png'; }
+
+    function withBlob(cb) { canvas.toBlob(function (b) { if (b) cb(b); }, 'image/png'); }
+
+    function descargar() {
+      withBlob(function (blob) {
+        var url = URL.createObjectURL(blob);
+        var a = document.createElement('a');
+        a.href = url; a.download = fileName();
+        document.body.appendChild(a); a.click(); a.remove();
+        setTimeout(function () { URL.revokeObjectURL(url); }, 1000);
+        flash('Imagen descargada');
+      });
+    }
+
+    function compartir() {
+      withBlob(function (blob) {
+        var file = new File([blob], fileName(), { type: 'image/png' });
+        if (navigator.canShare && navigator.canShare({ files: [file] })) {
+          navigator.share({ files: [file], title: D.titulo, text: '«' + D.titulo + '» — ' + D.autor })
+            .catch(function () {});
+        } else {
+          descargar();
+          flash('Tu navegador no comparte imágenes; la descargué');
+        }
+      });
+    }
+
+    var flashT;
+    function flash(msg) { aviso.textContent = msg; clearTimeout(flashT); flashT = setTimeout(function () { aviso.textContent = ''; }, 2600); }
+
+    // ── Controles ──────────────────────────────────────────────────────
+    function wireSeg(id, key) {
+      var el = document.getElementById(id);
+      if (!el) return;
+      el.addEventListener('click', function (e) {
+        var b = e.target.closest('button'); if (!b) return;
+        state[key] = b.dataset[key];
+        el.querySelectorAll('button').forEach(function (x) { x.setAttribute('aria-pressed', x === b ? 'true' : 'false'); });
+        draw();
+      });
+    }
+    wireSeg('tc-formato', 'fmt');
+    wireSeg('tc-align', 'align');
+    document.getElementById('tc-descargar').addEventListener('click', descargar);
+    document.getElementById('tc-compartir').addEventListener('click', compartir);
+
+    // ── Apertura: dispara el botón de <Compartir> ──────────────────────
+    function openDialog() {
+      draw();
+      if (typeof dlg.showModal === 'function') dlg.showModal(); else dlg.setAttribute('open', '');
+    }
+    document.querySelectorAll('[data-tc-open]').forEach(function (btn) {
+      btn.addEventListener('click', openDialog);
+    });
+
+    // ── Arranque ───────────────────────────────────────────────────────
+    state.flat = parseCuerpo();
+    // Preselección: la primera estrofa/párrafo (hasta 6 ítems).
+    if (state.flat.length) {
+      var firstSt = state.flat[0].st, last = 0;
+      for (var i = 0; i < state.flat.length && state.flat[i].st === firstSt && i < 6; i++) last = i;
+      setRange(0, last); state.anchor = 0; state.rangeOpen = false;
+    }
+    renderVersos();
+
+    // Carga la ilustración (mismo origen) y repinta.
+    if (D.img) {
+      var im = new Image();
+      im.onload = function () { state.img = im; draw(); };
+      im.src = D.img;
+    }
+    // Repinta cuando las fuentes estén listas (si no, el canvas usa la de reserva).
+    if (document.fonts && document.fonts.ready) {
+      document.fonts.ready.then(draw);
+      try {
+        Promise.all([
+          document.fonts.load('600 60px "Cinzel"'),
+          document.fonts.load('500 60px "Cinzel"'),
+          document.fonts.load('400 60px "Cormorant Garamond"'),
+          document.fonts.load('600 60px "Cormorant Garamond"'),
+          document.fonts.load('italic 400 60px "Cormorant Garamond"')
+        ]).then(draw);
+      } catch (e) {}
+    }
+    draw();
+  })();
+</script>

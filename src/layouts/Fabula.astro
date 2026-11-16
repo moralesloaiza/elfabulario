@@ -1,8 +1,9 @@
 ---
-import { Image } from 'astro:assets';
+import { Image, getImage } from 'astro:assets';
 import { getCollection, getEntry, type CollectionEntry } from 'astro:content';
 import BaseHead from '../components/BaseHead.astro';
 import Compartir from '../components/Compartir.astro';
+import TarjetaCita from '../components/TarjetaCita.astro';
 import Footer from '../components/Footer.astro';
 import FormattedDate from '../components/FormattedDate.astro';
 import Header from '../components/Header.astro';
@@ -162,6 +163,13 @@ const notaTitulo = traduccion ? 'Nota del traductor' : 'Nota del curador';
 // URL canónica absoluta (con barra final) para la barra de «Compartir».
 const urlCompartir = new URL(Astro.url.pathname.replace(/\/?$/, '/'), Astro.site).href;
 
+// Imagen-cita: solo si la fábula tiene ilustración. Se emite una versión ligera
+// 1280px (mismo origen → el canvas del generador de tarjetas no se contamina y
+// la exportación/compartir funcionan). La tarjeta aparece solo cuando existe.
+const tarjetaImagen = ilustracion
+	? (await getImage({ src: ilustracion, width: 1280, format: 'jpeg', quality: 82 })).src
+	: null;
+
 // Structured data (JSON-LD ShortStory). Lives in <head>, near BaseHead.
 const jsonLd = buildFabulaJsonLd(Astro.props, autorEntry, Astro.site!, traductorEntry);
 const breadcrumbLd = buildBreadcrumbJsonLd(
@@ -295,6 +303,7 @@ const breadcrumbLd = buildBreadcrumbJsonLd(
 						titulo={titulo}
 						autor={autorNombre}
 						etiqueta="esta fábula"
+						tarjeta={!!tarjetaImagen}
 					/>
 				</article>
 
@@ -390,6 +399,17 @@ const breadcrumbLd = buildBreadcrumbJsonLd(
 		</main>
 		<Footer />
 		<IconoEditar slug={id} />
+
+		{tarjetaImagen && (
+			<TarjetaCita
+				imagen={tarjetaImagen}
+				titulo={titulo}
+				autor={autorNombre}
+				sitio="fabulario"
+				forma={forma}
+				moraleja={moraleja}
+			/>
+		)}
 	</body>
 </html>
 
