@@ -503,7 +503,7 @@ const cuerpoSelector = forma === 'verso' ? '.prose--verso' : '.articulo .prose';
       if (block.length === 0) block = [{ t: 'v', s: esVerso ? 'Toca un verso…' : 'Toca una frase…' }];
 
       var areaTop = topY + W * 0.05;
-      var authorBlock = W * 0.26;
+      var authorBlock = W * 0.30;
       var areaBot = innerBot - authorBlock;
       var areaH = areaBot - areaTop;
 
@@ -571,7 +571,16 @@ const cuerpoSelector = forma === 'verso' ? '.prose--verso' : '.articulo .prose';
       ctx.restore();
       ctx.textAlign = 'center';
 
-      var divY = areaBot + authorBlock * 0.16;
+      // Autoría y marca, ancladas al pie con holgura respecto al filete inferior
+      // del marco: la dirección del sitio queda por encima de la línea, sin
+      // tocarla. Todo se apila hacia arriba desde ese anclaje.
+      var baseDomain = innerBot - W * 0.055;
+      var baseBrand = baseDomain - W * 0.028;
+      var wmLineY = baseBrand - W * 0.035;
+      var baseAuthor = wmLineY - W * 0.040;
+      var baseCita = baseAuthor - W * 0.057;
+      var divY = baseCita - W * 0.050;
+
       drawDiamond(cx, divY, W * 0.012, sk.gold, sk.goldLine, contentW);
 
       // Cita: título en itálica (prominente, zafiro) y autor debajo.
@@ -585,21 +594,20 @@ const cuerpoSelector = forma === 'verso' ? '.prose--verso' : '.articulo .prose';
       ctx.save();
       ctx.shadowColor = sk.halo; ctx.shadowBlur = tfs * 0.3;
       ctx.fillStyle = sk.titulo;
-      ctx.fillText(cita, cx, divY + W * 0.085);
+      ctx.fillText(cita, cx, baseCita);
       ctx.fillStyle = sk.author;
       ctx.font = '400 ' + Math.round(W * 0.03) + 'px "Cormorant Garamond", Georgia, serif';
-      ctx.fillText(D.autor, cx, divY + W * 0.142);
+      ctx.fillText(D.autor, cx, baseAuthor);
       ctx.restore();
 
-      var markY = innerBot - W * 0.03;
       ctx.strokeStyle = sk.goldLine; ctx.lineWidth = Math.max(1, W / 900);
-      ctx.beginPath(); ctx.moveTo(cx - W * 0.09, markY - W * 0.035); ctx.lineTo(cx + W * 0.09, markY - W * 0.035); ctx.stroke();
+      ctx.beginPath(); ctx.moveTo(cx - W * 0.09, wmLineY); ctx.lineTo(cx + W * 0.09, wmLineY); ctx.stroke();
       setLS(W * 0.016); ctx.fillStyle = sk.mark;
       ctx.font = '600 ' + Math.round(W * 0.027) + 'px "Cinzel", Georgia, serif';
-      ctx.fillText(brand, cx, markY);
+      ctx.fillText(brand, cx, baseBrand);
       setLS(W * 0.006); ctx.fillStyle = sk.domain;
       ctx.font = '500 ' + Math.round(W * 0.016) + 'px "Cinzel", Georgia, serif';
-      ctx.fillText(domain, cx, markY + W * 0.028);
+      ctx.fillText(domain, cx, baseDomain);
       setLS(0);
     }
 
