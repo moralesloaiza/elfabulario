@@ -7,7 +7,16 @@
 		<title>Panel editorial · El Fabulario</title>
 	</head>
 	<body>
-		<!-- Decap CMS carga la UI desde el CDN oficial. -->
-		<script src="https://unpkg.com/decap-cms@^3.0.0/dist/decap-cms.js"></script>
+		<!-- Decap CMS carga la UI desde el CDN oficial.
+		     Versión FIJA (no flotante) + SRI: congela el bundle exacto que
+		     se audita. Un cambio en el CDN que altere el archivo haría que el
+		     navegador rechace el script en vez de ejecutar código ajeno.
+		     Para actualizar Decap: subir la versión y recalcular el hash
+		     (sha384 base64 del dist/decap-cms.js de esa versión). -->
+		<script
+			src="https://unpkg.com/decap-cms@3.17.3/dist/decap-cms.js"
+			integrity="sha384-RWRzuHfiZSWCt3nEvG7B0v3cMgM1C2UuJmgBSL92GQh4uXmNSkbcthql/mNBqvjr"
+			crossorigin="anonymous"
+		></script>
 	</body>
 </html>
