@@ -1,7 +1,14 @@
 # Security headers for elfabulario.com (Cloudflare Pages)
-# Apply to every path. CSP intentionally omitted: would need
-# careful audit for Spotify embeds, Cloudflare email obfuscation
-# and Pagefind. Add later as a separate PR.
+#
+# CSP en modo SOLO-REPORTE (Content-Security-Policy-Report-Only): no bloquea
+# nada, solo registra en la consola del navegador lo que una politica estricta
+# rechazaria. Es el paso previo a enforce: una vez verificado que no hay
+# violaciones legitimas, se renombra la cabecera a `Content-Security-Policy`.
+# Externo permitido en el sitio publico: open.spotify.com (embed de narracion).
+#
+# NO se usa Cross-Origin-Opener-Policy: same-origin porque cortaria
+# window.opener entre origenes y romperia el popup OAuth del panel /admin
+# (el token vuelve por postMessage desde auth.elfabulario.com).
 
 /*
   X-Content-Type-Options: nosniff
@@ -9,13 +16,24 @@
   Strict-Transport-Security: max-age=63072000; includeSubDomains; preload
   Permissions-Policy: camera=(), microphone=(), geolocation=(), payment=(), interest-cohort=()
   X-Frame-Options: SAMEORIGIN
+  Content-Security-Policy-Report-Only: default-src 'self'; base-uri 'self'; object-src 'none'; frame-ancestors 'self'; form-action 'self'; img-src 'self' data:; font-src 'self'; style-src 'self' 'unsafe-inline'; script-src 'self'; connect-src 'self'; frame-src https://open.spotify.com; media-src 'self'; worker-src 'self'; manifest-src 'self'; upgrade-insecure-requests
 
-# PWA. El SW no debe quedar cacheado por el navegador/CDN: así los
+# Panel editorial (Decap CMS). Carga el bundle desde unpkg y habla con la API
+# de GitHub y el proxy OAuth, por lo que su CSP es mas permisiva que la del
+# sitio publico. Tambien en solo-reporte por ahora.
+
+/admin/*
+  X-Frame-Options: DENY
+  Content-Security-Policy-Report-Only: default-src 'self'; base-uri 'self'; object-src 'none'; frame-ancestors 'none'; img-src 'self' data: blob: https://*.githubusercontent.com; font-src 'self' data: https://unpkg.com; style-src 'self' 'unsafe-inline' https://unpkg.com; script-src 'self' 'unsafe-inline' 'unsafe-eval' https://unpkg.com; connect-src 'self' https://api.github.com https://unpkg.com https://auth.elfabulario.com; frame-src 'self'; worker-src 'self' blob:; child-src blob:
+
+# PWA. El SW no debe quedar cacheado por el navegador/CDN: asi los
 # despliegues nuevos toman efecto sin esperar a que expire una copia vieja.
+
 /sw.js
   Cache-Control: no-cache
   Content-Type: text/javascript; charset=utf-8
 
-# Sirve el manifest con el tipo MIME correcto en producción.
+# Sirve el manifest con el tipo MIME correcto en produccion.
+
 /manifest.webmanifest
   Content-Type: application/manifest+json; charset=utf-8

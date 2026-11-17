@@ -18,9 +18,15 @@ export default {
   },
 };
 
-async function handleAuth(url: URL, env: Env): Promise<Response> {
+// Scope FIJO. No se toma del query string: así un enlace manipulado
+// (?scope=delete_repo,admin:org) no puede hacer que GitHub emita un token
+// con más permisos de los que el CMS necesita. Decap solo requiere `repo`
+// para leer/escribir contenido y `user` para identificar al autor.
+const OAUTH_SCOPE = "repo,user";
+
+async function handleAuth(_url: URL, env: Env): Promise<Response> {
   const state = crypto.randomUUID();
-  const scope = url.searchParams.get("scope") ?? "repo,user";
+  const scope = OAUTH_SCOPE;
 
   const authorize = new URL(GITHUB_AUTHORIZE_URL);
   authorize.searchParams.set("client_id", env.OAUTH_CLIENT_ID);
@@ -99,6 +105,13 @@ function renderResult(
     status: 200,
     headers: {
       "Content-Type": "text/html; charset=utf-8",
+      // Esta página porta el token de acceso en el cuerpo: que ningún
+      // navegador/proxy/CDN la cachee, y que no se filtre referrer ni se
+      // haga sniffing del tipo. No es embebible en iframes ajenos.
+      "Cache-Control": "no-store, max-age=0",
+      "Referrer-Policy": "no-referrer",
+      "X-Content-Type-Options": "nosniff",
+      "X-Frame-Options": "DENY",
       "Set-Cookie": `${STATE_COOKIE}=; HttpOnly; Secure; SameSite=Lax; Path=/; Max-Age=0`,
     },
   });
