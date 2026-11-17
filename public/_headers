@@ -16,14 +16,23 @@
   Strict-Transport-Security: max-age=63072000; includeSubDomains; preload
   Permissions-Policy: camera=(), microphone=(), geolocation=(), payment=(), interest-cohort=()
   X-Frame-Options: SAMEORIGIN
-  Content-Security-Policy-Report-Only: default-src 'self'; base-uri 'self'; object-src 'none'; frame-ancestors 'self'; form-action 'self'; img-src 'self' data:; font-src 'self'; style-src 'self' 'unsafe-inline'; script-src 'self'; connect-src 'self'; frame-src https://open.spotify.com; media-src 'self'; worker-src 'self'; manifest-src 'self'; upgrade-insecure-requests
+  Content-Security-Policy-Report-Only: default-src 'self'; base-uri 'self'; object-src 'none'; frame-ancestors 'self'; form-action 'self'; img-src 'self' data:; font-src 'self'; style-src 'self' 'unsafe-inline'; script-src 'self'; connect-src 'self'; frame-src 'self' https://open.spotify.com; media-src 'self'; worker-src 'self'; manifest-src 'self'; upgrade-insecure-requests
 
 # Panel editorial (Decap CMS). Carga el bundle desde unpkg y habla con la API
 # de GitHub y el proxy OAuth, por lo que su CSP es mas permisiva que la del
 # sitio publico. Tambien en solo-reporte por ahora.
+# Cloudflare Pages COMBINA con coma las cabeceras de reglas que solapan, asi
+# que /admin recibiria ademas la CSP (y la XFO) estrictas del bloque /*. Por
+# eso primero se desacopla lo heredado con "! " y luego se fija el valor
+# propio de /admin: evita una CSP doble y una XFO en conflicto, deja limpios
+# los informes report-only del panel, y evita que el /* estricto rompa Decap
+# cuando se pase a enforce. El bloque /* debe ir antes para que "! " tenga
+# algo que quitar.
 
 /admin/*
+  ! X-Frame-Options
   X-Frame-Options: DENY
+  ! Content-Security-Policy-Report-Only
   Content-Security-Policy-Report-Only: default-src 'self'; base-uri 'self'; object-src 'none'; frame-ancestors 'none'; img-src 'self' data: blob: https://*.githubusercontent.com; font-src 'self' data: https://unpkg.com; style-src 'self' 'unsafe-inline' https://unpkg.com; script-src 'self' 'unsafe-inline' 'unsafe-eval' https://unpkg.com; connect-src 'self' https://api.github.com https://unpkg.com https://auth.elfabulario.com; frame-src 'self'; worker-src 'self' blob:; child-src blob:
 
 # PWA. El SW no debe quedar cacheado por el navegador/CDN: asi los
