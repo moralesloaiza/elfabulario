@@ -14,8 +14,16 @@
 // · MORALEJA: si la fábula la trae, se ofrece como preset de un toque al
 //   principio de la lista (llega por prop, no vive en el cuerpo del DOM).
 // · La ilustración llega como una imagen ligera emitida al build (mismo origen,
-//   así el canvas no se «contamina» y la exportación funciona).
+//   así el canvas no se «contamina» y la exportación funciona). El lector puede
+//   SUBIR su propia imagen (data URL, tampoco contamina el canvas).
 // · El disparador vive en <Compartir tarjeta>; aquí solo va el diálogo.
+//
+// LEGIBILIDAD POR CONSTRUCCIÓN (lo importante): el texto NO flota sobre la foto
+// con velos translúcidos —eso daba bajo contraste sobre ilustraciones oscuras o
+// recargadas—. El fragmento, la cita y la marca se componen sobre una PLACA de
+// pergamino sólida; la ilustración vive en una banda superior enmarcada. Así la
+// tinta, el zafiro y el oro leen igual sea cual sea la imagen. Un modo «solo
+// papel» prescinde de la foto cuando conviene.
 //
 // El Fabulario es SIEMPRE día: una sola piel con la identidad del sitio
 // (marfil/oro/tinta/zafiro), sin conmutador de clima. El markup del diálogo y
@@ -98,6 +106,21 @@ const cuerpoSelector = forma === 'verso' ? '.prose--verso' : '.articulo .prose';
           <div class="tc-seg" id="tc-align" role="group" aria-label="Alineación del texto">
             <button type="button" data-align="left" aria-pressed="true">Izquierda</button>
             <button type="button" data-align="center" aria-pressed="false">Centro</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="tc-seg-row">
+        <div>
+          <p class="tc-cap">Imagen</p>
+          <div class="tc-img-row">
+            <div class="tc-seg" id="tc-fondo" role="group" aria-label="Fondo de la tarjeta">
+              <button type="button" data-fondo="foto" aria-pressed="true">Ilustración</button>
+              <button type="button" data-fondo="papel" aria-pressed="false">Solo papel</button>
+            </div>
+            <button type="button" class="tc-btn tc-btn--sm" id="tc-subir">Subir imagen</button>
+            <button type="button" class="tc-btn tc-btn--sm tc-btn--ghost" id="tc-restaurar" hidden>Restaurar</button>
+            <input type="file" id="tc-file" accept="image/*" hidden />
           </div>
         </div>
       </div>
@@ -227,6 +250,11 @@ const cuerpoSelector = forma === 'verso' ? '.prose--verso' : '.articulo .prose';
     text-transform: uppercase; color: var(--tc-text-muted); margin: var(--space-sm) 0 0;
   }
 
+  /* Fila de «Imagen»: segmento ilustración/papel + botones subir/restaurar. El
+     segmento crece; los botones se ajustan a su contenido y envuelven en móvil. */
+  .tc-img-row { display: flex; flex-wrap: wrap; align-items: stretch; gap: var(--space-xs); }
+  .tc-img-row .tc-seg { flex: 1 1 auto; margin-top: var(--space-sm); }
+
   .tc-actions { display: grid; grid-template-columns: 1fr 1fr; gap: var(--space-sm); margin-top: var(--space-md); }
   .tc-btn {
     font-family: var(--font-display); font-size: var(--fs-2xs); letter-spacing: var(--ls-wide);
@@ -237,6 +265,10 @@ const cuerpoSelector = forma === 'verso' ? '.prose--verso' : '.articulo .prose';
   .tc-btn:hover { background: var(--tc-surface-2); }
   .tc-btn--primario { background: var(--tc-oro); color: var(--color-negro); }
   .tc-btn--primario:hover { background: var(--tc-oro-texto); color: var(--color-marfil); }
+  /* Botones compactos de la fila de imagen: a la altura del segmento. */
+  .tc-btn--sm { margin-top: var(--space-sm); padding: 0.45em 0.9em; white-space: nowrap; }
+  .tc-btn--ghost { border-color: var(--tc-rule); color: var(--tc-text-muted); }
+  .tc-btn[hidden] { display: none; }
 
   .tc-aviso {
     min-height: 1.2em; margin: var(--space-xs) 0 0; text-align: center;
@@ -253,22 +285,23 @@ const cuerpoSelector = forma === 'verso' ? '.prose--verso' : '.articulo .prose';
     if (!dlg) return;
     var D = dlg.dataset;
 
-    // Piel única: identidad de El Fabulario (día). El texto se compone sobre la
-    // ilustración; un velo marfil cálido asegura la legibilidad de la tinta.
+    // Piel única: identidad de El Fabulario (día). El texto se compone sobre una
+    // PLACA de pergamino sólida —no sobre la foto— para que la tinta, el zafiro y
+    // el oro lean sea cual sea la ilustración.
     var SKIN = {
-      base: '#F0E5CE',                 // marfil (reserva si no carga la imagen)
-      scrim: 'rgba(240,229,206,.60)',  // velo parejo sobre la foto (legibilidad tinta)
-      veilBot: 'rgba(240,229,206,.94)',// refuerzo inferior (zona de autoría)
-      vignette: 'rgba(120,96,56,.22)', // viñeta cálida
-      halo: 'rgba(240,229,206,.95)',   // aura clara tras el texto oscuro
+      base: '#F0E5CE',                 // marfil (fondo y márgenes)
+      parchment: '#F4EAD0',            // pergamino de la placa (un punto más claro)
+      dim: 'rgba(26,23,20,0.12)',      // leve oscurecido global de la foto
+      vignette: 'rgba(26,23,20,0.30)', // viñeta para asentar la imagen en su banda
+      seat: 'rgba(26,23,20,0.30)',     // sombra donde la placa se apoya sobre la foto
       verse: '#1A1714',                // tinta
       gold: '#C9A14A',                 // oro (ornamento)
-      goldLine: 'rgba(201,161,74,.70)',
-      kicker: '#7A5F1F',               // oro-texto (legible)
+      goldLine: 'rgba(201,161,74,.78)',
+      kicker: '#7A5F1F',               // oro-texto (legible sobre pergamino · AA)
       titulo: '#1C3A7A',               // zafiro (la cita «título»)
       author: '#7A5F1F',               // oro-texto
       mark: '#1A1714',                 // tinta (marca de agua)
-      domain: 'rgba(74,65,58,.88)'     // text-soft
+      domain: 'rgba(74,65,58,.92)'     // text-soft
     };
     var FORMATS = { post: { w: 1080, h: 1080 }, story: { w: 1080, h: 1920 } };
 
@@ -287,8 +320,13 @@ const cuerpoSelector = forma === 'verso' ? '.prose--verso' : '.articulo .prose';
       preset: null,        // bloque fijo (moraleja); anula la selección del cuerpo
       fmt: 'post',
       align: 'left',
-      img: null
+      fondo: 'foto',       // 'foto' | 'papel'
+      img: null,           // ilustración de la fábula (mismo origen)
+      customImg: null      // imagen subida por el lector (data URL)
     };
+
+    // Imagen efectiva a pintar: la subida tiene prioridad sobre la de la fábula.
+    function fotoActiva() { return state.customImg || state.img; }
 
     // ── Segmentador de frases (español) ────────────────────────────────
     // Usa Intl.Segmenter cuando existe; si no, una reserva por puntuación que
@@ -465,18 +503,19 @@ const cuerpoSelector = forma === 'verso' ? '.prose--verso' : '.articulo .prose';
       if (canvas.height !== H) canvas.height = H;
       var sk = SKIN;
       var story = state.fmt === 'story';
+      var foto = fotoActiva();
+      var usaFoto = state.fondo === 'foto' && !!foto;
 
+      // Fondo base (y márgenes). En modo foto, la ilustración se extiende a
+      // sangre y la placa la cubre luego en su zona de texto.
       ctx.fillStyle = sk.base; ctx.fillRect(0, 0, W, H);
-      if (state.img) drawCover(state.img, W, H);
-
-      // Velo marfil parejo + refuerzo inferior + viñeta → la tinta siempre lee.
-      ctx.fillStyle = sk.scrim; ctx.fillRect(0, 0, W, H);
-      var veil = ctx.createLinearGradient(0, 0, 0, H);
-      veil.addColorStop(0, 'rgba(240,229,206,0)'); veil.addColorStop(0.5, 'rgba(240,229,206,0)'); veil.addColorStop(1, sk.veilBot);
-      ctx.fillStyle = veil; ctx.fillRect(0, 0, W, H);
-      var vg = ctx.createRadialGradient(W * 0.5, H * 0.5, H * 0.3, W * 0.5, H * 0.5, H * 0.72);
-      vg.addColorStop(0, 'rgba(0,0,0,0)'); vg.addColorStop(1, sk.vignette);
-      ctx.fillStyle = vg; ctx.fillRect(0, 0, W, H);
+      if (usaFoto) {
+        drawCover(foto, W, H);
+        ctx.fillStyle = sk.dim; ctx.fillRect(0, 0, W, H); // atenúa un punto la foto
+        var vg = ctx.createRadialGradient(W * 0.5, H * 0.42, H * 0.28, W * 0.5, H * 0.5, H * 0.74);
+        vg.addColorStop(0, 'rgba(0,0,0,0)'); vg.addColorStop(1, sk.vignette);
+        ctx.fillStyle = vg; ctx.fillRect(0, 0, W, H);
+      }
 
       // Zona segura: en Story (9:16) Instagram cubre la franja superior (usuario,
       // seguir) y la inferior (pie, música, botones). El marco y el contenido se
@@ -485,27 +524,17 @@ const cuerpoSelector = forma === 'verso' ? '.prose--verso' : '.articulo .prose';
       var mtop = story ? Math.round(H * 0.125) : Math.round(W * 0.06);
       var mbot = story ? Math.round(H * 0.145) : Math.round(W * 0.06);
       var innerTop = mtop, innerBot = H - mbot;
-
-      ctx.strokeStyle = sk.goldLine; ctx.lineWidth = Math.max(1.5, W / 520);
-      ctx.strokeRect(mx, innerTop, W - 2 * mx, innerBot - innerTop);
+      var IH = innerBot - innerTop;
 
       var cx = W / 2;
-      var contentW = W - 2 * (mx + W * 0.05);
+      var contentW = W - 2 * (mx + W * 0.045);
 
-      ctx.textAlign = 'center'; ctx.textBaseline = 'alphabetic';
-      setLS(W * 0.014); ctx.fillStyle = sk.kicker;
-      ctx.font = '600 ' + Math.round(W * 0.026) + 'px "Cinzel", Georgia, serif';
-      var topY = innerTop + W * 0.072;
-      ctx.fillText('FRAGMENTO', cx, topY);
-      setLS(0);
-
+      // ── Maquetación del fragmento ──────────────────────────────────────
+      // Se mide ANTES de dibujar la placa: así la banda de ilustración es
+      // adaptativa (toma solo el espacio sobrante) y el fragmento nunca se
+      // desborda sobre la foto. El texto siempre acaba sobre pergamino sólido.
       var block = selectedBlock();
       if (block.length === 0) block = [{ t: 'v', s: esVerso ? 'Toca un verso…' : 'Toca una frase…' }];
-
-      var areaTop = topY + W * 0.05;
-      var authorBlock = W * 0.30;
-      var areaBot = innerBot - authorBlock;
-      var areaH = areaBot - areaTop;
 
       var lh = 1.34, gapRatio = 0.55;
       // En prosa y en la moraleja se envuelven las frases (líneas largas); en
@@ -529,46 +558,81 @@ const cuerpoSelector = forma === 'verso' ? '.prose--verso' : '.articulo .prose';
         return { vlines: vlines, totalH: totalH, widest: widest, lineH: lineH, gapH: gapH };
       }
 
-      // Crece hasta llenar el área (alto; y ancho en verso), con un tope legible.
-      // Así una frase corta se ve grande y una larga envuelve y llena el espacio.
-      var maxFs = Math.round(W * (story ? 0.07 : 0.078));
-      var minFs = Math.round(W * 0.028);
+      // Reservas fijas del interior: rótulo arriba de la cita, bloque de autoría
+      // anclado al pie. La banda de ilustración ocupa lo que sobre, acotada.
+      var kickPad = W * 0.11;                       // placa → primer renglón de cita
+      var authorZone = W * (story ? 0.28 : 0.30);   // reserva inferior (cita/autor/marca)
+      var minPhoto = usaFoto ? IH * 0.16 : 0;       // banda mínima de foto
+      var maxPhoto = usaFoto ? IH * 0.42 : 0;       // banda máxima de foto
+
+      // Ajuste de tamaño: crece hasta llenar el área MÁXIMA del fragmento (la que
+      // habría con la banda de foto mínima), con un tope legible. Garantiza que el
+      // bloque quepa aunque luego la banda sea mayor.
+      var maxQuoteH = (innerBot - authorZone) - (innerTop + minPhoto + kickPad);
+      var maxFs = Math.round(W * (story ? 0.066 : 0.078));
+      var minFs = Math.round(W * 0.026);
       var fs = minFs, L = layout(minFs);
       for (var s = minFs + 1; s <= maxFs; s++) {
         var LL = layout(s);
-        if (LL.totalH <= areaH && LL.widest <= contentW) { fs = s; L = LL; }
+        if (LL.totalH <= maxQuoteH && LL.widest <= contentW) { fs = s; L = LL; }
         else break;
       }
       L = layout(fs);
       var lineH = L.lineH, gapH = L.gapH, blockH = L.totalH;
 
+      // Banda de ilustración adaptativa: lo que sobra tras colocar rótulo,
+      // fragmento y autoría, acotada entre el mínimo y el máximo.
+      var photoBand = usaFoto
+        ? Math.max(minPhoto, Math.min(maxPhoto, IH - (kickPad + blockH + authorZone)))
+        : 0;
+      var plaqueTop = Math.round(innerTop + photoBand);
+
+      // ── Placa y marco ──────────────────────────────────────────────────
+      if (usaFoto) {
+        // Sombra de apoyo: asienta la placa sobre la foto con una transición suave.
+        var seatH = Math.round(IH * 0.05);
+        var seat = ctx.createLinearGradient(0, plaqueTop - seatH, 0, plaqueTop);
+        seat.addColorStop(0, 'rgba(26,23,20,0)'); seat.addColorStop(1, sk.seat);
+        ctx.fillStyle = seat; ctx.fillRect(mx, plaqueTop - seatH, W - 2 * mx, seatH);
+      }
+
+      // Pergamino sólido.
+      ctx.fillStyle = sk.parchment;
+      ctx.fillRect(mx, plaqueTop, W - 2 * mx, innerBot - plaqueTop);
+
+      // Filete oro en la junta foto/placa (editorial, nítido).
+      if (usaFoto) {
+        ctx.strokeStyle = sk.goldLine; ctx.lineWidth = Math.max(1.5, W / 560);
+        ctx.beginPath(); ctx.moveTo(mx, plaqueTop + 0.5); ctx.lineTo(W - mx, plaqueTop + 0.5); ctx.stroke();
+      }
+
+      // Marco ornamental completo, por encima del borde de la placa.
+      ctx.strokeStyle = sk.goldLine; ctx.lineWidth = Math.max(1.5, W / 520);
+      ctx.strokeRect(mx, innerTop, W - 2 * mx, IH);
+
+      // ── Rótulo «FRAGMENTO» y fragmento, centrados en su área de la placa ──
+      var areaTop = plaqueTop + kickPad;
+      var areaBot = innerBot - authorZone;
+      var areaH = areaBot - areaTop;
+
+      ctx.textAlign = 'center'; ctx.textBaseline = 'alphabetic';
+      setLS(W * 0.014); ctx.fillStyle = sk.kicker;
+      ctx.font = '600 ' + Math.round(W * 0.025) + 'px "Cinzel", Georgia, serif';
+      ctx.fillText('FRAGMENTO', cx, plaqueTop + kickPad * 0.55);
+      setLS(0);
+
       ctx.textAlign = state.align === 'center' ? 'center' : 'left';
       var tx = state.align === 'center' ? cx : cx - L.widest / 2;
       var yTop = areaTop + (areaH - blockH) / 2;
 
-      // Banda de lectura: marfil casi sólido tras el fragmento, con bordes
-      // difuminados arriba y abajo. Mantiene la ilustración visible pero asegura
-      // que la tinta lea sobre cualquier zona de la foto.
-      var padY = fs * 0.9;
-      var bTop = yTop - padY, bBot = yTop + blockH + padY * 0.7;
-      var band = ctx.createLinearGradient(0, bTop, 0, bBot);
-      band.addColorStop(0, 'rgba(240,229,206,0)');
-      band.addColorStop(0.16, 'rgba(240,229,206,0.88)');
-      band.addColorStop(0.84, 'rgba(240,229,206,0.88)');
-      band.addColorStop(1, 'rgba(240,229,206,0)');
-      ctx.fillStyle = band;
-      ctx.fillRect(mx + W * 0.012, bTop, W - 2 * (mx + W * 0.012), bBot - bTop);
-
+      // El fragmento ya va sobre pergamino sólido: sin velos ni halos, tinta plena.
       ctx.font = '400 ' + fs + 'px "Cormorant Garamond", Georgia, serif';
-      ctx.save();
-      ctx.shadowColor = sk.halo; ctx.shadowBlur = fs * 0.22;
       ctx.fillStyle = sk.verse;
       L.vlines.forEach(function (ln) {
         if (ln.gap) { yTop += gapH; return; }
         ctx.fillText(ln.text, tx, yTop + fs);
         yTop += lineH;
       });
-      ctx.restore();
       ctx.textAlign = 'center';
 
       // Autoría y marca, ancladas al pie con holgura respecto al filete inferior
@@ -591,14 +655,11 @@ const cuerpoSelector = forma === 'verso' ? '.prose--verso' : '.articulo .prose';
         tfs -= 1;
         ctx.font = 'italic 400 ' + tfs + 'px "Cormorant Garamond", Georgia, serif';
       }
-      ctx.save();
-      ctx.shadowColor = sk.halo; ctx.shadowBlur = tfs * 0.3;
       ctx.fillStyle = sk.titulo;
       ctx.fillText(cita, cx, baseCita);
       ctx.fillStyle = sk.author;
       ctx.font = '400 ' + Math.round(W * 0.03) + 'px "Cormorant Garamond", Georgia, serif';
       ctx.fillText(D.autor, cx, baseAuthor);
-      ctx.restore();
 
       ctx.strokeStyle = sk.goldLine; ctx.lineWidth = Math.max(1, W / 900);
       ctx.beginPath(); ctx.moveTo(cx - W * 0.09, wmLineY); ctx.lineTo(cx + W * 0.09, wmLineY); ctx.stroke();
@@ -648,20 +709,71 @@ const cuerpoSelector = forma === 'verso' ? '.prose--verso' : '.articulo .prose';
     function flash(msg) { aviso.textContent = msg; clearTimeout(flashT); flashT = setTimeout(function () { aviso.textContent = ''; }, 2600); }
 
     // ── Controles ──────────────────────────────────────────────────────
-    function wireSeg(id, key) {
+    function wireSeg(id, key, after) {
       var el = document.getElementById(id);
       if (!el) return;
       el.addEventListener('click', function (e) {
         var b = e.target.closest('button'); if (!b) return;
         state[key] = b.dataset[key];
         el.querySelectorAll('button').forEach(function (x) { x.setAttribute('aria-pressed', x === b ? 'true' : 'false'); });
+        if (after) after();
         draw();
       });
     }
     wireSeg('tc-formato', 'fmt');
     wireSeg('tc-align', 'align');
+    wireSeg('tc-fondo', 'fondo');
     document.getElementById('tc-descargar').addEventListener('click', descargar);
     document.getElementById('tc-compartir').addEventListener('click', compartir);
+
+    // Subir imagen propia: se lee como data URL (no contamina el canvas, así la
+    // exportación/compartir siguen funcionando). Al subir, se fuerza modo foto.
+    var fileInput = document.getElementById('tc-file');
+    var btnSubir = document.getElementById('tc-subir');
+    var btnRestaurar = document.getElementById('tc-restaurar');
+    var segFondo = document.getElementById('tc-fondo');
+
+    function setFondoFoto() {
+      state.fondo = 'foto';
+      if (segFondo) {
+        segFondo.querySelectorAll('button').forEach(function (x) {
+          x.setAttribute('aria-pressed', x.dataset.fondo === 'foto' ? 'true' : 'false');
+        });
+      }
+    }
+
+    if (btnSubir && fileInput) {
+      btnSubir.addEventListener('click', function () { fileInput.click(); });
+      fileInput.addEventListener('change', function () {
+        var f = fileInput.files && fileInput.files[0];
+        if (!f) return;
+        if (!/^image\//.test(f.type)) { flash('Ese archivo no es una imagen'); fileInput.value = ''; return; }
+        var reader = new FileReader();
+        reader.onload = function () {
+          var im = new Image();
+          im.onload = function () {
+            state.customImg = im;
+            setFondoFoto();
+            if (btnRestaurar) btnRestaurar.hidden = false;
+            draw();
+            flash('Imagen cargada');
+          };
+          im.onerror = function () { flash('No se pudo leer la imagen'); };
+          im.src = reader.result;
+        };
+        reader.onerror = function () { flash('No se pudo leer el archivo'); };
+        reader.readAsDataURL(f);
+        fileInput.value = ''; // permite volver a elegir el mismo archivo
+      });
+    }
+    if (btnRestaurar) {
+      btnRestaurar.addEventListener('click', function () {
+        state.customImg = null;
+        btnRestaurar.hidden = true;
+        draw();
+        flash('Ilustración original');
+      });
+    }
 
     // ── Apertura: dispara el botón de <Compartir> ──────────────────────
     function openDialog() {
