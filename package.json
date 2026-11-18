@@ -20,6 +20,7 @@
     "@fontsource/cinzel": "^5.2.8",
     "@fontsource/cormorant-garamond": "^5.2.11",
     "astro": "^6.1.9",
+    "isomorphic-dompurify": "^4.7.0",
     "marked": "^18.0.3",
     "rehype-external-links": "^3.0.0",
     "remark-breaks": "^4.0.0",
