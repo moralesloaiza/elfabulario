@@ -1,10 +1,17 @@
 # Security headers for elfabulario.com (Cloudflare Pages)
 #
-# CSP en modo SOLO-REPORTE (Content-Security-Policy-Report-Only): no bloquea
-# nada, solo registra en la consola del navegador lo que una politica estricta
-# rechazaria. Es el paso previo a enforce: una vez verificado que no hay
-# violaciones legitimas, se renombra la cabecera a `Content-Security-Policy`.
-# Externo permitido en el sitio publico: open.spotify.com (embed de narracion).
+# CSP en modo ENFORCE (Content-Security-Policy): bloquea lo que no encaje.
+# Verificado en produccion (report-only previo) que las unicas violaciones son
+# scripts inline legitimos: el registro del SW, dos modulos que Astro inlinea y
+# los que inyecta Cloudflare (beacon de Web Analytics + deteccion de bots). Como
+# el hash de los scripts de Astro/Cloudflare cambia en cada build/edge y no se
+# puede fijar en un _headers estatico, script-src mantiene 'unsafe-inline'. El
+# XSS almacenado via nota_curador (set:html) queda cerrado en origen con
+# DOMPurify en src/layouts/Fabula.astro, no por esta cabecera. El resto de
+# directivas (frame-ancestors, base-uri, object-src, form-action, img/connect/
+# frame-src) si quedan en enforce.
+# Externos permitidos en el sitio publico: open.spotify.com (embed de narracion)
+# y *.cloudflareinsights.com (Web Analytics).
 #
 # NO se usa Cross-Origin-Opener-Policy: same-origin porque cortaria
 # window.opener entre origenes y romperia el popup OAuth del panel /admin
@@ -16,15 +23,17 @@
   Strict-Transport-Security: max-age=63072000; includeSubDomains; preload
   Permissions-Policy: camera=(), microphone=(), geolocation=(), payment=(), interest-cohort=()
   X-Frame-Options: SAMEORIGIN
-  Content-Security-Policy-Report-Only: default-src 'self'; base-uri 'self'; object-src 'none'; frame-ancestors 'self'; form-action 'self'; img-src 'self' data:; font-src 'self'; style-src 'self' 'unsafe-inline'; script-src 'self'; connect-src 'self'; frame-src https://open.spotify.com; media-src 'self'; worker-src 'self'; manifest-src 'self'; upgrade-insecure-requests
+  Content-Security-Policy: default-src 'self'; base-uri 'self'; object-src 'none'; frame-ancestors 'self'; form-action 'self'; img-src 'self' data:; font-src 'self'; style-src 'self' 'unsafe-inline'; script-src 'self' 'unsafe-inline' https://static.cloudflareinsights.com; connect-src 'self' https://cloudflareinsights.com; frame-src https://open.spotify.com; media-src 'self'; worker-src 'self'; manifest-src 'self'; upgrade-insecure-requests
 
 # Panel editorial (Decap CMS). Carga el bundle desde unpkg y habla con la API
 # de GitHub y el proxy OAuth, por lo que su CSP es mas permisiva que la del
-# sitio publico. Tambien en solo-reporte por ahora.
+# sitio publico (necesita 'unsafe-inline'/'unsafe-eval' para Decap). Tambien en
+# enforce. Si tras desplegar el editor no cargara, revertir esta linea a
+# Content-Security-Policy-Report-Only es un cambio de una palabra.
 
 /admin/*
   X-Frame-Options: DENY
-  Content-Security-Policy-Report-Only: default-src 'self'; base-uri 'self'; object-src 'none'; frame-ancestors 'none'; img-src 'self' data: blob: https://*.githubusercontent.com; font-src 'self' data: https://unpkg.com; style-src 'self' 'unsafe-inline' https://unpkg.com; script-src 'self' 'unsafe-inline' 'unsafe-eval' https://unpkg.com; connect-src 'self' https://api.github.com https://unpkg.com https://auth.elfabulario.com; frame-src 'self'; worker-src 'self' blob:; child-src blob:
+  Content-Security-Policy: default-src 'self'; base-uri 'self'; object-src 'none'; frame-ancestors 'none'; img-src 'self' data: blob: https://*.githubusercontent.com; font-src 'self' data: https://unpkg.com; style-src 'self' 'unsafe-inline' https://unpkg.com; script-src 'self' 'unsafe-inline' 'unsafe-eval' https://unpkg.com https://static.cloudflareinsights.com; connect-src 'self' https://api.github.com https://unpkg.com https://auth.elfabulario.com https://cloudflareinsights.com; frame-src 'self'; worker-src 'self' blob:; child-src blob:
 
 # PWA. El SW no debe quedar cacheado por el navegador/CDN: asi los
 # despliegues nuevos toman efecto sin esperar a que expire una copia vieja.

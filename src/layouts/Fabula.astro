@@ -12,6 +12,7 @@ import IconoEditar from '../components/IconoEditar.astro';
 import NavegacionFabulas from '../components/NavegacionFabulas.astro';
 import SpotifyEmbed from '../components/SpotifyEmbed.astro';
 import { marked } from 'marked';
+import DOMPurify from 'isomorphic-dompurify';
 import {
 	PERSONAJES_DISPLAY,
 	TEMAS_DISPLAY,
@@ -155,8 +156,11 @@ const seguirLeyendo = [
 		formaDisplay: FORMAS_DISPLAY[f.data.forma],
 	}));
 
+// `nota_curador` es Markdown de colaboradores (acceso de escritura al repo).
+// Se renderiza con `set:html`, así que su HTML pasa por DOMPurify para cerrar
+// el XSS almacenado en origen (scripts, handlers on*, javascript:, etc.).
 const notaHtml = nota_curador
-	? marked.parse(nota_curador, { breaks: true })
+	? DOMPurify.sanitize(marked.parse(nota_curador, { breaks: true }) as string)
 	: null;
 const notaTitulo = traduccion ? 'Nota del traductor' : 'Nota del curador';
 
