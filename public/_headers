@@ -10,6 +10,12 @@
 # DOMPurify en src/layouts/Fabula.astro, no por esta cabecera. El resto de
 # directivas (frame-ancestors, base-uri, object-src, form-action, img/connect/
 # frame-src) si quedan en enforce.
+# script-src incluye 'wasm-unsafe-eval' porque Pagefind (buscador de texto
+# completo) compila un modulo WebAssembly en el cliente. Es la directiva
+# estrecha que habilita solo WebAssembly.instantiate, NO el eval() de JS, asi
+# que no reabre el vector XSS que 'unsafe-eval' si abriria. Sin ella el CSP en
+# enforce bloquea el WASM y la busqueda libre devuelve cero resultados en
+# silencio (solo sobreviven las entidades de la taxonomia, que son fetch JSON).
 # Externos permitidos en el sitio publico: open.spotify.com (embed de narracion)
 # y *.cloudflareinsights.com (Web Analytics).
 #
@@ -23,7 +29,7 @@
   Strict-Transport-Security: max-age=63072000; includeSubDomains; preload
   Permissions-Policy: camera=(), microphone=(), geolocation=(), payment=(), interest-cohort=()
   X-Frame-Options: SAMEORIGIN
-  Content-Security-Policy: default-src 'self'; base-uri 'self'; object-src 'none'; frame-ancestors 'self'; form-action 'self'; img-src 'self' data:; font-src 'self'; style-src 'self' 'unsafe-inline'; script-src 'self' 'unsafe-inline' https://static.cloudflareinsights.com; connect-src 'self' https://cloudflareinsights.com; frame-src https://open.spotify.com; media-src 'self'; worker-src 'self'; manifest-src 'self'; upgrade-insecure-requests
+  Content-Security-Policy: default-src 'self'; base-uri 'self'; object-src 'none'; frame-ancestors 'self'; form-action 'self'; img-src 'self' data:; font-src 'self'; style-src 'self' 'unsafe-inline'; script-src 'self' 'unsafe-inline' 'wasm-unsafe-eval' https://static.cloudflareinsights.com; connect-src 'self' https://cloudflareinsights.com; frame-src https://open.spotify.com; media-src 'self'; worker-src 'self'; manifest-src 'self'; upgrade-insecure-requests
 
 # Panel editorial (Decap CMS). Carga el bundle desde unpkg y habla con la API
 # de GitHub y el proxy OAuth, por lo que su CSP es mas permisiva que la del
