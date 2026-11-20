@@ -31,6 +31,23 @@
   X-Frame-Options: SAMEORIGIN
   Content-Security-Policy: default-src 'self'; base-uri 'self'; object-src 'none'; frame-ancestors 'self'; form-action 'self'; img-src 'self' data:; font-src 'self'; style-src 'self' 'unsafe-inline'; script-src 'self' 'unsafe-inline' 'wasm-unsafe-eval' https://static.cloudflareinsights.com; connect-src 'self' https://cloudflareinsights.com; frame-src https://open.spotify.com; media-src 'self'; worker-src 'self'; manifest-src 'self'; upgrade-insecure-requests
 
+# Buscador de texto completo (Pagefind). Su runtime (pagefind.js y sobre todo
+# pagefind-worker.js) NO debe cachearse. El worker compila el modulo WASM y su
+# CSP efectiva es la de la respuesta de su PROPIO script, no la del documento. Si
+# Cloudflare o el navegador sirven una copia cacheada del worker con una CSP vieja
+# (p. ej. de antes de añadir 'wasm-unsafe-eval'), el WASM se bloquea y la busqueda
+# devuelve cero resultados en silencio, AUNQUE el _headers ya traiga la CSP
+# correcta. Como el worker es identico byte a byte entre builds (ETag estable), se
+# revalida con 304 y la cabecera vieja persiste indefinidamente (el navegador la
+# fija hasta que expira su cache). 'no-store' obliga a reaplicar la CSP actual en
+# cada peticion y evita que un futuro cambio de CSP vuelva a quedarse atascado.
+# OJO: al desplegar un cambio de CSP, purgar una vez la cache de Cloudflare
+# (Caching -> Purge) para desalojar la copia ya cacheada; 'no-store' solo evita
+# que vuelva a cachearse, no desaloja la que ya esta dentro. Coincide con el
+# service worker, que ya trata /pagefind/ como passthrough.
+/pagefind/*
+  Cache-Control: no-store
+
 # Panel editorial (Decap CMS). Carga el bundle desde unpkg y habla con la API
 # de GitHub y el proxy OAuth, por lo que su CSP es mas permisiva que la del
 # sitio publico (necesita 'unsafe-inline'/'unsafe-eval' para Decap). Tambien en
