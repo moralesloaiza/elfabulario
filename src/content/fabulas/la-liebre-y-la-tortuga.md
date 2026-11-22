@@ -111,4 +111,4 @@ de qué os sirvió tanto vuelo?
 Si os gané llevando a cuestas
 mi casa, mi propio techo,
 ¿qué fuera de vos, decidme,
-si cargárais con tal peso?
+si cargarais con tal peso?

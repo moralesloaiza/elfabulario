@@ -44,7 +44,7 @@ A un alto monte voló
 Un águila y puesta allí,
 Dijo: « ¿Quién sube hasta aquí,
 Sino solamente yo? »
-Mas luego a un lagarto vió
+Mas luego a un lagarto vio
 Con otros lagartos viles
 Trepar a la cumbre a miles,
 Y « ¡Ay!, exclamó: ¿qué hacen éstos?

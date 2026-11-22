@@ -34,7 +34,7 @@ Un emperador, viendo a un viejo plantar una higuera, le preguntó por lo que hac
 
 —Bien—respondió el emperador—si vives para llegar a comer los frutos de este árbol te ruego que me lo hagas saber.
 
-El hombre lo prometió, y por cierto que su vida se prolongó lo suficiente para que el ábol creciera, dando fruto que el viejo comió.
+El hombre lo prometió, y por cierto que su vida se prolongó lo suficiente para que el árbol creciera, dando fruto que el viejo comió.
 
 Metiendo unos cuantos higos de los mejores en una cesta, se fue al palacio y, explicado el objeto de su visita, fue conducido por los guardias a la presencia del emperador.
 

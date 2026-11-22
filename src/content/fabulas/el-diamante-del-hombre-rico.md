@@ -39,4 +39,4 @@ Algún tiempo después, estando en el mar, el viento se le llevó el turbante, q
 
 —De todos modos—pensó el judío—si he perdido el diamante, mi pobre vecino nunca podrá cogerlo.
 
-Pero, pocos días después, el pobre compró un pez en el mercado, y al abrirlo encontro el diamante que el pez se había tragado.
+Pero, pocos días después, el pobre compró un pez en el mercado, y al abrirlo encontró el diamante que el pez se había tragado.

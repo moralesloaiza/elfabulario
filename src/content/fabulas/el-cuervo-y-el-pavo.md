@@ -60,4 +60,4 @@ no encuentra defectos,
 contra la persona cargos
 suele hacer el necio.
 
-*Citando se trata de notar los defectos de una obra, no deben censurarse los personales de su autor.*
+*Cuando se trata de notar los defectos de una obra, no deben censurarse los personales de su autor.*
