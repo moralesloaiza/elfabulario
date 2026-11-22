@@ -62,12 +62,12 @@ nota_curador: >-
 ---
 Estaba un ratoncillo aprisionado
 En las garras de un león; el desdichado
-En tal ratonera no fué preso
+En tal ratonera no fue preso
 Por ladrón de tocino ni de queso,
 Sino porque con otros molestaba
 Al león que en su retiro descansaba.
 Pide perdón llorando su insolencia,
-Al oir implorar la real clemencia,
+Al oír implorar la real clemencia,
 Responde el rey con majestuoso tono:
 (No dijera más Tito) « Te perdono ».
 Poco después, cazando el león tropieza

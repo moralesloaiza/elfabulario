@@ -54,7 +54,7 @@ Gana mucho opinión, y más dinero;
 Pues el vulgo, pendiente de sus labios,
 Más quiere a un charlatán que a veinte sabios.
 Por esta conveniencia
-Los hay el dia de hoy en toda ciencia,
+Los hay el día de hoy en toda ciencia,
 Que ocupan, igualmente acreditados,
 Cátedras, academias y tablados.
 Prueba de esta verdad será un famoso
@@ -76,7 +76,7 @@ Dícele callandito un cortesano:
 Su frescura me espanta:
 A cáñamo me huele su garganta ».
 « No temáis, señor mío,
-Respondió el charlatan, pues yo me río.
+Respondió el charlatán, pues yo me río.
 En diez años de plazo que tenemos,
 El rey, el asno o yo ¿no moriremos? »
 
