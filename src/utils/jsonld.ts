@@ -19,6 +19,8 @@ export const PUBLISHER = {
 	name: 'El Fabulario',
 	url: SITE_ORIGIN,
 	logo: `${SITE_ORIGIN}/logo.svg`,
+	// Perfiles oficiales (mismo valor que INSTAGRAM_URL en consts.ts).
+	sameAs: ['https://www.instagram.com/el.fabulario/'],
 } as const;
 
 // Resolve an Astro asset path (which carries a build hash) to an
