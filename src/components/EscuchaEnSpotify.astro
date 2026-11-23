@@ -3,7 +3,7 @@
 // compacta, con la frase a la izquierda y el CTA coral a la derecha. Enlace, no
 // embed (el embed real vive en la ficha de fábula, Fase 3): cero JS de terceros.
 // Nota WCAG: el rótulo sobre coral va en NEGRO (4.58:1 AA); en marfil no cumple.
-import { SPOTIFY_SHOW_URL } from '../consts';
+import { SPOTIFY_SHOW_URL, INSTAGRAM_URL } from '../consts';
 ---
 
 <section class="seccion-spotify" aria-labelledby="spotify-titulo">
@@ -11,15 +11,26 @@ import { SPOTIFY_SHOW_URL } from '../consts';
 		<p id="spotify-titulo" class="spotify-frase">
 			Cada fábula, también narrada en voz alta.
 		</p>
-		<a
-			class="spotify-cta"
-			href={SPOTIFY_SHOW_URL}
-			target="_blank"
-			rel="noopener"
-			aria-label="Escuchar en Spotify (se abre en una pestaña nueva)"
-		>
-			Escuchar en Spotify
-		</a>
+		<div class="spotify-ctas">
+			<a
+				class="spotify-cta"
+				href={SPOTIFY_SHOW_URL}
+				target="_blank"
+				rel="noopener"
+				aria-label="Escuchar en Spotify (se abre en una pestaña nueva)"
+			>
+				Escuchar en Spotify
+			</a>
+			<a
+				class="spotify-cta spotify-cta--secundario"
+				href={INSTAGRAM_URL}
+				target="_blank"
+				rel="noopener"
+				aria-label="Seguir en Instagram (se abre en una pestaña nueva)"
+			>
+				Seguir en Instagram
+			</a>
+		</div>
 	</div>
 </section>
 
@@ -67,5 +78,19 @@ import { SPOTIFY_SHOW_URL } from '../consts';
 	.spotify-cta:focus-visible {
 		outline: var(--rule-thin) solid var(--color-marfil);
 		outline-offset: 2px;
+	}
+	.spotify-ctas {
+		flex: 0 1 auto;
+		max-width: 100%;
+		display: flex;
+		flex-wrap: wrap;
+		gap: var(--space-sm);
+	}
+	/* Secundario (Instagram): contorno marfil sobre la franja negra, para no
+	   competir con el CTA coral de Spotify. */
+	.spotify-cta--secundario {
+		color: var(--color-marfil);
+		background: transparent;
+		box-shadow: inset 0 0 0 var(--rule-thin) var(--color-marfil);
 	}
 </style>

@@ -14,7 +14,7 @@ export const SITE_LANG = 'es';
 export const SPOTIFY_SHOW_URL =
 	'https://open.spotify.com/show/0CFLmgPkPPG5VQ6nZOMSNA';
 
-// Cuenta oficial de Instagram, enlazada desde el pie de página.
+// Cuenta oficial de Instagram, enlazada en la portada junto a Spotify.
 export const INSTAGRAM_URL = 'https://www.instagram.com/el.fabulario/';
 
 // Foco vertical por defecto de los RETRATOS de autor cuando hacen de hero, en %
