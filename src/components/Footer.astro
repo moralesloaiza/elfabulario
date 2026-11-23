@@ -1,6 +1,6 @@
 ---
 import BotonCrear from './BotonCrear.astro';
-import { SPOTIFY_SHOW_URL } from '../consts';
+import { SPOTIFY_SHOW_URL, INSTAGRAM_URL } from '../consts';
 
 const today = new Date();
 const startYear = 2026;
@@ -23,6 +23,8 @@ const yearLabel =
 
 		<p class="enlaces">
 			<a href={SPOTIFY_SHOW_URL} target="_blank" rel="noopener">Escúchalo en Spotify</a>
+			<span class="sep" aria-hidden="true"> · </span>
+			<a href={INSTAGRAM_URL} target="_blank" rel="noopener">Síguelo en Instagram</a>
 		</p>
 
 		<p class="meta">© {yearLabel} El Fabulario · Una colección dirigida por don Alejandro de Morales y Loaiza</p>
@@ -90,6 +92,9 @@ const yearLabel =
 		border-bottom: var(--rule-hairline) solid currentColor;
 		padding-bottom: 1px;
 		transition: color var(--dur-fast) var(--ease-standard);
+	}
+	.enlaces .sep {
+		color: var(--color-oro-texto);
 	}
 	.enlaces a:hover,
 	.enlaces a:focus-visible {
