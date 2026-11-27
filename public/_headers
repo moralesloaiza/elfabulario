@@ -53,10 +53,13 @@
 # sitio publico (necesita 'unsafe-inline'/'unsafe-eval' para Decap). Tambien en
 # enforce. Si tras desplegar el editor no cargara, revertir esta linea a
 # Content-Security-Policy-Report-Only es un cambio de una palabra.
+# connect-src incluye blob: porque Decap lee las imagenes subidas con
+# fetch(blob:...) antes de mandarlas a GitHub; sin el, guardar una entrada
+# con imagen falla con "TypeError: Failed to fetch".
 
 /admin/*
   X-Frame-Options: DENY
-  Content-Security-Policy: default-src 'self'; base-uri 'self'; object-src 'none'; frame-ancestors 'none'; img-src 'self' data: blob: https://*.githubusercontent.com; font-src 'self' data: https://unpkg.com; style-src 'self' 'unsafe-inline' https://unpkg.com; script-src 'self' 'unsafe-inline' 'unsafe-eval' https://unpkg.com https://static.cloudflareinsights.com; connect-src 'self' https://api.github.com https://unpkg.com https://auth.elfabulario.com https://cloudflareinsights.com; frame-src 'self'; worker-src 'self' blob:; child-src blob:
+  Content-Security-Policy: default-src 'self'; base-uri 'self'; object-src 'none'; frame-ancestors 'none'; img-src 'self' data: blob: https://*.githubusercontent.com; font-src 'self' data: https://unpkg.com; style-src 'self' 'unsafe-inline' https://unpkg.com; script-src 'self' 'unsafe-inline' 'unsafe-eval' https://unpkg.com https://static.cloudflareinsights.com; connect-src 'self' blob: https://api.github.com https://unpkg.com https://auth.elfabulario.com https://cloudflareinsights.com; frame-src 'self'; worker-src 'self' blob:; child-src blob:
 
 # PWA. El SW no debe quedar cacheado por el navegador/CDN: asi los
 # despliegues nuevos toman efecto sin esperar a que expire una copia vieja.
